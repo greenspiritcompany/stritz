@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="11" space="Local" timeToEmit="0.100" name="IceBlockerHit1aPFX">
+    <Dampening max="0.760" min="0.760"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="30" depth="0" height="30"/>
+    </Emitter>
+    <EndColor b="255" r="91" g="198" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="33.470" y="33.470"/>
+        <Min x="33.470" y="33.470"/>
+    </Size>
+    <SizeChange>
+        <Max x="63" y="63"/>
+        <Min x="63" y="63"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/smoke64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.720" min="0.480"/>
+    <Velocity max="420" min="340"/>
+</ParticleEffect>

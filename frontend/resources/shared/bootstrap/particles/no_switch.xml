@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="2" space="Local" timeToEmit="0.100" name="NoSwitch">
+    <Dampening max="0.800" min="0.800"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.020" spread="0" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="85" y="85"/>
+        <Min x="85" y="85"/>
+    </Size>
+    <SizeChange>
+        <Max x="200" y="0"/>
+        <Min x="200" y="0"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/no_switch_glow.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.300" min="0.300"/>
+    <Velocity max="500" min="500"/>
+</ParticleEffect>

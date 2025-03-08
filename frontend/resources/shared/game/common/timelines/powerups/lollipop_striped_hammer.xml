@@ -1,0 +1,96 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="2.21">
+
+		<Animate target="lollipop_striped_smash_debris" time="0.0">
+			<Hide time="0.0"/>
+			<Show time="1.1"/>
+		</Animate>
+
+		<Animate target="lollipop_striped_hammer" time="0.0">
+			<Color time="0.0" r="255" g="255" b="255" a="255"/>
+			<Color time="1.8" r="255" g="255" b="255" a="255"/>
+			<Color time="2.0" r="255" g="255" b="255" a="0"/>
+		</Animate>
+
+		<Animate target="PFXoffset" time="0">
+			<Scale time="0" xyz="1.0"/>
+			<Scale time="1.8" xyz="1.0"/>
+			<Scale time="2.0" xyz="0.0"/>
+		</Animate>
+		<Triggers>
+			<AnimationTrigger animationName="lollipop_idle" targetName="lollipop_striped_hammer" time="0.01"/>
+			<AnimationTrigger animationName="lollipop_anim" targetName="lollipop_striped_hammer" time="0.11" crossFade="0.2"/>
+			<AnimationTrigger animationName="lollipop_debris" targetName="lollipop_striped_smash_debris" time="1.15"/>
+			<!-- sfx -->
+			<!-- seems the second part of this timeline starts at 0.1, it's being set in code it seems -->
+			<EffectTrigger time="0.11" name="LollipopHammerSFQ"/>
+			<!-- pfx -->
+			<EffectTrigger time="1.05" name="LollipopStripedHammerEFQ" parentName="PFXoffset"/>
+			<CustomTrigger time="1.15" name="HammerHit"/>
+			<CustomTrigger time="2.2" name="Finished"/>
+		</Triggers>
+		<TimeControls>
+			<!--<Pause time="0.0" timeout="-1"/>-->
+			<TimeJump time="0.04" jumpToTime="0.02"/>
+		</TimeControls>
+
+
+
+
+        <Animate target="FlyLeft" time="0">
+            <Show time="1.15"/>
+            <Translation time="1.15" x="0" y="0"/>
+            <Translation time="3.2" x="-2000" y="0"/>
+            <Hide time="3.8"/>
+        </Animate>
+
+        <Animate target="FlyRight" time="0">
+            <Show time="1.15"/>
+            <Translation time="1.15" x="0" y="0"/>
+            <Translation time="3.2" x="2000" y="0"/>
+            <Hide time="3.8"/>
+        </Animate>
+
+        <Animate target="FlyLeft2" time="0">
+            <Show time="1.15"/>
+            <Translation time="1.15" x="0" y="0"/>
+            <Translation time="3.2" x="-2000" y="0"/>
+            <!--<Rotation time="0.0" z="-90"/>-->
+            <Hide time="3.8"/>
+        </Animate>
+
+        <Animate target="FlyRight2" time="0">
+            <Show time="1.15"/>
+            <Translation time="1.15" x="0" y="0"/>
+            <Translation time="3.2" x="2000" y="0"/>
+            <!--<Rotation time="0.0" z="90"/>-->
+            <Hide time="3.8"/>
+        </Animate>
+
+        <Triggers>
+            <EffectTrigger time="1.15" name="CandyBreakLight"/>
+
+			<EffectTrigger time="1.15" name="SparkTrail" targetName="Twirl1"/>
+			<EffectTrigger time="1.15" name="SparkTrail" targetName="Twirl2"/>
+			<EffectTrigger time="1.15" name="SparkTrail" targetName="Twirl12" emitterInheritsTargetRotation="true"/>
+			<EffectTrigger time="1.15" name="SparkTrail" targetName="Twirl22" emitterInheritsTargetRotation="true"/>
+            <EffectTrigger time="1.15" name="LollipopPurpleStripeTrail" targetName="FlyLeft" emitterInheritsTargetRotation="true"/>
+            <EffectTrigger time="1.15" name="LollipopPurpleStripeTrail" targetName="FlyRight" emitterInheritsTargetRotation="true"/>
+
+            <EffectTrigger time="1.15" name="LollipopPurpleStripeTrail" targetName="FlyLeft2" emitterInheritsTargetRotation="true"/>
+            <EffectTrigger time="1.15" name="LollipopPurpleStripeTrail" targetName="FlyRight2" emitterInheritsTargetRotation="true"/>
+
+            <EffectTrigger time="1.15" name="LineblastLightStatic" parentName="FlyLeft"/>
+            <EffectTrigger time="1.15" name="LineblastLightStatic" parentName="FlyRight"/>
+            <EffectTrigger time="1.15" name="LineblastLightTrail" targetName="FlyLeft"/>
+            <EffectTrigger time="1.15" name="LineblastLightTrail" targetName="FlyRight"/>
+
+            <EffectTrigger time="1.15" name="LineblastLightStatic" parentName="FlyLeft2"/>
+            <EffectTrigger time="1.15" name="LineblastLightStatic" parentName="FlyRight2"/>
+            <EffectTrigger time="1.15" name="LineblastLightTrail" targetName="FlyLeft2" emitterInheritsTargetRotation="true"/>
+            <EffectTrigger time="1.15" name="LineblastLightTrail" targetName="FlyRight2" emitterInheritsTargetRotation="true"/>
+
+        </Triggers>
+	</Timeline>
+</Timelines>

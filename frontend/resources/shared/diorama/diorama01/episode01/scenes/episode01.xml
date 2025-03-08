@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Episode" layerFlags="2">
+		<SceneObject name="">
+			<Model filename="shared/diorama/diorama01/episode01/models/episode01_base.ffm" />
+			<Material parentMaterial="CommonMaterial" />
+			<Translation x="-1000" />
+			<SceneObject name="Particles">
+				<Effect name="Wisps" effectData="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effect name="Wisps" effectData="Wisps" play="true" />
+				<Translation z="-200" />
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effect name="Wisps" effectData="Wisps" play="true" />
+				<Translation z="-400" />
+			</SceneObject>
+			<SceneObject name="RiverGlitter">
+				<Effect name="RiverStreamEFQ" effectData="RiverStreamEFQ" play="true" />
+				<Translation x="465" y="5" z="-50" />
+				<Rotation x="90" y="0" z="3" />
+			</SceneObject>
+			<SceneObject name="E01Path">
+				<Model filename="shared/diorama/diorama01/episode01/models/path/e01_path.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="PathMaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E01Path_Endpiece">
+				<Model filename="shared/diorama/diorama01/episode01/models/path/e01_path_endpiece.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="Episode1MaterialAlpha" />
+				<Translation x="-210" y="0" z="40" />
+				<Scale x="1" y="1" z="0.930" />
+			</SceneObject>
+			<!-- speech bubble -->
+			<SceneObject name="SpeechBubbleEp01">
+				<Animation name="SpeechBubbleAppear" animationData="SpeechBubbleAppear" loopCount="0" />
+				<Animation name="SpeechBubbleDisappear" animationData="SpeechBubbleDisappear" loopCount="0" />
+				<SpeechBubble>
+					<Speech key="episode01.intro" />
+					<Speech key="episode01.outro" />
+				</SpeechBubble>
+				<!-- adjust the speech bubble position here -->
+				<Translation x="280" y="80" z="-136.171" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel2CameraTarget">
+				<Translation x="120" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel6CameraTarget">
+				<Translation x="120" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="CharacterEp01">
+				<Translation x="260" y="118.696" z="-65" />
+				<!-- episode character object begin -->
+				<!-- episode character place holder -->
+				<SceneObject name="Yeti">
+					<Rotation x="-20" y="0" z="0" />
+					<Scale x="1.200" y="1.200" z="1.200" />
+					<Model filename="shared/diorama/common/models/yeti/yeti.ffm">
+						<Animation filename="shared/diorama/common/models/yeti/sad_idle.ffa" name="sad_idle" play="false" speed="1" loopCount="-1" />
+						<Animation filename="shared/diorama/common/models/yeti/sad_talk.ffa" name="sad_talk" play="false" speed="1" loopCount="-1" />
+					</Model>
+					<Material parentMaterial="Episode1MaterialAlpha" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Episode01_Ground">
+				<Model filename="shared/diorama/diorama01/episode01/models/ground/ground.ffm" />
+				<Material parentMaterial="Episode1Material" />
+			</SceneObject>
+			<SceneObject name="River_Plane">
+				<Model filename="shared/diorama/diorama01/episode01/models/ground/river.ffm" />
+				<Material parentMaterial="Episode1Material" />
+				<Translation x="0" y="0" z="0" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="Backdrop">
+				<Translation x="-89.558" y="159.153" z="-221.989" />
+				<SceneObject name="BackdropHousesCenter">
+					<Model filename="shared/diorama/diorama01/episode01/models/houses/backdrop_houses_center.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Backdrop">
+				<Translation x="-372.319" y="81.451" z="-279.521" />
+				<SceneObject name="BackdropHousesLeftOne">
+					<Model filename="shared/diorama/diorama01/episode01/models/houses/backdrop_houses_left_1.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Backdrop">
+				<Translation x="-517.734" y="62.481" z="-319.149" />
+				<SceneObject name="BackdropHousesLeftTwo">
+					<Model filename="shared/diorama/diorama01/episode01/models/houses/backdrop_houses_left_2.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BackdropHousesRight">
+				<Model filename="shared/diorama/diorama01/episode01/models/houses/backdrop_houses_right.ffm" />
+				<Material parentMaterial="Episode1MaterialAlpha" />
+				<Scale y="0.900" />
+				<Translation x="201" y="180" z="-342.555" />
+			</SceneObject>
+			<SceneObject name="WaterHydrant">
+				<Interactable upTimeline="Donut_splash" />
+				<Model filename="shared/diorama/diorama01/episode01/models/props/waterhydrant.ffm" />
+				<Animation animationData="interactable_v02_up" name="Up" layer="3" play="false" loopCount="0" />
+				<Animation animationData="interactable_v02_up" name="Up2" layer="3" play="false" loopCount="0" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" />
+				<Material parentMaterial="Episode2MaterialAlpha" />
+				<Rotation x="-6.973" y="2.924" z="0" />
+				<Translation x="395.920" y="61" z="-255.320" />
+			</SceneObject>
+			<SceneObject name="Big_House_Group">
+				<Translation x="177.331" y="151.366" z="-179.452" />
+				<SceneObject name="BigHouse">
+					<Interactable upTimeline="Donut_splash" />
+					<Model filename="shared/diorama/diorama01/episode01/models/houses/bighouse.ffm" />
+					<Animation animationData="interactable_v02_up" name="Up" layer="3" play="false" loopCount="0" />
+					<Animation animationData="interactable_v02_up" name="Up2" layer="3" play="false" loopCount="0" />
+					<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" />
+					<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" />
+					<Material parentMaterial="Episode1MaterialAlpha" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Left_House_Group">
+				<Translation x="-184.454" y="123.341" z="-114.820" />
+				<SceneObject name="SmallHouse">
+					<Interactable upTimeline="Donut_splash" />
+					<Model filename="shared/diorama/diorama01/episode01/models/houses/smallhouse.ffm" />
+					<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+					<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+					<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+					<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+					<Material parentMaterial="Episode1MaterialAlpha" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="LeftHouseSidewalk">
+				<Model filename="shared/diorama/diorama01/episode01/models/props/left_house_sidewalk.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="Episode1MaterialAlpha" />
+				<Translation x="-186.817" y="27.302" z="-95.383" />
+			</SceneObject>
+			<SceneObject name="RightHouseSidewalk">
+				<Model filename="shared/diorama/diorama01/episode01/models/props/right_house_sidewalk.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="Episode1MaterialAlpha" />
+				<Translation x="184.788" y="26.715" z="-162.493" />
+			</SceneObject>
+			<SceneObject name="Fountain">
+				<Model filename="shared/diorama/diorama01/episode01/models/props/fountain.ffm" />
+				<Material parentMaterial="Episode1Material" />
+				<Translation x="2.187" y="27.303" z="56.026" />
+				<Scale xyz="1.25" />
+			</SceneObject>
+			<SceneObject name="FountainClickable">
+				<!-- FOUNTAIN FFM -->
+				<Interactable upTimeline="Donut_splash" />
+				<Model filename="shared/diorama/diorama01/episode01/models/props/fountain_clickable.ffm" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Material parentMaterial="Episode1MaterialAlpha" />
+				<Scale xyz="1.6" />
+				<Translation x="6.187" y="95.727" z="51.285" />
+				<SceneObject name="Group">
+					<Scale y="-1.200" x="1.200" z="1.200" />
+					<Translation x="0" y="7.705" z="5" />
+					<SceneObject name="FountainParticles">
+						<Effect name="Ep01FountainSoda" effectData="Ep01FountainSoda" play="true" />
+						<Scale xyz="0.44" />
+						<Translation x="10.142" y="5" z="4" />
+					</SceneObject>
+					<SceneObject name="FountainParticles">
+						<Effect name="Ep01FountainSoda" effectData="Ep01FountainSoda" play="true" />
+						<Scale z="0.440" y="0.440" x="-0.440" />
+						<Translation x="-12.638" y="5" z="4" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="FountainBaseSplash">
+				<Effect name="Ep01FountainBase" effectData="Ep01FountainBase" play="true" />
+				<Translation x="4.681" y="55" z="75" />
+			</SceneObject>
+			<SceneObject name="LightpostCenter">
+				<Interactable upTimeline="Donut_splash" />
+				<Model filename="shared/diorama/diorama01/episode01/models/props/lightpost_center.ffm" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Material parentMaterial="Episode1MaterialAlpha" />
+				<Translation x="35.572" y="7" z="-50" />
+				<Scale x="1.350" y="1.400" z="1.350" />
+			</SceneObject>
+			<SceneObject name="LightpostBack">
+				<Interactable upTimeline="Donut_splash" />
+				<Model filename="shared/diorama/diorama01/episode01/models/props/lightpost_back.ffm" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Material parentMaterial="Episode1MaterialAlpha" />
+				<Translation x="-46.507" y="9.846" z="-198.952" />
+			</SceneObject>
+			<SceneObject name="CandieForegroundLeft1">
+				<Interactable upTimeline="Donut_splash" />
+				<Model filename="shared/diorama/diorama01/episode01/models/props/candies_foreground_left.ffm" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Material parentMaterial="Episode1MaterialAlpha" />
+				<Translation x="-162.433" y="33.269" z="261.819" />
+			</SceneObject>
+			<SceneObject name="CandieForegroundRight1">
+				<Interactable upTimeline="Donut_splash" />
+				<Model filename="shared/diorama/diorama01/episode01/models/props/candies_foreground_right.ffm" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Material parentMaterial="Episode1MaterialAlpha" />
+				<Translation x="158.536" y="40.092" z="260.528" />
+			</SceneObject>
+			<SceneObject name="Tree">
+				<Model filename="shared/diorama/diorama01/episode02/models/trees/tree_one.ffm" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Material parentMaterial="Episode2MaterialAlpha" />
+				<Translation x="-548" y="0" z="-152.400" />
+				<Scale x="0.800" y="0.800" z="0.800" />
+			</SceneObject>
+			<SceneObject name="Tree">
+				<Interactable upEffect="diorama_tree" />
+				<Model filename="shared/diorama/diorama01/episode01/models/props/tree_big.ffm" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Material parentMaterial="Episode2MaterialAlpha" />
+				<Translation x="-436.809" y="0" z="0" />
+				<Scale x="0.900" y="0.900" z="-0.900" />
+			</SceneObject>
+			<SceneObject name="TreeDistant">
+				<Model filename="shared/diorama/diorama01/episode01/models/props/tree_big.ffm" />
+				<Material parentMaterial="Episode2MaterialAlpha" />
+				<Translation x="-755" y="-60" z="-60" />
+				<Rotation x="0" y="0" z="-25" />
+				<Scale x="0.980" y="0.980" z="-0.980" />
+			</SceneObject>
+			<SceneObject name="Fence_Group">
+				<Import filename="shared/diorama/diorama01/episode01/scenes/episode01_levelpins.xml" />
+				<SceneObject name="Fence_lower">
+					<Model filename="shared/diorama/diorama01/episode01/models/props/fence_lower.ffm" />
+					<Material parentMaterial="Episode1Material" />
+					<Translation x="-386.654" y="49.153" z="245.468" />
+				</SceneObject>
+				<SceneObject name="Fence_upper">
+					<Model filename="shared/diorama/diorama01/episode01/models/props/fence_upper.ffm" />
+					<Material parentMaterial="Episode1Material" />
+					<Translation x="-395.928" y="49.092" z="-56.429" />
+				</SceneObject>
+				<SceneObject name="waterfall">
+					<Model filename="shared/diorama/diorama01/episode01/models/props/waterfall.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha" />
+					<Translation x="540.336" y="25.469" z="-348.799" />
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="0.800" z="1" />
+				</SceneObject>
+				<SceneObject name="Bridge_new">
+					<Model filename="shared/diorama/diorama01/episode01/models/props/bridge_new.ffm" />
+					<Material parentMaterial="Episode1Material" />
+					<Translation x="472.205" y="44.114" z="81.508" />
+					<Rotation y="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<!--<SceneObject name="Cloud_Right">
+					<Interactable upEffect="Ep01Cloud"/>
+													<Model filename="shared/diorama/diorama01/episode03/models/clouds/cloud02.ffm"/>
+												<Animations>
+						<Animation animationData="cloud_idle" name="Idle" play="true" speed="0.4" layer="1" startTime="0.2" loopCount="-1"/>
+						<Animation animationData="cloud_foldup" name="Foldup" play="false" loopCount="0"/>
+						<Animation animationData="interactable_v03_up" name="Up" layer="3" play="false" loopCount="0" speed="1.0"/>
+						<Animation animationData="interactable_v03_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.0"/>
+						<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.0"/>
+						<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.0"/>
+					</Animations>
+					<Materials>
+						<Material parentMaterial="Episode3MaterialAlpha"/>
+					</Materials>
+													<Translation x="300" y="260" z="-341"/>
+						<Rotation x="0.000" y="0.000" z="5.018"/>
+						<Scale x="1" y="1" z="1"/>
+											</SceneObject>
+
+				<SceneObject name="Cloud_Left">
+					<Interactable upEffect="Ep01Cloud"/>
+													<Model filename="shared/diorama/diorama01/episode03/models/clouds/cloud01.ffm"/>
+												<Animations>
+						<Animation animationData="cloud_idle" name="Idle" play="true" speed="0.3" layer="1" startTime="0.2" loopCount="-1"/>
+						<Animation animationData="cloud_foldup" name="Foldup" play="false" loopCount="0"/>
+						<Animation animationData="interactable_v03_up" name="Up" layer="3" play="false" loopCount="0" speed="1.0"/>
+						<Animation animationData="interactable_v03_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.0"/>
+						<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.0"/>
+						<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.0"/>
+					</Animations>
+					<Materials>
+						<Material parentMaterial="Episode3MaterialAlpha"/>
+					</Materials>
+													<Translation x="-45" y="275" z="-345"/>
+						<Rotation x="0.000" y="0.000" z="0.000"/>
+						<Scale x="0.7" y="0.7" z="0.7"/>
+											</SceneObject>-->
+				<SceneObject name="Godray_1">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="100" g="60" b="0" a="255" />
+					</Material>
+					<!-- Generated from Maya -->
+					<Translation x="1150" y="466" z="-19.689" />
+					<Rotation x="0" y="0" z="-21.584" />
+					<Scale x="0.800" y="3" z="1" />
+				</SceneObject>
+				<SceneObject name="Godray_2">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="80" g="50" b="2" a="255" />
+					</Material>
+					<!-- Generated from Maya -->
+					<Translation x="680" y="362.981" z="-34" />
+					<Rotation x="0" y="0" z="-21" />
+					<Scale x="1" y="2.500" z="1" />
+				</SceneObject>
+				<SceneObject name="Godray_3">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="60" g="40" b="2" a="255" />
+					</Material>
+					<Translation x="740" y="371.382" z="-7.860" />
+					<Rotation x="0" y="0" z="-21.584" />
+					<Scale x="0.497" y="2" z="1" />
+				</SceneObject>
+				<SceneObject name="Godray_4">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="80" g="50" b="2" a="255" />
+					</Material>
+					<Translation x="780" y="293.448" z="20" />
+					<Rotation x="0" y="0" z="-21.584" />
+					<Scale x="1.058" y="2" z="1" />
+				</SceneObject>
+				<SceneObject name="Godray_5">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="80" g="50" b="2" a="255" />
+					</Material>
+					<Translation x="890" y="311.434" z="-31.442" />
+					<Rotation x="0" y="0" z="-21.584" />
+					<Scale x="1" y="2" z="1" />
+				</SceneObject>
+				<SceneObject name="Godray_6">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="80" g="50" b="2" a="255" />
+					</Material>
+					<Translation x="950" y="311.434" z="20" />
+					<Rotation x="0" y="0" z="-21" />
+					<Scale x="0.700" y="1.800" z="1" />
+				</SceneObject>
+				<SceneObject name="Godray_7">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="50" g="30" b="0" a="255" />
+					</Material>
+					<!-- Generated from Maya -->
+					<Translation x="81.513" y="462.592" z="-19.689" />
+					<Rotation x="0" y="0" z="-21.584" />
+					<Scale x="0.497" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="Godray_8">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="60" g="40" b="0" a="255" />
+					</Material>
+					<Translation x="113" y="382.317" z="-34" />
+					<Rotation x="0" y="0" z="-21" />
+					<Scale x="1.478" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="Godray_9">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="35" g="20" b="0" a="255" />
+					</Material>
+					<Translation x="161.413" y="371.382" z="-7.860" />
+					<Rotation x="0" y="0" z="-21.584" />
+					<Scale x="0.497" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="Godray_10">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="50" g="30" b="0" a="255" />
+					</Material>
+					<Translation x="216" y="370.670" z="-7.920" />
+					<Rotation x="0" y="0" z="-21.584" />
+					<Scale x="1.058" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="Godray_11">
+					<Model filename="shared/diorama/diorama01/episode01/models/godray.ffm" />
+					<Material parentMaterial="Episode1MaterialAlpha">
+						<Blend enabled="true" blendFuncDestinationFactor="One" />
+						<Color r="50" g="30" b="2" a="255" />
+					</Material>
+					<Translation x="306.351" y="446.382" z="-7.860" />
+					<Rotation x="0" y="0" z="-21.584" />
+					<Scale x="0.497" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

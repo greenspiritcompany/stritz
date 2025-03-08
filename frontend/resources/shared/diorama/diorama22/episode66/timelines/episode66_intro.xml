@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Triggers>
+
+      <!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+      <EffectTrigger name="character_ep66" time="0.0"/>
+      
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp66.0"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp66" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp66" animationName="SpeechBubbleDisappear"/>
+			<AnimationTrigger time="1.0" targetName="CharacterEp66" animationName="FastIdle" crossFade="0.1"/>
+			<AnimationTrigger time="3.0" targetName="CharacterEp66" animationName="Idle" crossFade="0.6"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

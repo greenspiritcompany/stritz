@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE ParticleEffect SYSTEM "../../dtd/particle_effect.dtd">
+<ParticleEffect space="Local" timeToEmit="0.02" maxParticles="1" name="CreateSpecialShakeGold">
+	<DirectionalForce x="0.0" y="0.0"/>
+
+	<Emitter emissionRate="0.0" angle="0" spread="360.0">
+		<SpawnArea width="10.0" height="-10.0"/>
+	</Emitter>
+
+	<Velocity min="0.0" max="0.0"/>
+	<Size>
+		<Min x="40.0" y="40.0"/>
+		<Max x="100" y="100.0"/>
+	</Size>
+	<TimeToLive min="0.2" max="0.3"/>
+	<Dampening min="0.0" max="0.0"/>
+	<Rotation min="-180" max="180"/>
+	<RotationSpeed min="10" max="50"/>
+	<SizeChange>
+		<Min x="0.0" y="0.0"/>
+		<Max x="50.0" y="50.0"/>
+	</SizeChange>
+	<StartColor r="255.0" g="255.0" b="255.0" a="200.0"/>
+	<EndColor r="255.0" g="70.0" b="0.0" a="0.0"/>
+	<Texture blend="Add" filename="shared/bootstrap/particles/tex/strong_light.png" numFramesX="1" numFramesY="1"/>
+	<TextureFrame numTextureAnimationFrames="1" startFrame="0" textureAnimationSpeed="10"/>
+</ParticleEffect>

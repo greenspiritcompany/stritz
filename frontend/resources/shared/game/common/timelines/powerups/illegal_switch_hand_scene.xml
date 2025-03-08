@@ -1,0 +1,17 @@
+<!DOCTYPE Scene SYSTEM '../../../../../dtd/scene.dtd'>
+<Scene>
+	<Import filename="shared/game/common/materials/illegal_switch_hand_material.xml"/>
+	<SceneObject layerFlags="512" name="Scene">
+		<Translation z="500"/>
+		<SceneObject name="IllegalSwitchHand">
+			<Model filename="shared/game/common/models/boosters/illegal_switch_hand/illegal_switch_hand.ffm" skinNormals="true">
+				<Animation speed="1" filename="shared/game/common/models/boosters/illegal_switch_hand/illegal_switch_anim.ffa" loopCount="0" name="Grab"/>
+				<Animation speed="1" filename="shared/game/common/models/boosters/illegal_switch_hand/illegal_switch_idle.ffa" loopCount="-1" play="true" name="Idle"/>
+			</Model>
+			<Material parentMaterial="IllegalSwitchHandMaterial"/>
+
+			<Translation z="0" x="5.127" y="0"/>
+			<Rotation z="180" x="109" y="1"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

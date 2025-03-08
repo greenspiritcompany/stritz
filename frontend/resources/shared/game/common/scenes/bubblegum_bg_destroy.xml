@@ -1,0 +1,16 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.5">
+		<Animate target="BubblegumBg">
+			<Hide/>
+		</Animate>
+		<Animate target="BubblegumCrush">
+			<Show/>
+		</Animate>
+		<Triggers>
+			<EffectTrigger time="0.0" name="BubblegumDeathEFQ"/>
+			<AnimationTrigger targetName="BubblegumBg" animationName="Die"/>
+			<AnimationTrigger time="0.0" targetName="BubblegumCrush" animationName="Break"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

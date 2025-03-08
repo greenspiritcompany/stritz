@@ -1,0 +1,13 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+    
+    <Animate target="character_kimmy_squid" time="0.0">
+      <Hide/>
+    </Animate>
+
+		<Triggers>
+			<EffectTrigger name="PortalHintSparkle" parentName="PortalParticleRef_next" time="0.01"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

@@ -1,0 +1,13 @@
+<TimelineFiles>
+    <Timeline name="StartCastle" timeline="shared/castle/timelines/start.xml"/>
+    <Timeline name="IntroPeasant" timeline="shared/castle/timelines/intro_peasant.xml"/>
+    <Timeline name="IntroRegent" timeline="shared/castle/timelines/intro_regent.xml"/>
+    <Timeline name="IntroPending" timeline="shared/castle/timelines/intro_pending.xml"/>
+    <Timeline name="EnthronedCelebration" timeline="shared/castle/timelines/enthroned_celebration.xml"/>
+
+	<Timeline name="GlowingHeart" timeline="shared/diorama/common/timelines/glowing_heart.xml"
+		     scene="shared/diorama/common/timelines/glowing_heart_scene.xml"/>
+
+	<Timeline name="UnlockLevel" timeline="shared/game/common/timelines/unlock_level.xml"
+			  scene="shared/game/common/timelines/unlock_level_scene.xml"/>
+</TimelineFiles>

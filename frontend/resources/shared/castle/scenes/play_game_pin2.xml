@@ -1,0 +1,51 @@
+<!DOCTYPE Scene SYSTEM '../../dtd/scene.dtd'>
+<Scene>
+	<SceneObject visibility="inherit" name="GreyButton">
+		<Scale x="2" y="2"/>
+		<Sprite vertexColors="false" filename="shared/castle/tex/pin_blue_2.png"/>
+		<SceneObject editorEntityId="84" name="Text">
+			<Scale x="0.800" y="0.800"/>
+			<Text font="LevelPinNumbersInactive" alignment="center" verticalAlignment="center">
+				<TextString>2</TextString>
+			</Text>
+			<Translation z="0" x="32.347" y="46.867"/>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject visibility="inherit" name="GoldButton">
+		<Scale x="2" y="2"/>
+		<Sprite vertexColors="false" filename="shared/castle/tex/pin_pink_2.png"/>
+		<SceneObject editorEntityId="84" name="Text">
+			<Scale x="0.800" y="0.800"/>
+			<Text font="LevelPinNumbers" alignment="center" verticalAlignment="center">
+				<TextString>2</TextString>
+			</Text>
+			<Translation z="0" x="32.347" y="46.867"/>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="PinkButton">
+		<Scale x="2" y="2"/>
+		<Sprite vertexColors="false" filename="shared/castle/tex/pin_pink_2.png"/>
+		<SceneObject editorEntityId="84" name="Text">
+			<Scale x="0.800" y="0.800"/>
+			<Text font="LevelPinNumbers" alignment="center" verticalAlignment="center">
+				<TextString>2</TextString>
+			</Text>
+			<Translation z="0" x="32.347" y="46.867"/>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject visibility="never" name="Check">
+		<Animation loopCount="0" animationData="OnAppearGrow" startDelay="0.050" name="OnAppear"/>
+		<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/check_blue.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation z="0" x="128.607" y="113.807"/>
+	</SceneObject>
+	<SceneObject visibility="never" name="Cross">
+		<Animation loopCount="0" animationData="OnAppearGrow" startDelay="0.050" name="OnAppear"/>
+		<Scale z="1" x="0.835" y="0.835"/>
+		<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/cross.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation z="0" x="134.345" y="110.633"/>
+	</SceneObject>
+</Scene>

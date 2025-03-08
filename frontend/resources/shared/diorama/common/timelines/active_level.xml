@@ -1,0 +1,28 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="4.5">
+		<!--Animate target="ParticleTranslation">
+			<Rotation time="0.0" z="0"/>
+			<Rotation time="1.0" z="180"/>
+			<Rotation time="2.0" z="360"/>
+		</Animate-->
+		<Animate target="Button">
+			<Scale time="0.0" x="1" y="1" z="1"/>
+			<Scale time="0.5" x="1.03" y="1.03" z="1.03"/>
+			<Scale time="1.5" x="0.98" y="0.98" z="0.98"/>
+			<Scale time="2.0" x="1" y="1" z="1"/>
+		</Animate>
+		<Triggers>
+			<EffectTrigger name="ActiveLevel" time="0.01">
+				<Offset x="0" z="15" y="-8"/>
+			</EffectTrigger>
+			<EffectTrigger name="ActiveLevelRing" time="0.01">
+				<Offset x="0" z="3.4" y="-5"/>
+			</EffectTrigger>
+			<!--EffectTrigger targetName="ParticleTranslationOffset" name="ActiveLevelRing" time="0.01"><Offset z="17" y="-12"/></EffectTrigger-->
+		</Triggers>
+		<TimeControls>
+			<TimeJump time="2.0" jumpToTime="0.0"/>
+		</TimeControls>
+	</Timeline>
+</Timelines>

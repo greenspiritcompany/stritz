@@ -1,0 +1,79 @@
+<Timelines>
+<Timeline startTime="0" endTime="5">
+	<Animate time="0" target="memory_feature">
+		<Show time="0" />
+	</Animate>
+	<Animate time="0" target="Info_box">
+		<Show time="0" />
+	</Animate>
+
+	<Animate time="0" target="memories_button_ref">
+		<Hide time="0" />
+		<Show time="3.5" />
+
+		<Scale time="3.600" x="2.1" y="2.1" z="2.1" />
+		<Scale time="4.000" x="1.313" y="1.313" z="1.313" />
+		<Scale time="4.300" x="2.1" y="2.1" z="2.1" />
+		<Scale time="4.700" x="1.313" y="1.313" z="1.313" />
+
+		<Color time="4.65" r="255" g="255" b="255" a="255" />
+		<Color time="4.75" r="255" g="255" b="255" a="0" />
+
+		<Hide time="5.0" />
+	</Animate>
+
+	<Animate time="0" target="effects_grp_center">
+		<Show time="0" />
+		<Scale time="0" x="0" y="0" z="0" />
+		<Scale time="0.500" x="1" y="1" z="1" />
+		<Scale time="3.035" x="1" y="1" z="1" />
+		<Scale time="3.423" x="0" y="0" z="0" />
+	</Animate>
+	<Animate time="0" target="piece_base_shadow_grp">
+		<Show time="0" />
+		<Scale time="0" x="0" y="0" z="0" />
+		<Scale time="0.500" x="1" y="1" z="1" />
+		<Scale time="3.054" x="1" y="1" z="1" />
+		<Scale time="3.068" x="1" y="1" z="1" />
+		<Scale time="3.418" x="0" y="0" z="0" />
+		<Scale time="3.424" x="0" y="0" z="0" />
+	</Animate>
+	<Animate time="2" target="memory_piece_win">
+		<Show time="0" />
+		<Scale time="1.355" x="1" y="1" z="1" />
+		<Scale time="1.358" x="1" y="1" z="1" />
+		<Scale time="1.576" x="0" y="0" z="0" />
+		<Scale time="1.595" x="0" y="0" z="0" />
+	</Animate>
+	<Animate time="3.800" target="memory_feature">
+		<hide />
+	</Animate>
+	<Animate time="3.500" target="Info_box">
+		<hide />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="0" animationName="appear" crossFade="0" targetName="Info_box" />
+		<AnimationTrigger time="0" animationName="memory_win_piece_intro_animation" crossFade="0" targetName="piece_question_mark" />
+		<AnimationTrigger time="0" animationName="memory_win_piece_intro_animation" crossFade="0" targetName="piece_base" />
+		<AnimationTrigger time="0" animationName="OnAppear" crossFade="0" targetName="postGameModalBase" />
+		<AnimationTrigger time="2" animationName="exit" crossFade="0" targetName="Info_box" />
+		<AnimationTrigger time="2.500" animationName="memoriesCurveAnimation" crossFade="0" targetName="memory_feature" />
+		<AnimationTrigger time="3.600" animationName="memory_win_piece_outro_animation" crossFade="0" targetName="piece_question_mark" />
+		<AnimationTrigger time="3.600" animationName="" crossFade="0" targetName="piece_base" />
+		<AnimationTrigger time="3.600" animationName="" crossFade="0" targetName="piece_base" />
+		<AnimationTrigger time="3.600" animationName="memory_win_piece_outro_animation" crossFade="0" targetName="piece_base" />
+		<EffectTrigger time="0.416" name="MemoriesWinGlitterEFQ" parentName="" targetName="piece_base" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="10" y="-60" z="10" />
+		</EffectTrigger>
+		<EffectTrigger time="0.508" name="MemoriesWinFireworksEFQ" parentName="" targetName="piece_base" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="10" y="-60" z="10" />
+		</EffectTrigger>
+		<EffectTrigger time="3.498" name="MemoriesIconEFQ" targetName="piece_base" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="15" y="25" z="10" />
+		</EffectTrigger>
+		<CustomTrigger time="0" name="AmbientTrigger" data="{&quot;AmbientTarget&quot;:0.25, &quot;Duration&quot;:0.5}" />
+		<CustomTrigger time="2.500" name="StartTranslation" data="{&quot;TweenFunction&quot;:&quot;Cubic&quot;, &quot;Duration&quot;:1.0}" />
+		<CustomTrigger time="3.200" name="AmbientTrigger" data="{&quot;AmbientTarget&quot;:1, &quot;Duration&quot;:0.2}" />
+	</Triggers>
+</Timeline>
+</Timelines>

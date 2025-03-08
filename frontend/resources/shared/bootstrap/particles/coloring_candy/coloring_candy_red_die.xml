@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="24" space="Local" timeToEmit="0.150" name="ColoringCandyRedDiePFX">
+    <Dampening max="0.750" min="0.600"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.002" spread="360" angle="0">
+        <SpawnArea width="30" depth="0" height="30"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="50"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="45" y="45"/>
+        <Min x="15" y="15"/>
+    </Size>
+    <SizeChange>
+        <Max x="-30" y="-30"/>
+        <Min x="-30" y="-30"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/coloring_red_blob64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.420" min="0.420"/>
+    <Velocity max="910" min="680"/>
+</ParticleEffect>

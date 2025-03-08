@@ -1,0 +1,40 @@
+{
+  "id": "lovingcyan",
+  "nameKey" : "quests.names.lovingcyan",
+  "difficulty" : 1,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.likingcyan",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_candy_cyan.png",
+      "data": {
+		"amount" : 4000,
+        "color": "cyan"
+      }
+    }
+  ],
+   "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

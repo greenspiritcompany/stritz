@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="12" space="World" timeToEmit="2.500" name="PregameBoosterDoubleFishGlitterPFX">
+<Dampening max="1" min="1" />
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0.030" spread="360" angle="-100.800">
+	<SpawnArea width="35" depth="0" height="35" />
+</Emitter>
+<EndColor r="255" g="231" b="188" a="0" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="360" min="360" />
+<Size>
+	<Max x="40" y="40" />
+	<Min x="30" y="30" />
+</Size>
+<SizeChange>
+	<Max x="-27" y="-27" />
+	<Min x="-36" y="-36" />
+</SizeChange>
+<StartColor r="255" g="236" b="222" a="255" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="0.400" min="0.400" />
+<Velocity max="50" min="50" />
+</ParticleEffect>

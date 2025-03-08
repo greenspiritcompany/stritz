@@ -1,0 +1,132 @@
+<!-- Generated from script \render01\project\CandyCrush2\scripts\generate_victory_files\make_victory_files.py -->
+<Scene>
+	<Material name="SodaMat">
+		<Texture filename="shared/game/common/tex/candy/lemonade_v2.png"/>
+		<Blend enabled="true"/>
+		<Color r="255" g="255" b="255" a="230"/>
+	</Material>
+	<Material name="KimmyExtraHappyMat">
+		<Texture filename="shared/game/common/tex/hud/kimmy_extrahappy_uv.png"/>
+		<Blend enabled="true"/>
+		<Cull enabled="false" face="back"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+
+	<SceneObject layerFlags="256" name="Scene" visibility="always">
+		<SceneObject name="SodaLayout">
+			<SceneObject name="TransformationHelper">
+				<Translation x="0" y="0" z="400"/>
+				<Scale y="-1"/>
+				<SceneObject name="Soda">
+					<Model filename="shared/game/common/models/soda_swipe/soda.ffm">
+						<Animation filename="shared/game/common/models/soda_swipe/empty.ffa" interpolateFrame="true" loopCount="0" name="EmptyOut" play="false" speed="1.4"/>
+						<Animation filename="shared/game/common/models/soda_swipe/fill.ffa" interpolateFrame="true" loopCount="0" name="FillUp" play="false" speed="1"/>
+					</Model>
+					<Material parentMaterial="SodaMat"/>
+				</SceneObject>
+			</SceneObject>
+
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="50.0"/>
+					<Y percentage="50.0"/>
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Size forceUniform="false">
+					<OriginalSize height="768" width="1024"/>
+					<Width percentage="100"/>
+					<Height percentage="100"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Size forceUniform="false">
+					<OriginalSize height="768" width="1024"/>
+					<Width percentage="100"/>
+					<Height percentage="100"/>
+				</Size>
+			</LayoutConfiguration>
+
+		</SceneObject>
+		<SceneObject name="SwipeRoot">
+			<Translation x="0" y="0" z="491"/>
+			<Animation animationData="SlideInFromBelow" loopCount="0" name="OnWinAppear"/>
+			<Animation animationData="SlideOutToTop" loopCount="0" name="OnWinDisappear"/>
+			<Animation animationData="SlideInFromTop" loopCount="0" name="OnLoseAppear"/>
+			<Animation animationData="SlideOutToBelow" loopCount="0" name="OnLoseDisappear"/>
+			<SceneObject name="KimmyExtraHappy">
+				<Translation x="-12.6032" y="-198.372" z="50"/>
+				<Scale x="0.724488" y="-0.724488" z="1"/>
+				<Model filename="shared/game/common/models/kimmy/kimmy_extra_happy.ffm">
+					<Animation filename="shared/game/common/models/kimmy/kimmy_extra_happy_idle.ffa" name="Idle" play="true" speed="1"/>
+				</Model>
+				<Material parentMaterial="KimmyExtraHappyMat"/>
+			</SceneObject>
+			<SceneObject name="BgTop">
+				<Translation y="67.41" z="1"/>
+				<Sprite filename="shared/game/common/tex/hud/instruction_swipe_top.png">
+					<Flip u="true"/>
+					<Pivot anchor="bottom" y="150"/>
+				</Sprite>
+			</SceneObject>
+			
+			<SceneObject name="Background">
+				<Animation animationData="SlideToRightData" loopCount="-1" name="SlideToRight" play="true"/>
+				<SceneObject __editorVisibility="true" __visibility="0" name="BgMiddle">
+					<Translation x="0.0073843" y="736.96"/>
+					<Scale x="127.981" y="5.49307"/>
+					<Sprite filename="shared/game/common/tex/hud/swipe_bg.png">
+						<Pivot anchor="top" y="150"/>
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="top">
+					<Translation x="0" y="40" z="0"/>
+					<Sprite filename="shared/game/common/tex/hud/floatingbear_swipe_top.png" wrap="repeat">
+						<Pivot anchor="top" y="190"/>
+						<Rectangle maxX="2048" maxY="64" minX="0" minY="0"/>
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="bottom">
+					<Translation x="0" y="314" z="0"/>
+					<Sprite filename="shared/game/common/tex/hud/floatingbear_swipe_bottom.png" wrap="repeat">
+						<Pivot anchor="bottom" y="190"/>
+						<Rectangle maxX="2048" maxY="128" minX="0" minY="0"/>
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="TitleText">
+				<Translation x="-2.68805" y="-23.6672" z="1"/>
+				<Text alignment="center" font="Banana" key="game_end_reason.FloatingNutsMode.win.content" maxHeight="100" maxWidth="600" overflowBehaviour="fit" verticalAlignment="center">
+					<Color r="162" g="1" b="115" a="255" />
+					<Shadow enabled="true">
+						<Color r="255" g="255" b="255" a="255"/>
+					</Shadow>
+					<Size x="42" y="42"/>
+				</Text>
+			</SceneObject>
+
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="50.0"/>
+					<Y percentage="55.0"/>
+				</Translation>
+				<Size>
+					<Height percentage="25"/>
+					<Width percentage="60"/>
+					<OriginalSize width="512" height="256"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="50.0"/>
+					<Y percentage="62.0"/>
+				</Translation>
+				<Size>
+					<Height percentage="31"/>
+					<OriginalSize width="1024" height="256"/>
+				</Size>
+			</LayoutConfiguration>
+
+		</SceneObject>
+	</SceneObject>
+</Scene>

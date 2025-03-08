@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<Material name="ChocolateInHudMaterial">
+		<Texture filename="shared/game/common/tex/hud/chocolate_in_hud.png" />
+		<Blend blendFuncSourceFactor="One" enabled="true" />
+		<Depth enabled="true" />
+	</Material>
+	<SceneObject __visibility="0" name="LandscapeChocolateStats">
+		<!--<Sprite filename="shared/game/common/tex/hud/task_box.png">-->
+		<!--<Pivot anchor="center"/>-->
+		<!--</Sprite>-->
+		<SceneObject name="ChocolateImg">
+			<Translation x="-0.312" y="-33.216" z="10" />
+			<Scale x="0.448" y="-0.448" z="0.380" />
+			<Model filename="shared/game/common/models/chocolate/hud/chocolate_in_hud.ffm">
+				<Animation filename="shared/game/common/models/chocolate/hud/chocolate_in_hud_idle.ffa" loopCount="-1" name="idle" play="true" />
+				<Animation filename="shared/game/common/models/chocolate/hud/chocolate_in_hud_break.ffa" loopCount="-1" name="HudChocolateBreak" play="false" speed="2.500" />
+			</Model>
+			<Material parentMaterial="ChocolateInHudMaterial" />
+			<SceneObject name="ChocolateImgParticle">
+				<Scale x="2" y="2" z="2" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ChocolateText">
+			<Translation x="-6.500" y="34.500" z="20" />
+			<Text alignment="center" font="PinkNumbers" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="18" y="18" />
+				<TextString>0/3</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkLandscapeRoot">
+			<SceneObject name="CheckmarkLandscape" visibility="never">
+				<Translation x="-0.909" y="36" z="3" />
+				<Scale x="0.850" y="0.850" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject __visibility="3" name="PortraitChocolateStats">
+		<!--<Panel filename="shared/game/common/tex/hud/icon_number_frame.png">-->
+		<!--<Insets bottom="26" left="26" right="26" top="26"/>-->
+		<!--<Pivot anchor="center" x="-44"/>-->
+		<!--<Size height="66" width="150"/>-->
+		<!--</Panel>-->
+		<SceneObject name="ChocolateImgPortrait">
+			<Translation x="-9.602" y="-11.004" z="10" />
+			<Scale x="0.425" y="-0.425" z="0.350" />
+			<Model filename="shared/game/common/models/chocolate/hud/chocolate_in_hud.ffm">
+				<Animation filename="shared/game/common/models/chocolate/hud/chocolate_in_hud_idle.ffa" loopCount="-1" name="idle" play="true" />
+				<Animation filename="shared/game/common/models/chocolate/hud/chocolate_in_hud_break.ffa" loopCount="-1" name="HudChocolateBreak" play="false" speed="2.500" />
+			</Model>
+			<Material parentMaterial="ChocolateInHudMaterial" />
+			<SceneObject name="ChocolateImgParticlePortrait">
+				<Scale x="2" y="2" z="2" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ChocolateText">
+			<Translation x="77.071" y="23.072" z="20" />
+			<Text alignment="center" font="PinkNumbers" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="14" y="14" />
+				<TextString>0/1</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkPortraitRoot">
+			<SceneObject name="CheckmarkPortrait" visibility="never">
+				<Translation x="85.791" y="14" z="3" />
+				<Scale x="1.064" y="1.064" z="0.700" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

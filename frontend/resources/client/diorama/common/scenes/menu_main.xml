@@ -1,0 +1,1566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<Material name="SpriteMaterial">
+		<Blend enabled="true" />
+		<Depth enabled="true" writeMask="false" />
+	</Material>
+	<SceneObject name="MainMenu">
+		<Translation x="0" y="0" z="550" />
+		<SceneObject name="VersionText">
+			<Translation z="5" />
+			<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.300" />
+			<Animation animationData="OnDisappearScale" layer="2" loopCount="0" name="OnDisappear" startTime="0.050" />
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="-49" />
+					<Y percentage="47" />
+				</Translation>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject __visibility="0" name="Logo">
+			<Translation x="0" y="0" z="0" />
+			<Sprite filename="client/tex/logo.png" vertexColors="false" mode="sprite">
+				<Pivot anchor="center" />
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.300" />
+			<Animation animationData="OnDisappearScale" layer="2" loopCount="0" name="OnDisappear" startTime="0.150" />
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="-24" />
+					<Y percentage="-16" />
+				</Translation>
+				<Size>
+					<Width percentage="44" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<Y percentage="-28" />
+				</Translation>
+				<Size>
+					<Height percentage="55" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject __visibility="0" class="Button" name="PlayButton">
+			<Scale x="1.300" y="1.300" z="1.300" />
+			<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.300" />
+			<Animation animationData="OnDisappearScale" layer="2" loopCount="0" name="OnDisappear" startTime="0.150" />
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false" mode="panel">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="300" />
+			</Sprite>
+			<SceneObject name="PlayButtonText">
+				<Translation x="0" y="9" z="1" />
+				<Text alignment="center" font="Banana" key="common.play" maxHeight="220" maxWidth="280" overflowBehaviour="fit">
+					<Color r="255" g="255" b="255" a="225" />
+					<Shadow enabled="true">
+						<Color r="0" g="0" b="0" a="25" />
+						<Offset x="0" y="6" />
+					</Shadow>
+					<Size x="26" y="26" />
+				</Text>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="0" />
+					<Y percentage="8.200" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="18" />
+					<Y percentage="-6" />
+				</Translation>
+				<Size>
+					<Height max="130" percentage="22" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject __visibility="0" class="Button" name="ConnectButton">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="300" />
+			</Sprite>
+			<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.300" />
+			<Animation animationData="OnDisappearScale" layer="2" loopCount="0" name="OnDisappear" startTime="0.150" />
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject>
+				<Translation z="1" />
+				<Text alignment="center" font="Banana" key="button.connect" maxHeight="100" maxWidth="164" overflowBehaviour="fit">
+					<Color r="255" g="240" b="240" a="255" />
+					<Pivot x="28" y="5" />
+					<Shadow enabled="true">
+						<Color r="100" g="150" b="208" a="255" />
+					</Shadow>
+					<Size x="20" y="20" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="FbLogo">
+				<Translation x="-80" y="-4" />
+				<Scale x="0.800" y="0.800" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/fb_logo.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="0" />
+					<Y percentage="21" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="18" />
+					<Y percentage="14" />
+				</Translation>
+				<Size>
+					<Height max="105" percentage="18" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject __visibility="0" class="Button" name="LogoutButton">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="300" />
+			</Sprite>
+			<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.300" />
+			<Animation animationData="OnDisappearScale" layer="2" loopCount="0" name="OnDisappear" startTime="0.150" />
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject>
+				<Translation z="1" />
+				<Text alignment="center" font="Banana" key="button.logout" maxHeight="44" maxWidth="170" overflowBehaviour="fit" verticalAlignment="center">
+					<Color r="255" g="240" b="240" a="255" />
+					<Pivot x="33" y="5" />
+					<Shadow enabled="true">
+						<Color r="100" g="150" b="208" a="255" />
+					</Shadow>
+					<Size x="20" y="20" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="FbLogo">
+				<Translation x="-80.520" y="-5.074" />
+				<Scale x="0.800" y="0.800" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/fb_logo.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="0" />
+					<Y percentage="21" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="18" />
+					<Y percentage="14" />
+				</Translation>
+				<Size>
+					<Height max="100" percentage="16" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject __visibility="0" name="DebugButtons">
+			<SceneObject __visibility="0" class="Button" name="StatsButton">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.300" />
+				<Animation animationData="OnDisappearScale" layer="2" loopCount="0" name="OnDisappear" startTime="0.050" />
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="18" y="18" />
+						<TextString>debug</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="BoosterButton">
+				<Translation y="100" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.300" />
+				<Animation animationData="OnDisappearScale" layer="2" loopCount="0" name="OnDisappear" startTime="0.050" />
+				<SceneObject>
+					<Translation z="1" />
+					<Scale z="2" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="18" y="18" />
+						<TextString>boosters</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTestButton">
+				<Translation y="200" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.300" />
+				<Animation animationData="OnDisappearScale" layer="2" loopCount="0" name="OnDisappear" startTime="0.050" />
+				<SceneObject>
+					<Translation z="3" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="18" y="18" />
+						<TextString>ab-flow</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="CandyButton">
+				<Translation y="300" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.300" />
+				<Animation animationData="OnDisappearScale" layer="2" loopCount="0" name="OnDisappear" startTime="0.050" />
+				<SceneObject>
+					<Translation z="2" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="18" y="18" />
+						<TextString>Candy</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="40" />
+					<Y percentage="-43" />
+				</Translation>
+				<Size>
+					<Height percentage="100" />
+					<OriginalSize height="1024" width="768" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject name="ABTestGroup" visibility="never">
+			<Translation x="-440" y="-20" />
+			<SceneObject class="Button" name="ABTest0Button">
+				<Translation x="-110" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>0</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest1Button">
+				<Translation x="-40" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>1</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest2Button">
+				<Translation x="30" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>2</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest3Button">
+				<Translation x="-110" y="70" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>3</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest4Button">
+				<Translation x="-40" y="70" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>4</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest5Button">
+				<Translation x="30" y="70" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>5</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest6Button">
+				<Translation x="-110" y="140" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>6</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest7Button">
+				<Translation x="-40" y="140" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>7</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest8Button">
+				<Translation x="20" y="140" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>8</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest9Button">
+				<Translation x="90" y="140" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>9</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest10Button">
+				<Translation x="160" y="140" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>10</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest11Button">
+				<Translation x="-110" y="210" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>11</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest12Button">
+				<Translation x="-40" y="210" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>12</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest13Button">
+				<Translation x="20" y="210" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>13</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest14Button">
+				<Translation x="90" y="210" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>14</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest15Button">
+				<Translation x="160" y="210" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>15</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest16Button">
+				<Translation x="-110" y="280" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>16</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest17Button">
+				<Translation x="-40" y="280" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>17</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest18Button">
+				<Translation x="20" y="280" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>18</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest19Button">
+				<Translation x="90" y="280" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>19</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest20Button">
+				<Translation x="160" y="280" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>20</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest21Button">
+				<Translation x="-110" y="350" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>21</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest22Button">
+				<Translation x="-40" y="350" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>22</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest23Button">
+				<Translation x="20" y="350" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>23</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest24Button">
+				<Translation x="90" y="350" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>24</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest25Button">
+				<Translation x="160" y="350" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>25</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest26Button">
+				<Translation x="-110" y="420" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>26</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest27Button">
+				<Translation x="-40" y="420" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>27</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ABTest28Button">
+				<Translation x="20" y="420" />
+				<Scale x="0.500" y="0.500" z="0.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="140" />
+				</Sprite>
+				<SceneObject>
+					<Translation z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="255" g="255" b="255" a="255" />
+						<Pivot x="0" y="6" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="255" />
+							<Offset x="2" y="2" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>28</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Size>
+					<Height percentage="100" />
+					<OriginalSize height="1024" width="768" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="-35" />
+					<Y percentage="-45" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="-28" />
+					<Y percentage="-45" />
+				</Translation>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject __visibility="0" name="PushNotifications" class="Button">
+			<Scale x="0.670" y="0.670" z="1" />
+			<SceneObject name="CheckBoxBackground">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/settings_box.png" mode="panel">
+					<Insets top="100" left="100" right="100" bottom="100" />
+					<MiddleTiles countX="2" countY="2" />
+					<Size width="600" />
+				</Sprite>
+				<Translation x="26" y="-26.890" z="0" />
+				<Scale x="0.600" y="0.600" z="1" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="CheckBox">
+				<Translation x="53" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/check_all_box.png" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Scale x="0.500" y="0.500" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="Check">
+				<Translation x="45" y="-14" z="0" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/check_blue.png" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Scale x="0.500" y="0.500" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="PushNotificationsText">
+				<Translation x="90" y="10" z="0" />
+				<Text font="BananaInnerShadow" alignment="left" overflowBehaviour="fit" maxHeight="50" verticalAlignment="visualCenter" maxWidth="520" key="main_menu_push_notifications">
+					<Color r="14" a="255" b="190" g="126" />
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="-35" />
+					<Y percentage="43.500" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<Y percentage="45" />
+					<X percentage="-27" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="-35" />
+					<Y percentage="43.500" />
+				</Translation>
+			</LayoutConfiguration>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+	<SceneObject name="everything_group">
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="100" />
+			</Translation>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Landscape">
+			<Size>
+				<Width percentage="100" />
+				<OriginalSize width="974" height="532" />
+				<Height percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="947" width="595" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+		<SceneObject name="factory" visibility="inherit">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.250" name="Idle" loopCount="-1" />
+			<Animation play="false" animationData="interactable_v01_up" layer="3" speed="1.300" name="Up" loopCount="0" />
+			<Animation play="false" animationData="interactable_v01_up" layer="3" speed="1.300" name="Up2" loopCount="0" />
+			<Animation play="false" animationData="interactable_out" layer="2" speed="1.300" name="Out" loopCount="0" />
+			<Animation play="false" animationData="interactable_down" layer="1" speed="1.300" name="Down" loopCount="0" />
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/factory.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Translation x="-256.692" y="-445.537" z="1" />
+			<Scale x="1.392" y="1.450" z="1" />
+		</SceneObject>
+		<SceneObject name="background_mountain">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/background_mountain.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.400" name="Idle" loopCount="-1" />
+			<Animation play="false" animationData="interactable_v01_up" layer="3" speed="1.300" name="Up" loopCount="0" />
+			<Animation play="false" animationData="interactable_v01_up" layer="3" speed="1.300" name="Up2" loopCount="0" />
+			<Animation play="false" animationData="interactable_out" layer="2" speed="1.300" name="Out" loopCount="0" />
+			<Animation play="false" animationData="interactable_down" layer="1" speed="1.300" name="Down" loopCount="0" />
+			<Translation x="-343.445" y="-391.663" z="0" />
+			<Scale x="1.710" y="1.722" z="1" />
+		</SceneObject>
+		<SceneObject name="cherry_mountain">
+			<Sprite vertexColors="false" mode="sprite">
+				<Pivot anchor="center" />
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/cherry_mountain.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation animationData="Idle" layer="4" speed="0.400" name="Idle" loopCount="-1" play="true" />
+			<Animation play="false" animationData="interactable_down" layer="1" speed="1.300" name="Down" loopCount="0" />
+			<Translation x="205.076" y="-346.046" z="1" />
+			<Scale x="1.443" y="1.452" z="1" />
+		</SceneObject>
+		<SceneObject name="choco_left">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/choco_left.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.200" name="Idle" loopCount="-1" />
+			<Translation x="-514.893" y="-517.926" z="1" />
+			<Scale x="1.455" y="1.496" z="1" />
+		</SceneObject>
+		<SceneObject name="choco_right">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/choco_right.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.100" name="Idle" loopCount="-1" />
+			<Translation x="130.484" y="-458.628" z="1" />
+			<Scale x="1.626" y="1.634" z="1" />
+		</SceneObject>
+		<SceneObject name="hill_back">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/hill_01.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.200" name="Idle" loopCount="-1" />
+			<Translation x="-531.729" y="-257.826" z="1" />
+			<Scale x="1.298" y="1.319" z="1" />
+		</SceneObject>
+		<SceneObject name="hill_front">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/hill_02.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.100" name="Idle" loopCount="-1" />
+			<Translation x="-554.164" y="-195.906" z="2" />
+			<Scale x="1.395" y="1.446" z="1" />
+		</SceneObject>
+		<SceneObject name="candy_pile">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/candy_pile.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.500" name="Idle" loopCount="-1" />
+			<Animation play="false" animationData="interactable_v01_up" layer="3" speed="1.300" name="Up" loopCount="0" />
+			<Animation play="false" animationData="interactable_v01_up" layer="3" speed="1.300" name="Up2" loopCount="0" />
+			<Animation play="false" animationData="interactable_out" layer="2" speed="1.300" name="Out" loopCount="0" />
+			<Animation play="false" animationData="interactable_down" layer="1" speed="1.300" name="Down" loopCount="0" />
+			<Translation x="-444.991" y="-204.499" z="1" />
+			<Scale x="1.043" y="1.035" z="1" />
+		</SceneObject>
+		<SceneObject name="wave_back">
+			<Animation animationData="Idle" layer="4" speed="0.500" name="Idle" loopCount="-1" play="true" direction="backwards" />
+			<Animation play="false" animationData="interactable_v01_up" layer="3" speed="1.300" name="Up" loopCount="0" />
+			<Animation play="false" animationData="interactable_v01_up" layer="3" speed="1.300" name="Up2" loopCount="0" />
+			<Animation play="false" animationData="interactable_out" layer="2" speed="1.300" name="Out" loopCount="0" />
+			<Animation play="false" animationData="interactable_down" layer="1" speed="1.300" name="Down" loopCount="0" />
+			<Translation x="-437.658" y="-47.039" z="2.800" />
+			<Scale x="0.765" y="0.688" z="1" />
+			<SceneObject name="wave9">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="-132.977" y="-44.535" />
+				<Scale x="1.178" y="1.329" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave10">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="68.536" y="-44.535" />
+				<Scale x="1.178" y="1.329" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave11">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="270.050" y="-44.535" />
+				<Scale x="1.178" y="1.329" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave12">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="471.564" y="-44.535" />
+				<Scale x="1.178" y="1.329" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave13">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="1076.105" y="-44.535" />
+				<Scale x="1.178" y="1.329" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave14">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="874.592" y="-44.535" />
+				<Scale x="1.178" y="1.329" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave15">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="673.078" y="-44.535" />
+				<Scale x="1.178" y="1.329" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="wave_front">
+			<Animation animationData="Idle" layer="4" speed="0.600" name="Idle" loopCount="-1" play="true" />
+			<Animation play="false" animationData="interactable_v01_up" layer="3" speed="1.300" name="Up" loopCount="0" />
+			<Animation play="false" animationData="interactable_v01_up" layer="3" speed="1.300" name="Up2" loopCount="0" />
+			<Animation play="false" animationData="interactable_out" layer="2" speed="1.300" name="Out" loopCount="0" />
+			<Animation play="false" animationData="interactable_down" layer="1" speed="1.300" name="Down" loopCount="0" />
+			<Translation x="-609.854" y="-62.253" z="4" />
+			<Scale x="0.984" y="1.051" z="1" />
+			<SceneObject name="wave2">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave3">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="171" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave4">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="342" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave5">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="513" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave6">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="1026" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave8">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="855" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+			<SceneObject name="wave7">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/wave.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Translation x="684" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Scissor>
+					<Bound minX="1" maxX="172" minY="130" maxY="-27" />
+				</Scissor>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject editorEntityId="109" name="kimmy">
+			<Material>
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+				<Texture filename="shared/game/common/tex/start_screen/start_screen_c.png" />
+			</Material>
+			<Spine filename="client/models/kimmy.json">
+				<Animation spineAnimation="animation" play="true" name="idle" />
+			</Spine>
+			<Translation x="-17.167" y="-134.133" z="2.500" />
+			<Scale x="0.481" y="0.481" z="1" />
+			<Rotation x="0" y="0" z="0" />
+		</SceneObject>
+		<SceneObject editorEntityId="109" name="tiffi">
+			<Material>
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+				<Texture filename="shared/game/common/tex/start_screen/start_screen_c.png" />
+			</Material>
+			<Scale x="0.450" y="0.450" z="1" />
+			<Spine filename="client/models/tiffi.json">
+				<Animation spineAnimation="animation" play="true" name="idle" />
+			</Spine>
+			<Translation x="171.193" y="-144.538" z="2.500" />
+			<Rotation x="0" y="0" z="0" />
+		</SceneObject>
+		<SceneObject name="boat">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/boat.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Translation x="-131.411" y="-128.423" z="3" />
+			<Scale x="1.369" y="1.369" z="1" />
+			<Animation animationData="wave02_idle" play="true" speed="0.800" />
+		</SceneObject>
+		<SceneObject name="cyan_bottle">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/cyan_bottle.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.500" name="Idle" loopCount="-1" />
+			<Animation play="true" animationData="wave01_idle" layer="1" speed="0.500" name="Down" />
+			<Translation x="-382.703" y="-137.119" z="3" />
+			<Scale x="0.944" y="0.944" z="1" />
+		</SceneObject>
+		<SceneObject name="green_bottle" editorEntityId="111">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/green_bottle.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.500" name="Idle" loopCount="-1" />
+			<Animation play="true" animationData="wave01_idle" layer="1" speed="0.600" name="Down" />
+			<Translation x="-71.044" y="-87.341" z="3" />
+			<Scale x="0.788" y="0.788" z="1" />
+			<Rotation z="-9" />
+		</SceneObject>
+		<SceneObject name="yellow_bottle" editorEntityId="111">
+			<Sprite vertexColors="false" mode="sprite">
+				<Pivot anchor="bottomRight" />
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/yellow_bottle.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.500" name="Idle" loopCount="-1" />
+			<Animation animationData="wave01_idle" layer="1" speed="0.600" name="Down" play="true" />
+			<Translation x="306.828" y="66.889" z="3" />
+			<Scale x="0.977" y="0.977" z="1" />
+		</SceneObject>
+		<SceneObject name="orange_bottle" editorEntityId="111">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/orange_bottle.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.500" name="Idle" loopCount="-1" />
+			<Animation play="true" animationData="wave02_idle" layer="1" speed="1.300" name="Down" />
+			<Translation x="246.187" y="-109.849" z="2.800" />
+			<Scale x="0.977" y="0.977" z="1" />
+		</SceneObject>
+		<SceneObject name="cloud_left" editorEntityId="111">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/cloud_left.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.680" name="Idle" loopCount="-1" />
+			<Animation animationData="PageInFromLeft" layer="1" speed="0.600" name="Down" loopCount="0" play="true" />
+			<Translation x="-379.997" y="-608.201" z="2.800" />
+			<Scale x="0.976" y="1.021" z="1" />
+		</SceneObject>
+		<SceneObject name="background_gradient" editorEntityId="111">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/background_gradient.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Translation x="-816.161" y="-1337.411" z="-1" />
+			<Scale x="323.268" y="9.162" z="1" />
+		</SceneObject>
+		<SceneObject name="cloud_top_right_layout">
+			<SceneObject name="cloud_top_right" editorEntityId="111">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/cloud_top_right.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Animation play="true" animationData="Idle" layer="4" speed="0.800" name="Idle" loopCount="-1" />
+				<Animation animationData="PageInFromRight" layer="1" speed="0.680" name="Down" loopCount="0" play="true" />
+				<Translation x="142.388" y="-1020.517" z="2.800" />
+				<Scale x="1.470" y="1.475" z="1" />
+			</SceneObject>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<Y percentage="65" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<Y percentage="0" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="0" />
+				</Translation>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject name="cloud_right" editorEntityId="111">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Material>
+				<Texture filename="shared/game/common/tex/start_screen/cloud_right.png" />
+				<Blend enabled="true" />
+				<Depth writeMask="true" />
+			</Material>
+			<Animation play="true" animationData="Idle" layer="4" speed="0.500" name="Idle" loopCount="-1" />
+			<Animation animationData="PageInFromRight" layer="1" speed="0.400" name="Down" loopCount="0" play="true" />
+			<Translation x="191.307" y="-765.449" z="2.800" />
+			<Scale x="0.977" y="0.977" z="1" />
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<SceneObject name="cloud_top_left_layout">
+			<SceneObject name="cloud_top_left" editorEntityId="111">
+				<Sprite vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Material>
+					<Texture filename="shared/game/common/tex/start_screen/cloud_top_right.png" />
+					<Blend enabled="true" />
+					<Depth writeMask="true" />
+				</Material>
+				<Animation play="true" animationData="Idle" layer="4" speed="0.400" name="Idle" loopCount="-1" />
+				<Animation animationData="PageInFromLeft" layer="1" name="Down" loopCount="0" play="true" />
+				<Translation x="-622.768" y="-880.065" z="2.800" />
+				<Scale x="1.426" y="1.442" z="1" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

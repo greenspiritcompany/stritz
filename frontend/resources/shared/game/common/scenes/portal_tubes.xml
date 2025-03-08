@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../tools/scene.dtd">
+
+<Scene>
+
+	<SceneObject name="Straight">
+		<Sprite filename="shared/game/common/tex/portal/portal_tube_straight.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+    <SceneObject name="Bent">
+        <Sprite filename="shared/game/common/tex/portal/portal_tube_bend.png">
+            <Pivot anchor="center"/>
+        </Sprite>
+    </SceneObject>
+    <SceneObject name="BentInner">
+        <Sprite filename="shared/game/common/tex/portal/portal_tube_bend_inner.png">
+            <Pivot anchor="center"/>
+        </Sprite>
+    </SceneObject>
+</Scene>

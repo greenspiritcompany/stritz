@@ -1,0 +1,55 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Animations>
+		<Animation name="BlendAround">
+			<Color time="0" r="80" g="50" b="2" a="200"/>
+			<Color time="2.5" r="80" g="50" b="2" a="50"/>
+			<Color time="5" r="80" g="50" b="2" a="200"/>
+		</Animation>
+		<Animation name="BlendAround_2">
+			<Color time="0" r="40" g="20" b="0" a="200"/>
+			<Color time="2.5" r="40" g="20" b="2" a="50"/>
+			<Color time="5" r="40" g="20" b="2" a="200"/>
+		</Animation>
+	</Animations>
+	<Timeline startTime="0" endTime="10.1">
+
+		<Animate target="Godray_1" time="0.0">
+			<PlayAnimation time="0" name="BlendAround"/>
+		</Animate>
+		<Animate target="Godray_2" time="1.20">
+			<PlayAnimation time="0" name="BlendAround"/>
+		</Animate>
+		<Animate target="Godray_3" time="2.0">
+			<PlayAnimation time="0" name="BlendAround"/>
+		</Animate>
+		<Animate target="Godray_4" time="3.10">
+			<PlayAnimation time="0" name="BlendAround"/>
+		</Animate>
+		<Animate target="Godray_5" time="4.50">
+			<PlayAnimation time="0" name="BlendAround"/>
+		</Animate>
+		<Animate target="Godray_6" time="0.40">
+			<PlayAnimation time="0" name="BlendAround"/>
+		</Animate>
+		<Animate target="Godray_7" time="1.20">
+			<PlayAnimation time="0" name="BlendAround"/>
+		</Animate>
+		<Animate target="Godray_8" time="2.30">
+			<PlayAnimation time="0" name="BlendAround"/>
+		</Animate>
+		<Animate target="Godray_9" time="3.80">
+			<PlayAnimation time="0" name="BlendAround_2"/>
+		</Animate>
+		<Animate target="Godray_10" time="4.60">
+			<PlayAnimation time="0" name="BlendAround_2"/>
+		</Animate>
+		<Animate target="Godray_11" time="0.0">
+			<PlayAnimation time="0" name="BlendAround"/>
+		</Animate>
+
+		<TimeControls>
+			<TimeJump time="10.0" jumpToTime="0.0"/>
+		</TimeControls>
+	</Timeline>
+</Timelines>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Lifebar">
+		<Translation z="199" />
+		<SceneObject name="AttachToMe">
+			<SceneObject name="FrameFull" class="Button">
+				<Animations>
+					<Animation name="OnAppear" animationData="OnAppearGrow" startTime="0.0" loopCount="0" />
+					<Animation name="OnDisappear" animationData="OnDisappearScale" loopCount="0" />
+				</Animations>
+				<Translation x="120" y="55" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/life_status_symbol.png">
+					<Pivot anchor="center" />
+				</Sprite>
+				<SceneObject name="LifeTimer">
+					<Translation x="40" y="-3" />
+					<Text font="Banana" key="24:50" alignment="center" maxHeight="40" maxWidth="90" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="146" g="3" b="124" a="255" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="NumberOfLives">
+					<Translation x="-45" y="-5" />
+					<Text canBreakWords="false" font="Banana" alignment="center" verticalAlignment="visualCenter">
+						<Color r="255" g="255" b="255" a="255" />
+						<Size x="29" y="29" />
+						<TextString>5</TextString>
+					</Text>
+				</SceneObject>
+				<SceneObject name="UnlimitedLifeIcon">
+					<Translation x="-45" y="-6" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/infinity_sign.png">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="GreenDot">
+					<Translation x="-55" y="-13" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/add_lifes_btn.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+					<SceneObject>
+						<Translation x="-13" y="12" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/plus.png">
+							<Pivot anchor="topRight" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="0" />
+			</Translation>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Landscape">
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="1024" width="570" />
+				<Width percentage="80" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

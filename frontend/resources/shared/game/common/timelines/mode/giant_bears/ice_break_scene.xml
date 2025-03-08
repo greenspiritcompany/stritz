@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Scene" visibility="always">
+
+		<SceneObject name="BreakingIce">
+			<Model filename="shared/game/common/models/giant_bear_ice_tile/ice_break.ffm">
+				<Animations>
+					<Animation name="Break" filename="shared/game/common/models/giant_bear_ice_tile/ice_break_anim.ffa"
+							   play="false" loopCount="0"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material>
+					<Textures>
+						<Texture filename="shared/game/common/tex/gamegrid/ice_tile_01_000.png"/>
+					</Textures>
+				</Material>
+			</Materials>
+		</SceneObject>
+
+	</SceneObject>
+</Scene>

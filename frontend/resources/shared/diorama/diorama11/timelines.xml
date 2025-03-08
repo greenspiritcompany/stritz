@@ -1,0 +1,24 @@
+<TimelineFiles>
+	<!-- timelines -->
+    <Timeline name="ball_bubbles" timeline="shared/diorama/diorama11/episode32/timelines/ball_bubbles01.xml" numInstances="0"/>
+    <Timeline name="ball_bubbles02" timeline="shared/diorama/diorama11/episode32/timelines/ball_bubbles02.xml" numInstances="0"/>
+    <Timeline name="ball_bubbles03" timeline="shared/diorama/diorama11/episode32/timelines/ball_bubbles03.xml" numInstances="0"/>
+    <Timeline name="ball_bubbles04" timeline="shared/diorama/diorama11/episode32/timelines/ball_bubbles04.xml" numInstances="0"/>
+    <Timeline name="SoundMachineNotes" timeline="shared/diorama/diorama11/episode33/timelines/sound_machine_note.xml" numInstances="0"/>
+	<!-- cutscenes -->
+    <Timeline name="Episode31Start" timeline="shared/diorama/diorama11/episode31/timelines/episode31_start.xml"/>
+    <Timeline name="Episode31StartPortal" timeline="shared/diorama/diorama11/episode31/timelines/episode31_start_portal.xml"/>
+    <Timeline name="Episode31Intro" timeline="shared/diorama/diorama11/episode31/timelines/episode31_intro.xml"/>
+    <Timeline name="Episode31Outro" timeline="shared/diorama/diorama11/episode31/timelines/episode31_outro.xml"/>
+    <Timeline name="Episode31OutroPortal" timeline="shared/diorama/diorama11/episode31/timelines/episode31_outro_portal.xml"/>
+    <Timeline name="Episode32Start" timeline="shared/diorama/diorama11/episode32/timelines/episode32_start.xml"/>
+    <Timeline name="Episode32StartPortal" timeline="shared/diorama/diorama11/episode32/timelines/episode32_start_portal.xml"/>
+    <Timeline name="Episode32Intro" timeline="shared/diorama/diorama11/episode32/timelines/episode32_intro.xml"/>
+    <Timeline name="Episode32Outro" timeline="shared/diorama/diorama11/episode32/timelines/episode32_outro.xml"/>
+    <Timeline name="Episode32OutroPortal" timeline="shared/diorama/diorama11/episode32/timelines/episode32_outro_portal.xml"/>
+    <Timeline name="Episode33Start" timeline="shared/diorama/diorama11/episode33/timelines/episode33_start.xml"/>
+    <Timeline name="Episode33StartPortal" timeline="shared/diorama/diorama11/episode33/timelines/episode33_start_portal.xml"/>
+    <Timeline name="Episode33Intro" timeline="shared/diorama/diorama11/episode33/timelines/episode33_intro.xml"/>
+    <Timeline name="Episode33Outro" timeline="shared/diorama/diorama11/episode33/timelines/episode33_outro.xml"/>
+    <Timeline name="Episode33OutroPortal" timeline="shared/diorama/diorama11/episode33/timelines/episode33_outro_portal.xml"/>
+</TimelineFiles>

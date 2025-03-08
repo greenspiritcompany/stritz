@@ -1,0 +1,13 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+
+	<Timeline startTime="0.0" endTime="0.7">
+		<Triggers>
+			<EffectTrigger time="0.0" name="Chocolate_removed"/>
+			<AnimationTrigger targetName="Chocolate_Break" animationName="Break_Animation"/>
+			<EffectTrigger name="ChocolateCrush">
+				<Offset z="60"/>
+			</EffectTrigger>
+		</Triggers>
+	</Timeline>
+</Timelines>

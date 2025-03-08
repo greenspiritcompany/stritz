@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Scene" visibility="inherit" layerFlags="128">
+		<SceneObject name="background">
+			<Scale z="3" />
+			<Sprite filename="shared/game/common/tex/candy/polka_base_2tile_bottom.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="first" visibility="never">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="effect">
+				<Translation x="0" y="0" z="5" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Effect name="PolkaPigBurstEFQ" effectData="PolkaPigBurstEFQ" play="true" />
+			</SceneObject>
+			<SceneObject name="glance_first">
+				<Translation x="-25.327" y="-11.661" z="0.200" />
+				<Scale x="0.680" y="0.680" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Sprite vertexColors="false" />
+				<Material name="glance_mat">
+					<Blend blendFuncSourceFactor="One" blendFuncDestinationFactor="OneMinusSrcColor" enabled="true" />
+					<Depth enabled="true" />
+					<Shader program="TextureColorShiny" />
+					<Uniform name="Settings">
+						<DefaultValue y="5" z="2" x="0.900" w="0.800" />
+					</Uniform>
+					<Texture filename="shared/game/common/tex/candy/stripe_bottom_specmap_fiction.png" />
+				</Material>
+			</SceneObject>
+			<SceneObject name="stripe_first">
+				<Translation y="-37" z="0.100" x="1" />
+				<Scale x="0.340" y="0.340" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Spine filename="shared/game/common/models/polka_pig/bottom_stripe.json">
+					<Animation name="stripe_middle_spine" spineAnimation="bottom_stripe_fill_animation" loopCount="0" />
+					<Animation name="stripe_middle_spine_intro" spineAnimation="bottom_stripe_fill_animation_intro" loopCount="0" />
+					<Animation name="stripe_middle_spine_reverse" spineAnimation="bottom_stripe_fill_animation_reverse" loopCount="0" />
+				</Spine>
+				<Material name="stripe_middle_mat">
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Texture filename="shared/game/common/tex/candy/candy_c2_temp.png" />
+				</Material>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="second" visibility="never">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="2" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="glance_second">
+				<Translation x="-25.705" y="-44.005" z="0.200" />
+				<Scale x="0.680" y="0.680" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Sprite vertexColors="false" />
+				<Material name="glance_mat">
+					<Blend blendFuncSourceFactor="One" blendFuncDestinationFactor="OneMinusSrcColor" enabled="true" />
+					<Depth enabled="true" />
+					<Shader program="TextureColorShiny" />
+					<Uniform name="Settings">
+						<DefaultValue y="5" z="2" x="0.900" w="0.800" />
+					</Uniform>
+					<Texture filename="shared/game/common/tex/candy/stripe_mid_specmap_fiction.png" />
+				</Material>
+			</SceneObject>
+			<SceneObject name="stripe_second">
+				<Translation x="2" y="-5.380" z="0.100" />
+				<Scale x="0.340" y="0.340" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Material name="stripe_middle_mat">
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Texture filename="shared/game/common/tex/candy/candy_c2_temp.png" />
+				</Material>
+				<Spine filename="shared/game/common/models/polka_pig/middle_stripe.json">
+					<Animation name="stripe_middle_spine" spineAnimation="middle_stripe_fill_animation_1" loopCount="0" />
+					<Animation name="stripe_middle_spine_intro" spineAnimation="middle_stripe_fill_animation_intro" loopCount="0" />
+					<Animation name="stripe_middle_spine_reverse" spineAnimation="middle_stripe_fill_animation_reverse" loopCount="0" />
+				</Spine>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="burstmode" visibility="never">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="glance_burstmode2">
+				<Translation x="-27.637" y="-45.786" z="0.300" />
+				<Scale x="0.680" y="0.680" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Sprite vertexColors="false" />
+				<Material name="glance_mat">
+					<Blend blendFuncSourceFactor="One" blendFuncDestinationFactor="OneMinusSrcColor" enabled="true" />
+					<Depth enabled="true" />
+					<Shader program="TextureColorShiny" />
+					<Uniform name="Settings">
+						<DefaultValue y="5" x="1" z="0" w="0.600" />
+					</Uniform>
+					<Texture filename="shared/game/common/tex/candy/stripe_full.png" />
+					<Color r="255" g="148" b="17" a="255" />
+				</Material>
+			</SceneObject>
+			<SceneObject name="glance_burstmode1">
+				<Translation x="-26.010" y="-13.711" z="0.300" />
+				<Scale x="0.680" y="0.680" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Sprite vertexColors="false" />
+				<Material name="glance_mat">
+					<Blend blendFuncSourceFactor="One" blendFuncDestinationFactor="OneMinusSrcColor" enabled="true" />
+					<Depth enabled="true" />
+					<Shader program="TextureColorShiny" />
+					<Uniform name="Settings">
+						<DefaultValue y="5" x="1" w="0.600" z="0" />
+					</Uniform>
+					<Texture filename="shared/game/common/tex/candy/stripe_bottom_full.png" />
+					<Color r="255" g="148" b="17" a="255" />
+				</Material>
+			</SceneObject>
+			<SceneObject name="effectburstmode">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="0" z="0.400" />
+				<Effect effectData="CandyCaneBurstModeEFQ" name="PolkaPigBurstEFQ" play="true" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

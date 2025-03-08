@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+
+	<SceneObject name="Scene" visibility="always" layerFlags="256">
+
+		<SceneObject name="jam_icon_smear" visibility="always" layerFlags="256">
+			<Model filename="shared/game/common/models/honey/honey_tile_cracked.ffm">
+				<Animations>
+					<Animation name="jam_icon_smear_animation" speed="1.2"
+							   filename="shared/game/common/models/honey/honey_tile_crack.ffa"
+							   play="true" loopCount="0"/>
+				</Animations>
+			</Model>
+			<Materials>
+                <Material name="Jam1SmearMaterial">
+                    <Blend enabled="false"/>
+                    <Cull enabled="false" face="back"/>
+                    <Shader program="TextureColor"/>
+                    <Textures>
+                        <Texture filename="shared/game/common/tex/candy/jam_1_smear_tex.png"/>
+                    </Textures>
+                </Material>
+			</Materials>
+      <Translation x="0.0" y="-45.0" z="0.0"/>
+			<Scale x="0.08" y="-0.08" z="0.08"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

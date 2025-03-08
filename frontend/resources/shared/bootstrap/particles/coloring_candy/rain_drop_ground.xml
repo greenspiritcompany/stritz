@@ -1,0 +1,23 @@
+<ParticleEffect space="Local" timeToEmit="100" name="Rain_drop_ground" maxParticles="5">
+<Dampening max="0.400" min="0.700" />
+<DirectionalForce x="0" y="0" />
+<Emitter spread="360" angle="0" emissionRate="0">
+	<SpawnArea width="5" depth="0" height="5" />
+</Emitter>
+<EndColor r="57" g="40" b="47" a="100" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="2" min="0" />
+<Size>
+	<Max x="25" y="20" />
+	<Min x="22" y="5" />
+</Size>
+<SizeChange>
+	<Max x="-20" y="-10" />
+	<Min x="-2" y="-2" />
+</SizeChange>
+<StartColor r="77" g="61" b="67" a="255" />
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/coloring_candy_impact_splatter_purple.png" blend="Add" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="70" startFrame="0" />
+<TimeToLive max="0.800" min="0.800" />
+<Velocity max="900" min="200" />
+</ParticleEffect>

@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+  <SceneObject name="Levels2">
+    <!-- Generated from Maya -->
+    <SceneObject name="Level226">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="-573.986" y="84.723" z="8.740"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.869" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.347" y="8.395" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level227">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="-475.062" y="76.537" z="121.482"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.869" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.347" y="8.396" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level228">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="-360.987" y="73.872" z="237.355"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.869" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.346" y="8.395" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level229">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="-292.804" y="72.114" z="117.528"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.346" y="8.396" z="-6.736"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level230">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="-207.832" y="72.114" z="-13.312"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.346" y="8.396" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level231">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="-129.593" y="72.114" z="118.649"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.347" y="8.396" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level232">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="-48.159" y="72.114" z="248.653"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.346" y="8.396" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level233">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="38.009" y="72.114" z="124.742"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.347" y="8.396" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level234">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="118.900" y="72.114" z="-13.590"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.346" y="8.396" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level235">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="196.998" y="72.114" z="125.796"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.346" y="8.396" z="-6.736"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level236">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="284.796" y="72.114" z="248.591"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.347" y="8.396" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level237">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="373.391" y="72.114" z="125.870"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.347" y="8.396" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level238">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="452.929" y="72.114" z="-14.459"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.347" y="8.396" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level239">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="530.324" y="72.114" z="123.799"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.347" y="8.396" z="-6.737"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+    <SceneObject name="Level240">
+      <SceneObjects>
+        <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+      </SceneObjects>
+      <Translation x="689.292" y="71.826" z="127.927"/>
+      <Scale x="1.0" y="-1.0" z="1.0"/>
+      <Rotation x="-20"/>
+      <SceneObject name="Player">
+        <Translation x="61.928" y="5.870" z="3.903"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+      </SceneObject>
+      <SceneObject name="Friends">
+        <Translation x="64.347" y="8.396" z="-6.736"/>
+        <Scale x="0.8" y="0.8" z="0.8"/>
+        <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+      </SceneObject>
+    </SceneObject>
+  </SceneObject>
+</Scene>

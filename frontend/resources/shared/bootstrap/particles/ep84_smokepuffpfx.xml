@@ -1,0 +1,34 @@
+<ParticleEffect maxParticles="2" space="Local" timeToEmit="100" name="ep84_SmokepuffPFX" startDelayRandomOffset="1">
+<CentrifugalForce max="8" min="0" />
+<Dampening max="0.800" min="0.800" />
+<DirectionalForce x="10" y="-10" />
+<Emitter emissionRate="0" spread="10" angle="-90">
+	<EmissionRadius max="20" min="20" />
+	<SpawnArea width="50" depth="0" height="10" />
+</Emitter>
+<Rotation max="200" min="200" />
+<RotationSpeed max="100" min="100" />
+<Size>
+	<Max x="50" y="50" />
+	<Min x="70" y="70" />
+</Size>
+<SizeChange>
+	<Max x="-20" y="-20" />
+	<Min x="-20" y="-20" />
+</SizeChange>
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/strong_light.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0" />
+<TimeToLive max="3" min="1" />
+<Velocity max="100" min="50" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="235" g="255" b="255" a="35" />
+	</Keyframe>
+	<Keyframe lifeTime="0.483">
+		<Color r="211" g="247" b="255" a="7" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="185" g="239" b="255" a="0" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

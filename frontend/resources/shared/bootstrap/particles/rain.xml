@@ -1,0 +1,22 @@
+<ParticleEffect name="Rain" timeToEmit="100" maxParticles="300">
+<TimeToLive max="0.400" min="0.300" />
+<Emitter angle="307" spread="1" emissionRate="0.040">
+	<SpawnArea width="2000" height="3000" depth="400" />
+	<EmissionRadius min="1" max="5" />
+</Emitter>
+<Velocity max="4000" min="2000" />
+<Size>
+	<Min x="30" y="5" />
+	<Max x="50" y="5" />
+</Size>
+<SizeChange>
+	<Min x="20" y="20" />
+	<Max x="20" y="20" />
+</SizeChange>
+<Texture filename="shared/bootstrap/particles/tex/projectile.png" blend="Add" numFramesX="1" numFramesY="1" />
+<StartColor r="201" g="37" b="255" a="255" />
+<EndColor r="255" g="174" b="247" a="255" />
+<Rotation min="1" max="2" />
+<Dampening min="1" max="1" />
+<RotationSpeed min="0" max="0" />
+</ParticleEffect>

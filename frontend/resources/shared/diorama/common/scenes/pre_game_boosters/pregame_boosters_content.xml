@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="UnlockedBoosters">
+		<Translation x="1.467" y="1.600" z="3" />
+		<SceneObject class="Button" name="Booster1">
+			<Animation animationData="Idle" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<Scale x="1.150" y="1.150" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="-155.381" y="134.286" z="0" />
+			<SceneObject name="Icon">
+				<Scale x="0.911" y="0.911" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon_playgame.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="1.204" y="-4" z="0" />
+			</SceneObject>
+			<SceneObject name="Inactive">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/booster_noti_icon.png" vertexColors="false" />
+				<Translation x="9.962" y="-6.627" z="0" />
+				<SceneObject name="Plus">
+					<Text font="Banana">
+						<TextString>+</TextString>
+						<Size x="28" y="28" />
+					</Text>
+					<Translation x="12.252" y="34.373" z="0" />
+				</SceneObject>
+				<SceneObject name="Number">
+					<Text alignment="center" font="Banana" verticalAlignment="visualCenter" maxWidth="32" allowWordWrapping="false" canBreakWords="false" overflowBehaviour="fit" maxHeight="30">
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="23.690" y="23" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Active" visibility="never">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" />
+				<Translation x="9.715" y="-6.399" z="0" />
+				<SceneObject name="Check">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" />
+					<Translation x="11.370" y="12.865" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject class="Button" name="Booster2">
+			<Animation animationData="Idle" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<Scale x="1.150" y="1.150" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="-5.703" y="134.286" z="0" />
+			<SceneObject name="Icon">
+				<Scale x="0.911" y="0.911" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon_playgame.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="1.202" y="-3.100" z="0" />
+			</SceneObject>
+			<SceneObject name="Inactive">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/booster_noti_icon.png" vertexColors="false" />
+				<Translation x="9.962" y="-6.627" z="0" />
+				<SceneObject name="Plus">
+					<Text font="Banana">
+						<TextString>+</TextString>
+						<Size x="28" y="28" />
+					</Text>
+					<Translation x="12.252" y="34.373" z="0" />
+				</SceneObject>
+				<SceneObject name="Number">
+					<Text alignment="center" font="Banana" verticalAlignment="visualCenter" allowWordWrapping="false" canBreakWords="false" overflowBehaviour="fit" maxWidth="32" maxHeight="30">
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="23.690" y="23" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Active" visibility="never">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" />
+				<Translation x="9.715" y="-6.399" z="0" />
+				<SceneObject name="Check">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" />
+					<Translation x="11.370" y="12.865" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject class="Button" name="Booster3">
+			<Animation animationData="Idle" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<Scale x="1.150" y="1.150" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="144.614" y="134.286" z="0" />
+			<SceneObject name="Icon">
+				<Scale x="0.859" y="0.859" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/doublefish_icon_playgame.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="0.438" y="-2.400" z="0" />
+			</SceneObject>
+			<SceneObject name="Inactive">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/booster_noti_icon.png" vertexColors="false" />
+				<Translation x="9.962" y="-6.627" z="0" />
+				<SceneObject name="Plus">
+					<Text font="Banana">
+						<TextString>+</TextString>
+						<Size x="28" y="28" />
+					</Text>
+					<Translation x="12.252" y="34.373" z="0" />
+				</SceneObject>
+				<SceneObject name="Number">
+					<Text alignment="center" font="Banana" verticalAlignment="visualCenter" allowWordWrapping="false" canBreakWords="false" overflowBehaviour="fit" maxWidth="32" maxHeight="30">
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="23.690" y="23" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Active" visibility="never">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" />
+				<Translation x="9.715" y="-6.399" z="0" />
+				<SceneObject name="Check">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" />
+					<Translation x="11.370" y="12.865" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="ParticleHelper3">
+		<Translation x="122.833" y="-100" z="0" />
+	</SceneObject>
+	<SceneObject name="ParticleHelper2" visibility="inherit">
+		<Translation x="-2.723" y="4" z="0" />
+	</SceneObject>
+	<SceneObject name="ParticleHelper1">
+		<Translation x="-128.673" y="4" z="0" />
+	</SceneObject>
+	<SceneObject name="LockedBoosters">
+		<Translation x="1.467" y="1.600" z="3" />
+		<SceneObject name="LockedBooster1">
+			<Scale x="1.150" y="1.150" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false" />
+			<Translation x="-218.844" y="70.710" z="0" />
+			<SceneObject name="Lock">
+				<Scale x="0.435" y="0.435" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/ov_icon_locked.png" vertexColors="false" />
+				<Translation x="30.423" y="20.823" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="LockedBooster2">
+			<Scale x="1.150" y="1.150" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false" />
+			<Translation x="-68.120" y="70.710" z="0" />
+			<SceneObject name="Lock">
+				<Scale x="0.435" y="0.435" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/ov_icon_locked.png" vertexColors="false" />
+				<Translation x="30.423" y="20.823" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="LockedBooster3">
+			<Scale x="1.150" y="1.150" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false" />
+			<Translation x="81.150" y="70.710" z="0" />
+			<SceneObject name="Lock">
+				<Scale x="0.435" y="0.435" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/ov_icon_locked.png" vertexColors="false" />
+				<Translation x="30.423" y="20.823" z="0" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

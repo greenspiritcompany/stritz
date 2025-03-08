@@ -1,0 +1,11 @@
+<!DOCTYPE Timelines SYSTEM "../../../tools/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.5">
+		<Animate target="BlurredTurtle" time="0.0">
+			<Show/>
+			<Translation time="0" x="-200"/>
+			<Translation time="0.2" x="0"/>
+			<Hide time="0.2"/>
+		</Animate>
+	</Timeline>
+</Timelines>

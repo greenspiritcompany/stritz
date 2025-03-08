@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/tutorial_match_three_material.xml" />
+	<Material name="SpriteMaterial">
+		<Blend enabled="true" />
+		<Depth writeMask="false" enabled="false" />
+	</Material>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="LayoutDoubleFish">
+			<SceneObject name="ParticleCtrl">
+				<Scale x="2" y="2" />
+			</SceneObject>
+			<SceneObject name="FishAnimCtrl">
+				<Scale y="-1" />
+				<SceneObject name="RedFish">
+					<Sprite filename="shared/game/common/tex/candy/fish_red_c.png" normals="true">
+						<Pivot anchor="center" />
+					</Sprite>
+					<Animation animationData="PregameBoosterFishSwimLongAnim" name="FishSwimLong" loopCount="0" interpolateFrame="false" />
+					<Material parentMaterial="OrangeCandyMat" />
+					<Rotation z="180" />
+					<Scale x="1.100" y="1.100" z="1.100" />
+				</SceneObject>
+				<SceneObject name="YellowFish">
+					<Sprite filename="shared/game/common/tex/candy/fish_yellow_c.png" normals="true">
+						<Pivot anchor="center" />
+					</Sprite>
+					<Animation animationData="PregameBoosterFishSwimShortAnim" name="FishSwimShort" loopCount="0" interpolateFrame="false" />
+					<Material parentMaterial="OrangeCandyMat" />
+					<Rotation z="180" />
+					<Scale x="1.100" y="1.100" z="1.100" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

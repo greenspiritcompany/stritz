@@ -1,0 +1,714 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+        <!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+		<Material name="Episode25Material">
+			<Cull enabled="false" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama09/episode25/tex/episode25_material.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="Episode25MaterialAlpha" parentMaterial="Episode25Material">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+    
+		<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+		<Material name="Episode25PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat"/>
+			</Textures>
+		</Material>
+		<Material name="Episode25PathMaterialAlpha" parentMaterial="Episode25PathMaterial">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+    
+		<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+		<Material name="Episode25BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama09/episode25/tex/episode25_material.png" wrap="repeat"/>
+			</Textures>
+		</Material>
+		<Material name="Episode25BackdropMaterialAlpha" parentMaterial="Episode25BackdropMaterial">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+	</Materials>
+  
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject name="Episode" layerFlags="2">
+		<SceneObject name="DioramaModel">
+      
+			<!--
+				BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+        FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+      -->
+
+
+			<Translation x="-1500"/>
+
+      <SceneObject name="Episode25_Backdrop">
+        <SceneObject name="Episode25_Diorama_Sky">
+          <Model filename="shared/diorama/diorama09/episode25/models/episode25_diorama_sky.ffm"/>
+          <Materials>
+            <Material parentMaterial="Episode25BackdropMaterial"/>
+          </Materials>
+          <Translation x="0.0" y="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </SceneObject>
+
+          <SceneObject name="Episode25_Diorama_Sky">
+              <Model filename="shared/diorama/diorama09/episode25/models/non_interactable/episode25_space.ffm"/>
+              <Materials>
+                  <Material parentMaterial="Episode25Material"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.5" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode25_Diorama_Sky">
+              <Model filename="shared/diorama/diorama09/episode25/models/left_ground_edge_shadow.ffm">
+                  <Bound minZ="-900"/>
+              </Model>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode25_Diorama_Sky">
+              <Model filename="shared/diorama/diorama09/episode25/models/right_ground_edge_shadow.ffm">
+                  <Bound minZ="-900"/>
+              </Model>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+        <!--
+        EPISODE GROUND GEOMETRY ETC.
+        -->
+        <SceneObject name="Episode25_Ground">
+          <Model filename="shared/diorama/diorama09/episode25/models/episode25_ground.ffm"/>
+          <Materials>
+            <Material parentMaterial="Episode25Material"/>
+          </Materials>
+          <Translation x="0.0" y="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </SceneObject>
+      </SceneObject>
+
+      <!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<SceneObject name="E25Path">
+				<Model filename="shared/diorama/diorama09/episode25/models/path/episode25_path.ffm">
+					<Bound minZ="-700"/>
+				</Model>
+				<Materials>
+					<Material parentMaterial="Episode25PathMaterialAlpha"/>
+				</Materials>
+				<Translation x="0" y="0" z="0"/>
+				<Scale x="1" y="1" z="1"/>
+			</SceneObject>
+      
+      <!--ADD PATH SHADOW - ADD YOUR -->
+
+            <SceneObject name="E25PathShadow">
+              <Model filename="shared/diorama/diorama09/episode25/models/path/path_shadow.ffm">
+                <Bound minZ="-800"/>
+              </Model>
+              <Materials>
+                <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="0" y="0" z="-10"/>
+              <Scale x="1" y="1" z="1"/>
+            </SceneObject>
+
+            <!--ASSET SHADOWS-->
+            <SceneObject name="AssetShadows">
+                <Model filename="shared/diorama/diorama09/episode25/models/asset_shadow.ffm">
+                    <Bound minZ="-1150"/>
+                </Model>
+                <Materials>
+                    <Material parentMaterial="Episode25MaterialAlpha"/>
+                </Materials>
+                <Translation x="0" y="0" z="0"/>
+                <Rotation x="0"/>
+                <Scale x="1" y="1" z="1"/>
+            </SceneObject>
+
+
+
+
+                  <SceneObject name="E25EndSign">
+                      <Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm"/>
+                      <Materials>
+                          <Material parentMaterial="Under_Construction_Icon"/>
+                      </Materials>
+                      <Translation x="860" y="84" z="10"/>
+                      <Rotation x="-35.000" y="0.000" z="0.000"/>
+                      <Scale x="1.000" y="1.000" z="1.000"/>
+                  </SceneObject>
+
+
+            <SceneObject name="diorama_link_previous">
+                <Model filename="shared/diorama/common/models/portal/portal.ffm"/>
+                <Materials>
+                    <Material parentMaterial="PortalMaterial">
+                    </Material>
+                </Materials>
+                <!-- Generated from Maya -->
+                <Translation x="-835" y="135" z="-50"/>
+                <Rotation x="0" y="50" z="0"/>
+                <Scale x="1.000" y="1.000" z="1.000"/>
+            </SceneObject>
+
+            <SceneObject name="diorama_portal_shadow">
+                <Model filename="shared/diorama/common/models/portal/portal_shadow.ffm"/>
+                <Materials>
+                    <Material parentMaterial="PortalMaterial">
+                    </Material>
+                </Materials>
+                <!-- Generated from Maya -->
+                <Translation x="-835" y="135" z="-50"/>
+                <Rotation x="0" y="50" z="0"/>
+                <Scale x="1.000" y="1.000" z="1.000"/>
+            </SceneObject>
+
+            <!--
+				PORTAL
+			-->
+
+            <SceneObject name="diorama_link_previous_pin">
+                <Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+                    <Animations>
+                        <Animation filename="shared/diorama/common/models/portal/pin_idle.ffa"
+                                   name="idlePinEmil" play="true" loopCount="-1" speed="1.0"/>
+                    </Animations>
+                </Model>
+                <Materials>
+                    <Material parentMaterial="PortalMaterial">
+                    </Material>
+                </Materials>
+                <Translation x="-806" y="65" z="-20"/>
+                <Rotation x="4.970" y="34.889" z="1.863"/>
+                <Scale x="1" y="1" z="1"/>
+
+            </SceneObject>
+
+
+     <SceneObject name="episode25_wall">
+                <SceneObject name="episode25_wall">
+                    <Model filename="shared/diorama/diorama09/episode25/models/non_interactable/episode25_wall_alpha.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode25MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0.0" y="0.0" z="-0.00"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+     </SceneObject>
+
+            <SceneObject name="episode25_wall_2">
+                <SceneObject name="episode25_wall">
+                    <Model filename="shared/diorama/diorama09/episode25/models/non_interactable/episode25_wall_no_alpha.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode25Material"/>
+                    </Materials>
+                    <Translation x="0.0" y="0.0" z="-0.00"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode25_puzzle_rays">
+                <SceneObject name="episode25_front_rays">
+                    <Model filename="shared/diorama/diorama09/episode25/models/puzzle_rays_front.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode25MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0.0" y="0.0" z="-0.00"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+
+                <SceneObject name="episode25_back_rays">
+                    <Model filename="shared/diorama/diorama09/episode25/models/puzzle_rays_back.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode25MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0.0" y="0.0" z="-0.00"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode25_woods">
+                <SceneObject name="episode25_wall">
+                    <Model filename="shared/diorama/diorama09/episode25/models/non_interactable/episode25_woods.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode25MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-938.0" y="215.0" z="-540.00"/>
+                    <Rotation x="-15" y="0" z="0"/>
+                    <Scale x="1.0" y="1.0" z="1.0"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode25_puzzlepiece">
+                <SceneObject name="episode25_wall">
+                    <Model filename="shared/diorama/diorama09/episode25/models/non_interactable/episode25_puzzlepiece_loose.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode25Material"/>
+                    </Materials>
+                    <Translation x="884.185" y="110" z="-343.43"/>
+                    <Rotation x="0" y="0" z="-0.0"/>
+                    <Scale x="1.0" y="1.0" z="1.0"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode25_hill">
+                <SceneObject name="episode25_wall">
+                    <Model filename="shared/diorama/diorama09/episode25/models/non_interactable/episode25_hill.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode25MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-554.0" y="126.0" z="-440.00"/>
+                    <Rotation x="-15" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode25_cloud">
+                <SceneObject name="episode25_wall">
+                    <Model filename="shared/diorama/diorama09/episode25/models/non_interactable/episode25_cloud.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode25MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-830.0" y="100.0" z="-870.00"/>
+                    <Rotation x="-15" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="skittles">
+                <SceneObject name="episode25_wall">
+                    <Model filename="shared/diorama/diorama09/episode25/models/non_interactable/episode25_skittles.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode25MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-0.0" y="0.0" z="-0.00"/>
+                    <Rotation x="-0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+
+
+
+            <!--
+                      INTERACTABLE GROUP (CLICKABLE STUFF)
+                  -->
+      <SceneObject name="episode25_Interactable_Group">
+
+
+          <SceneObject name="episode25_carrot">
+              <Interactable upEffect="diorama_lollipop"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_carrot.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.5" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="-945.774" y="-35.537" z="340"/>
+              <Rotation x="-15" y="-0" z="-0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+
+          <SceneObject name="episode25_carrot2">
+              <Interactable upEffect="diorama_lollipop"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_carrot.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.45" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="-963.574" y="-52.537" z="-348"/>
+              <Rotation x="-15" y="-1.50" z="-7.5"/>
+              <Scale x="1.1" y="1.1" z="1.1"/>
+          </SceneObject>
+
+          <SceneObject name="episode25_carrot2">
+              <Interactable upEffect="diorama_lollipop"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_carrot.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.3" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="-1280" y="-52.537" z="-175"/>
+              <Rotation x="-15" y="-1.50" z="-7.5"/>
+              <Scale x="1.35" y="1.35" z="1.35"/>
+          </SceneObject>
+
+
+          <SceneObject name="episode25_carrot3">
+              <Interactable upEffect="diorama_lollipop"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_carrot.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.5" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="-776.574" y="-35.537" z="-268.078"/>
+              <Rotation x="-15" y="0" z="-13"/>
+              <Scale x="1.24" y="1.24" z="1.24"/>
+          </SceneObject>
+
+          <SceneObject name="episode25_hanging_plants">
+              <Interactable upEffect="diorama_tree"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_hanging_grass.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.5" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+
+                  <Animation name="SpeechBubbleAppear" animationData="SpeechBubbleAppear" loopCount="0"/>
+                  <Animation name="SpeechBubbleDisappear" animationData="SpeechBubbleDisappear"
+                             loopCount="0"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="-587.574" y="362.537" z="-408.078"/>
+              <Rotation x="-15" y="0" z="0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="episode25_table">
+              <Interactable upEffect="diorama_house"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_table.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.4" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="-190.574" y="-10" z="440"/>
+              <Rotation x="-35" y="0" z="7"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="episode25_carrot_hanging">
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_carrot_hanging.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.4" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+
+                  <Animation name="SpeechBubbleAppear" animationData="SpeechBubbleAppear" loopCount="0"/>
+                  <Animation name="SpeechBubbleDisappear" animationData="SpeechBubbleDisappear"
+                             loopCount="0"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="-390.574" y="810" z="392.078"/>
+              <Rotation x="-0" y="0" z="0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="episode25_carrot_hanging_2">
+              <Interactable upEffect="diorama_tree"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_carrot_hanging.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.55" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+
+                  <Animation name="SpeechBubbleAppear" animationData="SpeechBubbleAppear" loopCount="0"/>
+                  <Animation name="SpeechBubbleDisappear" animationData="SpeechBubbleDisappear"
+                             loopCount="0"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="-200" y="650" z="29.078"/>
+              <Rotation x="-0" y="0" z="0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+
+          <SceneObject name="episode25_carrot_hanging_3">
+              <Interactable upEffect="diorama_tree"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_carrot_hanging.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.4" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="680" y="490.537" z="-216.78"/>
+              <Rotation x="-0" y="0" z="0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="episode25_carrot_hanging_rainbow">
+              <Interactable upEffect="diorama_tree"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_carrot_hanging_rainbow.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.5" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="294.574" y="724.537" z="177.78"/>
+              <Rotation x="-0" y="0" z="0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="episode25_puzzle_piece">
+              <Interactable upEffect="diorama_lollipop"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_puzzle.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.4" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="383.574" y="-15" z="-154.78"/>
+              <Rotation x="-0" y="0" z="0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="episode25_can">
+              <Interactable upEffect="diorama_tree"/>
+              <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+              <Model filename="shared/diorama/diorama09/episode25/models/interactable/episode25_can.ffm"/>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.2" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode25MaterialAlpha"/>
+              </Materials>
+              <Translation x="525.574" y="720" z="3.78"/>
+              <Rotation x="-0" y="0" z="0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+      </SceneObject>
+      
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+			<SceneObject name="Episode25Character">
+				<Translation x="-25" y="0" z="-135"/>
+				<SceneObject name="CharacterEp25">
+					<Rotation x="-15.000" y="0.000" z="0.000"/>
+					<Scale x="1.0" y="1.0" z="1.0"/>
+					<Model filename="shared/diorama/diorama09/episode25/models/character/episode25_character.ffm">
+						<Animations>
+							<Animation
+									filename="shared/diorama/diorama09/episode25/models/character/episode25_character_idle.ffa"
+									name="Idle" play="true" speed="1.0" loopCount="-1"/>
+							<Animation
+									filename="shared/diorama/diorama09/episode25/models/character/episode25_character_talk.ffa"
+									name="Talk" play="false" speed="1.0" loopCount="-1"/>
+						</Animations>
+					</Model>
+					<Materials>
+						<Material parentMaterial="Episode25MaterialAlpha"/>
+					</Materials>
+				</SceneObject>
+			</SceneObject>
+      
+			<!--
+				SPEECHBUBBLE
+			-->
+			<SceneObject name="SpeechBubbleEp25">
+				<Animations>
+					<Animation name="SpeechBubbleAppear" animationData="SpeechBubbleAppear" loopCount="0"/>
+					<Animation name="SpeechBubbleDisappear" animationData="SpeechBubbleDisappear"
+							   loopCount="0"/>
+				</Animations>
+				<SpeechBubble>
+					<Speech key="episode25.intro"/>
+					<Speech key="episode25.outro"/>
+				</SpeechBubble>
+				<Translation x="-100.0" y="125.0" z="-136.171"/>
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml"/>
+			</SceneObject>
+      
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<SceneObject name="Particles">
+				<Effects>
+					<Effect name="Wisps" effectData="Wisps" play="true"/>
+				</Effects>
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effects>
+					<Effect name="Wisps" effectData="Wisps" play="true"/>
+				</Effects>
+				<Translation z="-200"/>
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effects>
+					<Effect name="Wisps" effectData="Wisps" play="true"/>
+				</Effects>
+				<Translation z="-400"/>
+			</SceneObject>
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<SceneObject name="UnlockLevel347CameraTarget">
+				<Translation x="-280" y="19" z="-20"/>
+			</SceneObject>
+			<SceneObject name="UnlockLevel360CameraTarget">
+				<Translation x="-280" y="19" z="-20"/>
+			</SceneObject>
+      
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Import filename="shared/diorama/diorama09/episode25/scenes/episode25_levelpins.xml"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

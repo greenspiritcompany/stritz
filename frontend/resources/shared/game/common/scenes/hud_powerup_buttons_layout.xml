@@ -1,0 +1,32 @@
+<!DOCTYPE Layout SYSTEM '../../../dtd/layout.dtd'>
+<Layout>
+	<Object sceneObject="PowerUpButtonsLandscape">
+		<Landscape visible="true"/>
+		<Portrait visible="false"/>
+	</Object>
+	<Object sceneObject="PowerUpButtonsPortrait">
+		<Landscape visible="false"/>
+		<Portrait visible="true">
+			<Translation>
+				<X percentage="41"/>
+				<Y percentage="92"/>
+			</Translation>
+			<Size>
+				<Height percentage="100"/>
+				<OriginalSize height="1024" width="768"/>
+				<Width percentage="100"/>
+			</Size>
+		</Portrait>
+		<PortraitFourThree visible="true">
+			<Translation>
+				<X percentage="45"/>
+				<Y percentage="94"/>
+			</Translation>
+			<Size>
+				<Height percentage="100"/>
+				<OriginalSize height="1024" width="768"/>
+				<Width percentage="84"/>
+			</Size>
+		</PortraitFourThree>
+	</Object>
+</Layout>

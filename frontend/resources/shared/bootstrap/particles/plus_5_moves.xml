@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="9" space="Local" timeToEmit="0.100" name="Plus5MovesPFX">
+    <Dampening max="0.900" min="0.900"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="360" angle="-90">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="66" r="255" g="168" a="0"/>
+    <Rotation max="360" min="-360"/>
+    <RotationSpeed max="360" min="44.020"/>
+    <Size>
+        <Max x="51" y="51"/>
+        <Min x="51" y="51"/>
+    </Size>
+    <SizeChange>
+        <Max x="-126.450" y="-126.450"/>
+        <Min x="-126.450" y="-126.750"/>
+    </SizeChange>
+    <StartColor b="255" r="155" g="219" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.240" min="0.120"/>
+    <Velocity max="330" min="330"/>
+</ParticleEffect>

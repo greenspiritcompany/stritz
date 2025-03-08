@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="ChocolateRemoveMaterial">
+			<Blend enabled="false"/>
+			<Cull enabled="true" face="back"/>
+			<Shader program="NormalMap"/>
+			<Light enabled="true" shininess="40">
+				<Ambient r="173" g="183" b="180" a="255"/>
+				<Diffuse r="145" g="145" b="145" a="255"/>
+				<Specular r="102" g="102" b="102" a="255"/>
+			</Light>
+			<Textures>
+				<Texture filename="shared/game/common/tex/chocolate/choko_cracked_tex.png"/>
+				<Texture filename="shared/game/common/tex/chocolate/choko_cracked_normal.png"/>
+			</Textures>
+		</Material>
+	</Materials>
+</Scene>

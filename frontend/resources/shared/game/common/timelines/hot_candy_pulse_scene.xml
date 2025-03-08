@@ -1,0 +1,35 @@
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<Material name="SpriteMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+		</Material>
+	</Materials>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<Translation x="0.0" y="0.0" z="10.0"/>
+		<SceneObject name="HotCandyPulse" layerFlags="512">
+
+			<Materials>
+				<Material parentMaterial="SpriteMaterial"/>
+			</Materials>
+		</SceneObject>
+		<SceneObject name="HotCandyPulseParticlesOne">
+
+		</SceneObject>
+
+		<SceneObject name="HotCandyPulseParticlesTwo">
+
+		</SceneObject>
+
+		<SceneObject name="HotCandyPulseParticlesThree">
+
+		</SceneObject>
+
+		<SceneObject name="HotCandyPulseParticlesFour">
+
+		</SceneObject>
+
+
+	</SceneObject>
+</Scene>

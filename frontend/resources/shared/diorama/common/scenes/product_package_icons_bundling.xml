@@ -1,0 +1,24 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+    <SceneObject name="Product33000" visibility="never">
+        <Scale y="0.900" x="0.900" />
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png">
+            <Pivot anchor="center" />
+        </Sprite>
+        <Translation z="0" y="4" x="-140" />
+    </SceneObject>
+    <SceneObject name="Product33001" visibility="never">
+        <Scale y="0.900" x="0.900" />
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/striped_lollipop_icon.png">
+            <Pivot anchor="center" />
+        </Sprite>
+        <Translation z="0" y="4" x="-140" />
+    </SceneObject>
+    <SceneObject name="Product33003" visibility="never">
+        <Scale y="0.900" x="0.900" />
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/free_switch_icon.png">
+            <Pivot anchor="center" />
+        </Sprite>
+        <Translation z="0" y="4" x="-140" />
+    </SceneObject>
+</Scene>

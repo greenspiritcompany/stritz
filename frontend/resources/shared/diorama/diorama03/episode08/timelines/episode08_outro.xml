@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+  <Timeline startTime="0.0" endTime="5.0">
+
+    <Animate target="KimmyInBoat" time="0.0">
+      <Show/>
+    </Animate>
+    
+    <Animate target="Kimmy_group" time="0.0">
+      <Hide/>
+    </Animate>
+
+      <Animate target="CoverHoleEp9" time="0.0">
+          <Hide/>
+      </Animate>
+
+  
+
+    <Triggers>
+      <CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp08.1"/>
+	  <EffectTrigger time="0.1" name="character_cookie_lady"/>
+      <AnimationTrigger time="0.0" targetName="SpeechBubbleEp08" animationName="SpeechBubbleAppear"/>
+      <AnimationTrigger time="4.0" targetName="SpeechBubbleEp08" animationName="SpeechBubbleDisappear"/>
+      <AnimationTrigger time="0.1" targetName="ToadGuy" animationName="Talk" crossFade="0.4"/>
+      <AnimationTrigger time="4.0" targetName="ToadGuy" animationName="Idle" crossFade="0.8"/>
+    </Triggers>
+  </Timeline>
+</Timelines>

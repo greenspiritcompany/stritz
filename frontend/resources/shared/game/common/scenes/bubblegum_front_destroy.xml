@@ -1,0 +1,11 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="0.5">
+		<Triggers>
+			<EffectTrigger time="0.0" name="BubblegumSplashEFQ">
+                <Offset z="100"/>
+            </EffectTrigger>
+			<AnimationTrigger targetName="BubblegumBg" animationName="Wobble" time="0.0"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

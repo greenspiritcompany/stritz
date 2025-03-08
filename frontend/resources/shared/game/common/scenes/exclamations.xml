@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<Material name="SpriteMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+		</Material>
+	</Materials>
+
+	<SceneObject name="Tasty">
+		<Sprite filename="shared/game/common/tex/hud/tasty.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation x="0.0" y="-50.0" z="400.0"/>
+	</SceneObject>
+	<SceneObject name="Sweet">
+		<Sprite filename="shared/game/common/tex/hud/sweet.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation x="0.0" y="-50.0" z="400.0"/>
+	</SceneObject>
+	<SceneObject name="Delicious">
+		<Sprite filename="shared/game/common/tex/hud/delicious.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation x="0.0" y="-50.0" z="400.0"/>
+	</SceneObject>
+	<SceneObject name="Divine">
+		<Sprite filename="shared/game/common/tex/hud/divine.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation x="0.0" y="-50.0" z="400.0"/>
+	</SceneObject>
+	<SceneObject name="SugarCrush">
+		<Sprite filename="shared/game/common/tex/hud/sugar_crush.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation x="0.0" y="-50.0" z="400.0"/>
+	</SceneObject>
+</Scene>

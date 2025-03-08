@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout>
+	<Object sceneObject="Background">
+		<Landscape>
+			<Size>
+				<OriginalSize height="140" width="430" />
+				<Width percentage="40" />
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Size>
+				<Height percentage="20" />
+				<OriginalSize height="140" width="430" />
+				<Width percentage="75" />
+			</Size>
+		</Portrait>
+		<PortraitFourThree>
+			<Size>
+				<Height percentage="15" />
+				<OriginalSize height="140" width="430" />
+				<Width percentage="75" />
+			</Size>
+		</PortraitFourThree>
+	</Object>
+	<Object sceneObject="MainButton">
+		<Landscape>
+			<Size>
+				<OriginalSize height="140" width="430" />
+				<Width percentage="40" />
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Size>
+				<Height percentage="20" />
+				<OriginalSize height="140" width="430" />
+				<Width percentage="75" />
+			</Size>
+		</Portrait>
+		<PortraitFourThree>
+			<Size>
+				<Height percentage="15" />
+				<OriginalSize height="140" width="430" />
+				<Width percentage="75" />
+			</Size>
+		</PortraitFourThree>
+	</Object>
+	<Object sceneObject="MenuButtonGroup">
+		<Landscape>
+			<Translation>
+				<X percentage="7" />
+				<Y percentage="89" />
+			</Translation>
+		</Landscape>
+		<Portrait>
+			<Translation>
+				<X percentage="12" />
+				<Y percentage="92" />
+			</Translation>
+		</Portrait>
+		<PortraitFourThree>
+			<Translation>
+				<X percentage="10" />
+				<Y percentage="93.500" />
+			</Translation>
+		</PortraitFourThree>
+	</Object>
+</Layout>

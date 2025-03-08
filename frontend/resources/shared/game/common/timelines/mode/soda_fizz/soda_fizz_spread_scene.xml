@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+    <SceneObject name="Scene" visibility="always" layerFlags="512">
+        <SceneObject name="ParticleHelper"/>
+        <SceneObject name="fizz_spread_stripe" visibility="always">
+            <Model filename="shared/game/common/models/sodafizz/fizz_spread_stripe_model.ffm">
+                <Animations>
+                    <Animation filename="shared/game/common/models/sodafizz/fizz_spread_stripe_anim.ffa" play="true"
+                               loopCount="0" speed="0.6" name="fizz_spread_stripe_anim" startTime="0.0"/>
+                </Animations>
+            </Model>
+            <Materials>
+                <Material>
+                    <Depth enabled="false" writeMask="false"/>
+                    <Blend enabled="true"/>
+                    <Textures>
+                        <Texture filename="shared/game/common/tex/mode/soda_fizz/stripe.png"/>
+                    </Textures>
+                </Material>
+            </Materials>
+            <Translation x="1.0" y="1.0" z="0"/>
+            <Rotation x="0.0" y="0.0" z=""/>
+            <Scale x="4" y="4" z="4"/>
+        </SceneObject>
+    </SceneObject>
+</Scene>

@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="64" space="Local" timeToEmit="0.200" name="SugarCrushBubblesSlowPFX">
+    <Dampening max="1" min="1"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="24.700" angle="-0.820">
+        <SpawnArea width="576.400" depth="0" height="682.860"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="175"/>
+    <Rotation max="20" min="20"/>
+    <RotationSpeed max="90" min="90"/>
+    <Size>
+        <Max x="34.600" y="34.600"/>
+        <Min x="17.620" y="17.620"/>
+    </Size>
+    <SizeChange>
+        <Max x="-7.850" y="-7.850"/>
+        <Min x="-7.850" y="-7.850"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="155"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/small_glowy_circle.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="2.310" min="2.310"/>
+    <Velocity max="315.900" min="-29.440"/>
+</ParticleEffect>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="CandyCrushModal">
+		<Translation z="500" />
+		<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+		<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+		<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+		<SceneObject name="Title">
+			<Translation x="0" y="-301.987" z="0" />
+			<Text canBreakWords="false" alignment="center" font="Banana" key="candy_crush_synergy.modal.title" maxHeight="45" maxWidth="370" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Color a="255" b="255" g="255" r="255" />
+				<Size x="24" y="24" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="TiffyBackground">
+			<Translation x="2" y="-58" z="0" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/syn_bg_modal.png" vertexColors="false">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="332" width="464" />
+			</Panel>
+		</SceneObject>
+		<SceneObject name="Tiffy">
+			<Translation x="16" y="-57" z="0" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/ccs_pic.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject>
+			<Translation x="133" y="-90" z="10" />
+			<Text canBreakWords="false" alignment="center" font="Typewriter" key="candy_crush_synergy.modal.text" maxHeight="140" maxWidth="210" verticalAlignment="visualCenter">
+				<Color b="145" g="20" r="230" />
+				<Size x="16" y="16" />
+			</Text>
+		</SceneObject>
+		<SceneObject class="Button" name="LinkButton">
+			<Translation x="3" y="219" z="0" />
+			<Scale x="1.200" y="1.200" z="1.200" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="300" />
+			</Panel>
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject name="PlayButtonText">
+				<Translation y="-9" />
+				<Scale x="1.200" y="1.200" z="1.200" />
+				<Text canBreakWords="false" alignment="center" font="Banana" key="candy_crush_synergy.modal.button" maxHeight="40" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="225" b="255" g="255" r="255" />
+					<Shadow enabled="true">
+						<Color a="25" b="0" g="0" r="0" />
+						<Offset x="0" y="6" />
+					</Shadow>
+					<Size x="24" y="24" />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="95" />
+				<OriginalSize width="640" height="706" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

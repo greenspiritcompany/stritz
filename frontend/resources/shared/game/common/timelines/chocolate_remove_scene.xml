@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/chocolate_remove_material.xml"/>
+
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="Chocolate_Break" visibility="always" layerFlags="512">
+			<Model filename="shared/game/common/models/chocolate/chocolate.ffm">
+				<Animations>
+					<Animation name="Break_Animation" speed="1.0"
+							   filename="shared/game/common/models/chocolate/break.ffa"
+							   play="true" loopCount="0"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material parentMaterial="ChocolateRemoveMaterial"/>
+			</Materials>
+			<Scale x="0.20" y="-0.20" z="0.20"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

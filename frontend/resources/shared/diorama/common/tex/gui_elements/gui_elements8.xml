@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:d49bcc359d6136254d3cf72416d533ad:b590c47c00f0af2301c2adc47a22113c:bff5be22cd80539fa403eca782ec9e05$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gui_elements8.png" width="1024" height="1024">
+    <sprite n="arrow_quest.png" x="160" y="494" w="135" h="84" pX="0.5" pY="0.5"/>
+    <sprite n="korealink_content_box_landscape.png" x="160" y="582" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="korealink_content_box_portrait.png" x="228" y="582" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep61.png" x="702" y="2" w="163" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep62.png" x="2" y="155" w="170" h="158" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep63.png" x="528" y="162" w="163" h="155" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep64.png" x="182" y="2" w="172" h="172" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep65.png" x="358" y="2" w="170" h="152" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep66.png" x="506" y="321" w="149" h="149" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep67.png" x="345" y="311" w="157" h="149" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep68.png" x="2" y="2" w="176" h="149" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep69.png" x="358" y="158" w="166" h="149" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep70.png" x="869" y="2" w="153" h="154" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep71.png" x="860" y="317" w="160" h="149" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep72.png" x="858" y="470" w="157" h="155" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep73.png" x="176" y="178" w="165" h="156" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep74.png" x="695" y="166" w="161" h="149" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep75.png" x="328" y="464" w="149" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep76.png" x="170" y="338" w="154" h="152" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep77.png" x="532" y="2" w="166" h="156" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep78.png" x="2" y="469" w="154" h="149" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep79.png" x="2" y="317" w="164" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep80.png" x="869" y="160" w="153" h="153" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep81.png" x="695" y="319" w="159" h="157" pX="0.5" pY="0.5" r="y"/>
+</TextureAtlas>

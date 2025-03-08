@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="ProductPresenter">
+		<Translation z="500" />
+		<Animation name="OnAppear" animationData="SlideInFromTop" loopCount="0" />
+		<Animation name="OnDisappear" animationData="SlideOutToBelow" loopCount="0" />
+		<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+		<SceneObject name="Title">
+			<Translation x="0" y="-301.681" z="0" />
+			<Text overflowBehaviour="fit" canBreakWords="false" maxWidth="370" font="Banana" maxHeight="45" verticalAlignment="visualCenter" alignment="center">
+				<TextString>ADD TITLE TO TRANSLADO</TextString>
+				<Color a="255" b="255" r="255" g="255" />
+				<Size x="24" y="24" />
+			</Text>
+		</SceneObject>
+		<SceneObject>
+			<Translation y="-10" />
+			<SceneObject>
+				<Translation x="0" z="1" y="61" />
+				<SceneObject name="ProductIconHolder">
+					<Translation x="0" z="1" y="-140" />
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-144" z="3" y="-185" />
+					<Rotation z="1" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart_ornament.png" />
+				</SceneObject>
+				<SceneObject>
+					<Translation x="30" z="3" y="-185" />
+					<Rotation z="1" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart_ornament.png">
+						<Flip u="true" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="BoosterHolderTextBox">
+					<Translation z="2" y="-30" />
+					<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/booster_holder_txtbox.png">
+						<Insets right="50" bottom="50" left="50" top="50" />
+						<Size height="75" width="240" />
+						<Pivot anchor="center" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="MessageArea">
+					<Translation x="0" y="70" />
+					<SceneObject>
+						<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/booster_info_box.png">
+							<Insets right="50" bottom="50" left="50" top="50" />
+							<Size height="105" width="532" />
+							<Pivot anchor="center" />
+						</Panel>
+					</SceneObject>
+					<SceneObject name="Description">
+						<Translation x="0" y="-2" />
+						<Text overflowBehaviour="fit" canBreakWords="false" maxWidth="450" font="Typewriter" maxHeight="70" verticalAlignment="visualCenter" alignment="center">
+							<TextString>ADD DESCRIPTION TO TRANSLADO</TextString>
+							<Color b="214" r="7" g="141" />
+							<Size x="24" y="24" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="PurchaseButton" class="Button">
+					<Translation x="0" y="205" />
+					<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+						<Pivot anchor="center" />
+						<Insets right="54" bottom="59" left="54" top="48" />
+						<Size height="114" width="370" />
+					</Panel>
+					<Animation play="true" name="Idle" layer="1" animationData="Idle" />
+					<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+					<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+					<SceneObject name="Text">
+						<SceneObject name="Cost">
+							<Translation x="95" y="-6" />
+							<SceneObject>
+								<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/goldbar_sticker.png">
+									<Pivot anchor="center" />
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="CostAmountText">
+								<Translation x="-11" y="-3" />
+								<Text overflowBehaviour="fit" canBreakWords="false" maxWidth="50" font="Banana" maxHeight="40" verticalAlignment="visualCenter" alignment="center">
+									<TextString>80</TextString>
+									<Color b="0" r="117" g="54" />
+									<Size x="26" y="26" />
+									<Shadow enabled="true">
+										<Offset x="0" y="3" />
+										<Color a="255" b="255" r="255" g="255" />
+									</Shadow>
+									<Pivot x="-17" />
+								</Text>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Text overflowBehaviour="fit" canBreakWords="false" maxWidth="180" font="Banana" maxHeight="30" key="button.generic.buy" verticalAlignment="visualCenter" alignment="center">
+								<Color a="225" b="255" r="255" g="255" />
+								<Size x="24" y="24" />
+								<Shadow enabled="true">
+									<Color a="25" b="0" r="0" g="0" />
+									<Offset x="0" y="6" />
+								</Shadow>
+							</Text>
+							<Translation x="-65" y="-7" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="95" />
+				<OriginalSize height="706" width="640" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

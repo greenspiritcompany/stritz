@@ -1,0 +1,16 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<Material name="IllegalSwitchHandMaterial">
+		<Depth writeMask="true" enabled="true"/>
+		<Blend enabled="false"/>
+		<Cull enabled="true" face="front"/>
+		<Shader program="NormalMap"/>
+		<Light enabled="true" shininess="46">
+			<Ambient b="210" r="210" g="210" a="255"/>
+			<Diffuse b="112" r="118" g="112" a="255"/>
+			<Specular b="255" r="255" g="255" a="255"/>
+		</Light>
+		<Texture filename="shared/game/common/tex/boosters/illegal_switch_hand_c.png"/>
+		<Texture filename="shared/game/common/tex/boosters/illegal_switch_hand_n.png"/>
+	</Material>
+</Scene>

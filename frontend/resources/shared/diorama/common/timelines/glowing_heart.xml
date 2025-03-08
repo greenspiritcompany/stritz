@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Animations>
+		<Animation name="first">
+			<Translation time="0.0" x="0" y="-60" z="550"/>
+			<Translation time="0.25" x="30" y="-70" z="550"/>
+			<Translation time="0.5" x="60" y="-60" z="550"/>
+			<Translation time="0.75" x="65" y="-40" z="550"/>
+			<Translation time="1.0" x="70" y="-25" z="550"/>
+			<Translation time="1.25" x="62" y="0" z="550"/>
+			<Translation time="1.5" x="40" y="30" z="550"/>
+			<Translation time="1.75" x="0" y="60" z="550"/>
+
+		</Animation>
+		<Animation name="second">
+
+			<Translation time="0.0" x="0" y="60" z="550"/>
+			<Translation time="0.25" x="-40" y="30" z="550"/>
+			<Translation time="0.5" x="-62" y="0" z="550"/>
+			<Translation time="0.75" x="-70" y="-25" z="550"/>
+			<Translation time="1.0" x="-65" y="-40" z="550"/>
+			<Translation time="1.25" x="-60" y="-60" z="550"/>
+			<Translation time="1.5" x="-30" y="-70" z="550"/>
+			<Translation time="1.75" x="0" y="-60" z="550"/>
+
+		</Animation>
+	</Animations>
+	<Timeline startTime="0.0" endTime="5.5">
+		<Triggers>
+			<EffectTrigger targetName="ParticleFollow" name="HeartTrail" time="0.01" followTarget="true"/>
+		</Triggers>
+		<TimeControls>
+		</TimeControls>
+
+		<Animate target="ParticleFollow" time="0.0">
+			<PlayAnimation time="0.0" name="first"/>
+			<PlayAnimation time="1.75" name="second"/>
+		</Animate>
+
+	</Timeline>
+</Timelines>

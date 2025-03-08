@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="14" space="Local" timeToEmit="0.450" name="LemonadeCorrodaBalloonExplodeDropsPFX">
+    <Dampening max="0.900" min="0.780"/>
+    <DirectionalForce x="0" y="-100"/>
+    <Emitter emissionRate="0.040" spread="360" angle="0">
+        <SpawnArea width="20" depth="0" height="20"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="150"/>
+    <Rotation max="720" min="180"/>
+    <RotationSpeed max="300" min="100"/>
+    <Size>
+        <Max x="25" y="25"/>
+        <Min x="10" y="10"/>
+    </Size>
+    <SizeChange>
+        <Max x="85" y="85"/>
+        <Min x="25" y="23"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/soda_corroda_bubble.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.800" min="0.100"/>
+    <Velocity max="260" min="150"/>
+</ParticleEffect>

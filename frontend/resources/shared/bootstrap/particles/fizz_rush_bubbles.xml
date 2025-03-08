@@ -1,0 +1,24 @@
+<ParticleEffect maxParticles="10" space="Local" timeToEmit="0.100" name="FizzRushBubblesPFX">
+    <CentrifugalForce max="4" min="6"/>
+    <Dampening max="1" min="1"/>
+    <Emitter emissionRate="0.010" spread="0" angle="0">
+        <Position x="30"/>
+        <SpawnArea width="76" depth="0" height="74"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="255"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="10" y="10"/>
+        <Min x="5" y="5"/>
+    </Size>
+    <SizeChange>
+        <Max x="50" y="50"/>
+        <Min x="30" y="30"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/fizz_bg_particle.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.300" min="0.200"/>
+    <Velocity max="400" min="400"/>
+</ParticleEffect>

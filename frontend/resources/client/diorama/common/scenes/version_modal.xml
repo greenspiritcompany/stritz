@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="VersionModal">
+		<Translation z="580" />
+		<Animations>
+			<Animation name="OnAppear" animationData="SlideInFromTop" loopCount="0" />
+			<Animation name="OnDisappear" animationData="SlideOutToBelow" loopCount="0" />
+		</Animations>
+		<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+		<SceneObject name="Kimmy">
+			<Translation x="0" y="-70" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/kimmy_postwoman.png">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="UpdateAvailable">
+			<SceneObject name="TitleText">
+				<Translation x="0" y="-302" />
+				<Text font="Banana" alignment="center" verticalAlignment="visualCenter" maxWidth="370" maxHeight="0" overflowBehaviour="fit" key="update_available_title">
+					<Color r="255" g="255" b="255" a="255" />
+					<Size x="24" y="24" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="MessageArea">
+				<Translation x="0" y="120" />
+				<SceneObject>
+					<Panel filename="shared/diorama/common/tex/gui_elements/purchase_success_box.png">
+						<Insets bottom="50" left="50" right="50" top="50" />
+						<Size width="532" height="125" />
+						<Pivot anchor="center" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="Message">
+					<Text font="Typewriter" alignment="center" verticalAlignment="visualCenter" maxWidth="490" maxHeight="80" overflowBehaviour="fit" key="update_available_text">
+						<Color r="1" g="139" b="4" />
+						<Size x="24" y="24" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="UpdateRequired" visibility="never">
+			<SceneObject name="TitleText">
+				<Translation x="0" y="-302" />
+				<Text font="Banana" alignment="center" verticalAlignment="visualCenter" maxWidth="370" maxHeight="0" overflowBehaviour="fit" key="update_required_title">
+					<Color r="255" g="255" b="255" a="255" />
+					<Size x="24" y="24" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="MessageArea">
+				<Translation x="0" y="110" />
+				<SceneObject>
+					<Panel filename="shared/diorama/common/tex/gui_elements/purchase_fail_box.png">
+						<Insets bottom="50" left="50" right="50" top="50" />
+						<Size width="532" height="145" />
+						<Pivot anchor="center" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="Message">
+					<Translation x="0" y="0" />
+					<Text font="Typewriter" alignment="center" verticalAlignment="visualCenter" maxWidth="540" maxHeight="100" overflowBehaviour="fit" key="update_required_text">
+						<Color r="209" g="21" b="48" />
+						<Size x="24" y="24" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="DownloadButton" class="Button">
+			<Translation x="0" y="260" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+				<Pivot anchor="center" />
+				<Insets left="54" top="48" right="54" bottom="59" />
+				<Size width="380" height="108" />
+			</Panel>
+			<Animations>
+				<Animation name="Idle" animationData="Idle" play="true" layer="1" />
+				<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+				<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+			</Animations>
+			<SceneObject name="Text">
+				<Translation y="-5" />
+				<Text font="Banana" alignment="center" verticalAlignment="visualCenter" key="button_download_update" maxWidth="300" maxHeight="40" overflowBehaviour="fit">
+					<Size x="28" y="28" />
+					<Shadow>
+						<Color r="0" g="0" b="0" a="25" />
+						<Offset x="0" y="6" />
+					</Shadow>
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="70" />
+				<OriginalSize width="640" height="550" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

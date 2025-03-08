@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="JellyCakeMaterial">
+			<Blend enabled="true" blendFuncDestinationFactor="OneMinusSrcAlpha" blendFuncSourceFactor="SrcAlpha"/>
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Shader program="NormalMap"/>
+		</Material>
+		<Material name="JellyCakePlateMat" parentMaterial="JellyCakeMaterial">
+			<Blend enabled="true" blendFuncDestinationFactor="OneMinusSrcAlpha" blendFuncSourceFactor="SrcAlpha"/>
+			<Light enabled="true" shininess="70">
+				<Ambient r="217" g="199" b="217" a="255"/>
+				<Diffuse r="54" g="54" b="54" a="255"/>
+				<Specular r="174" g="130" b="195" a="255"/>
+			</Light>
+			<Texture filename="shared/game/common/tex/candy/2x2_jelly_cake_background_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/2x2_jelly_cake_background_n.png"/>
+		</Material>
+		<Material name="JellyCakeBaseMaterial" parentMaterial="JellyCakeMaterial">
+			<Blend enabled="true" blendFuncDestinationFactor="OneMinusSrcAlpha" blendFuncSourceFactor="SrcAlpha"/>
+			<Light enabled="true" shininess="90">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="140" g="140" b="140" a="255"/>
+				<Specular r="145" g="145" b="145" a="125"/>
+			</Light>
+			<Texture filename="shared/game/common/tex/candy/jellycake_base_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/jellycake_base_n.png"/>
+		</Material>
+		<Material name="JellyCakePartsMaterial" parentMaterial="JellyCakeMaterial">
+			<Blend enabled="true" blendFuncDestinationFactor="OneMinusSrcAlpha" blendFuncSourceFactor="SrcAlpha"/>
+			<Light enabled="true" shininess="70">
+				<Ambient r="217" g="199" b="217" a="255"/>
+				<Diffuse r="54" g="54" b="54" a="255"/>
+				<Specular r="174" g="130" b="195" a="255"/>
+			</Light>
+			<Texture filename="shared/game/common/tex/candy/jellycake_pieces_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/jellycake_pieces_n.png"/>
+		</Material>
+	</Materials>
+
+</Scene>

@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/caramel_target_tile_material.xml"/>
+	<SceneObject name="CaramelTargetTile" layerFlags="128">
+		<Material parentMaterial="CaramelTargetTileMaterial"/>
+		<Translation z="500"/>
+		<Sprite filename="shared/game/common/tex/candy/selected_candy.png">
+			<Pivot anchor="center"/>
+			<VertexColor a="60"/>
+		</Sprite>
+	</SceneObject>
+</Scene>

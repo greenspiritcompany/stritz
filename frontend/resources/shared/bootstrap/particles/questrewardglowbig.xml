@@ -1,0 +1,129 @@
+<ParticleEffect maxParticles="1" space="Local" name="QuestRewardGlowBig" timeToEmit="20">
+<Dampening max="0.800" min="0.800" />
+<DirectionalForce x="0" y="0">
+	<Curves>
+		<X multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</X>
+		<Y multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</Y>
+		<Z multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</Z>
+	</Curves>
+</DirectionalForce>
+<Emitter emissionRate="0" spread="360" angle="0">
+	<SpawnArea width="0" depth="0" height="0" />
+</Emitter>
+<Rotation max="180" min="-180" />
+<RotationSpeed max="-40" min="-40">
+	<Curves multiplier="1">
+		<MinCurve>
+			<ControlPoint time="-0.010" />
+			<ControlPoint time="1.010" />
+		</MinCurve>
+		<MaxCurve>
+			<ControlPoint time="-0.010" />
+			<ControlPoint time="1.010" />
+		</MaxCurve>
+	</Curves>
+</RotationSpeed>
+<Size>
+	<Max x="650" y="650" />
+	<Min x="650" y="650" />
+</Size>
+<SizeChange type="RandomBetweenTwoConstants" x="32" y="32">
+	<Max x="-520" y="-520" />
+	<Min x="-520" y="-520" />
+	<Curves>
+		<X multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" value="1" />
+				<ControlPoint time="1.010" value="1" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" value="1" />
+				<ControlPoint time="1.010" value="1" />
+			</MaxCurve>
+		</X>
+		<Y multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" value="1" />
+				<ControlPoint time="1.010" value="1" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" value="1" />
+				<ControlPoint time="1.010" value="1" />
+			</MaxCurve>
+		</Y>
+	</Curves>
+</SizeChange>
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/light64.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="1" min="1" />
+<Velocity max="0" min="0" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color b="255" r="255" g="255" a="0" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color b="102" r="255" g="255" a="180" />
+	</Keyframe>
+</ColorAnimation>
+<VelocityChange>
+	<Curves>
+		<X multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</X>
+		<Y multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</Y>
+		<Z multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</Z>
+	</Curves>
+</VelocityChange>
+</ParticleEffect>

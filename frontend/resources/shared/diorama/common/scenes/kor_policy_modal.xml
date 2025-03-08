@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject visibility="inherit" __visibility="0" name="PolicyLandscape">
+		<Translation x="510" z="600" y="360" />
+		<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+		<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+		<Import filename="shared/diorama/common/scenes/modal_background_large_landscape.xml" />
+		<SceneObject name="PolicyButton">
+			<Translation x="-461.42" y="212.06" />
+			<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/policy_btn.png">
+				<Insets right="100" bottom="100" left="100" top="100" />
+				<MiddleTiles countX="2" countY="2" />
+				<Size width="600" />
+			</Panel>
+		</SceneObject>
+		<SceneObject class="Button" __visibility="0" name="AcceptTerms">
+			<Translation x="-260.90" z="5" y="238.23" />
+			<SceneObject __visibility="0" name="CheckBox">
+				<Translation x="-175" y="-3" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/check_all_box.png" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="Check">
+				<Translation x="-189" y="-25" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/check_blue.png" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="AcceptTermsText">
+				<Translation x="-94.60" y="23" />
+				<Text maxWidth="464" verticalAlignment="visualCenter" maxHeight="50" alignment="left" font="Typewriter" overflowBehaviour="fit">
+					<Color g="126" a="255" b="190" r="14" />
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="TextBox">
+			<Translation x="-464.27" y="-249.79" />
+			<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/policy_txt_box.png">
+				<Insets right="20" bottom="20" left="20" top="20" />
+				<MiddleTiles countX="500" />
+				<Size height="440" width="928" />
+			</Panel>
+			<SceneObject class="Button" name="NavBtnLeft">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_btn.png" />
+				<Translation x="630.96" z="0" y="364.12" />
+				<SceneObject name="ArrowInactive">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_arrow_active.png" />
+					<Translation x="20.99" z="0" y="12.97" />
+				</SceneObject>
+				<SceneObject name="ArrowActive">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_arrow_inactive.png" />
+					<Translation x="20.99" z="0" y="12.97" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="NavText">
+				<Text key="1/12" font="Banana" maxHeight="70" maxWidth="145" overflowBehaviour="fit">
+					<Color g="58" a="255" b="11" r="116" />
+					<Size y="60" x="80" />
+				</Text>
+				<Translation x="694.59" z="0" y="407.25" />
+			</SceneObject>
+			<SceneObject class="Button" name="NavBtnRight">
+				<Scale x="-1" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_btn.png" />
+				<Translation x="903.35" z="0" y="364.12" />
+				<SceneObject name="ArrowInactive">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_arrow_active.png" />
+					<Translation x="20.99" z="0" y="12.97" />
+				</SceneObject>
+				<SceneObject name="ArrowActive">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_arrow_inactive.png" />
+					<Translation x="20.99" z="0" y="12.97" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="BodyText">
+			<Translation x="-448.38" z="0" y="-216" />
+			<Text maxWidth="860" maxHeight="420" font="Typewriter" key="placeHolderKey">
+				<Color g="58" a="255" b="11" r="116" />
+				<Size x="14" y="14" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="ScrollButton">
+			<Translation x="433.54" y="-254.28" />
+		</SceneObject>
+		<SceneObject name="TitleText">
+			<Translation x="0" y="-305" />
+			<Text maxWidth="470" verticalAlignment="visualCenter" maxHeight="75" alignment="center" font="Banana" overflowBehaviour="fit" canBreakWords="false">
+				<Size x="30" y="30" />
+			</Text>
+		</SceneObject>
+		<SceneObject class="Button" __visibility="0" editorEntityId="11" name="AcceptButtonLandscape">
+			<Translation x="306.98" z="0" y="263.82" />
+			<Scale x="1.10" z="1.10" y="1.10" />
+			<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+				<Insets right="54" bottom="59" left="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="310" />
+			</Panel>
+			<Animation animationData="Idle" play="true" layer="1" name="Idle" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject editorEntityId="13">
+				<Translation x="-5.97" z="0" y="-6.96" />
+				<Text maxWidth="250" verticalAlignment="visualCenter" maxHeight="30" alignment="center" font="Banana" overflowBehaviour="fit" key="accept_terms_modal_button">
+					<Color g="255" a="225" b="255" r="255" />
+					<Shadow enabled="true">
+						<Color g="0" a="25" b="0" r="0" />
+						<Offset x="0" y="6" />
+					</Shadow>
+					<Size x="24" y="24" />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="49" />
+			</Translation>
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="100" />
+				<OriginalSize width="1024" height="768" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration visible="true" name="Landscape" />
+		<LayoutConfiguration visible="false" name="Portrait" />
+	</SceneObject>
+	<SceneObject visibility="inherit" __visibility="0" name="PolicyPortrait">
+		<Translation x="380" z="600" y="500" />
+		<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+		<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+		<Import filename="shared/diorama/common/scenes/modal_background_large_portrait.xml" />
+		<SceneObject name="PolicyButton">
+			<Translation x="-318" y="235" />
+			<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/policy_btn.png">
+				<Insets right="100" bottom="106" left="100" top="100" />
+				<MiddleTiles countX="2" countY="2" />
+				<Size width="640" />
+			</Panel>
+		</SceneObject>
+		<SceneObject class="Button" __visibility="0" name="AcceptButtonPortrait">
+			<Translation x="5" z="0" y="406.34" />
+			<Scale x="1.10" z="1.10" y="1.10" />
+			<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+				<Insets right="54" bottom="59" left="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="440" />
+			</Panel>
+			<Animation animationData="Idle" play="true" layer="1" name="Idle" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject>
+				<Translation x="-5.97" z="0" y="-6.96" />
+				<Text maxWidth="250" verticalAlignment="visualCenter" maxHeight="30" alignment="center" font="Banana" overflowBehaviour="fit" key="accept_terms_modal_button">
+					<Color g="255" a="225" b="255" r="255" />
+					<Shadow enabled="true">
+						<Color g="0" a="25" b="0" r="0" />
+						<Offset x="0" y="6" />
+					</Shadow>
+					<Size x="24" y="24" />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="TextBox">
+			<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/policy_txt_box.png">
+				<Insets right="20" bottom="20" left="20" top="20" />
+				<MiddleTiles countX="500" />
+				<Size height="620" width="640" />
+			</Panel>
+			<Translation x="-319.97" y="-391.80" />
+			<SceneObject class="Button" name="NavBtnLeft">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_btn.png" />
+				<Translation x="190.23" z="0" y="539" />
+				<SceneObject name="ArrowInactive">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_arrow_active.png" />
+					<Translation x="20.99" z="0" y="12.97" />
+				</SceneObject>
+				<SceneObject name="ArrowActive">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_arrow_inactive.png" />
+					<Translation x="20.99" z="0" y="12.97" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="NavBtnRight">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_btn.png" />
+				<Translation x="464.62" z="0" y="539" />
+				<Scale x="-1" />
+				<SceneObject name="ArrowInactive">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_arrow_active.png" />
+					<Translation x="20.99" z="0" y="12.97" />
+				</SceneObject>
+				<SceneObject name="ArrowActive">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/nav_arrow_inactive.png" />
+					<Translation x="20.99" z="0" y="12.97" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="NavText">
+				<Text key="1/12" font="Banana" maxHeight="70" maxWidth="145" overflowBehaviour="fit">
+					<Color g="58" a="255" b="11" r="116" />
+					<Size y="60" x="80" />
+				</Text>
+				<Translation x="248.86" z="0" y="590.13" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="BodyText">
+			<Translation x="-298.16" y="-357.97" />
+			<Text maxWidth="580" font="Typewriter" key="placeHolderKey">
+				<Color g="58" a="255" b="11" r="116" />
+				<Size x="14" y="14" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="TitleText">
+			<Translation x="0" y="-448" />
+			<Text maxWidth="470" verticalAlignment="visualCenter" maxHeight="45" alignment="center" font="Banana" overflowBehaviour="fit" canBreakWords="false">
+				<Color g="255" a="255" b="255" r="255" />
+				<Size x="24" y="24" />
+			</Text>
+		</SceneObject>
+		<SceneObject class="Button" __visibility="0" name="AcceptTerms">
+			<Translation x="-117.48" z="5" y="261.17" />
+			<SceneObject __visibility="0" name="CheckBox">
+				<Translation x="-175" y="-3" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/check_all_box.png" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="Check">
+				<Translation x="-189" y="-25" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/check_blue.png" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="AcceptTermsText">
+				<Translation x="-90.60" y="23" />
+				<Text maxWidth="520" verticalAlignment="visualCenter" maxHeight="50" alignment="left" font="Typewriter" overflowBehaviour="fit">
+					<Color g="126" a="255" b="190" r="14" />
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Width percentage="100" />
+				<OriginalSize width="768" height="1024" />
+				<Height percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration visible="false" name="Landscape" />
+		<LayoutConfiguration visible="true" name="Portrait" />
+	</SceneObject>
+</Scene>

@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+  <Timeline startTime="0.0" endTime="5.0">
+
+    <Animate target="Kimmy_group" time="0.0">
+      <Translation time="0.0" x ="-700" y="50" z="280"/>
+      <Show/>
+    </Animate>
+
+    <Triggers>
+      <CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp40.1"/>
+	  <EffectTrigger time="0.1" name="character_ep40"/>
+      <AnimationTrigger time="0.0" targetName="SpeechBubbleEp40" animationName="SpeechBubbleAppear"/>
+      <AnimationTrigger time="4.0" targetName="SpeechBubbleEp40" animationName="SpeechBubbleDisappear"/>
+      <!--<AnimationTrigger time="0.1" targetName="BeaverFever" animationName="Talk" crossFade="0.25"/>-->
+      <!--<AnimationTrigger time="3.5" targetName="BeaverFever" animationName="Idle" crossFade="0.5"/>-->
+    </Triggers>
+  </Timeline>
+</Timelines>

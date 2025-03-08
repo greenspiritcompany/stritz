@@ -1,0 +1,25 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="8" space="Local" timeToEmit="1.900" name="SidekickSelectedGlitter" startDelay="0">
+    <Dampening max="0.900" min="0.600"/>
+    <DirectionalForce x="0" y="-50"/>
+    <Emitter emissionRate="0" spread="360" angle="360">
+        <EmissionRadius max="50" min="50"/>
+        <SpawnArea width="80" depth="0" height="80"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="360" min="-360"/>
+    <Size>
+        <Max x="24" y="24"/>
+        <Min x="12" y="12"/>
+    </Size>
+    <SizeChange>
+        <Max x="-24" y="-24"/>
+        <Min x="-65" y="-65"/>
+    </SizeChange>
+    <StartColor b="255" r="101" g="253" a="200"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.800" min="0.300"/>
+    <Velocity max="80" min="80"/>
+</ParticleEffect>

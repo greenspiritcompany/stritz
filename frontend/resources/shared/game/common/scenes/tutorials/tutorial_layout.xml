@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="Tutorial">
+		<Default>
+			<Size>
+				<OriginalSize height="550" width="300"/>
+				<Width percentage="60"/>
+			</Size>
+		</Default>
+		<Landscape>
+			<Translation>
+				<X percentage="60"/>
+				<Y percentage="50"/>
+			</Translation>
+			<Size>
+				<Height percentage="90"/>
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="40"/>
+			</Translation>
+			<Size>
+				<Width percentage="50"/>
+			</Size>
+		</Portrait>
+	</Object>
+	<Object sceneObject="TutorialCharacterLayout">
+		<Default>
+			<Translation>
+				<X percentage="8"/>
+				<Y percentage="103"/>
+			</Translation>
+			<Size>
+				<Height percentage="30"/>
+				<OriginalSize height="200" width="300"/>
+			</Size>
+		</Default>
+		<Landscape>
+			<Translation>
+				<X percentage="7"/>
+				<Y percentage="103"/>
+			</Translation>
+			<Size>
+				<Height percentage="50"/>
+			</Size>
+		</Landscape>
+	</Object>
+</Layout>

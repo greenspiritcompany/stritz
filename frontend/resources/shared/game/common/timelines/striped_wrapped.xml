@@ -1,0 +1,348 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0" endTime="2.9">
+
+		<Animate target="ColorVWhite" time="0.0">
+			<Hide/>
+		</Animate>
+		<Animate target="ColorVColor" time="0.0">
+			<Hide/>
+		</Animate>
+		<Animate target="ColorPolkaVWhiteBlurred" time="0.0">
+			<Hide/>
+		</Animate>
+		<Animate target="ColorPolkaVColorBlurred" time="0.0">
+			<Hide/>
+		</Animate>
+
+		<Animate target="ColorHWhite" time="0.0">
+			<Hide/>
+		</Animate>
+		<Animate target="ColorHColor" time="0.0">
+			<Hide/>
+		</Animate>
+		<Animate target="ColorPolkaHWhiteBlurred" time="0.0">
+			<Hide/>
+		</Animate>
+		<Animate target="ColorPolkaHColorBlurred" time="0.0">
+			<Hide/>
+		</Animate>
+
+		<!-- Horizontal particle party -->
+		<Animate target="ParticleHorizontalLeft" time="0.0">
+			<Hide time="0.0"/>
+			<Show time="0.5"/>
+			<Translation time="0.5" x="0.0" y="0.0" z="0.0"/>
+			<Translation time="0.8" x="-400.0" y="0.0" z="0.0"/>
+			<Translation time="0.9" x="-800.0" y="0.0" z="0.0"/>
+			<Translation time="1.0" x="-1500.0" y="0.0" z="0.0"/>
+			<Hide time="1.0"/>
+		</Animate>
+
+		<Animate target="ParticleHorizontalRight" time="0.0">
+			<Hide time="0.0"/>
+			<Show time="0.5"/>
+			<Translation time="0.5" x="0.0" y="0.0" z="0.0"/>
+			<Translation time="0.8" x="400.0" y="0.0" z="0.0"/>
+			<Translation time="0.9" x="800.0" y="0.0" z="0.0"/>
+			<Translation time="1.0" x="1500.0" y="0.0" z="0.0"/>
+			<Hide time="1.0"/>
+		</Animate>
+
+		<!-- Vertical particle party -->
+		<Animate target="ParticleVerticalUp" time="0.0">
+			<Hide time="0.0"/>
+			<Show time="1.5"/>
+			<Translation time="1.5" x="0.0" y="0.0" z="0.0"/>
+			<Translation time="1.8" x="0.0" y="-400.0" z="0.0"/>
+			<Translation time="1.9" x="0.0" y="-800.0" z="0.0"/>
+			<Translation time="2.0" x="0.0" y="-1500.0" z="0.0"/>
+			<Hide time="2.0"/>
+		</Animate>
+
+		<Animate target="ParticleVerticalDown" time="0.0">
+			<Hide time="0.0"/>
+			<Show time="1.5"/>
+			<Translation time="1.5" x="0.0" y="0.0" z="0.0"/>
+			<Translation time="1.8" x="0.0" y="400.0" z="0.0"/>
+			<Translation time="1.9" x="0.0" y="800.0" z="0.0"/>
+			<Translation time="2.0" x="0.0" y="1500.0" z="0.0"/>
+			<Hide time="2.0"/>
+		</Animate>
+
+		<!-- Tone down the lightning's intensity without touching the original texture (FIRST ROUND) -->
+		<Animate target="colorbombfx_hit_01" time="0.0">
+			<Show time="0.0"/>
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="90" time="0.2"/>
+		</Animate>
+
+		<Animate target="colorbombfx_hit_02" time="0.0">
+			<Show time="0.0"/>
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="100" time="0.15"/>
+		</Animate>
+
+		<Animate target="colorbombfx_hit_03" time="0.0">
+			<Show time="0.0"/>
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="80" time="0.2"/>
+		</Animate>
+
+		<Animate target="colorbombfx_hit_04" time="0.0">
+			<Show time="0.0"/>
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="60" time="0.15"/>
+		</Animate>
+
+		<Animate target="colorbombfx_hit_05" time="0.0">
+			<Show time="0.0"/>
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="110" time="0.15"/>
+		</Animate>
+
+		<Animate target="colorbombfx_hit_06" time="0.0">
+			<Show time="0.0"/>
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="80" time="0.15"/>
+		</Animate>
+
+		<!-- Tone down the lightning's intensity without touching the original texture (SECOND ROUND) -->
+		<Animate target="colorbombfx_hit_01" time="1.0">
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="60" time="0.2"/>
+		</Animate>
+
+		<Animate target="colorbombfx_hit_02" time="1.0">
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="110" time="0.15"/>
+		</Animate>
+
+		<Animate target="colorbombfx_hit_03" time="1.0">
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="80" time="0.2"/>
+		</Animate>
+
+		<Animate target="colorbombfx_hit_04" time="1.0">
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="60" time="0.15"/>
+		</Animate>
+
+		<Animate target="colorbombfx_hit_05" time="1.0">
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="110" time="0.15"/>
+		</Animate>
+
+		<Animate target="colorbombfx_hit_06" time="1.0">
+			<Color r="255" g="255" b="255" a="255" time="0.0"/>
+			<Color r="255" g="255" b="255" a="90" time="0.15"/>
+		</Animate>
+
+
+		<Triggers>
+			<EffectTrigger time="0.0" name="StripeWrappedCharge" targetName="ParticleHorizontalLeft"/>
+			<EffectTrigger time="1.0" name="StripeWrappedCharge" targetName="ParticleVerticalUp"/>
+
+			<!--<EffectTrigger time="0.25" name="StripeWrappedSpark" targetName="ParticleHorizontalLeft"/>
+			<EffectTrigger time="1.25" name="StripeWrappedSpark" targetName="ParticleVerticalUp"/>-->
+
+
+			<EffectTrigger time="0.5" name="StripedWrappedHorizontal" targetName="ParticleHorizontalLeft"/>
+			<EffectTrigger time="0.5" name="StripedWrappedHorizontal" targetName="ParticleHorizontalRight"/>
+
+			<EffectTrigger time="1.5" name="StripedWrappedVertical" targetName="ParticleVerticalUp"/>
+			<EffectTrigger time="1.5" name="StripedWrappedVertical" targetName="ParticleVerticalDown"/>
+
+			<EffectTrigger time="0.5" name="StripedWrappedSpark" targetName="ParticleHorizontalLeft"/>
+			<EffectTrigger time="0.5" name="StripedWrappedSpark" targetName="ParticleHorizontalRight"/>
+
+			<EffectTrigger time="1.5" name="StripedWrappedSpark" targetName="ParticleVerticalUp"/>
+			<EffectTrigger time="1.5" name="StripedWrappedSpark" targetName="ParticleVerticalDown"/>
+
+			<AnimationTrigger time="0.0" animationName="hit_activate_01" targetName="colorbombfx_hit_01"/>
+			<AnimationTrigger time="0.0" animationName="hit_activate_02" targetName="colorbombfx_hit_02"/>
+			<AnimationTrigger time="0.0" animationName="hit_activate_03" targetName="colorbombfx_hit_03"/>
+			<AnimationTrigger time="0.0" animationName="hit_activate_04" targetName="colorbombfx_hit_04"/>
+			<AnimationTrigger time="0.0" animationName="hit_activate_05" targetName="colorbombfx_hit_05"/>
+			<AnimationTrigger time="0.0" animationName="hit_activate_06" targetName="colorbombfx_hit_06"/>
+
+			<AnimationTrigger time="1.0" animationName="hit_activate_01" targetName="colorbombfx_hit_01"/>
+			<AnimationTrigger time="1.0" animationName="hit_activate_02" targetName="colorbombfx_hit_02"/>
+			<AnimationTrigger time="1.0" animationName="hit_activate_03" targetName="colorbombfx_hit_03"/>
+			<AnimationTrigger time="1.0" animationName="hit_activate_04" targetName="colorbombfx_hit_04"/>
+			<AnimationTrigger time="1.0" animationName="hit_activate_05" targetName="colorbombfx_hit_05"/>
+			<AnimationTrigger time="1.0" animationName="hit_activate_06" targetName="colorbombfx_hit_06"/>
+
+		</Triggers>
+
+
+		<!--
+
+				Vertical
+
+						-->
+
+		<!--
+				Grow
+						-->
+
+		<Animate target="ColorVWhite" time="1.0">
+			<Show/>
+			<Translation time="0.0" x="0" y="0"/>
+			<Scale time="0.000" x="0.666" y="0.666"/>
+
+			<Scale time="0.500" x="2.000" y="2.000"/>
+		</Animate>
+		<Animate target="ColorVColor" time="1.0">
+			<Show/>
+			<Scale time="0.000" x="0.666" y="0.666"/>
+
+			<Scale time="0.500" x="2.000" y="2.000"/>
+		</Animate>
+
+		<!--
+					Split
+							-->
+		<Animate target="ColorVWhite" time="1.5">
+			<Show/>
+			<Translation time="0.0" x="0" y="0"/>
+			<Translation time="0.05" x="75" y="0"/>
+			<Translation time="0.1" x="90" y="0"/>
+			<Translation time="0.2" x="-90" y="0"/>
+			<Translation time="0.4" x="-300" y="0"/>
+			<Scale time="0.0" y="2" x="2"/>
+			<Scale time="0.2" x="2" y="4.2"/>
+			<Scale time="0.3" x="2" y="7.0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="255"/>
+			<Color time="0.3" r="255" g="255" b="255" a="0"/>
+			<Hide time="0.3"/>
+		</Animate>
+		<Animate target="ColorVColor" time="1.5">
+			<Show/>
+			<Translation time="0.0" x="0" y="0"/>
+			<Translation time="0.05" x="-75" y="0"/>
+			<Translation time="0.1" x="-90" y="0"/>
+			<Translation time="0.2" x="90" y="0"/>
+			<Translation time="0.4" x="300" y="0"/>
+			<Scale time="0.0" y="2" x="2"/>
+			<Scale time="0.2" x="2" y="4.2"/>
+			<Scale time="0.3" x="2" y="7.0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="255"/>
+			<Color time="0.3" r="255" g="255" b="255" a="0"/>
+			<Hide time="0.3"/>
+		</Animate>
+
+
+		<Animate target="ColorPolkaVWhiteBlurred" time="1.5">
+			<Hide/>
+			<Show time="0.2"/>
+			<Translation time="0.2" x="-100" y="-8"/>
+			<Translation time="0.8" x="-500" y="-8"/>
+			<Scale time="0.2" x="1.2" y="4.0"/>
+			<Scale time="0.5" x="20.6" y="4.0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="0"/>
+			<Color time="0.3" r="255" g="255" b="255" a="255"/>
+			<Color time="0.8" r="255" g="255" b="255" a="0"/>
+			<Hide time="0.8"/>
+		</Animate>
+		<Animate target="ColorPolkaVColorBlurred" time="1.5">
+			<Hide/>
+			<Show time="0.2"/>
+			<Translation time="0.2" x="100" y="0"/>
+			<Translation time="0.8" x="500" y="0"/>
+			<Scale time="0.2" x="1.2" y="4.0"/>
+			<Scale time="0.5" x="20.6" y="4.0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="0"/>
+			<Color time="0.3" r="255" g="255" b="255" a="255"/>
+			<Color time="0.8" r="255" g="255" b="255" a="0"/>
+			<Hide time="0.8"/>
+		</Animate>
+
+		<!--
+
+				Horizontal
+
+						-->
+
+		<!--
+				Grow
+						-->
+		<Animate target="ColorHWhite" time="0.0">
+			<Show/>
+			<Translation time="0.0" x="0" y="0"/>
+			<Scale time="0.000" x="0.666" y="0.666"/>
+
+			<Scale time="0.500" x="2.000" y="2.000"/>
+		</Animate>
+		<Animate target="ColorHColor" time="0.0">
+			<Show/>
+			<Scale time="0.000" x="0.666" y="0.666"/>
+
+			<Scale time="0.500" x="2.000" y="2.000"/>
+		</Animate>
+		<!--
+				Split
+						-->
+		<Animate target="ColorHWhite" time="0.5">
+			<Show/>
+			<Translation time="0.0" x="0" y="0"/>
+			<Translation time="0.05" x="75" y="0"/>
+			<Translation time="0.1" x="90" y="0"/>
+			<Translation time="0.2" x="-90" y="0"/>
+			<Translation time="0.4" x="-300" y="0"/>
+			<Scale time="0.0" y="2" x="2"/>
+			<Scale time="0.2" y="2" x="4.2"/>
+			<Scale time="0.3" y="2" x="7.0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="255"/>
+			<Color time="0.3" r="255" g="255" b="255" a="0"/>
+			<Hide time="0.3"/>
+		</Animate>
+		<Animate target="ColorHColor" time="0.5">
+			<Show/>
+			<Translation time="0.0" x="0" y="0"/>
+			<Translation time="0.05" x="-75" y="0"/>
+			<Translation time="0.1" x="-90" y="0"/>
+			<Translation time="0.2" x="90" y="0"/>
+			<Translation time="0.4" x="300" y="0"/>
+			<Scale time="0.0" y="2" x="2"/>
+			<Scale time="0.2" y="2" x="4.2"/>
+			<Scale time="0.3" y="2" x="7.0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="255"/>
+			<Color time="0.3" r="255" g="255" b="255" a="0"/>
+			<Hide time="0.3"/>
+		</Animate>
+		<Animate target="ColorPolkaHWhiteBlurred" time="0.5">
+			<Hide/>
+			<Show time="0.2"/>
+			<Translation time="0.2" x="-100" y="-10"/>
+			<Translation time="0.8" x="-500" y="-10"/>
+			<Scale time="0.2" x="1.2" y="4.0"/>
+			<Scale time="0.5" x="20.6" y="4.0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="0"/>
+			<Color time="0.3" r="255" g="255" b="255" a="255"/>
+			<Color time="0.8" r="255" g="255" b="255" a="0"/>
+			<Hide time="0.8"/>
+		</Animate>
+		<Animate target="ColorPolkaHColorBlurred" time="0.5">
+			<Hide/>
+			<Show time="0.2"/>
+			<Translation time="0.2" x="100" y="0"/>
+			<Translation time="0.8" x="500" y="0"/>
+			<Scale time="0.2" x="0.6" y="4.0"/>
+			<Scale time="0.5" x="20.6" y="4.0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="0"/>
+			<Color time="0.3" r="255" g="255" b="255" a="255"/>
+			<Color time="0.8" r="255" g="255" b="255" a="0"/>
+			<Hide time="0.8"/>
+		</Animate>
+
+		<Triggers>
+			<!-- Play sound here -->
+			<EffectTrigger time="0.0" name="StripedWrappedSFX"/>
+		</Triggers>
+
+		<TimeControls>
+			<!--<Loop time="3.0" jumpToTime="0.0"/>-->
+		</TimeControls>
+	</Timeline>
+</Timelines>

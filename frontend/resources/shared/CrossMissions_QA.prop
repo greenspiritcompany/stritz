@@ -1,0 +1,8 @@
+missionserver.host igpqa.midasplayer.com
+missionserver.port 80
+missionserver.secure false
+missionserver.page /
+missionserver.waiting.noMissions 300
+missionserver.waiting.cache 60
+missionserver.waiting.cache2 120
+missionserver.waiting.noStartedMissions 150

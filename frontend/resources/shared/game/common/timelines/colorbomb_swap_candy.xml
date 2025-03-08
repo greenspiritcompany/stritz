@@ -1,0 +1,13 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="3.5">
+		<Animate target="ColorbombSwapCandy">
+			<Show/>
+			<Hide time="1.0"/>
+		</Animate>
+
+		<Triggers>
+			<EffectTrigger name="ColorBombSwapCandy" time="0.0"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

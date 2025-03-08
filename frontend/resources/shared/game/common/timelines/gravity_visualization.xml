@@ -1,0 +1,19 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="0.4">
+		<Animate target="Light" time="0.0">
+			<Hide/>
+			<Show time="0.01"/>
+			<Color time="0.0" r="255" g="255" b="255" a="0"/>
+            <Translation time="0.0" y="-30"/>
+            <Scale time="0.0" y="0.8"/>
+			<Color time="0.25" r="255" g="255" b="255" a="250"/>
+            <Translation time="0.2" y="-17"/>
+            <Scale time="0.2" y="1.25"/>
+			<Color time="0.399" r="255" g="255" b="255" a="0"/>
+            <Translation time="0.399" y="-5"/>
+            <Scale time="0.4" y="1"/>
+			<Hide time="0.399"/>
+		</Animate>
+	</Timeline>
+</Timelines>

@@ -1,0 +1,31 @@
+<ParticleEffect maxParticles="6" space="Local" timeToEmit="0.020" name="MemoriesIconDotsPFX">
+<CentrifugalForce min="6" max="8" />
+<Dampening min="0.700" max="0.900" />
+<DirectionalForce x="10" y="-10" />
+<Emitter emissionRate="0" spread="360" angle="-75">
+	<EmissionRadius min="20" max="20" />
+	<SpawnArea width="10" depth="0" height="10" />
+</Emitter>
+<Rotation min="200" max="200" />
+<RotationSpeed min="100" max="100" />
+<Size>
+	<Max x="80" y="80" />
+	<Min x="40" y="40" />
+</Size>
+<SizeChange>
+	<Max x="-30" y="-30" />
+	<Min x="-20" y="-20" />
+</SizeChange>
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/strong_light.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0" />
+<TimeToLive min="0.600" max="0.900" />
+<Velocity min="200" max="300" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="252" g="91" b="173" a="80" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="185" g="239" b="255" a="0" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

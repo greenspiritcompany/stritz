@@ -1,0 +1,26 @@
+{
+  "id": "likinggreen",
+  "nameKey" : "quests.names.likinggreen",
+  "difficulty" : 0,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.likinggreen",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_candy_green.png",
+      "data": {
+		"amount" : 1500,
+        "color": "green"
+      }
+    }
+  ],
+   "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    }
+  ]
+}

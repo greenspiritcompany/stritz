@@ -1,0 +1,23 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="4" space="Local" timeToEmit="0.100" name="ChainHitBigPFX">
+    <Dampening max="0.900" min="0.900"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="22.710" depth="0" height="23.850"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="100"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="160" min="-360"/>
+    <Size>
+        <Max x="25" y="10"/>
+        <Min x="25" y="10"/>
+    </Size>
+    <SizeChange>
+        <Max x="-25" y="-10"/>
+        <Min x="-30" y="-15"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/chain_string1.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.700" min="0.700"/>
+    <Velocity max="400" min="350"/>
+</ParticleEffect>

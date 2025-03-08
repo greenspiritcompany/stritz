@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Animate target="GoatIdle">
+			<Hide time="0.0"/>
+		</Animate>
+		<Animate target="GoatWin">
+			<Show time="0.0"/>
+		</Animate>
+		<Triggers>
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp06.1"/>
+			<EffectTrigger name="EngineFix" targetName="WinParticleOffset1" time="0.0"/>
+			<EffectTrigger name="EngineFix" targetName="WinParticleOffset2" time="0.0"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp06" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger targetName="GoatWin" animationName="GoatHappy" crossFade="0.5" time="0"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp06" animationName="SpeechBubbleDisappear"/>
+			<EffectTrigger name="character_yeti" time="0.1"/>
+		</Triggers>
+	</Timeline>
+</Timelines>
+

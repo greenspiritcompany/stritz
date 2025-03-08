@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.5">
+
+		<Animate target="Part2" time="0.0">
+			<Show/>
+			<Color time="0.0" r="255" g="255" b="255" a="255"/>
+			<Color time="0.1" r="255" g="255" b="255" a="255"/>
+			<Color time="0.15" r="255" g="255" b="255" a="0"/>
+			<Hide time="1.0"/>
+		</Animate>
+
+		<Triggers>
+            <AnimationTrigger time="0.0" targetName="Part2" animationName="Jiggle"/>
+			<EffectTrigger name="JellyCakeHitPart2EFQ" time="0.15" parentName="ParticleHelperPart2">
+				<Offset z="500" y="74"/>
+			</EffectTrigger>
+		</Triggers>
+	</Timeline>
+</Timelines>

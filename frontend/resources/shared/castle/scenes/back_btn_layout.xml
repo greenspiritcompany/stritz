@@ -1,0 +1,39 @@
+<!DOCTYPE Layout SYSTEM '../../dtd/layout.dtd'>
+<Layout>
+    <Object sceneObject="Arch"/>
+    <Object sceneObject="BottomRight">
+        <Default>
+            <Translation>
+                <X percentage="100"/>
+                <Y percentage="100"/>
+            </Translation>
+        </Default>
+        <Portrait>
+            <Translation>
+                <X percentage="100"/>
+                <Y percentage="100"/>
+            </Translation>
+            <Size>
+                <Width percentage="80"/>
+                <OriginalSize height="1024" width="570"/>
+            </Size>
+        </Portrait>
+    </Object>
+    <Object sceneObject="Kimmy"/>
+    <Object sceneObject="KimmyBackBtn">
+        <Default/>
+        <Landscape>
+            <Size>
+                <Height percentage="100"/>
+                <Width percentage="80"/>
+            </Size>
+        </Landscape>
+        <Portrait>
+            <Size>
+                <Height percentage="100"/>
+                <Width percentage="80"/>
+            </Size>
+        </Portrait>
+    </Object>
+    <Object sceneObject="RemainingTime"/>
+</Layout>

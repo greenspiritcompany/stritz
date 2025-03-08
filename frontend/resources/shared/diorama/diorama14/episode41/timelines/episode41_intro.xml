@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Triggers>
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp41.0"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp41" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp41" animationName="SpeechBubbleDisappear"/>
+			<EffectTrigger time="0.0" name="character_ep41"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

@@ -1,0 +1,67 @@
+
+<!DOCTYPE Scene SYSTEM "../../../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Scene">
+		<SceneObject name="FizzCounters">
+			<SceneObject layerFlags="512" name="x2">
+				<SceneObject name="CountSprite">
+					<Sprite filename="shared/bootstrap/particles/tex/x2.png" vertexColors="false">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Material>
+						<Blend enabled="true"/>
+						<Depth enabled="true"/>
+					</Material>
+				</SceneObject>
+				<SceneObject name="ParticleHelper">
+					<Translation z="1" y="3"/>
+					<Scale x="1.5" y="1" z="1"/>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject layerFlags="512" name="x3">
+				<SceneObject name="CountSprite">
+					<Sprite filename="shared/bootstrap/particles/tex/x3.png" vertexColors="false">
+						<Pivot anchor="center"/>
+					</Sprite>
+				</SceneObject>
+                <SceneObject name="ParticleHelper">
+                    <Translation z="1" y="3"/>
+                    <Scale x="1.5" y="1" z="1"/>
+                </SceneObject>
+			</SceneObject>
+			<SceneObject layerFlags="512" name="x4">
+				<SceneObject name="CountSprite">
+					<Sprite filename="shared/bootstrap/particles/tex/x4.png" vertexColors="false">
+						<Pivot anchor="center"/>
+					</Sprite>
+				</SceneObject>
+                <SceneObject name="ParticleHelper">
+                    <Translation z="1" y="3"/>
+                    <Scale x="1.5" y="1" z="1"/>
+                </SceneObject>
+			</SceneObject>
+			<SceneObject layerFlags="512" name="x5">
+				<SceneObject name="CountSprite">
+					<Sprite filename="shared/bootstrap/particles/tex/x5.png" vertexColors="false">
+						<Pivot anchor="center"/>
+					</Sprite>
+				</SceneObject>
+                <SceneObject name="ParticleHelper">
+                    <Translation z="1" y="3"/>
+                    <Scale x="1.5" y="1" z="1"/>
+                </SceneObject>
+			</SceneObject>
+			<SceneObject layerFlags="512" name="x6">
+				<SceneObject name="CountSprite">
+					<Sprite filename="shared/bootstrap/particles/tex/x6.png" vertexColors="false">
+						<Pivot anchor="center"/>
+					</Sprite>
+				</SceneObject>
+                <SceneObject name="ParticleHelper">
+                    <Translation z="1" y="3"/>
+                    <Scale x="1.5" y="1" z="1"/>
+                </SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,100 @@
+{
+    "locks": [
+        {
+            "type": "starlock",
+            "attributes": {
+                "stars": 1
+            },
+            "inputs": [
+                {
+                    "starlevel": 6
+                }
+            ],
+            "targets": [
+                {
+                    "booster": 12002
+                }
+            ]
+        },
+        {
+            "type": "starlock",
+            "attributes": {
+                "stars": 1
+            },
+            "inputs": [
+                {
+                    "starlevel": 20
+                }
+            ],
+            "targets": [
+                {
+                    "booster": 12003
+                }
+            ]
+        },
+        {
+            "type": "starlock",
+            "attributes": {
+                "stars": 1
+            },
+            "inputs": [
+                {
+                    "starlevel": 24
+                }
+            ],
+            "targets": [
+                {
+                    "booster": 12005
+                }
+            ]
+        },
+        {
+            "type": "starlock",
+            "attributes": {
+                "stars": 1
+            },
+            "inputs": [
+                {
+                    "starlevel": 14
+                }
+            ],
+            "targets": [
+                {
+                    "booster": 12020
+                }
+            ]
+        },
+        {
+            "type": "starlock",
+            "attributes": {
+                "stars": 1
+            },
+            "inputs": [
+                {
+                    "starlevel": 19
+                }
+            ],
+            "targets": [
+                {
+                    "booster": 12021
+                }
+            ]
+        },
+        {
+            "type": "starlock",
+            "attributes": {
+                "stars": 1
+            },
+            "inputs": [
+                {
+                    "starlevel": 29
+                }
+            ],
+            "targets": [
+                {
+                    "booster": 12022
+                }
+            ]
+        }
+    ]
+}

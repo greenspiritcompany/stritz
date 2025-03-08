@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="Episode65Material">
+		<Cull enabled="false" face="back" />
+		<Texture filename="shared/diorama/diorama22/episode65/tex/episode65_material.png" />
+	</Material>
+	<Material name="Episode65MaterialAlpha" parentMaterial="Episode65Material">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode65PathMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode65PathMaterialAlpha" parentMaterial="Episode65PathMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<Material name="CloudMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/clouds.png" wrap="repeat" />
+		<Blend enabled="true" />
+		<Depth enabled="true" writeMask="true" />
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="Episode65BackdropMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/diorama22/episode65/tex/episode65_material.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode65BackdropMaterialAlpha" parentMaterial="Episode65BackdropMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<SceneObject name="DioramaModel">
+			<!--
+				BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+        FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+      -->
+			<Material parentMaterial="Episode65BackdropMaterial" />
+			<Translation x="0" />
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<!--ADD PATH SHADOW - ADD YOUR -->
+			<!--ASSET SHADOWS-->
+			<!-- DIORAMA ASSETS -->
+			<!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+
+      <SceneObject name="episode65_Non_Interactable_Group">
+        <SceneObject name="episode65_Non_Interactable_01">
+          <Model filename="shared/diorama/diorama22/episode65/models/non_interactable/episode65_non_interactable_01.ffm"/>
+          <Materials>
+            <Material parentMaterial="Episode65MaterialAlpha"/>
+          </Materials>
+          <Translation x="-413.886" y="40.955" z="-150.066"/>
+          <Rotation x="0" y="0" z="0"/>
+          <Scale x="1" y="1" z="1"/>
+        </SceneObject>
+      </SceneObject>
+
+
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+			<!--
+				SPEECHBUBBLE
+			-->
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<Import filename="shared/diorama/diorama22/episode65/scenes/episode65_levelpins.xml" />
+			<SceneObject name="episode65_ground">
+				<Material parentMaterial="Episode65Material" />
+				<Model filename="shared/diorama/diorama22/episode65/models/episode65_ground.ffm" />
+				<Rotation x="0" y="0" z="0" />
+				<Translation x="-21.856" y="-47.602" z="-75.462" />
+			</SceneObject>
+			<SceneObject name="E65EndSign">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm" />
+				<Material parentMaterial="Under_Construction_Icon" />
+				<Translation x="832.800" y="52.251" z="100.573" />
+				<Rotation x="-35" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="episode65_Interactable_Group">
+				<SceneObject name="sun">
+					<Interactable upEffect="diorama_sun" />
+					<Material parentMaterial="Episode65MaterialAlpha">
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama22/episode65/models/interactable/sun.ffm" />
+					<Rotation x="0" y="0" z="43.754" />
+					<Translation x="706.016" y="410.674" z="-493.663" />
+					<Animation animationData="sun_idle" name="Idle" layer="0" play="true" loopCount="-1" />
+					<Animation animationData="sun_up" name="Up" layer="1" play="false" loopCount="0" />
+					<Animation animationData="sun_out" name="Out" layer="2" play="false" loopCount="0" />
+					<Animation animationData="sun_down" name="Down" layer="3" play="false" loopCount="0" />
+					<Scale x="1.034" y="1.034" z="1.034" />
+				</SceneObject>
+				<SceneObject name="cocktail">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/interactable/cocktail.ffm" />
+					<Rotation x="-15" y="0" z="0" />
+					<Translation x="-384.989" y="-104.190" z="328.829" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="0.814" y="0.922" z="0.922" />
+				</SceneObject>
+				<SceneObject name="plant_coral_a">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/interactable/plant_coral_a.ffm" />
+					<Rotation y="0" z="0" x="-10" />
+					<Translation x="-299.776" y="-75.927" z="-162.458" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="plant_coral_b">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/interactable/plant_coral_b.ffm" />
+					<Rotation y="0" z="0" x="-10" />
+					<Translation x="803.240" y="-86.517" z="-180.473" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="rock_background_b">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/interactable/rock_background_b.ffm" />
+					<Rotation x="-5" y="0" z="0" />
+					<Translation x="-574.639" y="-232.542" z="-221.734" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1.427" y="1.441" z="1.413" />
+				</SceneObject>
+				<SceneObject name="seashell_bed">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/interactable/seashell_bed.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="-6.336" y="-150.988" z="-283.886" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="silhouette_rock_single6">
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/non_interactable/silhouette_rock_single.ffm" />
+					<Rotation x="0" y="180" z="0" />
+					<Translation x="-629.186" y="-89.270" z="-346.637" />
+					<Scale x="1.060" y="0.693" z="0.693" />
+				</SceneObject>
+				<SceneObject name="rock_foreground2">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/interactable/rock_background_b.ffm" />
+					<Rotation x="-15" y="0" z="0" />
+					<Translation x="579.928" y="-108.766" z="335.073" />
+					<Scale x="0.916" y="0.816" z="0.821" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="silhouette_rock_single9">
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/non_interactable/silhouette_rock_single.ffm" />
+					<Rotation x="0" y="180" z="0" />
+					<Translation x="-149.400" y="-56.966" z="-366.158" />
+					<Scale x="1.416" y="0.693" z="0.693" />
+				</SceneObject>
+				<SceneObject name="silhouette_rock_single10">
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/non_interactable/silhouette_rock_single.ffm" />
+					<Rotation x="0" y="180" z="0" />
+					<Translation x="410.260" y="-89.948" z="-398.797" />
+					<Scale x="1.317" y="0.573" z="0.573" />
+				</SceneObject>
+				<SceneObject name="silhouette_rock_single11">
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/non_interactable/silhouette_rock_single.ffm" />
+					<Rotation x="0" y="180" z="0" />
+					<Translation x="876.749" y="-107.223" z="-365.321" />
+					<Scale x="1.060" y="0.693" z="0.693" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Episode65Character">
+				<SceneObject name="CharacterEp65">
+					<Material parentMaterial="Episode65MaterialAlpha">
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama22/episode65/models/character/episode65_character.ffm">
+						<Bound maxZ="16" minX="-140" maxX="140" minY="0" maxY="367" minZ="0" />
+						<Animation filename="shared/diorama/diorama22/episode65/models/character/episode65_character_idle.ffa" loopCount="-1" name="Idle" speed="0.800" />
+						<Animation filename="shared/diorama/diorama22/episode65/models/character/episode65_character_talk.ffa" loopCount="-1" name="Talk" speed="0.700" />
+					</Model>
+					<Rotation y="0" z="0" />
+					<Translation x="379.430" y="-142.059" z="-200.236" />
+					<Scale x="1.241" y="1.241" z="1.241" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="SpeechBubbleEp65">
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear" />
+				<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear" />
+				<SpeechBubble>
+					<Speech key="episode65.intro" />
+					<Speech key="episode65.outro" />
+				</SpeechBubble>
+				<Translation x="175.723" y="125" z="-136.171" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="episode65_none_Interactable_Group">
+				<SceneObject name="asset_shadow">
+					<Material parentMaterial="Episode65MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode65/models/asset_shadow.ffm">
+						<Bound minZ="-700" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-50.508" y="-45.844" z="-53.369" />
+					<Scale x="1" y="1" z="1.082" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation x="335.379" y="-187.873" z="-200" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1077CameraTarget">
+				<Translation x="-52.705" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1090CameraTarget">
+				<Translation x="-52.705" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="E65Path" editorEntityId="19">
+				<Model filename="shared/diorama/diorama22/episode65/models/path/episode65_path.ffm">
+					<Bound minZ="-600" />
+				</Model>
+				<Material parentMaterial="Episode65PathMaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="E65PathShadow" editorEntityId="20">
+				<Model filename="shared/diorama/diorama22/episode65/models/path/path_shadow.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="Episode65MaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="Particles201">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation x="-608.742" y="-187.873" z="-200" />
+			</SceneObject>
+			<SceneObject name="bubbles">
+				<Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true" />
+				<Translation x="434.699" y="60.344" z="346.997" />
+			</SceneObject>
+			<SceneObject name="bubbles2">
+				<Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true" />
+				<Translation x="-456.807" y="60.344" z="346.997" />
+			</SceneObject>
+			<SceneObject name="bubbles3">
+				<Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true" />
+				<Translation x="-456.807" y="60.344" z="-140.037" />
+			</SceneObject>
+			<SceneObject name="bubbles4">
+				<Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true" />
+				<Translation x="453.951" y="60.344" z="-140.037" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="episode65_GodRays">
+		<Material parentMaterial="CloudMaterial">
+			<Blend enabled="true" />
+			<Depth enabled="true" />
+		</Material>
+		<Model filename="shared/diorama/common/models/effects/god_rays.ffm">
+			<Animation filename="shared/diorama/common/models/effects/god_rays.ffa" loopCount="-1" name="Idle" play="true" speed="1.450" />
+		</Model>
+		<Rotation x="0" y="0" z="0" />
+		<Scale x="1" y="1.400" z="1" />
+		<Translation x="-153.313" y="1" z="-53.977" />
+	</SceneObject>
+</Scene>

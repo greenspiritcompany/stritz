@@ -1,0 +1,16 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Triggers>
+
+      <!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+      <EffectTrigger name="character_hippo" time="0.0"/>
+      
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp37.0"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp37" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp37" animationName="SpeechBubbleDisappear"/>
+			<AnimationTrigger time="0.0" targetName="CharacterEp37" animationName="Talk" crossFade="0.2"/>
+			<AnimationTrigger time="4.1" targetName="CharacterEp37" animationName="Idle" crossFade="0.3"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

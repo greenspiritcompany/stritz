@@ -1,0 +1,52 @@
+<Timelines>
+<Timeline startTime="0" endTime="4.100">
+	<Animate time="0" target="revealed">
+		<Show time="0" />
+	</Animate>
+	<Animate time="0" target="revealed">
+		<Show time="0" />
+		<Scale time="0" x="0" y="0" z="0" />
+		<Scale time="0.400" x="1.250" y="1.250" z="1.250" />
+		<Scale time="0.600" x="1" y="1" z="1" />
+	</Animate>
+
+	<Animate time="0" target="revealed_back">
+		<Show time="0" />
+		<Scale time="0" x="0" y="0" z="0" />
+		<Scale time="0.400" x="1.250" y="1.250" z="1.250" />
+		<Scale time="0.600" x="1" y="1" z="1" />
+		<Hide time="3.0" />
+	</Animate>
+
+	<Animate time="0" target="curl">
+		<Show time="0" />
+		<Color time="0" r="255" g="255" b="255" a="255" />
+		<Color time="0.250" r="255" g="255" b="255" a="0" />
+		<Color time="0.450" r="255" g="255" b="255" a="0" />
+		<Color time="1.250" r="255" g="255" b="255" a="255" />
+	</Animate>
+	<Animate time="0" target="curl_shadow">
+		<Show time="0" />
+		<Color time="0" r="255" g="255" b="255" a="255" />
+		<Color time="0.250" r="255" g="255" b="255" a="0" />
+		<Color time="0.450" r="255" g="255" b="255" a="0" />
+		<Color time="1.250" r="255" g="255" b="255" a="255" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="0" animationName="memory_flip_animation" crossFade="0" targetName="revealed" />
+		<AnimationTrigger time="0" animationName="memory_flip_animation" crossFade="0" targetName="revealed_back" />
+		<EffectTrigger time="0.010" name="MemoriesRevealPieceEFQ" parentName="" targetName="" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="0" y="0" z="0" />
+		</EffectTrigger>
+		<!--<EffectTrigger time="0.012" name="MemoriesRevealTrailEFQ" parentName="effect" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">-->
+		<!--<Offset x="0" y="0" z="20" />-->
+		<!--</EffectTrigger>-->
+		<EffectTrigger time="0.493" name="MemoriesRevealHitEFQ" parentName="effect" targetName="effect" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="0" y="0" z="20" />
+		</EffectTrigger>
+		<CustomTrigger time="0" name="InitializeTranslation" data="" />
+		<CustomTrigger time="0" name="StartTranslation" data="{&quot;TweenFunction&quot;:&quot;Quint&quot;, &quot;Duration&quot;:0.6}" />
+		<CustomTrigger time="0.600" name="Ended" data="" />
+	</Triggers>
+</Timeline>
+</Timelines>

@@ -1,0 +1,152 @@
+<Scene>
+	<Materials>
+		<Material name="Episode64Material">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="false" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama22/episode64/tex/episode64_material.png"/>
+			</Textures>
+		</Material>
+		<Material name="Episode64MaterialAlpha" parentMaterial="Episode64Material">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<Material name="Episode64PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/path_tex.png"/>
+			</Textures>
+		</Material>
+		<Material name="Episode64PathMaterialAlpha" parentMaterial="Episode64PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<Material name="Episode64BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama22/episode64/tex/episode64_material.png"/>
+			</Textures>
+		</Material>
+		<Material name="Episode64BackdropMaterialAlpha" parentMaterial="Episode64BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+	</Materials>
+	<SceneObject name="pisode64_character">
+		<Model filename="shared/diorama/diorama22/episode64/models/character/pisode64_character.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="-58.5517619207" y="2.39160164766" z="-183.067108298"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep64_asset_small_rock">
+		<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_small_rock.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="830.252450771" y="-29.8051390921" z="340.885175828"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep64_asset_big_rock">
+		<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_big_rock.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="657.383001379" y="-25.4263981968" z="-197.138844706"/>
+		<Rotation x="-10.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep64_asset_chest">
+		<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_chest.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="287.953808904" y="-16.4361336796" z="-321.104387485"/>
+		<Rotation x="-10.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep64_asset_medium_rock">
+		<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_medium_rock.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="-582.763724749" y="-21.5860087616" z="-305.298169863"/>
+		<Rotation x="-10.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep64_asset_tall_rock">
+		<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_tall_rock.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="-1019.38503172" y="-35.6819513918" z="-188.62507476"/>
+		<Rotation x="-10.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep64_asset_seaweed">
+		<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_seaweed.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="-1108.89267903" y="-18.0637011272" z="335.801548624"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="bg_seaweed_fade">
+		<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/bg_seaweed_fade.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="-372.047703438" y="18.6034680071" z="-357.960121568"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="water_ripple">
+		<Model filename="shared/diorama/diorama22/episode64/models/water_ripple.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="episode64_diorama_sky">
+		<Model filename="shared/diorama/diorama22/episode64/models/episode64_diorama_sky.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="-19.0987053351" z="-33.173027271"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="episode64_ground">
+		<Model filename="shared/diorama/diorama22/episode64/models/episode64_ground.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_ocean">
+		<Model filename="shared/diorama/diorama22/episode64/models/soda_ocean.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="-157.002795563" y="270.776956244" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_ocean">
+		<Model filename="shared/diorama/diorama22/episode64/models/soda_ocean.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="-157.002795563" y="270.776956244" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow">
+		<Model filename="shared/diorama/diorama22/episode64/models/asset_shadow.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode64MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+
+		<Material name="SodaBottleMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Shader program="TextureColor"/>
+		</Material>
+
+		<Material name="SodaBottleCyanMaterial" parentMaterial="SodaBottleMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_cyan_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottleBlueMaterial" parentMaterial="SodaBottleMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_blue_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottleGreenMaterial" parentMaterial="SodaBottleMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_green_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottleOrangeMaterial" parentMaterial="SodaBottleMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_orange_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottlePurpleMaterial" parentMaterial="SodaBottleMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_purple_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottleRedMaterial" parentMaterial="SodaBottleMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_red_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottleYellowMaterial" parentMaterial="SodaBottleMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_yellow_c.png"/>
+			</Textures>
+		</Material>
+
+	</Materials>
+</Scene>

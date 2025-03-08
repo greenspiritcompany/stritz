@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+  <Timeline startTime="0.0" endTime="5.0">
+
+    <Animate target="KimmyInBoat" time="0.0">
+      <Translation time="0.0" x ="3000"/>
+      <Show/>
+    </Animate>
+
+    <Animate target="CoverHole1" time="0.0">
+      <Translation time="0.0" x="0"/>
+      <Show/>
+    </Animate>
+
+    <Animate target="CoverHole2" time="0.0">
+      <Translation time="0.0" x="1500"/>
+      <Show/>
+    </Animate>
+
+    <Triggers>
+        <EffectTrigger name="character_toad" time="0.0"/>
+      <CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp11.1"/>
+      <AnimationTrigger time="0.0" targetName="SpeechBubbleEp11" animationName="SpeechBubbleAppear"/>
+      <AnimationTrigger time="4.0" targetName="SpeechBubbleEp11" animationName="SpeechBubbleDisappear"/>
+      <AnimationTrigger time="0.1" targetName="ToadGuy" animationName="Talk" crossFade="0.4"/>
+      <AnimationTrigger time="4.0" targetName="ToadGuy" animationName="Idle" crossFade="0.8"/>
+    </Triggers>
+  </Timeline>
+</Timelines>

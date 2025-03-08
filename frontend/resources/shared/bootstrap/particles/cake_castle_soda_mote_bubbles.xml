@@ -1,0 +1,24 @@
+<ParticleEffect maxParticles="5" space="Local" timeToEmit="60" name="CakeCastleSodaMoteBubblesPFX">
+<Dampening min="0" max="0" />
+<DirectionalForce x="0" />
+<Emitter emissionRate="0.010" angle="0" spread="0">
+	<SpawnArea width="100" depth="0" height="100" />
+	<EmissionRadius min="25" max="25" />
+</Emitter>
+<EndColor r="255" g="234" b="249" a="0" />
+<Rotation max="10" min="0" />
+<RotationSpeed max="90" min="10" />
+<Size>
+	<Max x="15" y="15" />
+	<Min x="6" y="6" />
+</Size>
+<SizeChange>
+	<Max x="2" y="2" />
+	<Min x="1" y="1" />
+</SizeChange>
+<StartColor r="255" g="255" b="255" a="100" />
+<Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/fizz_bubble.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive min="0.200" max="0.700" />
+<Velocity max="1" min="0" />
+</ParticleEffect>

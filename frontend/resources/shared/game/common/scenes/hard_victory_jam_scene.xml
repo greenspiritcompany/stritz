@@ -1,0 +1,142 @@
+<Scene>
+	<Material name="SodaMat">
+		<Texture filename="shared/game/common/tex/candy/lemonade_v2.png"/>
+		<Blend enabled="true"/>
+		<Color g="255" r="255" a="230" b="255"/>
+	</Material>
+	<Material name="KimmyExtraHappyMat">
+		<Texture filename="shared/diorama/common/tex/kimmy/ninja_kimmy_savebears_tex.png"/>
+		<Blend enabled="true"/>
+		<Cull enabled="false" face="back"/>
+		<Depth writeMask="false" enabled="true"/>
+	</Material>
+	<SceneObject name="Scene" visibility="always" layerFlags="256">
+		<SceneObject name="SodaLayout">
+			<SceneObject name="TransformationHelper">
+				<Translation x="0" y="0" z="400"/>
+				<Scale y="-1"/>
+				<SceneObject name="Soda">
+					<Model filename="shared/game/common/models/soda_swipe/soda.ffm">
+						<Animation filename="shared/game/common/models/soda_swipe/empty.ffa" loopCount="0" name="EmptyOut" speed="1.400" play="false" interpolateFrame="true"/>
+						<Animation filename="shared/game/common/models/soda_swipe/fill.ffa" loopCount="0" name="FillUp" speed="1" play="false" interpolateFrame="true"/>
+					</Model>
+					<Material parentMaterial="SodaMat"/>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="50.0"/>
+					<Y percentage="50.0"/>
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Size forceUniform="false">
+					<OriginalSize height="768" width="1024"/>
+					<Width percentage="100"/>
+					<Height percentage="100"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Size forceUniform="false">
+					<OriginalSize height="768" width="1024"/>
+					<Width percentage="100"/>
+					<Height percentage="100"/>
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject name="SwipeRoot">
+			<Translation x="0" y="0" z="491"/>
+			<Animation loopCount="0" name="OnWinAppear" animationData="SlideInFromBelow"/>
+			<Animation loopCount="0" name="OnWinDisappear" animationData="SlideOutToTop"/>
+			<Animation loopCount="0" name="OnLoseAppear" animationData="SlideInFromTop"/>
+			<Animation loopCount="0" name="OnLoseDisappear" animationData="SlideOutToBelow"/>
+			<SceneObject name="KimmyExtraHappy">
+				<Translation x="35.907" y="-77.471" z="50"/>
+				<Scale x="3.088" y="-3.088" z="1"/>
+				<Model filename="shared/diorama/common/models/kimmy/ninja_kimmy_victory_swipe.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/ninja_kimmy_victory_swipe_idle.ffa" name="Idle" speed="1" play="true"/>
+				</Model>
+				<Material parentMaterial="KimmyExtraHappyMat"/>
+			</SceneObject>
+			<SceneObject name="BgTop">
+				<Translation x="139.469" y="64" z="1"/>
+				<Sprite filename="shared/game/common/tex/hud/hard_instruction_swipe_top.png" vertexColors="false">
+					<Flip u="true"/>
+					<Pivot anchor="bottom" y="150"/>
+				</Sprite>
+				<SceneObject name="BgTop2">
+					<Sprite filename="shared/game/common/tex/hud/hard_instruction_swipe_top.png" vertexColors="false">
+						<Flip u="true"/>
+						<Pivot anchor="bottom" y="150"/>
+					</Sprite>
+					<Translation x="-287.560" y="-0.188" z="1"/>
+					<Scale x="-1"/>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BgBottom">
+				<Sprite filename="shared/game/common/tex/hud/hard_innerswipe_bottom.png" vertexColors="false"/>
+				<Translation x="-183.013" y="-4.174" z="1"/>
+				<SceneObject name="BgBottom2">
+					<Sprite filename="shared/game/common/tex/hud/hard_innerswipe_bottom.png" vertexColors="false"/>
+					<Translation x="359.867" y="-0.032" z="1"/>
+					<Scale x="-1"/>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Background">
+				<Animation loopCount="-1" name="SlideToRight" animationData="SlideToRightData" play="true"/>
+				<SceneObject name="BgMiddle" __visibility="0">
+					<Translation x="0.007" y="736.960"/>
+					<Scale x="127.981" y="5.493"/>
+					<Sprite filename="shared/game/common/tex/hud/swipe_bg.png" vertexColors="false">
+						<Pivot anchor="top" y="150"/>
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="top">
+					<Translation x="0" y="40" z="0"/>
+					<Sprite filename="shared/game/common/tex/hud/hardlevel_swipe_top.png" wrap="repeat" vertexColors="false">
+						<Pivot anchor="top" y="190"/>
+						<Rectangle minY="0" maxY="64" maxX="2048" minX="0"/>
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="bottom">
+					<Translation x="0" y="314" z="0"/>
+					<Sprite filename="shared/game/common/tex/hud/hardlevel_swipe_bottom.png" wrap="repeat" vertexColors="false">
+						<Pivot anchor="bottom" y="190"/>
+						<Rectangle minY="0" maxY="128" maxX="2048" minX="0"/>
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="TitleText">
+				<Translation x="-2.688" y="-23.667" z="2"/>
+				<Text font="Banana" maxWidth="600" overflowBehaviour="fit" verticalAlignment="center" key="game_end_reason.PaintBattleMode.win.content" alignment="center" maxHeight="100">
+					<Color g="3" r="149" a="255" b="161"/>
+					<Shadow enabled="true">
+						<Color g="255" r="255" a="255" b="255"/>
+					</Shadow>
+					<Size x="42" y="42"/>
+				</Text>
+			</SceneObject>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="50.0"/>
+					<Y percentage="55.0"/>
+				</Translation>
+				<Size>
+					<Height percentage="25"/>
+					<Width percentage="60"/>
+					<OriginalSize width="512" height="256"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="50.0"/>
+					<Y percentage="62.0"/>
+				</Translation>
+				<Size>
+					<Height percentage="31"/>
+					<OriginalSize width="1024" height="256"/>
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+	</SceneObject>
+</Scene>

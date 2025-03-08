@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="ConfirmExitModal">
+		<Translation z="750" />
+		<Animation name="OnAppear" animationData="SlideInFromTop" loopCount="0" />
+		<Animation name="OnDisappear" animationData="SlideOutToBelow" loopCount="0" />
+		<Import filename="shared/diorama/common/scenes/modal_background_small.xml" />
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="70" />
+				<OriginalSize width="640" height="550" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+		<SceneObject name="TitleText">
+			<Translation y="-232" x="0" />
+			<Text overflowBehaviour="fit" key="quest.confirm.skip.title" alignment="center" maxWidth="370" verticalAlignment="visualCenter" font="Banana" maxHeight="150">
+				<Color r="255" b="255" a="255" g="255" />
+				<Size y="24" x="24" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="MessageArea">
+			<Translation y="-60" x="0" />
+			<SceneObject>
+				<Panel filename="shared/diorama/common/tex/gui_elements/purchase_fail_box.png" vertexColors="false">
+					<Insets right="50" left="50" top="50" bottom="50" />
+					<Size width="532" height="145" />
+					<Pivot anchor="center" />
+				</Panel>
+			</SceneObject>
+			<SceneObject name="GameMessage">
+				<Text overflowBehaviour="fit" key="quest.confirm.skip.text" alignment="center" maxWidth="470" verticalAlignment="visualCenter" font="Typewriter" maxHeight="80">
+					<Color r="209" b="48" g="21" />
+					<Size x="21" y="21" />
+				</Text>
+				<Translation y="0" x="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ContinueButton" class="Button">
+			<Translation y="105" x="0" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Pivot anchor="center" />
+				<Insets right="54" left="54" top="48" bottom="59" />
+				<Size width="380" height="108" />
+			</Panel>
+			<Animation name="Idle" layer="1" play="true" animationData="Idle" />
+			<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+			<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+			<SceneObject name="Text">
+				<Translation y="-8" />
+				<Text overflowBehaviour="fit" key="quest.confirm.skip.yes" alignment="center" maxWidth="280" verticalAlignment="visualCenter" font="Banana" maxHeight="100">
+					<Size y="28" x="28" />
+					<Shadow>
+						<Color r="0" b="0" a="25" g="0" />
+						<Offset y="6" x="0" />
+					</Shadow>
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ExitButton" class="Button">
+			<Animation name="Idle" layer="1" play="true" animationData="Idle" />
+			<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+			<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+			<Translation y="210" x="0" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+				<Pivot anchor="center" />
+				<Insets right="54" left="54" top="12" bottom="59" />
+				<Size width="380" height="108" />
+			</Panel>
+			<SceneObject name="GameExitButtonText">
+				<Text overflowBehaviour="fit" key="quest.confirm.skip.no" alignment="center" maxWidth="310" font="Banana" maxHeight="100">
+					<Color r="255" b="255" g="255" />
+					<Shadow>
+						<Color r="0" b="0" a="25" g="0" />
+						<Offset y="6" x="0" />
+					</Shadow>
+					<Size y="24" x="24" />
+				</Text>
+				<Translation y="5" x="0" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

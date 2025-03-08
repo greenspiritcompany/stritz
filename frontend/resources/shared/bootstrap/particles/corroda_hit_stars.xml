@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="5" space="Local" timeToEmit="0.100" name="CorrodaHitStarsPFX">
+    <Dampening max="0.700" min="0.900"/>
+    <DirectionalForce x="0" y="-100"/>
+    <Emitter emissionRate="0" spread="360" angle="90">
+        <SpawnArea width="60" depth="0" height="60"/>
+    </Emitter>
+    <EndColor b="35" r="255" g="155" a="0"/>
+    <Rotation max="9" min="5"/>
+    <RotationSpeed max="600" min="400"/>
+    <Size>
+        <Max x="7" y="7"/>
+        <Min x="7" y="7"/>
+    </Size>
+    <SizeChange>
+        <Max x="10" y="10"/>
+        <Min x="10" y="10"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/glowing_star.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0"/>
+    <TimeToLive max="0.800" min="0.800"/>
+    <Velocity max="300" min="100"/>
+</ParticleEffect>

@@ -1,0 +1,26 @@
+{
+  "id": "wrap_it_up",
+  "nameKey" : "quests.names.wrapitup",
+  "difficulty" : 0,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.wrapitup",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_wrapped.png",
+      "data": {
+         "itemType":"wrappedCandy",
+         "amount": 40
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

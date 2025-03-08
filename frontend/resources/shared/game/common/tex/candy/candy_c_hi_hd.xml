@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:23e3d4ced9da044df1f71bbdf6cb0d6f:0688af74f345fdafb08c4d42f3f970f4:1cd18757dd82786dfce229b1bc01fda7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="candy_c_hi_hd.png" width="2048" height="2048">
+    <sprite n="2x2_jelly_cake_background_c.png" x="644" y="1518" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="8th_candy_c.png" x="292" y="1652" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="bear_collected.png" x="4" y="1436" w="230" h="296" pX="0.5" pY="0.5"/>
+    <sprite n="bear_in_bubble_c.png" x="412" y="488" w="256" h="256" pX="0.5" pY="0.5"/>
+    <sprite n="blue_c.png" x="292" y="1808" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="blue_striped_h_c.png" x="448" y="1584" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="blue_striped_v_c.png" x="448" y="1740" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="blue_wrapped_c.png" x="1002" y="160" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="bottle_blue_c.png" x="1228" y="1752" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="bottle_cyan_c.png" x="1228" y="1888" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="bottle_green_c.png" x="1364" y="1760" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="bottle_orange_c.png" x="1364" y="1896" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="bottle_purple_c.png" x="1500" y="1760" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="bottle_red_c.png" x="1500" y="1896" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="bottle_yellow_c.png" x="1636" y="1780" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="bubblegum_1_c.png" x="448" y="1896" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="bubblegum_2_c.png" x="604" y="1674" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="bubblegum_crush_tex.png" x="1636" y="1916" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="bubblegum_klet_h_c.png" x="604" y="1986" w="148" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="bubblegum_klet_v_c.png" x="1372" y="598" w="40" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="candy_cannon_bg_c.png" x="124" y="1908" w="144" h="82" pX="0.5" pY="0.5"/>
+    <sprite n="candy_cannon_colorBomb.png" x="4" y="1970" w="70" h="70" pX="0.5" pY="0.5"/>
+    <sprite n="candy_cannon_frame.png" x="1434" y="4" w="200" h="112" pX="0.5" pY="0.5"/>
+    <sprite n="candy_cannon_spinner.png" x="738" y="424" w="200" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="candystring.png" x="1642" y="4" w="232" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="chain_inbetween_c.png" x="1944" y="1156" w="62" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="chain_layer1_c.png" x="604" y="1830" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="chain_layer2_c.png" x="760" y="1674" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="chain_layer3_c.png" x="760" y="1830" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="chain_layer4_c.png" x="800" y="1518" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="chocolate_c.png" x="1420" y="628" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="collector_hook.png" x="1984" y="1000" w="60" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="colorbomb_c.png" x="738" y="160" w="256" h="256" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_blue_c.png" x="1170" y="144" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_cyan_c.png" x="124" y="1740" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_green_c.png" x="700" y="522" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_orange_c.png" x="1002" y="328" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_purple_c.png" x="1170" y="312" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_red_c.png" x="1338" y="144" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_yellow_c.png" x="1338" y="312" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="corroda_lemonade_v3.png" x="312" y="812" w="16" h="256" pX="0.5" pY="0.5"/>
+    <sprite n="cupcake_layer1_c.png" x="916" y="1674" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="cupcake_layer2_c.png" x="916" y="1830" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="cupcake_layer3_c.png" x="1674" y="764" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="cupcake_layer4_c.png" x="1830" y="844" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="cupcake_layer5_c.png" x="804" y="1358" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_c.png" x="480" y="1256" w="156" h="156" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_striped_h_c.png" x="480" y="1420" w="156" h="156" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_striped_v_c.png" x="672" y="1194" w="156" h="156" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_wrapped_c.png" x="1506" y="124" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="electricity.png" x="1772" y="1780" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="fish_black_c.png" x="1506" y="292" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_blue_c.png" x="1674" y="92" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_blue_striped_c.png" x="1674" y="260" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_blue_wrapped_c.png" x="1882" y="4" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_cyan_c.png" x="1842" y="172" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_cyan_striped_c.png" x="1842" y="340" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_cyan_wrapped_c.png" x="1674" y="428" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_green_c.png" x="1506" y="460" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_green_striped_c.png" x="1842" y="508" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_green_wrapped_c.png" x="1674" y="596" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_jam_1_c.png" x="1908" y="1780" w="132" h="106" pX="0.5" pY="0.5"/>
+    <sprite n="fish_lemonade_v2.png" x="242" y="1436" w="16" h="256" pX="0.5" pY="0.5"/>
+    <sprite n="fish_light_green_c.png" x="1842" y="676" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_orange_c.png" x="868" y="522" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_orange_striped_c.png" x="1036" y="496" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_orange_wrapped_c.png" x="1204" y="480" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_pink_c.png" x="336" y="812" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_purple_c.png" x="504" y="752" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_purple_striped_c.png" x="336" y="980" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_purple_wrapped_c.png" x="504" y="920" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_red_c.png" x="312" y="1148" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_red_striped_c.png" x="312" y="1316" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_red_wrapped_c.png" x="266" y="1484" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_yellow_c.png" x="700" y="690" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_yellow_striped_c.png" x="868" y="690" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fish_yellow_wrapped_c.png" x="1036" y="664" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="fishbag_break.png" x="4" y="1740" w="112" h="222" pX="0.5" pY="0.5"/>
+    <sprite n="fizz_bubble_blue_c.png" x="1576" y="628" w="90" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="fizz_bubble_green_c.png" x="1576" y="726" w="90" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="fizz_bubble_purple_c.png" x="1908" y="1894" w="90" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="fizz_bubble_red_c.png" x="1944" y="1254" w="90" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="fizz_bubble_yellow_c.png" x="1944" y="1352" w="90" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="giant_bear.png" x="4" y="4" w="400" h="800" pX="0.5" pY="0.5"/>
+    <sprite n="giant_fish.png" x="4" y="812" w="300" h="616" pX="0.5" pY="0.5"/>
+    <sprite n="glow.png" x="276" y="1964" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="green_c.png" x="960" y="1354" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="green_striped_h_c.png" x="1008" y="858" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="green_striped_v_c.png" x="1008" y="1014" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="green_wrapped_c.png" x="1204" y="648" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="honey_bear_1_c.png" x="1008" y="1170" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="honey_bear_2_c.png" x="1116" y="1326" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="honey_empty_1_c.png" x="1116" y="1482" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="honey_empty_2_c.png" x="960" y="1510" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="honey_solid_1_c.png" x="1072" y="1666" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="honey_solid_2_c.png" x="1072" y="1822" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="honey_solid_3_c.png" x="1204" y="816" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="honey_solid_4_c.png" x="1164" y="972" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="honey_special_1_c.png" x="1164" y="1128" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="honey_special_2_c.png" x="1320" y="972" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="honey_splat.png" x="1372" y="480" w="110" h="110" pX="0.5" pY="0.5"/>
+    <sprite n="icecube_1_c.png" x="836" y="1194" w="152" h="152" pX="0.5" pY="0.5"/>
+    <sprite n="icecube_2_c.png" x="644" y="1358" w="152" h="152" pX="0.5" pY="0.5"/>
+    <sprite n="icecube_3_c.png" x="1320" y="1128" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="icecube_4_c.png" x="1360" y="816" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="icecube_5_c.png" x="1272" y="1284" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="icecube_6_c.png" x="1272" y="1440" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="jam_1_smear_tex.png" x="1772" y="1916" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="jellycake_base_c.png" x="412" y="160" w="318" h="320" pX="0.5" pY="0.5"/>
+    <sprite n="jellycake_pieces_c.png" x="412" y="4" w="738" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="lemonade_v2.png" x="676" y="488" w="16" h="256" pX="0.5" pY="0.5"/>
+    <sprite n="liqlock_c.png" x="1158" y="4" w="268" h="132" pX="0.5" pY="0.5"/>
+    <sprite n="liquorice_swirl_break.png" x="1516" y="824" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="liquorice_swirl_c.png" x="1476" y="980" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="orange_c.png" x="1476" y="1136" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="orange_striped_h_c.png" x="1428" y="1292" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="orange_striped_v_c.png" x="1428" y="1448" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="orange_wrapped_c.png" x="672" y="858" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="purple_c.png" x="1672" y="920" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="purple_striped_h_c.png" x="1632" y="1076" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="purple_striped_v_c.png" x="1828" y="1000" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="purple_wrapped_c.png" x="840" y="858" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="red_c.png" x="1632" y="1232" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="red_striped_h_c.png" x="1788" y="1156" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="red_striped_v_c.png" x="1584" y="1388" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="red_wrapped_c.png" x="672" y="1026" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="selected_candy.png" x="840" y="1026" w="160" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="soda_corroda_goal.png" x="1788" y="1312" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="soda_fish_goal.png" x="1584" y="1544" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="soda_goal.png" x="1740" y="1468" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="white_chocolate_1_c.png" x="1896" y="1468" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="white_chocolate_2_c.png" x="1740" y="1624" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_c.png" x="1896" y="1624" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_striped_h_c.png" x="1272" y="1596" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_striped_v_c.png" x="1428" y="1604" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_wrapped_c.png" x="504" y="1088" w="160" h="160" pX="0.5" pY="0.5"/>
+</TextureAtlas>

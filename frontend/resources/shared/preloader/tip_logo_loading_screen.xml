@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="KingLogo" />
+	<SceneObject name="LoadingScreen">
+		<Translation z="990" />
+		<SceneObject __visibility="0" name="Background">
+			<Translation x="1" y="-3" />
+			<Sprite filename="shared/preloader/tex/soda_gradient_background.png" vertexColors="false" mode="sprite">
+				<Pivot anchor="center" />
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="Content">
+			<SceneObject name="Logo">
+				<Translation x="-0.319" y="-25.643" z="0" />
+				<Sprite filename="shared/preloader/tex/CCSS_logo.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Scale x="1.057" y="1.057" z="1" />
+			</SceneObject>
+			<SceneObject name="String">
+				<Translation x="-4.579" y="-178.243" />
+				<Sprite filename="shared/preloader/tex/string.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Rectangle minY="50" minX="30" maxX="0" maxY="250" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="String">
+				<Translation x="-9.381" y="-343.250" />
+				<Sprite filename="shared/preloader/tex/string.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Rectangle minY="20" minX="20" maxX="0" maxY="150" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="String">
+				<Translation x="-9.076" y="-472.967" />
+				<Sprite filename="shared/preloader/tex/string.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Rectangle minY="20" minX="20" maxX="0" maxY="150" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="LoadingText">
+			<Text key="generic_loader_loading" alignment="center" canBreakWords="false" font="BananaInnerShadow">
+				<Color g="255" r="255" a="255" b="255" />
+				<Pivot anchor="center" />
+				<Size x="20" y="20" />
+			</Text>
+		</SceneObject>
+	</SceneObject>
+</Scene>

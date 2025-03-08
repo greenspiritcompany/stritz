@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="ModalBackground">
+		<Default>
+			<Size>
+				<Width percentage="100.0" max="730"/>
+				<Height percentage="95.0" max="972"/>
+				<OriginalSize width="730" height="972"/>
+			</Size>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="50"/>
+			</Translation>
+		</Default>
+	</Object>
+</Layout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/soda_bottle_material.xml"/>
+
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+
+		<SceneObject name="Bottle">
+			<SceneObject name="CyanBottle">
+				<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+					<Animation name="CollectWiggle" filename="shared/game/common/models/soda_candy/soda_candy_collected.ffa" play="true" loopCount="-1"/>
+				</Model>
+				<Material parentMaterial="SodaBottleCyanMaterial"/>
+			</SceneObject>
+			<SceneObject name="BlueBottle">
+				<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+                    <Animation name="CollectWiggle" filename="shared/game/common/models/soda_candy/soda_candy_collected.ffa" play="true" loopCount="-1"/>
+				</Model>
+				<Material parentMaterial="SodaBottleBlueMaterial"/>
+			</SceneObject>
+			<SceneObject name="GreenBottle">
+				<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+                    <Animation name="CollectWiggle" filename="shared/game/common/models/soda_candy/soda_candy_collected.ffa" play="true" loopCount="-1"/>
+				</Model>
+				<Material parentMaterial="SodaBottleGreenMaterial"/>
+			</SceneObject>
+			<SceneObject name="OrangeBottle">
+				<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+                    <Animation name="CollectWiggle" filename="shared/game/common/models/soda_candy/soda_candy_collected.ffa" play="true" loopCount="-1"/>
+				</Model>
+				<Material parentMaterial="SodaBottleOrangeMaterial"/>
+			</SceneObject>
+			<SceneObject name="PurpleBottle">
+				<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+                    <Animation name="CollectWiggle" filename="shared/game/common/models/soda_candy/soda_candy_collected.ffa" play="true" loopCount="-1"/>
+				</Model>
+				<Material parentMaterial="SodaBottlePurpleMaterial"/>
+			</SceneObject>
+			<SceneObject name="RedBottle">
+				<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+                    <Animation name="CollectWiggle" filename="shared/game/common/models/soda_candy/soda_candy_collected.ffa" play="true" loopCount="-1"/>
+				</Model>
+				<Material parentMaterial="SodaBottleRedMaterial"/>
+			</SceneObject>
+			<SceneObject name="YellowBottle">
+				<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+                    <Animation name="CollectWiggle" filename="shared/game/common/models/soda_candy/soda_candy_collected.ffa" play="true" loopCount="-1"/>
+				</Model>
+				<Material parentMaterial="SodaBottleYellowMaterial"/>
+			</SceneObject>
+		</SceneObject>
+
+	</SceneObject>
+</Scene>

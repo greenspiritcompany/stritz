@@ -1,0 +1,18 @@
+<!DOCTYPE Scene SYSTEM '../../../../dtd/scene.dtd'>
+<Scene>
+    <SceneObject name="Scene">
+        <SceneObject name="LemonadeBorderStraight">
+            <Model filename="shared/game/common/models/lemonade/straight.ffm">
+                <Animation loopCount="-1" name="Idle" filename="shared/game/common/models/lemonade/idle.ffa" play="true"/>
+                <Animation loopCount="0" name="Expand" filename="shared/game/common/models/lemonade/straight_expand.ffa" play="false"/>
+                <Animation loopCount="0" name="ExpandScale" filename="shared/game/common/models/lemonade/straight_expand_scale.ffa" play="false"/>
+            </Model>
+            <Material name="AlphaMaterial">
+                <Blend enabled="true"/>
+                <Depth enabled="true" writeMask="false"/>
+                <Texture filename="shared/game/common/tex/candy/corroda_lemonade_v3.png"/>
+            </Material>
+            <Scale x="0.50" y="-0.50"/>
+        </SceneObject>
+    </SceneObject>
+</Scene>

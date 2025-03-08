@@ -1,0 +1,23 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="4" space="Local" timeToEmit="0.200" name="SidekickCyanCollectedSparks">
+    <Dampening max="0.700" min="0.600"/>
+    <Emitter emissionRate="0.050" spread="360" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="246" r="146" g="255" a="160"/>
+    <Rotation max="25" min="0"/>
+    <RotationSpeed max="25" min="0"/>
+    <Size>
+        <Max x="200" y="200"/>
+        <Min x="100" y="100"/>
+    </Size>
+    <SizeChange>
+        <Max x="-800" y="-800"/>
+        <Min x="-800" y="-800"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="0"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/sparkle2_64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0"/>
+    <TimeToLive max="0.150" min="0.150"/>
+    <Velocity max="50" min="0"/>
+</ParticleEffect>

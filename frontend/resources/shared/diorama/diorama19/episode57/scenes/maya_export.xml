@@ -1,0 +1,48 @@
+<Scene>
+	<Materials>
+		<Material name="Material">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="false" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama19/episode57/tex/"/>
+			</Textures>
+		</Material>
+		<Material name="MaterialAlpha" parentMaterial="Material">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<Material name="PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/path_tex.png"/>
+			</Textures>
+		</Material>
+		<Material name="PathMaterialAlpha" parentMaterial="PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<Material name="BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama19/episode57/tex/"/>
+			</Textures>
+		</Material>
+		<Material name="BackdropMaterialAlpha" parentMaterial="BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+	</Materials>
+	<SceneObject name="tree_eyes">
+		<Model filename="shared/diorama/diorama19/episode57/models/interactable/tree_eyes.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="393.676406608" y="180.763653562" z="-185.977288771"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+</Scene>

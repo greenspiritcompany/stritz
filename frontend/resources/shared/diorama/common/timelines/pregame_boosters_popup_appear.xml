@@ -1,0 +1,13 @@
+<Timelines>
+<Timeline startTime="0" endTime="3">
+	<Triggers>
+		<AnimationTrigger targetName="Sign" animationName="OnAppear" time="0" />
+		<AnimationTrigger targetName="Kimmy" animationName="OnAppear" time="0" />
+		<AnimationTrigger targetName="Kimmy" animationName="idle" time="0.200" />
+		<!--<EffectTrigger name="PregameBoosterPopupEFQ" targetName="ParticleHelper1" time="0.600" />-->
+		<!--<EffectTrigger name="PregameBoosterPopupEFQ" targetName="ParticleHelper2" time="0.750" />-->
+		<!--<EffectTrigger name="PregameBoosterPopupEFQ" targetName="ParticleHelper3" time="0.900" />-->
+		<CustomTrigger name="OnAppearDone" time = "1.3"/>
+	</Triggers>
+</Timeline>
+</Timelines>

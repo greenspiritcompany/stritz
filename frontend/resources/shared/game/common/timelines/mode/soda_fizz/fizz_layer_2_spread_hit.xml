@@ -1,0 +1,26 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0.0" endTime="1.61">
+
+        <Animate target="FizzModel" time="0.0">
+            <Scale time="0.0" x="0.6" y="-0.6"/>
+            <Scale time="0.1" x="0.8" y="-0.8"/>
+            <Scale time="0.4" x="0.8" y="-0.8"/>
+            <Scale time="0.5" x="0.6" y="-0.6"/>
+        </Animate>
+
+        <Triggers>
+            <!--<EffectTrigger time="0.6" name="FizzBgBubbles2EFQ" parentName="ParticleHelper"/>-->
+            <EffectTrigger time="0.3" name="FizzGrowBubblesEFQ"/>
+        </Triggers>
+
+        <Triggers>
+            <AnimationTrigger animationName="FizzGrowTo2" targetName="FizzModel" time="0.0"/>
+            <AnimationTrigger animationName="Fizz2Idle" targetName="FizzModel" time="0.6" crossFade="0.1"/>
+        </Triggers>
+
+        <TimeControls>
+            <TimeJump time="1.6" jumpToTime="0.6"/>
+        </TimeControls>
+    </Timeline>
+</Timelines>

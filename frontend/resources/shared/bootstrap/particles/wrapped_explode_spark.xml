@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="30" space="Local" timeToEmit="0.070" name="WrappedExplodeSpark">
+    <Dampening max="0.960" min="0.960"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="12.960" depth="0" height="13.520"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="51"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="50" y="15.300"/>
+        <Min x="50" y="15.730"/>
+    </Size>
+    <SizeChange>
+        <Max x="-50" y="-25"/>
+        <Min x="-50" y="-25"/>
+    </SizeChange>
+    <StartColor b="255" r="198" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/projectile.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0"/>
+    <TimeToLive max="0.420" min="0.250"/>
+    <Velocity max="354.570" min="326.270"/>
+</ParticleEffect>

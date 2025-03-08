@@ -1,0 +1,29 @@
+<ParticleEffect maxParticles="1" space="Local" timeToEmit="60" name="GoldBling2PFX">
+<Dampening max="0" min="0" />
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0" spread="360" angle="0">
+	<SpawnArea width="10" depth="0" height="-10" />
+</Emitter>
+<Rotation max="180" min="-180" />
+<RotationSpeed max="50" min="10" />
+<Size>
+	<Max x="100" y="100" />
+	<Min x="40" y="40" />
+</Size>
+<SizeChange>
+	<Max x="50" y="50" />
+	<Min x="0" y="0" />
+</SizeChange>
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/glow_particle.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0" />
+<TimeToLive max="0.300" min="0.300" />
+<Velocity max="0" min="0" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="255" g="255" b="255" a="200" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="255" g="255" b="102" a="30" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

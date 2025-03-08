@@ -1,0 +1,14 @@
+<Timelines>
+<Timeline startTime="0" endTime="13">
+	<Animate time="0" target="PirateReminder">
+		<Show time="0" />
+		<Hide time="13" />
+		<Translation time="3.1" x="300" y="280" z="0" />
+		<Translation time="3.9" x="220" y="320" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger targetName="PirateReminder" animationName="hanging" time="1" />
+		<EffectTrigger time="3.9" name="QuestPirateReminderEFQ" targetName="EffectBox" />
+	</Triggers>
+</Timeline>
+</Timelines>

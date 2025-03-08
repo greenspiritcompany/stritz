@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="3" space="Local" timeToEmit="0.170" name="BubblegumSplashPFX">
+    <Dampening max="0.680" min="0.680"/>
+    <DirectionalForce x="158.510" y="158.510"/>
+    <Emitter emissionRate="0.150" spread="360" angle="0">
+        <SpawnArea width="26.680" depth="0" height="29.510"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="240"/>
+    <Rotation max="180" min="180"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="14" y="14"/>
+        <Min x="8" y="8"/>
+    </Size>
+    <SizeChange>
+        <Max x="145" y="145"/>
+        <Min x="95" y="95"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/bubblegum_bubble_64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.450" min="0.240"/>
+    <Velocity max="190" min="190"/>
+</ParticleEffect>

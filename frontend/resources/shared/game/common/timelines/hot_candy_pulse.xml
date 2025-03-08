@@ -1,0 +1,61 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Animate target="HotCandyPulse">
+			<Show/>
+
+			<Translation time="0.0" y="0"/>
+			<Translation time="1.5" y="-50"/>
+			<Hide time="1.5"/>
+
+		</Animate>
+		<Animate target="HotCandyPulseParticlesOne">
+			<Show/>
+			<Scale time="0.0" x="1.2" y="1.2" z="1.2"/>
+			<Scale time="1.0" x="0" y="0" z="0"/>
+		</Animate>
+
+
+		<Animate target="HotCandyPulseParticlesTwo">
+			<Show/>
+			<Scale time="0.4" x="1.5" y="1.5" z="1.5"/>
+			<Scale time="1.8" x="0" y="0" z="0"/>
+		</Animate>
+
+
+		<Animate target="HotCandyPulseParticlesThree">
+			<Show/>
+			<Scale time="0.8" x="1.2" y="1.2" z="1.2"/>
+			<Scale time="2.2" x="0" y="0" z="0"/>
+		</Animate>
+
+
+		<Animate target="HotCandyPulseParticlesFour">
+			<Show/>
+			<Scale time="1.2" x="1.6" y="1.6" z="1.6"/>
+			<Scale time="2.5" x="0" y="0" z="0"/>
+		</Animate>
+
+
+		<Triggers>
+
+			<EffectTrigger name="HotCandyPulseOne" parentName="HotCandyPulseParticlesOne">
+				<Offset y="-10" z="-2"/>
+			</EffectTrigger>
+
+			<EffectTrigger name="HotCandyPulseOne" parentName="HotCandyPulseParticlesTwo" time="0.3">
+				<Offset y="-10" z="-20"/>
+			</EffectTrigger>
+
+			<EffectTrigger name="HotCandyPulseOne" parentName="HotCandyPulseParticlesThree" time="0.8">
+				<Offset y="-10" z="-2"/>
+			</EffectTrigger>
+
+			<EffectTrigger name="HotCandyPulseOne" parentName="HotCandyPulseParticlesFour" time="1.2">
+				<Offset y="-10" z="-2"/>
+			</EffectTrigger>
+
+
+		</Triggers>
+	</Timeline>
+</Timelines>

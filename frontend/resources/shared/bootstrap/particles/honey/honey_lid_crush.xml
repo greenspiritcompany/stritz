@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="8" space="Local" timeToEmit="0.100" name="HoneyLidCrushPFX">
+    <Dampening max="1" min="0.900"/>
+    <DirectionalForce x="0" y="500"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="25" depth="0" height="25"/>
+    </Emitter>
+    <EndColor b="50" r="255" g="200" a="100"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="720" min="-720"/>
+    <Size>
+        <Max x="20" y="20"/>
+        <Min x="15" y="15"/>
+    </Size>
+    <SizeChange>
+        <Max x="-40" y="-40"/>
+        <Min x="0" y="0"/>
+    </SizeChange>
+    <StartColor b="50" r="255" g="200" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/honey_comb.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.500" min="0.400"/>
+    <Velocity max="150" min="100"/>
+</ParticleEffect>

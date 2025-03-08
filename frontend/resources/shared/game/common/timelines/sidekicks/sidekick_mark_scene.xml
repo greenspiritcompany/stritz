@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+
+<Scene>
+    <SceneObject name="Scene" visibility="always" layerFlags="512">
+        <SceneObject name="SelectedCandy" visibility="always" layerFlags="512">
+            <!--            <Sprite filename="shared/game/common/tex/candy/selected_candy.png">
+                <Pivot anchor="center"/>
+              </Sprite>
+            -->
+
+            <Translation x="0.0" y="0.0" z="0.0"/>
+            <Scale x="1" y="1" z="1"/>
+        </SceneObject>
+
+    </SceneObject>
+</Scene>

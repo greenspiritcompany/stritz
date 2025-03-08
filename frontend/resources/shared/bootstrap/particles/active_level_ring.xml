@@ -1,0 +1,25 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="2" space="Local" timeToEmit="1" name="ActiveLevelRing">
+    <MidColor b="255.0" r="255.0" g="255.0" a="128.0" timeFraction="0.5"/>
+    <Dampening max="0.900" min="0.900"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="1" spread="180" angle="-90">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="100" y="100"/>
+        <Min x="100" y="100"/>
+    </Size>
+    <SizeChange>
+        <Max x="-50" y="-50"/>
+        <Min x="-50" y="-50"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="0"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/bright_ring64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="1.100" min="0.900"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

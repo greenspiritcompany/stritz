@@ -1,0 +1,60 @@
+{
+  "id": "loyalist_epic",
+  "nameKey" : "quests.names.splendiddays",
+  "reoccuring": true,
+  "difficulty" : 2,
+  "tasks": [
+    {
+      "type": "consecutiveLogin",
+      "descriptionKey" : "quests.description.welcomeback",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_logged_in_for_days.png",
+      "data": {
+        "daysRequired" : 8
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12003,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12021,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

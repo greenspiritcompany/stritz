@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<SceneObject name="HighlightBorder" layerFlags="512">
+		<!--				<Model filename="shared/game/common/models/highlight_border/highlight_border.ffm">
+				<Animations>
+					<Animation filename="shared/game/common/models/highlight_border/idle.ffa" name="Idle"
+							   play="true" loopCount="-1" interpolateFrame="false" speed="0.5"/>
+				</Animations>
+			</Model>
+					<Materials>
+			<Material name="BorderMat">
+				<Blend enabled="true" blendFuncDestinationFactor="One"/>
+				<Depth enabled="true" writeMask="false"/>
+				<Textures>
+					<Texture filename="shared/game/common/tex/gamegrid/highlight_border.png"/>
+				</Textures>
+			</Material>
+		</Materials>-->
+		<Scale y="-1"/>
+		<SceneObject name="ParticlesTranslation">
+			<Effect name="BorderHighglightGlitterEFQ" effectData="BorderHighglightGlitterEFQ" play="true"/>
+			<Translation y="38"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

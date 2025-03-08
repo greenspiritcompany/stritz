@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="4" space="Local" timeToEmit="0.100" name="RedCrumblingPieces">
+<Dampening max="0.800" min="0.900" />
+<DirectionalForce x="0" y="3000" />
+<Emitter emissionRate="0" angle="0" spread="360">
+	<SpawnArea width="20" depth="0" height="20" />
+</Emitter>
+<EndColor b="255" r="255" g="255" a="0" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="1000" min="-1000" />
+<Size>
+	<Max x="15" y="15" />
+	<Min x="10" y="10" />
+</Size>
+<SizeChange>
+	<Max x="-40" y="-40" />
+	<Min x="0" y="0" />
+</SizeChange>
+<StartColor b="255" r="255" g="255" a="255" />
+<Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/red_piece.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive min="0.500" max="0.700" />
+<Velocity max="200" min="100" />
+</ParticleEffect>

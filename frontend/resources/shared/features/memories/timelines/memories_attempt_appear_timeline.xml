@@ -1,0 +1,11 @@
+<Timelines>
+<Timeline startTime="0" endTime="600">
+	<Triggers>
+		<AnimationTrigger time="0.0" animationName="appear" crossFade="0" targetName="Info_box" />
+		<AnimationTrigger time="0.0" animationName="appear" crossFade="0" targetName="Info_box_with_btn" />
+		<AnimationTrigger time="0.0" animationName="appear" crossFade="0" targetName="Photo" />
+		<CustomTrigger time=".5" name="FadeInAllowButton" data="" />
+		<CustomTrigger time="600" name="FadeInTimedOut" data="" />
+	</Triggers>
+</Timeline>
+</Timelines>

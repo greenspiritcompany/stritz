@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="PurchaseResult">
+		<Translation z="600" />
+		<Animations>
+			<Animation name="OnAppear" animationData="OnAppearGrow" loopCount="0" />
+			<Animation name="OnDisappear" animationData="OnDisappearScale" loopCount="0" />
+		</Animations>
+		<SceneObject>
+			<Translation y="-100" />
+			<SceneObject name="ConnectionSpinner">
+				<Translation y="-5" />
+				<Animations>
+					<Animation name="IdleRotate" animationData="Rotate360" play="true" loopCount="-1" />
+				</Animations>
+				<Sprite filename="shared/diorama/common/tex/gui_elements/spinner_back.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="ConnectionSpinnerFg">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/spinner_front.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Message">
+			<Translation x="0" y="11" />
+			<Text canBreakWords="false" font="Typewriter" alignment="center" verticalAlignment="visualCenter" maxWidth="340" maxHeight="80" overflowBehaviour="fit" key="purchase_pending">
+				<Size x="20" y="20" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="ContinueButton" class="Button">
+			<Translation x="0" y="105" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+				<Insets bottom="0" left="128" right="128" top="0" />
+				<Size width="400" height="127" />
+				<Pivot anchor="center" />
+			</Panel>
+			<Animations>
+				<Animation name="Idle" animationData="Idle" play="true" layer="1" />
+				<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+				<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+			</Animations>
+			<SceneObject name="Text">
+				<Translation y="-8" />
+				<Text canBreakWords="false" font="Banana" alignment="center" verticalAlignment="visualCenter" key="purchase_stop_wait" maxWidth="250" maxHeight="35" overflowBehaviour="fit">
+					<Size x="24" y="24" />
+					<Shadow enabled="true">
+						<Color r="0" g="0" b="0" a="25" />
+						<Offset x="0" y="6" />
+					</Shadow>
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100.0" max="640" />
+				<Height percentage="95.0" max="706" />
+				<OriginalSize width="640" height="706" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

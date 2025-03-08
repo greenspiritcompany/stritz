@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="FramePortrait">
+		<Portrait visible="true"/>
+		<Landscape visible="false"/>
+	</Object>
+	<Object sceneObject="FrameLandscape">
+		<Portrait visible="false"/>
+		<Landscape visible="true"/>
+	</Object>
+</Layout>

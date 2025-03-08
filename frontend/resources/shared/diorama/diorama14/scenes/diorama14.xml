@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+    <!--
+		Diorama 03 materials
+	-->
+    <Materials>
+        <!--
+			CommonMaterial & CommonMaterialAlpha
+			TODO: remove this?
+		-->
+        <!--<Material name="CommonMaterial03">
+            <Cull enabled="true" face="back"/>
+            <Textures>
+                <Texture filename="shared/diorama/diorama03/tex/common_material03_base.png"/>
+            </Textures>
+        </Material>
+
+        <Material name="CommonMaterialAlpha03" parentMaterial="CommonMaterial03">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+        </Material>-->
+        <!--BOAT TEXTURE-->
+        <Material name="KimmyBoatMaterialAlpha">
+            <Cull enabled="true" face="back"/>
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/kimmy_boat.png"/>
+            </Textures>
+        </Material>
+
+        <Material name="KimmyMaterialAlpha">
+            <Cull enabled="true" face="back"/>
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/kimmy/kimmy_diorama.png"/>
+            </Textures>
+        </Material>
+
+        <Material name="Under_Construction_Icon">
+            <Depth writeMask="false" enabled="true"/>
+            <Blend enabled="true"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/under_construction.png"/>
+            </Textures>
+        </Material>
+
+        <!--CLOUD TEXTURE-->
+        <Material name="CloudMaterial">
+            <Cull enabled="false" face="back"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/clouds.png"/>
+            </Textures>
+        </Material>
+        <Material name="CloudMaterialAlpha" parentMaterial="CloudMaterial">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+        </Material>
+        <!--
+			PORTAL MATERIAL
+		-->
+        <Material name="PortalMaterial">
+            <Cull enabled="true" face="back"/>
+            <Blend enabled="true"/>
+            <Depth enabled="true" writeMask="false"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/portal_c.png"/>
+            </Textures>
+        </Material>
+
+        <Material name="PortalDisabledMaterial">
+            <Cull enabled="true" face="back"/>
+            <Blend enabled="true"/>
+            <Depth writeMask="false" enabled="true"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/lvl_pin_btn_grey.png"/>
+            </Textures>
+        </Material>
+
+        <!--
+			BoardPieceMaterial & BoardPieceMaterialAlpha
+		-->
+        <Material name="BoardGamePieceMaterial">
+            <Cull enabled="true" face="back"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/boardGamePiece.png"/>
+            </Textures>
+        </Material>
+        <Material name="BoardGamePieceMaterialAlpha" parentMaterial="BoardGamePieceMaterial">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+        </Material>
+        <!--
+			PortalMaterial & PortalDisabledMaterial
+		-->
+        <Material name="PortalMaterial">
+            <Cull enabled="true" face="back"/>
+            <Blend enabled="true"/>
+            <Depth enabled="true" writeMask="false"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/portal_c.png"/>
+            </Textures>
+        </Material>
+        <!--
+			End of materials
+		-->
+    </Materials>
+    <!--
+		Diorama SceneObjects
+	-->
+    <SceneObject layerFlags="2" name="Diorama">
+        <Import filename="shared/diorama/diorama14/episode40/scenes/episode40.xml"/>
+        <Import filename="shared/diorama/diorama14/episode41/scenes/episode41.xml"/>
+        <Import filename="shared/diorama/diorama14/episode42/scenes/episode42.xml"/>
+        <!--
+          Tiffy group
+         -->
+        <SceneObject name="Kimmy_group">
+            <Translation x="-2550" y="22" z="255"/>
+            <Rotation x="0" y="10" z="0"/>
+            <Import filename="shared/diorama/common/scenes/kimmy.xml"/>
+        </SceneObject>
+
+        <SceneObject name="Kimmy_no_gameboard_group">
+            <Translation x="-2200" y="22" z="240"/>
+            <Rotation x="0" y="10" z="0"/>
+        </SceneObject>
+</SceneObject>
+</Scene>

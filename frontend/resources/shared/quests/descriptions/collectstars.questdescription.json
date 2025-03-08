@@ -1,0 +1,25 @@
+{
+  "id": "star_collector",
+  "nameKey" : "quests.names.starcollector",
+  "difficulty" : 0,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "collectStars",
+      "descriptionKey" : "quests.description.starcollector",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_star.png",
+      "data": {
+		"amount" : 4
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12021,
+        "amount": 1
+      }
+    }
+  ]
+}

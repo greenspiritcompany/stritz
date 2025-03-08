@@ -1,0 +1,28 @@
+<ParticleEffect name="StampDustGreenPFX" maxParticles="16" timeToEmit="0.100">
+<Texture filename="shared/bootstrap/particles/tex/strong_light2.png" numFramesX="1" numFramesY="1" />
+<Emitter emissionRate="0" spread="360" angle="0">
+	<EmissionRadius min="20" max="20" />
+	<SpawnArea width="0" height="0" depth="0" />
+</Emitter>
+<Size>
+	<Min y="64" x="64" />
+	<Max y="80" x="80" />
+</Size>
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="10" g="182" b="98" a="138" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="10" g="182" b="98" a="0" />
+	</Keyframe>
+</ColorAnimation>
+<TimeToLive max="1.500" min="0.200" />
+<Velocity min="400" max="600" />
+<Dampening max="0.800" min="0.800" />
+<Rotation max="360" min="0" />
+<RotationSpeed max="200" min="-200" />
+<SizeChange>
+	<Min y="300" x="300" />
+	<Max x="150" y="150" />
+</SizeChange>
+</ParticleEffect>

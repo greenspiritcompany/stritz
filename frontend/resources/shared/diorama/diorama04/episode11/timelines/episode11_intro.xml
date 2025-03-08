@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Triggers>
+            <EffectTrigger name="character_toad" time="0.0"/>
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp11.0"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp11" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp11" animationName="SpeechBubbleDisappear"/>
+			<!-- <EffectTrigger time="0.0" name="CharacterEp08Talk"/> -->
+			<AnimationTrigger time="0.1" targetName="ToadGuy" animationName="Talk" crossFade="0.5"/>
+			<AnimationTrigger time="4.0" targetName="ToadGuy" animationName="Idle" crossFade="1.0"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

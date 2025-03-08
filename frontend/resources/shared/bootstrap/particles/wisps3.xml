@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE ParticleEffect SYSTEM "../../dtd/particle_effect.dtd">
+<ParticleEffect space="Local" timeToEmit="5.0" maxParticles="32" name="Wisps3">
+	<Texture filename="shared/bootstrap/particles/tex/particles.png" numFramesX="8" numFramesY="8" blend="Add"/>
+	<DirectionalForce x="0.0" y="100.0"/>
+
+	<Emitter emissionRate="0.008" angle="0.0" spread="0.0">
+		<SpawnArea width="15.0" height="15.0"/>
+	</Emitter>
+
+	<Velocity min="1200.0" max="1300.0"/>
+	<Size>
+		<Min x="32.0" y="32.0"/>
+		<Max x="32.0" y="32.0"/>
+	</Size>
+	<TimeToLive min="0.2" max="0.2"/>
+	<Dampening min="1.0" max="1.0"/>
+	<Rotation min="0.0" max="0.0"/>
+	<RotationSpeed min="0.0" max="0.0"/>
+	<SizeChange>
+		<Min x="-6.0" y="-6.0"/>
+		<Max x="-6.0" y="-6.0"/>
+	</SizeChange>
+	<StartColor r="255.0" g="255.0" b="255.0" a="0.0"/>
+	<EndColor r="255.0" g="255.0" b="255.0" a="255.0"/>
+	<TextureFrame startFrame="0" numTextureAnimationFrames="0" textureAnimationSpeed="0"/>
+</ParticleEffect>
+
+		<!-- -2,23 +2,23
+		 NumTextureFrames 8 8
+		 BlendMode ADD
+		 NumParticles 32
+		-TimeToEmit 0.4
+		+TimeToEmit 5.0
+		 DirectionalForce 0.0 100.0
+		 WorldSpace true
+
+		-VelocityMin 200.0
+		+VelocityMin 1200.0
+		 VelocityMax 1300.0
+		 EmissionRate 0.008
+		 Angle -90.0
+		-Spread 20.0
+		-SizeMin 64.0 64.0
+		-SizeMax 64.0 64.0
+		-SpawnArea 48.0 16.0
+		+Spread 0.0
+		+SizeMin 32.0 32.0
+		+SizeMax 32.0 32.0
+		+SpawnArea 0.0 0.0
+
+		-TimeToLiveMin 0.5
+		-TimeToLiveMax 1.5
+		-DampeningMin 0.8
+		-DampeningMax 0.8
+		+TimeToLiveMin 0.2
+		+TimeToLiveMax 0.2
+		+DampeningMin 1.0
+		+DampeningMax 1.0
+		 RotationMin -90
+		 RotationMax 90
+		 RotationSpeedMin -1000.0-->

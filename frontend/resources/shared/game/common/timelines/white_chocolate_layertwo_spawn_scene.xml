@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+
+<Scene>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="ChokoGrow1" visibility="always" layerFlags="512">
+			<Model filename="shared/game/common/models/white_chocolate/grow/grow_01.ffm">
+				<Animations>
+					<Animation name="Idle" speed="4.5"
+							   filename="shared/game/common/models/white_chocolate/grow/grow_01.ffa"
+							   play="true" loopCount="0"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material name="Whatevah">
+					<Blend enabled="true"/>
+					<Depth enabled="true" writeMask="false"/>
+					<Textures>
+						<Texture filename="shared/game/common/tex/white_chocolate/white_choko_layertwo_grow_c.png"/>
+					</Textures>
+				</Material>
+			</Materials>
+            <Translation x="0" y="0" z="1"/>
+            <Scale x="1" y="-1" z="1"/>
+		</SceneObject>
+
+		<SceneObject name="ChokoGrow2" visibility="always">
+			<Sprite filename="shared/game/common/tex/white_chocolate/white_chocolate_layertwo_inbetween_01.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+            <Translation x="0" y="0" z="10"/>
+            <Scale x="1" y="1" z="1"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

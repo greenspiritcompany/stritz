@@ -1,0 +1,26 @@
+{
+  "id": "colorcreator",
+  "nameKey" : "quests.names.colourcreator",
+  "difficulty" : 0,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.colourcreator",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_coloring.png",
+      "data": {
+        "itemType":"coloring_candy",
+		"amount" : 2
+      }
+    }
+  ],
+     "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12021,
+        "amount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="AttemptsLeftRoot">
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+		<SceneObject name="attemptsLeft">
+			<Translation x="-318.296" y="-500" z="500" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="Photo">
+				<Translation x="325" y="285" z="0" />
+				<Animation name="appear" animationData="MemoriesAttempsIn" loopCount="0" />
+				<Animation name="idle" animationData="wave02_idle" play="true" />
+				<Animation name="exit" animationData="MemoriesAttemptExit" loopCount="0" />
+				<SceneObject name="photo_bg">
+					<Pivot anchor="center" />
+					<Rotation x="0" y="0" z="8" />
+					<Scale x="1.700" y="1.700" />
+					<Sprite filename="shared/features/memories/tex/memories_bg.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<VertexColor r="255" g="255" b="255" a="255" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="1" y="154" z="2" />
+				</SceneObject>
+				<SceneObject name="attemps_text">
+					<Rotation x="0" y="0" />
+					<Scale z="1" />
+					<Text alignment="center" font="Banana" maxHeight="80" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter" allowWordWrapping="true" key="memories_attempts_left">
+						<Color r="242" g="0" b="188" a="255" />
+						<Shadow enabled="false">
+							<Color a="255" b="255" g="255" r="255" />
+							<Offset x="3" y="3" />
+						</Shadow>
+						<Size x="38" y="38" />
+						<Outline enabled="false" />
+					</Text>
+					<Translation x="-19" z="8" y="210" />
+				</SceneObject>
+				<SceneObject name="xNumber">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1.300" y="1.300" z="1" />
+					<Translation x="-75" y="10" z="10" />
+					<Sprite mode="sprite" vertexColors="false" filename="shared/features/memories/tex/memories_attempts_x3.png">
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Piece_effects" editorEntityId="15">
+					<Translation x="55" y="556" z="25" />
+					<Scale x="1.200" y="1.200" z="1" />
+					<Rotation x="0" y="0" z="0" />
+					<SceneObject name="glitterPFX" editorEntityId="16">
+						<Rotation x="0" y="-20" z="0" />
+						<Scale x="1.900" y="2" z="1.117" />
+						<Translation x="-70.246" y="-338.564" z="25" />
+						<Effect effectData="PurchaseItemGlitterModalEFQ" name="PurchaseItemGlitterModalEFQ" play="true" />
+					</SceneObject>
+					<SceneObject name="glitterPFX3" editorEntityId="17">
+						<Rotation x="0" y="-20" z="0" />
+						<Translation x="-51.688" y="-340.749" z="25" />
+						<Effect effectData="PurchaseItemGlitterModalEFQ" name="PurchaseItemGlitterModalEFQ" play="true" />
+						<Scale x="2" y="2" z="2" />
+					</SceneObject>
+					<SceneObject name="glitterPFX2" editorEntityId="18">
+						<Rotation x="0" y="-20" z="0" />
+						<Scale x="1.900" y="2" />
+						<Translation x="-35" y="-365" z="25" />
+						<Effect effectData="PurchaseItemGlitterModalEFQ" name="PurchaseItemGlitterModalEFQ" play="true" />
+					</SceneObject>
+					<Animation name="appear" animationData="MemoriesAttempsIn" />
+				</SceneObject>
+				<SceneObject name="Background_shine">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1.200" y="1.200" z="1" />
+					<Translation y="76" z="5" />
+					<SceneObject name="shineBG" visibility="inherit" editorEntityId="29">
+						<Rotation x="0" y="0" z="-43.135" />
+						<Scale x="1.100" y="1.100" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/quest_reward_shine_bg.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<VertexColor a="255" b="255" g="255" r="255" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0.401" y="49.471" z="2" />
+						<Animation animationData="Rotating" play="true" name="roto" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Info_box">
+				<Translation y="-32" z="0" />
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="appear" />
+				<Animation animationData="MemoriesAttempExitAnim" loopCount="0" name="exit" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject editorEntityId="66" name="text_bg">
+					<Sprite filename="shared/features/memories/tex/memory_attempt_no_tap.png" vertexColors="false" mode="panel">
+						<Insets bottom="66" left="48" right="56" top="52" />
+						<Size height="150" width="720" />
+					</Sprite>
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="0.750" y="0.750" z="1" />
+					<Translation x="50" y="655" z="1" />
+				</SceneObject>
+				<SceneObject name="task_text" visibility="always">
+					<Text alignment="center" font="Typewriter" key="memories_splash_text_pregame" maxHeight="80" maxWidth="500" verticalAlignment="visualCenter" allowWordWrapping="false" overflowBehaviour="fit">
+						<Color r="0" g="89" b="111" a="255" />
+						<Shadow enabled="false">
+							<Color r="255" g="255" b="255" a="250" />
+							<Offset x="1" y="1" />
+						</Shadow>
+						<Size x="18" y="18" />
+					</Text>
+					<Translation x="320" y="710" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Info_box_with_btn">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation y="-32" z="0" />
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="appear" />
+				<Animation animationData="MemoriesAttempExitAnim" loopCount="0" name="exit" />
+				<SceneObject editorEntityId="66" name="text_bg">
+					<Sprite filename="shared/features/memories/tex/memory_attempt_tap.png" vertexColors="false" mode="panel">
+						<Insets bottom="60" left="47" right="57" top="43" />
+						<Size height="190" width="720" />
+					</Sprite>
+					<Rotation x="0" y="0" z="0" />
+					<Scale z="1" x="0.750" y="0.750" />
+					<Translation x="50" y="655" z="1" />
+				</SceneObject>
+				<SceneObject name="task_text" visibility="always">
+					<Text alignment="center" font="Typewriter" key="memories_splash_text_pregame" maxHeight="80" maxWidth="500" verticalAlignment="visualCenter" allowWordWrapping="false" overflowBehaviour="fit">
+						<Color r="0" g="89" b="111" a="255" />
+						<Shadow enabled="false">
+							<Color r="255" g="255" b="255" a="250" />
+							<Offset x="1" y="1" />
+						</Shadow>
+						<Size x="18" y="18" />
+					</Text>
+					<Translation x="320" y="710" z="1" />
+				</SceneObject>
+				<SceneObject name="task_tap_to_contiune" visibility="always">
+					<Text alignment="center" font="TypewriterBold" key="memories_attempts_tap" maxHeight="80" maxWidth="550" verticalAlignment="visualCenter">
+						<Color a="255" b="111" g="89" r="0" />
+						<Shadow enabled="false">
+							<Color a="250" b="255" g="255" r="255" />
+							<Offset x="1" y="1" />
+						</Shadow>
+						<Size x="14" y="14" />
+					</Text>
+					<Translation x="320" y="766" z="1" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Landscape">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

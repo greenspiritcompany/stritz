@@ -1,0 +1,98 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/soda_bottle_material.xml"/>
+
+	<SceneObject name="SodaBottleCyan">
+		<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+			<Animations>
+				<Animation filename="shared/game/common/models/soda_candy/soda_candy_wiggle.ffa" layer="999" name="idle" play="true"
+						   speed="1"/>
+			</Animations>
+		</Model>
+		<Materials>
+			<Material parentMaterial="SodaBottleCyanMaterial"/>
+		</Materials>
+		<Scale x="1.0" y="-1.0" z="1.0"/>
+	</SceneObject>
+
+	<SceneObject name="SodaBottleBlue">
+		<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+			<Animations>
+				<Animation filename="shared/game/common/models/soda_candy/soda_candy_wiggle.ffa" layer="999" name="idle" play="true"
+						   speed="1"/>
+			</Animations>
+		</Model>
+		<Materials>
+			<Material parentMaterial="SodaBottleBlueMaterial"/>
+		</Materials>
+		<Scale x="1.0" y="-1.0" z="1.0"/>
+	</SceneObject>
+
+	<SceneObject name="SodaBottleGreen">
+		<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+			<Animations>
+				<Animation filename="shared/game/common/models/soda_candy/soda_candy_wiggle.ffa" layer="999" name="idle" play="true"
+						   speed="1"/>
+			</Animations>
+		</Model>
+		<Materials>
+			<Material parentMaterial="SodaBottleGreenMaterial"/>
+		</Materials>
+		<Scale x="1.0" y="-1.0" z="1.0"/>
+	</SceneObject>
+
+	<SceneObject name="SodaBottleOrange">
+		<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+			<Animations>
+				<Animation filename="shared/game/common/models/soda_candy/soda_candy_wiggle.ffa" layer="999" name="idle" play="true"
+						   speed="1"/>
+			</Animations>
+		</Model>
+		<Materials>
+			<Material parentMaterial="SodaBottleOrangeMaterial"/>
+		</Materials>
+		<Scale x="1.0" y="-1.0" z="1.0"/>
+	</SceneObject>
+
+	<SceneObject name="SodaBottlePurple">
+		<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+			<Animations>
+				<Animation filename="shared/game/common/models/soda_candy/soda_candy_wiggle.ffa" layer="999" name="idle" play="true"
+						   speed="1"/>
+			</Animations>
+		</Model>
+		<Materials>
+			<Material parentMaterial="SodaBottlePurpleMaterial"/>
+		</Materials>
+		<Scale x="1.0" y="-1.0" z="1.0"/>
+	</SceneObject>
+
+	<SceneObject name="SodaBottleRed">
+		<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+			<Animations>
+				<Animation filename="shared/game/common/models/soda_candy/soda_candy_wiggle.ffa" layer="999" name="idle" play="true"
+						   speed="1"/>
+			</Animations>
+		</Model>
+		<Materials>
+			<Material parentMaterial="SodaBottleRedMaterial"/>
+		</Materials>
+		<Scale x="1.0" y="-1.0" z="1.0"/>
+	</SceneObject>
+
+	<SceneObject name="SodaBottleYellow">
+		<Model filename="shared/game/common/models/soda_candy/soda_candy.ffm">
+			<Animations>
+				<Animation filename="shared/game/common/models/soda_candy/soda_candy_wiggle.ffa" layer="999" name="idle" play="true"
+						   speed="1"/>
+			</Animations>
+		</Model>
+		<Materials>
+			<Material parentMaterial="SodaBottleYellowMaterial"/>
+		</Materials>
+		<Scale x="1.0" y="-1.0" z="1.0"/>
+	</SceneObject>
+
+</Scene>

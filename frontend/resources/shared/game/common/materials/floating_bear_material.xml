@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+
+		<Material name="FloatingBearMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Shader program="TextureColor"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bear_in_bubble_c.png"/>
+			</Textures>
+		</Material>
+
+	</Materials>
+</Scene>

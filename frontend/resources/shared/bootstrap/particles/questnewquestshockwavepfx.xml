@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="7" space="Local" timeToEmit="0.100" name="QuestNewQuestShockwavePFX">
+<Dampening max="0.940" min="0.940" />
+<DirectionalForce x="0" y="0" />
+<Emitter spread="0" emissionRate="0.050" angle="0">
+	<SpawnArea width="1" depth="0" height="1" />
+</Emitter>
+<EndColor b="51" r="0" g="56" a="0" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="0" min="0" />
+<Size>
+	<Max x="50" y="50" />
+	<Min x="50" y="50" />
+</Size>
+<SizeChange>
+	<Max x="600" y="600" />
+	<Min x="600" y="600" />
+</SizeChange>
+<StartColor b="255" r="255" g="255" a="204" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/bright_ring64.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive max="0.250" min="0.250" />
+<Velocity max="0" min="0" />
+</ParticleEffect>

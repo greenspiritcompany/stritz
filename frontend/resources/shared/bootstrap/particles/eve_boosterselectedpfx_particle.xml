@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="1" space="Local" timeToEmit="0.100" name="Eve_BoosterSelectedPFX_particle">
+<DirectionalForce x="0" y="0" />
+<Emitter spread="0" angle="0" emissionRate="1">
+	<SpawnArea width="0" depth="0" height="0" />
+</Emitter>
+<EndColor b="255" r="201" g="232" a="0" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="0" min="0" />
+<Size>
+	<Max x="230" y="230" />
+	<Min x="50" y="50" />
+</Size>
+<SizeChange>
+	<Max x="247.470" y="247.470" />
+	<Min x="247.470" y="247.470" />
+</SizeChange>
+<StartColor r="201" g="234" b="255" a="150" />
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/bright_ring64.png" blend="Add" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<Velocity max="0" min="0" />
+<TimeToLive min="1" max="1" />
+<Dampening min="1" max="1" />
+</ParticleEffect>

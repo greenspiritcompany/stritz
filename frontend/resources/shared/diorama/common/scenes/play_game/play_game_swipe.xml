@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Material name="KimmyHappy">
+		<Texture filename="shared/diorama/common/tex/kimmy/kimmy_happy_tex.png" />
+		<Blend enabled="true" />
+		<Cull enabled="false" face="back" />
+		<Depth enabled="true" writeMask="false" />
+	</Material>
+	<Material name="KimmySad">
+		<Texture filename="shared/diorama/common/tex/kimmy/kimmy_sad_tex.png" />
+		<Blend enabled="true" />
+		<Cull enabled="false" face="back" />
+		<Depth enabled="true" writeMask="false" />
+	</Material>
+	<SceneObject name="PlayGameSwipe">
+		<SceneObject name="Landscape">
+			<Translation x="-170" z="510" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" startDelay="0.05" />
+			<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+			<SceneObject name="KimmyHappy" visibility="never">
+				<Translation x="180" y="120" z="50" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="2" y="-2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_happy.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_happy_idle.ffa" loopCount="-1" name="idle" play="true" speed="1" />
+				</Model>
+				<Material parentMaterial="KimmyHappy" />
+			</SceneObject>
+			<SceneObject name="speechBubbleKimmy" visibility="never">
+				<Translation x="-270" y="-70" z="0" />
+				<Scale x="0.93" y="0.93" z="0.93" />
+				<Sprite filename="shared/diorama/common/tex/kimmy/speechbubble.png" />
+			</SceneObject>
+			<SceneObject name="speechBubbleKimmyText" visibility="never">
+				<Translation x="-110" y="15" z="1" />
+				<Scale x="0.93" y="0.93" z="0.93" />
+				<Text alignment="center" font="BananaInnerShadow" key="Woo-hoo! Sweet moves!" maxHeight="150" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Parameter name="speech">Level failed!</Parameter>
+					<Color a="255" b="229" g="154" r="10" />
+					<Size x="34" y="34" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="KimmySad" visibility="never">
+				<Translation x="180" y="120" z="50" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="2" y="-2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_sad.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_sad_idle.ffa" loopCount="-1" name="idle" play="true" speed="1" />
+				</Model>
+				<Material parentMaterial="KimmySad" />
+			</SceneObject>
+			<SceneObject name="GameModeIconAttachPoint">
+				<Translation x="-250" y="-184" z="100" />
+			</SceneObject>
+			<SceneObject name="LevelText">
+				<Translation x="-7.2000732421875" y="-284.799835205078" z="0" />
+				<Text alignment="center" font="Banana" key="common.levelN">
+					<Parameter name="level">13</Parameter>
+					<Pivot anchor="top" />
+					<Size x="34" y="34" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="GoalBox">
+				<Translation x="0" y="-4.79995727539062" z="0" />
+				<SceneObject>
+					<Translation y="80" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/goalbox.png">
+						<Insets bottom="22" left="24" right="24" top="30" />
+						<Pivot anchor="center" />
+						<Size height="185" width="494" />
+					</Panel>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-1.19998168945312" y="-47.7998657226562" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_upper.png">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-227.999938964844" y="79.4000244140625" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_left.png">
+						<Pivot anchor="right" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="227.200061035156" y="2.4000244140625" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_right.png">
+						<Pivot anchor="left" y="-77" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation y="33.8" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/goalbox_shadow2.png">
+						<Insets left="145" right="145" />
+						<Pivot anchor="center" />
+						<Size height="60" width="460" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="goalbox_text">
+					<Translation x="-1.19998168945312" y="-23.5999450683594" z="0" />
+					<Text alignment="center" font="Banana" key="popup_game_start_task_title">
+						<Parameter name="level">13</Parameter>
+						<Color b="0" g="155" r="232" />
+						<Shadow enabled="true">
+							<Color b="255" g="255" r="255" />
+						</Shadow>
+						<Size x="27" y="27" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="GameModeGoalAttachmentPoint">
+					<Translation x="-159.59765625" y="87.2026672363281" z="0" />
+					<SceneObject name="GameModeText">
+						<Translation x="220.800003051758" y="-4.79861450195315" z="2" />
+						<Text alignment="center" font="Banana" key="Get the bears above the candy string" maxHeight="80" maxWidth="280" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color b="0" g="155" r="232" />
+							<Outline enabled="true">
+								<Color b="0" g="0" r="0" />
+							</Outline>
+							<Pivot anchor="center" />
+							<Shadow enabled="true">
+								<Color b="255" g="255" r="255" />
+							</Shadow>
+							<Size x="23" y="23" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Stars">
+				<Translation y="20" />
+				<SceneObject name="StarOrnament">
+					<Translation x="-118" y="-170" />
+					<Rotation z="-25" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/star_holder.png">
+						<Pivot anchor="center" />
+					</Sprite>
+					<SceneObject name="Star1" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/star.png">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Animation animationData="StarLand_fromLeft" loopCount="0" name="Land" play="false" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="StarOrnament">
+					<Translation y="-200" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/star_holder.png">
+						<Pivot anchor="center" />
+					</Sprite>
+					<SceneObject name="Star2" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/star.png">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Animation animationData="StarLand" loopCount="0" name="Land" play="false" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="StarOrnament">
+					<Translation x="118" y="-170" />
+					<Rotation z="25" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/star_holder.png">
+						<Pivot anchor="center" />
+					</Sprite>
+					<SceneObject name="Star3" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/star.png">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Animation animationData="StarLand_fromRight" loopCount="0" name="Land" play="false" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BrokenHeart" visibility="never">
+				<Translation y="-180" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/broken_heart.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject class="Button" name="PlayButton">
+				<Translation y="252" />
+				<Scale x="1.2" y="1.2" z="1.2" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="300" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject name="PlayButtonText">
+					<Translation y="-7" />
+					<Text alignment="center" font="Banana" key="common.play" maxHeight="40" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="225" b="255" g="255" r="255" />
+						<Shadow enabled="true">
+							<Color a="25" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="25" y="25" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<SceneObject name="Portrait">
+			<Translation y="-140" z="400" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" startDelay="0.05" />
+			<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+			<SceneObject name="KimmyHappy" visibility="never">
+				<Translation x="180" y="120" z="50" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="2" y="-2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_happy.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_happy_idle.ffa" loopCount="-1" name="idle" play="true" speed="1" />
+				</Model>
+				<Material parentMaterial="KimmyHappy" />
+			</SceneObject>
+			<SceneObject name="speechBubbleKimmy" visibility="never">
+				<Translation x="-270" y="-70" z="0" />
+				<Scale x="0.93" y="0.93" z="0.93" />
+				<Sprite filename="shared/diorama/common/tex/kimmy/speechbubble.png">
+					<Flip u="true" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="speechBubbleKimmyText" visibility="never">
+				<Translation x="-110" y="15" z="1" />
+				<Scale x="0.93" y="0.93" z="0.93" />
+				<Text alignment="center" font="BananaInnerShadow" key="Woo-hoo! Sweet moves!" maxHeight="150" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Parameter name="speech">Level failed!</Parameter>
+					<Color a="255" b="229" g="154" r="10" />
+					<Size x="34" y="34" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="KimmySad" visibility="never">
+				<Translation x="180" y="120" z="50" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="2" y="-2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_sad.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_sad_idle.ffa" loopCount="-1" name="idle" play="true" speed="1" />
+				</Model>
+				<Material parentMaterial="KimmySad" />
+			</SceneObject>
+			<SceneObject name="GameModeIconAttachPoint">
+				<Translation x="-250" y="-184" z="100" />
+			</SceneObject>
+			<SceneObject name="LevelText">
+				<Translation x="-7" y="-284" />
+				<Text alignment="center" font="Banana" key="common.levelN">
+					<Parameter name="level">13</Parameter>
+					<Size x="34" y="34" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="GoalBox">
+				<Translation x="0" y="-4.79995727539062" z="0" />
+				<SceneObject>
+					<Translation y="80" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/goalbox.png">
+						<Insets bottom="22" left="24" right="24" top="30" />
+						<Pivot anchor="center" />
+						<Size height="185" width="494" />
+					</Panel>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-1.19998168945312" y="-47.7998657226562" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_upper.png">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-227.999938964844" y="79.4000244140625" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_left.png">
+						<Pivot anchor="right" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="227.200061035156" y="2.4000244140625" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_right.png">
+						<Pivot anchor="left" y="-77" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="0" y="33.2001953125" z="0" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/goalbox_shadow2.png">
+						<Insets left="145" right="145" />
+						<Pivot anchor="center" />
+						<Size height="60" width="460" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="goalbox_text">
+					<Translation x="-1.19998168945312" y="-23.5999450683594" z="0" />
+					<Text alignment="center" font="Banana" key="popup_game_start_task_title">
+						<Parameter name="level">13</Parameter>
+						<Color b="0" g="155" r="232" />
+						<Shadow enabled="true">
+							<Color b="255" g="255" r="255" />
+						</Shadow>
+						<Size x="27" y="27" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="GameModeGoalAttachmentPoint">
+					<Translation x="-159.59765625" y="87.2026672363281" z="0" />
+					<SceneObject name="GameModeText">
+						<Translation x="220.800003051758" y="-4.79861450195315" z="2" />
+						<Text alignment="center" font="Banana" key="Get the bears above the candy string" maxHeight="80" maxWidth="280" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color b="0" g="155" r="232" />
+							<Outline enabled="true">
+								<Color b="0" g="0" r="0" />
+							</Outline>
+							<Pivot anchor="center" />
+							<Shadow enabled="true">
+								<Color b="255" g="255" r="255" />
+							</Shadow>
+							<Size x="23" y="23" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Stars">
+				<Translation x="0" y="17.6000366210938" z="0" />
+				<SceneObject name="StarOrnament">
+					<Translation x="-118" y="-170" />
+					<Rotation z="-25" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/star_holder.png">
+						<Pivot anchor="center" />
+					</Sprite>
+					<SceneObject name="Star1" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/star.png">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Animation animationData="StarLand_fromLeft" loopCount="0" name="Land" play="false" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="StarOrnament">
+					<Translation y="-200" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/star_holder.png">
+						<Pivot anchor="center" />
+					</Sprite>
+					<SceneObject name="Star2" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/star.png">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Animation animationData="StarLand" loopCount="0" name="Land" play="false" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="StarOrnament">
+					<Translation x="118" y="-170" />
+					<Rotation z="25" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/star_holder.png">
+						<Pivot anchor="center" />
+					</Sprite>
+					<SceneObject name="Star3" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/star.png">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Animation animationData="StarLand_fromRight" loopCount="0" name="Land" play="false" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BrokenHeart" visibility="never">
+				<Translation y="-180" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/broken_heart.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject class="Button" name="PlayButton">
+				<Translation y="252" />
+				<Scale x="1.2" y="1.2" z="1.2" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="300" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject name="PlayButtonText">
+					<Translation y="-7" />
+					<Text alignment="center" font="Banana" key="common.play" maxHeight="40" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="225" b="255" g="255" r="255" />
+						<Shadow enabled="true">
+							<Color a="25" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="27" y="27" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50.0" />
+				<Y percentage="50.0" />
+			</Translation>
+			<Size>
+				<Height percentage="100.0" />
+				<OriginalSize height="768" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50.0" />
+				<Y percentage="50.0" />
+			</Translation>
+			<Size>
+				<Width percentage="100.0" />
+				<OriginalSize height="1024" width="684" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

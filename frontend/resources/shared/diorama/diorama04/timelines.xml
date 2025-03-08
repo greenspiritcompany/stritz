@@ -1,0 +1,20 @@
+<TimelineFiles>
+	<!-- timelines -->
+    <Timeline name="Cannon" timeline="shared/diorama/diorama04/episode10/timelines/cannon.xml" numInstances="0"/>
+	<!-- cutscenes -->
+    <Timeline name="Episode10Start" timeline="shared/diorama/diorama04/episode10/timelines/episode10_start.xml"/>
+    <Timeline name="Episode10StartPortal" timeline="shared/diorama/diorama04/episode10/timelines/episode10_start_portal.xml"/>
+    <Timeline name="Episode10Intro" timeline="shared/diorama/diorama04/episode10/timelines/episode10_intro.xml"/>
+    <Timeline name="Episode10Outro" timeline="shared/diorama/diorama04/episode10/timelines/episode10_outro.xml"/>
+    <Timeline name="Episode10OutroPortal" timeline="shared/diorama/diorama04/episode10/timelines/episode10_outro_portal.xml"/>
+    <Timeline name="Episode11Start" timeline="shared/diorama/diorama04/episode11/timelines/episode11_start.xml"/>
+    <Timeline name="Episode11StartPortal" timeline="shared/diorama/diorama04/episode11/timelines/episode11_start_portal.xml"/>
+    <Timeline name="Episode11Intro" timeline="shared/diorama/diorama04/episode11/timelines/episode11_intro.xml"/>
+    <Timeline name="Episode11Outro" timeline="shared/diorama/diorama04/episode11/timelines/episode11_outro.xml"/>
+    <Timeline name="Episode11OutroPortal" timeline="shared/diorama/diorama04/episode11/timelines/episode11_outro_portal.xml"/>
+    <Timeline name="Episode12Start" timeline="shared/diorama/diorama04/episode12/timelines/episode12_start.xml"/>
+    <Timeline name="Episode12StartPortal" timeline="shared/diorama/diorama04/episode12/timelines/episode12_start_portal.xml"/>
+    <Timeline name="Episode12Intro" timeline="shared/diorama/diorama04/episode12/timelines/episode12_intro.xml"/>
+    <Timeline name="Episode12Outro" timeline="shared/diorama/diorama04/episode12/timelines/episode12_outro.xml"/>
+    <Timeline name="Episode12OutroPortal" timeline="shared/diorama/diorama04/episode12/timelines/episode12_outro_portal.xml"/>
+</TimelineFiles>

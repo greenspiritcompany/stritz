@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="SpecialOfferExtraLarge" visibility="inherit">
+		<SceneObject class="Button" name="BuyButton">
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="260" />
+			</Panel>
+			<Translation x="206.370" y="322.002" z="0" />
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" startTime="0" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject name="Text">
+				<Text alignment="center" canBreakWords="false" font="Typewriter" key="store_contacting" maxHeight="50" maxWidth="170" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="255" g="255" r="255" />
+					<Shadow enabled="true">
+						<Color a="64" b="15" g="31" r="127" />
+						<Offset x="0" y="3" />
+					</Shadow>
+					<Size x="26" y="26" />
+					<TextString>0</TextString>
+				</Text>
+				<Translation x="3.067" y="-6.233" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Shadow">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_specialoffer_box_shadow.png" vertexColors="false">
+				<Insets bottom="10" left="7" right="7" top="10" />
+				<Size width="376" />
+			</Panel>
+			<Translation x="13.999" y="56.441" z="0" />
+		</SceneObject>
+		<SceneObject name="ProductBox">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_product_box.png" vertexColors="false">
+				<Insets bottom="12" left="10" right="10" top="8" />
+				<Size height="210" width="378" />
+			</Panel>
+			<Translation x="12.998" y="377.210" z="0" />
+		</SceneObject>
+		<SceneObject name="SpecialOfferXL">
+			<Translation x="-8.002" y="-4.955" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="HeaderTxt">
+				<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" key="stritz.product.shop.title.33365" maxHeight="80" maxWidth="380" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="8" g="180" r="40" />
+					<Size x="24" y="24" />
+					<TextString>stritz.product.shop.title.33365</TextString>
+				</Text>
+				<Translation x="209.711" y="30.662" z="0" />
+			</SceneObject>
+			<SceneObject name="BigImageXL">
+				<Scale x="0.827" y="0.827" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/shop_offer_xlarge.png" vertexColors="false" />
+				<Translation x="22.542" y="77.021" z="0" />
+			</SceneObject>
+			<SceneObject name="Gold">
+				<Translation x="440.432" y="318.964" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="160" />
+					</Panel>
+					<Translation x="-299.505" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="GoldbarsImage">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/gold_1.png" vertexColors="false" />
+					<Translation x="-333.519" y="70.861" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="42" maxWidth="100" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="28" y="28" />
+						<TextString>1000</TextString>
+					</Text>
+					<Translation x="-211.957" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Colorbomb">
+				<Translation x="372.891" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColorbombImage">
+					<Scale x="0.657" y="0.657" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false" />
+					<Translation x="-332.968" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>20</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Lollipop">
+				<Translation x="491.517" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="LollipopImage">
+					<Scale x="0.626" y="0.626" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png" vertexColors="false" />
+					<Translation x="-327.714" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>20</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Coloring">
+				<Translation x="609.710" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColoringImage">
+					<Scale x="0.615" y="0.615" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" vertexColors="false" />
+					<Translation x="-331.663" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>20</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Striped">
+				<Translation x="372.891" y="444.770" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="StripedImage">
+					<Scale x="0.626" y="0.626" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/striped_lollipop_icon.png" vertexColors="false" />
+					<Translation x="-327.714" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>20</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="DoubleFish">
+				<Translation x="491.517" y="444.770" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="DoubleFishImage">
+					<Rotation x="0" y="0" z="-9.454" />
+					<Scale x="0.337" y="0.337" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/pregame_double_fish_modal_icon.png" vertexColors="false" />
+					<Translation x="-342.892" y="71.578" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>20</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="FreeSwitch">
+				<Translation x="609.710" y="444.770" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="FreeSwitchImage">
+					<Scale x="0.605" y="0.605" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/free_switch_icon.png" vertexColors="false" />
+					<Translation x="-331.974" y="70.656" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>20</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<Translation z="0" />
+		<Scale x="1" y="1" z="1" />
+		<Rotation x="0" y="0" z="0" />
+	</SceneObject>
+	<SceneObject name="SpecialOfferLarge" >
+		<Translation y="0" z="0" />
+		<Scale x="1" y="1" z="1" />
+		<Rotation x="0" y="0" z="0" />
+		<SceneObject name="Shadow">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_specialoffer_box_shadow.png" vertexColors="false">
+				<Insets bottom="10" left="7" right="7" top="10" />
+				<Size width="376" />
+			</Panel>
+			<Translation x="14.126" y="56.420" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+		</SceneObject>
+		<SceneObject name="ProductBox">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_product_box.png" vertexColors="false">
+				<Insets bottom="12" left="10" right="10" top="8" />
+				<Size height="210" width="378" />
+			</Panel>
+			<Translation x="13.125" y="377.189" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+		</SceneObject>
+		<SceneObject class="Button" name="BuyButton">
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="260" />
+			</Panel>
+			<Translation x="206.497" y="321.981" z="0" />
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" startTime="0" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="Text">
+				<Text alignment="center" canBreakWords="false" font="Typewriter" key="store_contacting" maxHeight="50" maxWidth="170" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="255" g="255" r="255" />
+					<Shadow enabled="true">
+						<Color a="64" b="15" g="31" r="127" />
+						<Offset x="0" y="3" />
+					</Shadow>
+					<Size x="26" y="26" />
+					<TextString>0</TextString>
+				</Text>
+				<Translation x="3.067" y="-6.233" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="SpecialOfferL">
+			<Translation x="-7.875" y="-4.976" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="HeaderTxt">
+				<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" key="stritz.product.shop.title.33364" maxHeight="80" maxWidth="380" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="8" g="180" r="40" />
+					<Size x="24" y="24" />
+					<TextString>stritz.product.shop.title.33364</TextString>
+				</Text>
+				<Translation x="209.711" y="30.662" z="0" />
+			</SceneObject>
+			<SceneObject name="BigImageL">
+				<Scale x="0.802" y="0.802" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/shop_offer_large.png" vertexColors="false" />
+				<Translation x="37.197" y="73.909" z="0" />
+			</SceneObject>
+			<SceneObject name="Gold">
+				<Translation x="440.432" y="318.964" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="160" />
+					</Panel>
+					<Translation x="-299.505" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="GoldbarsImage">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/gold_1.png" vertexColors="false" />
+					<Translation x="-333.519" y="70.861" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="42" maxWidth="100" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="28" y="28" />
+						<TextString>500</TextString>
+					</Text>
+					<Translation x="-211.957" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Colorbomb">
+				<Translation x="372.891" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColorbombImage">
+					<Scale x="0.657" y="0.657" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false" />
+					<Translation x="-332.968" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>8</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Lollipop">
+				<Translation x="491.517" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="LollipopImage">
+					<Scale x="0.626" y="0.626" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png" vertexColors="false" />
+					<Translation x="-327.714" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>8</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Coloring">
+				<Translation x="609.710" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColoringImage">
+					<Scale x="0.615" y="0.615" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" vertexColors="false" />
+					<Translation x="-331.663" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>8</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Striped">
+				<Translation x="372.891" y="444.770" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="StripedImage">
+					<Scale x="0.626" y="0.626" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/striped_lollipop_icon.png" vertexColors="false" />
+					<Translation x="-327.714" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>8</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="DoubleFish">
+				<Translation x="491.517" y="444.770" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="DoubleFishImage">
+					<Rotation x="0" y="0" z="-9.454" />
+					<Scale x="0.337" y="0.337" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/pregame_double_fish_modal_icon.png" vertexColors="false" />
+					<Translation x="-342.892" y="71.578" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>8</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="FreeSwitch">
+				<Translation x="609.710" y="444.770" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="FreeSwitchImage">
+					<Scale x="0.605" y="0.605" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/free_switch_icon.png" vertexColors="false" />
+					<Translation x="-331.974" y="70.656" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>8</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="SpecialOfferMedium">
+		<SceneObject class="Button" name="BuyButton">
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="260" />
+			</Panel>
+			<Translation x="214.372" y="327.535" z="0" />
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" startTime="0" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject name="Text">
+				<Text alignment="center" canBreakWords="false" font="Typewriter" key="store_contacting" maxHeight="50" maxWidth="170" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="255" g="255" r="255" />
+					<Shadow enabled="true">
+						<Color a="64" b="15" g="31" r="127" />
+						<Offset x="0" y="3" />
+					</Shadow>
+					<Size x="26" y="26" />
+					<TextString>0</TextString>
+				</Text>
+				<Translation x="3.067" y="-6.233" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Shadow">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_specialoffer_box_shadow.png" vertexColors="false">
+				<Insets bottom="10" left="7" right="7" top="10" />
+				<Size width="376" />
+			</Panel>
+			<Translation x="22.001" y="61.974" z="0" />
+		</SceneObject>
+		<SceneObject name="ProductBox">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_product_box.png" vertexColors="false">
+				<Insets bottom="12" left="10" right="10" top="8" />
+				<Size height="210" width="378" />
+			</Panel>
+			<Translation x="21" y="382.743" z="0" />
+		</SceneObject>
+		<SceneObject name="SpecialOfferM">
+			<Translation x="0" y="0.578" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="HeaderTxt">
+				<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" key="stritz.product.shop.title.33363" maxHeight="80" maxWidth="380" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="8" g="180" r="40" />
+					<Size x="24" y="24" />
+					<TextString>stritz.product.shop.title.33363</TextString>
+				</Text>
+				<Translation x="209.711" y="30.662" z="0" />
+			</SceneObject>
+			<SceneObject name="BigImageM">
+				<Scale x="0.814" y="0.814" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/shop_offer_medium.png" vertexColors="false" />
+				<Translation x="31.886" y="71.785" z="0" />
+			</SceneObject>
+			<SceneObject name="Gold">
+				<Translation x="440.432" y="318.964" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="160" />
+					</Panel>
+					<Translation x="-299.505" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="GoldbarsImage">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/gold_1.png" vertexColors="false" />
+					<Translation x="-333.519" y="70.861" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="42" maxWidth="100" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="28" y="28" />
+						<TextString>250</TextString>
+					</Text>
+					<Translation x="-211.957" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Colorbomb">
+				<Translation x="372.891" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColorbombImage">
+					<Scale x="0.657" y="0.657" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false" />
+					<Translation x="-332.968" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>8</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Lollipop">
+				<Translation x="491.517" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="LollipopImage">
+					<Scale x="0.626" y="0.626" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png" vertexColors="false" />
+					<Translation x="-327.714" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>8</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Coloring">
+				<Translation x="609.710" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColoringImage">
+					<Scale x="0.615" y="0.615" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" vertexColors="false" />
+					<Translation x="-331.663" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>8</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Striped">
+				<Translation x="372.891" y="444.770" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="StripedImage">
+					<Scale x="0.626" y="0.626" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/striped_lollipop_icon.png" vertexColors="false" />
+					<Translation x="-327.714" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>8</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<Translation x="-8" y="-5.001" z="0" />
+		<Scale x="1" y="1" z="1" />
+		<Rotation x="0" y="0" z="0" />
+	</SceneObject>
+	<SceneObject name="SpecialOfferLow" >
+		<SceneObject class="Button" name="BuyButton">
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="260" />
+			</Panel>
+			<Translation x="206.494" y="321.350" z="0" />
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" startTime="0" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject name="Text">
+				<Text alignment="center" canBreakWords="false" font="Typewriter" key="store_contacting" maxHeight="50" maxWidth="170" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="255" g="255" r="255" />
+					<Shadow enabled="true">
+						<Color a="64" b="15" g="31" r="127" />
+						<Offset x="0" y="3" />
+					</Shadow>
+					<Size x="26" y="26" />
+					<TextString>0</TextString>
+				</Text>
+				<Translation x="3.067" y="-6.233" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Shadow">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_specialoffer_box_shadow.png" vertexColors="false">
+				<Insets bottom="10" left="7" right="7" top="10" />
+				<Size width="376" />
+			</Panel>
+			<Translation x="14.123" y="55.789" z="0" />
+		</SceneObject>
+		<SceneObject name="ProductBox">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_product_box.png" vertexColors="false">
+				<Insets bottom="12" left="10" right="10" top="8" />
+				<Size height="210" width="378" />
+			</Panel>
+			<Translation x="13.122" y="376.558" z="0" />
+		</SceneObject>
+		<SceneObject name="SpecialOfferLow">
+			<Translation x="-7.878" y="-5.607" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="HeaderTxt">
+				<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" key="stritz.product.shop.title.33362" maxHeight="80" maxWidth="380" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="8" g="180" r="40" />
+					<Size x="24" y="24" />
+					<TextString>stritz.product.shop.title.33362</TextString>
+				</Text>
+				<Translation x="209.711" y="30.662" z="0" />
+			</SceneObject>
+			<SceneObject name="BigImageLow">
+				<Scale x="0.817" y="0.817" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/shop_offer_low.png" vertexColors="false" />
+				<Translation x="41.446" y="77.095" z="0" />
+			</SceneObject>
+			<SceneObject name="Gold">
+				<Translation x="440.432" y="318.964" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="160" />
+					</Panel>
+					<Translation x="-299.505" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="GoldbarsImage">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/gold_1.png" vertexColors="false" />
+					<Translation x="-333.519" y="70.861" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="42" maxWidth="100" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="28" y="28" />
+						<TextString>100</TextString>
+					</Text>
+					<Translation x="-211.957" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Colorbomb">
+				<Translation x="372.891" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColorbombImage">
+					<Scale x="0.657" y="0.657" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false" />
+					<Translation x="-332.968" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Lollipop">
+				<Translation x="491.517" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="LollipopImage">
+					<Scale x="0.626" y="0.626" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png" vertexColors="false" />
+					<Translation x="-327.714" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Coloring">
+				<Translation x="609.710" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColoringImage">
+					<Scale x="0.615" y="0.615" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" vertexColors="false" />
+					<Translation x="-331.663" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Striped">
+				<Translation x="372.891" y="444.770" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="StripedImage">
+					<Scale x="0.626" y="0.626" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/striped_lollipop_icon.png" vertexColors="false" />
+					<Translation x="-327.714" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="DoubleFish">
+				<Translation x="491.517" y="444.770" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="DoubleFishImage">
+					<Rotation x="0" y="0" z="-9.454" />
+					<Scale x="0.337" y="0.337" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/pregame_double_fish_modal_icon.png" vertexColors="false" />
+					<Translation x="-342.892" y="71.578" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="FreeSwitch">
+				<Translation x="609.710" y="444.770" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="FreeSwitchImage">
+					<Scale x="0.605" y="0.605" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/free_switch_icon.png" vertexColors="false" />
+					<Translation x="-331.974" y="70.656" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<Translation z="0" />
+		<Scale x="1" y="1" z="1" />
+		<Rotation x="0" y="0" z="0" />
+	</SceneObject>
+	<SceneObject name="SpecialOfferSmall" >
+		<SceneObject name="Shadow">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_specialoffer_box_shadow.png" vertexColors="false">
+				<Insets bottom="10" left="7" right="7" top="10" />
+				<Size width="376" />
+			</Panel>
+			<Translation x="13.838" y="56.243" z="0" />
+		</SceneObject>
+		<SceneObject name="ProductBox">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_product_box.png" vertexColors="false">
+				<Insets bottom="12" left="10" right="10" top="8" />
+				<Size height="210" width="378" />
+			</Panel>
+			<Translation x="12.837" y="377.012" z="0" />
+		</SceneObject>
+		<SceneObject name="SpecialOfferS">
+			<Translation x="-8.163" y="-5.153" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="HeaderTxt">
+				<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" key="stritz.product.shop.title.33361" maxHeight="80" maxWidth="380" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="8" g="180" r="40" />
+					<Size x="24" y="24" />
+					<TextString>stritz.product.shop.title.33361</TextString>
+				</Text>
+				<Translation x="209.711" y="30.662" z="0" />
+			</SceneObject>
+			<SceneObject name="BigImageS">
+				<Scale x="0.886" y="0.886" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/shop_offer_small.png" vertexColors="false" />
+				<Translation x="47.818" y="93.027" z="0" />
+			</SceneObject>
+			<SceneObject name="Gold">
+				<Translation x="440.432" y="318.964" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="160" />
+					</Panel>
+					<Translation x="-299.505" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="GoldbarsImage">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/gold_1.png" vertexColors="false" />
+					<Translation x="-333.519" y="70.861" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="42" maxWidth="100" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="28" y="28" />
+						<TextString>50</TextString>
+					</Text>
+					<Translation x="-211.957" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Colorbomb">
+				<Translation x="372.891" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColorbombImage">
+					<Scale x="0.657" y="0.657" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false" />
+					<Translation x="-332.968" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Lollipop">
+				<Translation x="491.517" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="LollipopImage">
+					<Scale x="0.626" y="0.626" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png" vertexColors="false" />
+					<Translation x="-327.714" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Coloring">
+				<Translation x="609.710" y="381.607" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColoringImage">
+					<Scale x="0.615" y="0.615" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" vertexColors="false" />
+					<Translation x="-331.663" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject class="Button" name="BuyButton">
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="260" />
+			</Panel>
+			<Translation x="206.209" y="321.804" z="0" />
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" startTime="0" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="Text">
+				<Text alignment="center" canBreakWords="false" font="Typewriter" key="store_contacting" maxHeight="50" maxWidth="170" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="255" g="255" r="255" />
+					<Shadow enabled="true">
+						<Color a="64" b="15" g="31" r="127" />
+						<Offset x="0" y="3" />
+					</Shadow>
+					<Size x="26" y="26" />
+					<TextString>0</TextString>
+				</Text>
+				<Translation x="3.067" y="-6.233" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<Translation z="0" />
+		<Scale x="1" y="1" z="1" />
+		<Rotation x="0" y="0" z="0" />
+	</SceneObject>
+	<SceneObject name="SpecialOfferConversion" >
+		<SceneObject name="Shadow">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_specialoffer_box_shadow.png" vertexColors="false">
+				<Insets bottom="10" left="7" right="7" top="10" />
+				<Size width="376" />
+			</Panel>
+			<Translation x="14.450" y="55.993" z="0" />
+		</SceneObject>
+		<SceneObject name="ProductBox">
+			<Panel filename="shared/diorama/common/tex/gui_elements/shop_product_box.png" vertexColors="false">
+				<Insets bottom="12" left="10" right="10" top="8" />
+				<Size height="210" width="378" />
+			</Panel>
+			<Translation x="13.449" y="376.762" z="0" />
+		</SceneObject>
+		<SceneObject name="SpecialOfferConversion">
+			<Translation x="-7.551" y="-5.403" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="HeaderTxt">
+				<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" key="stritz.product.shop.title.33360" maxHeight="80" maxWidth="380" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="8" g="180" r="40" />
+					<Size x="24" y="24" />
+					<TextString>stritz.product.shop.title.33360</TextString>
+				</Text>
+				<Translation x="209.711" y="30.662" z="0" />
+			</SceneObject>
+			<SceneObject name="BigImageConversion">
+				<Scale x="0.970" y="0.970" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/shop_offer_conversion.png" vertexColors="false" />
+				<Translation x="37.248" y="65.607" z="0" />
+			</SceneObject>
+			<SceneObject name="Gold">
+				<Scale x="1.230" y="1.230" z="1" />
+				<Translation x="498.901" y="317.073" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="160" />
+					</Panel>
+					<Translation x="-299.505" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="GoldbarsImage">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/gold_1.png" vertexColors="false" />
+					<Translation x="-333.519" y="70.861" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="42" maxWidth="100" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="28" y="28" />
+						<TextString>20</TextString>
+					</Text>
+					<Translation x="-211.957" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Colorbomb">
+				<Scale x="1.230" y="1.230" z="1" />
+				<Translation x="479.350" y="396.726" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-319.486" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="ColorbombImage">
+					<Scale x="0.657" y="0.657" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false" />
+					<Translation x="-332.968" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Lollipop">
+				<Scale x="1.230" y="1.230" z="1" />
+				<Translation x="626.700" y="396.726" z="0" />
+				<SceneObject name="AmountBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png" vertexColors="false">
+						<Insets bottom="20" left="16" right="16" top="16" />
+						<Size width="90" />
+					</Panel>
+					<Translation x="-318.902" y="80.309" z="0" />
+				</SceneObject>
+				<SceneObject name="LollipopImage">
+					<Scale x="0.626" y="0.626" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png" vertexColors="false" />
+					<Translation x="-327.714" y="74.768" z="0" />
+				</SceneObject>
+				<SceneObject name="AmountTxt">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="40" maxWidth="46" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="255" b="0" g="55" r="117" />
+						<Size x="26" y="26" />
+						<TextString>3</TextString>
+					</Text>
+					<Translation x="-261.513" y="102" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject class="Button" name="BuyButton">
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="260" />
+			</Panel>
+			<Translation x="206.821" y="321.554" z="0" />
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" startTime="0" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="Text">
+				<Text alignment="center" canBreakWords="false" font="Typewriter" key="store_contacting" maxHeight="50" maxWidth="170" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="255" g="255" r="255" />
+					<Shadow enabled="true">
+						<Color a="64" b="15" g="31" r="127" />
+						<Offset x="0" y="3" />
+					</Shadow>
+					<Size x="26" y="26" />
+					<TextString>0</TextString>
+				</Text>
+				<Translation x="3.067" y="-6.233" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<Translation z="0" />
+	</SceneObject>
+</Scene>

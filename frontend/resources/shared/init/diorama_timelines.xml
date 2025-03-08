@@ -1,0 +1,28 @@
+<TimelineFiles>
+	<Timeline name="CollabUnlocked" timeline="shared/diorama/common/timelines/collab_unlocked.xml" scene="" />
+	<Timeline name="ClaimCelebration" timeline="shared/quests/timelines/claim_celebration.xml" scene="" />
+	<Timeline name="QuestTabPfx" timeline="shared/quests/timelines/quest_tab_pfx.xml" scene="" />
+	<Timeline name="FadeInFromWhite" timeline="shared/diorama/common/timelines/fade_in_from_white.xml" scene="shared/diorama/common/timelines/fade_in_from_white_scene.xml" />
+	<Timeline name="BestOnLevelIdle" timeline="shared/diorama/common/timelines/best_on_level_idle.xml" scene="" />
+	<Timeline name="ActiveLevel" timeline="shared/diorama/common/timelines/active_level.xml" scene="" />
+	<Timeline name="GlowingHeart" timeline="shared/diorama/common/timelines/glowing_heart.xml" scene="shared/diorama/common/timelines/glowing_heart_scene.xml" />
+	<Timeline name="UnlockLevel" timeline="shared/game/common/timelines/unlock_level.xml" scene="shared/game/common/timelines/unlock_level_scene.xml" />
+	<Timeline name="QuestNewExclamation" timeline="shared/diorama/common/timelines/quest_new_exclamation.xml" scene="shared/diorama/common/timelines/quest_new_exclamation_scene.xml" />
+	<Timeline name="QuestsReminder" timeline="shared/quests/timelines/quest_pirate_reminder.xml" scene="shared/quests/scenes/quest_pirate_reminder_scene.xml" />
+	<Timeline name="QuestBoxViewFadeIn" timeline="shared/quests/timelines/quest_box_view_fade_in.xml" scene="" />
+    <Timeline name="QuestBoxViewFadeOut" timeline="shared/quests/timelines/quest_box_view_fade_out.xml" scene="" />
+	<Timeline name="LoginCalendarClaimToday" timeline="shared/diorama/common/timelines/calendar/claim_today.xml" scene="" />
+	<Timeline name="LoginCalendarClaimTodaySpecial" timeline="shared/diorama/common/timelines/calendar/claim_today_special.xml" scene="" />
+    <Timeline name="LoginCalendarClaimTomorrow" timeline="shared/diorama/common/timelines/calendar/claim_tomorrow.xml" scene="" />
+	<Timeline name="FacManToplistCandyYellowSounds" timeline="shared/diorama/common/timelines/hero_quest/facman_toplist_candy_yellow_sounds.xml" scene="" />
+	<Timeline name="FacManToplistCandyRedSounds" timeline="shared/diorama/common/timelines/hero_quest/facman_toplist_candy_red_sounds.xml" scene="" />
+	<Timeline name="FacManToplistCandyPurpleSounds" timeline="shared/diorama/common/timelines/hero_quest/facman_toplist_candy_purple_sounds.xml" scene="" />
+	<Timeline name="FacManToplistCandyGreenSounds" timeline="shared/diorama/common/timelines/hero_quest/facman_toplist_candy_green_sounds.xml" scene="" />
+	<Timeline name="FacManToplistSmokeSounds" timeline="shared/diorama/common/timelines/hero_quest/facman_toplist_smoke_sounds.xml" scene="" />
+	<Timeline name="FacManToplistSmokeSmall1Sounds" timeline="shared/diorama/common/timelines/hero_quest/facman_toplist_smoke_small_1_sounds.xml" scene="" />
+	<Timeline name="FacManToplistSmokeSmall2Sounds" timeline="shared/diorama/common/timelines/hero_quest/facman_toplist_smoke_small_2_sounds.xml" scene="" />
+	<Timeline name="FacManToplistFaceSounds" timeline="shared/diorama/common/timelines/hero_quest/facman_toplist_face_sounds.xml" scene="" />
+	<Timeline name="RevealedMemoriesPiece" timeline="shared/features/memories/timelines/revealed_memories_piece_timeline.xml" scene="" />
+	<Timeline name="AssembleMemoriesPiece" timeline="shared/features/memories/timelines/assemble_memories_piece_timeline.xml" scene="" />
+	<Timeline name="SwitchRevealButtonToTitle" timeline="shared/features/memories/timelines/memories_switch_reveal_button_to_title_timeline.xml" scene="" />
+</TimelineFiles>

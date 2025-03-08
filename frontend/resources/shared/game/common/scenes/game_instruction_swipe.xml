@@ -1,0 +1,22 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.2">
+
+		<Triggers>
+
+			<EffectTrigger name="SwipeSwoopInEFQ" time="0.0"/>
+			<EffectTrigger name="SwipeSwoopOutEFQ" time="0.51"/>
+			<CustomTrigger time="1.0" data="SwipeEnd" name="SwipeEnd"/>
+
+			<AnimationTrigger targetName="AnimateBg" animationName="SlideToRight" time="0.0"/>
+
+			<AnimationTrigger targetName="SwipeRoot" animationName="SlideInFromTop" time="0.0"/>
+			<AnimationTrigger targetName="SwipeRoot" animationName="SlideOutToTop" time="0.75"/>
+
+		</Triggers>
+
+		<TimeControls>
+			<Pause time="0.5" timeout="2"/>
+		</TimeControls>
+	</Timeline>
+</Timelines>

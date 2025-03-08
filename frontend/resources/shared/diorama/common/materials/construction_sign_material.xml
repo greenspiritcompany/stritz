@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Material name="Under_Construction_Icon">
+		<Depth enabled="true" writeMask="false"/>
+		<Blend enabled="true"/>
+		<Textures>
+			<Texture filename="shared/diorama/common/tex/under_construction.png"/>
+		</Textures>
+	</Material>
+</Scene>

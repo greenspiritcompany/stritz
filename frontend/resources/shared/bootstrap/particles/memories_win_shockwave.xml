@@ -1,0 +1,29 @@
+<ParticleEffect maxParticles="22" space="Local" timeToEmit="0.100" name="memories_win_shockwavePFX">
+<Dampening max="0.920" min="0.800" />
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0.002" spread="360" angle="0">
+	<SpawnArea width="200" depth="0" height="200" />
+</Emitter>
+<Size>
+	<Max x="200" y="200" />
+	<Min x="80" y="80" />
+</Size>
+<SizeChange>
+	<Max x="-145" y="-145" />
+	<Min x="-125" y="-125" />
+</SizeChange>
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/light64.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="0.800" min="0.600" />
+<Velocity max="900" min="600" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="255" g="248" b="102" a="100" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="0" g="0" b="0" a="50" />
+	</Keyframe>
+</ColorAnimation>
+<Rotation min="0" max="0" />
+<RotationSpeed min="0" max="0" />
+</ParticleEffect>

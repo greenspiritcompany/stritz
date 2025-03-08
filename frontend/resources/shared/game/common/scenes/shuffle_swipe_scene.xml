@@ -1,0 +1,12 @@
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<SceneObject name="Scene" visibility="always" layerFlags="256">
+		<SceneObject name="SwipeRoot">
+
+			<Translation x="0" z="500"/>
+
+
+		</SceneObject>
+	</SceneObject>
+</Scene>

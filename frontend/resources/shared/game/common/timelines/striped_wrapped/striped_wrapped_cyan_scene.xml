@@ -1,0 +1,210 @@
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<Material name="SpriteMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+		</Material>
+	</Materials>
+	<SceneObject name="Scene" layerFlags="512">
+		<SceneObject name="Rotate90Node">
+			<Rotation z="90"/>
+			<SceneObject name="ColorVWhite">
+				<Sprite filename="shared/game/common/tex/candy/cyan_v_white_big.png">
+					<Pivot anchor="center"/>
+				</Sprite>
+				<Translation x="0.0" y="0.0" z="0.0"/>
+				<Rotation z="-90"/>
+			</SceneObject>
+			<SceneObject name="ColorVColor">
+				<Sprite filename="shared/game/common/tex/candy/cyan_v_cyan_big.png">
+					<Pivot anchor="center"/>
+				</Sprite>
+				<Translation x="0.0" y="0.0" z="0.0"/>
+				<Rotation z="-90"/>
+			</SceneObject>
+			<SceneObject name="ColorPolkaVWhiteBlurred">
+				<Sprite filename="shared/game/common/tex/candy/cyan_polka_white_big.png">
+					<Pivot anchor="center"/>
+				</Sprite>
+				<Translation x="0.0" y="0.0" z="0.0"/>
+				<Scale x="0.666" y="0.666" z="1"/>
+			</SceneObject>
+			<SceneObject name="ColorPolkaVColorBlurred">
+				<Sprite filename="shared/game/common/tex/candy/cyan_polka_cyan_big.png">
+					<Pivot anchor="center"/>
+				</Sprite>
+				<Translation x="0.0" y="0.0" z="0.0"/>
+				<Scale x="0.666" y="0.666" z="1"/>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ColorHWhite">
+			<Sprite filename="shared/game/common/tex/candy/cyan_h_white_big.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+			<Translation x="0.0" y="0.0" z="0.0"/>
+		</SceneObject>
+		<SceneObject name="ColorHColor">
+			<Sprite filename="shared/game/common/tex/candy/cyan_h_cyan_big.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+			<Translation x="0.0" y="0.0" z="0.0"/>
+		</SceneObject>
+		<SceneObject name="ColorPolkaHWhiteBlurred">
+			<Sprite filename="shared/game/common/tex/candy/cyan_polka_white_big.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+			<Translation x="0.0" y="0.0" z="0.0"/>
+			<Scale x="0.666" y="0.666" z="1"/>
+		</SceneObject>
+		<SceneObject name="ColorPolkaHColorBlurred">
+			<Sprite filename="shared/game/common/tex/candy/cyan_polka_cyan_big.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+			<Translation x="0.0" y="0.0" z="0.0"/>
+			<Scale x="0.666" y="0.666" z="1"/>
+		</SceneObject>
+
+		<!-- Give the particles on stripe+wrapped something to follow -->
+		<SceneObject name="ParticleHorizontalLeft">
+		</SceneObject>
+
+		<SceneObject name="ParticleHorizontalRight">
+		</SceneObject>
+
+		<SceneObject name="ParticleVerticalUp">
+		</SceneObject>
+
+		<SceneObject name="ParticleVerticalDown">
+		</SceneObject>
+
+		<!-- Added electricity "sparks" used on the colorbomb -->
+		<SceneObject name="colorbombfx_hit_01">
+			<Model filename="shared/game/common/models/color_bomb_fx/hit.ffm">
+				<Animations>
+					<Animation filename="shared/game/common/models/color_bomb_fx/hit_activate.ffa" play="true"
+							   loopCount="0" speed="7.0" name="hit_activate_01"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material>
+					<Depth enabled="false" writeMask="false"/>
+					<Blend enabled="true"/>
+					<Textures>
+						<Texture filename="shared/game/common/tex/candy/electricity.png"/>
+					</Textures>
+				</Material>
+			</Materials>
+			<Translation x="-15.0" y="-5.0" z="0.0"/>
+			<Rotation x="0.0" y="0.0" z="0.0"/>
+			<Scale x="1.0" y="-0.45" z="1.0"/>
+		</SceneObject>
+
+
+		<SceneObject name="colorbombfx_hit_02">
+			<Model filename="shared/game/common/models/color_bomb_fx/hit.ffm">
+				<Animations>
+					<Animation filename="shared/game/common/models/color_bomb_fx/hit_activate.ffa" play="true"
+							   loopCount="0" speed="4.5" name="hit_activate_02"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material>
+					<Depth enabled="false" writeMask="false"/>
+					<Blend enabled="true"/>
+					<Textures>
+						<Texture filename="shared/game/common/tex/candy/electricity.png"/>
+					</Textures>
+				</Material>
+			</Materials>
+			<Translation x="-15.0" y="-20.0" z="0.0"/>
+			<Rotation x="-5.0" y="0.0" z="90.0"/>
+			<Scale x="0.55" y="-0.35" z="0.55"/>
+		</SceneObject>
+
+		<SceneObject name="colorbombfx_hit_03">
+			<Model filename="shared/game/common/models/color_bomb_fx/hit.ffm">
+				<Animations>
+					<Animation filename="shared/game/common/models/color_bomb_fx/hit_activate.ffa" play="true"
+							   loopCount="0" speed="7.0" name="hit_activate_03"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material>
+					<Depth enabled="false" writeMask="false"/>
+					<Blend enabled="true"/>
+					<Textures>
+						<Texture filename="shared/game/common/tex/candy/electricity.png"/>
+					</Textures>
+				</Material>
+			</Materials>
+			<Translation x="15.0" y="-2.0" z="0.0"/>
+			<Rotation x="0.0" y="0.0" z="180.0"/>
+			<Scale x="0.8" y="-0.4" z="0.8"/>
+		</SceneObject>
+
+		<SceneObject name="colorbombfx_hit_04">
+			<Model filename="shared/game/common/models/color_bomb_fx/hit.ffm">
+				<Animations>
+					<Animation filename="shared/game/common/models/color_bomb_fx/hit_activate.ffa" play="true"
+							   loopCount="0" speed="6.0" name="hit_activate_04"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material>
+					<Depth enabled="false" writeMask="false"/>
+					<Blend enabled="true"/>
+					<Textures>
+						<Texture filename="shared/game/common/tex/candy/electricity.png"/>
+					</Textures>
+				</Material>
+			</Materials>
+			<Translation x="4.0" y="-1.0" z="0.0"/>
+			<Rotation x="0.0" y="0.0" z="290.0"/>
+			<Scale x="0.9" y="-0.4" z="0.9"/>
+		</SceneObject>
+
+		<SceneObject name="colorbombfx_hit_05">
+			<Model filename="shared/game/common/models/color_bomb_fx/hit.ffm">
+				<Animations>
+					<Animation filename="shared/game/common/models/color_bomb_fx/hit_activate.ffa" play="true"
+							   loopCount="0" speed="5.0" name="hit_activate_04"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material>
+					<Depth enabled="false" writeMask="false"/>
+					<Blend enabled="true"/>
+					<Textures>
+						<Texture filename="shared/game/common/tex/candy/electricity.png"/>
+					</Textures>
+				</Material>
+			</Materials>
+			<Translation x="4.0" y="-10.0" z="0.0"/>
+			<Rotation x="0.0" y="0.0" z="310.0"/>
+			<Scale x="0.9" y="-0.4" z="0.9"/>
+		</SceneObject>
+
+		<SceneObject name="colorbombfx_hit_06">
+			<Model filename="shared/game/common/models/color_bomb_fx/hit.ffm">
+				<Animations>
+					<Animation filename="shared/game/common/models/color_bomb_fx/hit_activate.ffa" play="true"
+							   loopCount="0" speed="5.0" name="hit_activate_04"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material>
+					<Depth enabled="false" writeMask="false"/>
+					<Blend enabled="true"/>
+					<Textures>
+						<Texture filename="shared/game/common/tex/candy/electricity.png"/>
+					</Textures>
+				</Material>
+			</Materials>
+			<Translation x="20.0" y="5.0" z="0.0"/>
+			<Rotation x="0.0" y="0.0" z="380.0"/>
+			<Scale x="0.9" y="-0.4" z="0.9"/>
+		</SceneObject>
+
+	</SceneObject>
+</Scene>

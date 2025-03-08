@@ -1,0 +1,17 @@
+<Timelines>
+<Timeline startTime="0" endTime="4">
+	<Animate target="burstmode">
+		<Hide time="0" />
+		<Show time="0.5" />
+	</Animate>
+	<Triggers>
+		<EffectTrigger time="0.5" name="CandyCaneBuildupEFQ" parentName="" targetName="burstmode" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="0" y="0" z="10" />
+		</EffectTrigger>
+		<EffectTrigger time="1" name="CandyCaneBuildupEFQ" parentName="" targetName="burstmode" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="0" y="0" z="10" />
+		</EffectTrigger>
+		<CustomTrigger time="2" name="BuildUpComplete" data="" />
+	</Triggers>
+</Timeline>
+</Timelines>

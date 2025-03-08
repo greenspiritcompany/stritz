@@ -1,0 +1,29 @@
+<ParticleEffect maxParticles="32" space="Local" timeToEmit="100" name="ep84_Wisps_snow">
+<Dampening max="1" min="1" />
+<DirectionalForce x="50" y="-100" />
+<Emitter emissionRate="0.150" spread="0" angle="90">
+	<SpawnArea width="1536" depth="0" height="896" />
+</Emitter>
+<Rotation max="-90" min="-90" />
+<RotationSpeed max="0" min="0" />
+<Size>
+	<Max x="26" y="26" />
+	<Min x="26" y="26" />
+</Size>
+<SizeChange>
+	<Max x="-4.800" y="-4.800" />
+	<Min x="-4.800" y="-4.800" />
+</SizeChange>
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png" />
+<TextureFrame numTextureAnimationFrames="0" textureAnimationSpeed="0" startFrame="0" />
+<TimeToLive max="3" min="2" />
+<Velocity max="10" min="5" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color b="255" r="255" g="255" a="0" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color b="255" r="255" g="255" a="255" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

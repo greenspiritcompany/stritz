@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="arrow_quest">
+		<Material>
+			<Texture filename="shared/diorama/common/tex/gui_elements/arrow_quest.png" />
+		</Material>
+		<Scale x="0.422" y="0.422" z="1" />
+		<Spine filename="shared/quests/models/arrow.json">
+			<Animation play="true" spineAnimation="quest_arrow_animation" />
+		</Spine>
+		<Translation z="0"/>
+	</SceneObject>
+</Scene>

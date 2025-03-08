@@ -1,0 +1,23 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="0.8">
+
+		<Animate target="Candy">
+			<Show/>
+			<Scale time="0.0" x="1" y="1"/>
+			<Scale time="0.1" x="2" y="2"/>
+			<Scale time="0.7" x="0.6" y="0.6"/>
+			<Hide time="0.75"/>
+		</Animate>
+
+		<Triggers>
+			<CustomTrigger name="ChangeLayerToInFrontOfCandies" time="0.01"/>
+			<CustomTrigger name="FlyToHud" time="0.1"/>
+			<EffectTrigger targetName="Candy" name="SidekickCyanFlyToHudEFQ" time="0.1">
+                <Offset z="100"/>
+			</EffectTrigger>
+		</Triggers>
+
+
+	</Timeline>
+</Timelines>

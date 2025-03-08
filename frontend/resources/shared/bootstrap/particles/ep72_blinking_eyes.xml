@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="2" space="Local" timeToEmit="60" name="ep72_blinking_eyes">
+<Dampening max="0" min="0" />
+<DirectionalForce x="0" y="0" />
+<Emitter angle="0" spread="10" emissionRate="1">
+	<SpawnArea depth="0" width="10" height="60" />
+</Emitter>
+<EndColor r="0" g="0" b="0" a="0" />
+<Size>
+	<Max x="20" y="15" />
+	<Min x="15" y="10" />
+</Size>
+<SizeChange>
+	<Max x="0" y="0" />
+	<Min x="0" y="0" />
+</SizeChange>
+<StartColor r="246" g="255" b="56" a="255" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/ep72_blinking_eyes.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive min="0.400" max="0.600" />
+<Velocity max="0" min="0" />
+<Rotation max="30" min="-30" />
+<RotationSpeed min="0" max="0" />
+</ParticleEffect>

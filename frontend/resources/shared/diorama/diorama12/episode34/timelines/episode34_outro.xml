@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline endTime="5.0" startTime="0.0">
+        <!--COMMENT/REMOVE THIS FOR THE 3RD EPISODE IN THE DIORAMA! SHE IS ONLY MOVED ON FIRST AND SECOND EPISODE-->
+        <Animate target="Kimmy_group" time="0.0">
+            <Translation time="0.0" x="-670" y="40" z="270"/>
+            <Scale time="0.0" x="0.95" y="0.95" z="0.95"/>
+            <Show/>
+        </Animate>
+        <Triggers>
+            <!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+            <EffectTrigger name="character_knight" time="0.0"/>
+            <CustomTrigger data="SpeechBubbleEp34.1"
+                name="SpeechBubbleText" time="0.0"/>
+            <AnimationTrigger animationName="SpeechBubbleAppear"
+                targetName="SpeechBubbleEp34" time="0.0"/>
+            <AnimationTrigger animationName="SpeechBubbleDisappear"
+                targetName="SpeechBubbleEp34" time="4.0"/>
+            <AnimationTrigger animationName="Talk" crossFade="0.1"
+                targetName="CharacterEp34" time="1.0"/>
+            <AnimationTrigger animationName="Idle" crossFade="0.6"
+                targetName="CharacterEp34" time="3.0"/>
+        </Triggers>
+    </Timeline>
+</Timelines>

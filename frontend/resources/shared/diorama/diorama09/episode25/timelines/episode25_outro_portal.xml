@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Animations>
+		<Animation name="CameraEyeMoveIn">
+			<Translation time="0.0" x="30.0" y="55" z="89"/>
+			<Translation time="7.0" x="10.0" y="55" z="89"/>
+		</Animation>
+
+		<Animation name="CameraTargetMoveIn">
+			<Translation time="0.0" x="20.0" y="0" z="0"/>
+			<Translation time="5.0" x="-23.0" y="0" z="0"/>
+		</Animation>
+
+		<Animation name="DoorRotateAndMoveWoohooo">
+			<Translation time="0.0" x="20" y="0" z="0"/>
+			<Translation time="5.0" x="-23" y="0" z="0"/>
+
+			<Rotation time="0.0" y="0"/>
+			<Rotation time="5.0" y="66"/>
+		</Animation>
+	</Animations>
+
+	<Timeline startTime="0.0" endTime="5.0">
+		<Animate target="diorama_portal_door" time="0.0">
+			<PlayAnimation time="0.0" name="DoorRotateAndMoveWoohooo"/>
+		</Animate>
+
+		<Animate target="camera_eye" time="0.0">
+			<PlayAnimation time="0.0" name="CameraEyeMoveIn"/>
+		</Animate>
+
+		<Animate target="camera_target" time="0.0">
+			<PlayAnimation time="0.0" name="CameraTargetMoveIn"/>
+		</Animate>
+
+		<Triggers>
+			<CustomTrigger time="0.0" name="HideHUD"/>
+
+			<!--<CustomTrigger time="0.0" name="ShowBlackBars" />-->
+			<CustomTrigger time="0.5" name="ShowButtonSkip"/>
+
+			<CustomTrigger time="4.8" name="HideButtonSkip"/>
+			<!--<CustomTrigger time="4.95" name="HideBlackBars" />-->
+
+			<CustomTrigger time="4.95" name="ShowHUD"/>
+		</Triggers>
+
+		<TimeControls>
+		</TimeControls>
+	</Timeline>
+</Timelines>

@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Include filename="shared/diorama/diorama01/episode02/timelines/outro_talk_ep02.xml"/>
+
+	<Timeline startTime="0.0" endTime="5.0">
+		<!-- Prepare sun and clouds for ep3 -->
+		<Animate target="sun" time="0.0">
+			<Show time="0.5"/>
+		</Animate>
+		<Animate target="sunrays" time="0.0">
+			<Show time="0.5"/>
+		</Animate>
+		<Animate target="cloud01" time="0.0">
+			<Show time="0.3"/>
+		</Animate>
+		<Animate target="cloud02" time="0.0">
+			<Show time="0.5"/>
+		</Animate>
+		<Triggers>
+			<AnimationTrigger targetName="cloud01" animationName="Foldup" time="0.3"/>
+			<AnimationTrigger targetName="cloud02" animationName="Foldup" time="0.5"/>
+		</Triggers>
+
+		<Animate target="boat" time="6.5">
+			<Show time="2.49"/>
+		</Animate>
+
+		<Animate target="Kimmy_group" time="0.0">
+			<Hide/>
+		</Animate>
+	</Timeline>
+</Timelines>

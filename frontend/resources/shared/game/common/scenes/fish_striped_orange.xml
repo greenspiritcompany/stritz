@@ -1,0 +1,17 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="6.01">
+		<Triggers>
+			<AnimationTrigger animationName="FishGoAnim" targetName="FishAnimation" time="0.0"/>
+			<EffectTrigger name="FishCreatedEFQ" targetName="FishRoot" time="0.001">
+				<Offset z="500"/>
+			</EffectTrigger>
+			<EffectTrigger name="FishTrailEFQ" targetName="FishRoot" followTarget="true"
+						   emitterInheritsTargetRotation="false" time="0.1"/>
+			<EffectTrigger time="0.1" name="FishStripeTrailOrangeEFQ" targetName="FishRoot" followTarget="true"
+						   emitterInheritsTargetRotation="true"/>
+			<EffectTrigger name="fish_swim_striped" targetName="FishRoot" followTarget="true"
+						   emitterInheritsTargetRotation="false" time="0.0"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

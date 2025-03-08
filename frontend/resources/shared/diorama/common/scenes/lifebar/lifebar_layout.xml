@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="Lifebar">
+		<Default>
+			<Translation>
+				<X percentage="0"/>
+				<Y percentage="0"/>
+			</Translation>
+		</Default>
+		<Landscape>
+			<Size>
+				<Height percentage="100"/>
+				<OriginalSize height="768" width="1"/>
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Size>
+				<Height percentage="100"/>
+				<OriginalSize height="1024" width="570"/>
+				<Width percentage="80"/>
+			</Size>
+		</Portrait>
+	</Object>
+</Layout>

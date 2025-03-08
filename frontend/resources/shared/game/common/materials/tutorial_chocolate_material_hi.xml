@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+
+		<Material name="ChocolateBreakMaterial">
+			<Blend enabled="false"/>
+			<Cull enabled="false" face="back"/>
+			<!-- Set to false since the vertex winding seems messed up between FF and SL -->
+			<Shader program="NormalMap"/>
+			<Light enabled="true" shininess="15">
+				<Ambient r="173" g="183" b="180" a="255"/>
+				<Diffuse r="145" g="145" b="145" a="255"/>
+				<Specular r="102" g="102" b="102" a="255"/>
+			</Light>
+			<Textures>
+				<Texture filename="shared/game/common/tex/chocolate/choko_cracked_tex.png"/>
+				<Texture filename="shared/game/common/tex/chocolate/choko_cracked_normal.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="ChocolateMaterial">
+			<Blend enabled="false"/>
+			<Cull enabled="false" face="back"/>
+			<!-- Set to false since the vertex winding seems messed up between FF and SL -->
+			<Shader program="NormalMap"/>
+			<Light enabled="true" shininess="15">
+				<Ambient r="173" g="183" b="180" a="255"/>
+				<Diffuse r="145" g="145" b="145" a="255"/>
+				<Specular r="102" g="102" b="102" a="255"/>
+			</Light>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/chocolate_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/chocolate_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="GreenCandyMat">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Shader program="NormalMap"/>
+			<Light enabled="true" shininess="100">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="150" g="150" b="150" a="255"/>
+				<Specular r="255" g="255" b="255" a="255"/>
+			</Light>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/green_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/green_n.png"/>
+			</Textures>
+		</Material>
+
+	</Materials>
+</Scene>

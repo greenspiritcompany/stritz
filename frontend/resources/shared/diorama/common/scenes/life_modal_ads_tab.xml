@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="HighscoresList">
+		<Translation x="24" y="-4" z="-15" />
+		<SceneObject layerFlags="8" name="HighscoresLandscape">
+			<Translation x="710" y="70" z="0" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" startDelay="0.050" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" />
+			<SceneObject name="ADBG2">
+				<Scale x="-1" />
+				<Translation x="-285.498" y="-277.370" z="0" />
+				<Rotation x="0" y="0" z="-90" />
+				<SceneObject name="BGBottom">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/ad_bg_bottom.png" wrap="repeat" vertexColors="false">
+						<Rectangle maxX="320" maxY="63" minY="1" />
+					</Sprite>
+					<Translation z="0" x="64" />
+				</SceneObject>
+				<SceneObject name="BGBottomLeft">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/ad_bg_leftbottom.png" vertexColors="false">
+						<Rectangle minX="1" maxX="63" minY="1" maxY="63" />
+					</Sprite>
+					<Translation z="0" x="2" />
+				</SceneObject>
+				<SceneObject name="BGBottomRight">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/ad_bg_rightbottom.png" vertexColors="false">
+						<Rectangle maxX="63" maxY="63" minY="1" minX="1" />
+					</Sprite>
+					<Translation x="384" />
+				</SceneObject>
+				<SceneObject name="BGLeft">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/ad_bg_left.png" wrap="repeat" vertexColors="false">
+						<Pivot anchor="bottomLeft" />
+						<Rectangle maxX="63" maxY="320" minX="1" minY="1" />
+					</Sprite>
+					<Translation z="0" x="2" />
+				</SceneObject>
+				<SceneObject name="BGMiddle">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/ad_bg_middle.png" wrap="repeat" vertexColors="false">
+						<Pivot anchor="bottomLeft" />
+						<Rectangle maxX="320" maxY="320" />
+					</Sprite>
+					<Translation x="64" z="0" />
+				</SceneObject>
+				<SceneObject name="BGRight">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/ad_bg_right.png" wrap="repeat" vertexColors="false">
+						<Rectangle maxY="320" maxX="63" minX="1" minY="1" />
+						<Pivot anchor="bottomLeft" />
+					</Sprite>
+					<Translation x="384" z="0" />
+				</SceneObject>
+				<SceneObject name="LowerCorner">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/ad_corner_down.png" vertexColors="false">
+						<Flip u="true" />
+					</Sprite>
+					<Translation x="360.724" y="45.881" z="0" />
+					<Rotation x="0" y="0" z="-90" />
+				</SceneObject>
+				<SceneObject name="UpperCorner">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/ad_corner_up.png" vertexColors="false">
+						<Flip u="true" />
+					</Sprite>
+					<Translation x="12.706" y="45.820" z="0" />
+					<Rotation x="0" y="0" z="-90" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="AskButton2">
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="280" />
+				</Panel>
+				<Scale x="1.100" y="1.100" z="1.100" />
+				<Translation x="-406.516" y="80.765" z="0" />
+				<SceneObject>
+					<Text alignment="center" font="Banana" maxHeight="45" maxWidth="150" overflowBehaviour="fit" verticalAlignment="visualCenter" allowWordWrapping="false" canBreakWords="false">
+						<GradientColor enabled="false" />
+						<Shadow enabled="true">
+							<Color a="25" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="28" y="28" />
+						<TextString>Watch</TextString>
+					</Text>
+					<Translation x="-31.459" y="-7.723" z="0" />
+				</SceneObject>
+				<SceneObject name="Icon2">
+					<Scale x="0.900" y="0.900" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/ad_icon.png" vertexColors="false" />
+					<Translation x="54.828" y="-32.278" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Heart2">
+				<Scale z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/ad_heart.png" vertexColors="false" />
+				<Translation x="-485.379" y="-236.966" z="0" />
+				<SceneObject name="1">
+					<Text alignment="center" font="Banana" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Shadow enabled="true">
+							<Color a="50" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="40" y="40" />
+						<TextString>1</TextString>
+					</Text>
+					<Translation x="89.374" y="64.753" z="0" />
+				</SceneObject>
+				<SceneObject name="Plus">
+					<Text alignment="center" font="Banana" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Shadow enabled="true">
+							<Color a="50" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="36" y="36" />
+						<TextString>+</TextString>
+					</Text>
+					<Translation x="61.794" y="64.753" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Text2">
+				<Text alignment="center" font="Typewriter" verticalAlignment="visualCenter" overflowBehaviour="fit" canBreakWords="false" maxHeight="100" maxWidth="280">
+					<Color a="255" b="129" g="94" r="1" />
+					<Size x="17" y="17" />
+					<TextString>Watch an AD and get 1 free life!</TextString>
+				</Text>
+				<Translation x="-409.002" y="-38.336" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject layerFlags="8" name="HighscoresPortrait">
+			<Translation x="295" y="507" z="0" />
+			<Animation animationData="SlideInFromLeftToBottom" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToTop" loopCount="0" name="OnDisappear" />
+			<SceneObject name="ADBG">
+				<Translation x="-583.782" y="-147.729" z="0" />
+				<SceneObject name="BGBottom">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/ad_bg_bottom.png" wrap="repeat" vertexColors="false">
+						<Rectangle maxX="448" maxY="63" minY="1" />
+					</Sprite>
+					<Translation z="0" x="64" />
+				</SceneObject>
+				<SceneObject name="BGBottomLeft">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/ad_bg_leftbottom.png" vertexColors="false">
+						<Rectangle minX="1" maxX="63" minY="1" maxY="63" />
+					</Sprite>
+					<Translation z="0" x="2" />
+				</SceneObject>
+				<SceneObject name="BGBottomRight">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/ad_bg_rightbottom.png" vertexColors="false">
+						<Rectangle maxX="63" maxY="63" minY="1" minX="1" />
+					</Sprite>
+					<Translation x="512" />
+				</SceneObject>
+				<SceneObject name="BGLeft">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/ad_bg_left.png" wrap="repeat" vertexColors="false">
+						<Pivot anchor="bottomLeft" />
+						<Rectangle maxX="63" maxY="192" minX="1" minY="1" />
+					</Sprite>
+					<Translation z="0" x="2" />
+				</SceneObject>
+				<SceneObject name="BGMiddle">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/ad_bg_middle.png" wrap="repeat" vertexColors="false">
+						<Pivot anchor="bottomLeft" />
+						<Rectangle maxX="448" maxY="192" />
+					</Sprite>
+					<Translation x="64" z="0" />
+				</SceneObject>
+				<SceneObject name="BGRight">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/ad_bg_right.png" wrap="repeat" vertexColors="false">
+						<Rectangle maxY="192" maxX="63" minX="1" minY="1" />
+						<Pivot anchor="bottomLeft" />
+					</Sprite>
+					<Translation x="512" z="0" />
+				</SceneObject>
+				<SceneObject name="LeftCorner">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/ad_corner_down.png" vertexColors="false">
+						<Flip u="true" />
+					</Sprite>
+					<Translation x="12.022" y="-29.417" z="0" />
+				</SceneObject>
+				<SceneObject name="RightCorner">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/ad_corner_down.png" vertexColors="false" />
+					<Translation x="488.051" y="-29.417" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Heart">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/ad_heart.png" vertexColors="false" />
+				<Translation x="-550.220" y="-234.833" z="0" />
+				<Scale x="0.767" y="0.767" z="1" />
+				<SceneObject name="1">
+					<Text alignment="center" verticalAlignment="visualCenter" font="Banana" overflowBehaviour="fit">
+						<TextString>1</TextString>
+						<Size x="40" y="40" />
+						<Shadow enabled="true">
+							<Offset x="0" y="6" />
+							<Color r="0" g="0" b="0" a="50" />
+						</Shadow>
+					</Text>
+					<Translation x="89.374" y="64.753" z="0" />
+				</SceneObject>
+				<SceneObject name="Plus">
+					<Text alignment="center" verticalAlignment="visualCenter" font="Banana" overflowBehaviour="fit">
+						<TextString>+</TextString>
+						<Size x="36" y="36" />
+						<Shadow enabled="true">
+							<Offset x="0" y="6" />
+							<Color r="0" g="0" b="0" a="50" />
+						</Shadow>
+					</Text>
+					<Translation x="61.794" y="64.753" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="AskButton">
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="280" />
+				</Panel>
+				<Scale x="1.100" y="1.100" z="1.100" />
+				<Translation x="-295.968" y="-174.861" z="0" />
+				<SceneObject>
+					<Text alignment="center" font="Banana" maxHeight="45" maxWidth="150" overflowBehaviour="fit" verticalAlignment="visualCenter" allowWordWrapping="false" canBreakWords="false">
+						<GradientColor enabled="false" />
+						<Shadow enabled="true">
+							<Color a="25" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="28" y="28" />
+						<TextString>Watch</TextString>
+					</Text>
+					<Translation x="-30.099" y="-7.723" z="0" />
+				</SceneObject>
+				<SceneObject name="Icon">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/ad_icon.png" vertexColors="false" />
+					<Translation x="55.841" y="-30.367" z="0" />
+					<Scale x="0.900" y="0.900" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Text">
+				<Text alignment="center" verticalAlignment="visualCenter" font="Typewriter" canBreakWords="false" maxWidth="500" maxHeight="30" allowWordWrapping="false" overflowBehaviour="fit">
+					<TextString>Watch an AD and get 1 free life!</TextString>
+					<Size x="17" y="17" />
+					<Color r="1" g="94" b="129" a="255" />
+				</Text>
+				<Translation x="-295.097" y="-256.888" z="0" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+
+		<Material name="FishWrappedMaterial">
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+			<Shader program="TextureColor"/>
+		</Material>
+
+		<Material name="BlueFishWrappedMaterial" parentMaterial="FishWrappedMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_blue_wrapped_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="CyanFishWrappedMaterial" parentMaterial="FishWrappedMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_cyan_wrapped_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="GreenFishWrappedMaterial" parentMaterial="FishWrappedMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_green_wrapped_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="OrangeFishWrappedMaterial" parentMaterial="FishWrappedMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_orange_wrapped_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="PurpleFishWrappedMaterial" parentMaterial="FishWrappedMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_purple_wrapped_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="RedFishWrappedMaterial" parentMaterial="FishWrappedMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_red_wrapped_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="YellowFishWrappedMaterial" parentMaterial="FishWrappedMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_yellow_wrapped_c.png"/>
+			</Textures>
+		</Material>
+
+	</Materials>
+</Scene>

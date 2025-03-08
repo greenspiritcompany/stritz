@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="Scene">
+		<SceneObject name="Background">
+			<Sprite mode="sprite" vertexColors="false">
+				<VertexColor r="255" g="255" b="255" a="255" />
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<LayoutConfiguration>
+				<Size forceUniform="false">
+					<Width percentage="100" />
+					<Height percentage="100" />
+				</Size>
+			</LayoutConfiguration>
+			<Material>
+				<Color r="255" g="255" b="255" a="255" />
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+				<Shader program="Color" />
+			</Material>
+			<Animation name="OnAppear" animationData="FadeInBlack" loopCount="0" />
+			<Animation name="OnDisappear" animationData="FadeOutBlack" loopCount="0" />
+			<Translation z="300" />
+		</SceneObject>
+		<SceneObject name="BubbleGumMachine" editorEntityId="4">
+			<Spine filename="shared/game/common/models/egp_machine/egp_machine.json" skin="variation_1">
+				<Animation name="Enter" spineAnimation="egp_machine" loopCount="0" />
+			</Spine>
+			<Translation z="400" />
+			<LayoutConfiguration>
+				<Translation>
+					<X percentage="50" />
+					<Y percentage="50" />
+				</Translation>
+				<Size forceUniform="true">
+					<Width percentage="30" />
+					<Height percentage="30" />
+					<OriginalSize width="455" height="718" />
+				</Size>
+			</LayoutConfiguration>
+			<SceneObject editorEntityId="5" name="BubbleGumEffect" visibility="never">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Spine filename="shared/game/common/models/egp_machine/egp_flare.json">
+					<Animation name="Flare" spineAnimation="egp_capsule_open" loopCount="0" play="true" />
+				</Spine>
+				<Translation x="0" y="0" z="0" />
+				<Material name="BubbleGumMachineMaterial">
+					<Blend enabled="true" blendFuncDestinationFactor="One" />
+					<Depth enabled="true" />
+					<Texture filename="shared/game/common/tex/hud/egp_machine.png" />
+				</Material>
+			</SceneObject>
+			<SceneObject name="BubbleGumCapsules" editorEntityId="5">
+				<Spine filename="shared/game/common/models/egp_machine/egp_ball.json" skin="common_capsule">
+					<Animation name="Enter" spineAnimation="egp_capsule_popout" loopCount="0" />
+					<Animation name="Wiggle" spineAnimation="egp_capsule_wiggle" />
+					<Animation name="Open" spineAnimation="egp_capsule_open" loopCount="0" />
+				</Spine>
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Material name="BubbleGumMachineMaterial">
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Texture filename="shared/game/common/tex/hud/egp_machine.png" />
+				</Material>
+				<SceneObject name="Bling" parentBoneName="capsule_top">
+					<SceneObject name="BlingActual" visibility="never">
+						<Effect name="Bling" effectData="QuestPirateWinGlowEFQ" play="true" />
+						<Translation x="-85" y="-51" z="0" />
+						<Scale z="1" />
+						<Rotation x="0" y="0" z="0" />
+					</SceneObject>
+					<SceneObject name="BlingParticles" editorEntityId="9" visibility="inherit">
+						<Translation x="2.107" y="90" z="0" />
+						<Scale x="3" y="3" z="3" />
+						<Effect name="CapsuleParticleEFQ" effectData="CapsuleParticleEFQ" play="true" />
+						<Rotation x="0" y="0" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Moves" parentBoneName="capsule_popout">
+					<Material name="MovesMaterial">
+						<Blend enabled="true" />
+						<Color r="255" g="255" b="255" a="155" />
+						<Depth enabled="true" />
+					</Material>
+					<SceneObject name="0" visibility="never">
+						<Sprite mode="sprite" vertexColors="false">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Material>
+							<Color r="255" g="255" b="255" a="255" />
+							<Texture filename="shared/game/common/tex/hud/extra_moves_0.png" />
+							<Depth enabled="true" />
+							<Blend enabled="true" />
+						</Material>
+					</SceneObject>
+					<SceneObject name="1" visibility="never">
+						<Material>
+							<Blend enabled="true" />
+							<Color a="255" b="255" g="255" r="255" />
+							<Depth enabled="true" />
+							<Texture filename="shared/game/common/tex/hud/extra_moves_1.png" />
+						</Material>
+						<Sprite mode="sprite" vertexColors="false">
+							<Insets bottom="0" left="0" right="0" top="0" />
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="2" visibility="never">
+						<Material>
+							<Blend enabled="true" />
+							<Color a="255" b="255" g="255" r="255" />
+							<Depth enabled="true" />
+							<Texture filename="shared/game/common/tex/hud/extra_moves_2.png" />
+						</Material>
+						<Sprite mode="sprite" vertexColors="false">
+							<Insets bottom="0" left="0" right="0" top="0" />
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="3" visibility="never">
+						<Material>
+							<Blend enabled="true" />
+							<Color a="255" b="255" g="255" r="255" />
+							<Depth enabled="true" />
+							<Texture filename="shared/game/common/tex/hud/extra_moves_3.png" />
+						</Material>
+						<Sprite mode="sprite" vertexColors="false">
+							<Insets bottom="0" left="0" right="0" top="0" />
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="4" visibility="never">
+						<Material>
+							<Blend enabled="true" />
+							<Color a="255" b="255" g="255" r="255" />
+							<Depth enabled="true" />
+							<Texture filename="shared/game/common/tex/hud/extra_moves_4.png" />
+						</Material>
+						<Sprite mode="sprite" vertexColors="false">
+							<Insets bottom="0" left="0" right="0" top="0" />
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<Animation name="Appear" animationData="ColorbombIdle" loopCount="2" />
+					<SceneObject name="5" visibility="never">
+						<Material>
+							<Blend enabled="true" />
+							<Color a="255" b="255" g="255" r="255" />
+							<Depth enabled="true" />
+							<Texture filename="shared/game/common/tex/hud/extra_moves_5.png" />
+						</Material>
+						<Sprite mode="sprite" vertexColors="false">
+							<Insets bottom="0" left="0" right="0" top="0" />
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<Material name="BubbleGumMachineMaterial">
+				<Texture filename="shared/game/common/tex/hud/egp_machine.png" />
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+			</Material>
+		</SceneObject>
+	</SceneObject>
+</Scene>

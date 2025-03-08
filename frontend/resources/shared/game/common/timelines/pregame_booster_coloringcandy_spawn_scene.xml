@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Material name="SpriteMaterial">
+		<Blend enabled="true" />
+		<Depth writeMask="false" enabled="false" />
+	</Material>
+	<SceneObject layerFlags="512" name="Scene" visibility="always">
+		<SceneObject name="ParticleCtrl" />
+		<SceneObject name="ColoringCandySpawnCyan">
+			<Sprite filename="shared/game/common/tex/candy/coloring_candy_cyan_c.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="ColoringCandySpawnRed">
+			<Sprite filename="shared/game/common/tex/candy/coloring_candy_red_c.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="ColoringCandySpawnGreen">
+			<Sprite filename="shared/game/common/tex/candy/coloring_candy_green_c.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="ColoringCandySpawnYellow">
+			<Sprite filename="shared/game/common/tex/candy/coloring_candy_yellow_c.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="ColoringCandySpawnOrange">
+			<Sprite filename="shared/game/common/tex/candy/coloring_candy_orange_c.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="ColoringCandySpawnPurple">
+			<Sprite filename="shared/game/common/tex/candy/coloring_candy_purple_c.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="ColoringCandySpawnBlue">
+			<Sprite filename="shared/game/common/tex/candy/coloring_candy_blue_c.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,129 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<Import filename="shared/game/common/materials/soda_bottle_material.xml"/>
+	<Material name="AmmunitionMat">
+		<Blend enabled="true"/>
+		<Depth enabled="true"/>
+		<Cull enabled="true"/>
+	</Material>
+	<SceneObject layerFlags="256" name="candy_cannon">
+		<SceneObject name="candy_cannon_spinner">
+			<Translation z="6" x="0" y="-15.75"/>
+			<Scale y="-1"/>
+			<Model filename="shared/game/common/models/candy_cannon/candy_cannon_spinner.ffm">
+				<Animation loopCount="0" play="false" filename="shared/game/common/models/candy_cannon/candy_cannon_spinner_anim.ffa" speed="2.50" name="spin_animation"/>
+			</Model>
+			<Material>
+				<Texture filename="shared/game/common/tex/candy/candy_cannon_spinner.png"/>
+				<Blend enabled="true"/>
+				<Depth enabled="true" writeMask="false"/>
+				<Cull enabled="true"/>
+			</Material>
+		</SceneObject>
+		<SceneObject name="candy_cannon_frame">
+			<Translation z="4" x="0" y="1.92"/>
+			<Rotation z="0.50"/>
+			<Scale z="0.70" x="0.70" y="0.70"/>
+			<Sprite normals="true" filename="shared/game/common/tex/candy/candy_cannon_frame.png" vertexColors="false">
+				<Pivot y="40" anchor="center"/>
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="candy_cannon_bg">
+			<Translation y="2.65"/>
+			<Rotation z="0.50"/>
+			<Scale z="0.70" x="0.70" y="0.70"/>
+			<Sprite normals="true" filename="shared/game/common/tex/candy/candy_cannon_bg_c.png" vertexColors="false">
+				<Pivot y="40" anchor="center"/>
+			</Sprite>
+		</SceneObject>
+		<!--OBJECTS-->
+		<SceneObject name="ammunition">
+			<SceneObject visibility="never" name="SodaBottle">
+				<Translation z="2" y="-5.73"/>
+				<Rotation z="0.50"/>
+				<Scale y="-1"/>
+				<Model filename="shared/game/common/models/candy_cannon/candy_cannon_object.ffm">
+					<Animation loopCount="0" play="false" filename="shared/game/common/models/candy_cannon/candy_cannon_object_anim.ffa" speed="0.25" name="turn_animation"/>
+				</Model>
+				<Material parentMaterial="SodaBottleGreenMaterial"/>
+			</SceneObject>
+			<SceneObject visibility="never" name="wrappedCandy">
+				<Translation z="2" y="-5.73"/>
+				<Rotation z="0.50"/>
+				<Scale y="-1"/>
+				<Model filename="shared/game/common/models/candy_cannon/candy_cannon_object.ffm">
+					<Animation loopCount="0" play="false" filename="shared/game/common/models/candy_cannon/candy_cannon_object_anim.ffa" speed="0.25" name="turn_animation"/>
+				</Model>
+				<Material parentMaterial="AmmunitionMat">
+					<Texture filename="shared/game/common/tex/candy/red_wrapped_c.png"/>
+				</Material>
+			</SceneObject>
+			<SceneObject visibility="never" name="verticalStripedCandy">
+				<Translation z="2" y="-5.73"/>
+				<Rotation z="0.50"/>
+				<Scale y="-1"/>
+				<Model filename="shared/game/common/models/candy_cannon/candy_cannon_object.ffm">
+					<Animation loopCount="0" play="false" filename="shared/game/common/models/candy_cannon/candy_cannon_object_anim.ffa" speed="0.25" name="turn_animation"/>
+				</Model>
+				<Material parentMaterial="AmmunitionMat">
+					<Texture filename="shared/game/common/tex/candy/orange_striped_v_c.png"/>
+				</Material>
+			</SceneObject>
+			<SceneObject visibility="never" name="horizontalStripedCandy">
+				<Translation z="2" y="-5.73"/>
+				<Rotation z="0.50"/>
+				<Scale y="-1"/>
+				<Model filename="shared/game/common/models/candy_cannon/candy_cannon_object.ffm">
+					<Animation loopCount="0" play="false" filename="shared/game/common/models/candy_cannon/candy_cannon_object_anim.ffa" speed="0.25" name="turn_animation"/>
+				</Model>
+				<Material parentMaterial="AmmunitionMat">
+					<Texture filename="shared/game/common/tex/candy/purple_striped_h_c.png"/>
+				</Material>
+			</SceneObject>
+			<SceneObject visibility="never" name="colorBomb">
+				<Translation z="2" y="-5.73"/>
+				<Rotation z="0.50"/>
+				<Scale y="-1"/>
+				<Model filename="shared/game/common/models/candy_cannon/candy_cannon_object.ffm">
+					<Animation loopCount="0" play="false" filename="shared/game/common/models/candy_cannon/candy_cannon_object_anim.ffa" speed="0.25" name="turn_animation"/>
+				</Model>
+				<Material parentMaterial="AmmunitionMat">
+					<Texture filename="shared/game/common/tex/candy/candy_cannon_colorBomb.png"/>
+				</Material>
+			</SceneObject>
+			<SceneObject visibility="never" name="fish">
+				<Translation z="2" y="-5.73"/>
+				<Rotation z="0.50"/>
+				<Scale y="-1"/>
+				<Model filename="shared/game/common/models/candy_cannon/candy_cannon_object.ffm">
+					<Animation loopCount="0" play="false" filename="shared/game/common/models/candy_cannon/candy_cannon_object_anim.ffa" speed="0.25" name="turn_animation"/>
+				</Model>
+				<Material parentMaterial="AmmunitionMat">
+					<Texture filename="shared/game/common/tex/candy/fish_blue_c.png"/>
+				</Material>
+			</SceneObject>
+			<SceneObject visibility="never" name="coloring_candy">
+				<Translation z="2" y="-5.73"/>
+				<Rotation z="0.50"/>
+				<Scale y="-1"/>
+				<Model filename="shared/game/common/models/candy_cannon/candy_cannon_object.ffm">
+					<Animation loopCount="0" play="false" filename="shared/game/common/models/candy_cannon/candy_cannon_object_anim.ffa" speed="0.25" name="turn_animation"/>
+				</Model>
+				<Material parentMaterial="AmmunitionMat">
+					<Texture filename="shared/game/common/tex/candy/coloring_candy_cyan_c.png"/>
+				</Material>
+			</SceneObject>
+			<SceneObject visibility="inherit" name="liquorice">
+				<Translation z="2" y="-5.73"/>
+				<Rotation z="0.50"/>
+				<Scale y="-1"/>
+				<Model filename="shared/game/common/models/candy_cannon/candy_cannon_object.ffm">
+					<Animation loopCount="0" play="false" filename="shared/game/common/models/candy_cannon/candy_cannon_object_anim.ffa" speed="0.25" name="turn_animation"/>
+				</Model>
+				<Material parentMaterial="AmmunitionMat">
+					<Texture filename="shared/game/common/tex/candy/liquorice_swirl_c.png"/>
+				</Material>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

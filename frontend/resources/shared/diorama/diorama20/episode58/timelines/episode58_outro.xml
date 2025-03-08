@@ -1,0 +1,19 @@
+<Timelines>
+<Timeline endTime="5" startTime="0">
+	<!--COMMENT/REMOVE THIS FOR THE 3RD EPISODE IN THE DIORAMA! SHE IS ONLY MOVED ON FIRST AND SECOND EPISODE-->
+	<Animate time="0" target="Kimmy_group">
+		<Show />
+		<Scale time="0" x="0.950" y="0.950" z="0.950" />
+		<Translation time="0" x="-775" y="40" z="270" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger animationName="SpeechBubbleAppear" targetName="SpeechBubbleEp58" time="0" />
+		<AnimationTrigger animationName="SpeechBubbleDisappear" targetName="SpeechBubbleEp58" time="4" />
+		<AnimationTrigger animationName="Talk" crossFade="0.100" targetName="CharacterEp58" time="0.118" />
+		<AnimationTrigger animationName="Idle" crossFade="0.600" targetName="CharacterEp58" time="3" />
+		<!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+		<EffectTrigger name="character_ep58" time="0" />
+		<CustomTrigger data="SpeechBubbleEp58.1" name="SpeechBubbleText" time="0" />
+	</Triggers>
+</Timeline>
+</Timelines>

@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+    <Materials>
+        <!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+        <Material name="Episode37Material">
+            <Cull enabled="false" face="back"/>
+            <Textures>
+                <Texture filename="shared/diorama/diorama13/episode37/tex/episode37_material.png"/>
+            </Textures>
+        </Material>
+        <Material name="Episode37MaterialAlpha" parentMaterial="Episode37Material">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+        </Material>
+
+        <Material name="Episode38Material">
+            <Cull enabled="false" face="back"/>
+            <Textures>
+                <Texture filename="shared/diorama/diorama13/episode38/tex/episode38_material.png"/>
+            </Textures>
+        </Material>
+        <Material name="Episode38MaterialAlpha" parentMaterial="Episode38Material">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+        </Material>
+
+        <Material name="Episode39Material">
+            <Cull enabled="false" face="back"/>
+            <Textures>
+                <Texture filename="shared/diorama/diorama13/episode39/tex/episode39_material.png"/>
+            </Textures>
+        </Material>
+        <Material name="Episode39MaterialAlpha" parentMaterial="Episode39Material">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+        </Material>
+
+
+        <!--
+           EPISODEMATERIAL 39 FOR ROLLERCOASTER
+       -->
+        <Material name="Episode39Material2">
+            <Cull enabled="false" face="back"/>
+            <Textures>
+                <Texture filename="shared/diorama/diorama13/episode39/tex/episode39_material.png"/>
+            </Textures>
+        </Material>
+        <Material name="Episode392MaterialAlpha" parentMaterial="Episode39Material2">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+        </Material>
+        <!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+        <Material name="Episode37PathMaterial">
+            <Cull enabled="true" face="back"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat"/>
+            </Textures>
+        </Material>
+        <Material name="Episode37PathMaterialAlpha" parentMaterial="Episode37PathMaterial">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+        </Material>
+        <!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+        <Material name="Episode37BackdropMaterial">
+            <Cull enabled="true" face="back"/>
+            <Textures>
+                <Texture
+                    filename="shared/diorama/diorama13/episode37/tex/episode37_material.png" wrap="repeat"/>
+            </Textures>
+        </Material>
+        <Material name="Episode37BackdropMaterialAlpha" parentMaterial="Episode37BackdropMaterial">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+        </Material>
+    </Materials>
+    <!--
+		EPISODE SCENE OBJECTS
+	-->
+    <SceneObject layerFlags="2" name="Episode">
+        <SceneObject name="DioramaModel">
+            <!--
+				BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+        FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+      -->
+            <Translation x="-1900"/>
+            <!--
+        EXTEND AND DUPLICATE BASE/WATER
+        -->
+            <SceneObject name="Episode37_Backdrop">
+                <SceneObject name="Episode37_Diorama_Sky">
+                    <Model filename="shared/diorama/diorama13/episode37/models/episode37_diorama_sky.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode37BackdropMaterial"/>
+                    </Materials>
+                    <Translation x="0.0" y="0.0"/>
+                    <Scale x="1.0" y="1.0" z="1.0"/>
+                </SceneObject>
+
+                <SceneObject name="Episode38_Diorama_Sky">
+                    <Model filename="shared/diorama/diorama13/episode37/models/backdrop.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode392MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0.0" y="0.0"/>
+                    <Scale x="1.0" y="1.0" z="1.0"/>
+                </SceneObject>
+                <!--
+        EXTEND AND DUPLICATE SKY
+        -->
+                <SceneObject name="Episode37_Diorama_Sky">
+                    <Model filename="shared/diorama/diorama13/episode37/models/episode37_diorama_sky.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode37BackdropMaterial"/>
+                    </Materials>
+                    <Translation x="-1900.0" y="0.0"/>
+                    <Scale x="1.0" y="1.0" z="1.0"/>
+                </SceneObject>
+                <!--
+        EPISODE GROUND GEOMETRY ETC.
+        -->
+                <SceneObject name="Episode37_Ground">
+                    <Model filename="shared/diorama/diorama13/episode37/models/episode37_ground.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode37Material"/>
+                    </Materials>
+                    <Translation x="0.0" y="0.0"/>
+                    <Scale x="1.0" y="1.0" z="1.0"/>
+                </SceneObject>
+
+                <SceneObject name="Episode38_Ground">
+                    <Model filename="shared/diorama/diorama13/episode37/models/episode37_ground_extend.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode37Material"/>
+                    </Materials>
+                    <Translation x="0.0" y="0.0"/>
+                    <Scale x="1.0" y="1.0" z="1.0"/>
+                </SceneObject>
+            </SceneObject>
+            <!--
+      PATH (DON'T CHANGE NAME)
+      -->
+            <SceneObject name="E37Path">
+                <Model filename="shared/diorama/diorama13/episode37/models/path/episode37_path.ffm">
+                    <Bound minZ="-600"/>
+                </Model>
+                <Materials>
+                    <Material parentMaterial="Episode37PathMaterialAlpha"/>
+                </Materials>
+                <Translation x="0" y="0" z="0"/>
+                <Scale x="1" y="1" z="1"/>
+            </SceneObject>
+            <!--ADD PATH SHADOW - ADD YOUR -->
+            <SceneObject name="E37PathShadow">
+                <Model filename="shared/diorama/diorama13/episode37/models/path/path_shadow.ffm">
+                    <Bound minZ="-700"/>
+                </Model>
+                <Materials>
+                    <Material parentMaterial="Episode37MaterialAlpha"/>
+                </Materials>
+                <Translation x="0" y="0" z="0"/>
+                <Scale x="1" y="1" z="1"/>
+            </SceneObject>
+            <SceneObject name="E37EndSign">
+                <Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm"/>
+                <Materials>
+                    <Material parentMaterial="Under_Construction_Icon"/>
+                </Materials>
+                <Translation x="850" y="84" z="180"/>
+                <Rotation x="-35.000" y="0.000" z="0.000"/>
+                <Scale x="1.000" y="1.000" z="1.000"/>
+            </SceneObject>
+
+            <!--ASSET SHADOWS-->
+            <SceneObject name="AssetShadows">
+                <Model filename="shared/diorama/diorama13/episode37/models/asset_shadow.ffm">
+                    <Bound minZ="-1600"/>
+                </Model>
+                <Materials>
+                    <Material parentMaterial="Episode37MaterialAlpha"/>
+                </Materials>
+                <Translation x="0" y="0" z="0"/>
+                <Rotation x="0"/>
+                <Scale x="1" y="1" z="1"/>
+            </SceneObject>
+
+            <!--	PORTAL BACK	-->
+            <SceneObject name="PortalBackGroup">
+                <Translation x="-170" y="-40" z="-15"/>
+                <SceneObject name="diorama_link_previous">
+                    <Model filename="shared/diorama/common/models/portal/portal.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="PortalMaterial"/>
+                    </Materials>
+                    <Translation x="-840" y="135" z="-70"/>
+                    <Rotation x="0" y="50" z="0"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+                <SceneObject name="diorama_portal_shadow">
+                    <Model filename="shared/diorama/common/models/portal/portal_shadow.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="PortalMaterial"/>
+                    </Materials>
+                    <Translation x="-835" y="150" z="-50"/>
+                    <Rotation x="0" y="50" z="0"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+                <SceneObject name="diorama_link_previous_pin">
+                    <Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+                        <Animations>
+                            <Animation
+                                filename="shared/diorama/common/models/portal/pin_idle.ffa"
+                                loopCount="-1" name="idlePinEmil"
+                                play="true" speed="1.0"/>
+                        </Animations>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="PortalMaterial"/>
+                    </Materials>
+                    <Translation x="-806" y="65" z="-20"/>
+                    <Rotation x="4.970" y="34.889" z="1.863"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+            <!-- DIORAMA ASSETS -->
+            <!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+			-->
+            <SceneObject name="episode37_Non_Interactable_Group">
+
+                <SceneObject name="episode39_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama13/episode37/models/non_interactable/rollercoaster_rail.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode392MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+
+                <SceneObject name="episode39_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama13/episode37/models/non_interactable/rollercoaster_coasters.ffm">
+                        <Animations>
+                            <Animation
+                                    filename="shared/diorama/diorama13/episode37/models/non_interactable/rollercoaster_idle.ffa"
+                                    loopCount="-1" name="Idle" play="true" speed="0.5"/>
+                        </Animations>
+                        <Bound maxX="2000"/>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode392MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+
+                <SceneObject name="episode39_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama13/episode37/models/non_interactable/rollercoaster_coasters.ffm">
+                        <Animations>
+                            <Animation
+                                    filename="shared/diorama/diorama13/episode37/models/non_interactable/rollercoaster_idle.ffa"
+                                    loopCount="-1" name="Idle" play="true" speed="0.5" startTime="2.0"/>
+                        </Animations>
+                        <Bound maxX="2000"/>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode392MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+
+
+
+
+            </SceneObject>
+            <!--
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+            <SceneObject name="episode39_Interactable_01">
+                <!--<Interactable upEffect="diorama_house"/>-->
+                <BoundingBox maxX="500" maxY="290" minX="-80" minY="0"/>
+                <Model filename="shared/diorama/diorama13/episode37/models/foreground.ffm"/>
+                <Animations>
+                    <Animation animationData="Idle" layer="4"
+                               loopCount="-1" name="Idle" play="true" speed="0.2"/>
+                </Animations>
+                <Materials>
+                    <Material parentMaterial="Episode37MaterialAlpha"/>
+                </Materials>
+                <Translation x="0" y="0" z="20"/>
+                <Rotation x="0.000" y="0.000" z="0.000"/>
+                <Scale x="1.000" y="1.2" z="1.000"/>
+            </SceneObject>
+
+            <SceneObject name="episode39_Interactable_01">
+                <Interactable upEffect="diorama_tree"/>
+                <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                <Model filename="shared/diorama/diorama13/episode39/models/interactable/tree_pinkbig_left.ffm"/>
+                <Animations>
+                    <Animation animationData="Idle" layer="4"
+                               loopCount="-1" name="Idle" play="true" speed="0.5"/>
+                    <Animation animationData="interactable_v01_up"
+                               layer="3" loopCount="0" name="Up"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_v01_up"
+                               layer="3" loopCount="0" name="Up2"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_out"
+                               layer="2" loopCount="0" name="Out"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_down"
+                               layer="1" loopCount="0" name="Down"
+                               play="false" speed="1.3"/>
+                </Animations>
+                <Materials>
+                    <Material parentMaterial="Episode392MaterialAlpha"/>
+                </Materials>
+                <Translation x="-1231.699" y="0.000" z="-270.652"/>
+                <Rotation x="0.000" y="0.000" z="0.000"/>
+                <Scale x="1.000" y="1.000" z="1.000"/>
+            </SceneObject>
+
+            <SceneObject name="episode39_Interactable_01">
+                <Interactable upEffect="diorama_tree"/>
+                <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                <Model filename="shared/diorama/diorama13/episode39/models/interactable/tree_bluesmall_left.ffm"/>
+                <Animations>
+                    <Animation animationData="Idle" layer="4"
+                               loopCount="-1" name="Idle" play="true" speed="0.5"/>
+                    <Animation animationData="interactable_v01_up"
+                               layer="3" loopCount="0" name="Up"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_v01_up"
+                               layer="3" loopCount="0" name="Up2"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_out"
+                               layer="2" loopCount="0" name="Out"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_down"
+                               layer="1" loopCount="0" name="Down"
+                               play="false" speed="1.3"/>
+                </Animations>
+                <Materials>
+                    <Material parentMaterial="Episode392MaterialAlpha"/>
+                </Materials>
+                <Translation x="-994.154" y="0.000" z="-292.393"/>
+                <Rotation x="0.000" y="0.000" z="0.000"/>
+                <Scale x="1.000" y="1.000" z="1.000"/>
+            </SceneObject>
+
+            <SceneObject name="episode39_Interactable_01">
+                <Interactable upEffect="diorama_tree"/>
+                <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                <Model filename="shared/diorama/diorama13/episode39/models/interactable/tree_bluebig_right.ffm"/>
+                <Animations>
+                    <Animation animationData="Idle" layer="4"
+                               loopCount="-1" name="Idle" play="true" speed="0.5"/>
+                    <Animation animationData="interactable_v01_up"
+                               layer="3" loopCount="0" name="Up"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_v01_up"
+                               layer="3" loopCount="0" name="Up2"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_out"
+                               layer="2" loopCount="0" name="Out"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_down"
+                               layer="1" loopCount="0" name="Down"
+                               play="false" speed="1.3"/>
+                </Animations>
+                <Materials>
+                    <Material parentMaterial="Episode392MaterialAlpha"/>
+                </Materials>
+                <Translation x="909.573" y="0.000" z="-275.412"/>
+                <Rotation x="0.000" y="0.000" z="0.000"/>
+                <Scale x="1.000" y="1.000" z="1.000"/>
+            </SceneObject>
+
+            <SceneObject name="episode39_Interactable_01">
+                <Interactable upEffect="diorama_tree"/>
+                <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                <Model filename="shared/diorama/diorama13/episode39/models/interactable/tree_pinksmall_right.ffm"/>
+                <Animations>
+                    <Animation animationData="Idle" layer="4"
+                               loopCount="-1" name="Idle" play="true" speed="0.5"/>
+                    <Animation animationData="interactable_v01_up"
+                               layer="3" loopCount="0" name="Up"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_v01_up"
+                               layer="3" loopCount="0" name="Up2"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_out"
+                               layer="2" loopCount="0" name="Out"
+                               play="false" speed="1.3"/>
+                    <Animation animationData="interactable_down"
+                               layer="1" loopCount="0" name="Down"
+                               play="false" speed="1.3"/>
+                </Animations>
+                <Materials>
+                    <Material parentMaterial="Episode392MaterialAlpha"/>
+                </Materials>
+                <Translation x="1022.127" y="-9.248" z="-276.743"/>
+                <Rotation x="0.000" y="0.000" z="0.000"/>
+                <Scale x="-0.701" y="0.701" z="0.701"/>
+            </SceneObject>
+
+
+            <SceneObject name="episode37_Interactable_Group">
+                <SceneObject name="episode38_Interactable_01">
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/left_wooden_thing.ffm"/>
+                    <Animations>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-639.788" y="21.078" z="-162.252"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/right_wooden_thing.ffm"/>
+                    <Animations>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="493.739" y="29.031" z="-157.974"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/center_piece.ffm"/>
+                    <Animations>
+                       <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-58.865" y="12.683" z="-149.984"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/center_piece_back.ffm"/>
+                    <Animations>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0.0" y="0.0" z="0.0"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_sun"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/spinning_wheel.ffm"/>
+                    <Animations>
+                        <Animation animationData="spinning_wheel" layer="4"
+                                   loopCount="-1" name="spinning_wheel" play="true" speed="1.0"/>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="0.5"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-161.604" y="169.654" z="-155.023"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+
+                    <SceneObject name="episode38_Interactable_01">
+                        <Interactable upEffect="diorama_house"/>
+                        <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                        <Model filename="shared/diorama/diorama13/episode37/models/interactable/pin.ffm"/>
+                        <Materials>
+                            <Material parentMaterial="Episode37MaterialAlpha"/>
+                        </Materials>
+                        <Translation x="0" y="0" z="0"/>
+                        <Rotation x="0.000" y="0.000" z="0.000"/>
+                        <Scale x="1.000" y="1.000" z="1.000"/>
+                    </SceneObject>
+                </SceneObject>
+
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_house"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/spinning_wheel_base.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="0.5"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-194.331" y="-3.796" z="-130.805"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_lollipop"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/chocolate.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="0.5"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-552.676" y="-4.746" z="-80.920"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_sun"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/blow_wind_thing_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-870.18" y="171.100" z="-151.484"/>
+                    <Rotation x="0.000" y="0.000" z="21.909"/>
+                    <Scale x="0.80" y="0.8" z="0.8"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_sun"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/blow_wind_thing_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-795.3" y="111.920" z="-146.484"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="0.75" y="0.75" z="0.75"/>
+                </SceneObject>
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/bear_right.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-706.2" y="185.7" z="-148.15"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="-0.61" y="0.61" z="0.61"/>
+                </SceneObject>
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/strawberrycrab_right.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-700.7" y="95.23" z="-145.394"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="0.76" y="0.76" z="0.76"/>
+                </SceneObject>
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/squid_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-641.502" y="159.466" z="-160.665"/>
+                    <Rotation x="0.000" y="0.000" z="-14.000"/>
+                    <Scale x="0.72" y="0.72" z="0.72"/>
+                </SceneObject>
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/yeti_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-561.151" y="121.173" z="-147.833"/>
+                    <Rotation x="0.000" y="0.000" z="-0.12"/>
+                    <Scale x="0.72" y="0.72" z="0.72"/>
+                </SceneObject>
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_sun"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/blow_wind_thing_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-524.18" y="162.5" z="-158.18"/>
+                    <Rotation x="0.000" y="0.000" z="-22.000"/>
+                    <Scale x="0.74" y="0.74" z="0.74"/>
+                </SceneObject>
+
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/squid_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-459.502" y="112.466" z="-154.665"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="0.72" y="0.72" z="0.72"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_sun"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/blow_wind_thing_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="330.18" y="114.5" z="-153.18"/>
+                    <Rotation x="0.000" y="0.000" z="21.000"/>
+                    <Scale x="0.7" y="0.7" z="0.7"/>
+                </SceneObject>
+
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/strawberrycrab_right.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="390.7" y="155.23" z="-155.394"/>
+                    <Rotation x="0.000" y="0.000" z="48.000"/>
+                    <Scale x="-0.76" y="0.76" z="0.76"/>
+                </SceneObject>
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/squid_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="447.502" y="102.466" z="-142.665"/>
+                    <Rotation x="0.000" y="0.000" z="-8.000"/>
+                    <Scale x="0.85" y="0.85" z="0.85"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_sun"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/blow_wind_thing_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="506.18" y="173.5" z="-151.18"/>
+                    <Rotation x="0.000" y="0.000" z="-19.000"/>
+                    <Scale x="0.7" y="0.7" z="0.7"/>
+                </SceneObject>
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/strawberrycrab_right.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="545.7" y="100.23" z="-152.394"/>
+                    <Rotation x="0.000" y="0.000" z="5.000"/>
+                    <Scale x="-0.76" y="0.76" z="0.76"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/yeti_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="602.84" y="176.5" z="-157.833"/>
+                    <Rotation x="0.000" y="0.000" z="-0.12"/>
+                    <Scale x="-0.72" y="0.72" z="0.72"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/bear_right.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="700.700" y="188.501" z="-153.824"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="0.76" y="0.76" z="0.76"/>
+                </SceneObject>
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_squeeker"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/interactable/yeti_left.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="662.151" y="100.5" z="-145.833"/>
+                    <Rotation x="0.000" y="0.000" z="-0.12"/>
+                    <Scale x="0.72" y="0.72" z="0.72"/>
+                </SceneObject>
+
+
+                <SceneObject name="episode39_Interactable_01">
+                    <Interactable upEffect="diorama_tree"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode39/models/interactable/grass_right.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="0.5"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_v01_up"
+                                   layer="3" loopCount="0" name="Up2"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_out"
+                                   layer="2" loopCount="0" name="Out"
+                                   play="false" speed="1.3"/>
+                        <Animation animationData="interactable_down"
+                                   layer="1" loopCount="0" name="Down"
+                                   play="false" speed="1.3"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode39MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-1184.0" y="-13.000" z="94.3"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+
+
+                <SceneObject name="episode38_Interactable_01">
+                    <Interactable upEffect="diorama_house"/>
+                    <BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/spotlight.ffm"/>
+                    <Animations>
+                        <Animation animationData="Idle" layer="4"
+                                   loopCount="-1" name="Idle" play="true" speed="2.0"/>
+                    </Animations>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="168" y="450" z="-111.474"/>
+                    <Rotation x="0.000" y="0.000" z="0.000"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+            </SceneObject>
+            <!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+            <SceneObject name="Episode37Character">
+                <Translation x="145.775" y="0.000" z="-90.401"/>
+                <SceneObject name="CharacterEp37">
+                    <Rotation x="-7.000" y="0.000" z="0.000"/>
+                    <Scale x="1.0" y="1.0" z="1.0"/>
+                    <Model filename="shared/diorama/diorama13/episode37/models/character/episode37_character.ffm">
+                        <Animations>
+                            <Animation
+                                filename="shared/diorama/diorama13/episode37/models/character/episode37_character_idle.ffa"
+                                loopCount="-1" name="Idle" play="true" speed="1.0"/>
+                            <Animation
+                                filename="shared/diorama/diorama13/episode37/models/character/episode37_character_talk.ffa"
+                                loopCount="-1" name="Talk" play="false" speed="1.0"/>
+                        </Animations>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode37MaterialAlpha"/>
+                    </Materials>
+                </SceneObject>
+            </SceneObject>
+            <!--
+				SPEECHBUBBLE
+			-->
+            <SceneObject name="SpeechBubbleEp37">
+                <Animations>
+                    <Animation animationData="SpeechBubbleAppear"
+                        loopCount="0" name="SpeechBubbleAppear"/>
+                    <Animation animationData="SpeechBubbleDisappear"
+                        loopCount="0" name="SpeechBubbleDisappear"/>
+                </Animations>
+                <SpeechBubble>
+                    <Speech key="episode37.intro"/>
+                    <Speech key="episode37.outro"/>
+                </SpeechBubble>
+                <Translation x="0.0" y="125.0" z="-136.171"/>
+                <Import filename="shared/diorama/common/scenes/speech_bubble.xml"/>
+            </SceneObject>
+            <!--
+				PARTICLE EFFECTS
+			-->
+            <SceneObject name="Particles">
+                <Effects>
+                    <Effect effectData="Wisps" name="Wisps" play="true"/>
+                </Effects>
+            </SceneObject>
+            <SceneObject name="Particles200">
+                <Effects>
+                    <Effect effectData="Wisps" name="Wisps" play="true"/>
+                </Effects>
+                <Translation z="-200"/>
+            </SceneObject>
+            <SceneObject name="Particles400">
+                <Effects>
+                    <Effect effectData="Wisps" name="Wisps" play="true"/>
+                </Effects>
+                <Translation z="-400"/>
+            </SceneObject>
+            <!--
+
+			-->
+            <!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+            <SceneObject name="UnlockLevel527CameraTarget">
+                <Translation x="-185" y="19" z="-20"/>
+            </SceneObject>
+            <SceneObject name="UnlockLevel545CameraTarget">
+                <Translation x="-185" y="19" z="-20"/>
+            </SceneObject>
+            <!--
+				IMPORT LEVEL PINS
+			-->
+            <Import filename="shared/diorama/diorama13/episode37/scenes/episode37_levelpins.xml"/>
+        </SceneObject>
+    </SceneObject>
+</Scene>

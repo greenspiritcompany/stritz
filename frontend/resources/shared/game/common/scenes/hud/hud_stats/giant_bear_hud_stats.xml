@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<Material name="BearInHudMaterial">
+		<Texture filename="shared/game/common/tex/hud/giant_bear_hud_v2.png" />
+		<Blend blendFuncSourceFactor="One" enabled="true" />
+		<Depth enabled="true" />
+	</Material>
+	<SceneObject __visibility="0" name="LandscapeGiantBearStats">
+		<Translation z="2" />
+		<SceneObject name="BearImg">
+			<Translation x="-0.355" y="-20.706" z="10" />
+			<Scale x="0.448" y="-0.435" z="0.320" />
+			<Model filename="shared/game/common/models/giant_bear/hud/giant_bear_hud.ffm">
+				<Animation filename="shared/game/common/models/giant_bear/hud/giant_bear_hud_idle.ffa" loopCount="-1" name="idle" play="true" />
+				<Animation filename="shared/game/common/models/giant_bear/hud/giant_bear_hud_happy.ffa" loopCount="-1" name="HudBearSaved" play="false" />
+			</Model>
+			<Material parentMaterial="BearInHudMaterial" />
+		</SceneObject>
+		<SceneObject name="BearText">
+			<Translation x="-6" y="34.500" z="20" />
+			<Text alignment="center" font="PinkNumbers" maxHeight="30" maxWidth="80" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="15" y="15" />
+				<TextString>0/3</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkLandscapeRoot">
+			<SceneObject name="CheckmarkLandscape" visibility="never">
+				<Translation x="-1.879" y="36" z="3" />
+				<Scale x="0.850" y="0.850" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject __visibility="3" name="PortraitGiantBearStats">
+		<Translation z="2" />
+		<SceneObject name="BearImg">
+			<Translation x="-8.710" y="-3.430" z="10" />
+			<Scale x="0.444" y="-0.444" z="0.270" />
+			<Model filename="shared/game/common/models/giant_bear/hud/giant_bear_hud.ffm">
+				<Animation filename="shared/game/common/models/giant_bear/hud/giant_bear_hud_idle.ffa" loopCount="-1" name="idle" play="true" />
+				<Animation filename="shared/game/common/models/giant_bear/hud/giant_bear_hud_happy.ffa" loopCount="-1" name="HudBearSaved" play="false" />
+			</Model>
+			<Material parentMaterial="BearInHudMaterial" />
+		</SceneObject>
+		<SceneObject name="BearText">
+			<Translation x="83.141" y="23.505" z="20" />
+			<Text alignment="center" font="PinkNumbers" maxHeight="41" maxWidth="71" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="14" y="14" />
+				<TextString>99/99</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkPortraitRoot">
+			<SceneObject name="CheckmarkPortrait" visibility="never">
+				<Translation x="88.412" y="14" z="3" />
+				<Scale x="1.035" y="1.035" z="0.700" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

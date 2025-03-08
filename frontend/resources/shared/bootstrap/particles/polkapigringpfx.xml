@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="1" space="Local" timeToEmit="0.100" name="PolkaPigRingPFX">
+<Dampening min="1" max="1" />
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0.270" spread="0" angle="0">
+	<SpawnArea width="0" depth="0" height="0" />
+</Emitter>
+<EndColor r="255" g="244" b="244" a="0" />
+<Rotation min="0" max="0" />
+<RotationSpeed min="0" max="0" />
+<Size>
+	<Max x="200" y="200" />
+	<Min x="200" y="200" />
+</Size>
+<SizeChange>
+	<Max x="350" y="350" />
+	<Min x="350" y="350" />
+</SizeChange>
+<StartColor r="234" g="107" b="107" a="180" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/bright_ring64.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive min="0.500" max="0.600" />
+<Velocity min="0" max="0" />
+</ParticleEffect>

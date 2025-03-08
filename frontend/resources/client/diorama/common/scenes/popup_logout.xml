@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<Materials>
+		<Material name="SpriteMaterial">
+			<Blend enabled="true" />
+			<Depth enabled="true" writeMask="false" />
+		</Material>
+	</Materials>
+	<SceneObjects>
+		<SceneObject name="LogoutPopup" layerFlags="16">
+			<Transformation>
+				<Translation x="0.0" y="0.0" z="980.0" />
+			</Transformation>
+			<Animations>
+				<Animation name="OnAppearPortrait" animationData="SlideInFromBelow" loopCount="0" />
+				<Animation name="OnDisappearPortrait" animationData="SlideOutToBelow" loopCount="0" />
+				<Animation name="OnAppear" animationData="SlideInFromLeft" loopCount="0" />
+				<Animation name="OnDisappear" animationData="SlideOutToLeft" loopCount="0" />
+			</Animations>
+			<SceneObjects>
+				<SceneObject name="MenuBackground">
+					<Mesh>
+						<Panel filename="client/tex/menu/exit_button.png">
+							<Pivot anchor="center" />
+							<Insets left="35" top="31" right="35" bottom="37" />
+							<Size width="520" height="290" />
+						</Panel>
+					</Mesh>
+					<Transformation>
+						<Translation x="0.0" y="0.0" z="1.0" />
+						<Scale x="1" y="1" />
+					</Transformation>
+				</SceneObject>
+				<SceneObject name="CloseButton">
+					<Mesh>
+						<Sprite filename="client/tex/menu/exit_button.png">
+							<Pivot x="37" y="39" />
+						</Sprite>
+					</Mesh>
+					<Transformation>
+						<Translation x="235.0" y="-115.0" z="2.0" />
+					</Transformation>
+					<Animations>
+						<Animation name="OnAppear" animationData="OnAppearGrow" loopCount="0" startTime="0.3" layer="2" />
+						<Animation name="Idle" animationData="Idle" layer="1" />
+						<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+					</Animations>
+				</SceneObject>
+				<SceneObject name="OkButton">
+					<Mesh>
+						<Sprite filename="client/tex/menu/blue_btn.png">
+							<Pivot anchor="center" />
+							<Scale x="1.0" y="1.0" z="1" />
+						</Sprite>
+					</Mesh>
+					<Transformation>
+						<Translation x="0.0" y="90.0" z="2.0" />
+					</Transformation>
+					<Animations>
+						<Animation name="OnAppear" animationData="OnAppearGrow" loopCount="0" startTime="0.4" layer="2" />
+						<Animation name="Idle" animationData="Idle" layer="1" />
+						<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+					</Animations>
+					<SceneObjects>
+						<SceneObject>
+							<Mesh>
+								<Text canBreakWords="false" alignment="center" font="Banana" key="button_logout_facebook_m">
+									<Shadow />
+									<Size x="20" y="20" />
+									<Pivot x="0" y="6" />
+								</Text>
+							</Mesh>
+						</SceneObject>
+					</SceneObjects>
+				</SceneObject>
+				<SceneObject>
+					<Mesh>
+						<Text canBreakWords="false" alignment="center" font="Banana" maxWidth="500" key="popup_logout_facebook_title_m">
+							<Shadow />
+							<Size x="30" y="30" />
+							<Pivot x="0" y="-20" />
+						</Text>
+					</Mesh>
+					<Transformation>
+						<Translation x="0.0" y="-65.0" z="3" />
+					</Transformation>
+				</SceneObject>
+				<SceneObject name="Text">
+					<Mesh>
+						<Text canBreakWords="false" alignment="left" font="Banana" maxWidth="480" key="popup_logout_facebook_message_m">
+							<Shadow />
+							<Size x="20" y="20" />
+							<Pivot x="0" y="15" />
+						</Text>
+					</Mesh>
+					<Transformation>
+						<Translation x="-240.0" y="-60.0" z="4" />
+					</Transformation>
+				</SceneObject>
+			</SceneObjects>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="50.0" />
+					<Y percentage="50.0" />
+				</Translation>
+				<Size>
+					<Width percentage="90" max="520" />
+					<Height percentage="100" max="290" />
+					<OriginalSize width="520" height="290" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="50.0" />
+					<Y percentage="50.0" />
+				</Translation>
+				<Size>
+					<Width percentage="100" max="520" />
+					<Height percentage="90" max="290" />
+					<OriginalSize width="520" height="290" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+	</SceneObjects>
+</Scene>

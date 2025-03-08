@@ -1,0 +1,39 @@
+<Timelines>
+<Timeline startTime="0" endTime="10">
+	<Animate target="BubbleGumEffect">
+		<Show time="4.010" />
+		<Hide time="0" />
+	</Animate>
+
+	<Animate target="Moves">
+		<Show time="4.310" />
+		<Hide time="0" />
+	</Animate>
+
+	<Animate target="Bling">
+		<Show time="3" />
+		<Hide time="0" />
+	</Animate>
+
+	<Triggers>
+		<AnimationTrigger time="0" animationName="Enter" crossFade="0" targetName="BubbleGumMachine" />
+		<AnimationTrigger time="0" animationName="Enter" targetName="BubbleGumCapsules" />
+		<AnimationTrigger time="0" animationName="OnAppear" crossFade="0" targetName="Background" />
+		<AnimationTrigger time="4" animationName="Wiggle" targetName="BubbleGumCapsules" />
+		<AnimationTrigger time="4.010" animationName="Open" targetName="BubbleGumCapsules" />
+		<AnimationTrigger time="4.010" animationName="Flare" targetName="BubbleGumEffect" />
+		<AnimationTrigger time="6.500" animationName="OnDisappear" crossFade="0" targetName="Background" />
+		<EffectTrigger time="0" name="egp_gumballmachine_sfx" parentName="" targetName="Background" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false" layerFlags="-1">
+			<Offset x="0" y="0" z="0" />
+		</EffectTrigger>
+		<EffectTrigger time="4.010" name="egp_gumball_open_sfx" parentName="" targetName="Background" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false" layerFlags="-1">
+			<Offset x="0" y="0" z="0" />
+		</EffectTrigger>
+
+		<CustomTrigger time="7" name="SwipeEnd" data="SwipeEnd" />
+	</Triggers>
+	<TimeControls>
+		<Pause time="4" timeout="-1" />
+	</TimeControls>
+</Timeline>
+</Timelines>

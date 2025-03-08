@@ -1,0 +1,110 @@
+{
+"skeleton": { "hash": "pbTeDI0e6o5GnzDH+nqouxVFEGw", "spine": "2.1.27", "width": 149.06, "height": 129.5, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "ColoringCandyX", "parent": "root" },
+	{ "name": "colorBombX", "parent": "root" },
+	{ "name": "fishX", "parent": "root" },
+	{ "name": "ColorBomb", "parent": "colorBombX" },
+	{ "name": "ColoringCandy", "parent": "ColoringCandyX" },
+	{ "name": "Fishes", "parent": "fishX" }
+],
+"slots": [
+	{ "name": "colorbomb_icon_playgame", "bone": "ColorBomb", "color": "ffffff00", "attachment": "colorbomb_icon_playgame" },
+	{ "name": "coloring_icon_playgame", "bone": "ColoringCandy", "color": "ffffff00", "attachment": "coloring_icon_playgame" },
+	{ "name": "doublefish_icon_playgame", "bone": "Fishes", "color": "ffffff00", "attachment": "doublefish_icon_playgame" }
+],
+"skins": {
+	"default": {
+		"colorbomb_icon_playgame": {
+			"colorbomb_icon_playgame": { "width": 124, "height": 128 }
+		},
+		"coloring_icon_playgame": {
+			"coloring_icon_playgame": { "width": 118, "height": 128 }
+		},
+		"doublefish_icon_playgame": {
+			"doublefish_icon_playgame": { "scaleX": 0.931, "scaleY": 0.931, "width": 160, "height": 139 }
+		}
+	}
+},
+"animations": {
+	"ad_roller": {
+		"slots": {
+			"colorbomb_icon_playgame": {
+				"color": [
+					{
+						"time": 1.3336,
+						"color": "ffffff00",
+						"curve": [ 0.375, 0.5, 0.395, 0.99 ]
+					},
+					{
+						"time": 2.6673,
+						"color": "ffffffff",
+						"curve": [ 0.627, 0, 1, 1 ]
+					},
+					{ "time": 4.001, "color": "ffffff00" }
+				]
+			},
+			"coloring_icon_playgame": {
+				"color": [
+					{
+						"time": 0,
+						"color": "ffffffb2",
+						"curve": [ 0.226, 0.49, 0.403, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"color": "ffffffff",
+						"curve": [ 0.776, 0, 1, 1 ]
+					},
+					{ "time": 2.0007, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 5.3352, "color": "ffffff00" },
+					{ "time": 6.0021, "color": "ffffffb2" }
+				]
+			},
+			"doublefish_icon_playgame": {
+				"color": [
+					{
+						"time": 3.3345,
+						"color": "ffffff00",
+						"curve": [ 0, 0, 0.395, 0.99 ]
+					},
+					{
+						"time": 4.6683,
+						"color": "ffffffff",
+						"curve": [ 0.613, 0, 1, 1 ]
+					},
+					{ "time": 6.0021, "color": "ffffff00" }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0,
+				"offsets": [
+					{ "slot": "coloring_icon_playgame", "offset": 1 }
+				]
+			},
+			{
+				"time": 1.3336,
+				"offsets": [
+					{ "slot": "colorbomb_icon_playgame", "offset": 2 },
+					{ "slot": "coloring_icon_playgame", "offset": 0 }
+				]
+			},
+			{
+				"time": 3.3345,
+				"offsets": [
+					{ "slot": "colorbomb_icon_playgame", "offset": 1 }
+				]
+			},
+			{
+				"time": 5.3352,
+				"offsets": [
+					{ "slot": "coloring_icon_playgame", "offset": 1 }
+				]
+			}
+		]
+	}
+}
+}

@@ -1,0 +1,23 @@
+<Timelines>
+<Timeline startTime="0.006" endTime="3.987">
+	<Triggers>
+		<AnimationTrigger time="0" animationName="appear" crossFade="0" targetName="Info_box" />
+		<AnimationTrigger time="0" animationName="appear" crossFade="0" targetName="Photo" />
+		<AnimationTrigger time="3.066" animationName="exit" crossFade="0.100" targetName="Photo" />
+		<AnimationTrigger time="3.206" animationName="exit" crossFade="0" targetName="Info_box" />
+		<EffectTrigger time="0.046" name="MemoriesAttemptEFQ" parentName="" targetName="" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="0" y="0" z="0" />
+		</EffectTrigger>
+		<EffectTrigger time="1.337" name="PurchaseItemGlitterModalEFQ" parentName="Photo" targetName="Photo" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="0" y="200" z="25" />
+		</EffectTrigger>
+		<CustomTrigger time="3.978" name="End" data="" />
+	</Triggers>
+	<Animate time="0" target="photo_bg">
+		<Color time="0.001" r="255" g="255" b="255" a="50" />
+		<Color time="0.040" r="255" g="255" b="255" a="255" />
+		<Color time="3.419" r="255" g="255" b="255" a="255" />
+		<Color time="3.970" r="255" g="255" b="255" a="50" />
+	</Animate>
+</Timeline>
+</Timelines>

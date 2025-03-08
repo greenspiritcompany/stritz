@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="Episode66Material">
+		<Cull enabled="false" face="back" />
+		<Texture filename="shared/diorama/diorama22/episode66/tex/episode66_material.png" />
+	</Material>
+	<Material name="Episode66MaterialAlpha" parentMaterial="Episode66Material">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode66PathMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode66PathMaterialAlpha" parentMaterial="Episode66PathMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<Material name="CloudMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/clouds.png" wrap="repeat" />
+		<Blend enabled="true" />
+		<Depth enabled="true" writeMask="true" />
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="Episode66BackdropMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/diorama22/episode66/tex/episode66_material.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode66BackdropMaterialAlpha" parentMaterial="Episode66BackdropMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<SceneObject name="DioramaModel">
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Material parentMaterial="Episode66BackdropMaterial" />
+			<Translation x="1900" />
+			<!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<!--ADD PATH SHADOW - ADD YOUR -->
+			<!--PORTAL FORWARD-->
+			<!-- DIORAMA ASSETS -->
+			<!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+
+      <SceneObject name="episode66_Non_Interactable_Group">
+        <SceneObject name="episode66_Non_Interactable_01">
+          <Model filename="shared/diorama/diorama22/episode66/models/non_interactable/episode66_non_interactable_01.ffm"/>
+          <Materials>
+            <Material parentMaterial="Episode66MaterialAlpha"/>
+          </Materials>
+          <Translation x="-413.886" y="40.955" z="-150.066"/>
+          <Rotation x="0" y="0" z="0"/>
+          <Scale x="1" y="1" z="1"/>
+        </SceneObject>
+      </SceneObject>
+
+
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+			<!--
+				SPEECHBUBBLE
+			-->
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<Import filename="shared/diorama/diorama22/episode66/scenes/episode66_levelpins.xml" />
+			<SceneObject name="Episode66_Backdrop">
+				<SceneObject name="Episode66_Ground">
+					<Model filename="shared/diorama/diorama22/episode66/models/episode66_ground.ffm" />
+					<Material parentMaterial="Episode66Material" />
+					<Translation x="23.548" y="43.130" z="50.252" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="episode66_diorama_foreground">
+					<Material parentMaterial="Episode66Material" />
+					<Model filename="shared/diorama/diorama22/episode66/models/episode66_diorama_foreground.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="0" z="51.257" />
+				</SceneObject>
+				<SceneObject name="asset_shadow">
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-523.159" y="-7.044" z="230.189" />
+					<Scale x="1.631" y="1" z="1.460" />
+				</SceneObject>
+				<SceneObject name="asset_shadow3">
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="608.486" y="-10.074" z="232.792" />
+					<Scale x="1.609" y="1" z="1.460" />
+				</SceneObject>
+				<SceneObject name="asset_shadow4">
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="351.911" y="-9.188" z="233.557" />
+					<Scale x="0.757" y="1" z="1.460" />
+				</SceneObject>
+				<SceneObject name="asset_shadow5">
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="72.633" y="-17" z="229.719" />
+					<Scale x="0.757" y="1" z="1.460" />
+				</SceneObject>
+				<SceneObject name="asset_shadow6">
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="861.064" y="-6.049" z="143.256" />
+					<Scale x="1.371" y="1" z="1.460" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="E66Path">
+				<Model filename="shared/diorama/diorama22/episode66/models/path/episode66_path.ffm">
+					<Bound minZ="-300" />
+				</Model>
+				<Material parentMaterial="Episode66PathMaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E66PathShadow">
+				<Model filename="shared/diorama/diorama22/episode66/models/path/path_shadow.ffm">
+					<Bound minZ="-1000" />
+				</Model>
+				<Material parentMaterial="Episode66MaterialAlpha" />
+				<Translation x="-8.803" y="1.354" z="0.175" />
+				<Scale y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E66EndSign">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm" />
+				<Material parentMaterial="Under_Construction_Icon" />
+				<Translation x="744.734" y="62.960" z="9.951" />
+				<Rotation x="-35" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="PortalForwardGroup">
+				<Translation x="-380" y="15" z="170" />
+				<SceneObject name="diorama_link_next">
+					<Model filename="shared/diorama/common/models/portal/portal.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="1118.333" y="115" z="-231.661" />
+					<Rotation x="0" y="-40" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<SceneObject name="diorama_portal_shadow">
+						<Model filename="shared/diorama/common/models/portal/portal_shadow.ffm" />
+						<Material parentMaterial="PortalMaterial" />
+						<Translation x="0" y="0" z="0" />
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="diorama_link_next_pin_enabled" visibility="never">
+					<Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+						<Animation filename="shared/diorama/common/models/portal/pin_idle.ffa" loopCount="-1" name="idlePinEmil" play="true" speed="1" />
+					</Model>
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="1091.333" y="42" z="-181.661" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_link_next_pin_disabled">
+					<Model filename="shared/diorama/common/models/portal/portal_pin_inactive.ffm" />
+					<Material parentMaterial="PortalDisabledMaterial" />
+					<Translation x="1091.333" y="42" z="-181.661" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="episode66_Interactable_Group">
+				<SceneObject name="moon">
+					<Interactable upEffect="diorama_cloud" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/moon.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="895.672" y="505.533" z="-342.218" />
+					<Animation animationData="cloud_idle" name="Idle" play="true" speed="0.300" layer="4" loopCount="-1" />
+					<Animation animationData="cloud_foldup" name="Foldup" play="false" layer="2" loopCount="0" />
+					<Animation animationData="interactable_v03_up" name="Up" layer="3" play="false" loopCount="0" speed="1" />
+					<Animation animationData="interactable_v03_up" name="Up2" layer="3" play="false" loopCount="0" speed="1" />
+					<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1" />
+					<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="jellyfish">
+					<Interactable upEffect="diorama_squeeker" />
+					<Material parentMaterial="Episode66MaterialAlpha">
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/jellyfish.ffm">
+						<Animation filename="shared/diorama/diorama22/episode66/models/interactable/jellyfish_idle.ffa" play="true" name="jellyfish_idle" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-403.906" y="101.921" z="-208.999" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="corals_shell">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/corals_shell.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="1064.666" y="-74.441" z="-247.265" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="0.850" y="0.850" z="0.850" />
+				</SceneObject>
+				<SceneObject name="fish_bottle">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/fish_bottle.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-333.566" y="-80.036" z="-229.659" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1.080" y="1.080" z="1.080" />
+				</SceneObject>
+				<SceneObject name="corals_bottle">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/corals_bottle.ffm" />
+					<Rotation x="-30" y="0" z="0" />
+					<Translation x="611.704" y="-41.386" z="358.860" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<!--
+				<SceneObject name="fish">
+					<Interactable upEffect="diorama_squishy" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/fish.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-312.667" y="16.308" z="-328.825" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				-->
+				<SceneObject name="seaweed_pearl">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/seaweed_pearl.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-570.746" y="-87.234" z="-172.446" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="seaweed">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/seaweed.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-36.012" y="-83.162" z="-118.887" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="bottle">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/bottle.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-112.258" y="-80.917" z="-167.449" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="bg_rocks_tall">
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/non_interactable/bg_rocks_tall.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="125.987" y="-67.626" z="-469.084" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="bg_rocks_short">
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/non_interactable/bg_rocks_short.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-467.655" y="-111.668" z="-491.515" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="backdrop_soda">
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/non_interactable/backdrop_soda.ffm">
+						<Bound minZ="-900" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="182.268" y="169.916" z="359.740" />
+					<Scale x="1.023" y="1.158" z="1" />
+				</SceneObject>
+				<!--
+				<SceneObject name="bg_fish">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/non_interactable/bg_fish.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-742.177" y="88.998" z="-409.797" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Scale x="0.863" y="0.890" z="0.878" />
+				</SceneObject>
+				-->
+				<SceneObject name="ship">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/ship.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-681.383" y="-119.324" z="-283.433" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Scale x="1.196" y="1.196" z="1.196" />
+				</SceneObject>
+				<SceneObject name="bg_rockspile_left">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/bg_rockspile_left.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-15.995" y="81.088" z="-294.765" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="bg_rockspile_right">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/bg_rockspile_right.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="973.508" y="-111.314" z="-305.603" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="corals_shell2">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/corals_shell.ffm" />
+					<Rotation x="-30" y="0" z="0" />
+					<Translation x="-543.770" y="-22.631" z="349.374" />
+					<Scale x="1" y="1" z="1" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<!--
+				<SceneObject name="fish_bottle2">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/fish_bottle.ffm" />
+					<Rotation x="-30" y="0" z="0" />
+					<Translation x="-177.637" y="-16.857" z="346.841" />
+					<Scale x="1.165" y="1.175" z="1.184" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				-->
+				<SceneObject name="corals_bottle2">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/corals_bottle.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="-910.174" y="-78.503" z="-222.622" />
+					<Scale x="0.878" y="0.901" z="0.865" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="seaweed_pearl2">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/seaweed_pearl.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="607.621" y="-86.706" z="-86.151" />
+					<Scale x="0.930" y="0.930" z="0.930" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="seaweed2">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/seaweed.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-699.543" y="-97.020" z="-75.905" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="bottle3">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/bottle.ffm" />
+					<Rotation x="0" y="0" z="9.649" />
+					<Translation x="-869.674" y="-27.091" z="-105.570" />
+					<Scale x="1" y="1" z="1" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="bottle2">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/bottle.ffm" />
+					<Rotation x="-9.773" y="-2.129" z="12.173" />
+					<Translation x="-100.391" y="-25.397" z="140.168" />
+					<Scale x="1" y="1" z="1" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="bg_rocks_short2">
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/non_interactable/bg_rocks_short.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="746.333" y="-93.174" z="-441.265" />
+					<Scale x="0.901" y="0.878" z="0.882" />
+				</SceneObject>
+				<!--
+				<SceneObject name="bg_fish2">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/non_interactable/bg_fish.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-693.244" y="143.355" z="-409.797" />
+					<Scale x="0.863" y="0.890" z="0.878" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+				</SceneObject>
+				-->
+				<!--
+				<SceneObject name="bg_fish3">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/non_interactable/bg_fish.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="1111.972" y="58.577" z="-372.410" />
+					<Scale x="0.863" y="0.890" z="0.878" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+				</SceneObject>
+				-->
+				<SceneObject name="jellyfish2">
+					<Interactable upEffect="diorama_squeeker" />
+					<Material parentMaterial="Episode66MaterialAlpha">
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/jellyfish.ffm">
+						<Animation filename="shared/diorama/diorama22/episode66/models/interactable/jellyfish_idle.ffa" play="true" name="jellyfish_idle" />
+					</Model>
+					<Rotation x="-30" y="0" z="0" />
+					<Translation x="66.678" y="-26.968" z="346.126" />
+					<Scale x="1" y="1" z="1" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="jellyfish3">
+					<Interactable upEffect="diorama_squeeker" />
+					<Material parentMaterial="Episode66MaterialAlpha">
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/jellyfish.ffm">
+						<Animation filename="shared/diorama/diorama22/episode66/models/interactable/jellyfish_idle.ffa" play="true" name="jellyfish_idle" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="564.263" y="38.104" z="-285.279" />
+					<Scale x="1" y="1" z="1" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="seaweed3">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/seaweed.ffm" />
+					<Rotation x="-30" y="180" z="0" />
+					<Translation x="891.384" y="-19.136" z="261.991" />
+					<Scale x="1.233" y="1.244" z="1.227" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="bottle4">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode66/models/interactable/bottle.ffm" />
+					<Rotation x="-30" y="0" z="12.355" />
+					<Translation x="350.652" y="-19.792" z="350.155" />
+					<Scale x="1.125" y="1.152" z="1.136" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Episode66Character">
+				<Translation x="0" y="77.284" z="-211.910" />
+				<SceneObject name="CharacterEp66">
+					<Rotation y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Model filename="shared/diorama/diorama22/episode66/models/character/episode66_character.ffm">
+						<Animation filename="shared/diorama/diorama22/episode66/models/character/episode66_character_idle.ffa" loopCount="-1" name="Idle" speed="1" play="true" />
+						<Animation filename="shared/diorama/diorama22/episode66/models/character/episode66_character_talk.ffa" loopCount="-1" name="Talk" speed="1" interpolateFrame="true" />
+						<Animation name="FastIdle" filename="shared/diorama/diorama22/episode66/models/character/episode66_character_idle.ffa" speed="3" />
+					</Model>
+					<Material parentMaterial="Episode66MaterialAlpha" />
+					<Translation x="398.862" y="-234.893" z="12.285" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="SpeechBubbleEp66">
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear" />
+				<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear" />
+				<SpeechBubble>
+					<Speech key="episode66.intro" />
+					<Speech key="episode66.outro" />
+				</SpeechBubble>
+				<Translation x="66.323" y="125" z="-136.171" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+			</SceneObject>
+			<SceneObject name="Particles">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation x="-601.386" y="-300.986" z="-496.323" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1092CameraTarget">
+				<Translation x="-139.142" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1105CameraTarget">
+				<Translation x="-139.142" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="bubble_effect">
+				<Translation x="164.838" y="-70.390" z="-274.236" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true" />
+			</SceneObject>
+			<SceneObject name="bubble_effect2">
+				<Translation x="-565.690" y="66.438" z="9.146" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true" />
+			</SceneObject>
+			<SceneObject name="bubble_effect3">
+				<Translation x="505.047" y="9.270" z="9.146" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles2">
+				<Translation x="727.152" y="-288.692" z="-496.323" />
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="bubble_effect5">
+				<Translation x="-565.690" y="66.438" z="-292.749" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true" />
+			</SceneObject>
+			<SceneObject name="bubble_effect4">
+				<Translation x="989.791" y="-18.234" z="-214.800" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true" />
+			</SceneObject>
+			<SceneObject name="episode66_GodRays">
+				<Material parentMaterial="CloudMaterial">
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+				</Material>
+				<Model filename="shared/diorama/common/models/effects/god_rays.ffm">
+					<Animation filename="shared/diorama/common/models/effects/god_rays.ffa" loopCount="-1" name="Idle" play="true" speed="1.450" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1.400" z="1" />
+				<Translation x="102.528" y="1" z="-53.977" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

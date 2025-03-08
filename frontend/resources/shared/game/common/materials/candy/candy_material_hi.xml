@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<!-- ************************************************************** -->
+
+		<!-- Base (high) material for all candies -->
+		<Material name="CandyMaterial">
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+
+			<Shader program="NormalMap"/>
+			<Color r="255" g="255" b="255" a="255"/>
+			<Light enabled="true" shininess="100">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="150" g="150" b="150" a="255"/>
+				<Specular r="255" g="255" b="255" a="255"/>
+			</Light>
+		</Material>
+
+		<!-- ************************************************************** -->
+	</Materials>
+</Scene>

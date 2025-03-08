@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="emphasized_toplist_travel_grp">
+		<SceneObject name="Effect">
+			<Translation y="0" z="0" />
+		</SceneObject>
+		<Translation y="115" z="0" />
+	</SceneObject>
+</Scene>

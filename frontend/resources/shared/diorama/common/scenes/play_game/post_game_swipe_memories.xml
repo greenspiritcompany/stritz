@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="PostGameSwipe">
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Width percentage="100" />
+				<OriginalSize height="1024" width="684" />
+			</Size>
+		</LayoutConfiguration>
+		<SceneObject name="Landscape" visibility="never">
+			<Translation x="-170" z="400" />
+			<Import filename="shared/diorama/common/scenes/play_game/post_game_modal_boosters_base_memories.xml" />
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+			<SceneObject name="memoriesNode">
+				<SceneObject name="Info_box">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Translation x="-128" y="-470" z="500" />
+					<Animation animationData="SpeechBubbleAppear" loopCount="0" name="appear" />
+					<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="exit" speed="2" />
+					<SceneObject editorEntityId="66" name="text_bg">
+						<Sprite filename="shared/features/memories/tex/memory_attempt_no_tap.png" vertexColors="false" mode="panel">
+							<Insets bottom="40" left="35" right="40" top="35" />
+							<Size height="160" width="550" />
+						</Sprite>
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<Translation x="42" y="636" z="1" />
+					</SceneObject>
+					<SceneObject name="task_text" visibility="inherit">
+						<Text alignment="center" font="Banana" maxHeight="100" maxWidth="450" verticalAlignment="visualCenter" key="memories_splash_text_postgame">
+							<Color r="0" g="89" b="111" a="255" />
+							<Shadow enabled="false">
+								<Color r="255" g="255" b="255" a="200" />
+								<Offset x="1" y="1" />
+							</Shadow>
+							<Size x="24" y="24" />
+						</Text>
+						<Translation x="315" y="710" z="1" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="memory_feature" visibility="never">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Translation x="170" y="-95" />
+					<Animation animationData="MemoriesWinCurvatureAnimation" loopCount="0" name="memoriesCurveAnimation" weight="0.250" />
+					<SceneObject name="memory_piece_win">
+						<SceneObject name="piece_base">
+							<Material>
+								<Blend enabled="true" />
+								<Depth enabled="true" />
+								<Texture filename="shared/features/memories/tex/win_memory_piece.png" />
+							</Material>
+							<Model filename="shared/features/memories/models/win_piece/base.ffm">
+								<Animation filename="shared/features/memories/models/win_piece/base_intro_animation.ffa" name="memory_win_piece_intro_animation" speed="4" loopCount="0" />
+								<Animation filename="shared/features/memories/models/win_piece/base_outro_animation.ffa" name="memory_win_piece_outro_animation" speed="4" loopCount="0" />
+								<Bound maxX="2" />
+							</Model>
+							<Rotation x="90" y="-65" />
+							<Scale x="1.200" y="1.200" z="-1.200" />
+							<Translation z="514" />
+						</SceneObject>
+						<SceneObject name="piece_question_mark">
+							<Material>
+								<Blend enabled="true" />
+								<Depth enabled="true" />
+								<Texture filename="shared/features/memories/tex/win_memory_piece_question.png" />
+							</Material>
+							<Model filename="shared/features/memories/models/win_piece/base_question.ffm">
+								<Animation filename="shared/features/memories/models/win_piece/base_intro_animation.ffa" loopCount="0" name="memory_win_piece_intro_animation" speed="4" />
+								<Animation filename="shared/features/memories/models/win_piece/base_outro_animation.ffa" loopCount="0" name="memory_win_piece_outro_animation" speed="4" />
+								<Bound maxX="2" />
+							</Model>
+							<Rotation x="90" y="-65" />
+							<Scale x="1.200" y="1.200" z="-1.200" />
+							<Translation x="16" y="20" z="514" />
+						</SceneObject>
+						<SceneObject name="piece_base_shadow_grp" visibility="never">
+							<Translation x="0" y="0" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+							<SceneObject name="piece_base_shadow">
+								<Material>
+									<Blend enabled="true" />
+									<Color a="50" b="255" g="255" r="255" />
+									<Depth enabled="true" />
+									<Texture filename="shared/features/memories/tex/win_memory_piece_shadow.png" />
+								</Material>
+								<Rotation x="0" y="0" z="-152.961" />
+								<Scale x="4.958" y="5.257" z="12" />
+								<Sprite vertexColors="false" mode="sprite">
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="73.437" y="241.262" z="505" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="effects_grp_center">
+							<Translation x="0" y="0" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+							<SceneObject name="effects">
+								<Translation x="-333.962" y="-313.063" />
+								<SceneObject name="shine_glow">
+									<Animation animationData="Rotate_360zAxis" play="true" speed="0.200" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/quest_reward_shine_bg.png" vertexColors="false" mode="sprite">
+										<Pivot anchor="center" />
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+									<Translation x="332.216" y="311.323" z="410" />
+									<Scale x="1.300" y="1.300" z="1.300" />
+								</SceneObject>
+								<SceneObject name="shine_glow_big">
+									<Animation animationData="Rotate360Zaxis" direction="backwards" play="true" speed="0.200" />
+									<Scale x="1.600" y="1.600" z="1.600" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/quest_reward_shine_bg.png" vertexColors="false" mode="sprite">
+										<Pivot anchor="center" />
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+									<Translation x="332.216" y="311.323" z="410" />
+								</SceneObject>
+								<SceneObject name="glitter1">
+									<Scale x="3" y="3" z="1" />
+									<Translation x="339.493" y="337.801" z="560" />
+									<Effect effectData="PurchaseItemGlitterModalEFQ" name="PregameBoosterDoubleFishGlitterEFQ" play="true" />
+								</SceneObject>
+								<SceneObject name="glitter2">
+									<Scale x="3.445" y="3.445" z="1" />
+									<Translation x="378.493" y="268.801" z="560" />
+									<Effect effectData="PurchaseItemGlitterModalEFQ" name="PregameBoosterDoubleFishGlitterEFQ" play="true" />
+								</SceneObject>
+								<SceneObject name="glitter3">
+									<Scale x="3" y="3" z="1" />
+									<Translation x="308.493" y="420.801" z="560" />
+									<Effect effectData="PurchaseItemGlitterModalEFQ" name="PregameBoosterDoubleFishGlitterEFQ" play="true" />
+								</SceneObject>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="memories_button_ref">
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1.313" y="1.313" z="1" />
+						<Sprite filename="shared/features/memories/tex/btn_blue_postgamemodal.png" mode="sprite" vertexColors="false">
+							<Insets bottom="0" left="0" right="0" top="0" />
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation x="20" y="360" z="20" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Portrait">
+			<Translation y="-140" z="400" />
+			<Import filename="shared/diorama/common/scenes/play_game/post_game_modal_boosters_base_memories.xml" />
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+			<SceneObject name="memoriesNode">
+				<SceneObject name="Info_box">
+					<Translation x="-311.552" y="-365.119" z="500" />
+					<Animation animationData="SpeechBubbleAppear" loopCount="0" name="appear" />
+					<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="exit" speed="2" />
+					<SceneObject editorEntityId="66" name="text_bg">
+						<Sprite filename="shared/features/memories/tex/memory_attempt_no_tap.png" vertexColors="false" mode="panel">
+							<Insets bottom="40" left="35" right="40" top="35" />
+							<Size height="160" width="550" />
+						</Sprite>
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<Translation x="42" y="636" z="1" />
+					</SceneObject>
+					<SceneObject name="task_text" visibility="inherit">
+						<Text alignment="center" font="Banana" maxHeight="100" maxWidth="450" verticalAlignment="visualCenter" key="memories_splash_text_postgame">
+							<Color r="0" g="89" b="111" a="255" />
+							<Shadow enabled="false">
+								<Color r="255" g="255" b="255" a="200" />
+								<Offset x="1" y="1" />
+							</Shadow>
+							<Size x="24" y="24" />
+						</Text>
+						<Translation x="315" y="710" z="1" />
+					</SceneObject>
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="memory_feature">
+					<Translation x="0" y="-40" />
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+					<Animation animationData="MemoriesWinCurvatureAnimation" loopCount="0" name="memoriesCurveAnimation" layer="1" weight="0.250" />
+					<SceneObject name="memory_piece_win">
+						<SceneObject name="piece_base">
+							<Model filename="shared/features/memories/models/win_piece/base.ffm">
+								<Animation filename="shared/features/memories/models/win_piece/base_intro_animation.ffa" name="memory_win_piece_intro_animation" speed="4" loopCount="0" />
+								<Animation filename="shared/features/memories/models/win_piece/base_outro_animation.ffa" name="memory_win_piece_outro_animation" speed="4" loopCount="0" />
+								<Bound maxX="2" />
+							</Model>
+							<Material>
+								<Texture filename="shared/features/memories/tex/win_memory_piece.png" />
+								<Blend enabled="true" />
+								<Depth enabled="true" />
+							</Material>
+							<Translation z="514" />
+							<Scale z="-1.200" x="1.200" y="1.200" />
+							<Rotation x="90" y="-65" />
+						</SceneObject>
+						<SceneObject name="piece_question_mark">
+							<Model filename="shared/features/memories/models/win_piece/base_question.ffm">
+								<Animation filename="shared/features/memories/models/win_piece/base_intro_animation.ffa" name="memory_win_piece_intro_animation" speed="4" loopCount="0" />
+								<Animation filename="shared/features/memories/models/win_piece/base_outro_animation.ffa" name="memory_win_piece_outro_animation" speed="4" loopCount="0" />
+								<Bound maxX="2" />
+							</Model>
+							<Material>
+								<Texture filename="shared/features/memories/tex/win_memory_piece_question.png" />
+								<Blend enabled="true" />
+								<Depth enabled="true" />
+							</Material>
+							<Translation x="16" y="20" z="514" />
+							<Scale z="-1.200" x="1.200" y="1.200" />
+							<Rotation x="90" y="-65" />
+						</SceneObject>
+						<SceneObject name="piece_base_shadow_grp">
+							<SceneObject name="piece_base_shadow" visibility="inherit">
+								<Material>
+									<Texture filename="shared/features/memories/tex/win_memory_piece_shadow.png" />
+									<Blend enabled="true" />
+									<Depth enabled="true" />
+									<Color r="255" g="255" b="255" a="50" />
+								</Material>
+								<Translation x="73.437" y="241.262" z="505" />
+								<Scale x="4.958" y="5.257" z="12" />
+								<Rotation x="0" y="0" z="-152.961" />
+								<Sprite vertexColors="false" mode="sprite">
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="effects_grp_center">
+							<Scale x="1" y="1" z="1" />
+							<Translation x="0" y="0" z="0" />
+							<Rotation x="0" y="0" z="0" />
+							<SceneObject name="effects">
+								<SceneObject name="shine_glow">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/quest_reward_shine_bg.png" vertexColors="false" mode="sprite">
+										<Pivot anchor="center" />
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+									<Translation x="332.216" y="311.323" z="410" />
+									<Animation play="true" animationData="Rotate_360zAxis" speed="0.200" />
+									<Scale x="1.300" y="1.300" z="1.300" />
+								</SceneObject>
+								<SceneObject name="shine_glow_big">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/quest_reward_shine_bg.png" vertexColors="false" mode="sprite">
+										<Pivot anchor="center" />
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+									<Translation x="332.216" y="311.323" z="410" />
+									<Animation play="true" animationData="Rotate360Zaxis" speed="0.200" direction="backwards" />
+									<Scale x="1.600" y="1.600" z="1.600" />
+								</SceneObject>
+								<SceneObject name="glitter1">
+									<Effect name="PregameBoosterDoubleFishGlitterEFQ" effectData="PurchaseItemGlitterModalEFQ" play="true" />
+									<Translation x="339.493" y="337.801" z="560" />
+									<Scale x="3" y="3" z="1" />
+								</SceneObject>
+								<SceneObject name="glitter2">
+									<Translation x="378.493" y="268.801" z="560" />
+									<Scale x="3.445" y="3.445" z="1" />
+									<Effect name="PregameBoosterDoubleFishGlitterEFQ" effectData="PurchaseItemGlitterModalEFQ" play="true" />
+								</SceneObject>
+								<SceneObject name="glitter3">
+									<Translation x="308.493" y="420.801" z="560" />
+									<Scale x="3" y="3" z="1" />
+									<Effect name="PregameBoosterDoubleFishGlitterEFQ" effectData="PurchaseItemGlitterModalEFQ" play="true" />
+								</SceneObject>
+								<Translation x="-333.962" y="-313.063" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="memories_button_ref">
+						<Sprite filename="shared/features/memories/tex/btn_blue_postgamemodal.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="190" y="307" z="20" />
+						<Scale x="1.313" y="1.313" z="1" />
+						<Rotation x="0" y="0" z="0" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<Translation x="0" y="0" z="0" />
+	<Rotation x="0" y="0" z="0" />
+	<Scale x="1" y="1" z="1" />
+</Scene>

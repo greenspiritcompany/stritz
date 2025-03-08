@@ -1,0 +1,29 @@
+<ParticleEffect maxParticles="20" space="World" timeToEmit="60" name="PolkaPigCrushedRedPFX">
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0.100" spread="360" angle="0">
+	<SpawnArea width="100" depth="0" height="100" />
+</Emitter>
+<Rotation max="0" min="0" />
+<RotationSpeed max="360" min="360" />
+<Size>
+	<Max x="30" y="30" />
+	<Min x="10" y="10" />
+</Size>
+<SizeChange>
+	<Max x="-15" y="-15" />
+	<Min x="-5" y="-5" />
+</SizeChange>
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="5" min="0.100" />
+<Dampening min="0" max="0" />
+<Velocity min="0" max="0" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="255" g="255" b="255" a="130" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="144" g="198" b="255" a="0" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

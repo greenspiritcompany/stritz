@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../shared/dtd/scene.dtd">
+<Scene>
+	<SceneObjects>
+		<!-- - - - - - - - - - - - - - -->
+		<!--  connection "tray" icon   -->
+		<!-- - - - - - - - - - - - - - -->
+		<SceneObject name="FbConnectIconRoot">
+			<Animations>
+				<Animation name="OnAppear" animationData="SlideInFromBelow" loopCount="0" startTime="0.0" />
+				<Animation name="Disappear" animationData="SlideOutToBelow" loopCount="0" />
+			</Animations>
+			<Transformation>
+				<Translation x="0.0" y="0.0" z="580.0" />
+			</Transformation>
+			<SceneObjects>
+				<SceneObject name="ConnectionSpinnerGroup">
+					<Transformation>
+						<Translation y="-55" x="-55" />
+						<Scale xyz="0.5" />
+					</Transformation>
+					<SceneObjects>
+						<SceneObject name="ConnectionSpinner">
+							<Animations>
+								<Animation name="IdleRotate" animationData="Rotate360" play="true" loopCount="-1" />
+							</Animations>
+							<Mesh>
+								<Sprite filename="shared/diorama/common/tex/gui_elements/spinner_back.png">
+									<Pivot anchor="center" />
+								</Sprite>
+							</Mesh>
+							<Transformation>
+								<Translation y="-6" />
+							</Transformation>
+						</SceneObject>
+						<SceneObject name="ConnectionSpinnerFg">
+							<Mesh>
+								<Sprite filename="shared/diorama/common/tex/gui_elements/spinner_front.png">
+									<Pivot anchor="center" />
+								</Sprite>
+							</Mesh>
+						</SceneObject>
+					</SceneObjects>
+				</SceneObject>
+				<SceneObject name="SuccessIcon" visibility="never">
+					<Animations>
+						<Animation name="Appear" animationData="OnAppearGrow" loopCount="0" />
+					</Animations>
+					<Mesh>
+						<Sprite filename="client/tex/icon_yes.png">
+							<Pivot anchor="center" />
+						</Sprite>
+					</Mesh>
+					<Transformation>
+						<Translation y="-56" x="-56" />
+						<Scale xyz="1.0" />
+					</Transformation>
+				</SceneObject>
+				<SceneObject name="FailIcon" visibility="never">
+					<Animations>
+						<Animation name="Appear" animationData="OnAppearGrow" loopCount="0" />
+					</Animations>
+					<Mesh>
+						<Sprite filename="client/tex/icon_no.png">
+							<Pivot anchor="center" />
+						</Sprite>
+					</Mesh>
+					<Transformation>
+						<Translation y="-56" x="-56" />
+						<Scale xyz="1.0" />
+					</Transformation>
+				</SceneObject>
+			</SceneObjects>
+			<LayoutConfiguration name="Default">
+				<Size>
+					<Width percentage="10" />
+					<Height percentage="10" />
+					<OriginalSize width="64" height="64" />
+				</Size>
+				<Translation>
+					<X percentage="100" />
+					<Y percentage="100" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="100" />
+					<Y percentage="100" />
+				</Translation>
+			</LayoutConfiguration>
+		</SceneObject>
+	</SceneObjects>
+</Scene>

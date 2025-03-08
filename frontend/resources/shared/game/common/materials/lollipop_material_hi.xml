@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+    <Materials>
+
+        <Material name="LollipopMaterial">
+            <Blend enabled="false"/>
+            <Depth enabled="true" writeMask="true"/>
+            <Cull enabled="true" face="back"/>
+            <Shader program="NormalMap"/>
+            <Light enabled="true" shininess="55">
+                <Ambient r="180" g="180" b="180" a="255"/>
+                <Diffuse r="140" g="140" b="140" a="255"/>
+                <Specular r="50" g="50" b="50" a="255"/>
+            </Light>
+            <Textures>
+                <Texture filename="shared/game/common/tex/boosters/lollipop_hammer_c.png"/>
+                <Texture filename="shared/game/common/tex/boosters/lollipop_hammer_n.png"/>
+            </Textures>
+        </Material>
+
+    </Materials>
+</Scene>

@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.99">
+		<Animate target="ParticleParent">
+			<Hide time="0.0"/>
+			<Show time="0.01"/>
+			<Hide time="1.99"/>
+		</Animate>
+		<Triggers>
+			<EffectTrigger name="ColoringCandyBlackTrailConstantEFQ" parentName="ParticleParent">
+				<Offset z="20"/>
+			</EffectTrigger>
+			<EffectTrigger name="ColoringCandyBlackTrailEFQ" targetName="ParticleParent" followTarget="true" emitterInheritsTargetRotation="true">
+				<Offset z="10"/>
+			</EffectTrigger>
+		</Triggers>
+	</Timeline>
+</Timelines>

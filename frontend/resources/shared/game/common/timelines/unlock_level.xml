@@ -1,0 +1,66 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="3.5">
+		<Animate target="ParticleTransform" time="0.0">
+			<Show/>
+			<Rotation time="0.0" z="0"/>
+			<Rotation time="0.15" z="180"/>
+			<Rotation time="0.3" z="360"/>
+			<Rotation time="0.45" z="540"/>
+			<Rotation time="0.6" z="720"/>
+			<Rotation time="0.75" z="900"/>
+			<Rotation time="0.9" z="1080"/>
+			<Rotation time="1.05" z="1260"/>
+			<Rotation time="1.2" z="1440"/>
+			<Rotation time="1.35" z="1620"/>
+			<Scale time="0.0" xyz="0.2"/>
+			<Scale time="1.35" xyz="2.5"/>
+			<Translation time="0" y="0"/>
+			<Translation time="0.35" y="-150"/>
+			<Translation time="1.35" y="-550"/>
+			<Translation time="1.36" y="0"/>
+			<Scale time="1.36" xyz="0.2"/>
+			<Rotation time="1.36" z="0"/>
+		</Animate>
+		<Animate target="ParticleTransform2" time="0.0">
+			<Show/>
+			<Rotation time="0.0" z="180"/>
+			<Rotation time="0.15" z="360"/>
+			<Rotation time="0.3" z="540"/>
+			<Rotation time="0.45" z="720"/>
+			<Rotation time="0.6" z="900"/>
+			<Rotation time="0.75" z="1080"/>
+			<Rotation time="0.9" z="1260"/>
+			<Rotation time="1.05" z="1440"/>
+			<Rotation time="1.2" z="1620"/>
+			<Rotation time="1.35" z="1800"/>
+			<Scale time="0.0" xyz="0.5"/>
+			<Scale time="1.35" xyz="2.0"/>
+			<Translation time="0" y="0"/>
+			<Translation time="0.35" y="-150"/>
+			<Translation time="1.35" y="-550"/>
+			<Translation time="1.36" y="0"/>
+			<Scale time="1.36" xyz="0.5"/>
+			<Rotation time="1.36" z="0"/>
+		</Animate>
+
+
+		<Triggers>
+
+			<EffectTrigger name="UnlockLevelDust" targetName="ParticleTransformChild">
+				<Offset z="100"/>
+			</EffectTrigger>
+			<EffectTrigger name="UnlockLevelDust" targetName="ParticleTransformChild2">
+				<Offset z="100"/>
+			</EffectTrigger>
+			<EffectTrigger name="LevelUnlock" targetName="ParticleTransform">
+				<Offset z="100"/>
+			</EffectTrigger>
+
+
+		</Triggers>
+		<TimeControls>
+			<!--<Loop time="1.49" jumpToTime="0.0"/>-->
+		</TimeControls>
+	</Timeline>
+</Timelines>

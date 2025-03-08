@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="31" space="Local" timeToEmit="2" name="FishStripeTrailCyanPFX">
+    <Dampening max="0.500" min="0.500"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.060" spread="0" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="104" y="45"/>
+        <Min x="104" y="45"/>
+    </Size>
+    <SizeChange>
+        <Max x="0" y="-2.990"/>
+        <Min x="0" y="-2.990"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="153"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/cyan_stripe.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.460" min="0.460"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:84bd1936f60b7385b94ffa43bbe1cbfc:568e6864417aaeb775e42f6e342c8172:a13d75d2f82514d08e1f93dc2076deab$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gui_elements2.png" width="1024" height="1024">
+    <sprite n="ad_bg_leftbottom.png" x="218" y="435" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="ad_bg_rightbottom.png" x="407" y="489" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="ad_icon.png" x="675" y="963" w="62" h="59" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="add_lifes_btn.png" x="975" y="206" w="47" h="47" pX="0.5" pY="0.5"/>
+    <sprite n="best_value_banner.png" x="518" y="406" w="183" h="106" pX="0.5" pY="0.5"/>
+    <sprite n="big_goldbar.png" x="2" y="696" w="168" h="158" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="booster_holder.png" x="2" y="264" w="212" h="212" pX="0.5" pY="0.5"/>
+    <sprite n="booster_holder_txtbox.png" x="975" y="257" w="47" h="47" pX="0.5" pY="0.5"/>
+    <sprite n="booster_info_box.png" x="892" y="502" w="69" h="68" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="bottles_icon.png" x="536" y="2" w="240" h="226" pX="0.5" pY="0.5"/>
+    <sprite n="bubblegum_1.png" x="286" y="489" w="117" h="254" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="check.png" x="774" y="849" w="84" h="104" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="check_all_box.png" x="975" y="308" w="47" h="46" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="check_blue.png" x="923" y="708" w="93" h="79" pX="0.5" pY="0.5"/>
+    <sprite n="check_box.png" x="898" y="171" w="30" h="29" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="cross.png" x="862" y="812" w="87" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="donut_monster.png" x="780" y="171" w="55" h="55" pX="0.5" pY="0.5"/>
+    <sprite n="fb_logo.png" x="975" y="358" w="44" h="49" pX="0.5" pY="0.5"/>
+    <sprite n="fb_logo_border.png" x="953" y="791" w="62" h="62" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_downleft_pink.png" x="218" y="503" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_downright_pink.png" x="218" y="571" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_upleft_pink.png" x="218" y="639" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_upright_pink.png" x="774" y="957" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="friend_box.png" x="863" y="638" w="66" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="gamemode_honey.png" x="287" y="2" w="245" h="223" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="gold_1.png" x="854" y="574" w="67" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="gold_2.png" x="218" y="264" w="62" h="85" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="gold_3.png" x="892" y="391" w="70" h="107" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="gold_4.png" x="749" y="712" w="80" h="133" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="gold_5.png" x="608" y="864" w="162" h="95" pX="0.5" pY="0.5"/>
+    <sprite n="goldbar_tab.png" x="174" y="707" w="103" h="219" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="hard_header_tex.png" x="932" y="2" w="74" h="200" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="heart_letter.png" x="965" y="529" w="42" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="ingame_gold_tab.png" x="395" y="917" w="209" h="103" pX="0.5" pY="0.5"/>
+    <sprite n="inner_modal_pink.png" x="2" y="2" w="281" h="258" pX="0.5" pY="0.5"/>
+    <sprite n="kimmy_postwoman.png" x="287" y="229" w="184" h="256" pX="0.5" pY="0.5"/>
+    <sprite n="letter_icon.png" x="833" y="712" w="86" h="96" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="life_status_symbol.png" x="172" y="930" w="219" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="monkey.png" x="839" y="171" w="55" h="55" pX="0.5" pY="0.5"/>
+    <sprite n="most_popular_banner.png" x="705" y="401" w="183" h="106" pX="0.5" pY="0.5"/>
+    <sprite n="no_connection_icon.png" x="2" y="480" w="212" h="212" pX="0.5" pY="0.5"/>
+    <sprite n="ornament_bottom.png" x="518" y="516" w="59" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="ornament_middle.png" x="218" y="353" w="59" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="ornament_top.png" x="608" y="963" w="63" h="59" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep8.png" x="670" y="232" w="149" h="165" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep9.png" x="597" y="712" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep11.png" x="823" y="230" w="148" h="157" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep12.png" x="2" y="858" w="166" h="155" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep13.png" x="281" y="747" w="154" h="166" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep14.png" x="518" y="232" w="148" h="170" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep15.png" x="780" y="2" w="148" h="165" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep16.png" x="407" y="557" w="154" h="164" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep17.png" x="439" y="725" w="154" h="164" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep18.png" x="565" y="548" w="148" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_locked.png" x="717" y="511" w="133" h="125" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="payment_symbol_fb.png" x="475" y="229" w="39" h="320" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="photo_frame_pink.png" x="933" y="574" w="72" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="plus.png" x="439" y="893" w="20" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="purchase_fail_box.png" x="717" y="640" w="69" h="68" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="purchase_success_box.png" x="790" y="640" w="69" h="68" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="sso_box.png" x="966" y="411" w="55" h="55" pX="0.5" pY="0.5"/>
+    <sprite n="timeleft_box_left.png" x="842" y="957" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="timeleft_box_right.png" x="910" y="908" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="yeti.png" x="966" y="470" w="55" h="55" pX="0.5" pY="0.5"/>
+</TextureAtlas>

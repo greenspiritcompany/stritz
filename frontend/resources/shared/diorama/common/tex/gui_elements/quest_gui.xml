@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:a98b3debf982052c033a509c4af7dfab:aba74285c9f3cb1632fc012135f5d309:7f08c2255372ff4fefe20286bb65d8f8$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="quest_gui.png" width="1024" height="1024">
+    <sprite n="box_wave.png" x="516" y="263" w="489" h="53" pX="0.5" pY="0.5"/>
+    <sprite n="quest.png" x="2" y="2" w="560" h="214" pX="0.5" pY="0.5"/>
+    <sprite n="quest_beat_old_score.png" x="850" y="78" w="128" h="125" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_bg_box.png" x="516" y="220" w="43" h="39" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_blur.png" x="566" y="2" w="280" h="107" pX="0.5" pY="0.5"/>
+    <sprite n="quest_box_content_box.png" x="148" y="478" w="98" h="61" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_box_inner_panel_bottom.png" x="43" y="554" w="31" h="460" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_box_inner_panel_middle.png" x="1019" y="40" w="1" h="460" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_box_inner_panel_top.png" x="2" y="554" w="37" h="460" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_box_outer_panel.png" x="78" y="950" w="98" h="61" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_box_outer_panel_bottom.png" x="2" y="309" w="510" h="33" pX="0.5" pY="0.5"/>
+    <sprite n="quest_box_outer_panel_middle.png" x="1014" y="40" w="1" h="510" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_box_outer_panel_top.png" x="2" y="220" w="510" h="85" pX="0.5" pY="0.5"/>
+    <sprite n="quest_candy_blue.png" x="566" y="113" w="128" h="125" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_candy_cyan.png" x="698" y="113" w="128" h="125" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_candy_fishes.png" x="2" y="346" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_candy_green.png" x="78" y="554" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_candy_orange.png" x="131" y="346" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_candy_purple.png" x="78" y="686" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_candy_red.png" x="78" y="818" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_candy_striped.png" x="207" y="554" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_candy_striped_colorbomb.png" x="260" y="346" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_candy_striped_wrapped.png" x="207" y="686" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_candy_yellow.png" x="207" y="818" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_checkmark.png" x="336" y="554" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_colorbomb.png" x="389" y="346" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_colorbomb_coloring.png" x="336" y="686" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_coloring.png" x="336" y="818" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_difficulty_epic_skull.png" x="2" y="478" w="75" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="quest_difficulty_epic_skull_noborder.png" x="81" y="478" w="63" h="70" pX="0.5" pY="0.5"/>
+    <sprite n="quest_difficulty_hard_skull.png" x="180" y="950" w="56" h="58" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_difficulty_hard_skull_noborder.png" x="830" y="207" w="48" h="51" pX="0.5" pY="0.5"/>
+    <sprite n="quest_hard_title.png" x="850" y="2" w="160" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="quest_header_panel.png" x="518" y="452" w="100" h="89" pX="0.5" pY="0.5"/>
+    <sprite n="quest_header_panel_epic.png" x="779" y="320" w="100" h="89" pX="0.5" pY="0.5"/>
+    <sprite n="quest_header_panel_hard.png" x="883" y="320" w="100" h="89" pX="0.5" pY="0.5"/>
+    <sprite n="quest_logged_in_for_days.png" x="465" y="554" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_meter_fill_left.png" x="982" y="116" w="16" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="quest_meter_fill_middle.png" x="1019" y="504" w="1" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="quest_meter_fill_right.png" x="982" y="78" w="19" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="quest_meter_fill_right_v2.png" x="1014" y="2" w="6" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="quest_package.png" x="518" y="320" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_pass_hard_level.png" x="465" y="686" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_star.png" x="465" y="818" w="125" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="quest_wrapped.png" x="647" y="320" w="128" h="125" pX="0.5" pY="0.5" r="y"/>
+</TextureAtlas>

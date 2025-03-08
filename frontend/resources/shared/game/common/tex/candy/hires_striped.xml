@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:79b5819905babf59525df43898c99dde:e03015dfb3c1adf9efe5d956dfcbd9c3:ed605c0b268a5c232c454bbd2d9bea3a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="hires_striped.png" width="512" height="512">
+    <sprite n="blue_h_blue_big.png" x="237" y="119" w="78" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="blue_h_white_big.png" x="317" y="125" w="78" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="blue_polka_blue_big.png" x="2" y="2" w="127" h="36" pX="0.5" pY="0.5"/>
+    <sprite n="blue_polka_white_big.png" x="131" y="2" w="128" h="36" pX="0.5" pY="0.5"/>
+    <sprite n="blue_v_blue_big.png" x="2" y="233" w="78" h="73" pX="0.5" pY="0.5"/>
+    <sprite n="blue_v_white_big.png" x="311" y="273" w="78" h="73" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_h_cyan_big.png" x="397" y="125" w="78" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_h_white_big.png" x="2" y="159" w="78" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_polka_cyan_big.png" x="261" y="2" w="127" h="36" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_polka_white_big.png" x="2" y="40" w="128" h="36" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_v_cyan_big.png" x="391" y="273" w="78" h="73" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_v_white_big.png" x="2" y="308" w="78" h="73" pX="0.5" pY="0.5"/>
+    <sprite n="green_h_green_big.png" x="161" y="159" w="73" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="green_h_white_big.png" x="161" y="239" w="73" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="green_polka_green_big.png" x="381" y="84" w="127" h="39" pX="0.5" pY="0.5"/>
+    <sprite n="green_polka_white_big.png" x="2" y="118" w="127" h="39" pX="0.5" pY="0.5"/>
+    <sprite n="green_v_green_big.png" x="236" y="267" w="73" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="green_v_white_big.png" x="82" y="311" w="73" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="orange_h_orange_big.png" x="157" y="319" w="57" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="orange_h_white_big.png" x="2" y="383" w="57" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="orange_polka_orange_big.png" x="390" y="2" w="98" h="39" pX="0.5" pY="0.5"/>
+    <sprite n="orange_polka_white_big.png" x="387" y="43" w="97" h="39" pX="0.5" pY="0.5"/>
+    <sprite n="orange_v_orange_big.png" x="61" y="391" w="57" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="orange_v_white_big.png" x="120" y="399" w="57" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="purple_h_purple_big.png" x="82" y="159" w="77" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="purple_h_white_big.png" x="236" y="193" w="77" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="purple_polka_purple_big.png" x="132" y="40" w="126" h="36" pX="0.5" pY="0.5"/>
+    <sprite n="purple_polka_white_big.png" x="260" y="40" w="125" h="36" pX="0.5" pY="0.5"/>
+    <sprite n="purple_v_purple_big.png" x="315" y="199" w="77" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="purple_v_white_big.png" x="394" y="199" w="77" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="red_h_red_big.png" x="216" y="347" w="78" h="76" pX="0.5" pY="0.5"/>
+    <sprite n="red_h_white_big.png" x="82" y="233" w="77" h="76" pX="0.5" pY="0.5"/>
+    <sprite n="red_polka_red_big.png" x="2" y="78" w="135" h="38" pX="0.5" pY="0.5"/>
+    <sprite n="red_polka_white_big.png" x="139" y="78" w="134" h="38" pX="0.5" pY="0.5"/>
+    <sprite n="red_v_red_big.png" x="296" y="348" w="78" h="77" pX="0.5" pY="0.5"/>
+    <sprite n="red_v_white_big.png" x="376" y="348" w="78" h="77" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_h_white_big.png" x="179" y="425" w="62" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_h_yellow_big.png" x="243" y="427" w="63" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_polka_white_big.png" x="275" y="78" w="104" h="39" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_polka_yellow_big.png" x="131" y="118" w="104" h="39" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_v_white_big.png" x="308" y="427" w="62" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_v_yellow_big.png" x="372" y="427" w="62" h="78" pX="0.5" pY="0.5"/>
+</TextureAtlas>

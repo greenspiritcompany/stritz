@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="PlayGameSwipe">
+		<SceneObject __visibility="3" name="Landscape" visibility="always">
+			<Scale x="1.200" y="1.200" z="1.200" />
+			<Translation x="0" y="0" z="600" />
+			<SceneObject name="Kimmy">
+				<Translation x="105" y="122.520" z="2" />
+				<Rotation z="190" />
+				<Scale x="-2" y="2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_happy.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_happy_idle.ffa" loopCount="-1" name="idle" play="true" />
+				</Model>
+				<Material>
+					<Texture filename="shared/diorama/common/tex/kimmy/kimmy_happy_tex.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" writeMask="false" />
+				</Material>
+				<Animation animationData="SlideInFromBelow" loopCount="0" name="OnAppear" />
+				<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+				<SceneObject name="Stick">
+					<Translation x="-7.605" y="-234.688" z="0" />
+					<Scale y="30" />
+					<Sprite filename="shared/diorama/common/tex/rope.png" vertexColors="false">
+						<Flip u="true" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Sign">
+				<Translation x="94.024" y="728" z="0" />
+				<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+				<Animation animationData="SlideOutToTop" name="OnDisappear" loopCount="0" />
+				<SceneObject class="Button" name="LandscapeButton">
+					<Translation x="-125.323" y="-885.357" z="3" />
+					<Scale x="0.500" y="0.500" z="0.500" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+					<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+					<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+					<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+					<SceneObject>
+						<Translation x="0" y="-3" />
+						<Scale x="1.500" y="1.500" z="1.500" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_exit.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Topring">
+					<Translation x="-355.083" y="-953" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/popup_topring_sign.png" vertexColors="false" />
+					<SceneObject name="Knot">
+						<Translation x="20.990" y="-13" z="0" />
+						<Sprite filename="shared/diorama/common/tex/knot.png" vertexColors="false">
+							<Scale x="1.600" y="1.600" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Rope2">
+						<Translation x="47.100" y="-180.774" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png" vertexColors="false">
+							<Scale x="1.400" y="1.400" />
+							<Pivot anchor="center" />
+						</Sprite>
+						<Scale y="15" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Background" editorEntityId="9">
+					<Translation x="-514.801" y="-906.202" z="0" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/popup_sign_bg.png" vertexColors="false">
+						<Insets left="40" right="70" top="90" bottom="35" />
+						<Scale x="2.200" y="1.130" />
+					</Panel>
+					<SceneObject name="SmallText2" visibility="always" editorEntityId="14">
+						<Translation x="214.803" y="137.930" z="1" />
+						<Text alignment="center" font="Typewriter" maxHeight="80" maxWidth="320" verticalAlignment="visualCenter" allowWordWrapping="true" canBreakWords="false" overflowBehaviour="fit" key="pregame_booster_popup_text">
+							<Color r="255" g="255" b="255" a="255" />
+							<GradientColor enabled="false" />
+							<Shadow enabled="false" />
+							<Size x="15" y="15" />
+						</Text>
+					</SceneObject>
+					<SceneObject name="BigText2" visibility="always">
+						<Translation x="199.831" y="78.001" z="1" />
+						<Text alignment="center" font="Banana" maxHeight="60" maxWidth="320" overflowBehaviour="fit" verticalAlignment="visualCenter" key="pregame_booster_popup_title" canBreakWords="false">
+							<Color r="255" g="255" b="255" a="255" />
+							<GradientColor enabled="false" />
+							<Shadow enabled="true">
+								<Color r="0" g="0" b="0" a="25" />
+								<Offset x="0" y="3" />
+							</Shadow>
+							<Size x="46" y="46" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="ParticleHelper3">
+				<Translation x="125.513" y="110" z="0" />
+			</SceneObject>
+			<SceneObject name="ParticleHelper2" visibility="inherit">
+				<Translation x="-1.678" y="110" z="0" />
+			</SceneObject>
+			<SceneObject name="ParticleHelper1">
+				<Translation x="-125.321" y="110" z="0" />
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<SceneObject __visibility="3" name="Portrait" visibility="always">
+			<Scale x="1.200" y="1.200" z="1.200" />
+			<Translation x="0" y="0" z="524" />
+			<SceneObject name="Kimmy">
+				<Translation x="213.965" y="124.692" z="2" />
+				<Rotation z="-190" />
+				<Scale x="-2" y="2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_happy.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_happy_idle.ffa" loopCount="-1" name="idle" play="true" />
+				</Model>
+				<Material>
+					<Texture filename="shared/diorama/common/tex/kimmy/kimmy_happy_tex.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" writeMask="false" />
+				</Material>
+				<Animation animationData="SlideInFromBelow" loopCount="0" name="OnAppear" />
+				<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+				<SceneObject name="Stick">
+					<Translation x="-7.605" y="-234.688" z="0" />
+					<Scale y="30" />
+					<Sprite filename="shared/diorama/common/tex/rope.png" vertexColors="false">
+						<Flip u="true" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Sign">
+				<Translation x="235.099" y="612.665" z="0" />
+				<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+				<Animation animationData="SlideOutToTop" name="OnDisappear" loopCount="0" />
+				<SceneObject class="Button" name="PortraitButton">
+					<Translation x="-125.323" y="-885.357" z="3" />
+					<Scale x="0.500" y="0.500" z="0.500" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+					<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+					<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+					<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+					<SceneObject>
+						<Translation x="0" y="-3" />
+						<Scale x="1.500" y="1.500" z="1.500" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_exit.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Background">
+					<Translation x="-514.801" y="-906.202" z="0" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/popup_sign_bg.png" vertexColors="false">
+						<Insets left="40" right="70" top="90" bottom="35" />
+						<Scale x="2.200" y="1.130" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="BigText" visibility="always">
+					<Translation x="-312.774" y="-835.519" z="1" />
+					<Text alignment="center" font="Banana" maxHeight="60" maxWidth="320" overflowBehaviour="fit" verticalAlignment="visualCenter" key="pregame_booster_popup_title" canBreakWords="false">
+						<Color r="255" g="255" b="255" a="255" />
+						<GradientColor enabled="false" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25" />
+							<Offset x="0" y="3" />
+						</Shadow>
+						<Size x="46" y="46" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="SmallText" visibility="always">
+					<Translation x="-313.121" y="-771.181" z="1" />
+					<Text alignment="center" font="Typewriter" maxHeight="80" maxWidth="320" verticalAlignment="visualCenter" allowWordWrapping="true" canBreakWords="false" overflowBehaviour="fit" key="pregame_booster_popup_text">
+						<Color r="255" g="255" b="255" a="255" />
+						<GradientColor enabled="false" />
+						<Shadow enabled="false" />
+						<Size x="15" y="15" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="Topring">
+					<Translation x="-355.083" y="-953" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/popup_topring_sign.png" vertexColors="false" />
+					<SceneObject name="Rope">
+						<Translation x="47.100" y="-180.774" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png" vertexColors="false">
+							<Scale x="1.400" y="1.400" />
+							<Pivot anchor="center" />
+						</Sprite>
+						<Scale y="15" />
+					</SceneObject>
+					<SceneObject name="Knot2">
+						<Translation x="20.802" y="-13.002" z="0" />
+						<Sprite filename="shared/diorama/common/tex/knot.png" vertexColors="false">
+							<Scale x="1.600" y="1.600" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="ParticleHelper3">
+				<Translation x="122.833" y="-100" z="0" />
+			</SceneObject>
+			<SceneObject name="ParticleHelper2" visibility="inherit">
+				<Translation x="-2.723" y="4" z="0" />
+			</SceneObject>
+			<SceneObject name="ParticleHelper1">
+				<Translation x="-128.673" y="4" z="0" />
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize width="1024" height="768" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Width percentage="100" />
+				<OriginalSize width="684" height="1024" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

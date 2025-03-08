@@ -1,0 +1,23 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="1" space="Local" timeToEmit="60" name="LiquidCorrodaBubblesPFX">
+    <Dampening max="1" min="1"/>
+    <Emitter emissionRate="0.050" spread="0" angle="0">
+        <SpawnArea width="54" depth="0" height="54"/>
+    </Emitter>
+    <EndColor b="202" r="198" g="255" a="150"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="1000" min="1000"/>
+    <Size>
+        <Max x="16" y="16"/>
+        <Min x="8" y="8"/>
+    </Size>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/small_glowy_circle.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.350" min="0.200"/>
+    <Velocity max="150" min="50"/>
+    <SizeChange>
+        <Min x="32" y="32"/>
+        <Max x="32" y="32"/>
+    </SizeChange>
+</ParticleEffect>

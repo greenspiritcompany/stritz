@@ -1,0 +1,96 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+
+		<Material name="FishMaterial">
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+			<Shader program="NormalMap"/>
+			<Light enabled="true" shininess="40">
+				<Ambient r="170" g="170" b="170" a="255"/>
+				<Diffuse r="115" g="115" b="115" a="255"/>
+				<Specular r="130" g="130" b="130" a="255"/>
+			</Light>
+		</Material>
+
+        <Material name="BlackFishMaterial" parentMaterial="FishMaterial">
+            <Textures>
+                <Texture filename="shared/game/common/tex/candy/fish_black_c.png"/>
+                <Texture filename="shared/game/common/tex/candy/fish_black_n.png"/>
+            </Textures>
+        </Material>
+
+		<Material name="BlueFishMaterial" parentMaterial="FishMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_blue_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_blue_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="CyanFishMaterial" parentMaterial="FishMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_cyan_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_cyan_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="GreenFishMaterial" parentMaterial="FishMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_green_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_green_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="OrangeFishMaterial" parentMaterial="FishMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_orange_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_orange_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="PurpleFishMaterial" parentMaterial="FishMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_purple_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_purple_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="RedFishMaterial" parentMaterial="FishMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_red_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_red_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="YellowFishMaterial" parentMaterial="FishMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_yellow_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_yellow_n.png"/>
+			</Textures>
+		</Material>
+
+        <Material name="PinkFishMaterial" parentMaterial="FishMaterial">
+            <Textures>
+                <Texture filename="shared/game/common/tex/candy/fish_pink_c.png"/>
+                <Texture filename="shared/game/common/tex/candy/fish_pink_n.png"/>
+            </Textures>
+        </Material>
+
+        <Material name="LightGreenFishMaterial" parentMaterial="FishMaterial">
+            <Textures>
+                <Texture filename="shared/game/common/tex/candy/fish_light_green_c.png"/>
+                <Texture filename="shared/game/common/tex/candy/fish_light_green_n.png"/>
+            </Textures>
+        </Material>
+
+        <Material name="Jam1OnFishMaterial" parentMaterial="FishMaterial">
+            <Textures>
+                <Texture filename="shared/game/common/tex/candy/fish_jam_1_c.png"/>
+                <Texture filename="shared/game/common/tex/candy/fish_jam_1_n.png"/>
+            </Textures>
+        </Material>
+
+	</Materials>
+</Scene>

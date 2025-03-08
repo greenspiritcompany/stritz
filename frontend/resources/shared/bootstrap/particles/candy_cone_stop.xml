@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="1" space="Local" timeToEmit="0.030" name="CandyConeStopPFX">
+    <Dampening max="1" min="1"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="0" angle="90">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="80" y="712"/>
+        <Min x="80" y="712"/>
+    </Size>
+    <SizeChange>
+        <Max x="-500" y="-2000"/>
+        <Min x="-500" y="-2000"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/square_glow.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.200" min="0.200"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

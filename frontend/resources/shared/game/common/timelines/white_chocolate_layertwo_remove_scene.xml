@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/white_chocolate_layertwo_remove_material.xml"/>
+
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="White_Chocolate_Layertwo_Break" visibility="always" layerFlags="512">
+			<Model filename="shared/game/common/models/white_chocolate/white_chocolate_crush.ffm">
+				<Animations>
+					<Animation name="Break_Animation" speed="1.0"
+							   filename="shared/game/common/models/white_chocolate/white_chocolate_crush_anim.ffa"
+							   play="true" loopCount="0"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material parentMaterial="WhiteChocolateLayerTwoRemoveMaterial"/>
+			</Materials>
+			<Scale x="0.20" y="-0.20" z="0.20"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,653 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+		<Material name="Episode20Material">
+			<Cull enabled="false" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama07/episode20/tex/episode20_material.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="Episode20MaterialAlpha" parentMaterial="Episode20Material">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+    
+		<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+		<Material name="Episode20PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat"/>
+			</Textures>
+		</Material>
+		<Material name="Episode20PathMaterialAlpha" parentMaterial="Episode20PathMaterial">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+    
+		<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+		<Material name="Episode20BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama07/episode20/tex/episode20_material.png" wrap="repeat"/>
+			</Textures>
+		</Material>
+		<Material name="Episode20BackdropMaterialAlpha" parentMaterial="Episode20BackdropMaterial">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+	</Materials>
+
+    <!--
+        EPISODE SCENE OBJECTS
+    -->
+    <SceneObject name="Episode" layerFlags="2">
+        <SceneObject name="DioramaModel">
+
+            <!--
+                BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+        FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+      -->
+
+
+            <Translation x="0"/>
+
+            <SceneObject name="Episode20_Backdrop">
+                <!--<SceneObject name="Episode20_Diorama_Sky">-->
+                    <!--<Model filename="shared/diorama/diorama07/episode19/models/episode19_diorama_sky.ffm"/>-->
+                    <!--<Materials>-->
+                        <!--<Material parentMaterial="Episode20BackdropMaterial"/>-->
+                    <!--</Materials>-->
+                    <!--<Translation x="0.0" y="0.0"/>-->
+                    <!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+                <!--</SceneObject>-->
+
+                <!--
+                EPISODE GROUND GEOMETRY ETC.
+                -->
+                <SceneObject name="Episode20_Ground">
+                    <Model filename="shared/diorama/diorama07/episode20/models/episode20_ground.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode20Material"/>
+                    </Materials>
+                    <Translation x="0.0" y="0.0"/>
+                    <Scale x="1.0" y="1.0" z="1.0"/>
+                </SceneObject>
+            </SceneObject>
+
+            <!--
+            PATH (DON'T CHANGE NAME)
+            -->
+            <SceneObject name="E20Path">
+                <Model filename="shared/diorama/diorama07/episode20/models/path/episode20_path.ffm">
+                    <Bound minZ="-900"/>
+                </Model>
+                <Materials>
+                    <Material parentMaterial="Episode19PathMaterialAlpha"/>
+                </Materials>
+                <Translation x="0" y="0" z="0"/>
+                <Scale x="1" y="1" z="1"/>
+            </SceneObject>
+
+            <!--ADD PATH SHADOW - ADD YOUR -->
+
+               <SceneObject name="E20PathShadow">
+                    <Model filename="shared/diorama/diorama07/episode20/models/path/path_shadow.ffm">
+                        <Bound minZ="-1000"/>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+
+
+
+                <SceneObject name="E20EndSign">
+                    <Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Under_Construction_Icon"/>
+                    </Materials>
+                    <Translation x="758" y="84" z="40"/>
+                    <Rotation x="-35.000" y="0.000" z="0.000"/>
+                    <Scale x="1.000" y="1.000" z="1.000"/>
+                </SceneObject>
+              <!-- DIORAMA ASSETS -->
+			
+      <!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+			-->
+            <SceneObject name="episode20_rug">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/rug.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode20Material"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_rug_shadow">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/rug_shadow.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_genie_shadow">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/genie_shadow.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-30.473" y="144.636" z="-136.695"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_wall">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_wall.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode20Material"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_wall_windows">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_wall_windows.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_machine_room_background">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_machine_room_background.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode20Material"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_machine_room_background_wires">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_machine_room_background_wires.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_machine_room_background_gear_1">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_machine_room_background_gears.ffm">
+                        <Animations>
+                            <Animation
+                                    filename="shared/diorama/diorama07/episode20/models/non_interactable/background_gears.ffa"
+                                    name="Idle" play="true" speed="0.2" loopCount="-1" direction="forward"/>
+                        </Animations>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-398.2" y="160.1" z="-347.4"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_machine_room_background_gear_2">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_machine_room_background_gears.ffm">
+                    <Animations>
+                        <Animation
+                                filename="shared/diorama/diorama07/episode20/models/non_interactable/background_gears.ffa"
+                                name="Idle" play="true" speed="0.4" loopCount="-1" direction="backwards"/>
+                    </Animations>
+                </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-318.732" y="179.53" z="-347.4"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="0.45" y="0.45" z="0.45"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_machine_room_background_gear_3">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_machine_room_background_gears.ffm">
+                        <Animations>
+                            <Animation
+                                    filename="shared/diorama/diorama07/episode20/models/non_interactable/background_gears.ffa"
+                                    name="Idle" play="true" speed="0.2" loopCount="-1" direction="backwards"/>
+                        </Animations>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="249.077" y="177.886" z="-332.608"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="0.753" y="0.753" z="0.753"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_machine_room_background_gear_4">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_machine_room_background_gears.ffm">
+                        <Animations>
+                            <Animation
+                                    filename="shared/diorama/diorama07/episode20/models/non_interactable/background_gears.ffa"
+                                    name="Idle" play="true" speed="0.16" loopCount="-1" direction="forward"/>
+                        </Animations>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="343.163" y="227.952" z="-332.608"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+
+            <SceneObject name="episode20_rug_highlight">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/rug_highlight.ffm"/>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_ground_light">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/ground_light.ffm">
+                        <Bound minZ="-900"/>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_building">
+            <SceneObject name="episode20_Non_Interactable_01">
+                <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_building.ffm"/>
+                <Materials>
+                    <Material parentMaterial="Episode20MaterialAlpha"/>
+                </Materials>
+                <Translation x="0" y="0" z="0"/>
+                <Rotation x="0" y="0" z="0"/>
+                <Scale x="1" y="1" z="1"/>
+            </SceneObject>
+        </SceneObject>
+
+            <SceneObject name="episode20_ground_shadow">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_ground_shadow.ffm">
+                    <Bound minZ="-1100"/>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+            <SceneObject name="episode20_ground_shadow_right">
+                <SceneObject name="episode20_Non_Interactable_01">
+                    <Model filename="shared/diorama/diorama07/episode20/models/non_interactable/episode20_ground_shadow_right.ffm">
+                        <Bound minZ="-800"/>
+                    </Model>
+                    <Materials>
+                        <Material parentMaterial="Episode20MaterialAlpha"/>
+                    </Materials>
+                    <Translation x="-1" y="1" z="0"/>
+                    <Rotation x="0" y="0" z="0"/>
+                    <Scale x="1" y="1" z="1"/>
+                </SceneObject>
+            </SceneObject>
+
+      
+      <!--
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+      <SceneObject name="episode20_Interactable_Group">
+        
+        <!--
+          INTERACTABLE 01
+        -->
+        <SceneObject name="episode20_left_pipe">
+          <Interactable upEffect="diorama_house"/>
+            <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+          <Model filename="shared/diorama/diorama07/episode20/models/interactable/episode20_left_pipe.ffm"/>
+          <Animations>
+            <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                   loopCount="0" speed="1.3"/>
+            <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                   loopCount="0" speed="1.3"/>
+            <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                   loopCount="0" speed="1.3"/>
+            <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                   loopCount="0" speed="1.3"/>
+          </Animations>
+          <Materials>
+            <Material parentMaterial="Episode20MaterialAlpha"/>
+          </Materials>
+          <Translation x="-518.206" y="30.661" z="-189.822"/>
+          <Rotation x="-15" y="0" z="0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </SceneObject>
+
+
+        
+        <!--
+					INTERACTABLE 02
+				-->
+        <SceneObject name="episode20_right_pipe">
+          <Interactable upEffect="diorama_house"/>
+            <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+          <Model filename="shared/diorama/diorama07/episode20/models/interactable/episode20_right_pipe.ffm"/>
+          <Animations>
+            <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                   loopCount="0" speed="1.3"/>
+            <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                   loopCount="0" speed="1.3"/>
+            <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                   loopCount="0" speed="1.3"/>
+            <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                   loopCount="0" speed="1.3"/>
+          </Animations>
+          <Materials>
+            <Material parentMaterial="Episode20MaterialAlpha"/>
+          </Materials>
+          <Translation x="520.266" y="29.162" z="-201.305"/>
+          <Rotation x="0" y="0" z="0"/>
+          <Scale x="0.912" y="0.912" z="0.912"/>
+        </SceneObject>
+      </SceneObject>
+
+            <SceneObject name="episode20_pedestal_yellow">
+            <Interactable upEffect="diorama_lollipop"/>
+            <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+            <Model filename="shared/diorama/diorama07/episode20/models/interactable/episode20_pedestal_yellow.ffm"/>
+            <Animations>
+                <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                           loopCount="0" speed="1.3"/>
+                <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                           loopCount="0" speed="1.3"/>
+                <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                           loopCount="0" speed="1.3"/>
+                <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                           loopCount="0" speed="1.3"/>
+            </Animations>
+            <Materials>
+                <Material parentMaterial="Episode20MaterialAlpha"/>
+            </Materials>
+            <Translation x="-271.701" y="0" z="-163.016"/>
+            <Rotation x="-9.0" y="0" z="0"/>
+            <Scale x="1.0" y="1.0" z="1.0"/>
+        </SceneObject>
+
+
+            <SceneObject name="episode20_pedestal_blue">
+                <Interactable upEffect="diorama_lollipop"/>
+                <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+                <Model filename="shared/diorama/diorama07/episode20/models/interactable/episode20_pedestal_blue.ffm"/>
+                <Animations>
+                    <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                               loopCount="0" speed="1.3"/>
+                    <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                               loopCount="0" speed="1.3"/>
+                    <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                               loopCount="0" speed="1.3"/>
+                    <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                               loopCount="0" speed="1.3"/>
+                </Animations>
+                <Materials>
+                    <Material parentMaterial="Episode20MaterialAlpha"/>
+                </Materials>
+                <Translation x="-376.766" y="9.177" z="-109.624"/>
+                <Rotation x="-15.0" y="0" z="0"/>
+                <Scale x="1.0" y="1.0" z="1.0"/>
+            </SceneObject>
+
+            <SceneObject name="episode20_clock_in_cloud_01">
+                <Interactable upEffect="diorama_lollipop"/>
+                <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+                <Model filename="shared/diorama/diorama07/episode19/models/interactable/episode19_clock_cloud_01.ffm">
+                <Animations>
+                    <Animation
+                            filename="shared/diorama/diorama07/episode19/models/interactable/episode19_clock_cloud_01.ffa"
+                            name="Idle" play="true" speed="1.0" loopCount="-1"/>
+                </Animations>
+            </Model>
+            <Animations>
+                    <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                               loopCount="0" speed="1.3"/>
+                    <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                               loopCount="0" speed="1.3"/>
+                    <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                               loopCount="0" speed="1.3"/>
+                    <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                               loopCount="0" speed="1.3"/>
+                </Animations>
+                <Materials>
+                    <Material parentMaterial="Episode19MaterialAlpha"/>
+                </Materials>
+                <Translation x="270.919" y="-39.076" z="-95"/>
+                <Rotation x="-20" y="0" z="0"/>
+                <Scale x="0.82" y="0.82" z="0.82"/>
+            </SceneObject>
+
+
+            <SceneObject name="episode20_curtain_double">
+                <Interactable upEffect="diorama_tree"/>
+                <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+                <Model filename="shared/diorama/diorama07/episode20/models/interactable/episode20_curtain_double.ffm"/>
+                <Animations>
+                    <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                               loopCount="0" speed="1.3"/>
+                    <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                               loopCount="0" speed="1.3"/>
+                    <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                               loopCount="0" speed="1.3"/>
+                    <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                               loopCount="0" speed="1.3"/>
+                </Animations>
+                <Materials>
+                    <Material parentMaterial="Episode20MaterialAlpha"/>
+                </Materials>
+                <Translation x="-92.562" y="415.226" z="-326.037"/>
+                <Rotation x="-4.325" y="0.173" z="2.285"/>
+                <Scale x="1.0" y="1.0" z="1.0"/>
+            </SceneObject>
+
+
+                     <SceneObject name="episode20_curtain_2">
+                         <Interactable upEffect="diorama_tree"/>
+                         <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+                         <Model filename="shared/diorama/diorama07/episode20/models/interactable/episode20_curtain.ffm"/>
+                         <Animations>
+                             <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                                        loopCount="0" speed="1.3"/>
+                             <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                                        loopCount="0" speed="1.3"/>
+                             <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                                        loopCount="0" speed="1.3"/>
+                             <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                                        loopCount="0" speed="1.3"/>
+                         </Animations>
+                         <Materials>
+                             <Material parentMaterial="Episode20MaterialAlpha"/>
+                         </Materials>
+                         <Translation x="119.944" y="415.978" z="-326.531"/>
+                         <Rotation x="-4.383" y="-2.333" z="2.547"/>
+                         <Scale x="1.0" y="1.0" z="1.0"/>
+                     </SceneObject>
+
+                     <SceneObject name="episode20_curtain_3">
+                         <Interactable upEffect="diorama_tree"/>
+                         <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+                         <Model filename="shared/diorama/diorama07/episode20/models/interactable/episode20_curtain.ffm"/>
+                         <Animations>
+                             <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                                        loopCount="0" speed="1.3"/>
+                             <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                                        loopCount="0" speed="1.3"/>
+                             <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                                        loopCount="0" speed="1.3"/>
+                             <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                                        loopCount="0" speed="1.3"/>
+                         </Animations>
+                         <Materials>
+                             <Material parentMaterial="Episode20MaterialAlpha"/>
+                         </Materials>
+                         <Translation x="456.032" y="415.978" z="-326.531"/>
+                         <Rotation x="-4.383" y="-2.333" z="2.547"/>
+                         <Scale x="1.0" y="1.0" z="1.0"/>
+                     </SceneObject>
+
+                     <SceneObject name="episode20_factory_manager">
+                         <Interactable upEffect="diorama_house"/>
+                         <BoundingBox minX="-80" maxX="80" minY="0" maxY="290"/>
+                         <Model filename="shared/diorama/diorama07/episode20/models/interactable/episode20_factory_manager.ffm"/>
+                         <Animations>
+                             <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                                        loopCount="0" speed="1.3"/>
+                             <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                                        loopCount="0" speed="1.3"/>
+                             <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                                        loopCount="0" speed="1.3"/>
+                             <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                                        loopCount="0" speed="1.3"/>
+                         </Animations>
+                         <Materials>
+                             <Material parentMaterial="Episode20MaterialAlpha"/>
+                         </Materials>
+                         <Translation x="43.797" y="-13.157" z="-155"/>
+                         <Rotation x="-7.5" y="-0" z="0"/>
+                         <Scale x="1.0" y="1.0" z="1.0"/>
+                     </SceneObject>
+
+
+                     <!--
+                         EPISODE CHARACTER (DON'T CHANGE NAME)
+                     -->
+			<SceneObject name="Episode20Character">
+				<Translation x="-94.436" y="10" z="-70"/>
+				<SceneObject name="CharacterEp20">
+					<Rotation x="-15" y="0.000" z="0.000"/>
+					<Scale x="1.0" y="1.0" z="1.0"/>
+					<Model filename="shared/diorama/diorama07/episode20/models/character/episode20_character.ffm">
+						<Animations>
+							<Animation
+									filename="shared/diorama/diorama07/episode20/models/character/episode20_character_idle.ffa"
+									name="Idle" play="true" speed="1.0" loopCount="-1"/>
+							<Animation
+									filename="shared/diorama/diorama07/episode20/models/character/episode20_character_talk.ffa"
+									name="Talk" play="false" speed="1.0" loopCount="-1"/>
+						</Animations>
+					</Model>
+					<Materials>
+						<Material parentMaterial="Episode20MaterialAlpha"/>
+					</Materials>
+				</SceneObject>
+			</SceneObject>
+      
+			<!--
+				SPEECHBUBBLE
+			-->
+			<SceneObject name="SpeechBubbleEp20">
+				<Animations>
+					<Animation name="SpeechBubbleAppear" animationData="SpeechBubbleAppear" loopCount="0"/>
+					<Animation name="SpeechBubbleDisappear" animationData="SpeechBubbleDisappear"
+							   loopCount="0"/>
+				</Animations>
+				<SpeechBubble>
+					<Speech key="episode20.intro"/>
+					<Speech key="episode20.outro"/>
+				</SpeechBubble>
+				<Translation x="-100.0" y="125.0" z="-136.171"/>
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml"/>
+			</SceneObject>
+      
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<SceneObject name="Particles">
+				<Effects>
+					<Effect name="Wisps" effectData="Wisps" play="true"/>
+				</Effects>
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effects>
+					<Effect name="Wisps" effectData="Wisps" play="true"/>
+				</Effects>
+				<Translation z="-200"/>
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effects>
+					<Effect name="Wisps" effectData="Wisps" play="true"/>
+				</Effects>
+				<Translation z="-400"/>
+			</SceneObject>
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<SceneObject name="UnlockLevel272CameraTarget">
+				<Translation x="-290" y="19" z="-20"/>
+			</SceneObject>
+			<SceneObject name="UnlockLevel285CameraTarget">
+				<Translation x="-290" y="19" z="-20"/>
+			</SceneObject>
+      
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Import filename="shared/diorama/diorama07/episode20/scenes/episode20_levelpins.xml"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

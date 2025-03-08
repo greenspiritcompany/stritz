@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="20" timeToEmit="60" name="Eve_BigInfiniteSparksPFX_particle">
+<Dampening max="0.900" min="0.900" />
+<Emitter emissionRate="0.010" spread="422" angle="0">
+	<SpawnArea width="123.020" depth="121" height="120.650" />
+</Emitter>
+<EndColor r="178" g="255" b="246" a="0" />
+<Rotation max="360" min="-100" />
+<RotationSpeed max="200" min="200" />
+<Size>
+	<Max x="20" y="10" />
+	<Min x="10" y="10" />
+</Size>
+<SizeChange>
+	<Max x="0" y="0" />
+	<Min x="0" y="0" />
+</SizeChange>
+<StartColor r="178" g="255" b="246" a="200" />
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/glowing_star.png" blend="Add" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive max="0.400" min="3" />
+<Velocity max="406.480" min="406.480" />
+<CentrifugalForce max="1" min="0" />
+</ParticleEffect>

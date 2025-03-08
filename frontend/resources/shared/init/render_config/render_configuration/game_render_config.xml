@@ -1,0 +1,57 @@
+<RenderConfiguration name="game_render_config">
+	<RenderPass name="game_background" enabled="true">
+		<ColorMask r="true" g="true" b="true" a="true"/>
+		<Clear enabled="true">
+            <ColorBuffer r="0" g="0" b="0" a="255"/>
+			<DepthBuffer value="1.0"/>
+			<StencilBuffer value="0" mask="255"/>
+        </Clear>
+		<Layer name="game_background"/>
+		<Camera name="OrthoCamera"/>
+		<Viewport minX="0.0" minY="0.0" maxX="100.0" maxY="100.0"/>
+	</RenderPass>
+	<RenderPass name="stencil_writing" enabled="true">
+		<ColorMask r="false" g="false" b="false" a="false" />
+    	<Stencil enabled="true">
+            <Function function="Always" referenceValue="1" mask="255" />
+            <Operation stencilFailOperation="Keep" depthPassFailOperation="Keep" depthPassOperation="Replace" />
+        </Stencil>
+		<Layer name="stencil_write"/>
+		<Camera name="OrthoCamera"/>
+		<Viewport minX="0.0" minY="0.0" maxX="100.0" maxY="100.0"/>
+	</RenderPass>
+	<RenderPass name="scissor_rect" enabled="true">
+		<ColorMask r="true" g="true" b="true" a="true"/>
+		<Clip enabled="true"/>
+		<Layer name="game_grid_clipped"/>
+		<Camera name="OrthoCamera"/>
+		<Viewport minX="0.0" minY="0.0" maxX="100.0" maxY="100.0"/>
+	</RenderPass>
+	<RenderPass name="effects_between_grid_and_candy" enabled="true">
+		<Clip enabled="true"/>
+		<Layer name="behind_candies"/>
+		<Camera name="OrthoCamera"/>
+		<Viewport minX="0.0" minY="0.0" maxX="100.0" maxY="100.0"/>
+	</RenderPass>
+	<RenderPass name="stencil_reading" enabled="true">
+		<Clip enabled="true"/>
+		<ColorMask r="true" g="true" b="true" a="true"/>
+    	<Stencil enabled="true">
+            <Function function="Equal" referenceValue="1" mask="255" />
+            <Operation stencilFailOperation="Keep" depthPassFailOperation="Keep" depthPassOperation="Keep" />
+        </Stencil>
+		<Layer name="clipped_candies_stencil"/>
+		<Camera name="OrthoCamera"/>
+		<Viewport minX="0.0" minY="0.0" maxX="100.0" maxY="100.0"/>
+	</RenderPass>
+	<RenderPass name="game_effect_layer" enabled="true">
+		<Layer name="infront_of_candies"/>
+		<Camera name="OrthoCamera"/>
+		<Viewport minX="0.0" minY="0.0" maxX="100.0" maxY="100.0"/>
+	</RenderPass>
+	<RenderPass name="top_layer" enabled="true">
+		<Layer name="gui"/>
+		<Camera name="OrthoGuiCamera"/>
+		<Viewport minX="0.0" minY="0.0" maxX="100.0" maxY="100.0"/>
+	</RenderPass>
+</RenderConfiguration>

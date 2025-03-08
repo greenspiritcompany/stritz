@@ -1,0 +1,31 @@
+<!-- Generated from script \render01\project\CandyCrush2\scripts\generate_victory_files\make_victory_files.py -->
+<Scene>
+	<Material name="SodaMat">
+		<Texture filename="shared/game/common/tex/lemonade/lemonade.png"/>
+		<Blend enabled="true"/>
+		<Color r="255" g="255" b="255" a="230"/>
+	</Material>
+	<Material name="KimmyExtraHappyMat">
+		<Texture filename="shared/game/common/tex/hud/kimmy_extrahappy_uv.png"/>
+		<Blend enabled="true"/>
+		<Cull enabled="false" face="back"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+
+	<SceneObject layerFlags="256" name="Scene" visibility="always">
+		<SceneObject name="SodaLayout">
+			<SceneObject name="TransformationHelper">
+				<Translation x="0" y="0" z="400"/>
+				<Scale y="-1"/>
+				<SceneObject name="Soda">
+					<Translation x="0" y="0" z="0"/>
+					<Model filename="shared/game/common/models/soda_swipe/soda.ffm">
+						<Animation filename="shared/game/common/models/soda_swipe/empty.ffa" interpolateFrame="true" loopCount="0" name="EmptyOut" play="false" speed="1.4"/>
+						<Animation filename="shared/game/common/models/soda_swipe/fill.ffa" interpolateFrame="true" loopCount="0" name="FillUp" play="false" speed="1"/>
+					</Model>
+					<Material parentMaterial="SodaMat"/>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

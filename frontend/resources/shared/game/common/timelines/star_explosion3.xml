@@ -1,0 +1,10 @@
+<!DOCTYPE Timelines SYSTEM "../../../tools/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.5">
+
+		<Triggers>
+			<EffectTrigger time="0.0" name="StarMeterExplosion"/>
+			<EffectTrigger time="0.0" name="HudStarSfx3"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

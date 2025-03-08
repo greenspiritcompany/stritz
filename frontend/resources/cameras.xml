@@ -1,0 +1,6 @@
+<Cameras>
+	<Camera filename="shared/init/render_config/cameras/ortho_camera.xml"/>
+	<Camera filename="shared/init/render_config/cameras/ortho_gui_camera.xml"/>
+	
+	<Camera filename="shared/init/render_config/cameras/perspective_camera.xml"/>
+</Cameras>

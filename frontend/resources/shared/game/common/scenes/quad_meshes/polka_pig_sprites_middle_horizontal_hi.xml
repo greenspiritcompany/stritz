@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="polka_middle">
+		<Translation x="0" y="0" z="0" />
+		<Rotation x="0" y="0" z="-90" />
+		<Scale x="-1" />
+		<SceneObject name="white_base">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/polka_middle_piece.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="stripes">
+			<SceneObject name="stripe1">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/polka_stripe_2.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="-1" y="-20" z="1" />
+			</SceneObject>
+			<SceneObject name="stripe2">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/polka_stripe_2.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="-1" y="16" z="1" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

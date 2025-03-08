@@ -1,0 +1,38 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../../tools/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="3.3">
+
+        <Animate target="ThoughtBubble" time="0.0">
+            <Hide/>
+        </Animate>
+
+        <Animate target="Active" time="0.0">
+            <Show time="0.0"/>
+            <Hide time="2.3"/>
+        </Animate>
+
+		<Animate target="Inactive" time="0.0">
+            <Hide/>
+            <Show time="2.3"/>
+        </Animate>
+
+        <Animate target="ChewEffectTarget">
+            <Hide/>
+            <Show time="0.7"/>
+            <Hide time="1.8"/>
+        </Animate>
+
+
+
+		<Triggers>
+            <AnimationTrigger time="0.0" animationName="chew" targetName="Active" crossFade="0.1"/>
+            <AnimationTrigger time="2.3" animationName="become_inactive" targetName="Inactive"/>
+            <AnimationTrigger time="3.0" animationName="idle" targetName="Inactive" crossFade="0.1"/>
+            <CustomTrigger name="executeDone" time="3.0"/>
+            <EffectTrigger name="SmokepuffEFQ" time="2.3" targetName="Inactive" targetBoneIndex="3">
+                <Offset z="100"/>
+            </EffectTrigger>
+            <EffectTrigger name="SprinkleshellChewSFX" time="0.6"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

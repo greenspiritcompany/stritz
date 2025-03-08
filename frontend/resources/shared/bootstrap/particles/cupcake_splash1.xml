@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="5" space="Local" timeToEmit="0.100" name="CupCakeSplash1PFX">
+    <Dampening max="0.900" min="0.900"/>
+    <DirectionalForce x="0" y="500"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="30" depth="0" height="30"/>
+    </Emitter>
+    <EndColor b="232" r="229" g="214" a="255"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="160" min="-360"/>
+    <Size>
+        <Max x="44.790" y="44.790"/>
+        <Min x="15.920" y="15.920"/>
+    </Size>
+    <SizeChange>
+        <Max x="-33.560" y="-33.560"/>
+        <Min x="-33.560" y="-33.560"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/paper_particle.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.440" min="0.440"/>
+    <Velocity max="200" min="200"/>
+</ParticleEffect>

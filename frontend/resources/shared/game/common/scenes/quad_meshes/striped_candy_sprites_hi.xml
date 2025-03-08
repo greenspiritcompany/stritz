@@ -1,0 +1,179 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/candy/candy_material.xml"/>
+
+	<!-- Vertical Striped Candies -->
+	<!-- ************************************************************************* -->
+	<SceneObject name="BlueStripedVerticalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/blue_striped_v_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/blue_striped_v_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="RedStripedVerticalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/red_striped_v_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/red_striped_v_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="YellowStripedVerticalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/yellow_striped_v_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/yellow_striped_v_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="OrangeStripedVerticalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/orange_striped_v_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/orange_striped_v_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="GreenStripedVerticalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/green_striped_v_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/green_striped_v_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="CyanStripedVerticalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/cyan_striped_v_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/cyan_striped_v_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="PurpleStripedVerticalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/purple_striped_v_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/purple_striped_v_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+	<!-- ************************************************************************* -->
+
+	<!-- Horizontal Striped Candies -->
+	<!-- ************************************************************************* -->
+	<SceneObject name="BlueStripedHorizontalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/blue_striped_h_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/blue_striped_h_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="RedStripedHorizontalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/red_striped_h_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/red_striped_h_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="YellowStripedHorizontalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/yellow_striped_h_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/yellow_striped_h_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="OrangeStripedHorizontalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/orange_striped_h_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/orange_striped_h_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="GreenStripedHorizontalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/green_striped_h_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/green_striped_h_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="CyanStripedHorizontalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/cyan_striped_h_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/cyan_striped_h_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="PurpleStripedHorizontalCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/purple_striped_h_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/purple_striped_h_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+	<!-- ************************************************************************* -->
+</Scene>

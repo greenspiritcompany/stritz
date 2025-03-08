@@ -1,0 +1,7 @@
+<Camera name="PerspectiveCamera">
+    <Projection type="perspective" fov="45.0" near="201.0" far="2900.0" />
+    <Transformation>
+    	<Translation x="0.0" y="0.0" z="0.0"/>
+    	<Rotation x="0.0" y="0.0" z="0.0"/>
+    </Transformation>
+</Camera>

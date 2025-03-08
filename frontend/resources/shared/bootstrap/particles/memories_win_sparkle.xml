@@ -1,0 +1,29 @@
+<ParticleEffect maxParticles="32" space="Local" timeToEmit="0.150" name="memories_win_sparklePFX">
+<Dampening max="0.900" min="0.800" />
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0.005" spread="360" angle="0">
+	<SpawnArea width="200" depth="0" height="200" />
+</Emitter>
+<Rotation max="-90" min="-90" />
+<RotationSpeed max="-1000" min="-1000" />
+<Size>
+	<Max x="30" y="30" />
+	<Min x="30" y="30" />
+</Size>
+<SizeChange>
+	<Max x="-50" y="-50" />
+	<Min x="-50" y="-50" />
+</SizeChange>
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/small_star.png" blend="Add" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="0.800" min="0.600" />
+<Velocity max="900" min="400" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="255" g="255" b="255" a="255" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="102" g="102" b="102" a="100" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Material name="SpriteMaterial">
+		<Blend enabled="true" />
+		<Depth enabled="false" writeMask="false" />
+	</Material>
+	<SceneObject name="Scene" visibility="always" layerFlags="256">
+		<!--<Translation x="0" y="0" z="6" />-->
+		<SceneObject name="PirateReminder">
+			<Spine filename="shared/quests/models/pirate.json" skin="hanging">
+				<Animation name="hanging" spineAnimation="hanging" play="true" />
+			</Spine>
+			<Material>
+				<Texture filename="shared/diorama/common/tex/gui_elements/quest_gui_2.png" />
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+			</Material>
+			<Scale x="0.300" y="0.300" z="0.300" />
+			<Translation x="50" y="250" />
+			<SceneObject name="EffectBox" editorEntityId="4">
+				<!--<Sprite filename="shared/diorama/common/tex/gui_elements/free_switch_selection.png" vertexColors="false" />-->
+				<Translation x="1425" y="-190" z="500" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,256 @@
+<!DOCTYPE Scene SYSTEM '../../../../dtd/scene.dtd'>
+<Scene>
+    <SceneObject name="ChocolateNemesis" __visibility="3">
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_chocolate.png">
+            <Flip v="false" u="false"/>
+            <Pivot y="-400" anchor="center"/>
+        </Sprite>
+        <Translation y="-404.50" z="0" x="-3"/>
+        <Animation loopCount="0" startDelay="0" name="OnAppear" speed="1" play="false" animationData="SwingInFromLeft" startTime="0" layer="1"/>
+        <Animation loopCount="0" startDelay="0" name="OnDisappear" speed="1" play="false" animationData="SwingOutToLeft" startTime="0" layer="1"/>
+        <SceneObject name="FloatingNutsRope" __visibility="3">
+            <Translation y="277.50" z="0" x="-5.80"/>
+            <Scale y="30"/>
+            <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png">
+                <Flip v="true" u="true"/>
+                <Pivot anchor="bottom"/>
+            </Sprite>
+        </SceneObject>
+        <SceneObject name="text" __visibility="3">
+            <Translation y="480" z="1" x="-6"/>
+            <Text key="gamemode.chocolatenemesis.name.short" verticalAlignment="visualCenter" canBreakWords="false" alignment="center" maxHeight="30" font="Banana" overflowBehaviour="fit" maxWidth="150">
+                <Color b="10" a="255" g="70" r="129"/>
+                <Size y="20" x="20"/>
+                <Shadow enabled="true">
+                    <Offset y="2" x="0"/>
+                    <Color b="255" a="255" g="255" r="255"/>
+                </Shadow>
+            </Text>
+        </SceneObject>
+    </SceneObject>
+    <SceneObject name="FloatingNutsMode" __visibility="3">
+        <Translation y="-404.50" z="0" x="-2.50"/>
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_soda.png">
+            <Flip v="false" u="false"/>
+            <Pivot y="-400" anchor="center"/>
+        </Sprite>
+        <Animation loopCount="0" startDelay="0" name="OnDisappear" speed="1" play="false" animationData="SwingOutToLeft" startTime="0" layer="1"/>
+        <Animation loopCount="0" startDelay="0" name="OnAppear" speed="1" play="false" animationData="SwingInFromLeft" startTime="0" layer="1"/>
+        <SceneObject name="FloatingNutsRope" __visibility="3">
+            <Translation y="277.50" z="0" x="-5.80"/>
+            <Scale y="30"/>
+            <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png">
+                <Flip v="true" u="true"/>
+                <Pivot anchor="bottom"/>
+            </Sprite>
+        </SceneObject>
+        <SceneObject name="entity" __visibility="3">
+            <Translation y="478" z="1" x="-5"/>
+            <Text key="gamemode.floating_bear.name.short" verticalAlignment="visualCenter" canBreakWords="false" alignment="center" maxHeight="30" font="Banana" overflowBehaviour="fit" maxWidth="150">
+                <Color b="207" a="255" g="8" r="231"/>
+                <Size y="20" x="20"/>
+                <Shadow enabled="true">
+                    <Offset x="0"/>
+                    <Color b="255" a="255" g="255" r="255"/>
+                </Shadow>
+            </Text>
+        </SceneObject>
+    </SceneObject>
+    <SceneObject name="GiantBears" __visibility="0">
+        <Translation y="-404" z="0" x="-2.50"/>
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_glaze.png">
+            <Flip v="false" u="false"/>
+            <Pivot y="-400" anchor="center"/>
+        </Sprite>
+        <Animation loopCount="0" startDelay="0" name="OnDisappear" speed="1" play="false" animationData="SwingOutToLeft" startTime="0" layer="1"/>
+        <Animation loopCount="0" startDelay="0" name="OnAppear" speed="1" play="false" animationData="SwingInFromLeft" startTime="0" layer="1"/>
+        <SceneObject name="GiantBearsRope" __visibility="0">
+            <Translation y="277.50" z="0" x="-5.80"/>
+            <Scale y="30"/>
+            <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png">
+                <Flip v="true" u="true"/>
+                <Pivot anchor="bottom"/>
+            </Sprite>
+        </SceneObject>
+        <SceneObject name="entity" __visibility="0">
+            <Translation y="478" z="1" x="-2"/>
+            <Text key="gamemode.giantbears.name.short" verticalAlignment="visualCenter" canBreakWords="false" alignment="center" maxHeight="30" font="Banana" overflowBehaviour="fit" maxWidth="150">
+                <Color b="134" a="255" g="82" r="1"/>
+                <Size y="20" x="20"/>
+                <Shadow enabled="true">
+                    <Color b="255" a="255" g="255" r="255"/>
+                    <Offset x="0"/>
+                </Shadow>
+            </Text>
+        </SceneObject>
+    </SceneObject>
+    <SceneObject name="SodaToTheBrim" __visibility="3">
+        <Translation y="-404.50" z="0" x="-2"/>
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_soda.png">
+            <Flip v="false" u="false"/>
+            <Pivot y="-400" anchor="center"/>
+        </Sprite>
+        <Animation loopCount="0" startDelay="0" name="OnDisappear" speed="1" play="false" animationData="SwingOutToLeft" startTime="0" layer="1"/>
+        <Animation loopCount="0" startDelay="0" name="OnAppear" speed="1" play="false" animationData="SwingInFromLeft" startTime="0" layer="1"/>
+        <SceneObject name="FloatingNutsRope" __visibility="3">
+            <Translation y="277.50" z="0" x="-5.80"/>
+            <Scale y="30"/>
+            <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png">
+                <Flip v="true" u="true"/>
+                <Pivot anchor="bottom"/>
+            </Sprite>
+        </SceneObject>
+        <SceneObject __visibility="3">
+            <Translation y="478" z="1" x="-4.50"/>
+            <Text key="gamemode.soda_to_the_brim.name.short" verticalAlignment="visualCenter" canBreakWords="false" alignment="center" maxHeight="30" font="Banana" overflowBehaviour="fit" maxWidth="150">
+                <Color b="207" a="255" g="8" r="231"/>
+                <Size y="20" x="20"/>
+                <Shadow enabled="true">
+                    <Color b="255" a="255" g="255" r="255"/>
+                    <Offset x="0"/>
+                </Shadow>
+            </Text>
+        </SceneObject>
+    </SceneObject>
+    <SceneObject name="Honey" __visibility="3">
+        <Translation y="-404.50" z="0" x="-2"/>
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_honey.png">
+            <Flip v="false"/>
+            <Pivot y="-400" anchor="center"/>
+        </Sprite>
+        <Animation loopCount="0" startDelay="0" name="OnDisappear" speed="1" play="false" animationData="SwingOutToLeft" startTime="0" layer="1"/>
+        <Animation loopCount="0" startDelay="0" name="OnAppear" speed="1" play="false" animationData="SwingInFromLeft" startTime="0" layer="1"/>
+        <SceneObject name="FloatingNutsRope" __visibility="3">
+            <Translation y="277.50" z="0" x="-5.80"/>
+            <Scale y="30" x="-1"/>
+            <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png">
+                <Flip v="true" u="false"/>
+                <Pivot anchor="bottom"/>
+            </Sprite>
+        </SceneObject>
+        <SceneObject __visibility="3">
+            <Translation y="477" z="1" x="-4"/>
+            <Text key="gamemode.honey.name.short" verticalAlignment="visualCenter" canBreakWords="false" alignment="center" maxHeight="30" font="Banana" overflowBehaviour="fit" maxWidth="150">
+                <Color b="6" a="255" g="125" r="235"/>
+                <Size y="20" x="20"/>
+                <Shadow enabled="true">
+                    <Color b="255" a="255" g="255" r="255"/>
+                    <Offset x="0"/>
+                </Shadow>
+            </Text>
+        </SceneObject>
+    </SceneObject>
+    <SceneObject name="BubbleGum" __visibility="3">
+        <Translation y="-404.50" z="0" x="-2"/>
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_bubblegum.png">
+            <Flip v="false"/>
+            <Pivot y="-400" anchor="center"/>
+        </Sprite>
+        <Animation loopCount="0" startDelay="0" name="OnDisappear" speed="1" play="false" animationData="SwingOutToLeft" startTime="0" layer="1"/>
+        <Animation loopCount="0" startDelay="0" name="OnAppear" speed="1" play="false" animationData="SwingInFromLeft" startTime="0" layer="1"/>
+        <SceneObject name="FloatingNutsRope" __visibility="3">
+            <Translation y="277.50" z="0" x="-5.80"/>
+            <Scale y="30" x="-1"/>
+            <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png">
+                <Flip v="true" u="false"/>
+                <Pivot anchor="bottom"/>
+            </Sprite>
+        </SceneObject>
+        <SceneObject __visibility="3">
+            <Translation y="478.50" z="1" x="-5"/>
+            <Text key="gamemode.bubblegum.name.short" verticalAlignment="visualCenter" canBreakWords="false" alignment="center" maxHeight="30" font="Banana" overflowBehaviour="fit" maxWidth="150">
+                <Color b="165" a="255" g="79" r="237"/>
+                <Size y="20" x="20"/>
+                <Shadow enabled="true">
+                    <Color b="255" a="255" g="255" r="255"/>
+                    <Offset x="0"/>
+                </Shadow>
+            </Text>
+        </SceneObject>
+    </SceneObject>
+    <SceneObject name="PaintBattleMode" __visibility="3">
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_jam.png">
+            <Flip v="false"/>
+            <Pivot y="-400" anchor="center"/>
+        </Sprite>
+        <Translation y="-404.50" z="0" x="-2"/>
+        <Animation loopCount="0" startDelay="0" name="OnDisappear" speed="1" play="false" animationData="SwingOutToLeft" startTime="0" layer="1"/>
+        <Animation loopCount="0" startDelay="0" name="OnAppear" speed="1" play="false" animationData="SwingInFromLeft" startTime="0" layer="1"/>
+        <SceneObject name="FloatingNutsRope" __visibility="3">
+            <Translation y="277.50" z="0" x="-5.80"/>
+            <Scale y="30"/>
+            <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png">
+                <Flip v="false" u="true"/>
+                <Pivot anchor="bottom"/>
+            </Sprite>
+        </SceneObject>
+        <SceneObject name="entity" __visibility="3">
+            <Translation y="478" z="1" x="-3.50"/>
+            <Text key="gamemode.paint_battle.name.short" verticalAlignment="visualCenter" canBreakWords="false" alignment="center" maxHeight="30" font="Banana" overflowBehaviour="fit" maxWidth="150">
+                <Color b="183" a="255" g="17" r="169"/>
+                <Size y="20" x="20"/>
+                <Shadow enabled="true">
+                    <Color b="255" a="255" g="255" r="255"/>
+                    <Offset x="0"/>
+                </Shadow>
+            </Text>
+        </SceneObject>
+    </SceneObject>
+    <SceneObject name="SodaFizz" __visibility="3">
+        <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_fizz.png">
+            <Flip v="false"/>
+            <Pivot y="-400" anchor="center"/>
+        </Sprite>
+        <Translation y="-404.50" z="0" x="-2"/>
+        <Animation loopCount="0" startDelay="0" name="OnDisappear" speed="1" play="false" animationData="SwingOutToLeft" startTime="0" layer="1"/>
+        <Animation loopCount="0" startDelay="0" name="OnAppear" speed="1" play="false" animationData="SwingInFromLeft" startTime="0" layer="1"/>
+        <SceneObject name="FloatingNutsRope" __visibility="3">
+            <Translation y="277.50" z="0" x="-5.80"/>
+            <Scale y="30"/>
+            <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png">
+                <Flip v="false" u="true"/>
+                <Pivot anchor="bottom"/>
+            </Sprite>
+        </SceneObject>
+        <SceneObject name="entity" __visibility="3">
+            <Translation y="478" z="1" x="-3.50"/>
+            <Text key="gamemode.sodafizz.name.short" verticalAlignment="visualCenter" canBreakWords="false" alignment="center" maxHeight="30" font="Banana" overflowBehaviour="fit" maxWidth="150">
+                <Color b="149" a="255" g="0" r="144"/>
+                <Size y="20" x="20"/>
+                <Shadow enabled="true">
+                    <Color b="255" a="255" g="255" r="255"/>
+                    <Offset x="0"/>
+                </Shadow>
+            </Text>
+        </SceneObject>
+    </SceneObject>
+
+    <SceneObject name="SodaFizz" __visibility="3">
+        <Sprite filename="shared/diorama/common/tex/gui_elements/gamemode_fizz.png" vertexColors="false">
+            <Flip v="false"/>
+            <Pivot anchor="center" y="-400"/>
+        </Sprite>
+        <Translation x="-2" y="-404.50" z="0"/>
+        <Animation layer="1" name="OnDisappear" speed="1" startDelay="0" play="false" loopCount="0" animationData="SwingOutToLeft" startTime="0"/>
+        <Animation layer="1" name="OnAppear" speed="1" startDelay="0" play="false" loopCount="0" animationData="SwingInFromLeft" startTime="0"/>
+        <SceneObject name="FloatingNutsRope" __visibility="3">
+            <Translation x="-5.80" y="277.50" z="0"/>
+            <Scale y="30"/>
+            <Sprite filename="shared/diorama/common/tex/gui_elements/gamemode_rope.png" vertexColors="false">
+                <Flip v="false" u="true"/>
+                <Pivot anchor="bottom"/>
+            </Sprite>
+        </SceneObject>
+        <SceneObject name="entity" __visibility="3">
+            <Translation x="-3.50" y="478" z="1"/>
+            <Text maxWidth="150" verticalAlignment="visualCenter" font="Banana" canBreakWords="false" maxHeight="30" alignment="center" overflowBehaviour="fit" key="gamemode.sodafizz.name.short">
+                <Color b="183" g="17" a="255" r="169"/>
+                <Size x="20" y="20"/>
+                <Shadow enabled="true">
+                    <Color b="255" g="255" a="255" r="255"/>
+                    <Offset x="0"/>
+                </Shadow>
+            </Text>
+        </SceneObject>
+    </SceneObject>
+</Scene>

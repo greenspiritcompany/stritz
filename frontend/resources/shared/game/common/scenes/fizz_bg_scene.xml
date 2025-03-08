@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="Scene" visibility="always" layerFlags="256">
+		<Translation z="0" x="0" y="0" />
+		<Scale y="1" />
+		<SceneObject name="FizzySoda" visibility="inherit">
+			<Translation z="0" x="320" y="-25.21" />
+			<Scale x="1" />
+			<SceneObject>
+				<Scale x="0.50" y="0.50" />
+				<Translation z="0" x="-257" y="-3" />
+				<SceneObject name="Soda" visibility="always" layerFlags="-1">
+					<Translation z="0" x="514.50" y="813" />
+					<Scale x="2.02" y="-2" />
+					<Model filename="shared/game/common/models/soda_swipe/soda.ffm" skinNormals="true">
+						<Animation name="Fizzle" speed="1" play="true" filename="shared/game/common/models/soda_swipe/fizzle.ffa" />
+					</Model>
+					<Material name="a">
+						<Texture filename="shared/game/common/tex/candy/lemonade_v2.png" />
+						<Blend enabled="true" />
+						<Color b="255" a="230" g="255" r="255" />
+						<Cull enabled="false" face="back" />
+						<Depth enabled="true" writeMask="false" />
+					</Material>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject>
+				<Scale x="0.50" y="0.50" />
+				<Translation z="0" x="260" y="-3" />
+				<SceneObject>
+					<Translation z="0" x="-827.63" y="299.24" />
+					<Scale z="1" x="1" y="1" />
+					<Effect name="fx1" effectData="FizzBgEffect1EFQ" play="true" />
+				</SceneObject>
+				<SceneObject>
+					<Translation z="0" x="-865.32" y="-1.24" />
+					<Effect name="fx2" effectData="FizzBgEffect2EFQ" play="true" />
+					<Scale x="1" y="1" />
+				</SceneObject>
+				<SceneObject>
+					<Translation z="0" x="-314.69" y="283.78" />
+					<Scale z="1" x="1" y="1" />
+					<Effect name="fx1" effectData="FizzBgEffect1EFQ" play="true" />
+				</SceneObject>
+				<SceneObject>
+					<Translation z="0" x="-352.38" y="-16.70" />
+					<Effect name="fx2" effectData="FizzBgEffect2EFQ" play="true" />
+					<Scale x="1" y="1" />
+				</SceneObject>
+				<SceneObject>
+					<Translation z="0" x="260.77" y="299.91" />
+					<Scale z="1" x="1" y="1" />
+					<Effect name="fx1" effectData="FizzBgEffect1EFQ" play="true" />
+				</SceneObject>
+				<SceneObject>
+					<Translation z="0" x="223.08" y="-0.56" />
+					<Effect name="fx2" effectData="FizzBgEffect2EFQ" play="true" />
+					<Scale x="1" y="1" />
+				</SceneObject>
+				<SceneObject>
+					<Translation z="0" x="-1292.84" y="320.08" />
+					<Scale z="1" x="1" y="1" />
+					<Effect name="fx1" effectData="FizzBgEffect1EFQ" play="true" />
+				</SceneObject>
+				<SceneObject>
+					<Translation z="0" x="-1330.53" y="19.60" />
+					<Effect name="fx2" effectData="FizzBgEffect2EFQ" play="true" />
+					<Scale x="1" y="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject>
+				<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_big_002.png" />
+				<Translation z="0" x="-530.22" y="1937.50" />
+				<Scale z="1" x="14.24" y="-15.54" />
+				<Material name="bg_big_material">
+					<Color b="255" a="230" g="255" r="255" />
+				</Material>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="50" />
+				</Translation>
+				<Size>
+					<OriginalSize width="1024" height="1024" />
+					<Width percentage="100" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+	</SceneObject>
+</Scene>

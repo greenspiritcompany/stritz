@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="InterstitialModal">
+		<SceneObject __visibility="0" layerFlags="8" name="Landscape">
+			<Translation x="510" y="360" z="8" />
+			<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+			<Import filename="shared/diorama/common/scenes/modal_background_large_landscape.xml" />
+			<SceneObject name="TitleText">
+				<Translation x="0" y="-288.987" z="0" />
+				<Text alignment="center" canBreakWords="false" font="Banana" key="interstitial_invite_title" maxHeight="75" maxWidth="470" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Size x="26" y="26" />
+				</Text>
+			</SceneObject>
+			<SceneObject class="Button" name="SelectAllContainer">
+				<Translation x="-407.622" y="228.446" z="5" />
+				<SceneObject name="SelectAll">
+					<Translation x="-10" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/check_all_box.png" vertexColors="false" />
+				</SceneObject>
+				<SceneObject name="SelectAllCheck">
+					<Translation x="-24" y="-22" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/check_blue.png" vertexColors="false" />
+				</SceneObject>
+				<SceneObject name="SelectAllText">
+					<Translation x="68" y="24" />
+					<Text alignment="left" canBreakWords="false" font="Typewriter" key="popup_invite_menu_button_select_all" maxHeight="80" maxWidth="130" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="116" g="58" b="11" a="255" />
+						<Size x="18" y="18" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="SendButtonLandscape">
+				<Translation x="0" y="250" z="0" />
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject __visibility="0" name="BluePanel">
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+						<Insets bottom="59" left="54" right="54" top="48" />
+						<Pivot anchor="center" />
+						<Size height="108" width="400" />
+					</Panel>
+				</SceneObject>
+				<SceneObject __visibility="3" name="OrangePanel" visibility="never">
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_orange.png" vertexColors="false">
+						<Insets bottom="59" left="54" right="54" top="48" />
+						<Pivot anchor="center" />
+						<Size height="108" width="400" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="SendButtonText">
+					<Translation y="-8" />
+					<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="50" maxWidth="240" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="28" y="28" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="SendButtonIcon">
+					<Translation x="-210" y="-40" z="5" />
+					<SceneObject __visibility="0" name="Invite">
+						<Translation x="12.092" y="-2.285" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/letter_icon2.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject __visibility="0" name="Lives">
+						<Translation x="12.230" y="8.913" />
+						<Rotation z="-11" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/heart_btn.png" vertexColors="false">
+							<Pivot anchor="topLeft" />
+						</Sprite>
+						<SceneObject name="LetterIcon">
+							<Translation x="18.360" y="16.505" z="0" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/heart_letter.png" vertexColors="false" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+			<LayoutConfiguration name="Default">
+				<Size>
+					<Width percentage="100" />
+					<Height percentage="95" />
+					<OriginalSize width="972" height="730" />
+				</Size>
+				<Translation>
+					<X percentage="50" />
+					<Y percentage="50" />
+				</Translation>
+			</LayoutConfiguration>
+			<SceneObject name="Group">
+				<Scale x="0.950" y="0.950" />
+				<SceneObject layerFlags="64" name="BackgroundMask">
+					<Translation y="20.409" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/friends_bg.png" vertexColors="false">
+						<Insets left="6" right="6" bottom="0" top="0" />
+						<Pivot anchor="center" />
+						<Size height="300" width="922" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="Background">
+					<Translation x="0" y="20.409" z="0" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/friends_bg.png" vertexColors="false">
+						<Insets left="6" right="6" bottom="0" top="0" />
+						<Pivot anchor="center" />
+						<Size height="300" width="922" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="FriendGrid">
+					<Translation x="-300" y="-80" />
+				</SceneObject>
+				<SceneObject name="Tabs">
+					<SceneObject class="Button" name="Tab0" visibility="never">
+						<Translation x="-160" y="-220" z="0" />
+						<SceneObject name="TabActive">
+							<SceneObject name="TabBackgroundActive">
+								<Panel filename="shared/diorama/common/tex/gui_elements/selector_tab_active.png" vertexColors="false">
+									<Insets left="30" right="30" bottom="0" top="0" />
+									<Pivot anchor="center" />
+									<Size height="0" width="300" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="TabText">
+								<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="45" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+									<Size x="20" y="20" />
+								</Text>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="TabInactive" visibility="never">
+							<SceneObject name="TabBackgroundInactive">
+								<Panel filename="shared/diorama/common/tex/gui_elements/selector_tab_inactive.png" vertexColors="false">
+									<Insets left="30" right="30" bottom="0" top="0" />
+									<Pivot anchor="center" />
+									<Size height="0" width="300" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="TabText">
+								<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="45" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+									<Color r="171" g="49" b="138" />
+									<Size x="20" y="20" />
+								</Text>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject class="Button" name="Tab1" visibility="never">
+						<Translation x="150" y="-220" z="0" />
+						<SceneObject name="TabActive">
+							<SceneObject name="TabBackgroundActive">
+								<Panel filename="shared/diorama/common/tex/gui_elements/selector_tab_active.png" vertexColors="false">
+									<Insets left="30" right="30" bottom="0" top="0" />
+									<Pivot anchor="center" />
+									<Size height="0" width="300" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="TabText">
+								<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="45" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+									<Size x="20" y="20" />
+								</Text>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="TabInactive" visibility="never">
+							<SceneObject name="TabBackgroundInactive">
+								<Panel filename="shared/diorama/common/tex/gui_elements/selector_tab_inactive.png" vertexColors="false">
+									<Insets left="30" right="30" bottom="0" top="0" />
+									<Pivot anchor="center" />
+									<Size height="0" width="300" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="TabText">
+								<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="45" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+									<Color r="171" g="49" b="138" />
+									<Size x="20" y="20" />
+								</Text>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="Header">
+						<Translation x="0" y="-160.472" z="0" />
+						<Panel filename="shared/diorama/common/tex/gui_elements/friend_list_header.png" vertexColors="false">
+							<Insets left="25" right="25" top="25" bottom="0" />
+							<Pivot anchor="center" />
+							<Size height="0" width="922" />
+						</Panel>
+						<SceneObject __visibility="0" name="Input" visibility="never">
+							<Translation x="0" y="-3" z="0" />
+							<Panel filename="shared/diorama/common/tex/gui_elements/search_field.png" vertexColors="false">
+								<Insets left="15" right="15" bottom="0" top="0" />
+								<Pivot anchor="center" />
+								<Size height="0" width="850" />
+							</Panel>
+						</SceneObject>
+						<SceneObject name="SearchText">
+							<Text alignment="center" canBreakWords="false" font="Typewriter" maxHeight="45" maxWidth="470" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Color r="201" g="199" b="199" />
+								<Size x="18" y="18" />
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Footer">
+					<Translation x="-1.141" y="178.476" z="0" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/friend_list_footer.png" vertexColors="false">
+						<Insets left="30" right="30" bottom="0" top="0" />
+						<Pivot anchor="center" />
+						<Size height="0" width="922" />
+					</Panel>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject __visibility="0" layerFlags="8" name="Portrait">
+			<Translation x="380" y="500" z="8" />
+			<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+			<Import filename="shared/diorama/common/scenes/modal_background_large_portrait.xml" />
+			<SceneObject name="TitleText">
+				<Translation y="-424.237" z="0" />
+				<Text alignment="center" canBreakWords="false" font="Banana" key="interstitial_invite_title" maxHeight="45" maxWidth="470" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color r="255" g="255" b="255" a="255" />
+					<Size x="24" y="24" />
+				</Text>
+			</SceneObject>
+			<SceneObject class="Button" name="SelectAllContainer">
+				<Translation x="-117.484" y="281.173" z="5" />
+				<SceneObject name="SelectAll">
+					<Translation x="-10" y="-10.373" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/check_all_box.png" vertexColors="false" />
+				</SceneObject>
+				<SceneObject name="SelectAllCheck">
+					<Translation x="-24" y="-32.373" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/check_blue.png" vertexColors="false" />
+				</SceneObject>
+				<SceneObject name="SelectAllText">
+					<Translation x="68" y="13.627" z="0" />
+					<Text alignment="left" canBreakWords="false" font="Typewriter" key="popup_invite_menu_button_select_all" maxHeight="80" maxWidth="240" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="116" g="58" b="11" a="255" />
+						<Size x="18" y="18" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="SendButtonPortrait">
+				<Translation y="385" />
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject __visibility="0" name="BluePanel">
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+						<Insets bottom="59" left="54" right="54" top="48" />
+						<Pivot anchor="center" />
+						<Size height="108" width="400" />
+					</Panel>
+				</SceneObject>
+				<SceneObject __visibility="3" name="OrangePanel" visibility="never">
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_orange.png" vertexColors="false">
+						<Insets bottom="59" left="54" right="54" top="48" />
+						<Pivot anchor="center" />
+						<Size height="108" width="400" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="SendButtonText">
+					<Translation y="-8" />
+					<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="50" maxWidth="280" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="28" y="28" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="SendButtonIcon">
+					<Translation x="-210" y="-40" z="5" />
+					<SceneObject __visibility="0" name="Invite">
+						<Translation x="6.066" y="-2.285" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/letter_icon2.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject __visibility="0" name="Lives">
+						<Translation x="3.047" y="9.549" />
+						<Rotation z="-11" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/heart_btn.png" vertexColors="false" />
+						<SceneObject name="LetterIcon">
+							<Translation x="18.286" y="16.595" z="0" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/heart_letter.png" vertexColors="false" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+			<LayoutConfiguration name="Default">
+				<Size>
+					<Width percentage="100" />
+					<Height percentage="95" />
+					<OriginalSize width="730" height="972" />
+				</Size>
+				<Translation>
+					<X percentage="50" />
+					<Y percentage="50" />
+				</Translation>
+			</LayoutConfiguration>
+			<SceneObject name="Group">
+				<Scale x="0.950" y="0.950" />
+				<SceneObject layerFlags="64" name="BackgroundMask">
+					<Translation y="-22.814" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/friends_bg.png" vertexColors="false">
+						<Insets left="6" right="6" bottom="0" top="0" />
+						<Pivot anchor="center" />
+						<Size height="500" width="640" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="Background">
+					<Translation x="0" y="-22.814" z="0" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/friends_bg.png" vertexColors="false">
+						<Insets left="6" right="6" bottom="0" top="0" />
+						<Pivot anchor="center" />
+						<Size height="500" width="640" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="FriendGrid">
+					<Translation x="-150" y="-220" />
+				</SceneObject>
+				<SceneObject name="Tabs">
+					<SceneObject class="Button" name="Tab0" visibility="never">
+						<Translation x="-145" y="-363" z="0" />
+						<SceneObject name="TabActive">
+							<SceneObject name="TabBackgroundActive">
+								<Panel filename="shared/diorama/common/tex/gui_elements/selector_tab_active.png" vertexColors="false">
+									<Insets left="30" right="30" bottom="0" top="0" />
+									<Pivot anchor="center" />
+									<Size height="0" width="300" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="TabText">
+								<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="45" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+									<Size x="20" y="20" />
+								</Text>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="TabInactive" visibility="never">
+							<SceneObject name="TabBackgroundInactive">
+								<Panel filename="shared/diorama/common/tex/gui_elements/selector_tab_inactive.png" vertexColors="false">
+									<Insets left="30" right="30" bottom="0" top="0" />
+									<Pivot anchor="center" />
+									<Size height="0" width="300" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="TabText">
+								<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="45" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+									<Color r="171" g="49" b="138" />
+									<Size x="20" y="20" />
+								</Text>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject class="Button" name="Tab1" visibility="never">
+						<Translation x="145" y="-363" z="0" />
+						<SceneObject name="TabActive">
+							<SceneObject name="TabBackgroundActive">
+								<Panel filename="shared/diorama/common/tex/gui_elements/selector_tab_active.png" vertexColors="false">
+									<Insets left="30" right="30" bottom="0" top="0" />
+									<Pivot anchor="center" />
+									<Size height="0" width="300" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="TabText">
+								<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="45" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+									<Size x="20" y="20" />
+								</Text>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="TabInactive" visibility="never">
+							<SceneObject name="TabBackgroundInactive">
+								<Panel filename="shared/diorama/common/tex/gui_elements/selector_tab_inactive.png" vertexColors="false">
+									<Insets left="30" right="30" bottom="0" top="0" />
+									<Pivot anchor="center" />
+									<Size height="0" width="300" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="TabText">
+								<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="45" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+									<Color r="171" g="49" b="138" />
+									<Size x="20" y="20" />
+								</Text>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="Header">
+						<Translation x="0" y="-304.550" z="0" />
+						<Panel filename="shared/diorama/common/tex/gui_elements/friend_list_header.png" vertexColors="false">
+							<Insets left="25" right="25" top="25" bottom="0" />
+							<Pivot anchor="center" />
+							<Size height="0" width="640" />
+						</Panel>
+						<SceneObject __visibility="0" name="Input" visibility="never">
+							<Panel filename="shared/diorama/common/tex/gui_elements/search_field.png" vertexColors="false">
+								<Insets left="7" right="7" bottom="0" top="0" />
+								<Pivot anchor="center" />
+								<Size height="0" width="600" />
+							</Panel>
+						</SceneObject>
+						<SceneObject name="SearchText">
+							<Text alignment="center" canBreakWords="false" font="Typewriter" maxHeight="45" maxWidth="470" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Color r="201" g="199" b="199" />
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Footer">
+					<Translation x="-1.141" y="236.107" z="0" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/friend_list_footer.png" vertexColors="false">
+						<Insets left="30" right="30" bottom="0" top="0" />
+						<Pivot anchor="center" />
+						<Size height="0" width="640" />
+					</Panel>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

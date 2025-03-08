@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="ChocolateRemoveMaterial">
+			<Blend enabled="false"/>
+			<Cull enabled="true" face="back"/>
+			<Shader program="TextureColor"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/chocolate/choko_cracked_tex.png"/>
+			</Textures>
+		</Material>
+	</Materials>
+</Scene>

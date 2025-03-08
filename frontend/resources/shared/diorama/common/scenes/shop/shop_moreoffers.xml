@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject editorEntityId="139" name="MoreOffersPortrait" class="Button">
+		<Panel filename="shared/diorama/common/tex/gui_elements/shop_moreoffers_box.png" vertexColors="false">
+			<Insets bottom="40" left="35" right="35" top="30" />
+			<Size height="90" width="735" />
+			<Pivot anchor="top" />
+		</Panel>
+		<Translation z="1" />
+		<SceneObject name="MoreOffersTxt">
+			<Text alignment="center" verticalAlignment="visualCenter" font="Banana" allowWordWrapping="false" canBreakWords="false" overflowBehaviour="fit" maxWidth="320" maxHeight="90" key="stritz.product.more.offers">
+				<TextString>stritz.product.more.offers</TextString>
+				<Color r="0" g="101" b="145" a="255" />
+				<Size x="28" y="28" />
+				<Shadow enabled="true">
+					<Color r="255" g="255" b="255" a="255" />
+					<Offset x="0" />
+				</Shadow>
+			</Text>
+			<Translation x="-1" y="39.932" z="0" />
+		</SceneObject>
+		<SceneObject class="Button" name="ExpandButton">
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<Scale x="0.783" y="0.814" z="0.700" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="221.492" y="44.015" z="0" />
+			<SceneObject>
+				<Scale x="1.326" y="1.326" z="1.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/shop_plus_symbol.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="0.500" y="-3.805" z="0" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject editorEntityId="139" name="MoreOffersLandscape" class="Button">
+		<Panel filename="shared/diorama/common/tex/gui_elements/shop_moreoffers_box.png" vertexColors="false">
+			<Insets bottom="40" left="35" right="35" top="30" />
+			<Size height="300" width="240" />
+		</Panel>
+		<Translation z="1" />
+		<SceneObject class="Button" name="ExpandButton">
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<Scale x="0.783" y="0.814" z="0.700" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="122.727" y="233.899" z="0" />
+			<SceneObject>
+				<Scale x="1.326" y="1.326" z="1.500" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/shop_plus_symbol.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="0.500" y="-3.805" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="MoreOffersTxt2">
+			<Text alignment="center" allowWordWrapping="true" canBreakWords="false" font="Banana" maxHeight="140" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter" key="stritz.product.more.offers">
+				<Color a="255" b="145" g="101" r="0" />
+				<Shadow enabled="true">
+					<Color a="255" b="255" g="255" r="255" />
+					<Offset x="0" />
+				</Shadow>
+				<Size x="28" y="28" />
+			</Text>
+			<Translation x="117.373" y="103.840" z="0" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

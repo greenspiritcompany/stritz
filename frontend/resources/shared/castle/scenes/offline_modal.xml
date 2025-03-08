@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<SceneObject __visibility="0" name="OfflineModal">
+		<SceneObject __visibility="0" name="Portrait">
+			<Translation z="400" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation startDelay="0.05" animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject __visibility="0" name="Title">
+				<Translation x="-7" y="-323" />
+				<Text font="Banana" verticalAlignment="visualCenter" alignment="center" key="kotc.offline.title">
+					<Color g="62" r="165" b="128" a="255" />
+					<Shadow enabled="true">
+						<Color g="255" r="255" b="255" a="255" />
+						<Offset x="0" y="3" z="1" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject class="Button" __visibility="0" name="OkButton">
+				<Translation y="240" />
+				<Scale x="1.20" y="1.20" z="1.20" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets left="54" bottom="59" top="48" right="54" />
+					<Pivot anchor="center" />
+					<Size height="108" width="390" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject __visibility="0" name="OkText">
+					<Translation x="2.98" y="-7" />
+					<Text overflowBehaviour="fit" font="Banana" maxHeight="50" maxWidth="300" verticalAlignment="visualCenter" alignment="center" key="kotc.offline.button">
+						<Color g="255" r="255" b="255" a="225" />
+						<Shadow enabled="true">
+							<Color g="0" r="0" b="0" a="25" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="26" y="26" />
+						<TextString>Collect reward</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject __visibility="0" name="InfoText">
+				<Translation x="-245.51" y="83.45" z="2" />
+				<Text overflowBehaviour="fit" font="Typewriter" maxHeight="170" maxWidth="500" verticalAlignment="visualCenter" alignment="left" key="kotc.offline.description">
+					<Color g="102" r="131" b="51" a="255" />
+					<Outline enabled="true">
+						<Color g="0" r="0" b="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color g="255" r="255" b="255" a="255" />
+					</Shadow>
+					<Size x="18" y="18" />
+					<TextString>This is your reward!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject __visibility="0" name="Chest">
+				<Translation x="-75" y="-243" />
+				<Sprite filename="shared/castle/tex/reward_chest.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="BubblegumTrollWorried">
+				<Translation x="-207" y="-267" />
+				<Sprite filename="shared/castle/tex/worried_monster.png" vertexColors="false" />
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<SceneObject __visibility="0" name="Landscape">
+			<Translation x="-40" y="40" z="510" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation startDelay="0.05" animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject __visibility="0" name="Title">
+				<Translation x="-7" y="-323" />
+				<Text font="Banana" verticalAlignment="visualCenter" alignment="center" key="kotc.offline.title">
+					<Color g="62" r="165" b="128" a="255" />
+					<Shadow enabled="true">
+						<Color g="255" r="255" b="255" a="255" />
+						<Offset x="0" y="3" z="1" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject class="Button" __visibility="0" name="OkButton">
+				<Translation y="240" />
+				<Scale x="1.20" y="1.20" z="1.20" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets left="54" bottom="59" top="48" right="54" />
+					<Pivot anchor="center" />
+					<Size height="108" width="390" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject __visibility="0" name="OkText">
+					<Translation x="2.98" y="-7" />
+					<Text overflowBehaviour="fit" font="Banana" maxHeight="50" maxWidth="300" verticalAlignment="visualCenter" alignment="center" key="kotc.offline.button">
+						<Color g="255" r="255" b="255" a="225" />
+						<Shadow enabled="true">
+							<Color g="0" r="0" b="0" a="25" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="26" y="26" />
+						<TextString>Collect reward</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject __visibility="0" name="InfoText">
+				<Translation x="-245.51" y="83.45" z="2" />
+				<Text overflowBehaviour="fit" font="Typewriter" maxHeight="170" maxWidth="500" verticalAlignment="visualCenter" alignment="left" key="kotc.offline.description">
+					<Color g="102" r="131" b="51" a="255" />
+					<Outline enabled="true">
+						<Color g="0" r="0" b="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color g="255" r="255" b="255" a="255" />
+					</Shadow>
+					<Size x="18" y="18" />
+					<TextString>This is your reward!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject __visibility="0" name="Chest">
+				<Translation x="-75" y="-243" />
+				<Sprite filename="shared/castle/tex/reward_chest.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="BubblegumTrollWorried">
+				<Translation x="-207" y="-267" />
+				<Sprite filename="shared/castle/tex/worried_monster.png" vertexColors="false" />
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<OriginalSize height="1024" width="684" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

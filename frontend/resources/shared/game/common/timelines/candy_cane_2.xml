@@ -1,0 +1,12 @@
+<Timelines>
+<Timeline startTime="0" endTime="4">
+	<Animate target="second">
+		<Show time="0" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="0" animationName="stripe_middle_spine" targetName="stripe_second" />
+		<EffectTrigger name="candy_cane_stripe_added" time="0.0"/>
+    	<CustomTrigger time="0.5" name="TileComplete" />
+	</Triggers>
+</Timeline>
+</Timelines>

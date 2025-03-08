@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE ParticleEffect SYSTEM "../../dtd/particle_effect.dtd">
+<ParticleEffect space="Local" timeToEmit="0.1" maxParticles="15" name="Wrapped2ndExplode">
+	<Texture filename="shared/bootstrap/particles/tex/strong_light2.png" numFramesX="1" numFramesY="1" blend="Add"/>
+	<DirectionalForce x="0.0" y="0.0"/>
+
+	<Emitter emissionRate="0.0" angle="360" spread="360.0">
+		<SpawnArea width="2.0" height="2.0"/>
+	</Emitter>
+
+	<Velocity min="550.0" max="950.0"/>
+	<Size>
+		<Min x="-40.0" y="8.0"/>
+		<Max x="-40.0" y="8.0"/>
+	</Size>
+	<TimeToLive min="0.17" max="0.4"/>
+	<Dampening min="0.8" max="0.9"/>
+	<Rotation min="0" max="0"/>
+	<RotationSpeed min="0" max="50"/>
+	<SizeChange>
+		<Min x="100.0" y="100.0"/>
+		<Max x="500.0" y="500.0"/>
+	</SizeChange>
+	<StartColor r="255.0" g="255.0" b="255.0" a="255.0"/>
+	<EndColor r="255.0" g="255.0" b="255.0" a="0.0"/>
+	<TextureFrame startFrame="0" numTextureAnimationFrames="1" textureAnimationSpeed="10"/>
+</ParticleEffect>

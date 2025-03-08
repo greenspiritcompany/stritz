@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="memory_grp">
+		<Scale y="-1" />
+		<Material name="memory_base_empty">
+			<Texture filename="shared/features/memories/tex/memory_base_nine_empty.png" />
+			<Blend enabled="true" />
+			<Depth enabled="true" />
+		</Material>
+		<Material name="memory_base_empty_back">
+			<Texture filename="shared/features/memories/tex/memory_base_nine_empty.png" />
+		</Material>
+		<Material name="memory_full_kimmyyetimountain">
+			<Texture filename="shared/features/memories/tex/memory_kimmy_yeti_mountaintop.png" />
+			<Blend enabled="true" />
+			<Depth enabled="true" />
+		</Material>
+		<SceneObject name="piece_1">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/9_piece/memory_piece_01.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+			</Model>
+			<Material parentMaterial="memory_base_empty" />
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/9_piece/memory_piece_01.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmyyetimountain" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Translation x="-167" y="134" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_piece_01_back.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_base_empty_back" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="piece_6">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/9_piece/memory_piece_02.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" loopCount="0" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" />
+			</Model>
+			<Material parentMaterial="memory_base_empty" />
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/9_piece/memory_piece_02.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" loopCount="0" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmyyetimountain" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Translation x="-5" y="134" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Material parentMaterial="memory_base_empty_back" />
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_piece_02_back.ffm">
+					<Animation filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" name="memory_flip_animation" speed="2" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" name="memory_assemble_animation" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="piece_5">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/9_piece/memory_piece_03.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+			</Model>
+			<Material parentMaterial="memory_base_empty" />
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/9_piece/memory_piece_03.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmyyetimountain" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="156" y="134" z="0" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Material parentMaterial="memory_base_empty_back" />
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_piece_03_back.ffm">
+					<Animation filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" name="memory_flip_animation" speed="2" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" name="memory_assemble_animation" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="piece_7">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/9_piece/memory_piece_04.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+			</Model>
+			<Material parentMaterial="memory_base_empty" />
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/9_piece/memory_piece_04.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmyyetimountain" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="-166" y="3" z="0" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Material parentMaterial="memory_base_empty_back" />
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_piece_04_back.ffm">
+					<Animation filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" name="memory_flip_animation" speed="2" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" name="memory_assemble_animation" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="piece_9">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/9_piece/memory_piece_05.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+			</Model>
+			<Material parentMaterial="memory_base_empty" />
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/9_piece/memory_piece_05.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmyyetimountain" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="-1" y="3" z="0" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Material parentMaterial="memory_base_empty_back" />
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_piece_05_back.ffm">
+					<Animation filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" name="memory_flip_animation" speed="2" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" name="memory_assemble_animation" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="piece_2">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/9_piece/memory_piece_06.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+			</Model>
+			<Material parentMaterial="memory_base_empty" />
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/9_piece/memory_piece_06.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmyyetimountain" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="164" y="3" z="0" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Material parentMaterial="memory_base_empty_back" />
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_piece_06_back.ffm">
+					<Animation filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" name="memory_flip_animation" speed="2" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" name="memory_assemble_animation" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="piece_4">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/9_piece/memory_piece_07.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+			</Model>
+			<Material parentMaterial="memory_base_empty" />
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/9_piece/memory_piece_07.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmyyetimountain" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="-172" y="-133" z="0" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Material parentMaterial="memory_base_empty_back" />
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_piece_07_back.ffm">
+					<Animation filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" name="memory_flip_animation" speed="2" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" name="memory_assemble_animation" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="piece_8">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/9_piece/memory_piece_08.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+			</Model>
+			<Material parentMaterial="memory_base_empty" />
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/9_piece/memory_piece_08.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmyyetimountain" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="-16" y="-133" z="0" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Material parentMaterial="memory_base_empty_back" />
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_piece_08_back.ffm">
+					<Animation filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" name="memory_flip_animation" speed="2" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" name="memory_assemble_animation" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="piece_3">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/9_piece/memory_piece_09.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+			</Model>
+			<Material parentMaterial="memory_base_empty" />
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/9_piece/memory_piece_09.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmyyetimountain" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="138" y="-133" z="0" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Material parentMaterial="memory_base_empty_back" />
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_piece_09_back.ffm">
+					<Animation filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" name="memory_flip_animation" speed="2" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" name="memory_assemble_animation" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="curl_grp">
+			<Rotation x="0" y="0" z="0" />
+			<Scale y="1" z="1" />
+			<Translation x="0" y="0" z="0" />
+			<SceneObject name="curl_shadow">
+				<Material>
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Texture filename="shared/features/memories/tex/memory_curl_shadow_empty.png" />
+				</Material>
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_curlshadow_piece.ffm">
+					<Animation filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" name="memory_flip_animation" speed="2" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" name="memory_assemble_animation" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="curl">
+				<Material>
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Texture filename="shared/features/memories/tex/memory_curl_empty.png" />
+				</Material>
+				<Model filename="shared/features/memories/models/9_piece/memory_nine_curl_piece.ffm">
+					<Animation filename="shared/features/memories/models/9_piece/memory_flip_animation.ffa" loopCount="0" name="memory_flip_animation" speed="2" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_assemble_animation.ffa" loopCount="0" name="memory_assemble_animation" />
+					<Animation filename="shared/features/memories/models/9_piece/memory_ninepiece_curl_animation.ffa" name="curl_animation" play="true" speed="0.500" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="0" y="-1" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="shadow">
+			<Translation x="0" y="0" z="12" />
+			<Scale z="1" x="-1" y="-1" />
+			<Rotation x="0" y="0" z="180" />
+			<Model filename="shared/features/memories/models/9_piece/memory_shadow.ffm" />
+			<Material>
+				<Texture filename="shared/features/memories/tex/memory_shadow.png" />
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+			</Material>
+		</SceneObject>
+		<SceneObject visibility="never" name="flash_effect">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Scale x="6.960" y="-6.900" z="1" />
+			<Material>
+				<Texture filename="shared/features/memories/tex/memory_white_overlay.png" />
+				<Blend enabled="true" blendFuncDestinationFactor="One" />
+				<Depth enabled="true" />
+			</Material>
+			<Translation x="-229" y="195" z="5" />
+		</SceneObject>
+		<SceneObject name="EFQ_group">
+			<Scale y="-1" />
+		</SceneObject>
+		<SceneObject name="glance_effect">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Scale x="6.960" y="-6.900" z="1" />
+			<Material>
+				<Blend blendFuncDestinationFactor="One" blendFuncSourceFactor="One" enabled="true" />
+				<Depth enabled="true" />
+				<Shader program="TextureColorShiny" />
+				<Texture filename="shared/features/memories/tex/memory_white_overlay.png" />
+				<Uniform name="Settings">
+					<DefaultValue w="2" x="0.850" y="10" z="3" />
+				</Uniform>
+			</Material>
+			<Translation x="-229" y="195" z="5" />
+			<Rotation x="0" y="0" z="0" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

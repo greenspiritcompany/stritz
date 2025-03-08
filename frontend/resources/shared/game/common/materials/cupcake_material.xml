@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="CupcakeMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="false" writeMask="false"/>
+			<Cull enabled="false" face="back"/>
+			<!-- Set to false since the vertex winding seems messed up between FF and SL -->
+			<Shader program="TextureColor"/>
+		</Material>
+	</Materials>
+</Scene>

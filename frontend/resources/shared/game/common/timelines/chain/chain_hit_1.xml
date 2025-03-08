@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0.0" endTime="1.0">
+        <Animate target="BreakingChain">
+            <Show/>
+            <Hide time="0.67"/>
+            <Color time="0.50" a="255" r="255" g="255" b="255"/>
+            <Color time="0.67" a="0" r="255" g="255" b="255"/>
+        </Animate>
+        <Animate target="StringHit4" time="0.0">
+            <Hide/>
+        </Animate>
+        <Animate target="StringHit3" time="0.0">
+            <Hide/>
+        </Animate>
+        <Animate target="StringHit2" time="0.0">
+            <Hide/>
+        </Animate>
+        <Triggers>
+            <EffectTrigger name="ChainBreakEFQ" time="0.0" parentName="ParticleHelper"/>
+            <AnimationTrigger targetName="BreakingChain" animationName="Break" time="0.0"/>
+        </Triggers>
+    </Timeline>
+</Timelines>

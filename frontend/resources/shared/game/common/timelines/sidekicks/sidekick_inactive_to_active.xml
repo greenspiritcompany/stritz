@@ -1,0 +1,37 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../../tools/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="2.8">
+
+        <Animate target="ThoughtBubble" time="0.0">
+            <Hide/>
+        </Animate>
+
+        <Animate target="Active" time="0.0">
+            <Hide/>
+            <Show time="0.2"/>
+        </Animate>
+
+		<Animate target="Inactive" time="0.0">
+            <Show/>
+            <Hide time="0.2"/>
+        </Animate>
+
+        <TimeControls>
+            <TimeJump time="2.7" jumpToTime="2.5"/>
+        </TimeControls>
+
+        <Triggers>
+            <AnimationTrigger time="0.0" targetName="Active" animationName="become_active" crossFade="0.1"/>
+            <AnimationTrigger time="1.0" targetName="Active" animationName="idle" crossFade="0.3"/>
+            <EffectTrigger name="SprinkleshellChargedSFX" time="0.2"/>
+            <EffectTrigger name="SmokepuffEFQ" time="0.3" targetName="Active" targetBoneIndex="4">
+            <Offset z="100"/>
+            </EffectTrigger>
+
+            <CustomTrigger name="gotoActiveIdle" time="2.7"/>
+
+        </Triggers>
+
+
+	</Timeline>
+</Timelines>

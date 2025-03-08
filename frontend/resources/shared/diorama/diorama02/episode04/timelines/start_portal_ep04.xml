@@ -1,0 +1,13 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+
+		<Triggers>
+			<EffectTrigger name="PortalHintSparkle" parentName="PortalParticleRef_prev" time="0.01"/>
+		</Triggers>
+		<TimeControls>
+			<TimeJump time="2.0" jumpToTime="0.05"></TimeJump>
+		</TimeControls>
+
+	</Timeline>
+</Timelines>

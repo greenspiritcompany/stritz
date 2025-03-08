@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:cdacc6e4c5795023ecf2db198b5d723d:5083fae7938f01b08d9ae424289d9491:a868589932a6841ec88a78ba042ff7ff$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="episode62_material.png" width="2048" height="2048">
+    <sprite n="ep62_0000_mole.png" x="1483" y="603" w="44" h="47" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0001_mouth_shadow.png" x="1411" y="747" w="101" h="105" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0002_mouth.png" x="678" y="731" w="146" h="119" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0003_nose.png" x="678" y="854" w="118" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0004_eye_lashes.png" x="1128" y="726" w="142" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0005_crows_feet.png" x="1963" y="405" w="75" h="56" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0006_cheek.png" x="1843" y="820" w="189" h="77" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0007_iris.png" x="1539" y="548" w="42" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0008_eye_shadow.png" x="828" y="769" w="127" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0009_eyelid.png" x="519" y="890" w="103" h="63" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0010_blow_nose_shadow_left.png" x="1963" y="465" w="68" h="77" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0011_blow_nose_shadow_right.png" x="1483" y="654" w="30" h="89" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0012_blow_cheek_light.png" x="1843" y="684" w="112" h="132" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0013_suck_nose_shadow_right.png" x="1963" y="614" w="53" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0014_suck_cheekbone_left.png" x="1411" y="856" w="99" h="119" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0015_suck_cheekbone_right.png" x="959" y="769" w="125" h="122" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0016_eye_socket_shadow.png" x="1843" y="901" w="177" h="131" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0017_eyebrow_shadow.png" x="1483" y="548" w="52" h="51" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0018_eyebrow.png" x="1" y="866" w="215" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0019_nose_shadow.png" x="1483" y="458" w="90" h="86" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0020_eyebrow_light.png" x="1539" y="595" w="39" h="71" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0021_cheek_rosie.png" x="519" y="731" w="155" h="155" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0022_woodfloor.png" x="1" y="934" w="208" h="140" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0023_cookiesticks.png" x="293" y="579" w="222" h="390" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0025_rodder.png" x="1" y="453" w="288" h="409" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0026_mast.png" x="927" y="177" w="203" h="354" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0027_chest2.png" x="1135" y="1" w="446" h="453" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0028_chest1.png" x="1585" y="1" w="444" h="400" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0029_caramelandstar.png" x="1134" y="458" w="345" h="264" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0030_caramelandchoc.png" x="841" y="535" w="283" h="230" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0031_caramels.png" x="551" y="505" w="286" h="222" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0032_barrels.png" x="577" y="177" w="346" h="324" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0033_path_shadow.png" x="1963" y="546" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0034_gradients.png" x="828" y="816" w="120" h="330" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0035_sailBody.png" x="1585" y="405" w="374" h="275" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0036_rope.png" x="577" y="1" w="554" h="172" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_0037_topmast.png" x="1274" y="726" w="133" h="344" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_cloudbig.png" x="1" y="1" w="572" h="448" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_cloudmedium.png" x="1517" y="684" w="322" h="256" pX="0.5" pY="0.5"/>
+    <sprite n="ep62_cloudsmall.png" x="293" y="453" w="254" h="122" pX="0.5" pY="0.5"/>
+</TextureAtlas>

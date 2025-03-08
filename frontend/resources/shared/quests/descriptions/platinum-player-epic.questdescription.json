@@ -1,0 +1,69 @@
+{
+  "id": "platinum_player_epic",
+  "nameKey" : "quests.names.platinumplayer",
+  "difficulty" : 2,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "progressLevels",
+      "descriptionKey" : "quests.description.movingforward",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_checkmark.png",
+      "data": {
+         "levels": 15,
+         "scope": 0
+      }
+    },
+    {
+      "type": "collectStars",
+      "descriptionKey" : "quests.description.starcollector",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_star.png",
+      "data": {
+         "amount": 25
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12003,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12021,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

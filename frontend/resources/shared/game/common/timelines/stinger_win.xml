@@ -1,0 +1,9 @@
+<!DOCTYPE Timelines SYSTEM "../../../tools/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5">
+		<Triggers>
+			<EffectTrigger time="0.0" name="stinger_win_intro"/>
+			<CustomTrigger name="Done" time="4.7"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

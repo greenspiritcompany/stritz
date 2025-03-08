@@ -1,0 +1,34 @@
+<ParticleEffect maxParticles="6" space="Local" timeToEmit="0.020" name="CandyCaneDustPFX">
+<CentrifugalForce max="8" min="6" />
+<Dampening max="0.800" min="0.800" />
+<DirectionalForce x="10" y="-10" />
+<Emitter emissionRate="0" spread="360" angle="-75">
+	<EmissionRadius max="20" min="20" />
+	<SpawnArea width="10" depth="0" height="10" />
+</Emitter>
+<Rotation max="200" min="200" />
+<RotationSpeed max="100" min="100" />
+<Size>
+	<Max x="30" y="30" />
+	<Min x="50" y="50" />
+</Size>
+<SizeChange>
+	<Max x="-20" y="-20" />
+	<Min x="-10" y="-10" />
+</SizeChange>
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/strong_light.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0" />
+<TimeToLive max="0.800" min="0.500" />
+<Velocity max="100" min="50" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="255" g="41" b="15" a="90" />
+	</Keyframe>
+	<Keyframe lifeTime="0.064">
+		<Color r="255" g="44" b="23" a="90" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="247" g="0" b="19" a="0" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

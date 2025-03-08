@@ -1,0 +1,24 @@
+<!DOCTYPE Scene SYSTEM '../../../../dtd/scene.dtd'>
+<Scene>
+	<SceneObject name="33020" visibility="never">
+		<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/colorbomb_icon_playgame.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<!--<Translation z="0" x="-5.592" y="-0.268"/>-->
+		<Scale z="1" x="0.900" y="0.900"/>
+	</SceneObject>
+	<SceneObject name="33021" visibility="never">
+		<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/coloring_icon_playgame.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<!--<Translation z="0" x="-5.592" y="-0.268"/>-->
+		<Scale z="1" x="0.900" y="0.900"/>
+	</SceneObject>
+	<SceneObject name="33022" visibility="never">
+		<!--<Translation z="0" x="-4.573" y="1.769"/>-->
+		<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/doublefish_icon_playgame.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Scale z="1" x="0.880" y="0.880"/>
+	</SceneObject>
+</Scene>

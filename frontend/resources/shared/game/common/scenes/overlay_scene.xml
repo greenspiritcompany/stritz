@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="root">
+		<SceneObject name="Background">
+			<LayoutConfiguration>
+				<Size forceUniform="false">
+					<Height percentage="100" />
+					<Width percentage="100" />
+				</Size>
+			</LayoutConfiguration>
+			<Material>
+				<Blend enabled="true" />
+				<Color r="0" g="0" b="0" a="255" />
+				<Depth enabled="true" />
+				<Shader program="Color" />
+			</Material>
+			<Sprite mode="sprite" vertexColors="false">
+				<Insets bottom="0" left="0" right="0" top="0" />
+				<VertexColor a="255" b="255" g="255" r="255" />
+			</Sprite>
+			<Translation x="0" y="0" z="600" />
+			<Animation animationData="FadeInFullBack" loopCount="0" name="OnAppear" />
+			<Animation animationData="FadeOutFullBack" loopCount="0" name="OnDisappear" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

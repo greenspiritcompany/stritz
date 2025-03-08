@@ -1,0 +1,44 @@
+<Timelines>
+<Timeline startTime="0" endTime="5">
+	<Animate time="0.100" target="RewardPop">
+		<Show time="0" />
+	</Animate>
+	<Animate time="0.100" target="freeSwitch">
+		<!--Reward slot nr 1-->
+		<Show time="0.095" />
+		<Hide time="0.006" />
+	</Animate>
+	<Animate time="0.100" target="doubleFish">
+		<!--Reward slot nr 2-->
+		<Show time="0.163" />
+		<Hide time="0.005" />
+	</Animate>
+	<Animate time="0.100" target="lollipop">
+		<!--Reward slot nr 2-->
+		<Show time="0.226" />
+		<Hide time="0.005" />
+	</Animate>
+	<Animate time="0.100" target="textAmountx2">
+		<!--Reward slot nr 3-->
+		<Show time="0.422" />
+		<Hide time="0.020" />
+	</Animate>
+	<Animate time="0.100" target="textAmountx1">
+		<!--Reward slot nr 3-->
+		<Show time="0.293" />
+		<Hide time="0.010" />
+	</Animate>
+	<Animate time="0.100" target="textAmountx3">
+		<!--Reward slot nr 3-->
+		<Show time="0.517" />
+		<Hide time="0.010" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="0.126" animationName="scaleIn" crossFade="0" targetName="RewardPop" />
+		<AnimationTrigger time="3.063" animationName="scaleOut" crossFade="0" targetName="RewardPop" />
+		<EffectTrigger time="0.369" name="quest_reward_glitter_EFQ" parentName="" targetName="shineRays" targetBoneIndex="-7" followTarget="true" emitterInheritsTargetRotation="true">
+			<Offset x="0" y="0" z="0" />
+		</EffectTrigger>
+	</Triggers>
+</Timeline>
+</Timelines>

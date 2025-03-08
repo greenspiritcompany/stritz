@@ -1,0 +1,365 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+
+		<!-- init hide -->
+		<Animate target="Jam2TL"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam2TR"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam2BL"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam2BR"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam3TL"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam3TR"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam3BL"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam3BR"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam4TL"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam4TR"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam4BL"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+		<Animate target="Jam4BR"><Hide/><Color time="0.0" r="255" g="255" b="255" a="255"/></Animate>
+
+		<!-- init show -->
+		<Animate target="Jam1TL"><Show/></Animate>
+		<Animate target="Jam1TR"><Show/></Animate>
+		<Animate target="Jam1BL"><Show/></Animate>
+		<Animate target="Jam1BR"><Show/></Animate>
+		<Animate target="Grid8"><Show/></Animate>
+		<Animate target="Grid10"><Show/></Animate>
+
+
+		<!-- character -->
+		<Triggers>
+			<AnimationTrigger animationName="idle" targetName="TutorialCharacter" time="0.0"/>
+		</Triggers>
+
+		<!-- Fade ins -->
+
+		<Animate target="Grid1" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid2" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid3" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid4" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid5" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid6" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid7" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid8" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid10" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid11" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid12" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid13" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid14" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid15" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid16" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Grid17" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Candy1" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Candy2" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Candy3" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+
+		<!-- jam -->
+		<Animate target="Jam1TL" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Jam1TR" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Jam1BL" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Jam1BR" time="0">
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.5" r="255" g="255" b="255" a="255"/>
+		</Animate>
+
+		<!-- Fade in end -->
+
+		<Animate target="Candy3" time="0">
+			<Translation time="0" y="-74" x="-74" z="1"/>
+			<Translation time="1" y="-74" x="-74" z="1"/>
+			<Translation time="1.05" y="-59" x="-74" z="1"/>
+			<Translation time="1.35" y="-4" x="-74" z="1"/>
+			<Translation time="1.4" y="0" x="-74" z="1"/>
+			<Scale time="0" xyz="1"/>
+			<Scale time="1" xyz="1"/>
+			<Scale time="1.05" xyz="1.1"/>
+			<Scale time="1.25" xyz="1.25"/>
+			<Scale time="1.4" xyz="1"/>
+		</Animate>
+
+		<Animate target="Glow1" time="1.5">
+			<Color time="0.0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="255"/>
+			<Color time="0.4" r="255" g="255" b="255" a="0"/>
+			<Color time="0.6" r="255" g="255" b="255" a="255"/>
+			<Color time="0.8" r="255" g="255" b="255" a="0"/>
+			<Color time="1.0" r="255" g="255" b="255" a="255"/>
+			<Color time="1.2" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Glow2" time="1.55">
+			<Color time="0.0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="255"/>
+			<Color time="0.4" r="255" g="255" b="255" a="0"/>
+			<Color time="0.6" r="255" g="255" b="255" a="255"/>
+			<Color time="0.8" r="255" g="255" b="255" a="0"/>
+			<Color time="1.0" r="255" g="255" b="255" a="255"/>
+			<Color time="1.2" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Glow3" time="1.6">
+			<Color time="0.0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="255"/>
+			<Color time="0.4" r="255" g="255" b="255" a="0"/>
+			<Color time="0.6" r="255" g="255" b="255" a="255"/>
+			<Color time="0.8" r="255" g="255" b="255" a="0"/>
+			<Color time="1.0" r="255" g="255" b="255" a="255"/>
+			<Color time="1.2" r="255" g="255" b="255" a="0"/>
+		</Animate>
+
+		<Animate target="Candies" time="0.0">
+			<Show/>
+			<Hide time="1.45"/>
+		</Animate>
+
+		<Animate target="Jam_1_Smear" time="0.0">
+			<Hide time="0.0"/>
+			<Show time="1.55"/>
+			<Hide time="4.0"/>
+		</Animate>
+		<Animate target="Jam_2_Smear" time="0.0">
+			<Hide time="0.0"/>
+			<Show time="1.55"/>
+			<Hide time="4.0"/>
+		</Animate>
+		<Animate target="Jam_3_Smear" time="0.0">
+			<Hide time="0.0"/>
+			<Show time="1.55"/>
+			<Hide time="4.0"/>
+		</Animate>
+
+		<Triggers>
+			<EffectTrigger name="SwitcherExplodeNormalOrangeCandy" targetName="Candies" time="1.45"/>
+			<EffectTrigger name="SwitcherExplodeNormalOrangeCandy" targetName="Candies" time="1.45">
+				<Offset x="74"/>
+			</EffectTrigger>
+			<EffectTrigger name="SwitcherExplodeNormalOrangeCandy" targetName="Candies" time="1.45">
+				<Offset x="-74"/>
+			</EffectTrigger>
+			<EffectTrigger name="character_yeti" time="0.0"/>
+
+			<!-- jam splash -->
+			<!--<EffectTrigger name="Jam1SplashEFQ" targetName="Candies" time="1.55"/>-->
+			<!--<EffectTrigger name="Jam1SplashEFQ" targetName="Candies" time="1.55">-->
+				<!--<Offset x="74"/>-->
+			<!--</EffectTrigger>-->
+			<!--<EffectTrigger name="Jam1SplashEFQ" targetName="Candies" time="1.55">-->
+				<!--<Offset x="-74"/>-->
+			<!--</EffectTrigger>-->
+			<AnimationTrigger time="1.55" targetName="Jam_1_Smear" animationName="Jam_1_Smear_Animation"/>
+			<AnimationTrigger time="1.55" targetName="Jam_2_Smear" animationName="Jam_1_Smear_Animation"/>
+			<AnimationTrigger time="1.55" targetName="Jam_3_Smear" animationName="Jam_1_Smear_Animation"/>
+		</Triggers>
+
+		<!-- swap sprites -->
+		<Animate target="Jam1TL" time="1.55"><Hide/></Animate>
+		<Animate target="Jam1TR" time="1.55"><Hide/></Animate>
+		<Animate target="Jam1BL" time="1.55"><Hide/></Animate>
+		<Animate target="Jam1BR" time="1.55"><Hide/></Animate>
+		<Animate target="Grid8" time="1.55"><Hide/></Animate>
+		<Animate target="Grid10" time="1.55"><Hide/></Animate>
+		<Animate target="Jam2TL" time="1.55"><Show/></Animate>
+		<Animate target="Jam2TR" time="1.55"><Show/></Animate>
+		<Animate target="Jam2BL" time="1.55"><Show/></Animate>
+		<Animate target="Jam2BR" time="1.55"><Show/></Animate>
+		<Animate target="Jam3TL" time="1.55"><Show/></Animate>
+		<Animate target="Jam3TR" time="1.55"><Show/></Animate>
+		<Animate target="Jam3BL" time="1.55"><Show/></Animate>
+		<Animate target="Jam3BR" time="1.55"><Show/></Animate>
+		<Animate target="Jam4TL" time="1.55"><Show/></Animate>
+		<Animate target="Jam4TR" time="1.55"><Show/></Animate>
+		<Animate target="Jam4BL" time="1.55"><Show/></Animate>
+		<Animate target="Jam4BR" time="1.55"><Show/></Animate>
+
+
+		<!-- Fade outs -->
+
+		<Animate target="Grid1" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid2" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid3" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid4" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid5" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid6" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid7" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid8" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid9" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid10" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid11" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid12" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid13" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid14" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid15" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid16" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Grid17" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+
+		<!-- jam -->
+		<Animate target="Jam2TL" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam2TR" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam2BL" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam2BR" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam3TL" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam3TR" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam3BL" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam3BR" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam4TL" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam4TR" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam4BL" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Jam4BR" time="0">
+			<Color time="4" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="0"/>
+		</Animate>
+
+		<TimeControls>
+			<TimeJump time="4.5" jumpToTime="0"/>
+		</TimeControls>
+
+
+	</Timeline>
+</Timelines>

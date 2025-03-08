@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Scene" visibility="always">
+
+		<SceneObject name="GiantFishAppearRoot">
+			<SceneObject name="GiantFishAppearScale">
+				<SceneObject name="GiantFishAppearModel">
+					<!-- 3d model in 2d space... -->
+					<Scale x="0.20" y="-0.20" z="1.0"/>
+					<Model filename="shared/game/common/models/giant_fish/giant_fish.ffm">
+						<Animations>
+							<Animation name="Appear"
+									   filename="shared/game/common/models/giant_fish/appear.ffa"
+									   play="true" loopCount="0"/>
+						</Animations>
+					</Model>
+					<Materials>
+						<Material>
+							<Textures>
+								<Texture filename="shared/game/common/tex/candy/giant_fish.png"/>
+							</Textures>
+							<Depth enabled="false" writeMask="false"/>
+							<Blend enabled="true"/>
+						</Material>
+					</Materials>
+				</SceneObject>
+                <SceneObject name="GiantBagAppearModel">
+                    <!-- 3d model in 2d space... -->
+                    <Scale x="0.20" y="-0.20" z="1.0"/>
+                    <Model filename="shared/game/common/models/giant_fish/giant_bag.ffm">
+                        <Animations>
+                            <Animation name="Break"
+                                       filename="shared/game/common/models/giant_fish/bag_break.ffa"
+                                       play="true" loopCount="0"/>
+                        </Animations>
+                    </Model>
+                    <Materials>
+                        <Material>
+                            <Textures>
+                                <Texture filename="shared/game/common/tex/candy/fishbag_break.png"/>
+                            </Textures>
+                            <Depth enabled="false" writeMask="false"/>
+                            <Blend enabled="true"/>
+                        </Material>
+                    </Materials>
+
+
+                </SceneObject>
+
+			</SceneObject>
+
+		</SceneObject>
+
+	</SceneObject>
+</Scene>

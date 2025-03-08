@@ -1,0 +1,31 @@
+<!DOCTYPE Scene SYSTEM '../../../../dtd/scene.dtd'>
+<Scene>
+    <SceneObject name="Scene">
+        <SceneObject name="Collector">
+            <Model skinNormals="false" filename="shared/game/common/models/lemonade/collector.ffm">
+                <Animation speed="0.12" loopCount="-1" interpolateFrame="true" name="play" play="true" filename="shared/game/common/models/lemonade/collector_idle.ffa"/>
+            </Model>
+            <Material name="AlphaMaterial">
+                <Blend enabled="true"/>
+                <Depth enabled="true" writeMask="false"/>
+                <Texture filename="shared/game/common/tex/candy/candystring.png"/>
+            </Material>
+            <Scale x="0.50" y="-0.50"/>
+            <Translation x="0" y="35" z="0"/>
+            <SceneObject name="HookLeft">
+                <Sprite normals="false" vertexColors="false" filename="shared/game/common/tex/candy/collector_hook.png">
+                    <Pivot anchor="center"/>
+                </Sprite>
+                <Scale x="1.20" y="-1.20"/>
+                <Translation x="-89.25" y="18.25" z="-10"/>
+            </SceneObject>
+            <SceneObject name="HookRight">
+                <Sprite normals="false" vertexColors="false" filename="shared/game/common/tex/candy/collector_hook.png">
+                    <Pivot anchor="center"/>
+                </Sprite>
+                <Scale x="-1.20" y="-1.20"/>
+                <Translation x="89.02" y="18.25" z="-10"/>
+            </SceneObject>
+        </SceneObject>
+    </SceneObject>
+</Scene>

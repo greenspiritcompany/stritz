@@ -1,0 +1,24 @@
+{
+  "id": "loyalist",
+  "nameKey" : "quests.names.loyalist",
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "consecutiveLogin",
+      "descriptionKey" : "quests.description.consecutive_login",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_logged_in_for_days.png",
+      "data": {
+		"daysRequired" : 3
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12021,
+        "amount": 1
+      }
+    }
+  ]
+}

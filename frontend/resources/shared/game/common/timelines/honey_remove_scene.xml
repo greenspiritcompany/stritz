@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/honey_material.xml"/>
+
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+	<!--<SceneObject name="Scene" visibility="always">-->
+
+        <SceneObject name="SplatSprite">
+            <Sprite filename="shared/game/common/tex/candy/honey_splat.png">
+                <Pivot anchor="center"/>
+            </Sprite>
+
+        </SceneObject>
+		<SceneObject name="Honey_Crack" visibility="always" layerFlags="512">
+			<Model filename="shared/game/common/models/honey/honey_tile_cracked.ffm">
+				<Animations>
+					<Animation name="Honey_Crack_Animation" speed="1.0"
+							   filename="shared/game/common/models/honey/honey_tile_crack.ffa"
+							   play="true" loopCount="0"/>
+				</Animations>
+			</Model>
+			<Materials>
+                <Material name="HoneyCrushMaterial">
+                    <Blend enabled="false"/>
+                    <Cull enabled="false" face="back"/>
+                    <Shader program="TextureColor"/>
+                    <Textures>
+                        <Texture filename="shared/game/common/tex/honey/honey_crush_tex.png"/>
+                    </Textures>
+                </Material>
+			</Materials>
+			<Scale x="0.20" y="-0.20" z="0.20"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

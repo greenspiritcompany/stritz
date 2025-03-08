@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="LifeModal">
+		<Translation z="500" />
+		<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppearPortrait" />
+		<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappearPortrait" />
+		<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppearLandscape" />
+		<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappearLandscape" />
+		<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+		<SceneObject>
+			<Translation x="-183.43" y="-259.171" z="0" />
+			<Scale x="4" y="4" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png" />
+		</SceneObject>
+		<SceneObject __editorVisibility="false" __visibility="3" name="OutOfLivesHeader">
+			<Translation x="0" y="-302.306" z="0" />
+			<Text alignment="center" font="Banana" key="common.outoflives" maxHeight="45" maxWidth="370" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<GradientColor enabled="false" />
+				<Shadow enabled="false" />
+				<Size x="24" y="24" />
+			</Text>
+			<LayoutConfiguration visible="true" name="OutOfLives" />
+			<LayoutConfiguration visible="false" name="GetMoreLives" />
+		</SceneObject>
+		<SceneObject name="GetMoreLivesHeader">
+			<Translation x="0" y="-290.825" z="0" />
+			<Text alignment="center" font="Banana" key="common.getmorelives" maxHeight="45" maxWidth="370" overflowBehaviour="fit" verticalAlignment="center">
+				<GradientColor enabled="false" />
+				<Shadow enabled="false" />
+				<Size x="24" y="24" />
+			</Text>
+			<LayoutConfiguration visible="false" name="OutOfLives" />
+			<LayoutConfiguration visible="true" name="GetMoreLives" />
+		</SceneObject>
+		<SceneObject name="HeartGroup">
+			<Translation x="0" y="-159.344" z="0" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/heart.png">
+				<Pivot anchor="center" />
+			</Sprite>
+			<SceneObject name="LivesText">
+				<Translation y="-10" />
+				<Text alignment="center" font="Banana" verticalAlignment="visualCenter">
+					<Size x="52" y="52" />
+					<TextString>3</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject name="UnlimitedLifeIcon">
+				<Translation y="-10" />
+				<Scale xyz="1.4" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/infinity_sign.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject>
+				<Translation x="-77.4749" y="27.6568" z="0" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/heart_ornament.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject>
+				<Translation x="78.5186" y="27.6568" z="0" />
+				<Scale x="-1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/heart_ornament.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="TimeGroup">
+			<Translation y="-40" />
+			<SceneObject>
+				<Translation y="-31" />
+				<SceneObject>
+					<Translation x="-254.956" y="10.4372" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/timeleft_box_left.png" />
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-190.956" y="10.4372" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/timeleft_box_middle.png" wrap="repeat">
+						<Rectangle maxX="384" maxY="64" minX="0" minY="0" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="193.044" y="10.4372" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/timeleft_box_right.png" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="TimeLeftText">
+				<Translation x="30.0503" y="12.0378" z="0" />
+				<Text alignment="right" font="Typewriter" key="common.timetonextlife" maxHeight="42" maxWidth="240" overflowBehaviour="fit" verticalAlignment="visualCenter" canBreakWords="false">
+					<Color r="146" g="3" b="124" a="255" />
+					<Size x="19" y="19" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="UnlimitedLifeText">
+				<Translation x="30.0503" y="12.0378" z="0" />
+				<Text alignment="right" font="Typewriter" key="common.unlimitedlifetime" maxHeight="42" maxWidth="240" overflowBehaviour="fit" verticalAlignment="visualCenter" canBreakWords="false">
+					<Color r="146" g="3" b="124" a="255" />
+					<Size x="19" y="19" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="TimeLeftNumbers">
+				<Translation x="45.3566" y="11.4815" z="0" />
+				<Text alignment="left" font="Banana" verticalAlignment="visualCenter" maxHeight="50">
+					<Color r="146" g="3" b="124" a="255" />
+					<Size x="28" y="28" />
+					<TextString>24:45</TextString>
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject __editorVisibility="true" __visibility="0" name="OutOfLivesText">
+			<Translation x="0" y="49.6068" />
+			<Text alignment="center" font="Typewriter" key="common.outoflivesdescription" maxHeight="60" maxWidth="530" overflowBehaviour="fit" verticalAlignment="visualCenter" canBreakWords="false">
+				<Color r="131" g="102" b="51" a="255" />
+				<GradientColor enabled="false" />
+				<Shadow enabled="false" />
+				<Size x="22" y="22" />
+			</Text>
+			<LayoutConfiguration visible="true" name="OutOfLives" />
+			<LayoutConfiguration visible="false" name="GetMoreLives" />
+		</SceneObject>
+		<SceneObject __editorVisibility="false" __visibility="3" name="GetMoreLivesText">
+			<Translation x="0" y="48.081" z="0" />
+			<Text alignment="center" font="Typewriter" key="common.getmorelivesdescription" maxWidth="350" overflowBehaviour="fit" verticalAlignment="visualCenter" canBreakWords="false">
+				<Color r="131" g="102" b="51" a="255" />
+				<GradientColor enabled="false" />
+				<Shadow enabled="false" />
+				<Size x="22" y="22" />
+			</Text>
+			<LayoutConfiguration visible="false" name="OutOfLives" />
+			<LayoutConfiguration visible="true" name="GetMoreLives" />
+		</SceneObject>
+		<SceneObject __editorVisibility="true" __visibility="0" name="TopButtonGroup">
+			<SceneObject class="Button" name="AskButton">
+				<Translation y="26" />
+				<Scale x="1.1" y="1.1" z="1.1" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="440" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject>
+					<Translation x="-4.8399" y="-7" z="0" />
+					<Text alignment="center" font="Banana" key="common.askfriends" maxHeight="45" maxWidth="240" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<GradientColor enabled="false" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25" />
+							<Offset x="0" y="0" />
+						</Shadow>
+						<Size x="28" y="28" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="OutOfLivesPortrait">
+				<Translation>
+					<Y percentage="14" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="GetMoreLivesPortrait">
+				<Translation>
+					<Y percentage="23" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="OutOfLivesLandscape">
+				<Translation>
+					<Y percentage="20" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="GetMoreLivesLandscape">
+				<Translation>
+					<Y percentage="31" />
+				</Translation>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject __editorVisibility="true" __visibility="0" class="Button" name="BuyButton">
+			<Translation x="0" y="274.344" z="0" />
+			<Scale x="1.1" y="1.1" z="1.1" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="440" />
+			</Panel>
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject __editorVisibility="true" __visibility="0" name="Cost">
+				<Translation x="135" y="-6" />
+				<SceneObject __editorVisibility="true" __visibility="0">
+					<Translation x="-4.27832" y="1.73981" z="0" />
+					<Scale x="0.9" y="0.9" z="0.9" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goldbar_sticker.png">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Amount">
+					<Translation x="-28.6688" y="8.25403" />
+					<Text alignment="center" font="Banana">
+						<Color r="117" g="55" b="0" a="255" />
+						<GradientColor enabled="false" />
+						<Shadow enabled="true">
+							<Color r="255" g="255" b="255" a="255" />
+							<Offset x="0" />
+						</Shadow>
+						<TextString>100</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject>
+				<Translation x="-57.8994" y="-4.32648" z="0" />
+				<Text alignment="center" font="Banana" key="buy_lives_button" maxHeight="30" maxWidth="250" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color r="255" g="255" b="255" a="225" />
+					<Shadow enabled="true">
+						<Color r="0" g="0" b="0" a="25" />
+						<Offset x="0" y="6" />
+					</Shadow>
+					<Size x="24" y="24" />
+				</Text>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="OutOfLives" />
+			<LayoutConfiguration visible="false" name="GetMoreLives" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50.0" />
+				<Y percentage="50.0" />
+			</Translation>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Landscape">
+			<Size>
+				<Height percentage="100.0" />
+				<OriginalSize height="720" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<Width percentage="100.0" />
+				<OriginalSize height="1024" width="668" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

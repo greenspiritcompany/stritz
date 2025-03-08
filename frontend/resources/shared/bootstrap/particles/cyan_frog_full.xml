@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE ParticleEffect SYSTEM "../../dtd/particle_effect.dtd">
+<ParticleEffect maxParticles="32" name="CyanFrogFullFX" space="Local" timeToEmit="0.1">
+	<Dampening max="0.9" min="0.8"/>
+	<DirectionalForce x="0" y="0"/>
+	<Emitter angle="0" emissionRate="0" spread="360">
+		<SpawnArea height="20" width="20"/>
+	</Emitter>
+	<EndColor r="255" g="255" b="255" a="0"/>
+	<Rotation max="100" min="-100"/>
+	<RotationSpeed max="250" min="-250"/>
+	<Size>
+		<Max x="20" y="20"/>
+		<Min x="10" y="10"/>
+	</Size>
+	<SizeChange>
+		<Max x="30" y="30"/>
+		<Min x="5" y="5"/>
+	</SizeChange>
+	<StartColor r="255" g="255" b="255" a="255"/>
+	<Texture blend="Add" filename="shared/bootstrap/particles/tex/star64.png" numFramesX="1" numFramesY="1"/>
+	<TextureFrame numTextureAnimationFrames="1" startFrame="0" textureAnimationSpeed="60"/>
+	<TimeToLive max="1.5" min="0.5"/>
+	<Velocity max="500" min="250"/>
+</ParticleEffect>

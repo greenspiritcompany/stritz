@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Animate target="Kimmy_group" time="0.0">
+			<Translation time="0.0" x="-1160" y="40" z="270"/>
+			<Scale time="0.0" x="0.95" y="0.95" z="0.95"/>
+			<Hide/>
+		</Animate>
+
+		<Animate target="Ep76_CoverHole" time="0.0">
+			<Translation time="0.0" x="-1900"/>
+			<Hide/>
+		</Animate>
+		<Triggers>
+
+      <!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+      <EffectTrigger name="character_ep76" time="0.0"/>
+      
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp76.0"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp76" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp76" animationName="SpeechBubbleDisappear"/>
+			<AnimationTrigger time="1.0" targetName="CharacterEp76" animationName="Talk" crossFade="0.2"/>
+			<AnimationTrigger time="2.5" targetName="CharacterEp76" animationName="Idle" crossFade="0.2"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

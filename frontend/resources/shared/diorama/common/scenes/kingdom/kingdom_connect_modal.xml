@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="KingdomConnectModal">
+		<Rotation z="-0.5" />
+		<SceneObject __editorVisibility="false" __visibility="3" name="Landscape" visibility="always">
+			<Scale x="1.2" y="1.2" z="1.2" />
+			<SceneObject name="Bottom">
+				<Translation x="-271.883" y="374.461" z="2" />
+				<Rotation z="190" />
+				<Scale x="-2" y="2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_diorama/kimmy.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_diorama/kimmy_idle.ffa" loopCount="-1" name="idle" play="true" />
+				</Model>
+				<Material>
+					<Texture filename="shared/diorama/common/tex/kimmy/kimmy_diorama.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" writeMask="false" />
+				</Material>
+				<Animation animationData="SlideInFromBelow" loopCount="0" name="OnAppear" play="true" />
+				<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+				<SceneObject name="Stick">
+					<Translation x="-7.60468" y="-234.688" z="0" />
+					<Scale y="30" />
+					<Sprite filename="shared/diorama/common/tex/rope.png">
+						<Flip u="true" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Top">
+				<Translation x="424.436" y="964.908" />
+				<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+				<Animation animationData="SlideOutToTop" name="OnDisappear" />
+				<SceneObject class="Button" name="CloseButton">
+					<Translation x="-125.323" y="-885.357" z="3" />
+					<Scale x="0.5" y="0.5" z="0.5" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png">
+						<Pivot anchor="center" />
+					</Sprite>
+					<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+					<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+					<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+					<SceneObject>
+						<Translation x="0" y="-3" />
+						<Scale x="1.5" y="1.5" z="1.5" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_exit.png">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject class="Button" name="NextButton">
+					<Translation x="-309.575" y="-655.375" z="3" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+						<Insets bottom="59" left="54" right="54" top="48" />
+						<Pivot anchor="center" />
+						<Size height="108" width="300" />
+					</Panel>
+					<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+					<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+					<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+					<SceneObject name="NextButtonText">
+						<Translation x="-4.02264" y="-9" z="0" />
+						<Scale x="1.2" y="1.2" z="1.2" />
+						<Text alignment="center" font="Banana" key="generic_button_next" maxHeight="40" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color r="255" g="255" b="255" a="225" />
+							<GradientColor enabled="false" />
+							<Shadow enabled="true">
+								<Color r="0" g="0" b="0" a="25" />
+								<Offset x="0" y="6" />
+							</Shadow>
+							<Size x="24" y="24" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Background">
+					<Translation x="-514.801" y="-906.207" z="0" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/kingdom_speechbubble_bg.png">
+						<Insets bottom="35" left="40" right="70" top="70" />
+						<Scale x="2.2" y="1.7" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="KingdomText">
+					<Translation x="-309.825" y="-827.542" z="0" />
+					<Text alignment="center" font="Typewriter" key="kingdom_modal_registration_2" maxHeight="300" maxWidth="320" verticalAlignment="visualCenter">
+						<Color r="131" g="102" b="51" a="255" />
+						<GradientColor enabled="false" />
+						<Shadow enabled="false" />
+						<Size x="16" y="16" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="Tail">
+					<Translation x="-569.077" y="-730.958" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/speechbubble_tale_landscape.png" />
+				</SceneObject>
+				<SceneObject name="Topring">
+					<Translation x="-355.083" y="-953" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/speechbubble_topring.png" />
+					<SceneObject name="Knot">
+						<Translation x="20.9902" y="-14.6664" z="0" />
+						<Sprite filename="shared/diorama/common/tex/knot.png">
+							<Scale x="2" y="2" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject class="Button" name="Searchfield">
+					<Translation x="-472" y="-763" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/speechbubble_search.png">
+						<Insets bottom="10" left="10" right="10" top="10" />
+						<Scale x="10" />
+					</Panel>
+					<SceneObject name="SearchfieldText">
+						<Translation x="165.549" y="29.9999" z="0" />
+						<Text alignment="center" font="Typewriter" key="kingdom_modal_registration_your_name">
+							<Color r="107" g="106" b="106" a="255" />
+							<GradientColor enabled="false" />
+							<Shadow enabled="false" />
+							<Size x="16" y="16" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="OptedOutText" visibility="never">
+					<Translation x="-311.642" y="-827.557" />
+					<Text alignment="center" font="Typewriter" key="kingdom_modal_registration_no" maxHeight="300" maxWidth="320" verticalAlignment="visualCenter">
+						<Color r="131" g="102" b="51" a="255" />
+						<GradientColor enabled="false" />
+						<Shadow enabled="false" />
+						<Size x="16" y="16" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="OptedInText" visibility="never">
+					<Translation x="-309.825" y="-827.541" />
+					<Text alignment="center" font="Typewriter" key="kingdom_modal_registration_ok_1" maxHeight="300" maxWidth="320" verticalAlignment="visualCenter">
+						<Color r="131" g="102" b="51" a="255" />
+						<GradientColor enabled="false" />
+						<Shadow enabled="false" />
+						<Size x="16" y="16" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="Icon" visibility="never">
+					<Translation x="-489.881" y="-760.294" />
+					<Sprite filename="kingdom-views/tex/ui/Kingdom_icon.png" />
+				</SceneObject>
+				<SceneObject class="Button" name="OkButton" visibility="never">
+					<Translation x="-251.268" y="-673.039" z="3" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+						<Insets bottom="59" left="54" right="54" top="48" />
+						<Pivot anchor="center" />
+						<Size height="108" width="240" />
+					</Panel>
+					<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+					<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+					<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+					<SceneObject name="PlayButtonText">
+						<Translation x="-4.02264" y="-9" z="0" />
+						<Scale x="1.2" y="1.2" z="1.2" />
+						<Text alignment="center" font="Banana" key="message_center.button.received_collaboration" maxHeight="40" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color r="255" g="255" b="255" a="225" />
+							<GradientColor enabled="false" />
+							<Shadow enabled="true">
+								<Color r="0" g="0" b="0" a="25" />
+							</Shadow>
+							<Size x="24" y="24" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Portrait" visibility="never">
+			<Rotation z="1" />
+			<Scale x="1.2" y="1.2" z="1.2" />
+			<SceneObject __editorVisibility="true" __visibility="0" name="Bottom">
+				<Translation x="-18.9663" y="671.736" />
+				<Rotation z="190" />
+				<Scale x="-2" y="2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_diorama/kimmy.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_diorama/kimmy_idle.ffa" loopCount="-1" name="idle" play="true" />
+				</Model>
+				<Material>
+					<Texture filename="shared/diorama/common/tex/kimmy/kimmy_diorama.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" writeMask="false" />
+				</Material>
+				<Animation animationData="SlideInFromBelow" loopCount="0" name="OnAppear" />
+				<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+				<SceneObject name="Stick">
+					<Translation x="-7.60468" y="-234.688" z="0" />
+					<Scale y="30" />
+					<Sprite filename="shared/diorama/common/tex/rope.png">
+						<Flip u="true" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Top">
+				<Translation x="-196.237" y="55.5527" />
+				<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+				<Animation animationData="SlideOutToTop" loopCount="0" name="OnDisappear" />
+				<SceneObject name="Background">
+					<Panel filename="shared/diorama/common/tex/gui_elements/kingdom_speechbubble_bg.png">
+						<Insets bottom="35" left="40" right="70" top="70" />
+						<Scale x="2.2" y="1.7" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="KingdomText">
+					<Translation x="203.234" y="77.2825" z="0" />
+					<Text alignment="center" font="Typewriter" key="kingdom_modal_registration_2" maxHeight="300" maxWidth="320" verticalAlignment="visualCenter">
+						<Color r="131" g="102" b="51" a="255" />
+						<GradientColor enabled="false" />
+						<Shadow enabled="false" />
+						<Size x="16" y="16" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="Tail">
+					<Translation x="164.208" y="288.283" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/speechbubble_tale_portrait.png" />
+				</SceneObject>
+				<SceneObject name="Topring">
+					<Translation x="162.375" y="-46.7175" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/speechbubble_topring.png" />
+					<SceneObject name="Knot">
+						<Translation x="20.9902" y="-14.6664" z="0" />
+						<Sprite filename="shared/diorama/common/tex/knot.png">
+							<Scale x="2" y="2" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject class="Button" name="SearchfieldPortrait">
+					<Translation x="45.4583" y="143.283" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/speechbubble_search.png">
+						<Insets bottom="10" left="10" right="10" top="10" />
+						<Scale x="10" />
+					</Panel>
+					<SceneObject name="SearchfieldText">
+						<Translation x="165.549" y="29.9999" z="0" />
+						<Text alignment="center" font="Typewriter" key="kingdom_modal_registration_your_name">
+							<Color r="107" g="106" b="106" a="255" />
+							<GradientColor enabled="false" />
+							<Shadow enabled="false" />
+							<Size x="16" y="16" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject class="Button" name="CloseButtonPortrait">
+					<Translation x="391.709" y="18.7435" z="0" />
+					<Scale x="0.5" y="0.5" z="0.5" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png">
+						<Pivot anchor="center" />
+					</Sprite>
+					<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+					<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+					<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+					<SceneObject>
+						<Translation x="0" y="-3" />
+						<Scale x="1.5" y="1.5" z="1.5" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_exit.png">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject class="Button" name="NextButtonPortrait">
+					<Translation x="210.272" y="244.565" z="0" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+						<Insets bottom="59" left="54" right="54" top="48" />
+						<Pivot anchor="center" />
+						<Size height="108" width="300" />
+					</Panel>
+					<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+					<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+					<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+					<SceneObject name="PlayButtonText">
+						<Translation x="-4.02264" y="-9" z="0" />
+						<Scale x="1.2" y="1.2" z="1.2" />
+						<Text alignment="center" font="Banana" key="generic_button_next" maxHeight="40" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color r="255" g="255" b="255" a="225" />
+							<GradientColor enabled="false" />
+							<Shadow enabled="true">
+								<Color r="0" g="0" b="0" a="25" />
+								<Offset x="0" y="6" />
+							</Shadow>
+							<Size x="24" y="24" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Icon" visibility="never">
+					<Translation x="27.9552" y="154.692" />
+					<Sprite filename="kingdom-views/tex/ui/Kingdom_icon.png" />
+				</SceneObject>
+				<SceneObject class="Button" name="OkButtonPortrait" visibility="never">
+					<Translation x="268.091" y="234.671" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+						<Insets bottom="59" left="54" right="54" top="48" />
+						<Pivot anchor="center" />
+						<Size height="108" width="240" />
+					</Panel>
+					<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+					<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+					<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+					<SceneObject name="OkButtonText">
+						<Translation x="-4.02264" y="-9" z="0" />
+						<Scale x="1.2" y="1.2" z="1.2" />
+						<Text alignment="center" font="Banana" key="message_center.button.received_collaboration" maxHeight="40" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color r="255" g="255" b="255" a="225" />
+							<GradientColor enabled="false" />
+							<Shadow enabled="true">
+								<Color r="0" g="0" b="0" a="25" />
+							</Shadow>
+							<Size x="24" y="24" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="OptedOutText" visibility="never">
+					<Translation x="204.53" y="70.91" />
+					<Text alignment="center" font="Typewriter" key="kingdom_modal_registration_no" maxHeight="300" maxWidth="320" verticalAlignment="visualCenter">
+						<Color r="131" g="102" b="51" a="255" />
+						<GradientColor enabled="false" />
+						<Shadow enabled="false" />
+						<Size x="16" y="16" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="OptedInText" visibility="never">
+					<Translation x="204.53" y="70.91" />
+					<Text alignment="center" font="Typewriter" key="kingdom_modal_registration_ok_1" maxHeight="300" maxWidth="320" verticalAlignment="visualCenter">
+						<Color r="131" g="102" b="51" a="255" />
+						<GradientColor enabled="false" />
+						<Shadow enabled="false" />
+						<Size x="16" y="16" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="0" />
+			</Translation>
+			<Size>
+				<Height max="706" percentage="95" />
+				<OriginalSize height="706" width="640" />
+				<Width max="640" percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,18 @@
+<Timelines>
+<Timeline startTime="0" endTime="4">
+	<Triggers>
+		<AnimationTrigger time="0" animationName="exit" crossFade="0" targetName="Info_box" />
+		<AnimationTrigger time="0" animationName="exit" crossFade="0" targetName="Info_box_with_btn" />
+		<AnimationTrigger time="0" animationName="exit" crossFade="0" targetName="Photo" />
+		<CustomTrigger time="1.100" name="FadeOutEnd" data="" />
+	</Triggers>
+	<Animate time="0" target="Info_box_with_btn">
+		<Translation time="0.650" x="0" y="0" z="0" />
+		<Translation time="1.203" x="0" y="900" z="0" />
+	</Animate>
+	<Animate time="0" target="Info_box">
+		<Translation time="0.650" x="0" y="0" z="0" />
+		<Translation time="1.197" x="0" y="900" z="0" />
+	</Animate>
+</Timeline>
+</Timelines>

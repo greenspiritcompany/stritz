@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="goal_box_content" visibility="inherit" editorEntityId="138">
+		<SceneObject name="box_bg">
+			<Translation y="-245.024" x="-229.849" />
+			<SceneObject name="topSegment">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/quest_box_inner_panel_top.png" />
+				<Translation x="-0.627" z="0" y="0.100" />
+				<SceneObject name="countinue">
+					<Scale z="1" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/quest_box_inner_panel_middle.png">
+						<Size height="72" />
+					</Sprite>
+					<Translation x="0.573" y="35.713" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="middleSegment">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/quest_box_inner_panel_middle.png">
+					<Size height="1" />
+				</Sprite>
+				<Translation y="108" z="0" x="0" />
+				<Scale z="1" />
+			</SceneObject>
+			<SceneObject name="endSegment">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/quest_box_inner_panel_bottom.png" />
+				<Translation y="109" z="0" x="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="task_text">
+			<Translation x="-216" y="-117" z="0" />
+			<Text alignment="left" maxWidth="437" canBreakWords="false" maxHeight="110" overflowBehaviour="fit" font="Typewriter" verticalAlignment="top">
+				<Color r="202" g="90" b="3" a="255" />
+				<Size y="16" x="16" />
+				<TextString>Collect 20 red candies to complete the quest.</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="box">
+			<Translation y="-199.963" z="0" x="-87.882" />
+			<SceneObject name="Box_quest" editorEntityId="524">
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/shop_product_box.png">
+					<Insets bottom="22" left="22" right="22" top="22" />
+					<Size width="440" height="80" />
+				</Panel>
+				<Translation x="-130.225" y="-32.397" z="0" />
+				<Scale y="1" z="1" x="1" />
+				<Rotation y="0" z="0" x="0" />
+			</SceneObject>
+			<SceneObject name="Task_image" editorEntityId="525">
+				<Scale y="0.827" z="1" x="0.827" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/egp_redline.png">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation y="8" z="0" x="-96" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="progress_meter">
+			<Translation x="4" y="1.674" z="0" />
+			<SceneObject name="meter_frame">
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/quest_bg_box.png">
+					<Insets bottom="15" left="20" right="20" top="15" />
+					<Size width="312" height="37" />
+				</Panel>
+				<Translation x="-119" y="-212" z="0" />
+				<Scale z="1" />
+			</SceneObject>
+			<SceneObject visibility="always" name="Fill">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/quest_meter_fill_middle.png" vertexColors="false">
+					<Scale y="1" />
+				</Sprite>
+				<Translation x="-103" y="-209" z="0" />
+				<Scale z="1" x="0.900" y="0.900" />
+			</SceneObject>
+			<SceneObject name="Fill_Right">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/quest_meter_fill_right.png" vertexColors="false" />
+				<Translation x="-102" y="-209" z="0" />
+				<Scale z="1" y="0.900" x="0.900" />
+			</SceneObject>
+			<SceneObject name="Fill_Left">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/quest_meter_fill_left.png" vertexColors="false" />
+				<Translation x="-117" y="-209" z="0" />
+				<Scale z="1" y="0.900" x="0.900" />
+			</SceneObject>
+			<SceneObject name="Fill_Right_v2">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/quest_meter_fill_right_v2.png" vertexColors="false" />
+				<Translation x="-85" y="-209" z="0" />
+				<Scale x="0.900" y="0.900" />
+			</SceneObject>
+			<SceneObject name="shine">
+				<Sprite filename="shared/game/common/tex/hud/portrait/starmeter_shine.png" vertexColors="false" />
+				<Translation x="-115" y="-209.996" z="0" />
+				<Scale x="1.750" y="1.072" z="1" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="box2">
+			<Translation y="-199.963" z="0" x="-87.882" />
+			<SceneObject name="HeaderTxt3" editorEntityId="526">
+				<Text alignment="center" maxWidth="150" canBreakWords="false" allowWordWrapping="false" verticalAlignment="visualCenter" maxHeight="80" overflowBehaviour="fit" font="Banana">
+					<Color r="255" g="255" b="255" a="255" />
+					<Size y="21" x="21" />
+					<TextString>10/200</TextString>
+					<Shadow>
+						<Color r="0" g="0" b="0" a="68" />
+						<Offset x="0" />
+					</Shadow>
+				</Text>
+				<Translation x="124" y="7" z="0" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

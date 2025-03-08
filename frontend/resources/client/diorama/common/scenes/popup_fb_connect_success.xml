@@ -1,0 +1,38 @@
+<!DOCTYPE Timelines SYSTEM "../../shared/dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="3.1">
+
+		<!-- Init -->
+		<Animate target="FbConnectIconRoot" time="0.0"><Show/></Animate>
+		<Animate target="ConnectionSpinner" time="0.0"><Show/></Animate>
+		<Animate target="ConnectionSpinnerBg" time="0.0"><Show/></Animate>
+
+		<!-- Show SuccessIcon and play animation -->
+		<Animate target="SuccessIcon" time="0.0">
+			<Show/>
+		</Animate>
+		<Triggers>
+			<AnimationTrigger targetName="SuccessIcon" animationName="Appear" time="0.0"/>
+		</Triggers>
+
+		<!-- Play animation on SuccessIcon and hide -->
+		<Triggers>
+			<AnimationTrigger targetName="ConnectionSpinner" animationName="Disappear" time="0.0"/>
+			<AnimationTrigger targetName="ConnectionSpinnerBg" animationName="Disappear" time="0.0"/>
+		</Triggers>
+		<Animate target="ConnectionSpinner" time="2.0">
+			<Hide/>
+		</Animate>
+		<Animate target="ConnectionSpinnerBg" time="2.0">
+			<Hide/>
+		</Animate>
+
+		<!-- When SuccessIcon's animation stopped playing, animate FbConnectIconRoot out of screen, then hide it -->
+		<Triggers>
+			<AnimationTrigger targetName="FbConnectIconRoot" animationName="Disappear" time="2.0"/>
+		</Triggers>
+		<Animate target="FbConnectIconRoot" time="3.0">
+			<Hide/>
+		</Animate>
+	</Timeline>
+</Timelines>

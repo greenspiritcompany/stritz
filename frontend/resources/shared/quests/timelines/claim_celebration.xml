@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0.0" endTime="4.0">
+
+
+        <Triggers>
+
+            <EffectTrigger name="CastleConfetti" time="0.0">
+                <Offset x="100" y="100" z="200"/>
+            </EffectTrigger>
+
+            <EffectTrigger name="CastleConfetti" time="0.25">
+                <Offset x="500" y="900" z="200"/>
+            </EffectTrigger>
+
+            <EffectTrigger name="CastleConfetti" time="0.45">
+                <Offset x="550" y="650" z="200"/>
+            </EffectTrigger>
+
+            <EffectTrigger name="CastleConfetti" time="0.55">
+                <Offset x="150" y="350" z="200"/>
+            </EffectTrigger>
+
+            <EffectTrigger name="CastleConfetti" time="0.20">
+                <Offset x="150" y="800" z="200"/>
+            </EffectTrigger>
+
+            <EffectTrigger name="CastleConfetti" time="0.6">
+                <Offset x="600" y="100" z="200"/>
+            </EffectTrigger>
+
+        </Triggers>
+    </Timeline>
+</Timelines>

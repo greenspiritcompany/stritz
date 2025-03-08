@@ -1,0 +1,20 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="0.7">
+		<Animate target="SplatSprite">
+			<Show/>
+			<Scale time="0.0" x="0.5" y="0.5"/>
+			<Color time="0.0" a="50"/>
+			<Scale time="0.1" x="1.8" y="1.8"/>
+			<Color time="0.1" a="255"/>
+			<Color time="0.3" a="255"/>
+			<Color time="0.4" a="0"/>
+		</Animate>
+		<Triggers>
+			<AnimationTrigger targetName="Honey_Crack" animationName="Honey_Crack_Animation"/>
+			<EffectTrigger name="HoneySplashEFQ">
+				<Offset z="60"/>
+			</EffectTrigger>
+		</Triggers>
+	</Timeline>
+</Timelines>

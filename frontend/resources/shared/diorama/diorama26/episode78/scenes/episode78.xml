@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="Episode78Material">
+		<Cull enabled="false" face="back" />
+		<Texture filename="shared/diorama/diorama26/episode78/tex/episode78_material.png" />
+	</Material>
+	<Material name="Episode78MaterialAlpha" parentMaterial="Episode78Material">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode78PathMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode78PathMaterialAlpha" parentMaterial="Episode78PathMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="Episode78BackdropMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/diorama26/episode78/tex/episode78_material.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode78BackdropMaterialAlpha" parentMaterial="Episode78BackdropMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<SceneObject name="DioramaModel">
+			<!--
+				BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+        FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+      -->
+			<Model filename="shared/diorama/diorama26/episode78/models/episode78_diorama_base.ffm" />
+			<Material parentMaterial="Episode78BackdropMaterial" />
+			<Translation x="1900" />
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<!--ADD PATH SHADOW - ADD YOUR -->
+			<!--ASSET SHADOWS-->
+			<!--PORTAL FORWARD-->
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+			<!--
+				SPEECHBUBBLE
+			-->
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<Import filename="shared/diorama/diorama26/episode78/scenes/episode78_levelpins.xml" />
+			<SceneObject name="interactable">
+				<SceneObject name="ep78_branch">
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/non_interactable/ep78_branch.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="45.927" y="-20.876" z="-217.870" />
+				</SceneObject>
+				<SceneObject name="ep78_tree">
+					<Interactable upEffect="diorama_lollipop" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_tree.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="335.828" y="18.624" z="-305.674" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" weight="0.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep78_bigtree">
+					<Interactable upEffect="diorama_lollipop" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_bigtree.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-490.917" y="10.346" z="-122.633" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" weight="0.600" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" speed="1.300" play="true" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep78_candyrock2">
+					<Interactable upEffect="diorama_lollipop" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_candyrock.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="-693.013" y="31.109" z="355.406" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" speed="0.400" play="true" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1.371" y="1.371" z="1.371" />
+				</SceneObject>
+				<SceneObject name="ep78_candyrock3">
+					<Interactable upEffect="diorama_lollipop" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_candyrock.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="-815.754" y="24.505" z="-273.755" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" weight="0.500" play="true" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1.157" y="1.177" z="1.177" />
+				</SceneObject>
+				<SceneObject name="ep78_candyrock4">
+					<Interactable upEffect="diorama_lollipop" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_candyrock.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="160.274" y="31.109" z="355.406" />
+					<Scale x="1.371" y="1.371" z="1.371" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" speed="0.400" play="true" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep78_cloud">
+					<Interactable upEffect="diorama_cloud" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_cloud.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="44.027" y="-19.672" z="0" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.600" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep78_cloud6">
+					<Interactable upEffect="diorama_cloud" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_cloud.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="-300.561" y="135.219" z="-75.621" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" weight="0.700" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" speed="1.300" />
+					<Scale x="0.776" y="0.777" z="0.790" />
+				</SceneObject>
+				<SceneObject name="ep78_cloud2">
+					<Interactable upEffect="diorama_cloud" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_cloud.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="-697.380" y="135.999" z="61.414" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.300" weight="2" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep78_cloud4">
+					<Interactable upEffect="diorama_cloud" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_cloud.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="403.641" y="-155.029" z="40.607" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1.198" y="1.171" z="1.187" />
+				</SceneObject>
+				<SceneObject name="ep78_cloud5">
+					<Interactable upEffect="diorama_cloud" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_cloud.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="763.509" y="-89.805" z="-29.761" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" weight="2" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep78_sodafall">
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_sodafall.ffm" />
+					<Rotation x="-8.750" y="0" z="0" />
+					<Translation x="146.543" y="28.003" z="-233.291" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" speed="0.300" play="true" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1.103" y="1.011" z="1.148" />
+				</SceneObject>
+				<SceneObject name="ep78_rock">
+					<Interactable upEffect="diorama_lollipop" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_rock.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="827.778" y="10.511" z="-277.814" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" speed="1.300" play="true" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="1.113" y="1.118" z="1.102" />
+				</SceneObject>
+				<SceneObject name="ep78_rock2">
+					<Interactable upEffect="diorama_lollipop" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_rock.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-385.694" y="5.103" z="-286.025" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" weight="0.600" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="true" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Scale x="-1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="ep78_rock3">
+					<Interactable upEffect="diorama_lollipop" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_rock.ffm" />
+					<Rotation x="-22.832" y="0" z="0" />
+					<Translation x="-291.625" y="20.101" z="362.756" />
+					<Scale x="1.376" y="1.493" z="1.354" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" weight="0.600" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="true" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep78_rock4">
+					<Interactable upEffect="diorama_lollipop" />
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/interactable/ep78_rock.ffm" />
+					<Rotation x="-22.832" y="0" z="0" />
+					<Translation x="556.093" y="17.405" z="369.012" />
+					<Scale x="1.376" y="1.493" z="1.354" />
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" weight="0.600" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="true" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="non_interactable">
+				<Translation x="-1500" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject name="ep78_backgroundmountain">
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/non_interactable/ep78_backgroundmountain.ffm" />
+					<Rotation x="0" y="2.164" z="0" />
+					<Translation x="1431.929" y="-22.684" z="-35.164" />
+					<SceneObject name="ep78_silouttemountain">
+						<Material parentMaterial="Episode78MaterialAlpha" />
+						<Model filename="shared/diorama/diorama26/episode78/models/non_interactable/ep78_silouttemountain.ffm" />
+						<Translation x="641.206" y="-36.104" z="-366.698" />
+						<Rotation x="0" y="-1.064" z="4.403" />
+						<Scale x="1.187" y="1" z="1" />
+					</SceneObject>
+					<SceneObject name="ep78_silouttemountain2">
+						<Material parentMaterial="Episode78MaterialAlpha" />
+						<Model filename="shared/diorama/diorama26/episode78/models/non_interactable/ep78_silouttemountain.ffm">
+							<Bound maxZ="-100" />
+						</Model>
+						<Translation x="91.350" y="-97.208" z="-394.266" />
+						<Rotation x="0" y="-2.025" z="-9.782" />
+						<Scale x="1.448" y="0.838" z="1" />
+					</SceneObject>
+					<SceneObject name="ep78_oc">
+						<Material parentMaterial="Episode78Material" />
+						<Model filename="shared/diorama/diorama26/episode78/models/non_interactable/ep78_oc.ffm" />
+						<Translation x="67.623" y="21.658" z="38.252" />
+						<Rotation x="0" y="-1.517" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="ep78_backgroundmountain2">
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/non_interactable/ep78_backgroundmountain.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="2748.546" y="-44.549" z="40.191" />
+				</SceneObject>
+				<SceneObject name="ep78_backgroundmountain3">
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Model filename="shared/diorama/diorama26/episode78/models/non_interactable/ep78_backgroundmountain.ffm" />
+					<Rotation x="0" y="0" z="-59.231" />
+					<Translation x="1405.365" y="-662.554" z="7.401" />
+				</SceneObject>
+				<SceneObject name="ep78_tiles">
+					<Material parentMaterial="Episode78Material" />
+					<Model filename="shared/diorama/diorama26/episode78/models/non_interactable/ep78_tiles.ffm">
+						<Bound minZ="-1000" maxY="10" maxZ="1000" />
+					</Model>
+					<Translation x="1500" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="ep78_tilesshadow">
+					<Model filename="shared/diorama/diorama26/episode78/models/non_interactable/ep78_tilesshadow.ffm">
+						<Bound minZ="-1000" maxY="10" maxZ="10" />
+					</Model>
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Translation x="1501.697" y="0" z="0.376" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Episode78_Backdrop">
+				<SceneObject name="Episode78_Diorama_Sky">
+					<Model filename="shared/diorama/diorama26/episode78/models/episode78_diorama_sky.ffm" />
+					<Material parentMaterial="Episode78BackdropMaterial" />
+					<Translation x="0" y="0" z="-18.381" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<!--
+        EPISODE GROUND GEOMETRY ETC.
+        -->
+				<SceneObject name="Episode78_Ground">
+					<Model filename="shared/diorama/diorama26/episode78/models/episode78_ground.ffm" />
+					<Material parentMaterial="Episode78Material" />
+					<Translation x="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="E78Path">
+				<Model filename="shared/diorama/diorama26/episode78/models/path/episode78_path.ffm">
+					<Bound minZ="-600" />
+				</Model>
+				<Material parentMaterial="Episode78PathMaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E78PathShadow">
+				<Model filename="shared/diorama/diorama26/episode78/models/path/path_shadow.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="Episode78MaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="AssetShadows">
+				<Model filename="shared/diorama/diorama26/episode78/models/asset_shadow.ffm">
+					<Bound minZ="-1600" />
+				</Model>
+				<Material parentMaterial="Episode78MaterialAlpha" />
+				<Translation x="3.416" y="0" z="0" />
+				<Rotation x="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E78EndSign">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm" />
+				<Material parentMaterial="Under_Construction_Icon" />
+				<Translation x="737.981" y="84" z="40" />
+				<Rotation x="-35" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="PortalForwardGroup">
+				<Translation x="-419.315" y="15" z="170" />
+				<SceneObject name="diorama_link_next">
+					<Model filename="shared/diorama/common/models/portal/portal.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="1147" y="115" z="-215" />
+					<Rotation x="0" y="-40" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<SceneObject name="diorama_portal_shadow">
+						<Model filename="shared/diorama/common/models/portal/portal_shadow.ffm" />
+						<Material parentMaterial="PortalMaterial" />
+						<Translation x="0" y="0" z="0" />
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="diorama_link_next_pin_enabled" visibility="never">
+					<Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+						<Animation filename="shared/diorama/common/models/portal/pin_idle.ffa" loopCount="-1" name="idlePinEmil" play="true" speed="1" />
+					</Model>
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="1120" y="42" z="-165" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_link_next_pin_disabled">
+					<Model filename="shared/diorama/common/models/portal/portal_pin_inactive.ffm" />
+					<Material parentMaterial="PortalDisabledMaterial" />
+					<Translation x="1120" y="42" z="-165" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Episode78Character">
+				<Translation x="0" y="77.284" z="-211.910" />
+				<SceneObject name="CharacterEp78">
+					<Rotation x="-0.553" y="0" z="0" />
+					<Scale x="1.153" y="1.153" z="1.153" />
+					<Model filename="shared/diorama/diorama26/episode78/models/character/episode78_character.ffm">
+						<Animation filename="shared/diorama/diorama26/episode78/models/character/episode78_character_idle.ffa" loopCount="-1" name="Idle" startTimeRandomOffset="0" startDelay="0" play="true" />
+						<Animation filename="shared/diorama/diorama26/episode78/models/character/episode78_character_talk.ffa" name="Talk" speed="1.200" weight="0.500" />
+					</Model>
+					<Material parentMaterial="Episode78MaterialAlpha" />
+					<Translation x="52.890" y="-150.827" z="18.817" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="SpeechBubbleEp78">
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear" play="true" />
+				<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear" />
+				<SpeechBubble>
+					<Speech key="episode78.intro" />
+					<Speech key="episode78.outro" />
+				</SpeechBubble>
+				<Translation y="125" z="-136" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+			</SceneObject>
+			<SceneObject name="Particles">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-200" />
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-400" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1272CameraTarget">
+				<Translation x="-200" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1285CameraTarget">
+				<Translation x="-200" y="19" z="-20" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

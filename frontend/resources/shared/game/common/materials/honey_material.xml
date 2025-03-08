@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Material name="HoneyMat">
+		<Blend enabled="true"/>
+		<Cull enabled="false" face="back"/>
+		<Depth writeMask="false" enabled="false"/>
+		<Shader program="TextureColor"/>
+	</Material>
+
+	<Material name="HoneySolid1Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_1_c.png"/>
+		</Textures>
+	</Material>
+	<Material name="HoneySolid2Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_2_c.png"/>
+		</Textures>
+	</Material>
+	<Material name="HoneySolid3Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_3_c.png"/>
+		</Textures>
+	</Material>
+	<Material name="HoneySolid4Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_4_c.png"/>
+		</Textures>
+	</Material>
+
+
+	<Material name="SeeThrough1Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_bear_1_c.png"/>
+		</Textures>
+	</Material>
+	<Material name="SeeThrough2Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_bear_2_c.png"/>
+		</Textures>
+	</Material>
+
+
+	<Material name="Empty1Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_empty_1_c.png"/>
+		</Textures>
+	</Material>
+	<Material name="Empty2Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_empty_2_c.png"/>
+		</Textures>
+	</Material>
+
+
+	<Material name="Special1Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_special_1_c.png"/>
+		</Textures>
+	</Material>
+	<Material name="Special2Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_special_2_c.png"/>
+		</Textures>
+	</Material>
+
+
+</Scene>

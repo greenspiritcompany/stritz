@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode61PathMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode61PathMaterialAlpha" parentMaterial="Episode61PathMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<SceneObject name="DioramaModel">
+			<Translation x="-2100" />
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Import filename="shared/diorama/diorama21/episode61/scenes/episode61_levelpins.xml" />
+			<SceneObject name="Episode61_Backdrop">
+				<SceneObject name="Episode61_Ground" editorEntityId="8">
+					<Model filename="shared/diorama/diorama21/episode61/models/episode61_ground.ffm">
+						<Bound maxZ="1000" />
+					</Model>
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0003_base.png" />
+					</Material>
+					<Translation x="190.129" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="Episode61_shadow" editorEntityId="8">
+					<Model filename="shared/diorama/diorama21/episode61/models/episode61_ground_shadow.ffm" />
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0003_base.png" />
+						<Blend enabled="true" />
+					</Material>
+					<Translation x="187.946" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<SceneObject name="E61Path">
+				<Model filename="shared/diorama/diorama21/episode61/models/path/episode61_path.ffm">
+					<Bound minZ="-500" maxZ="100" />
+				</Model>
+				<Material parentMaterial="Episode61PathMaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<!--ADD PATH SHADOW - ADD YOUR -->
+			<SceneObject name="E61PathShadow">
+				<Model filename="shared/diorama/diorama21/episode61/models/path/path_shadow.ffm">
+					<Bound minZ="-1000" />
+				</Model>
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0003_base.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+				</Material>
+				<Translation x="0" y="2.521" z="-12.123" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E61EndSign">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm" skinNormals="false" />
+				<Material parentMaterial="Under_Construction_Icon">
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+				</Material>
+				<Translation x="850" y="84" z="180" />
+				<Rotation x="-35" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<!--	PORTAL BACK	-->
+			<SceneObject name="PortalBackGroup">
+				<Translation x="-170" y="-40" z="-15" />
+				<SceneObject name="diorama_link_previous">
+					<Model filename="shared/diorama/common/models/portal/portal.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="-840" y="135" z="-70" />
+					<Rotation x="0" y="50" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_portal_shadow">
+					<Model filename="shared/diorama/common/models/portal/portal_shadow.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="-835" y="150" z="-50" />
+					<Rotation x="0" y="50" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_link_previous_pin">
+					<Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+						<Animation filename="shared/diorama/common/models/portal/pin_idle.ffa" loopCount="-1" name="idlePinEmil" play="true" speed="1" />
+					</Model>
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="-806" y="65" z="-20" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<!-- DIORAMA ASSETS -->
+			<!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+
+>
+      <SceneObject name="episode61_Non_Interactable_Group">
+        <SceneObject name="episode61_Non_Interactable_01">
+          <Model filename="shared/diorama/diorama21/episode61/models/non_interactable/episode61_non_interactable_01.ffm"/>
+          <Materials>
+            <Material parentMaterial="Episode61MaterialAlpha"/>
+          </Materials>
+          <Translation x="-413.886" y="40.955" z="-150.066"/>
+          <Rotation x="0" y="0" z="0"/>
+          <Scale x="1" y="1" z="1"/>
+        </SceneObject>
+      </SceneObject>
+
+
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+			<SceneObject name="episode61_Interactable_Group" />
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+			<SceneObject name="Episode61Character">
+				<Translation x="-81.281" y="69.372" z="-211.910" />
+				<SceneObject name="pirate">
+					<Model filename="shared/diorama/diorama21/episode61/models/character/episode61_character.ffm">
+						<Animation filename="shared/diorama/diorama21/episode61/models/character/episode61_character_idle.ffa" name="idle" play="true" />
+						<Bound minZ="-200" maxZ="200" />
+					</Model>
+					<Translation x="-278.668" y="-104.498" z="115.525" />
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0000s_0000_pirate_body.png" />
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+					</Material>
+					<Scale x="0.907" y="0.907" z="0.907" />
+					<SceneObject name="fx_rain_drop21">
+						<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+						<Translation x="-137.530" y="159.416" z="22.577" />
+						<Scale x="0.574" y="0.539" z="0.747" />
+						<Rotation x="0" y="0" z="-8.480" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<!--
+				SPEECHBUBBLE
+			-->
+			<SceneObject name="SpeechBubbleEp61">
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear" />
+				<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear" />
+				<SpeechBubble>
+					<Speech key="episode61.intro" />
+					<Speech key="episode61.outro" />
+				</SpeechBubble>
+				<Translation x="-396.732" y="125" z="-66.367" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+			</SceneObject>
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<SceneObject name="Particles">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-200" />
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-400" />
+			</SceneObject>
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<SceneObject name="UnlockLevel1007CameraTarget">
+				<Translation x="-618.792" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1025CameraTarget">
+				<Translation x="-618.792" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject editorEntityId="23" name="house">
+				<Sprite filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0000s_0004_house.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Interactable upEffect="diorama_house" />
+				<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" startTime="1" loopCount="-1" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Translation x="83.631" y="187.598" z="-204.503" />
+				<Scale x="0.992" y="0.956" z="0.992" />
+				<Rotation x="170" y="0" z="0" />
+				<SceneObject editorEntityId="24" name="glow3">
+					<Translation x="-197.426" y="-29.232" z="207.340" />
+					<Scale x="0.521" y="0.744" z="1.679" />
+					<Rotation x="-180" />
+					<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_glow.ffm" />
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_glow.png" />
+						<Blend enabled="true" blendFuncSourceFactor="One" blendFuncDestinationFactor="One" />
+						<Depth enabled="true" />
+						<Light>
+							<Ambient r="255" g="255" b="255" a="255" />
+							<Specular r="0" g="0" b="0" a="255" />
+						</Light>
+					</Material>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject editorEntityId="23" name="lighthouse">
+				<Sprite filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0002_lighthouse.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="633.630" y="71.111" z="-303.973" />
+				<Scale x="0.491" y="0.492" z="0.492" />
+				<Rotation x="-180" />
+			</SceneObject>
+			<SceneObject name="seagull">
+				<Material>
+					<Depth enabled="true" />
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_ra__0000s_0001_seagull.png" />
+					<Blend enabled="true" />
+					<Cull face="front" />
+				</Material>
+				<Model filename="shared/diorama/diorama21/episode61/models/character/episode61_bird.ffm">
+					<Animation name="idle" filename="shared/diorama/diorama21/episode61/models/character/episode61_bird_idle_ffa.ffa" play="true" />
+					<Bound minZ="-100" />
+				</Model>
+				<Interactable upEffect="diorama_squeeker" />
+				<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" startTime="1" loopCount="-1" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Translation x="3.153" y="-2.198" z="438.102" />
+				<Scale x="1.047" y="1.082" z="1.082" />
+				<Rotation x="-25.739" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="fish_hanger">
+				<Spine filename="shared/diorama/diorama21/episode61/models/animated_background/fish_hanger.json">
+					<Animation spineAnimation="fish_hanger" play="true" name="hekko" />
+					<bound maxX="100000000154.000" />
+				</Spine>
+				<Interactable upEffect="diorama_lollipop" />
+				<Interactable upEffect="diorama_tree" />
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0000s_0003_fish.png" />
+					<Depth enabled="true" />
+					<Blend enabled="true" />
+				</Material>
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0000s_0003_fish.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+				</Material>
+				<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" startTime="1" loopCount="-1" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Translation x="370.656" y="-12.444" z="-271.520" />
+				<Scale x="0.637" y="-0.637" z="0.637" />
+			</SceneObject>
+			<SceneObject name="Episode61_fog" editorEntityId="8">
+				<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_fog.ffm" />
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_fog.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Light>
+						<Diffuse r="255" g="255" b="255" a="255" />
+						<Ambient r="255" g="255" b="255" a="255" />
+						<Specular r="255" g="255" b="255" a="255" />
+						<Emissive r="255" g="255" b="255" a="255" />
+					</Light>
+				</Material>
+				<Translation x="227.262" y="-125.380" z="109.115" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="-20.762" y="0" z="0" />
+			</SceneObject>
+			<SceneObject editorEntityId="23" name="bridge">
+				<Translation x="1086.448" y="45.018" z="233.259" />
+				<Scale x="1.099" y="1.099" z="0.882" />
+				<Rotation x="-3.791" y="9.508" z="3.871" />
+				<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_bridge.ffm" />
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0003_base.png" />
+				</Material>
+			</SceneObject>
+			<SceneObject name="Episode61_fog3" editorEntityId="8">
+				<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_fog.ffm" />
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_fog.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Light enabled="true">
+						<Diffuse r="255" g="255" b="255" a="255" />
+						<Ambient r="255" g="255" b="255" a="255" />
+						<Specular r="255" g="255" b="255" a="255" />
+						<Emissive r="255" g="255" b="255" a="255" />
+					</Light>
+				</Material>
+				<Translation x="1815.340" y="-9.335" z="-589.766" />
+				<Scale x="2.098" y="1.352" z="1" />
+			</SceneObject>
+			<SceneObject name="Episode61_fog4" editorEntityId="8">
+				<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_fog.ffm" />
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_fog.png" />
+					<Blend enabled="true" blendFuncSourceFactor="One" />
+					<Depth enabled="true" />
+					<Light>
+						<Diffuse r="255" g="255" b="255" a="255" />
+						<Ambient r="255" g="255" b="255" a="255" />
+						<Specular r="255" g="255" b="255" a="255" />
+						<Emissive r="255" g="255" b="255" a="255" />
+					</Light>
+				</Material>
+				<Translation x="7.325" y="42.849" z="-726.283" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="Episode61_fog5" editorEntityId="8">
+				<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_fog.ffm" />
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_fog.png" />
+					<Blend enabled="true" blendFuncSourceFactor="SrcColor" blendFuncDestinationFactor="OneMinusSrcColor" />
+					<Depth enabled="true" />
+					<Light>
+						<Diffuse r="255" g="255" b="255" a="255" />
+						<Ambient r="171" g="171" b="171" a="255" />
+						<Specular r="0" g="0" b="0" a="255" />
+						<Emissive r="0" g="0" b="0" a="255" />
+					</Light>
+				</Material>
+				<Translation x="1672.037" y="497.642" z="-726.283" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="Episode61_fog6" editorEntityId="8">
+				<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_fog.ffm" />
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_fog.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Light>
+						<Diffuse r="255" g="255" b="255" a="255" />
+						<Ambient r="62" g="62" b="62" a="255" />
+						<Specular r="0" g="0" b="0" a="255" />
+						<Emissive r="0" g="0" b="0" a="255" />
+					</Light>
+					<Color r="255" g="225" b="250" a="255" />
+				</Material>
+				<Translation x="1890.673" y="-286.899" z="224.595" />
+				<Scale x="1.967" y="1" z="1" />
+				<Rotation x="-60.905" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="Episode61_fog7" editorEntityId="8">
+				<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_fog.ffm" />
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_fog.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Light>
+						<Diffuse r="255" g="255" b="255" a="255" />
+						<Ambient r="255" g="255" b="255" a="255" />
+						<Specular r="255" g="255" b="255" a="255" />
+						<Emissive r="255" g="255" b="255" a="255" />
+					</Light>
+					<Color r="255" g="226" b="255" a="255" />
+				</Material>
+				<Translation x="1506.860" y="400.616" z="-634.678" />
+				<Scale x="2.098" y="1" z="1" />
+			</SceneObject>
+			<SceneObject editorEntityId="25" name="balloon_rope">
+				<Sprite filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0000s_0006_balloons_rope_1.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Interactable upEffect="diorama_squishy" />
+				<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" startTime="1" loopCount="-1" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Translation x="730.984" y="61.917" z="397.251" />
+				<Scale x="0.513" y="0.552" z="0.318" />
+				<Rotation x="135.826" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="fx_rain">
+				<Effect effectData="RainEffect" name="youbasterdddd" play="true" />
+				<Translation x="-428.060" y="124.980" z="1.994" />
+				<Rotation x="0" y="0" />
+			</SceneObject>
+			<SceneObject name="fxraindrop">
+				<Translation x="1987.499" y="0" z="-65.859" />
+				<SceneObject name="fx_rain_drop">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-3054.910" y="17.526" z="60.123" />
+					<Scale x="0.400" y="0.400" z="0.400" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop2">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-2973.150" y="17.526" z="255.921" />
+					<Scale x="0.400" y="0.400" z="0.400" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop3">
+					<Effect effectData="Rain_drop_Effect_2" name="Rain_drop_Effect" play="true" />
+					<Translation x="-2877.852" y="17.526" z="-3.602" />
+					<Scale x="0.133" y="0.133" z="0.133" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop4">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-2526.263" y="17.526" z="74.849" />
+					<Scale x="0.133" y="0.133" z="0.133" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop5">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-2704.035" y="17.526" z="231.109" />
+					<Scale x="0.416" y="0.416" z="0.416" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop6">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-2401.159" y="17.526" z="231.109" />
+					<Scale x="0.416" y="0.416" z="0.416" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop7">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-2074.879" y="17.526" z="150.479" />
+					<Scale x="0.416" y="0.416" z="0.416" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop8">
+					<Effect effectData="Rain_drop_Effect_2" name="Rain_drop_Effect" play="true" />
+					<Translation x="-2074.879" y="17.526" z="150.479" />
+					<Scale x="0.370" y="0.479" z="-0.100" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop9">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-2219.904" y="17.526" z="33.740" />
+					<Scale x="0.416" y="0.416" z="0.520" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop10">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-1552.898" y="17.526" z="-48.241" />
+					<Scale x="0.416" y="0.416" z="0.520" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop11">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-1401.902" y="17.526" z="172.967" />
+					<Scale x="0.744" y="0.744" z="0.848" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop12">
+					<Effect effectData="Rain_drop_Effect_2" name="Rain_drop_Effect" play="true" />
+					<Translation x="-1756.236" y="17.526" z="230.994" />
+					<Scale x="0.744" y="0.744" z="0.848" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop13">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-1918.111" y="17.526" z="-2.495" />
+					<Scale x="0.361" y="0.361" z="0.465" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop14">
+					<Effect effectData="Rain_drop_Effect_2" name="Rain_drop_Effect" play="true" />
+					<Translation x="-909.702" y="33.563" z="-2.495" />
+					<Scale x="0.361" y="0.361" z="0.465" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop15">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-1047.254" y="17.526" z="193.034" />
+					<Scale x="0.361" y="0.361" z="0.465" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop16">
+					<Effect effectData="Rain_drop_Effect_2" name="Rain_drop_Effect" play="true" />
+					<Translation x="-1057.240" y="17.526" z="44.140" />
+					<Scale x="0.602" y="0.602" z="0.706" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop17">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-1229.185" y="17.526" z="-77.313" />
+					<Scale x="0.361" y="0.361" z="0.465" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop18">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-1821.018" y="157.738" z="-77.313" />
+					<Scale x="0.361" y="0.361" z="0.465" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop19">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-2015.291" y="388.720" z="-104.828" />
+					<Scale x="0.361" y="0.361" z="0.465" />
+				</SceneObject>
+				<SceneObject name="fx_rain_drop20">
+					<Effect effectData="Rain_drop_Effect" name="Rain_drop_Effect" play="true" />
+					<Translation x="-1591.778" y="254.340" z="-104.828" />
+					<Scale x="0.361" y="0.361" z="0.465" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject editorEntityId="28" name="lamp2">
+				<Sprite filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0000s_0005_lamp.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Interactable upEffect="diorama_lollipop" />
+				<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" startTime="1" loopCount="-1" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Translation x="937.748" y="150.105" z="-126.519" />
+				<Scale x="0.769" y="0.863" z="0.981" />
+				<Rotation x="170" y="0" z="0" />
+				<SceneObject editorEntityId="24" name="glow7">
+					<Translation x="-183.384" y="-6.395" z="182.277" />
+					<Scale x="0.517" y="0.537" z="1.476" />
+					<Rotation x="-180" />
+					<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_glow.ffm" />
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_glow.png" />
+						<Blend enabled="true" blendFuncSourceFactor="One" blendFuncDestinationFactor="One" />
+						<Depth enabled="true" />
+						<Light>
+							<Ambient r="255" g="255" b="255" a="255" />
+							<Specular r="0" g="0" b="0" a="255" />
+						</Light>
+					</Material>
+				</SceneObject>
+				<SceneObject editorEntityId="24" name="glow6">
+					<Translation x="179.720" y="-6.395" z="182.277" />
+					<Scale x="0.517" y="0.537" z="1.476" />
+					<Rotation x="-180" />
+					<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_glow.ffm" />
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_glow.png" />
+						<Blend enabled="true" blendFuncSourceFactor="One" blendFuncDestinationFactor="One" />
+						<Depth enabled="true" />
+						<Light>
+							<Ambient r="255" g="255" b="255" a="255" />
+							<Specular r="0" g="0" b="0" a="255" />
+						</Light>
+					</Material>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject editorEntityId="28" name="lamp3">
+				<Sprite filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0000s_0005_lamp.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Interactable upEffect="diorama_lollipop" />
+				<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" startTime="1" loopCount="-1" />
+				<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.300" />
+				<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.300" />
+				<Translation x="-712.692" y="149.523" z="-129.815" />
+				<Scale x="0.769" y="0.863" z="0.981" />
+				<Rotation x="170" y="0" z="0" />
+				<SceneObject editorEntityId="24" name="glow6">
+					<Translation x="179.720" y="-14.371" z="182.277" />
+					<Scale x="0.517" y="0.537" z="1.476" />
+					<Rotation x="-180" />
+					<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_glow.ffm" />
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_glow.png" />
+						<Blend enabled="true" blendFuncSourceFactor="One" blendFuncDestinationFactor="One" />
+						<Depth enabled="true" />
+						<Light>
+							<Ambient r="255" g="255" b="255" a="255" />
+							<Specular r="0" g="0" b="0" a="255" />
+						</Light>
+					</Material>
+				</SceneObject>
+				<SceneObject editorEntityId="24" name="glow8">
+					<Translation x="-181.321" y="-20.733" z="182.277" />
+					<Scale x="0.517" y="0.537" z="1.476" />
+					<Rotation x="-180" />
+					<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_glow.ffm" />
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_glow.png" />
+						<Blend enabled="true" blendFuncSourceFactor="One" blendFuncDestinationFactor="One" />
+						<Depth enabled="true" />
+						<Light>
+							<Ambient r="255" g="255" b="255" a="255" />
+							<Specular r="0" g="0" b="0" a="255" />
+						</Light>
+					</Material>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="background">
+			<Model filename="shared/diorama/diorama21/episode61/models/episode61_diorama_sky.ffm">
+				<Bound maxZ="1" minZ="-500" />
+			</Model>
+			<Material>
+				<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61_sky.png" />
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+			</Material>
+			<Translation x="-2560.084" y="94.342" z="-66.905" />
+			<Scale x="1" y="1.175" z="1" />
+		</SceneObject>
+		<SceneObject editorEntityId="23" name="shadow4">
+			<Translation x="-1162.741" y="-3.188" z="-60.216" />
+			<Scale x="0.593" y="0.984" z="0.751" />
+			<Rotation x="180" y="5.324" z="0" />
+			<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_shadow.ffm">
+				<Bound minZ="-10" maxZ="1" />
+			</Model>
+			<Material>
+				<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0003_base.png" />
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+			</Material>
+		</SceneObject>
+		<SceneObject editorEntityId="23" name="shadow4">
+			<Translation x="-2816.650" y="-2.398" z="-63.233" />
+			<Scale x="0.852" y="0.741" z="0.629" />
+			<Rotation x="180" y="5.324" z="0" />
+			<Model filename="shared/diorama/diorama21/episode61/models/none_interectable/episode61_none_interactable_shadow.ffm">
+				<Bound minZ="-10" maxZ="1" />
+			</Model>
+			<Material>
+				<Texture filename="shared/diorama/diorama21/episode61/tex/assets/ep61__0003_base.png" />
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+			</Material>
+		</SceneObject>
+	</SceneObject>
+</Scene>

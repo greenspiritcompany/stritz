@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="TreasureHuntRewardModal">
+		<Translation x="321.804" y="478.196" z="500" />
+		<Animation name="OnAppear" loopCount="0" animationData="SlideInFromTop" />
+		<Animation name="OnDisappear" loopCount="0" animationData="SlideOutToBelow" />
+		<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+		<SceneObject editorEntityId="375" name="Title">
+			<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="45" maxWidth="370" overflowBehaviour="fit" verticalAlignment="visualCenter" allowWordWrapping="false">
+				<Color a="255" b="255" g="255" r="255" />
+				<Size x="24" y="24" />
+				<TextString>Title</TextString>
+			</Text>
+			<Translation x="0" y="-299.053" z="0" />
+		</SceneObject>
+		<SceneObject name="LockedGifts">
+			<SceneObject name="FirstGift" visibility="never">
+				<Scale x="1.705" y="1.705" z="1" />
+				<Translation x="12.323" y="-173.976" z="0" />
+				<SceneObject name="GiftObject">
+					<Material>
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+					</Material>
+					<Scale x="0.270" y="0.270" z="1" />
+					<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+						<Animation name="Idle" play="true" spineAnimation="gift_pink_idle" />
+						<Animation spineAnimation="gift_pink_idle_jump" />
+						<Animation name="SlideLeftIn" loopCount="0" spineAnimation="gift_pink_closed_SL_in" />
+						<Animation name="SlideLeftOut" loopCount="0" spineAnimation="gift_pink_closed_SL_out" />
+						<Animation name="SlideRightIn" loopCount="0" spineAnimation="gift_pink_closed_SR_in" />
+						<Animation name="SlideRightOut" loopCount="0" spineAnimation="gift_pink_closed_SR_out" />
+					</Spine>
+					<Translation x="-2.847" y="42.243" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="SecondGift" visibility="never">
+				<Scale x="1.705" y="1.705" z="1" />
+				<Translation x="12.498" y="-173.462" z="0" />
+				<SceneObject name="GiftObject">
+					<Material>
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+					</Material>
+					<Scale x="0.270" y="0.270" z="1" />
+					<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+						<Animation name="Idle" play="true" spineAnimation="gift_green_idle" />
+						<Animation spineAnimation="gift_green_idle_jump" />
+						<Animation name="SlideLeftIn" loopCount="0" spineAnimation="gift_green_closed_SL_in" />
+						<Animation name="SlideLeftOut" loopCount="0" spineAnimation="gift_green_closed_SL_out" />
+						<Animation name="SlideRightIn" loopCount="0" spineAnimation="gift_green_closed_SR_in" />
+						<Animation name="SlideRightOut" loopCount="0" spineAnimation="gift_green_closed_SR_out" />
+					</Spine>
+					<Translation x="-2.847" y="42.243" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="ThirdGift" visibility="never">
+				<Scale x="1.705" y="1.705" z="1" />
+				<Translation x="8.877" y="-177.026" z="0" />
+				<SceneObject name="GiftObject">
+					<Material>
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+					</Material>
+					<Scale x="0.270" y="0.270" z="1" />
+					<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+						<Animation name="Idle" play="true" spineAnimation="gift_purple_idle" />
+						<Animation spineAnimation="gift_purple_idle_jump" />
+						<Animation name="SlideLeftIn" loopCount="0" spineAnimation="gift_purple_closed_SL_in" />
+						<Animation name="SlideLeftOut" loopCount="0" spineAnimation="gift_purple_closed_SL_out" />
+						<Animation name="SlideRightIn" loopCount="0" spineAnimation="gift_purple_closed_SR_in" />
+						<Animation name="SlideRightOut" loopCount="0" spineAnimation="gift_purple_closed_SR_out" />
+					</Spine>
+					<Translation x="-2.847" y="42.243" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="UnlockedGifts">
+			<SceneObject name="FirstGift" editorEntityId="927" visibility="never">
+				<Scale x="1.705" y="1.705" z="1" />
+				<Translation x="7.487" y="-169.789" z="0" />
+				<SceneObject name="GiftObject">
+					<Material>
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+					</Material>
+					<Scale x="0.270" y="0.270" z="1" />
+					<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+						<Animation name="Idle" play="true" spineAnimation="gift_pink_open" />
+						<Animation name="SlideLeftIn" loopCount="0" spineAnimation="gift_pink_open_SL_in" />
+						<Animation name="SlideLeftOut" loopCount="0" spineAnimation="gift_pink_open_SL_out" />
+						<Animation name="SlideRightIn" loopCount="0" spineAnimation="gift_pink_open_SR_in" />
+						<Animation name="SlideRightOut" loopCount="0" spineAnimation="gift_pink_open_SR_out" />
+					</Spine>
+					<Translation x="-2.847" y="42.243" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="SecondGift" editorEntityId="927" visibility="never">
+				<Scale x="1.705" y="1.705" z="1" />
+				<Translation x="-1.342" y="-176.656" z="0" />
+				<SceneObject name="GiftObject">
+					<Material>
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+					</Material>
+					<Scale x="0.275" y="0.275" z="1" />
+					<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+						<Animation name="Idle" play="true" speed="1.200" spineAnimation="gift_green_open" />
+						<Animation name="SlideLeftIn" loopCount="0" spineAnimation="gift_green_open_SL_in" />
+						<Animation name="SlideLeftOut" loopCount="0" spineAnimation="gift_green_open_SL_out" />
+						<Animation name="SlideRightIn" loopCount="0" spineAnimation="gift_green_open_SR_in" />
+						<Animation name="SlideRightOut" loopCount="0" spineAnimation="gift_green_open_SR_out" />
+					</Spine>
+					<Translation x="10.335" y="49.462" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="ThirdGift" editorEntityId="927" visibility="never">
+				<Scale x="1.705" y="1.705" z="1" />
+				<Translation x="-1.342" y="-176.656" z="0" />
+				<SceneObject name="GiftObject">
+					<Material>
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+					</Material>
+					<Scale x="0.318" y="0.318" z="1" />
+					<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+						<Animation name="Idle" play="true" speed="1.500" spineAnimation="gift_purple_open" />
+						<Animation name="SlideLeftIn" loopCount="0" spineAnimation="gift_purple_open_SL_in" />
+						<Animation name="SlideLeftOut" loopCount="0" spineAnimation="gift_purple_open_SL_out" />
+						<Animation name="SlideRightIn" loopCount="0" spineAnimation="gift_purple_open_SR_in" />
+						<Animation name="SlideRightOut" loopCount="0" spineAnimation="gift_purple_open_SR_out" />
+					</Spine>
+					<Translation x="4.111" y="52.420" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="GiftLocked">
+			<SceneObject name="PreRewardBox">
+				<Translation x="-3.772" y="39.481" z="0" />
+				<SceneObject name="Middle">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/pre_reward_box_middle.png" vertexColors="false" wrap="repeat">
+						<Pivot anchor="left" />
+						<Rectangle maxX="384" maxY="128" />
+					</Sprite>
+					<Translation x="-187" y="100" />
+				</SceneObject>
+				<SceneObject name="Left">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/pre_reward_box_left.png" vertexColors="false">
+						<Pivot anchor="right" />
+					</Sprite>
+					<Translation x="-187" y="100" />
+				</SceneObject>
+				<SceneObject __visibility="0" name="Right">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/pre_reward_box_right.png" vertexColors="false">
+						<Pivot anchor="left" />
+					</Sprite>
+					<Translation x="197" y="100" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardLockedText">
+				<Text key="event.treasurehunt.reward.reward_locked_text" alignment="center" canBreakWords="false" font="Typewriter" maxHeight="60" maxWidth="470" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="51" g="102" r="131" />
+					<GradientColor enabled="false" />
+					<Shadow enabled="false" />
+					<Size x="18" y="18" />
+					<TextString>Unlock level {level} to receive this gift!</TextString>
+				</Text>
+				<Translation x="1" y="30.686" z="0" />
+			</SceneObject>
+			<SceneObject name="TimeLeftContainer">
+				<Translation x="2.715" y="-184.276" z="0" />
+				<SceneObject name="Background">
+					<Editor editorEntityId="237" />
+					<Translation x="0" y="106.070" z="0" />
+					<SceneObject name="left">
+						<Editor editorEntityId="238" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/timeleft_box_left.png" vertexColors="false" />
+						<Translation x="-256" y="0" z="0" />
+					</SceneObject>
+					<SceneObject name="mid">
+						<Editor editorEntityId="239" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/timeleft_box_middle.png" vertexColors="false" wrap="repeat">
+							<Rectangle maxX="384" maxY="64" />
+						</Sprite>
+						<Translation x="-192" y="0" z="0" />
+					</SceneObject>
+					<SceneObject name="right">
+						<Editor editorEntityId="240" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/timeleft_box_right.png" vertexColors="false" />
+						<Translation x="192" y="0" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="RemainingTime">
+					<Text alignment="center" font="Banana" verticalAlignment="visualCenter">
+						<Color a="255" b="135" g="20" r="143" />
+						<Size x="22" y="22" />
+						<TextString>Ends in: 2 days</TextString>
+					</Text>
+					<Translation x="-5.581" y="138.780" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Ornament">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/heart_ornament.png" vertexColors="false" />
+				<Translation x="-196.973" y="-214.574" z="0" />
+				<SceneObject name="Ornament2">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/heart_ornament.png" vertexColors="false" />
+					<Translation x="403.866" y="0" z="0" />
+					<Scale x="-1" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="GiftUnlocked">
+			<SceneObject name="RewardBox">
+				<Translation x="-3.772" y="39.481" z="0" />
+				<SceneObject name="Middle">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" vertexColors="false" wrap="repeat">
+						<Pivot anchor="left" />
+						<Rectangle maxX="384" maxY="128" />
+					</Sprite>
+					<Translation x="-187" y="100" />
+				</SceneObject>
+				<SceneObject name="Left">
+					<Sprite filename="shared/castle/tex/reward_box_left.png" vertexColors="false">
+						<Pivot anchor="right" />
+					</Sprite>
+					<Translation x="-187" y="100" />
+				</SceneObject>
+				<SceneObject __visibility="0" name="Right">
+					<Sprite filename="shared/castle/tex/reward_box_right.png" vertexColors="false">
+						<Pivot anchor="left" />
+					</Sprite>
+					<Translation x="197" y="100" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardText">
+				<Text key="event.treasurehunt.reward.reward_unlocked_text" alignment="center" canBreakWords="false" font="Typewriter" maxHeight="60" maxWidth="470" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="51" g="102" r="131" />
+					<GradientColor enabled="false" />
+					<Shadow enabled="false" />
+					<Size x="18" y="18" />
+					<TextString>%Text%$</TextString>
+				</Text>
+				<Translation x="1" y="30.686" z="0" />
+			</SceneObject>
+			<SceneObject name="Ornament">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/heart_ornament.png" vertexColors="false" />
+				<Translation x="-196.973" y="-214.574" z="0" />
+				<SceneObject name="Ornament2">
+					<Scale x="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/heart_ornament.png" vertexColors="false" />
+					<Translation x="403.866" y="0" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Check">
+				<Sprite filename="shared/liveops/treasure_hunt/tex/th_check.png" vertexColors="false" />
+				<Translation x="-45.343" y="-128.475" z="1" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="AllGiftsUnlocked">
+			<SceneObject name="RewardBox" visibility="dynamic">
+				<Translation x="-3.772" y="39.481" z="0" />
+				<SceneObject name="Middle">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" vertexColors="false" wrap="repeat">
+						<Pivot anchor="left" />
+						<Rectangle maxX="384" maxY="128" />
+					</Sprite>
+					<Translation x="-187" y="100" z="0" />
+				</SceneObject>
+				<SceneObject name="Left">
+					<Sprite filename="shared/castle/tex/reward_box_left.png" vertexColors="false">
+						<Pivot anchor="right" />
+					</Sprite>
+					<Translation x="-187" y="100" />
+				</SceneObject>
+				<SceneObject __visibility="0" name="Right">
+					<Sprite filename="shared/castle/tex/reward_box_right.png" vertexColors="false">
+						<Pivot anchor="left" />
+					</Sprite>
+					<Translation x="197" y="100" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardText">
+				<Text key="event.treasurehunt.reward.reward_all_unlocked_text" alignment="center" canBreakWords="false" font="Typewriter" maxHeight="60" maxWidth="470" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="51" g="102" r="131" />
+					<GradientColor enabled="false" />
+					<Shadow enabled="false" />
+					<Size x="18" y="18" />
+					<TextString>%Text%</TextString>
+				</Text>
+				<Translation x="1" y="30.686" z="0" />
+			</SceneObject>
+			<SceneObject name="GiftBoxes">
+				<Translation x="-4.473" y="6" z="0" />
+				<SceneObject editorEntityId="927" name="FirstGiftBoxUnlocked">
+					<Scale x="1.571" y="1.571" z="1" />
+					<Translation x="-139.170" y="-167.357" z="0" />
+					<SceneObject name="pinkGiftOpen">
+						<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+							<Animation spineAnimation="gift_pink_open" play="true" />
+						</Spine>
+						<Material>
+							<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+							<Depth enabled="true" />
+							<Blend enabled="true" />
+						</Material>
+						<Translation x="-2.847" y="42.243" z="0" />
+						<Scale x="0.270" y="0.270" z="1" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject editorEntityId="927" name="SecondGiftBoxUnlocked">
+					<Scale x="1.571" y="1.571" z="1" />
+					<Translation x="138.597" y="-176.164" z="0" />
+					<SceneObject name="greenGiftOpen">
+						<Material>
+							<Blend enabled="true" />
+							<Depth enabled="true" />
+							<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+						</Material>
+						<Scale x="0.275" y="0.275" z="1" />
+						<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+							<Animation play="true" spineAnimation="gift_green_open" speed="1.200" />
+						</Spine>
+						<Translation x="10.335" y="49.462" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject editorEntityId="927" name="ThirdGiftBoxUnlocked">
+					<Scale x="1.705" y="1.705" z="1" />
+					<Translation x="-4.285" y="-138.398" z="0" />
+					<SceneObject name="purpleGiftOpen">
+						<Material>
+							<Blend enabled="true" />
+							<Depth enabled="true" />
+							<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+						</Material>
+						<Scale x="0.318" y="0.318" z="1" />
+						<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+							<Animation play="true" speed="1.500" spineAnimation="gift_purple_open" />
+						</Spine>
+						<Translation x="4.111" y="52.420" z="0" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Check">
+				<Sprite filename="shared/liveops/treasure_hunt/tex/th_check.png" vertexColors="false" />
+				<Translation x="-50.656" y="-101.719" z="1" />
+			</SceneObject>
+			<SceneObject name="Check2">
+				<Sprite filename="shared/liveops/treasure_hunt/tex/th_check.png" vertexColors="false" />
+				<Translation x="108.056" y="-135.609" z="1" />
+				<Scale x="0.847" y="0.847" z="1" />
+			</SceneObject>
+			<SceneObject name="Check3">
+				<Sprite filename="shared/liveops/treasure_hunt/tex/th_check.png" vertexColors="false" />
+				<Translation x="-189.732" y="-135.609" z="1" />
+				<Scale x="0.847" y="0.847" z="1" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Rewards">
+			<Translation x="1" y="140" z="0" />
+			<Panel vertexColors="false">
+				<RemoveQuads topLeft="true" top="true" right="true" topRight="true" center="true" bottomLeft="true" left="true" bottom="true" bottomRight="true" />
+				<Size width="443" height="107" />
+				<Pivot x="222" y="56" />
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Panel>
+			<Scissor useObjectBoundingBox="true" />
+			<SceneObject name="RewardContainer" />
+		</SceneObject>
+		<SceneObject name="Buttons">
+			<SceneObject name="ButtonRight">
+				<Translation x="20.732" y="11.402" z="0" />
+				<SceneObject name="GreenArrowButtonRight" class="Button">
+					<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+					<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+					<Animation animationData="Idle" layer="1" name="Idle" play="true" startTime="0.800" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_green_arrow.png" vertexColors="false">
+						<Insets bottom="40" left="52" right="76" top="40" />
+						<Pivot anchor="center" />
+						<Size width="180" />
+					</Panel>
+					<Scale x="0.800" y="0.800" />
+					<Translation x="70.255" y="257.396" z="0" />
+					<SceneObject name="ArrowIcon">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_arrow_icon.png" vertexColors="false" />
+						<Translation x="-23.260" y="-33.218" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="GreyArrowButton">
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_grey_arrow.png" vertexColors="false">
+						<Insets bottom="40" left="52" right="76" top="40" />
+						<Pivot anchor="center" />
+						<Size width="180" />
+					</Panel>
+					<Scale x="0.800" y="0.800" />
+					<Translation x="70.255" y="257.396" z="0" />
+					<SceneObject name="ArrowIcon">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_arrow_icon.png" vertexColors="false" />
+						<Translation x="-23.260" y="-33.218" z="0" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="ButtonLeft">
+				<Scale x="-1" />
+				<Translation x="-9.329" y="11.402" z="0" />
+				<SceneObject name="GreenArrowButtonLeft" class="Button">
+					<Animation animationData="Idle" layer="1" name="Idle" play="true" startTime="0.800" />
+					<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+					<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_green_arrow.png" vertexColors="false">
+						<Insets bottom="40" left="52" right="76" top="40" />
+						<Pivot anchor="center" />
+						<Size width="180" />
+					</Panel>
+					<Scale x="0.800" y="0.800" />
+					<Translation x="82.694" y="257.396" z="0" />
+					<SceneObject name="ArrowIcon">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_arrow_icon.png" vertexColors="false" />
+						<Translation x="-23.260" y="-33.218" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="GreyArrowButton">
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_grey_arrow.png" vertexColors="false">
+						<Insets bottom="40" left="52" right="76" top="40" />
+						<Pivot anchor="center" />
+						<Size width="180" />
+					</Panel>
+					<Scale x="0.800" y="0.800" />
+					<Translation x="82.694" y="257.396" z="0" />
+					<SceneObject name="ArrowIcon">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_arrow_icon.png" vertexColors="false" />
+						<Translation x="-23.260" y="-33.218" z="0" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" editorEntityId="133" name="CollectButton">
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<Editor editorEntityId="242" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets bottom="0" left="128" right="128" top="0" />
+					<Pivot anchor="center" />
+					<Size height="115" width="400" />
+				</Panel>
+				<Translation x="-0.668" y="272.223" z="0" />
+				<SceneObject editorEntityId="31">
+					<Editor editorEntityId="243" />
+					<Text alignment="center" canBreakWords="false" font="Banana" key="event.heroquest.kimmy.reward.won.button" maxHeight="40" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="225" b="255" g="255" r="255" />
+						<Shadow enabled="true">
+							<Color a="25" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="38" y="38" />
+					</Text>
+					<Translation x="-3.812" y="-9.944" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="95" />
+				<OriginalSize width="640" height="706" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

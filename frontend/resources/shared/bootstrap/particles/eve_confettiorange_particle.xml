@@ -1,0 +1,23 @@
+<ParticleEffect name="Eve_ConfettiOrange_particle" timeToEmit="0.100" maxParticles="7" space="Local">
+<Dampening max="0.800" min="0.700" />
+<DirectionalForce y="550" x="0" />
+<Emitter spread="360" emissionRate="0" angle="90">
+	<SpawnArea width="0" height="0" depth="0" />
+</Emitter>
+<EndColor r="255" g="179" b="1" a="255" />
+<Rotation max="500" min="100" />
+<RotationSpeed max="25" min="25" />
+<Size>
+	<Max y="15" x="30" />
+	<Min y="5" x="15" />
+</Size>
+<SizeChange>
+	<Max y="0" x="0" />
+	<Min y="0" x="0" />
+</SizeChange>
+<StartColor r="255" g="179" b="1" a="255" />
+<Texture blend="Multiply" numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/giant_fish_confetti.png" />
+<TextureFrame numTextureAnimationFrames="1" startFrame="0" textureAnimationSpeed="60" />
+<TimeToLive max="1.200" min="0.800" />
+<Velocity max="2100" min="1000" />
+</ParticleEffect>

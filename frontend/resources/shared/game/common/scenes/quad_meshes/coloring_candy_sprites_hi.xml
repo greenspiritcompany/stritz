@@ -1,0 +1,89 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/candy/candy_material.xml"/>
+
+	<SceneObject name="BlueColoringCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_blue_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_blue_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="RedColoringCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_red_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_red_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="YellowColoringCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_yellow_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_yellow_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="OrangeColoringCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_orange_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_orange_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="GreenColoringCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_green_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_green_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="CyanColoringCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_cyan_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_cyan_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="PurpleColoringCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_purple_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/coloring_candy_purple_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,24 @@
+<ParticleEffect maxParticles="60" space="Local" timeToEmit="60" name="PinkPetalsPFX">
+<Dampening max="1" min="1" />
+<DirectionalForce x="-10" y="20" />
+<Emitter emissionRate="0.100" spread="0" angle="90">
+	<SpawnArea width="1300" depth="0" height="50" />
+	<EmissionRadius max="-5" min="0" />
+</Emitter>
+<EndColor r="255" g="255" b="255" a="150" />
+<Rotation max="1000" min="-90" />
+<RotationSpeed max="120" min="0" />
+<Size>
+	<Max x="40" y="40" />
+	<Min x="15" y="40" />
+</Size>
+<SizeChange>
+	<Max x="-3" y="-3" />
+	<Min x="-3" y="-3" />
+</SizeChange>
+<StartColor r="255" g="255" b="255" a="255" />
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/pink_petal.png" />
+<TextureFrame numTextureAnimationFrames="0" textureAnimationSpeed="0" startFrame="0" />
+<TimeToLive max="9" min="6" />
+<Velocity max="10" min="5" />
+</ParticleEffect>

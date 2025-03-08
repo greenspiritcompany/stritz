@@ -1,0 +1,111 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0.0" endTime="4.5">
+
+
+
+        <!-- Text -->
+        <Animate target="TutorialText1">
+            <Show/>
+        </Animate>
+
+        <Animate target="TutorialText2">
+            <Hide/>
+        </Animate>
+
+        <Animate target="GameGrid">
+            <Hide/>
+        </Animate>
+
+        <Animate target="NextButton">
+            <Hide/>
+        </Animate>
+
+        <Animate target="TutorialText1">
+            <Color time="0.05" a="0"/>
+            <Color time="0.15" a="255"/>
+        </Animate>
+
+        <Triggers>
+            <AnimationTrigger animationName="Candy1anim" targetName="CyanCandy1" time="0.2"/>
+            <AnimationTrigger animationName="Candy2anim" targetName="CyanCandy2" time="0.2"/>
+            <AnimationTrigger animationName="Candy3anim" targetName="CyanCandy3" time="0.2"/>
+        </Triggers>
+
+        <Animate target="CyanCandy1">
+            <Show time="0.1"/>
+            <Color time="0.2" a="0" r="0" g="0" b="0"/>
+            <Color time="0.25" a="255" r="255" g="255" b="255"/>
+            <Color time="2.05" a="255" r="255" g="255" b="255"/>
+            <Color time="2.1" a="0" r="0" g="0" b="0"/>
+            <Hide time="2.10"/>
+        </Animate>
+
+        <Animate target="CyanCandy2">
+            <Show time="0.1"/>
+            <Color time="0.2" a="0" r="0" g="0" b="0"/>
+            <Color time="0.25" a="255" r="255" g="255" b="255"/>
+            <Color time="2.05" a="255" r="255" g="255" b="255"/>
+            <Color time="2.1" a="0" r="0" g="0" b="0"/>
+            <Hide time="2.10"/>
+        </Animate>
+
+        <Animate target="CyanCandy3">
+            <Show time="0.1"/>
+            <Color time="0.2" a="0" r="0" g="0" b="0"/>
+            <Color time="0.25" a="255" r="255" g="255" b="255"/>
+            <Color time="2.05" a="255" r="255" g="255" b="255"/>
+            <Color time="2.1" a="0" r="0" g="0" b="0"/>
+            <Hide time="2.10"/>
+        </Animate>
+
+        <Animate target="ChargeMeter">
+            <Hide/>
+            <Show time="2.0"/>
+            <Color time="4.2" a="255" r="255" g="255" b="255"/>
+            <Color time="4.4" a="0" r="255" g="255" b="255"/>
+        </Animate>
+
+        <Animate target="SidekickInactive">
+            <Show/>
+            <Show time="0.1"/>
+            <Color time="0.1" a="0" r="0" g="0" b="0"/>
+            <Color time="0.15" a="255" r="255" g="255" b="255"/>
+        </Animate>
+
+        <Animate target="SidekickActive">
+            <Hide/>
+        </Animate>
+
+        <Triggers>
+            <AnimationTrigger animationName="idle" targetName="TutorialCharacter" time="0.0"/>
+            <AnimationTrigger animationName="idle" targetName="SidekickInactive" time="0.2" crossFade="0.1"/>
+            <AnimationTrigger animationName="cyan_collect" targetName="SidekickInactive" time="1.9" crossFade="0.1"/>
+            <EffectTrigger name="character_yeti" time="0.0"/>
+            <AnimationTrigger animationName="progress40" targetName="ChargeMeter" time="2.0"/>
+
+            <EffectTrigger name="SidekickTutorialCyanGlowEFQ" parentName="CyanCandy1" time="0.95">
+                <Offset z="100"/>
+            </EffectTrigger>
+            <EffectTrigger name="SidekickTutorialCyanGlowEFQ" parentName="CyanCandy2" time="1.0">
+                <Offset z="100"/>
+            </EffectTrigger>
+            <EffectTrigger name="SidekickTutorialCyanGlowEFQ" parentName="CyanCandy3" time="1.05">
+                <Offset z="100"/>
+            </EffectTrigger>
+
+            <EffectTrigger name="ProgressTrailEFQ" targetName="ChargeMeter" targetBoneIndex="14" followTarget="true" time="2.3"/>
+
+            <EffectTrigger name="SidekickCyanSelectedEFQ" targetName="SidekickInactive" targetBoneIndex="3" time="2.0">
+                <Offset z="100"/>
+            </EffectTrigger>
+            <EffectTrigger name="SidekickCollectSFX" time="1.6"/>
+        </Triggers>
+
+        <TimeControls>
+            <TimeJump time="4.4" jumpToTime="0.15"/>
+        </TimeControls>
+
+
+    </Timeline>
+</Timelines>

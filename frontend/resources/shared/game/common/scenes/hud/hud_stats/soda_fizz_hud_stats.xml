@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject __visibility="0" name="LandscapeSodaFizzStats">
+		<SceneObject name="BottlesText">
+			<Translation z="20" x="-7" y="34.500" />
+			<Text verticalAlignment="visualCenter" font="PinkNumbers" alignment="center">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="16" y="16" />
+				<TextString>0/3</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkLandscapeRoot">
+			<SceneObject visibility="never" name="CheckmarkLandscape">
+				<Translation z="3" x="-2.030" y="36" />
+				<Scale x="0.850" y="0.850" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="SodaFizzIconLandscape">
+			<Sprite filename="shared/game/common/tex/hud/soda_fizz_icon.png" vertexColors="false" />
+			<Translation z="0" x="-50.020" y="-73" />
+			<Scale z="0.670" x="0.670" y="0.670" />
+			<SceneObject name="BearImg">
+				<Translation z="0" x="70.860" y="54.510" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject __visibility="3" name="PortraitSodaFizzStats">
+		<SceneObject name="BottlesText">
+			<Translation z="20" x="64.280" y="23.350" />
+			<Text verticalAlignment="visualCenter" font="PinkNumbers" alignment="center">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="14" y="14" />
+				<TextString>0/1</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkPortraitRoot">
+			<SceneObject visibility="never" name="CheckmarkPortrait">
+				<Translation z="3" x="85.090" y="15" />
+				<Scale z="0.700" x="1.030" y="1.030" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="SodaFizzIconPortrait">
+			<Scale z="0.690" x="0.690" y="0.690" />
+			<Sprite filename="shared/game/common/tex/hud/soda_fizz_icon.png" vertexColors="false" />
+			<Translation z="0" x="-55" y="-55.990" />
+			<SceneObject name="BearImg">
+				<Translation z="0" x="68.810" y="58.220" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

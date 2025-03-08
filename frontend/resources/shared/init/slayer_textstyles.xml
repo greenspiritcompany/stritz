@@ -1,0 +1,19 @@
+<!DOCTYPE TextStyles SYSTEM "../../../../../tools/dtd/textstyles.dtd">
+<TextStyles>
+    <TextStyle name="TitleStyle" font="Banana" alignment="center" verticalAlignment="center" maxWidth="500" overflowBehaviour="fit">
+        <Size x="32" y="32" />
+        <Color r="165" g="106" b="7" />
+    </TextStyle>
+    <TextStyle name="ButtonTextStyle" font="Banana" alignment="center" verticalAlignment="center" maxWidth="360" overflowBehaviour="fit">
+        <Color r="255" g="255" b="255" />
+        <Size x="28" y="28"/>
+		<Shadow>
+			<Color r="0" a="40" b="0" g="0" />
+			<Offset x="0" y="4" />
+		</Shadow>
+    </TextStyle>
+    <TextStyle name="BodyStyle" font="Typewriter" alignment="center" verticalAlignment="center" maxWidth="500" overflowBehaviour="fit">
+        <Size x="20" y="20" />
+        <Color r="165" g="106" b="7" />
+    </TextStyle>
+</TextStyles>

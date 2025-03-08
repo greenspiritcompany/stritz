@@ -1,0 +1,101 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/candy/candy_material.xml"/>
+
+	<SceneObject name="BlueFishCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_blue_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_blue_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="RedFishCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_red_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_red_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="YellowFishCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_yellow_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_yellow_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="OrangeFishCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_orange_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_orange_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="GreenFishCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_green_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_green_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="CyanFishCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_cyan_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_cyan_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="PurpleFishCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_purple_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_purple_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="BlackFishCandy">
+		<Material parentMaterial="CandyMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fish_black_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/fish_black_n.png"/>
+			</Textures>
+		</Material>
+		<Sprite normals="true">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+</Scene>

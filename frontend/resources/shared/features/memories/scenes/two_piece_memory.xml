@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="memory_grp">
+		<Scale y="-1" />
+		<Material name="memory_base_empty">
+			<Texture filename="shared/features/memories/tex/memory_base_two_empty.png" />
+			<Blend enabled="true" />
+			<Depth enabled="true" />
+		</Material>
+		<Material name="memory_full_kimmy">
+			<Texture filename="shared/features/memories/tex/memory_kimmy_yeti.png" />
+			<Blend enabled="true" />
+			<Depth enabled="true" />
+		</Material>
+		<Material name="memory_full_kimmy_noalpha">
+			<Texture filename="shared/features/memories/tex/memory_base_two_empty.png" />
+		</Material>
+		<SceneObject name="piece_1">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/2_piece/memory_two_piece_01.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_assemble_animation.ffa" loopCount="0" />
+			</Model>
+			<Material parentMaterial="memory_base_empty" />
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/2_piece/memory_two_piece_01.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_flip_animation.ffa" speed="2" interpolateFrame="true" loopCount="0" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmy" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Translation x="-100" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Translation z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/2_piece/memory_two_piece_back_01.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_flip_animation.ffa" speed="2" interpolateFrame="true" loopCount="0" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmy_noalpha" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="piece_2">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/2_piece/memory_two_piece_02.ffm">
+				<Animation name="memory_flip_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_flip_animation.ffa" loopCount="0" speed="2" />
+				<Animation name="memory_assemble_animation" loopCount="0" filename="shared/features/memories/models/2_piece/memory_twopiece_assemble_animation.ffa" />
+			</Model>
+			<Material parentMaterial="memory_base_empty">
+				<Texture filename="shared/features/memories/tex/memory_base_two_empty.png" />
+			</Material>
+			<SceneObject name="revealed">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/2_piece/memory_two_piece_02.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" loopCount="0" filename="shared/features/memories/models/2_piece/memory_twopiece_assemble_animation.ffa" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmy" />
+			</SceneObject>
+			<SceneObject name="effect">
+				<Translation x="100" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="revealed_back">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/2_piece/memory_two_piece_back_02.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" loopCount="0" filename="shared/features/memories/models/2_piece/memory_twopiece_assemble_animation.ffa" />
+				</Model>
+				<Material parentMaterial="memory_full_kimmy_noalpha" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="shadow" editorEntityId="8" visibility="always">
+			<Translation x="0" y="0" z="12" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Model filename="shared/features/memories/models/9_piece/memory_shadow.ffm" />
+			<Material>
+				<Texture filename="shared/features/memories/tex/memory_shadow.png" />
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+			</Material>
+		</SceneObject>
+		<SceneObject name="curl_grp">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="curl_shadow">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/2_piece/memory_two_piece_02_curl_shadow.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_assemble_animation.ffa" loopCount="0" />
+				</Model>
+				<Material>
+					<Texture filename="shared/features/memories/tex/memory_curl_shadow_empty.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+				</Material>
+			</SceneObject>
+			<SceneObject name="curl">
+				<Translation x="0" y="-2" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<Model filename="shared/features/memories/models/2_piece/memory_two_piece_02_curl.ffm">
+					<Animation name="memory_flip_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_flip_animation.ffa" loopCount="0" speed="2" />
+					<Animation name="memory_assemble_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_assemble_animation.ffa" loopCount="0" />
+					<Animation name="curl_animation" filename="shared/features/memories/models/2_piece/memory_twopiece_curl_animation.ffa" play="true" speed="0.500" />
+				</Model>
+				<Material>
+					<Texture filename="shared/features/memories/tex/memory_curl_empty.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+				</Material>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject visibility="never" name="flash_effect">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Scale x="6.960" y="-6.900" z="1" />
+			<Material>
+				<Texture filename="shared/features/memories/tex/memory_white_overlay.png" />
+				<Blend enabled="true" blendFuncDestinationFactor="One" />
+				<Depth enabled="true" />
+			</Material>
+			<Translation x="-229" y="195" z="5" />
+		</SceneObject>
+		<SceneObject name="EFQ_group">
+			<Scale y="-1" />
+		</SceneObject>
+		<SceneObject name="glance_effect">
+			<Sprite vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Scale x="6.960" y="-6.900" z="1" />
+			<Material>
+				<Blend blendFuncDestinationFactor="One" blendFuncSourceFactor="One" enabled="true" />
+				<Depth enabled="true" />
+				<Shader program="TextureColorShiny" />
+				<Texture filename="shared/features/memories/tex/memory_white_overlay.png" />
+				<Uniform name="Settings">
+					<DefaultValue w="2" x="0.850" y="10" z="3" />
+				</Uniform>
+			</Material>
+			<Translation x="-229" y="195" z="5" />
+			<Rotation x="0" y="0" z="0" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

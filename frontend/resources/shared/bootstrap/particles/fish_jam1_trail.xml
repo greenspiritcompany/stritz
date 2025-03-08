@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="12" space="World" timeToEmit="1.500" name="FishJam1TrailPFX">
+    <Dampening max="1" min="1"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.030" spread="360" angle="-100.800">
+        <SpawnArea width="25" depth="0" height="25"/>
+    </Emitter>
+    <EndColor b="102" r="255" g="224" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="360" min="360"/>
+    <Size>
+        <Max x="20" y="20"/>
+        <Min x="20" y="20"/>
+    </Size>
+    <SizeChange>
+        <Max x="-27" y="-27"/>
+        <Min x="-36" y="-36"/>
+    </SizeChange>
+    <StartColor b="191" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/jam1_bubble.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.280" min="0.280"/>
+    <Velocity max="50" min="50"/>
+</ParticleEffect>

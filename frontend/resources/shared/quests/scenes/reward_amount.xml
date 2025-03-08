@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="AmountRoot">
+		<LayoutConfiguration>
+			<Size>
+				<Height percentage="70" />
+				<OriginalSize height="550" width="640" />
+				<Width percentage="100" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+		<SceneObject name="OnAppear">
+			<Animation animationData="RewardScaleInSmall" loopCount="0" name="OnAppear" />
+			<SceneObject name="textAmountx1">
+				<Scale x="0.700" y="0.700" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/reward_text_x2.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="69.676" y="28.537" z="5" />
+				<Animation animationData="IdleBackButton" name="idle" play="true" speed="0.600" startDelay="1" />
+				<Animation animationData="Wrapped_secondary_animation" name="idle2" play="true" speed="0.500" startDelay="1" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:54603481be8d02acd9534cf5900f34c6:d6bec1decbe0834a442b0b2b916b8470:28c3030138232a25703b891c45756c92$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gui_elements6.png" width="1024" height="1024">
+    <sprite n="doublefish_icon_playgame.png" x="895" y="952" w="80" h="70" pX="0.5" pY="0.5"/>
+    <sprite n="heart_crack1.png" x="2" y="989" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="heart_crack2.png" x="572" y="814" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="heart_crack3.png" x="979" y="965" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="heart_crack4.png" x="38" y="989" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="heart_left.png" x="838" y="581" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="heart_right.png" x="906" y="581" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="heart_whole.png" x="880" y="2" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="mint_btn_special_corner.png" x="957" y="134" w="49" h="63" pX="0.5" pY="0.5"/>
+    <sprite n="orange_noti_box.png" x="966" y="766" w="52" h="52" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep46.png" x="672" y="513" w="162" h="166" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep48.png" x="733" y="851" w="158" h="170" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep49.png" x="813" y="683" w="149" h="164" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep50.png" x="431" y="662" w="190" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep51.png" x="625" y="683" w="184" h="164" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep52.png" x="824" y="238" w="153" h="177" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep53.png" x="572" y="851" w="157" h="171" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep54.png" x="838" y="419" w="150" h="158" pX="0.5" pY="0.5"/>
+    <sprite n="pregame_double_fish_modal_icon.png" x="378" y="814" w="190" h="169" pX="0.5" pY="0.5"/>
+    <sprite n="retry_arrow_icon.png" x="966" y="708" w="54" h="54" pX="0.5" pY="0.5"/>
+    <sprite n="shop_amount_box.png" x="979" y="922" w="43" h="39" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="shop_header_shadow.png" x="625" y="662" w="24" h="5" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="shop_moreoffers_box.png" x="880" y="134" w="73" h="73" pX="0.5" pY="0.5"/>
+    <sprite n="shop_offer_conversion.png" x="460" y="238" w="360" h="271" pX="0.5" pY="0.5"/>
+    <sprite n="shop_offer_large.png" x="2" y="252" w="429" h="247" pX="0.5" pY="0.5"/>
+    <sprite n="shop_offer_low.png" x="460" y="2" w="416" h="232" pX="0.5" pY="0.5"/>
+    <sprite n="shop_offer_medium.png" x="2" y="503" w="425" h="249" pX="0.5" pY="0.5"/>
+    <sprite n="shop_offer_small.png" x="2" y="756" w="372" h="229" pX="0.5" pY="0.5"/>
+    <sprite n="shop_offer_xlarge.png" x="2" y="2" w="454" h="246" pX="0.5" pY="0.5"/>
+    <sprite n="shop_plus_symbol.png" x="378" y="756" w="38" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="shop_product_box.png" x="880" y="211" w="23" h="23" pX="0.5" pY="0.5"/>
+    <sprite n="shop_specialoffer_box.png" x="895" y="851" w="60" h="97" pX="0.5" pY="0.5"/>
+    <sprite n="shop_specialoffer_box_shadow.png" x="435" y="252" w="16" h="206" pX="0.5" pY="0.5"/>
+    <sprite n="shop_standardoffer_box.png" x="966" y="649" w="55" h="55" pX="0.5" pY="0.5"/>
+    <sprite n="sso_hearts.png" x="431" y="513" w="237" h="145" pX="0.5" pY="0.5"/>
+    <sprite n="video_ads_icon.png" x="959" y="851" w="63" h="67" pX="0.5" pY="0.5"/>
+</TextureAtlas>

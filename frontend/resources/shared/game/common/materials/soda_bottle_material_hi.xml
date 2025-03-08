@@ -1,0 +1,131 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+
+		<Material name="SodaBottleMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Light enabled="true" shininess="110">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="140" g="140" b="140" a="255"/>
+				<Specular r="250" g="250" b="250" a="255"/>
+			</Light>
+		</Material>
+
+		<Material name="SodaBottleCyanMaterial" parentMaterial="SodaBottleMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Light enabled="true" shininess="110">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="140" g="140" b="140" a="255"/>
+				<Specular r="250" g="250" b="250" a="255"/>
+			</Light>
+			<Shader program="NormalMap"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_cyan_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bottle_cyan_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottleBlueMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Light enabled="true" shininess="110">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="140" g="140" b="140" a="255"/>
+				<Specular r="250" g="250" b="250" a="255"/>
+			</Light>
+			<Shader program="NormalMap"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_blue_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bottle_blue_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottleGreenMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Light enabled="true" shininess="110">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="140" g="140" b="140" a="255"/>
+				<Specular r="250" g="250" b="250" a="255"/>
+			</Light>
+			<Shader program="NormalMap"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_green_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bottle_green_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottleOrangeMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Light enabled="true" shininess="110">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="140" g="140" b="140" a="255"/>
+				<Specular r="250" g="250" b="250" a="255"/>
+			</Light>
+			<Shader program="NormalMap"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_orange_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bottle_orange_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottlePurpleMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Light enabled="true" shininess="110">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="140" g="140" b="140" a="255"/>
+				<Specular r="250" g="250" b="250" a="255"/>
+			</Light>
+			<Shader program="NormalMap"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_purple_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bottle_purple_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottleRedMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Light enabled="true" shininess="110">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="140" g="140" b="140" a="255"/>
+				<Specular r="250" g="250" b="250" a="255"/>
+			</Light>
+			<Shader program="NormalMap"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_red_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bottle_red_n.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="SodaBottleYellowMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Light enabled="true" shininess="110">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="140" g="140" b="140" a="255"/>
+				<Specular r="250" g="250" b="250" a="255"/>
+			</Light>
+			<Shader program="NormalMap"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_yellow_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bottle_yellow_n.png"/>
+			</Textures>
+		</Material>
+
+	</Materials>
+</Scene>

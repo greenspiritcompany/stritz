@@ -1,0 +1,37 @@
+<!DOCTYPE Layout SYSTEM '../../dtd/layout.dtd'>
+<Layout>
+    <Object sceneObject="BubblegumTrollWorried"/>
+    <Object sceneObject="Chest"/>
+    <Object sceneObject="InfoText"/>
+    <Object sceneObject="Landscape">
+        <Landscape visible="true"/>
+        <Portrait visible="false"/>
+    </Object>
+    <Object sceneObject="OfflineModal">
+        <Default>
+            <Translation>
+                <X percentage="50"/>
+                <Y percentage="50"/>
+            </Translation>
+            <Size>
+                <Height percentage="100"/>
+                <OriginalSize height="768" width="1024"/>
+            </Size>
+        </Default>
+        <Portrait>
+            <Translation>
+                <X percentage="50"/>
+                <Y percentage="50"/>
+            </Translation>
+            <Size>
+                <OriginalSize height="1024" width="684"/>
+                <Width percentage="100"/>
+            </Size>
+        </Portrait>
+    </Object>
+    <Object sceneObject="OkText"/>
+    <Object sceneObject="Portrait">
+        <Landscape visible="false"/>
+        <Portrait visible="true"/>
+    </Object>
+</Layout>

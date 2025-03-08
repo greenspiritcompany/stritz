@@ -1,0 +1,94 @@
+<Timelines>
+<Timeline startTime="0" endTime="7">
+	<Triggers>
+		<AnimationTrigger time="2.336" animationName="appear" targetName="CheckBoxL" />
+		<AnimationTrigger time="2.336" animationName="appear" targetName="CheckBoxP" />
+		<AnimationTrigger time="3.791" animationName="appear" targetName="RewardsP" />
+		<AnimationTrigger time="3.791" animationName="appear" targetName="RewardsL" />
+		<EffectTrigger time="0" name="lc_enter" />
+		<EffectTrigger time="1.350" name="lc_vertical_bar_fill" />
+		<EffectTrigger time="1.555" name="RevealDayEFQ" parentName="PathBoxActiveL">
+			<Offset x="0" y="0" z="5" />
+		</EffectTrigger>
+		<EffectTrigger time="1.555" name="RevealDayEFQ" parentName="PathBoxActiveP">
+			<Offset x="0" y="0" z="5" />
+		</EffectTrigger>
+		<EffectTrigger time="3.050" name="lc_green_tick" />
+		<EffectTrigger time="3.208" name="lc_gift_explosion" />
+		<EffectTrigger time="3.787" name="CastleFireworks1EFQ" parentName="GiftExplosionP">
+			<Offset x="0" y="0" z="5" />
+		</EffectTrigger>
+		<EffectTrigger time="3.787" name="CastleFireworks1EFQ" parentName="GiftExplosionL">
+			<Offset x="0" y="0" z="5" />
+		</EffectTrigger>
+		<EffectTrigger time="4.910" name="lc_stamp_green" />
+		<EffectTrigger time="4.941" name="StampDustGreenEFQ" parentName="StampGreenL" />
+		<EffectTrigger time="4.941" name="StampDustGreenEFQ" parentName="StampGreenP" />
+	</Triggers>
+	<TimeControls />
+	<Animate time="0" target="StampGreenP">
+		<Show time="4.749" />
+		<Hide time="0.042" />
+		<Scale time="4.746" x="3" y="3" z="3" />
+		<Scale time="4.913" x="1" y="1" z="1" />
+		<Color time="4.741" r="255" g="255" b="255" a="0" />
+		<Color time="4.913" r="255" g="255" b="255" a="255" />
+	</Animate>
+	<Animate time="0" target="StampGreenL">
+		<Show time="4.749" />
+		<Hide time="0.042" />
+		<Scale time="4.746" x="3" y="3" z="3" />
+		<Scale time="4.913" x="1" y="1" z="1" />
+		<Color time="4.741" r="255" g="255" b="255" a="0" />
+		<Color time="4.913" r="255" g="255" b="255" a="255" />
+	</Animate>
+	<Animate time="0" target="StampGreenTextP">
+		<VertexColor time="4.741" r="10" g="182" b="98" a="0" />
+		<VertexColor time="4.916" r="10" g="182" b="98" a="255" />
+	</Animate>
+	<Animate time="0" target="StampGreenTextL">
+		<VertexColor time="4.741" r="10" g="182" b="98" a="0" />
+		<VertexColor time="4.916" r="10" g="182" b="98" a="255" />
+	</Animate>
+	<Animate time="0" target="RewardsP">
+		<Show time="3.786" />
+		<Hide time="0.013" />
+	</Animate>
+	<Animate time="0" target="RewardsL">
+		<Show time="3.786" />
+		<Hide time="0.013" />
+	</Animate>
+	<Animate time="0" target="PathBoxActiveP">
+		<Show time="1.552" />
+		<Hide time="0.007" />
+	</Animate>
+	<Animate time="0" target="PathBoxActiveL">
+		<Show time="1.552" />
+		<Hide time="0.007" />
+	</Animate>
+	<Animate time="0" target="PathBoxInactiveP">
+		<Show time="0.007" />
+		<Hide time="2.014" />
+	</Animate>
+	<Animate time="0" target="PathBoxInactiveL">
+		<Show time="0.007" />
+		<Hide time="2.014" />
+	</Animate>
+	<Animate time="0" target="PathActiveP">
+		<Color time="1.546" r="255" g="255" b="255" a="0" />
+		<Color time="1.765" r="255" g="255" b="255" a="255" />
+	</Animate>
+	<Animate time="0" target="PathActiveL">
+		<Color time="1.546" r="255" g="255" b="255" a="0" />
+		<Color time="1.765" r="255" g="255" b="255" a="255" />
+	</Animate>
+	<Animate time="0" target="CheckBoxP">
+		<Show time="2.336" />
+		<Hide time="0" />
+	</Animate>
+	<Animate time="0" target="CheckBoxL">
+		<Show time="2.336" />
+		<Hide time="0" />
+	</Animate>
+</Timeline>
+</Timelines>

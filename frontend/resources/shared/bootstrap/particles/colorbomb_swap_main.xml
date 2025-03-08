@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="5" space="Local" timeToEmit="0.250" name="ColorBombSwapMain">
+    <Dampening max="1.400" min="1.200"/>
+    <DirectionalForce x="0" y="-1500"/>
+    <Emitter emissionRate="0.060" spread="760" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="100" g="200" a="0"/>
+    <Rotation max="280" min="-280"/>
+    <RotationSpeed max="90" min="-60"/>
+    <Size>
+        <Max x="100" y="100"/>
+        <Min x="50" y="50"/>
+    </Size>
+    <SizeChange>
+        <Max x="80" y="80"/>
+        <Min x="-50" y="-50"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="160"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="2" filename="shared/bootstrap/particles/tex/elec_64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.200" min="0.150"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../externals/fictionfactory/core/tools/dtd/scene.dtd">
+<Scene>
+	<SceneObjects>
+		<SceneObject name="MissionPopup">
+			<Transformation>
+				<Translation x="0.0" y="0.0" z="500.0" />
+			</Transformation>
+			<Animations>
+				<Animation name="OnAppearPortrait" animationData="SlideInFromTop" loopCount="0" startTime="0.0" />
+				<Animation name="OnDisappearPortrait" animationData="SlideOutToTop" loopCount="0" />
+				<Animation name="OnAppear" animationData="SlideInFromTop" loopCount="0" startTime="0.0" />
+				<Animation name="OnDisappear" animationData="SlideOutToTop" loopCount="0" />
+			</Animations>
+			<SceneObjects>
+				<SceneObject name="CloseButton" layerFlags="16">
+					<!--Mesh><Sprite filename="tex/menu/missions_dialogClose.png"><Pivot anchor="center"/></Sprite></Mesh-->
+					<Transformation>
+						<Translation x="246.0" y="-406.0" z="2.0" />
+					</Transformation>
+					<SceneObjects>
+						<SceneObject name="SCENEOBJECT_BUTTON_CLOSE">
+							<Mesh>
+								<Text alignment="center" font="super_grotesk_offc_pro_regular" key="">
+									<Color r="7" g="182" b="125" a="255" />
+									<Size x="45" y="45" />
+									<Pivot x="0" y="-2" />
+								</Text>
+							</Mesh>
+						</SceneObject>
+					</SceneObjects>
+					<Animations>
+						<!--Animation name="OnAppear"		animationData="OnAppearGrow" loopCount="0" startTime="0.3" layer="2"/-->
+						<!--Animation name="OnHide"		animationData="OnDisappearShrink" loopCount="0" startTime="0.3" layer="2"/-->
+						<!--Animation name="Idle"			animationData="Idle" layer="1"/-->
+						<!--Animation name="OnPress"		animationData="OnPress" loopCount="0"/-->
+						<!--Animation name="OnRelease"		animationData="OnRelease" loopCount="0"/-->
+					</Animations>
+				</SceneObject>
+				<SceneObject name="CloseButtonClaim">
+					<Mesh>
+						<Panel filename="tex/menu/missions/green_button.png">
+							<Pivot anchor="center" />
+							<Insets left="15" top="12" right="16" bottom="26" />
+							<Size width="460" height="96" />
+						</Panel>
+					</Mesh>
+					<Transformation>
+						<Translation y="388" z="2.0" />
+						<Scale x="1.0" y="1.0" />
+					</Transformation>
+					<SceneObjects>
+						<SceneObject name="SCENEOBJECT_BUTTON_CLOSE_CLAIM">
+							<Mesh>
+								<Text alignment="center" font="super_grotesk_offc_pro_medium" key="">
+									<Color r="255" g="255" b="255" a="255" />
+									<Size x="50" y="50" />
+									<Pivot x="0" y="4" />
+								</Text>
+							</Mesh>
+						</SceneObject>
+					</SceneObjects>
+					<Animations>
+						<!--Animation name="OnAppear"		animationData="OnAppearGrow" loopCount="0" startTime="0.3" layer="2"/-->
+						<!--Animation name="OnHide"		animationData="OnDisappearShrink" loopCount="0" startTime="0.3" layer="2"/-->
+						<!--Animation name="Idle"			animationData="Idle" layer="1"/-->
+						<!--Animation name="OnPress"		animationData="OnPress" loopCount="0"/-->
+						<!--Animation name="OnRelease"		animationData="OnRelease" loopCount="0"/-->
+					</Animations>
+				</SceneObject>
+				<SceneObject name="AcceptButton">
+					<!--Mesh><Sprite filename="tex/menu/Missions_dialogButton.png"><Pivot anchor="center"/></Sprite></Mesh-->
+					<Mesh>
+						<Panel filename="tex/menu/missions/green_button.png">
+							<Pivot anchor="center" />
+							<Insets left="15" top="12" right="16" bottom="26" />
+							<Size width="460" height="96" />
+						</Panel>
+					</Mesh>
+					<Transformation>
+						<Translation y="388" z="2.0" />
+						<Scale x="1.0" y="1.0" />
+					</Transformation>
+					<SceneObjects>
+						<SceneObject name="SCENEOBJECT_BUTTON_ACCEPT">
+							<Mesh>
+								<Text alignment="center" font="super_grotesk_offc_pro_medium" key="">
+									<Color r="255" g="255" b="255" a="255" />
+									<Size x="50" y="50" />
+									<Pivot x="0" y="6" />
+								</Text>
+							</Mesh>
+						</SceneObject>
+					</SceneObjects>
+					<Animations>
+						<!--Animation name="OnAppear"		animationData="OnAppearGrow" loopCount="0" startTime="0.5" layer="2"/-->
+						<!--Animation name="Idle"			animationData="Idle" play="true" layer="1"/-->
+						<!--Animation name="OnPress"		animationData="OnPress" loopCount="0"/-->
+						<!--Animation name="OnRelease"		animationData="OnRelease" loopCount="0"/-->
+					</Animations>
+				</SceneObject>
+				<SceneObject name="AcceptButtonClaim">
+					<!--Mesh><Sprite filename="tex/menu/missions_dialogButton.png"><Pivot anchor="center"/></Sprite></Mesh-->
+					<Mesh>
+						<Panel filename="tex/menu/missions/green_button.png">
+							<Pivot anchor="center" />
+							<Insets left="15" top="12" right="16" bottom="26" />
+							<Size width="200" height="96" />
+						</Panel>
+					</Mesh>
+					<Transformation>
+						<Translation x="-120" y="388" z="2.0" />
+						<Scale x="1.0" y="1.0" />
+					</Transformation>
+					<SceneObjects>
+						<SceneObject name="SCENEOBJECT_BUTTON_ACCEPT_CLAIM">
+							<Mesh>
+								<Text alignment="center" font="super_grotesk_offc_pro_medium" key="">
+									<Color r="255" g="255" b="255" a="255" />
+									<Size x="25" y="25" />
+									<Pivot x="0" y="-2" />
+								</Text>
+							</Mesh>
+						</SceneObject>
+					</SceneObjects>
+					<Animations>
+						<!--Animation name="OnAppear"		animationData="OnAppearGrow" loopCount="0" startTime="0.5" layer="2"/-->
+						<!--Animation name="Idle"			animationData="Idle" play="true" layer="1"/-->
+						<!--Animation name="OnPress"		animationData="OnPress" loopCount="0"/-->
+						<!--Animation name="OnRelease"		animationData="OnRelease" loopCount="0"/-->
+					</Animations>
+				</SceneObject>
+				<SceneObject name="PreBackground">
+					<SceneObjects>
+						<SceneObject name="OrangeField">
+							<Mesh>
+								<Sprite filename="tex/menu/missions/orange_field.png">
+									<Pivot anchor="center" />
+									<Size width="1" height="1" />
+								</Sprite>
+							</Mesh>
+							<Transformation>
+								<Translation x="0.0" y="-365.0" z="0.0" />
+								<Scale x="620.0" y="35.0" />
+							</Transformation>
+						</SceneObject>
+						<SceneObject name="FillTheGapColor">
+							<Mesh>
+								<Sprite filename="tex/menu/missions/bg_color.png">
+									<Pivot anchor="center" />
+									<Size width="1" height="1" />
+								</Sprite>
+							</Mesh>
+							<Transformation>
+								<Translation x="0.0" y="60.0" z="0.0" />
+								<Scale x="620.0" y="830.0" />
+							</Transformation>
+						</SceneObject>
+						<SceneObject name="OneImageBorder">
+							<Mesh>
+								<Panel filename="tex/menu/missions/bg_white.png">
+									<Pivot anchor="center" />
+									<Insets left="8" top="8" right="8" bottom="8" />
+									<Size width="580" height="450" />
+								</Panel>
+							</Mesh>
+							<Transformation>
+								<Translation x="0.0" y="88.0" z="0.0" />
+							</Transformation>
+						</SceneObject>
+						<SceneObject name="TwoImageBorder">
+							<SceneObjects>
+								<SceneObject name="TopImageBorder">
+									<Mesh>
+										<Panel filename="tex/menu/missions/bg_white.png">
+											<Pivot anchor="center" />
+											<Insets left="8" top="8" right="8" bottom="8" />
+											<Size width="456" height="156" />
+										</Panel>
+									</Mesh>
+									<Transformation>
+										<Translation x="0.0" y="-119.0" z="0.0" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="BottomImageBorder">
+									<Mesh>
+										<Panel filename="tex/menu/missions/bg_white.png">
+											<Pivot anchor="center" />
+											<Insets left="8" top="8" right="8" bottom="8" />
+											<Size width="456" height="156" />
+										</Panel>
+									</Mesh>
+									<Transformation>
+										<Translation x="0.0" y="95.0" z="0.0" />
+									</Transformation>
+								</SceneObject>
+							</SceneObjects>
+						</SceneObject>
+					</SceneObjects>
+				</SceneObject>
+				<SceneObject name="Content">
+					<SceneObjects>
+						<SceneObject name="MissionOfferA">
+							<Animations>
+								<Animation name="OnShowPage" animationData="PageInFromLeft" loopCount="0" />
+								<Animation name="OnShowPageSpecial" animationData="PageInFromRight" loopCount="0" />
+								<Animation name="OnHidePage" animationData="PageOutToLeft" loopCount="0" />
+								<Animation name="OnHidePageSpecial" animationData="PageOutToRight" loopCount="0" />
+							</Animations>
+							<SceneObjects>
+								<SceneObject name="SCENEOBJECT_IMAGE_MISSION_OFFER_A_1">
+									<Transformation>
+										<Translation y="0.0" z="0" />
+									</Transformation>
+									<LayoutConfiguration name="Portrait">
+										<Size>
+											<Width percentage="175" />
+											<Height percentage="175" />
+											<OriginalSize width="532" height="410" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="9.1" />
+										</Translation>
+									</LayoutConfiguration>
+									<LayoutConfiguration name="Landscape">
+										<Size>
+											<Width percentage="175" />
+											<Height percentage="175" />
+											<OriginalSize width="532" height="410" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="9.1" />
+										</Translation>
+									</LayoutConfiguration>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_IMAGE_TARGET_GAME_ICON">
+									<Transformation>
+										<Translation y="0.0" z="0" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_ENTRY_POINT_1">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="255" g="130" b="0" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-290.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_OFFER_A_1">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_medium" key="">
+											<Color r="255" g="130" b="0" a="255" />
+											<Size x="55" y="55" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-290.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_OFFER_A_2">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="109" g="109" b="114" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-210.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_OFFER_A_3">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="255" g="255" b="255" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-100.0" z="2" />
+									</Transformation>
+								</SceneObject>
+							</SceneObjects>
+						</SceneObject>
+						<SceneObject name="MissionOfferB">
+							<Animations>
+								<Animation name="OnShowPage" animationData="PageInFromLeft" loopCount="0" />
+								<!--Animation name="OnShowPageSpecial"	animationData="PageInFromRight" loopCount="0"/-->
+								<Animation name="OnHidePage" animationData="PageOutToLeft" loopCount="0" />
+								<!--Animation name="OnHidePageSpecial"	animationData="PageOutToRight" loopCount="0"/-->
+							</Animations>
+							<SceneObjects>
+								<SceneObject name="SCENEOBJECT_IMAGE_MISSION_OFFER_B_1">
+									<LayoutConfiguration name="Portrait">
+										<Size>
+											<Width percentage="135" />
+											<Height percentage="135" />
+											<OriginalSize width="475" height="144" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="-12.4" />
+										</Translation>
+									</LayoutConfiguration>
+									<LayoutConfiguration name="Landscape">
+										<Size>
+											<Width percentage="135" />
+											<Height percentage="135" />
+											<OriginalSize width="475" height="144" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="-12.4" />
+										</Translation>
+									</LayoutConfiguration>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_IMAGE_MISSION_OFFER_B_2">
+									<LayoutConfiguration name="Portrait">
+										<Size>
+											<Width percentage="135" />
+											<Height percentage="135" />
+											<OriginalSize width="475" height="144" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="9.9" />
+										</Translation>
+									</LayoutConfiguration>
+									<LayoutConfiguration name="Landscape">
+										<Size>
+											<Width percentage="135" />
+											<Height percentage="135" />
+											<OriginalSize width="475" height="144" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="9.9" />
+										</Translation>
+									</LayoutConfiguration>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_OFFER_B_1">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_medium" key="">
+											<Color r="255" g="130" b="0" a="255" />
+											<Size x="52" y="52" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-290.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_OFFER_B_2">
+									<Mesh>
+										<Text alignment="left" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="109" g="109" b="114" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation x="-230" y="-217.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_OFFER_B_3">
+									<Mesh>
+										<Text alignment="left" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="109" g="109" b="114" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation x="-230" y="-2.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_OFFER_B_4">
+									<Mesh>
+										<Text alignment="left" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="109" g="109" b="114" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation x="-230" y="213.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_OFFER_B_5">
+									<Mesh>
+										<Text alignment="left" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="109" g="109" b="114" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation x="-230" y="283.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_OFFER_B_6">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="255" g="255" b="255" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="215.0" z="2" />
+									</Transformation>
+								</SceneObject>
+							</SceneObjects>
+						</SceneObject>
+						<SceneObject name="ClaimRewardA">
+							<Animations>
+								<Animation name="OnShowPage" animationData="PageInFromLeft" loopCount="0" />
+								<Animation name="OnShowPageSpecial" animationData="PageInFromRight" loopCount="0" />
+								<Animation name="OnHidePage" animationData="PageOutToLeft" loopCount="0" />
+								<Animation name="OnHidePageSpecial" animationData="PageOutToRight" loopCount="0" />
+							</Animations>
+							<SceneObjects>
+								<SceneObject name="SCENEOBJECT_IMAGE_REWARD_CLAIMING_1">
+									<Transformation>
+										<Translation y="0.0" z="2" />
+									</Transformation>
+									<LayoutConfiguration name="Portrait">
+										<Size>
+											<Width percentage="175" />
+											<Height percentage="175" />
+											<OriginalSize width="532" height="410" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="9.1" />
+										</Translation>
+									</LayoutConfiguration>
+									<LayoutConfiguration name="Landscape">
+										<Size>
+											<Width percentage="175" />
+											<Height percentage="175" />
+											<OriginalSize width="532" height="410" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="9.1" />
+										</Translation>
+									</LayoutConfiguration>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_REWARD_CLAIMING_1">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_medium" key="">
+											<Color r="255" g="130" b="0" a="255" />
+											<Size x="55" y="55" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-290.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_REWARD_CLAIMING_2">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="109" g="109" b="114" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-240.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_REWARD_CLAIMING_3">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="255" g="255" b="255" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="0.0" z="2" />
+									</Transformation>
+								</SceneObject>
+							</SceneObjects>
+						</SceneObject>
+						<SceneObject name="Reminder">
+							<Animations>
+								<Animation name="OnShowPage" animationData="PageInFromLeft" loopCount="0" />
+								<Animation name="OnShowPageSpecial" animationData="PageInFromRight" loopCount="0" />
+								<Animation name="OnHidePage" animationData="PageOutToLeft" loopCount="0" />
+								<Animation name="OnHidePageSpecial" animationData="PageOutToRight" loopCount="0" />
+							</Animations>
+							<SceneObjects>
+								<SceneObject name="SCENEOBJECT_IMAGE_REMINDER_POPUP_1">
+									<Transformation>
+										<Translation y="0.0" z="2" />
+									</Transformation>
+									<LayoutConfiguration name="Portrait">
+										<Size>
+											<Width percentage="175" />
+											<Height percentage="175" />
+											<OriginalSize width="532" height="410" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="9.1" />
+										</Translation>
+									</LayoutConfiguration>
+									<LayoutConfiguration name="Landscape">
+										<Size>
+											<Width percentage="175" />
+											<Height percentage="175" />
+											<OriginalSize width="532" height="410" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="9.1" />
+										</Translation>
+									</LayoutConfiguration>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_REMINDER_POPUP_1">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_medium" key="">
+											<Color r="255" g="130" b="0" a="255" />
+											<Size x="55" y="55" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-290.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_REMINDER_POPUP_2">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="109" g="109" b="114" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-240.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_REMINDER_POPUP_3">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="0" g="255" b="255" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="0.0" z="2" />
+									</Transformation>
+								</SceneObject>
+							</SceneObjects>
+						</SceneObject>
+						<SceneObject name="Accomplished">
+							<Animations>
+								<Animation name="OnShowPage" animationData="PageInFromLeft" loopCount="0" />
+								<Animation name="OnShowPageSpecial" animationData="PageInFromRight" loopCount="0" />
+								<Animation name="OnHidePage" animationData="PageOutToLeft" loopCount="0" />
+								<Animation name="OnHidePageSpecial" animationData="PageOutToRight" loopCount="0" />
+							</Animations>
+							<SceneObjects>
+								<SceneObject name="SCENEOBJECT_IMAGE_MISSION_ACCOMPLISH_A_1">
+									<Transformation>
+										<Translation y="0.0" z="2" />
+									</Transformation>
+									<LayoutConfiguration name="Portrait">
+										<Size>
+											<Width percentage="175" />
+											<Height percentage="175" />
+											<OriginalSize width="532" height="410" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="9.1" />
+										</Translation>
+									</LayoutConfiguration>
+									<LayoutConfiguration name="Landscape">
+										<Size>
+											<Width percentage="175" />
+											<Height percentage="175" />
+											<OriginalSize width="532" height="410" />
+										</Size>
+										<Translation>
+											<X percentage="0.0" />
+											<Y percentage="9.1" />
+										</Translation>
+									</LayoutConfiguration>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_ACCOMPLISH_1">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_medium" key="">
+											<Color r="255" g="130" b="0" a="255" />
+											<Size x="55" y="55" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-290.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_ACCOMPLISH_2">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="109" g="109" b="114" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="-190.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_ACCOMPLISH_3">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="109" g="109" b="114" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="0.0" z="2" />
+									</Transformation>
+								</SceneObject>
+								<SceneObject name="SCENEOBJECT_MISSION_ACCOMPLISH_4">
+									<Mesh>
+										<Text alignment="center" maxWidth="480" font="super_grotesk_offc_pro_regular" key="">
+											<Color r="0" g="0" b="0" a="255" />
+											<Size x="36" y="36" />
+										</Text>
+									</Mesh>
+									<Transformation>
+										<Translation y="0.0" z="2" />
+									</Transformation>
+								</SceneObject>
+							</SceneObjects>
+						</SceneObject>
+					</SceneObjects>
+				</SceneObject>
+				<SceneObject name="BackgroundMissions">
+					<SceneObjects>
+						<SceneObject name="BackgroundPanel">
+							<Mesh>
+								<Panel filename="tex/menu/missions/Missions_tablets_border.png">
+									<Pivot anchor="center" />
+									<Insets left="24" top="124" right="24" bottom="24" />
+									<Size width="640" height="960" />
+								</Panel>
+							</Mesh>
+							<Transformation>
+								<Translation x="0.0" y="0.0" z="5.0" />
+							</Transformation>
+						</SceneObject>
+						<SceneObject name="KingLogoMissions">
+							<Mesh>
+								<Sprite filename="tex/menu/missions/king_logo.png">
+									<Pivot anchor="center" />
+									<Size width="96" height="65" />
+								</Sprite>
+							</Mesh>
+							<Transformation>
+								<Translation x="0.0" y="-425.0" z="6.0" />
+							</Transformation>
+						</SceneObject>
+						<!--SceneObject name="IconImageMissions">
+							<Mesh>
+								<Sprite filename="tex/menu/missions/Game_icon_mobile.png">
+									<Pivot anchor="center"/>
+									<Size width="90" height="90"/>
+								</Sprite>
+							</Mesh>
+							<Transformation><Translation x="-246.0" y="-420.0" z="6.0"/></Transformation>
+						</SceneObject-->
+					</SceneObjects>
+				</SceneObject>
+			</SceneObjects>
+			<LayoutConfiguration name="Portrait">
+				<Size forceUniform="true">
+					<Width percentage="96" />
+					<Height percentage="96" />
+					<OriginalSize width="640" height="960" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Size forceUniform="true">
+					<Width percentage="96" />
+					<Height percentage="96" />
+					<OriginalSize width="640" height="960" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+	</SceneObjects>
+</Scene>

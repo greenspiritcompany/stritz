@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect name="PregameColorbombSpawnElectricPFX" maxParticles="6" space="Local" timeToEmit="0.560">
+    <Dampening max="0.100" min="0.050"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter spread="760" angle="0" emissionRate="0.120">
+        <SpawnArea height="0" width="0" depth="0"/>
+    </Emitter>
+    <EndColor b="255" r="100" a="0" g="200"/>
+    <Rotation max="280" min="-280"/>
+    <RotationSpeed max="90" min="-60"/>
+    <Size>
+        <Max x="220" y="220"/>
+        <Min x="100" y="100"/>
+    </Size>
+    <SizeChange>
+        <Max x="320" y="320"/>
+        <Min x="-50" y="-50"/>
+    </SizeChange>
+    <StartColor b="255" r="255" a="200" g="255"/>
+    <Texture numFramesX="2" filename="shared/bootstrap/particles/tex/elec_64.png" numFramesY="1" blend="Add"/>
+    <TextureFrame numTextureAnimationFrames="1" startFrame="1" textureAnimationSpeed="60"/>
+    <TimeToLive max="0.400" min="0.200"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

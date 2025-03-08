@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="PostGameSwipe">
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Width percentage="100" />
+				<OriginalSize height="1024" width="684" />
+			</Size>
+		</LayoutConfiguration>
+		<SceneObject name="Landscape" visibility="never">
+			<Translation x="-170" z="400" />
+			<Import filename="shared/diorama/common/scenes/play_game/post_game_modal_boosters_base.xml" />
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<SceneObject name="Portrait">
+			<Translation y="-140" z="400" />
+			<Import filename="shared/diorama/common/scenes/play_game/post_game_modal_boosters_base.xml" />
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

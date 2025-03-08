@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:c7ce229b5f72c9c66c9db94b1fdf0e82:14e6bb46286548e67c43b0c5621d701a:9357b51872ddc77e16a74dc29630b94f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gui_elements4.png" width="1024" height="1024">
+    <sprite n="128_desk_leftcorner.png" x="563" y="861" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="128_desk_rightcorner.png" x="563" y="929" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="amount_box_hard.png" x="194" y="740" w="60" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="amount_box_standard.png" x="346" y="740" w="60" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="booster_amount_box.png" x="194" y="670" w="43" h="66" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="booster_check.png" x="984" y="153" w="27" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="booster_check_icon.png" x="833" y="890" w="52" h="52" pX="0.5" pY="0.5"/>
+    <sprite n="booster_noti_icon.png" x="2" y="518" w="52" h="52" pX="0.5" pY="0.5"/>
+    <sprite n="ccs_pic.png" x="2" y="2" w="496" h="341" pX="0.5" pY="0.5"/>
+    <sprite n="ccs_tab_active.png" x="909" y="762" w="112" h="106" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ccs_tab_inactive.png" x="909" y="872" w="112" h="106" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="colorbomb_icon2.png" x="674" y="519" w="78" h="84" pX="0.5" pY="0.5"/>
+    <sprite n="colorbomb_icon_playgame.png" x="767" y="890" w="62" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_icon2.png" x="674" y="426" w="78" h="89" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_icon_playgame.png" x="767" y="958" w="59" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="doublefish_icon_playgame.png" x="653" y="789" w="80" h="70" pX="0.5" pY="0.5"/>
+    <sprite n="free_switch_icon.png" x="329" y="789" w="86" h="93" pX="0.5" pY="0.5"/>
+    <sprite n="gamemode_jam.png" x="756" y="242" w="245" h="223" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="gb_amount_box.png" x="410" y="740" w="83" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="goalbox_boosters.png" x="502" y="426" w="168" h="113" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="goalbox_header2.png" x="346" y="663" w="148" h="73" pX="0.5" pY="0.5"/>
+    <sprite n="gold_6.png" x="502" y="309" w="230" h="113" pX="0.5" pY="0.5"/>
+    <sprite n="gold_7.png" x="502" y="2" w="294" h="171" pX="0.5" pY="0.5"/>
+    <sprite n="hard_goalbox_boosters.png" x="756" y="469" w="168" h="113" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="hard_goalbox_header2.png" x="800" y="2" w="209" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="heart2.png" x="419" y="789" w="85" h="88" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_lives.png" x="258" y="670" w="84" h="75" pX="0.5" pY="0.5"/>
+    <sprite n="icon_lollipop.png" x="563" y="781" w="86" h="76" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_lollipop_striped.png" x="482" y="890" w="77" h="86" pX="0.5" pY="0.5"/>
+    <sprite n="jam_1.png" x="502" y="177" w="250" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="jam_2.png" x="134" y="890" w="114" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="off_box.png" x="914" y="678" w="108" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep10.png" x="756" y="586" w="154" h="148" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep19.png" x="194" y="518" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep20.png" x="500" y="543" w="152" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep21.png" x="348" y="347" w="150" h="149" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep22.png" x="800" y="78" w="180" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep23.png" x="348" y="500" w="148" h="159" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep24.png" x="753" y="738" w="152" h="148" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="popular_banner2.png" x="498" y="695" w="138" h="82" pX="0.5" pY="0.5"/>
+    <sprite n="pregame_colorbomb_modal_icon.png" x="2" y="347" w="169" h="167" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pregame_coloring_modal_icon.png" x="175" y="347" w="169" h="167" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="retry_video_icon.png" x="656" y="607" w="96" h="65" pX="0.5" pY="0.5"/>
+    <sprite n="small_shield_0.png" x="928" y="469" w="94" h="92" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="small_shield_1.png" x="2" y="695" w="92" h="90" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="small_shield_2.png" x="98" y="695" w="92" h="90" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="small_shield_3.png" x="388" y="890" w="90" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="small_shield_4.png" x="2" y="789" w="105" h="93" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="small_shield_5.png" x="111" y="789" w="105" h="93" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="small_shield_6.png" x="220" y="789" w="105" h="93" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="small_shield_7.png" x="928" y="565" w="93" h="109" pX="0.5" pY="0.5"/>
+    <sprite n="small_shield_8.png" x="656" y="676" w="93" h="109" pX="0.5" pY="0.5"/>
+    <sprite n="so_l_dl.png" x="631" y="863" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="so_l_dr.png" x="631" y="931" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="so_l_ul.png" x="699" y="890" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="so_l_ur.png" x="699" y="958" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="so_p_header.png" x="984" y="78" w="37" h="71" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="so_p_l.png" x="252" y="890" w="64" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="so_p_r.png" x="320" y="890" w="64" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="syn_bg_modal.png" x="830" y="958" w="60" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="unlimited_live_with_label.png" x="2" y="890" w="128" h="130" pX="0.5" pY="0.5"/>
+</TextureAtlas>

@@ -1,0 +1,33 @@
+<!DOCTYPE Layout SYSTEM '../../dtd/layout.dtd'>
+<Layout>
+	<Object sceneObject="ChallengeFailed">
+		<Default>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="50"/>
+			</Translation>
+			<Size>
+				<Height percentage="100"/>
+				<OriginalSize width="1024" height="768"/>
+			</Size>
+		</Default>
+		<Portrait>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="50"/>
+			</Translation>
+			<Size>
+				<OriginalSize width="684" height="1024"/>
+				<Width percentage="100"/>
+			</Size>
+		</Portrait>
+	</Object>
+	<Object sceneObject="Landscape">
+		<Landscape visible="true"/>
+		<Portrait visible="false"/>
+	</Object>
+	<Object sceneObject="Portrait">
+		<Landscape visible="false"/>
+		<Portrait visible="true"/>
+	</Object>
+</Layout>

@@ -1,0 +1,282 @@
+<Scene>
+	<Materials>
+		<Material name="Episode63Material">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="false" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama21/episode63/tex/episode63_material.png"/>
+			</Textures>
+		</Material>
+		<Material name="Episode63MaterialAlpha" parentMaterial="Episode63Material">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<Material name="Episode63PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/path_tex.png"/>
+			</Textures>
+		</Material>
+		<Material name="Episode63PathMaterialAlpha" parentMaterial="Episode63PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<Material name="Episode63BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama21/episode63/tex/episode63_material.png"/>
+			</Textures>
+		</Material>
+		<Material name="Episode63BackdropMaterialAlpha" parentMaterial="Episode63BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+	</Materials>
+	<SceneObject name="palm_island_small">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/palm_island_small.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="-701.834201558" y="-4.74639475116" z="-286.535407534"/>
+		<Rotation x="-10.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="barrel">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/barrel.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="-605.609935506" y="-43.096143263" z="328.823499571"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="bubbles_big">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/bubbles_big.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="-34.0006704172" y="-15.7446356617" z="-169.927113815"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="bubbles_mini">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/bubbles_mini.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="-383.259616306" y="-44.970630928" z="-121.042127581"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="soda_bottle_orange">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/soda_bottle_orange.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="35.1966771364" y="-31.7823801446" z="322.61973009"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="bubbles_small">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/bubbles_small.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="-766.334124414" y="-17.1902967268" z="-131.249735323"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="soda_bottle_teal">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/soda_bottle_teal.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="-785.961374724" y="-39.4731491767" z="-133.32872528"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="bubbles_medium">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/bubbles_medium.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="-601.236574762" y="-19.2124549903" z="319.460771403"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="palm_island_big">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/palm_island_big.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="823.517912747" y="-1.42108547152e-14" z="355.136891506"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="seagull">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/seagull.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="-1094.26094618" y="-14.702554834" z="-99.7678432503"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="soda_bottle_yellow">
+		<Model filename="shared/diorama/diorama21/episode63/models/interactable/soda_bottle_yellow.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="372.24761259" y="-43.3784708503" z="326.401174904"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="bg_island_small">
+		<Model filename="shared/diorama/diorama21/episode63/models/non_interactable/bg_island_small.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="374.769384166" y="8.29218863904" z="-371.3899267"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="bg_island_big">
+		<Model filename="shared/diorama/diorama21/episode63/models/non_interactable/bg_island_big.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="111.324117989" y="0.0" z="-372.211224947"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="bg_island_medium">
+		<Model filename="shared/diorama/diorama21/episode63/models/non_interactable/bg_island_medium.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="-205.603545844" y="8.74264022073" z="-369.681971581"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="bg_island_mini">
+		<Model filename="shared/diorama/diorama21/episode63/models/non_interactable/bg_island_mini.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="636.416638303" y="12.6281670895" z="-367.80813819"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+		<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.4"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+		<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+		<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+		<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+		<Interactable upEffect="diorama_donut"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow">
+		<Model filename="shared/diorama/diorama21/episode63/models/asset_shadow.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="episode63_ground">
+		<Model filename="shared/diorama/diorama21/episode63/models/episode63_ground.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="episode63_diorama_sky">
+		<Model filename="shared/diorama/diorama21/episode63/models/episode63_diorama_sky.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="-50.86803395" z="-65.4759992659"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="episode63_diorama_base">
+		<Model filename="shared/diorama/diorama21/episode63/models/episode63_diorama_base.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode63MaterialAlpha"/>
+		</Materials>
+		<Translation x="-4.05706787109" y="-43.7943484783" z="17.056930542"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+</Scene>

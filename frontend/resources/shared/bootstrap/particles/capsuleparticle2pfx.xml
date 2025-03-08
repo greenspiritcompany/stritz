@@ -1,0 +1,133 @@
+<ParticleEffect maxParticles="32" space="World" timeToEmit="-1" name="CapsuleParticle2PFX">
+<Dampening max="0.800" min="0.800" />
+<DirectionalForce x="0">
+	<Curves>
+		<X multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</X>
+		<Y multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</Y>
+		<Z multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</Z>
+	</Curves>
+</DirectionalForce>
+<Emitter emissionRate="0.250" spread="360" AlignParticlesWithVelocity="true" angle="0">
+	<SpawnArea width="10" depth="0" height="10" />
+	<EmissionRadius max="50" min="0" />
+</Emitter>
+<Rotation max="0" min="0" />
+<RotationSpeed min="0.001" max="1" type="Constant">
+	<Curves multiplier="1">
+		<MinCurve>
+			<ControlPoint time="-0.010" />
+			<ControlPoint time="1.010" />
+		</MinCurve>
+		<MaxCurve>
+			<ControlPoint time="-0.010" />
+			<ControlPoint time="1.010" />
+		</MaxCurve>
+	</Curves>
+</RotationSpeed>
+<Size>
+	<Max x="12" y="12" />
+	<Min x="4" y="4" />
+</Size>
+<SizeChange type="Constant" x="18" y="18">
+	<Max x="3" y="3.800" />
+	<Min x="3" y="3.800" />
+	<Curves>
+		<X multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" value="1" />
+				<ControlPoint time="1.010" value="1" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" value="1" />
+				<ControlPoint time="1.010" value="1" />
+			</MaxCurve>
+		</X>
+		<Y multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" value="1" />
+				<ControlPoint time="1.010" value="1" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" value="1" />
+				<ControlPoint time="1.010" value="1" />
+			</MaxCurve>
+		</Y>
+	</Curves>
+</SizeChange>
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/fx_shine2.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive max="0.800" min="0.400" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="255" g="255" b="255" a="0" />
+	</Keyframe>
+	<Keyframe lifeTime="0.135">
+		<Color r="255" g="255" b="255" a="228" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="255" g="255" b="255" a="53" />
+	</Keyframe>
+</ColorAnimation>
+<VelocityChange>
+	<Curves>
+		<X multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</X>
+		<Y multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</Y>
+		<Z multiplier="1">
+			<MinCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MinCurve>
+			<MaxCurve>
+				<ControlPoint time="-0.010" />
+				<ControlPoint time="1.010" />
+			</MaxCurve>
+		</Z>
+	</Curves>
+</VelocityChange>
+<Velocity min="0" max="0" />
+</ParticleEffect>

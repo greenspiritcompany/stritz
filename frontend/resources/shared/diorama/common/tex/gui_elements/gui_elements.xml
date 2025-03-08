@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:2b69dbb3b5696729aad367cd15d5d34b:92000801d61843d4f8e34484cd648b7c:f98ab39495086aae08bf7278c7efb3ad$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gui_elements.png" width="1024" height="1024">
+    <sprite n="back_symbol.png" x="730" y="966" w="49" h="49" pX="0.5" pY="0.5"/>
+    <sprite n="bg_border_ov.png" x="602" y="494" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="broken_heart.png" x="854" y="118" w="163" h="150" pX="0.5" pY="0.5"/>
+    <sprite n="curly_bracket.png" x="697" y="502" w="104" h="42" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="default.png" x="612" y="465" w="25" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_header_pink.png" x="221" y="118" w="6" h="188" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_header_pink_landsc.png" x="634" y="289" w="6" h="172" pX="0.5" pY="0.5"/>
+    <sprite n="episode_lock_icon.png" x="605" y="650" w="88" h="93" pX="0.5" pY="0.5"/>
+    <sprite n="friend_list_footer.png" x="634" y="163" w="18" h="40" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="friend_list_header.png" x="154" y="720" w="71" h="78" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="friends_bg.png" x="107" y="998" w="71" h="23" pX="0.5" pY="0.5"/>
+    <sprite n="fruck.png" x="231" y="118" w="1" h="1" pX="0.5" pY="0.5"/>
+    <sprite n="glow.png" x="783" y="966" w="44" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="gumball_machine_icon.png" x="657" y="2" w="193" h="136" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="hard_frame_corner_downleft.png" x="730" y="741" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="hard_frame_corner_downright.png" x="775" y="663" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="hard_frame_corner_upleft.png" x="815" y="590" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="hard_frame_corner_upright.png" x="730" y="898" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="hard_goalbox_left.png" x="662" y="825" w="43" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="hard_goalbox_left2.png" x="157" y="310" w="70" h="46" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="hard_goalbox_right.png" x="683" y="903" w="43" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="hard_goalbox_right2.png" x="157" y="360" w="70" h="46" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="hard_goalbox_shadow.png" x="382" y="497" w="68" h="85" pX="0.5" pY="0.5"/>
+    <sprite n="hard_header.png" x="2" y="2" w="230" h="112" pX="0.5" pY="0.5"/>
+    <sprite n="hard_modal_skull.png" x="697" y="548" w="114" h="111" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="header_box_ov.png" x="225" y="866" w="64" h="121" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="heart.png" x="851" y="272" w="163" h="150" pX="0.5" pY="0.5"/>
+    <sprite n="heart_btn.png" x="154" y="636" w="72" h="80" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="heart_ornament.png" x="107" y="869" w="114" h="125" pX="0.5" pY="0.5"/>
+    <sprite n="highscore_list_bg.png" x="634" y="235" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="highscore_txt_box.png" x="382" y="586" w="68" h="64" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_locked.png" x="850" y="426" w="162" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="icon_memories_active.png" x="385" y="371" w="65" h="59" pX="0.5" pY="0.5"/>
+    <sprite n="icon_memories_inactive.png" x="385" y="434" w="65" h="59" pX="0.5" pY="0.5"/>
+    <sprite n="icon_messages_active.png" x="391" y="194" w="60" h="55" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_messages_inactive.png" x="391" y="253" w="60" h="55" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_overview_active.png" x="391" y="312" w="60" h="55" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_overview_inactive.png" x="136" y="802" w="55" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="icon_quest_active.png" x="195" y="802" w="55" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="icon_quest_inactive.png" x="638" y="526" w="55" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="infinity_sign.png" x="810" y="433" w="35" h="53" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="letter_icon2.png" x="417" y="776" w="75" h="84" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="lollipop_icon2.png" x="590" y="947" w="89" h="75" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="lollipop_modal_icon.png" x="236" y="2" w="215" h="188" pX="0.5" pY="0.5"/>
+    <sprite n="mc_header_box.png" x="293" y="865" w="64" h="121" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="mc_notification_box.png" x="156" y="513" w="69" h="69" pX="0.5" pY="0.5"/>
+    <sprite n="message_box.png" x="480" y="966" w="52" h="55" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="message_box_shadow.png" x="254" y="782" w="58" h="79" pX="0.5" pY="0.5"/>
+    <sprite n="ov_episode_box_general.png" x="810" y="336" w="36" h="93" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep1.png" x="231" y="194" w="156" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep2.png" x="230" y="496" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep3.png" x="2" y="612" w="148" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep4.png" x="455" y="328" w="153" h="149" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep5.png" x="2" y="310" w="151" h="148" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep7.png" x="455" y="2" w="198" h="157" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pet_box.png" x="157" y="410" w="69" h="99" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pet_box_left.png" x="156" y="586" w="69" h="46" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pet_box_right.png" x="709" y="825" w="46" h="69" pX="0.5" pY="0.5"/>
+    <sprite n="pet_btn_blue.png" x="231" y="346" w="150" h="146" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pet_btn_yellow.png" x="2" y="462" w="150" h="146" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="photo_frame.png" x="652" y="747" w="74" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="photo_frame_friends.png" x="697" y="663" w="74" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="prof_pic.png" x="536" y="966" w="50" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="sale_purchase_icon.png" x="455" y="163" w="175" h="161" pX="0.5" pY="0.5"/>
+    <sprite n="search_field.png" x="759" y="809" w="42" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="search_icon.png" x="634" y="207" w="18" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="selector_tab_active.png" x="454" y="591" w="95" h="55" pX="0.5" pY="0.5"/>
+    <sprite n="selector_tab_inactive.png" x="553" y="591" w="95" h="55" pX="0.5" pY="0.5"/>
+    <sprite n="send_life_check.png" x="316" y="782" w="97" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="slayer_frame_leftbottom.png" x="182" y="998" w="20" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="slayer_frame_lefttop.png" x="206" y="998" w="20" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="slayer_frame_rightbottom.png" x="230" y="991" w="20" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="slayer_frame_righttop.png" x="254" y="991" w="20" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="spinner_back.png" x="644" y="336" w="162" h="162" pX="0.5" pY="0.5"/>
+    <sprite n="spinner_front.png" x="657" y="142" w="190" h="190" pX="0.5" pY="0.5"/>
+    <sprite n="star.png" x="367" y="654" w="115" h="118" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="star_bright.png" x="361" y="864" w="115" h="118" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="star_paper.png" x="230" y="648" w="133" h="130" pX="0.5" pY="0.5"/>
+    <sprite n="star_with_dropshadow.png" x="486" y="650" w="115" h="118" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="striped_lollipop_icon.png" x="582" y="854" w="76" h="89" pX="0.5" pY="0.5"/>
+    <sprite n="striped_lollipop_modal_icon.png" x="2" y="118" w="215" h="188" pX="0.5" pY="0.5"/>
+    <sprite n="swipe_border_bg.png" x="480" y="864" w="98" h="98" pX="0.5" pY="0.5"/>
+    <sprite n="swipe_top_bg.png" x="854" y="2" w="168" h="112" pX="0.5" pY="0.5"/>
+    <sprite n="symbol_collab_lock.png" x="496" y="772" w="74" h="78" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="symbol_lives.png" x="574" y="772" w="74" h="78" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="tab_active.png" x="2" y="764" w="130" h="101" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="tab_border_shadow.png" x="634" y="255" w="15" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="tab_inactive.png" x="2" y="869" w="101" h="130" pX="0.5" pY="0.5"/>
+    <sprite n="tab_shadow.png" x="454" y="481" w="144" h="106" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="white_box.png" x="810" y="490" w="33" h="32" pX="0.5" pY="0.5"/>
+</TextureAtlas>

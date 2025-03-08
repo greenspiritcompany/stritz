@@ -1,0 +1,11 @@
+<Layers>
+	<Layer name="inherit" bitMask="-1"/>
+	<Layer name="stencil_write" bitMask="64"/>
+	<Layer name="game_background" bitMask="8"/>
+	<Layer name="game_grid_clipped" bitMask="16"/>
+	<Layer name="behind_candies" bitMask="1"/>
+	<Layer name="clipped_candies_stencil" bitMask="128"/>
+	<Layer name="infront_of_candies" bitMask="512"/>
+	<Layer name="gui" bitMask="256"/>
+	<Layer name="perspective" bitMask="2"/>
+</Layers>

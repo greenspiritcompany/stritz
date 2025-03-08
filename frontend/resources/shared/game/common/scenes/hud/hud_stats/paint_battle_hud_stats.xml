@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<Material name="JamInHudMaterial">
+		<Texture filename="shared/game/common/tex/hud/jam_jar_icon_v2.png" />
+		<Blend blendFuncSourceFactor="One" enabled="true" />
+		<Cull enabled="true" />
+		<Depth enabled="true" />
+		<Shader program="TextureColor" />
+	</Material>
+	<SceneObject name="LandscapePaintBattleStats" visibility="inherit" __visibility="0">
+		<SceneObject name="ColorPercentageText">
+			<Translation z="20" y="34.500" x="-7" />
+			<Text font="PinkNumbers" alignment="center" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color g="97" r="49" b="131" a="90" />
+					<Offset y="1" x="1" />
+				</Shadow>
+				<Size y="16" x="16" />
+				<TextString>0/0</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkLandscapeRoot">
+			<SceneObject name="CheckmarkLandscape" visibility="never">
+				<Translation z="3" y="36" x="-2.360" />
+				<Scale y="0.850" x="0.850" />
+				<Animation loopCount="0" animationData="OnAppearGrow" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ColorIcon1">
+			<SceneObject name="jam_icon_hud" visibility="inherit">
+				<Translation z="0" y="-31.660" x="-0.600" />
+				<Scale z="0.220" y="-0.310" x="0.310" />
+				<Model filename="shared/game/common/models/jam/hud_icon.ffm">
+					<Animation name="jam_icon_hud_animation" filename="shared/game/common/models/jam/hud_icon_idle.ffa" play="true" />
+					<Animation loopCount="0" name="jam_icon_hud_animation_shake" filename="shared/game/common/models/jam/hud_icon_shake.ffa" />
+				</Model>
+				<Material name="JamHudIconMaterial" parentMaterial="JamInHudMaterial" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ColorIcon2" visibility="never" __visibility="3">
+			<Translation z="10" y="-31.660" x="-0.600" />
+			<Scale z="0.220" y="-0.310" x="0.310" />
+			<Model filename="shared/game/common/models/jam/hud_icon.ffm">
+				<Animation name="jam_icon_hud_animation" filename="shared/game/common/models/jam/hud_icon_idle.ffa" play="true" />
+				<Animation loopCount="0" name="jam_icon_hud_animation_shake" filename="shared/game/common/models/jam/hud_icon_shake.ffa" />
+			</Model>
+			<Material name="JamHudIconMaterial" parentMaterial="JamInHudMaterial" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="PortraitPaintBattleStats" visibility="inherit" __visibility="3">
+		<SceneObject name="ColorPercentageText">
+			<Translation z="20" y="23.010" x="76.900" />
+			<Text font="PinkNumbers" alignment="center" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color g="97" r="49" b="131" a="90" />
+					<Offset y="1" x="1" />
+				</Shadow>
+				<Size y="14" x="14" />
+				<TextString>0/1</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkPortraitRoot">
+			<SceneObject name="CheckmarkPortrait" visibility="never">
+				<Translation z="3" y="15" x="84.870" />
+				<Scale z="0.700" y="1.060" x="1.060" />
+				<Animation loopCount="0" animationData="OnAppearGrow" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ColorIcon1">
+			<Translation y="20" x="-5" />
+			<SceneObject name="jam_icon_hud">
+				<Translation z="10" y="-30.870" x="-5.370" />
+				<Scale z="0.220" y="-0.310" x="0.310" />
+				<Model filename="shared/game/common/models/jam/hud_icon.ffm">
+					<Animation name="jam_icon_hud_animation" filename="shared/game/common/models/jam/hud_icon_idle.ffa" play="true" />
+					<Animation loopCount="0" name="jam_icon_hud_animation_shake" filename="shared/game/common/models/jam/hud_icon_shake.ffa" />
+				</Model>
+				<Material name="JamHudIconMaterial" parentMaterial="JamInHudMaterial" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="ColorIcon2" visibility="never">
+		<Translation z="10" y="-30.870" x="-5.370" />
+		<Scale z="0.220" y="-0.310" x="0.310" />
+		<Model filename="shared/game/common/models/jam/hud_icon.ffm">
+			<Animation name="jam_icon_hud_animation" filename="shared/game/common/models/jam/hud_icon_idle.ffa" play="true" />
+			<Animation loopCount="0" name="jam_icon_hud_animation_shake" filename="shared/game/common/models/jam/hud_icon_shake.ffa" />
+		</Model>
+		<Material name="JamHudIconMaterial" parentMaterial="JamInHudMaterial" />
+	</SceneObject>
+</Scene>

@@ -1,0 +1,39 @@
+{
+  "id": "star_collector_hard",
+  "nameKey" : "quests.names.starseeker",
+  "difficulty" : 1,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "collectStars",
+      "descriptionKey" : "quests.description.starcollector",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_star.png",
+      "data": {
+		"amount" : 10
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12021,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12003,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    }
+  ]
+}

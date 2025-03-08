@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="11" space="World" timeToEmit="60" name="BearInBubbleWinGlitterPFX">
+    <Dampening max="1" min="0.900"/>
+    <DirectionalForce x="0" y="50"/>
+    <Emitter emissionRate="0.080" spread="360" angle="360">
+        <SpawnArea width="110" depth="0" height="150"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="500" min="-500"/>
+    <Size>
+        <Max x="48" y="48"/>
+        <Min x="16" y="24"/>
+    </Size>
+    <SizeChange>
+        <Max x="-24" y="-24"/>
+        <Min x="-65" y="-65"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.800" min="0.300"/>
+    <Velocity max="250" min="100"/>
+</ParticleEffect>

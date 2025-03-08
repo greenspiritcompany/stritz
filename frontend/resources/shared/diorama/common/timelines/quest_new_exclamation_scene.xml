@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="exclgrp">
+		<Animation animationData="NewQuestExclamation" name="jumparound" loopCount="0" />
+		<SceneObject name="NotificationCircle2">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/mc_notification_box.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation z="1" />
+		</SceneObject>
+		<SceneObject name="NotificationCounter2">
+			<Text alignment="center" canBreakWords="false" font="Banana">
+				<Size x="30" y="30" />
+				<TextString>!</TextString>
+			</Text>
+			<Translation x="-3.038" y="8.759" z="1" />
+		</SceneObject>
+		<SceneObject name="Effect">
+			<Translation y="-5" z="-1" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

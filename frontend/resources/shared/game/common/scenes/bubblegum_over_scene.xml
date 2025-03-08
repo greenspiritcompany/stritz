@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/bubblegum_material.xml"/>
+	<SceneObject name="Scene">
+		<SceneObject layerFlags="512" name="BubblegumOver">
+			<Scale y="-1"/>
+			<Model filename="shared/game/common/models/bubblegum/bubblegum_over.ffm">
+				<Animation filename="shared/game/common/models/bubblegum/grow_over.ffa" loopCount="0" speed="1.3" name="Grow" play="false" interpolateFrame="false"/>
+			</Model>
+			<Material parentMaterial="BubblegumOverMaterial"/>
+            <SceneObjects>
+                <SceneObject layerFlags="1" name="BubblegumBg">
+                    <Model filename="shared/game/common/models/bubblegum/bubblegum_bg.ffm">
+                        <Animation name="idle" filename="shared/game/common/models/bubblegum/grow_over.ffa" loopCount="0" play="false"/>
+                    </Model>
+                    <Material parentMaterial="BubblegumBgUnderMaterial"/>
+                </SceneObject>
+            </SceneObjects>
+		</SceneObject>
+
+	</SceneObject>
+</Scene>

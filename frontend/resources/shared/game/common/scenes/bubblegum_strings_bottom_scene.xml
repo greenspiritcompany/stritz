@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/bubblegum_material.xml"/>
+	<SceneObject name="Scene">
+		<SceneObject layerFlags="1" name="String">
+			<Scale y="-1"/>
+			<Model filename="shared/game/common/models/bubblegum/strings_bottom.ffm">
+				<Animation name="grow_from_left" 	filename="shared/game/common/models/bubblegum/strings_bottom_grow_from_left.ffa" loopCount="0" play="false"/>
+				<Animation name="grow_from_right" 	filename="shared/game/common/models/bubblegum/strings_bottom_grow_from_right.ffa" loopCount="0" play="false"/>
+				<Animation name="grow_from_top" 	filename="shared/game/common/models/bubblegum/strings_bottom_grow_from_top.ffa" loopCount="0" play="false"/>
+				<Animation name="grow_from_bottom" 	filename="shared/game/common/models/bubblegum/strings_bottom_grow_from_bottom.ffa" loopCount="0" play="false"/>
+				<Animation name="Wobble" 			filename="shared/game/common/models/bubblegum/strings_bottom_wobble.ffa" loopCount="0" play="false"/>
+			</Model>
+			<Material parentMaterial="BubblegumStringsVerticalMaterial"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

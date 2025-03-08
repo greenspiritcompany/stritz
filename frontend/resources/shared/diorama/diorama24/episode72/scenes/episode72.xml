@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="Episode72Material">
+		<Cull enabled="false" face="back" />
+		<Texture filename="shared/diorama/diorama24/episode72/tex/episode72_material.png" />
+	</Material>
+	<Material name="Episode72MaterialAlpha" parentMaterial="Episode72Material">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode72PathMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode72PathMaterialAlpha" parentMaterial="Episode72PathMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="Episode72BackdropMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/diorama24/episode72/tex/episode72_material.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode72BackdropMaterialAlpha" parentMaterial="Episode72BackdropMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<SceneObject name="DioramaModel">
+			<!--
+				BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+        FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+      -->
+			<Model filename="shared/diorama/diorama24/episode72/models/episode72_diorama_base.ffm" />
+			<Material parentMaterial="Episode72BackdropMaterial" />
+			<Translation x="1900" />
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Import filename="shared/diorama/diorama24/episode72/scenes/episode72_levelpins.xml" />
+			<SceneObject name="Episode72_Backdrop">
+				<SceneObject name="Episode72_Diorama_Sky">
+					<Model filename="shared/diorama/diorama24/episode72/models/episode72_diorama_sky.ffm" />
+					<Material parentMaterial="Episode72BackdropMaterial" />
+					<Translation x="0" y="-29.352" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<!--
+        EPISODE GROUND GEOMETRY ETC.
+        -->
+				<SceneObject name="Episode72_Ground">
+					<Model filename="shared/diorama/diorama24/episode72/models/episode72_ground.ffm" />
+					<Material parentMaterial="Episode72Material" />
+					<Translation x="0" y="-30" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<SceneObject name="E72Path">
+				<Model filename="shared/diorama/diorama24/episode72/models/path/episode72_path.ffm">
+					<Bound minZ="-600" />
+				</Model>
+				<Material parentMaterial="Episode72PathMaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<!--ADD PATH SHADOW - ADD YOUR -->
+			<SceneObject name="E72PathShadow">
+				<Model filename="shared/diorama/diorama24/episode72/models/path/path_shadow.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="Episode72MaterialAlpha" />
+				<Translation x="6.920" y="13.702" z="18.331" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<!--ASSET SHADOWS-->
+			<SceneObject name="AssetShadows">
+				<Model filename="shared/diorama/diorama24/episode72/models/asset_shadow.ffm">
+					<Bound minZ="-1600" />
+				</Model>
+				<Material parentMaterial="Episode72MaterialAlpha" />
+				<Translation x="0" y="-29.352" z="-3.751" />
+				<Rotation x="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E72EndSign">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm" />
+				<Material parentMaterial="Under_Construction_Icon" />
+				<Translation x="728.219" y="84" z="40" />
+				<Rotation x="-35" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<!--PORTAL FORWARD-->
+			<SceneObject name="PortalForwardGroup">
+				<Translation x="-420.228" y="15" z="170" />
+				<SceneObject name="diorama_link_next">
+					<Model filename="shared/diorama/common/models/portal/portal.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="1147" y="115" z="-215" />
+					<Rotation x="0" y="-40" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<SceneObject name="diorama_portal_shadow">
+						<Model filename="shared/diorama/common/models/portal/portal_shadow.ffm" />
+						<Material parentMaterial="PortalMaterial" />
+						<Translation x="0" y="0" z="0" />
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="diorama_link_next_pin_enabled" visibility="never">
+					<Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+						<Animation filename="shared/diorama/common/models/portal/pin_idle.ffa" loopCount="-1" name="idlePinEmil" play="true" speed="1" />
+					</Model>
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="1120" y="42" z="-165" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_link_next_pin_disabled">
+					<Model filename="shared/diorama/common/models/portal/portal_pin_inactive.ffm" />
+					<Material parentMaterial="PortalDisabledMaterial" />
+					<Translation x="1120" y="42" z="-165" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<!-- DIORAMA ASSETS -->
+			<!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+
+      <SceneObject name="episode72_Non_Interactable_Group">
+        <SceneObject name="episode72_Non_Interactable_01">
+          <Model filename="shared/diorama/diorama24/episode72/models/non_interactable/episode72_non_interactable_01.ffm"/>
+          <Materials>
+            <Material parentMaterial="Episode72MaterialAlpha"/>
+          </Materials>
+          <Translation x="-413.886" y="40.955" z="-150.066"/>
+          <Rotation x="0" y="0" z="0"/>
+          <Scale x="1" y="1" z="1"/>
+        </SceneObject>
+      </SceneObject>
+
+
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+			<SceneObject name="episode72_Interactable_Group">
+				<SceneObject name="ep72_cables_blue">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_cables_blue.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-269.735" y="399.790" z="-315.309" />
+					<Scale x="-0.847" y="0.855" z="0.838" />
+				</SceneObject>
+				<SceneObject name="ep72_cables_purple">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_cables_purple.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="346.283" y="441.487" z="-247.036" />
+				</SceneObject>
+				<SceneObject name="ep72_bag_blue">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_pile" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_bag_blue.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="274.163" y="351.299" z="-303.269" />
+				</SceneObject>
+				<SceneObject name="assets_front">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_lollipop" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/assets_front.ffm" />
+					<Rotation x="-25" y="0" z="0" />
+					<Translation x="686.370" y="-43.047" z="349.617" />
+				</SceneObject>
+				<SceneObject name="ep72_assets_small">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_house" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_assets_small.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="602.782" y="-29.352" z="-309.089" />
+				</SceneObject>
+				<SceneObject name="ep72_spotlight_front">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_spotlight_front.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-705.901" y="404.237" z="-312.734" />
+					<Scale x="1.106" y="1.123" z="1.103" />
+				</SceneObject>
+				<SceneObject name="ep72_assets_big">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_house" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_assets_big.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-579.955" y="-30.524" z="-314.435" />
+				</SceneObject>
+				<SceneObject name="ep72_bag_purple">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_pile" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_bag_purple.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-343.981" y="376.923" z="-325.866" />
+				</SceneObject>
+				<SceneObject name="ep72_spotlight_back">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_spotlight_back.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-472.111" y="503.024" z="3.100" />
+				</SceneObject>
+				<SceneObject name="ep72_bag_pink">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_pile" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_bag_pink.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-576.534" y="464.704" z="-11.465" />
+					<Scale x="0.940" y="0.922" z="0.920" />
+				</SceneObject>
+				<SceneObject name="ep72_shadow_star">
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/non_interactable/ep72_shadow_star.ffm" />
+					<Rotation x="0" y="30" z="0" />
+					<Translation x="136.053" y="111.573" z="-318.311" />
+				</SceneObject>
+				<SceneObject name="ep72_shadow_cables">
+					<Material parentMaterial="Episode72MaterialAlpha">
+						<Light>
+							<Diffuse r="204" g="204" b="204" a="225" />
+						</Light>
+					</Material>
+					<Model filename="shared/diorama/diorama24/episode72/models/non_interactable/ep72_shadow_cables.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="580.596" y="328.234" z="-353.852" />
+				</SceneObject>
+				<SceneObject name="ep72_assets_ladder2">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_assets_ladder.ffm" />
+					<Rotation y="0" z="0" />
+					<Translation x="-300.267" y="-11.811" z="-189.283" />
+					<Scale x="1.165" y="1.230" z="1.176" />
+				</SceneObject>
+				<SceneObject name="ep72_spotlight_front2">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_spotlight_front.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="635.287" y="502.844" z="68.836" />
+					<Scale x="-1" />
+				</SceneObject>
+				<SceneObject name="ep72_cables_purple2">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_cables_purple.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-835.187" y="383.602" z="-353.080" />
+					<Scale x="0.904" y="0.877" z="0.893" />
+				</SceneObject>
+				<SceneObject name="ep72_bag_purple2">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_pile" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_bag_purple.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="731.784" y="475.912" z="63.547" />
+					<Scale x="0.936" y="0.947" z="0.929" />
+				</SceneObject>
+				<SceneObject name="ep72_bag_blue2">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_pile" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_bag_blue.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="720.940" y="378.073" z="44.751" />
+				</SceneObject>
+				<SceneObject name="ep72_cables_blue2">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_cables_blue.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="458.604" y="485.103" z="-28.712" />
+				</SceneObject>
+				<SceneObject name="ep72_shadow_star2">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/non_interactable/ep72_shadow_star.ffm" />
+					<Rotation x="0" z="0" />
+					<Translation x="-234.678" y="39.326" z="-368.513" />
+					<Scale x="0.624" y="0.627" z="0.649" />
+				</SceneObject>
+				<SceneObject name="ep72_liquorice_rolls">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_liquorice_rolls.ffm" />
+					<Rotation x="-30" y="0" z="0" />
+					<Translation x="106.101" y="-9.394" z="336.622" />
+				</SceneObject>
+				<SceneObject name="ep72_liquorice_rolls2">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_liquorice_rolls.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="393.413" y="-14.232" z="-198.486" />
+				</SceneObject>
+				<SceneObject name="ep72_shadow_cables2">
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/non_interactable/ep72_shadow_cables.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="395.690" y="321.580" z="-353.852" />
+					<Scale x="0.688" y="0.948" z="1" />
+				</SceneObject>
+				<SceneObject name="ep72_shadow_cables3">
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/non_interactable/ep72_shadow_cables.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="622.918" y="277.835" z="-318.303" />
+					<Scale x="1.306" y="1.566" z="1.618" />
+				</SceneObject>
+				<SceneObject name="ep72_cables_purple3">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_cables_purple.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="48.333" y="563.897" z="-21.950" />
+					<Scale x="-1" />
+				</SceneObject>
+				<SceneObject name="ep72_assets_ladder3">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.400" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Model filename="shared/diorama/diorama24/episode72/models/interactable/ep72_assets_ladder.ffm" />
+					<Rotation x="-25" z="122.586" />
+					<Translation x="-518.826" y="14.382" z="330.620" />
+					<Scale x="1.165" y="1.230" z="1.176" />
+				</SceneObject>
+			</SceneObject>
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+			<SceneObject name="Episode72Character">
+				<Translation x="0" y="0" />
+				<SceneObject name="CharacterEp72">
+					<Rotation y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Model filename="shared/diorama/diorama24/episode72/models/character/episode72_character.ffm">
+						<Animation filename="shared/diorama/diorama24/episode72/models/character/episode72_character_idle.ffa" loopCount="-1" name="Idle" play="true" speed="1" />
+						<Animation filename="shared/diorama/diorama24/episode72/models/character/episode72_character_talk.ffa" loopCount="-1" name="Talk" speed="1" />
+					</Model>
+					<Material parentMaterial="Episode72MaterialAlpha" />
+					<Translation x="127.962" y="-42.343" z="-187.162" />
+				</SceneObject>
+			</SceneObject>
+			<!--
+				SPEECHBUBBLE
+			-->
+			<SceneObject name="SpeechBubbleEp72">
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear" />
+				<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear" />
+				<SpeechBubble>
+					<Speech key="episode72.intro" />
+					<Speech key="episode72.outro" />
+				</SpeechBubble>
+				<Translation x="0" y="125" z="-136.171" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+			</SceneObject>
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<SceneObject name="Particles">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-200" />
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-400" />
+			</SceneObject>
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<SceneObject name="UnlockLevel1227CameraTarget">
+				<Translation x="-200" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1245CameraTarget">
+				<Translation x="-200" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="ParticleEffect_eyes">
+				<Effect name="ep72_blinking_eyes" effectData="ep72_blinking_eyes" play="true" />
+				<Translation x="47.880" y="71.531" z="-353.587" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

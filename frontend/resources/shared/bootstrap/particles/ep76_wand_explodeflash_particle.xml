@@ -1,0 +1,23 @@
+<ParticleEffect name="Ep76_Wand_ExplodeFlash_Particle" timeToEmit="60" maxParticles="2">
+<Dampening max="0.900" min="0.800" />
+<DirectionalForce y="0" x="0" />
+<Emitter spread="360" emissionRate="0.100" angle="360">
+	<SpawnArea depth="0" width="0" height="0" />
+</Emitter>
+<EndColor r="255" g="234" b="203" a="0" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="90" min="-90" />
+<Size>
+	<Max y="100" x="100" />
+	<Min y="100" x="100" />
+</Size>
+<SizeChange>
+	<Max y="150" x="150" />
+	<Min y="150" x="150" />
+</SizeChange>
+<StartColor r="249" g="255" b="189" a="50" />
+<Texture numFramesX="2" filename="shared/bootstrap/particles/tex/elec_64.png" numFramesY="1" blend="Add" />
+<TextureFrame textureAnimationSpeed="10" startFrame="0" numTextureAnimationFrames="1" />
+<TimeToLive max="0.300" min="0.500" />
+<Velocity max="0" min="0" />
+</ParticleEffect>

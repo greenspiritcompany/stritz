@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<SceneObject __editorVisibility="true" __visibility="0" name="DethronedBonusModal">
+		<SceneObject __editorVisibility="true" __visibility="0" name="Portrait" visibility="inherit">
+			<Translation z="300" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" startDelay="0.05" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="Title">
+				<Translation x="-7" y="-322" />
+				<Text alignment="center" font="Banana" key="kotc.yourBonus" verticalAlignment="visualCenter">
+					<Color r="165" g="62" b="128" a="255" />
+					<Shadow enabled="true">
+						<Color r="255" g="255" b="255" a="255" />
+						<Offset x="0" y="3" z="1" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Arch">
+				<Translation y="-165" />
+				<Scale x="4" y="4" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="GoalBox">
+				<Translation y="-8" />
+				<SceneObject name="RewardWithHammers" visibility="inherit">
+					<SceneObject name="Group">
+						<SceneObject name="Middle">
+							<Translation y="100" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" vertexColors="false" wrap="repeat">
+								<Pivot anchor="center" />
+								<Rectangle maxX="128" maxY="128" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="Left">
+							<Translation x="-64" y="100" />
+							<Sprite filename="shared/castle/tex/reward_box_left.png" vertexColors="false">
+								<Pivot anchor="right" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject __editorVisibility="true" __visibility="0" name="Right">
+							<Translation x="64" y="100" />
+							<Sprite filename="shared/castle/tex/reward_box_right.png" vertexColors="false">
+								<Pivot anchor="left" />
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="Gold">
+						<Translation x="-88.9167" y="43" z="2" />
+						<Scale x="1.25" y="1.25" />
+						<SceneObject name="Goldbars">
+							<Translation x="24.4791" y="6" />
+							<Sprite filename="shared/castle/tex/gold_bar.png" vertexColors="false" />
+						</SceneObject>
+						<SceneObject name="Amount">
+							<Translation x="110" y="75" />
+							<Text alignment="center" font="Banana" maxHeight="42" maxWidth="60" overflowBehaviour="fit">
+								<Color r="124" g="69" b="0" a="255" />
+								<Pivot anchor="center" />
+								<Size x="28" y="28" />
+								<TextString>X</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="CollectBonusButton">
+				<Translation y="245" />
+				<Scale x="1.2" y="1.2" z="1.2" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="380" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject name="BonusButtonText">
+					<Translation x="-7" y="-7" />
+					<Text alignment="center" font="Banana" key="kotc.collectBonus" maxHeight="50" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="255" g="255" b="255" a="225" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="26" y="26" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BonusText">
+				<Translation y="-18" z="2" />
+				<Text alignment="center" font="Typewriter" key="kotc.yourBonus.desc" maxHeight="200" maxWidth="520" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color r="131" g="102" b="51" a="255" />
+					<Outline enabled="true">
+						<Color r="0" g="0" b="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color r="255" g="255" b="255" a="255" />
+					</Shadow>
+					<Size x="21" y="21" />
+					<TextString>This is your reward!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject name="OpenGiftBox">
+				<Translation x="-136.444" y="-288.037" />
+				<Sprite filename="shared/castle/tex/goldbar_giftbox.png" />
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<SceneObject __editorVisibility="true" __visibility="0" name="Landscape">
+			<Translation x="-40" y="40" z="410" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" startDelay="0.05" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="Title">
+				<Translation x="-7" y="-322" />
+				<Text alignment="center" font="Banana" key="kotc.yourBonus" verticalAlignment="visualCenter">
+					<Color r="165" g="62" b="128" a="255" />
+					<Shadow enabled="true">
+						<Color r="255" g="255" b="255" a="255" />
+						<Offset x="0" y="3" z="1" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Arch">
+				<Translation y="-165" />
+				<Scale x="4" y="4" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject __editorVisibility="true" __visibility="0" name="GoalBox">
+				<Translation y="-8" />
+				<SceneObject name="RewardWithHammers" visibility="inherit">
+					<SceneObject name="Group">
+						<SceneObject name="Middle">
+							<Translation y="100" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" vertexColors="false" wrap="repeat">
+								<Pivot anchor="center" />
+								<Rectangle maxX="128" maxY="128" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="Left">
+							<Translation x="-64" y="100" />
+							<Sprite filename="shared/castle/tex/reward_box_left.png" vertexColors="false">
+								<Pivot anchor="right" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject __editorVisibility="true" __visibility="0" name="Right">
+							<Translation x="64" y="100" />
+							<Sprite filename="shared/castle/tex/reward_box_right.png" vertexColors="false">
+								<Pivot anchor="left" />
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="Gold">
+						<Translation x="-88.9167" y="43" z="2" />
+						<Scale x="1.25" y="1.25" />
+						<SceneObject name="Goldbars">
+							<Translation x="24.4791" y="6" />
+							<Sprite filename="shared/castle/tex/gold_bar.png" vertexColors="false" />
+						</SceneObject>
+						<SceneObject name="Amount">
+							<Translation x="110" y="75" />
+							<Text alignment="center" font="Banana" maxHeight="42" maxWidth="60" overflowBehaviour="fit">
+								<Color r="124" g="69" b="0" a="255" />
+								<Pivot anchor="center" />
+								<Size x="28" y="28" />
+								<TextString>X</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="CollectBonusButton">
+				<Translation y="245" />
+				<Scale x="1.2" y="1.2" z="1.2" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="380" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject name="BonusButtonText">
+					<Translation x="-7" y="-7" />
+					<Text alignment="center" font="Banana" key="kotc.collectBonus" maxHeight="50" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="255" g="255" b="255" a="225" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="26" y="26" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BonusText">
+				<Translation y="-18" z="2" />
+				<Text alignment="center" font="Typewriter" key="kotc.yourBonus.desc" maxHeight="200" maxWidth="520" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color r="131" g="102" b="51" a="255" />
+					<Outline enabled="true">
+						<Color r="0" g="0" b="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color r="255" g="255" b="255" a="255" />
+					</Shadow>
+					<Size x="21" y="21" />
+					<TextString>This is your reward!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject name="OpenGiftBox">
+				<Translation x="-134.667" y="-287.667" />
+				<Sprite filename="shared/castle/tex/goldbar_giftbox.png" />
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<OriginalSize height="1024" width="684" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

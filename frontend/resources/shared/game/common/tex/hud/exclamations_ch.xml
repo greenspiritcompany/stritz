@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:8521835f8f9b70bd1cb2bad67f8e8457:d1792cac7f674d38faf1eece0c9f6260:03b1937c1ed59a7d8e76a7857b0775fc$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="exclamations_ch.png" width="1024" height="2048">
+    <sprite n="bubble_blur_ch.png" x="338" y="1257" w="166" h="105" pX="0.5" pY="0.5"/>
+    <sprite n="bubble_ch.png" x="2" y="1241" w="332" h="172" pX="0.5" pY="0.5"/>
+    <sprite n="crush_blur_ch.png" x="734" y="108" w="198" h="105" pX="0.5" pY="0.5"/>
+    <sprite n="crush_ch.png" x="2" y="889" w="393" h="172" pX="0.5" pY="0.5"/>
+    <sprite n="divine_blur_ch.png" x="915" y="584" w="106" h="364" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="divine_ch.png" x="2" y="2" w="728" h="176" pX="0.5" pY="0.5"/>
+    <sprite n="juicy_blur_ch.png" x="734" y="2" w="281" h="102" pX="0.5" pY="0.5"/>
+    <sprite n="juicy_ch.png" x="2" y="717" w="561" h="168" pX="0.5" pY="0.5"/>
+    <sprite n="rush_blur_ch.png" x="338" y="1366" w="104" h="168" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="rush_ch.png" x="677" y="952" w="336" h="172" pX="0.5" pY="0.5"/>
+    <sprite n="shuffle_blur_ch.png" x="508" y="1085" w="105" h="328" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="shuffle_ch.png" x="2" y="539" w="664" h="174" pX="0.5" pY="0.5"/>
+    <sprite n="soda_blur_ch.png" x="2" y="1417" w="168" h="104" pX="0.5" pY="0.5"/>
+    <sprite n="soda_ch.png" x="2" y="1065" w="336" h="172" pX="0.5" pY="0.5"/>
+    <sprite n="soda_crush_blur_ch.png" x="399" y="889" w="105" h="364" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="soda_crush_ch.png" x="2" y="182" w="728" h="174" pX="0.5" pY="0.5"/>
+    <sprite n="sodalicious_blur_ch.png" x="915" y="217" w="107" h="363" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="sodalicious_ch.png" x="734" y="217" w="177" h="726" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="tasty_blur_ch.png" x="567" y="717" w="106" h="364" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="tasty_ch.png" x="2" y="360" w="727" h="175" pX="0.5" pY="0.5"/>
+</TextureAtlas>

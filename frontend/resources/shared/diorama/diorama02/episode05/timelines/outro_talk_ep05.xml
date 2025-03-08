@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Triggers>
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp05.1"/>
+			<AnimationTrigger time="0." targetName="SpeechBubbleEp05" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger targetName="BatAwoken" animationName="OnClick" time="0.0"/>
+			<EffectTrigger time="0.1" name="character_bat"/>
+
+			<AnimationTrigger targetName="BatAwoken" animationName="Idle" time="1.5"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp05" animationName="SpeechBubbleDisappear"/>
+		</Triggers>
+	</Timeline>
+</Timelines>
+

@@ -1,0 +1,74 @@
+<Shaders>
+<Shader name="TextureColor" vertexShader="shaders/texturecolor.vert" fragmentShader="shaders/texturecolor.frag" />
+
+<Shader name="TextureColorShiny" vertexShader="shaders/texturecolorshiny.vert" fragmentShader="shaders/texturecolorshiny.frag">
+<Uniform name="Settings">
+	<DefaultValue x="0.500" y="1" z="1" size="4" w="0" />
+</Uniform>
+</Shader>
+
+<Shader name="TextureColorPMA" vertexShader="shaders/texturecolorPMA.vert" fragmentShader="shaders/texturecolor.frag" />
+
+<Shader name="TextureAlpha" vertexShader="shaders/texturecolor.vert" fragmentShader="shaders/texturealpha.frag" />
+
+<Shader name="TextureAlphaShiny" vertexShader="shaders/texturecolorshiny.vert" fragmentShader="shaders/texturealphashiny.frag" />
+
+<Shader name="TextureAlphaPMA" vertexShader="shaders/texturecolorPMA.vert" fragmentShader="shaders/texturealpha.frag" />
+
+<Shader name="TextureVertexColor" vertexShader="shaders/texturevertexcolor.vert" fragmentShader="shaders/texturecolor.frag" />
+
+<Shader name="AlphaTextureVertexColor" vertexShader="shaders/texturevertexcolor.vert" fragmentShader="shaders/alphatexturecolor.frag" />
+
+<Shader name="AlphaTextureColor" vertexShader="shaders/texturecolor.vert" fragmentShader="shaders/alphatexturecolor.frag" />
+
+<Shader name="Toon" vertexShader="shaders/toon.vert" fragmentShader="shaders/toonlut.frag" />
+
+<Shader name="ToonEmission" vertexShader="shaders/toon.vert" fragmentShader="shaders/toonemissionlut.frag" />
+
+<Shader name="Outline" vertexShader="shaders/expand.vert" fragmentShader="shaders/uniformcolor.frag" />
+
+<Shader name="Color" vertexShader="shaders/color.vert" fragmentShader="shaders/color.frag" />
+
+<Shader name="GreyScale" vertexShader="shaders/texturevertexcolor.vert" fragmentShader="shaders/greyscale.frag" />
+
+<Shader name="Overdraw" vertexShader="shaders/position.vert" fragmentShader="shaders/uniformcolor.frag" />
+
+<Shader name="SmoothColor" vertexShader="shaders/colornormal.vert" fragmentShader="shaders/smoothcolor.frag" />
+
+<Shader name="NormalMap" vertexShader="shaders/normalmap.vert" fragmentShader="shaders/normalmap.frag" />
+
+<Shader name="NormalMapInvertY" vertexShader="shaders/normalmap_invy.vert" fragmentShader="shaders/normalmap.frag" />
+
+<Shader name="Smooth" vertexShader="shaders/texturenormal.vert" fragmentShader="shaders/smooth.frag" />
+
+<Shader name="Benchmark" vertexShader="shaders/benchmark.vert" fragmentShader="shaders/benchmark.frag" />
+
+<Shader name="TextureColorParticleSystem" vertexShader="shaders/texturecolorparticlesystem.vert" fragmentShader="shaders/texturecolorparticlesystem.frag">
+<!-- Particle System -->
+</Shader>
+
+<Shader name="SDFFont" vertexShader="shaders/sdffont.vert" fragmentShader="shaders/sdffont.frag">
+<Attribute name="a_position" input="Positions">
+	<DefaultValue size="3" x="1" y="1" z="1" />
+</Attribute>
+<Attribute name="a_texCoord" input="UVs">
+	<DefaultValue size="2" x="1" y="1" />
+</Attribute>
+<Attribute name="a_color" input="Colors">
+	<DefaultValue size="4" x="1" y="1" z="1" w="1" />
+</Attribute>
+<Attribute name="a_textScale" input="TextScale">
+	<DefaultValue size="3" x="0.5" y="0.5" z="1" />
+</Attribute>
+</Shader>
+
+<Shader name="Density" vertexShader="shaders/density.vert" fragmentShader="shaders/density.frag">
+<Attribute name="a_position" input="Positions">
+	<DefaultValue size="3" x="1" y="1" z="1" />
+</Attribute>
+<Attribute name="a_texCoord" input="UVs">
+	<DefaultValue size="2" x="1" y="1" />
+</Attribute>
+</Shader>
+
+</Shaders>

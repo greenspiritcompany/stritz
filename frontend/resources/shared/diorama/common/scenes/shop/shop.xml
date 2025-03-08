@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="GoldbarShop">
+		<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+		<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+		<Translation z="500" />
+		<SceneObject name="Landscape">
+			<SceneObject name="Icons">
+				<Translation z="1" />
+				<SceneObject name="closeLayout">
+					<SceneObject name="close">
+						<Translation z="0" y="-0.635" x="-7.682" />
+						<SceneObject class="Button" name="CloseButtonLandscape">
+							<Animation animationData="Idle" play="true" name="Idle" layer="1" />
+							<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+							<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+							<Scale z="0.700" y="1.310" x="1.299" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+								<Pivot anchor="center" />
+							</Sprite>
+							<Translation z="0" y="88.287" x="-72.849" />
+							<SceneObject>
+								<Scale xyz="1.5" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/btn_exit.png" vertexColors="false">
+									<Pivot anchor="center" />
+								</Sprite>
+								<Translation y="-3" x="0" />
+							</SceneObject>
+						</SceneObject>
+						<LayoutConfiguration name="Default">
+							<Size>
+								<Height percentage="14" />
+								<OriginalSize width="0" height="156" />
+							</Size>
+						</LayoutConfiguration>
+					</SceneObject>
+					<LayoutConfiguration name="Default">
+						<Translation>
+							<X percentage="50" />
+							<Y percentage="-50" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="textLayout">
+					<SceneObject name="text" editorEntityId="111">
+						<Translation z="0" x="3.677" />
+						<SceneObject name="ShopText">
+							<Text alignment="center" canBreakWords="false" allowWordWrapping="false" font="Banana" overflowBehaviour="fit" key="stritz.product.shop.title" maxHeight="150" verticalAlignment="visualCenter" maxWidth="700">
+								<TextString>Shop</TextString>
+								<Size y="56" x="56" />
+								<Color g="101" b="145" r="0" a="255" />
+								<Shadow>
+									<Color g="255" b="255" r="255" a="255" />
+									<Offset y="4" x="0" />
+								</Shadow>
+								<Pivot y="57" />
+							</Text>
+							<Translation z="0" y="67.152" x="-0.319" />
+						</SceneObject>
+						<SceneObject visibility="never" name="ShopText_Korea">
+							<Text alignment="center" canBreakWords="false" allowWordWrapping="false" font="Banana" overflowBehaviour="fit" key="stritz.product.shop.title" maxHeight="150" verticalAlignment="visualCenter" maxWidth="700">
+								<TextString>Shop</TextString>
+								<Size y="50" x="50" />
+								<Color g="101" b="145" r="0" a="255" />
+								<Shadow>
+									<Color g="255" b="255" r="255" a="255" />
+									<Offset y="4" x="0" />
+								</Shadow>
+								<Pivot y="57" />
+							</Text>
+							<Translation z="0" y="50" x="-0.319" />
+						</SceneObject>
+						<LayoutConfiguration name="Default">
+							<Size>
+								<Height percentage="12" />
+								<OriginalSize width="0" height="116" />
+							</Size>
+						</LayoutConfiguration>
+					</SceneObject>
+					<LayoutConfiguration name="Default">
+						<Translation>
+							<X percentage="0" />
+							<Y percentage="-50" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="LandScapeHeader">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/shop_header.png" vertexColors="false" wrap="repeat">
+					<Pivot anchor="top" />
+					<Rectangle maxY="127" maxX="1315" />
+					<Size width="92" height="256" />
+				</Sprite>
+				<Translation z="0" />
+				<SceneObject name="Shadow">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_header_shadow.png" vertexColors="false">
+						<Insets bottom="2" right="2" left="2" top="2" />
+						<Pivot anchor="top" />
+						<Size width="70" />
+						<Scale y="2" />
+					</Panel>
+					<Translation z="-1" y="223" />
+				</SceneObject>
+				<LayoutConfiguration name="Default">
+					<Translation>
+						<Y percentage="-50" />
+					</Translation>
+					<Size forceUniform="false">
+						<Width percentage="100" />
+						<Height percentage="100" />
+						<OriginalSize width="92" height="1472" />
+					</Size>
+				</LayoutConfiguration>
+			</SceneObject>
+			<SceneObject name="LandscapeOfferGrp">
+				<Translation z="0" y="-235.792" x="-634.557" />
+				<SceneObject visibility="never" name="LandscapePlaceholderOffer" editorEntityId="480">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_specialoffer_box.png" vertexColors="false">
+						<Insets bottom="26" right="28" left="28" top="70" />
+						<Size width="420" height="615" />
+					</Panel>
+					<Translation z="0" y="0" x="9.605" />
+				</SceneObject>
+				<LayoutConfiguration name="Default">
+					<Translation>
+						<X percentage="-50" />
+						<Y percentage="-32.100" />
+					</Translation>
+					<Size>
+						<Height percentage="80" />
+						<OriginalSize width="0" height="616" />
+					</Size>
+				</LayoutConfiguration>
+			</SceneObject>
+			<SceneObject name="Group">
+				<SceneObject visibility="never" class="Button" name="korealink_panel_landscape">
+					<Panel filename="shared/diorama/common/tex/gui_elements/korealink_content_box_landscape.png" vertexColors="false">
+						<Insets bottom="0" right="26" left="26" top="0" />
+						<Scale x="15" />
+						<VertexColor g="255" b="255" r="255" a="255" />
+						<Pivot anchor="top" />
+					</Panel>
+					<Translation z="0" />
+					<Scale z="1" y="0.482" x="0.482" />
+					<SceneObject name="Text">
+						<Text alignment="center" allowWordWrapping="true" font="Typewriter" key="korea_legal_bank_link">
+							<Color g="49" b="138" r="42" a="255" />
+							<Size y="25" x="25" />
+						</Text>
+						<Translation z="0" y="43.303" />
+					</SceneObject>
+					<LayoutConfiguration name="Default">
+						<Translation>
+							<Y percentage="9" />
+						</Translation>
+						<Size>
+							<Height percentage="100" />
+							<OriginalSize width="0" height="1257" />
+						</Size>
+					</LayoutConfiguration>
+				</SceneObject>
+				<LayoutConfiguration name="Default">
+					<Translation>
+						<Y percentage="-50" />
+					</Translation>
+				</LayoutConfiguration>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="50" />
+					<Y percentage="50" />
+				</Translation>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject name="Portrait">
+			<SceneObject name="PortraitHeader" editorEntityId="132">
+				<Translation z="1" y="-410.981" />
+				<SceneObject visibility="inherit" name="Header" editorEntityId="140">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/shop_header.png" vertexColors="false" wrap="repeat">
+						<Rectangle maxY="127" maxX="768" />
+						<Size width="1536" height="256" />
+					</Sprite>
+					<Translation z="0" y="-0.382" x="-767.902" />
+					<SceneObject name="Shadow">
+						<Panel filename="shared/diorama/common/tex/gui_elements/shop_header_shadow.png" vertexColors="false">
+							<Insets bottom="2" right="2" left="2" top="2" />
+							<Size width="1536" />
+							<Scale y="2" />
+						</Panel>
+						<Translation z="-1" y="223" />
+					</SceneObject>
+					<SceneObject name="ShopText">
+						<Text alignment="center" canBreakWords="false" allowWordWrapping="false" font="Banana" overflowBehaviour="fit" key="stritz.product.shop.title" maxHeight="200" verticalAlignment="visualCenter" maxWidth="500">
+							<Color g="101" b="145" r="0" a="255" />
+							<Size y="80" x="80" />
+							<TextString>stritz.product.shop.title</TextString>
+							<Shadow>
+								<Color g="255" b="255" r="255" a="255" />
+								<Offset y="4" x="0" />
+							</Shadow>
+						</Text>
+						<Translation z="0" y="106.289" x="768" />
+					</SceneObject>
+					<SceneObject class="Button" name="CloseButtonPortrait">
+						<Animation animationData="Idle" play="true" name="Idle" layer="1" />
+						<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+						<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+						<Scale z="0.700" y="1.778" x="1.723" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation z="0" y="111.797" x="1437.009" />
+						<SceneObject>
+							<Scale xyz="1.5" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/btn_exit.png" vertexColors="false">
+								<Pivot anchor="center" />
+							</Sprite>
+							<Translation y="-3" x="0" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="PortraitOfferGrp" editorEntityId="133">
+					<Translation z="-1" y="230" x="0" />
+					<LayoutConfiguration name="Default">
+						<Size>
+							<Width percentage="100" />
+							<OriginalSize width="760" height="0" />
+							<Height percentage="993" />
+						</Size>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject visibility="never" class="Button" name="korealink_panel_portrait">
+					<Panel filename="shared/diorama/common/tex/gui_elements/korealink_content_box_portrait.png" vertexColors="false">
+						<Size width="640" height="50" />
+						<Insets bottom="0" right="26" left="26" top="0" />
+					</Panel>
+					<Translation z="-1" y="184.371" x="-774.528" />
+					<Scale z="1" y="2.391" x="2.420" />
+					<SceneObject name="Text">
+						<Text alignment="center" font="Typewriter" key="korea_legal_bank_link" verticalAlignment="visualCenter">
+							<Size y="15" x="15" />
+							<Color g="89" b="202" r="69" a="255" />
+						</Text>
+						<Translation z="0" y="34" x="330.408" />
+					</SceneObject>
+				</SceneObject>
+				<LayoutConfiguration name="Default">
+					<Translation>
+						<Y percentage="0" />
+						<X percentage="50" />
+					</Translation>
+					<Size>
+						<Width percentage="100" />
+						<OriginalSize width="1536" height="240" />
+					</Size>
+				</LayoutConfiguration>
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

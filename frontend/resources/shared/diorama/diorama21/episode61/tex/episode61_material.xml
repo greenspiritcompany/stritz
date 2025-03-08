@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:350c10aff5cc7602ab001dfea119f6af:609096aa5c5532b1706c7e59038548a3:477b2fefc329c3f567787fd7fb074597$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="episode61_material.png" width="2048" height="2048">
+    <sprite n="assets/ep61_ra__0004_seagull_eyes.png" x="1" y="1" w="140" h="133" pX="0.5" pY="0.5" oX="20" oY="19" oW="180" oH="171"/>
+    <sprite n="assets/ep61__0000s_0006_balloons_rope_1.png" x="145" y="1" w="472" h="352" pX="0.5" pY="0.5"/>
+    <sprite n="assets/ep61__0000s_0005_lamp.png" x="621" y="1" w="497" h="468" pX="0.5" pY="0.5"/>
+    <sprite n="assets/ep61_ra__0000s_0001_seagull.png" x="1122" y="1" w="321" h="470" pX="0.5" pY="0.5"/>
+    <sprite n="assets/ep61__0002_lighthouse.png" x="1447" y="1" w="574" h="486" pX="0.5" pY="0.5"/>
+    <sprite n="assets/ep61_glow.png" x="1" y="491" w="566" h="486" pX="0.5" pY="0.5"/>
+    <sprite n="assets/ep61__0000s_0000_pirate_body.png" x="571" y="491" w="677" h="510" pX="0.5" pY="0.5"/>
+    <sprite n="assets/ep61__0000s_0004_house.png" x="1252" y="491" w="754" h="536" pX="0.5" pY="0.5"/>
+    <sprite n="assets/ep61_sky.png" x="1" y="1031" w="204" h="549" pX="0.5" pY="0.5"/>
+    <sprite n="assets/ep61_fog.png" x="209" y="1031" w="676" h="638" pX="0.5" pY="0.5"/>
+    <sprite n="assets/ep61__0000s_0003_fish.png" x="889" y="1031" w="597" h="686" pX="0.5" pY="0.5"/>
+    <sprite n="images/ep61__0000s_0003_fish.png" x="889" y="1031" w="597" h="686" pX="0.5" pY="0.5"/>
+    <sprite n="assets/ep61__0003_base.png" x="1490" y="1031" w="274" h="688" pX="0.5" pY="0.5"/>
+</TextureAtlas>

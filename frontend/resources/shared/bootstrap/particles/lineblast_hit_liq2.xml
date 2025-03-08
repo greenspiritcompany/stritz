@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="3" space="Local" timeToEmit="0.010" name="LineBlastHitLiq2PFX">
+    <Dampening max="0.800" min="0.700"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="0" g="127" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="136.010" y="136.010"/>
+        <Min x="136.010" y="136.010"/>
+    </Size>
+    <SizeChange>
+        <Max x="585" y="-661"/>
+        <Min x="585" y="-661"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="0" textureAnimationSpeed="0" startFrame="0"/>
+    <TimeToLive max="0.160" min="0.160"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

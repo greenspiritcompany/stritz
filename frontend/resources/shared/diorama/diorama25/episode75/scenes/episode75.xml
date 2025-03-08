@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="Episode75Material">
+		<Cull enabled="false" face="back" />
+		<Texture filename="shared/diorama/diorama25/episode75/tex/episode75_material.png" />
+	</Material>
+	<Material name="Episode75MaterialAlpha" parentMaterial="Episode75Material">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode75PathMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode75PathMaterialAlpha" parentMaterial="Episode75PathMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="Episode75BackdropMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/diorama25/episode75/tex/episode75_material.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode75BackdropMaterialAlpha" parentMaterial="Episode75BackdropMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<SceneObject name="DioramaModel">
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Translation x="1900" />
+			<!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<!--ADD PATH SHADOW - ADD YOUR -->
+			<!--ASSET SHADOWS-->
+			<!--PORTAL FORWARD-->
+			<!--
+				SPEECHBUBBLE
+			-->
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<Import filename="shared/diorama/diorama25/episode75/scenes/episode75_levelpins.xml" />
+			<SceneObject name="Episode75_Backdrop">
+				<SceneObject name="Episode75_Diorama_Sky">
+					<Model filename="shared/diorama/diorama25/episode75/models/episode75_diorama_sky.ffm" />
+					<Material parentMaterial="Episode75BackdropMaterial" />
+					<Translation x="0" y="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="episode75_ground">
+					<Material parentMaterial="Episode75Material" />
+					<Model filename="shared/diorama/diorama25/episode75/models/episode75_ground.ffm" skinNormals="false" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="episode75_diorama_base">
+					<Material parentMaterial="Episode75Material" />
+					<Model filename="shared/diorama/diorama25/episode75/models/episode75_diorama_base.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="non-interactable">
+				<Translation x="17.647" y="66.770" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject name="ep75_grass_a">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/non_interactable/ep75_grass_a.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-302.819" y="-25.173" z="-297.695" />
+					<Scale x="0.750" y="0.750" z="0.750" />
+				</SceneObject>
+				<SceneObject name="ep75_grass_b">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/non_interactable/ep75_grass_b.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="148.504" y="-19.920" z="-311.187" />
+					<Scale x="0.715" y="0.715" z="0.715" />
+				</SceneObject>
+				<SceneObject name="ep75_grass_c">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/non_interactable/ep75_grass_c.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-765.397" y="-25.165" z="-319.898" />
+					<Scale x="0.598" y="0.598" z="0.598" />
+				</SceneObject>
+				<SceneObject name="ep75_mountain_a">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/non_interactable/ep75_mountain_a.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-755.475" y="32.572" z="-361.070" />
+				</SceneObject>
+				<SceneObject name="ep75_mountain_b">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/non_interactable/ep75_mountain_b.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="157.615" y="28.156" z="-343.106" />
+				</SceneObject>
+				<SceneObject name="ep75_mountain_c">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/non_interactable/ep75_mountain_c.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="638.405" y="35.948" z="-359.302" />
+				</SceneObject>
+				<SceneObject name="ep75_tree">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/non_interactable/ep75_tree.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-221.145" y="101.482" z="-320.446" />
+				</SceneObject>
+				<SceneObject name="ep75_stairs">
+					<Material parentMaterial="Episode75Material" />
+					<Model filename="shared/diorama/diorama25/episode75/models/non_interactable/ep75_stairs.ffm" />
+					<Translation x="2.283" y="-61.872" z="0" />
+					<Scale x="1" y="1" z="0.918" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="interactable">
+				<Translation x="17.647" y="66.770" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject name="ep75_ramenstand">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_ramenstand.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-21.992" y="-69.067" z="-11.648" />
+					<Animation play="true" animationData="Idle" weight="0.200" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" weight="0.500" />
+					<Interactable upEffect="diorama_tree" />
+					<Scale x="1.003" y="1.055" z="0.979" />
+				</SceneObject>
+				<SceneObject name="ep75_sushistand">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_sushistand.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="18.384" y="-62.649" z="-0.588" />
+					<Animation animationData="Idle" weight="0.200" play="true" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Interactable upEffect="diorama_tree" />
+					<Scale x="1.062" y="0.991" z="1" />
+				</SceneObject>
+				<SceneObject name="ep75_chopsticks_a">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_chopsticks_a.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-15.398" y="-83.143" z="0" />
+					<Animation play="true" animationData="Idle" weight="0.200" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Interactable upEffect="diorama_bush" />
+				</SceneObject>
+				<SceneObject name="ep75_chopsticks_b">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_chopsticks_b.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-17.512" y="-36.202" z="0" />
+					<Animation play="true" animationData="Idle" weight="0.200" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Interactable upEffect="diorama_bush" />
+				</SceneObject>
+				<SceneObject name="ep75_knife">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_knife.ffm">
+						<Bound minZ="100" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-27.095" y="-78.538" z="-1.253" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Interactable upEffect="diorama_squishy" />
+				</SceneObject>
+				<SceneObject name="ep75_branch_a">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_branch_a.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-632.036" y="313.804" z="-176.935" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Interactable upEffect="diorama_tree" />
+					<Scale x="0.839" y="0.863" z="0.858" />
+				</SceneObject>
+				<SceneObject name="ep75_branch_b">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_branch_b.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="510.373" y="327.852" z="-176.307" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Interactable upEffect="diorama_tree" />
+					<Scale x="0.781" y="0.773" z="0.791" />
+				</SceneObject>
+				<SceneObject name="ep75_bush_a">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_bush_a.ffm">
+						<Bound minZ="100" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-784.859" y="-18.655" z="-167.003" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+				</SceneObject>
+				<SceneObject name="ep75_bush_b">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_bush_b.ffm">
+						<Bound minZ="100" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="503.071" y="-22.767" z="-171.967" />
+					<Interactable upEffect="diorama_bush" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep75_bush_c">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_bush_c.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="572.146" y="-11.686" z="-307.255" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep75_bush_d">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_bush_d.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="782.866" y="-11.820" z="-306.534" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep75_sushi_a">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_sushi_a.ffm" />
+					<Rotation x="-10.843" y="0" z="0" />
+					<Translation x="-327.328" y="-18.475" z="320.056" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Interactable upEffect="diorama_donut" />
+					<Scale x="0.964" y="1.011" z="1" />
+				</SceneObject>
+				<SceneObject name="ep75_sushi_b">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_sushi_b.ffm">
+						<Bound minZ="100" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="536.025" y="-78.061" z="-62.933" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Scale x="0.820" y="0.854" z="0.833" />
+				</SceneObject>
+				<SceneObject name="ep75_cloud_a">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_cloud_a.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="36.842" y="-28.349" z="-2.434" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Interactable upEffect="diorama_cloud" />
+				</SceneObject>
+				<SceneObject name="ep75_cloud_b">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_cloud_b.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="1.321" y="6.504" z="-2.363" />
+					<Animation play="true" animationData="Idle" weight="0.200" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" play="true" />
+					<Interactable upEffect="diorama_cloud" />
+				</SceneObject>
+				<SceneObject name="ep75_candybowl">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_candybowl.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-452.343" y="-45.490" z="-51.348" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Interactable upEffect="diorama_bush" />
+					<Scale x="0.953" y="0.964" z="0.971" />
+				</SceneObject>
+				<SceneObject name="ep75_leaf_a">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_leaf_a.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-270.970" y="239.203" z="-290.300" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" weight="0.200" />
+				</SceneObject>
+				<SceneObject name="ep75_leaf_b">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_leaf_b.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-78.759" y="263.512" z="-242.350" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" weight="0.500" />
+				</SceneObject>
+				<SceneObject name="ep75_leaf_c">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_leaf_c.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-755.901" y="352.158" z="-121.287" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+				</SceneObject>
+				<SceneObject name="ep75_leaf_d">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_leaf_d.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="587.471" y="353.517" z="-94.132" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" weight="0.500" />
+				</SceneObject>
+				<SceneObject name="ep75_leaf_a2">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_leaf_a.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-265.336" y="286.817" z="-290.300" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" weight="0.200" />
+					<Scale x="1.252" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="ep75_leaf_b2">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_leaf_b.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-78.759" y="309.194" z="-207.388" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation play="true" animationData="Idle" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" weight="0.400" />
+					<Scale x="1.098" y="0.981" z="1" />
+				</SceneObject>
+				<SceneObject name="ep75_bush_a2">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/interactable/ep75_bush_a.ffm" />
+					<Rotation x="-21.487" y="0" z="0" />
+					<Translation x="-968.482" y="-5.768" z="347.527" />
+					<Animation play="true" animationData="Idle" />
+					<Interactable upEffect="diorama_bush" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="true" speed="1.300" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="E75Path">
+				<Model filename="shared/diorama/diorama25/episode75/models/path/episode75_path.ffm">
+					<Bound minZ="-600" />
+				</Model>
+				<Material parentMaterial="Episode75PathMaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E75PathShadow">
+				<Model filename="shared/diorama/diorama25/episode75/models/path/path_shadow.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="Episode75MaterialAlpha" />
+				<Translation x="0" y="10.870" z="13.315" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="asset_shadow">
+				<Material parentMaterial="Episode75MaterialAlpha" />
+				<Model filename="shared/diorama/diorama25/episode75/models/asset_shadow.ffm">
+					<Bound minZ="-600000" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Translation x="0" y="3.499" z="-3.777" />
+				<Scale x="1" y="0.879" z="1" />
+			</SceneObject>
+			<SceneObject name="E75EndSign">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm" />
+				<Material parentMaterial="Under_Construction_Icon" />
+				<Translation x="726.258" y="84" z="40" />
+				<Rotation x="-35" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="PortalForwardGroup">
+				<Translation x="-410.347" y="15" z="170" />
+				<SceneObject name="diorama_link_next">
+					<Model filename="shared/diorama/common/models/portal/portal.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="1147" y="115" z="-215" />
+					<Rotation x="0" y="-40" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<SceneObject name="diorama_portal_shadow">
+						<Model filename="shared/diorama/common/models/portal/portal_shadow.ffm" />
+						<Material parentMaterial="PortalMaterial" />
+						<Translation x="0" y="0" z="0" />
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="diorama_link_next_pin_enabled" visibility="never">
+					<Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+						<Animation filename="shared/diorama/common/models/portal/pin_idle.ffa" loopCount="-1" name="idlePinEmil" play="true" speed="1" />
+					</Model>
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="1120" y="42" z="-165" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_link_next_pin_disabled">
+					<Model filename="shared/diorama/common/models/portal/portal_pin_inactive.ffm" />
+					<Material parentMaterial="PortalDisabledMaterial" />
+					<Translation x="1120" y="42" z="-165" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Episode75Character">
+				<SceneObject name="CharacterEp75">
+					<Material parentMaterial="Episode75MaterialAlpha" />
+					<Model filename="shared/diorama/diorama25/episode75/models/character/episode75_character.ffm">
+						<Animation filename="shared/diorama/diorama25/episode75/models/character/episode75_character_idle.ffa" name="Idle" interpolateFrame="true" play="true" />
+						<Animation name="Talk" filename="shared/diorama/diorama25/episode75/models/character/episode75_character_talk.ffa" />
+						<Bound maxZ="-100" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="8.051" y="11.958" z="5.374" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="SpeechBubbleEp75">
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear" play="true" />
+				<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear" play="true" />
+				<SpeechBubble>
+					<Speech key="episode75.intro" />
+					<Speech key="episode75.outro" />
+				</SpeechBubble>
+				<Translation x="0" y="125" z="-136.171" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+			</SceneObject>
+			<SceneObject name="Particles">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-200" />
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-400" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1227CameraTarget">
+				<Translation x="-200" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1240CameraTarget">
+				<Translation x="-200" y="19" z="-20" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,49 @@
+perspective.cam.far.plane 2000.0
+
+perspective.cam.start.rotation.x -0.600
+perspective.cam.start.rotation.y 0.0
+perspective.cam.start.translation.x 0.0
+perspective.cam.start.translation.y 630.0
+perspective.cam.start.translation.z 790.0
+
+perspective.cam.portrait.start.rotation.x -0.700
+perspective.cam.portrait.start.rotation.y 0.0
+perspective.cam.portrait.start.translation.x 0.0
+perspective.cam.portrait.start.translation.y 660.0
+perspective.cam.portrait.start.translation.z 660.0
+
+perspective.cam.fov 36.0
+perspective.cam.fov.portrait 48.0
+
+cutscene.cam.switch.time 2.0
+
+candy.bar.width 570.0
+candy.bar.height.portrait 1024.0
+candy.bar.height.landscape 768.0
+
+heart.init.animation.delay 700
+heart.tick.animation.delay 500
+booster.init.animation.delay 0
+booster.tick.animation.delay 300
+
+store.info.change.delay 5000
+contacting.store.minimum.time.ms 1000
+
+map.portraits.friends.default.offset.x 65.0
+map.portraits.friends.default.offset.y 0.0
+map.portraits.player.default.offset.x -65.0
+map.portraits.player.default.offset.y 0.0
+
+lives.base.max 5
+lives.gain.interval 1800
+lives.gift.interval.hours 18
+
+charm.life.extra.lives 3
+
+
+banner.animation.duration 0.5
+banner.display.duration 3.0
+
+facebook.offline.portait.scale.factor 0.58
+
+gold.bars.enabled true

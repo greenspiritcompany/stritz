@@ -1,0 +1,23 @@
+<ParticleEffect name="Eve_Stars_particle" timeToEmit="60" maxParticles="8">
+<Dampening max="0.850" min="0.750" />
+<DirectionalForce y="226" z="-154" />
+<Emitter emissionRate="0" angle="180" spread="0">
+	<SpawnArea depth="0" height="3" width="60" />
+</Emitter>
+<EndColor r="255" g="255" b="255" a="0" />
+<Rotation max="100" min="-100" />
+<RotationSpeed max="154.080" min="-155.710" />
+<Size>
+	<Max y="5" x="5" />
+	<Min y="5" x="5" />
+</Size>
+<SizeChange>
+	<Max y="10" x="10" />
+	<Min y="10" x="10" />
+</SizeChange>
+<StartColor r="202" g="255" b="245" a="255" />
+<Texture blend="Add" numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/glowing_star.png" />
+<TextureFrame numTextureAnimationFrames="1" startFrame="0" textureAnimationSpeed="60" />
+<TimeToLive min="0.200" max="1" />
+<Velocity min="5" max="0" />
+</ParticleEffect>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<PortsContext uuid="{68b7837c-2e9e-4d0a-857d-3c95570f4ef9}" />
+	<SceneObject name="Heart">
+		<Translation x="-181.511" y="-179.596" z="5.000" />
+		<Rotation z="9.217" y="0" x="0" />
+		<Scale x="0.819" y="0.819" z="1" />
+		<SceneObject name="HeartCrackEffect">
+			<Effect play="true" effectData="HeartBreakPieces" name="HeartBreakPieces" />
+			<Translation z="0" y="21.008" x="0" />
+		</SceneObject>
+		<SceneObject name="HeartL">
+			<Animation loopCount="0" name="HeartLFall" animationData="HeartFallingLeft" />
+			<Translation z="0" y="-5.189" x="-3.966" />
+			<Scale z="1" y="1.448" x="1.448" />
+			<SceneObject name="HeartLeft">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart_left.png">
+					<Pivot anchor="bottomRight" />
+				</Sprite>
+				<Translation z="0" y="38.587" x="16.253" />
+				<Rotation z="0.292" y="0" x="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="HeartR">
+			<Animation loopCount="0" name="HeartRFall" animationData="HeartFallingRight" />
+			<Translation z="0" y="-5.189" x="-3.966" />
+			<Scale z="1" y="1.448" x="1.448" />
+			<SceneObject name="HeartRight">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart_right.png">
+					<Pivot anchor="bottomLeft" />
+				</Sprite>
+				<Translation z="0" y="39.897" x="16.805" />
+				<Rotation z="-34.827" y="0" x="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="HeartWhole">
+			<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart_whole.png">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation z="0" y="0.946" x="-0.694" />
+			<Rotation z="-9.702" y="0" x="0" />
+			<Scale z="1" y="1.023" x="1.023" />
+			<Animation name="HeartShake" animationData="2x2_shake" />
+			<SceneObject name="crack1">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart_crack1.png" />
+				<Translation z="0" y="23.382" x="-16.916" />
+				<Rotation z="-2.832" y="0" x="0" />
+				<Scale z="1" />
+			</SceneObject>
+			<SceneObject name="crack2">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart_crack2.png" />
+				<Translation z="0" y="8.166" x="-2.322" />
+				<Rotation z="-2.832" y="0" x="0" />
+				<Scale z="1" />
+			</SceneObject>
+			<SceneObject name="crack3">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart_crack3.png" />
+				<Translation z="0" y="-13.650" x="-16.199" />
+				<Scale z="1" />
+				<Rotation z="-2.832" y="0" x="0" />
+			</SceneObject>
+			<SceneObject name="crack4">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart_crack4.png" />
+				<Translation x="-0.286" y="-32.919" z="0" />
+				<Scale x="0.684" y="0.693" z="1" />
+				<Rotation z="10.147" y="0" x="0" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="TitleText">
+		<Translation x="314" z="0" y="220" />
+		<Text alignment="center" font="Banana" key="quests.todays.header" maxHeight="0" maxWidth="370" overflowBehaviour="fit" verticalAlignment="visualCenter" allowWordWrapping="false">
+			<Color r="255" g="255" b="255" a="255" />
+			<Size x="24" y="24" />
+		</Text>
+	</SceneObject>
+	<SceneObject class="Button" name="CloseButton">
+		<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+		<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+		<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+		<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+			<Insets bottom="59" left="54" right="54" top="48" />
+			<Pivot anchor="center" />
+			<Size height="108" width="320" />
+		</Panel>
+		<Scale x="1.200" y="1.200" />
+		<Translation x="323.805" y="832.498" z="0" />
+		<SceneObject name="Text">
+			<Text alignment="center" font="Banana" key="quests.close.button" maxHeight="50" maxWidth="260" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color a="25" b="0" g="0" r="0" />
+					<Offset x="0" y="6" />
+				</Shadow>
+				<Size x="28" y="28" />
+			</Text>
+			<Translation x="0" y="-5.576" z="0" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

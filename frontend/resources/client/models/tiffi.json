@@ -1,0 +1,133 @@
+{
+"skeleton": { "hash": "TclGBP2TbOKyDsrHxAPEhFoxiTQ", "spine": "2.1.27", "width": 388.16, "height": 425.14, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 170, "x": -3.75, "y": -189.29, "rotation": 90.45 },
+	{ "name": "left_hand_bone", "parent": "bone", "length": 47.27, "x": 149.44, "y": 118.99, "rotation": 71.7 },
+	{ "name": "right_hand_bone", "parent": "bone", "length": 45.25, "x": 136.9, "y": -109.52, "rotation": -76.54 }
+],
+"slots": [
+	{ "name": "tifi", "bone": "bone", "attachment": "tifi" },
+	{ "name": "tifi_eye_l", "bone": "bone", "attachment": "tifi_eye_l" },
+	{ "name": "tifi_eye_r", "bone": "bone", "attachment": "tifi_eye_r" },
+	{ "name": "tifi_mouth", "bone": "bone", "attachment": "tifi_mouth" },
+	{ "name": "tifi_l_arm", "bone": "left_hand_bone", "attachment": "tifi_l_arm" },
+	{ "name": "tifi_r_arm", "bone": "right_hand_bone", "attachment": "tifi_r_arm" },
+	{ "name": "pin", "bone": "bone", "attachment": "pin" },
+	{ "name": "pin2", "bone": "bone", "attachment": "pin" }
+],
+"skins": {
+	"default": {
+		"pin": {
+			"pin": { "x": 135.69, "y": -113.42, "rotation": -90.45, "width": 36, "height": 35 }
+		},
+		"pin2": {
+			"pin": { "x": 146.82, "y": 120.59, "rotation": -90.45, "width": 36, "height": 35 }
+		},
+		"tifi": {
+			"tifi": { "x": 189.26, "y": -5.24, "rotation": -90.45, "width": 388, "height": 425 }
+		},
+		"tifi_eye_l": {
+			"tifi_eye_l": { "x": 252.67, "y": 65.68, "rotation": -90.45, "width": 40, "height": 79 }
+		},
+		"tifi_eye_r": {
+			"tifi_eye_r": { "x": 252.65, "y": -65.18, "rotation": -90.71, "width": 40, "height": 79 }
+		},
+		"tifi_l_arm": {
+			"tifi_l_arm": { "x": 25.18, "y": -15.47, "rotation": -162.15, "width": 86, "height": 122 }
+		},
+		"tifi_mouth": {
+			"tifi_mouth": { "x": 185.82, "y": 1.85, "rotation": -90.45, "width": 109, "height": 84 }
+		},
+		"tifi_r_arm": {
+			"tifi_r_arm": { "x": 15.95, "y": -25.26, "rotation": -13.91, "width": 83, "height": 95 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 1.12,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"angle": -1.85,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.3333,
+						"angle": 1.12,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2,
+						"angle": -1.85,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.6666, "angle": 1.12 }
+				]
+			},
+			"right_hand_bone": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.8333,
+						"angle": -11.18,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.7,
+						"angle": 7.24,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.6666, "angle": 0 }
+				]
+			},
+			"left_hand_bone": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 0,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.5,
+						"angle": -11.71,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.9666,
+						"angle": -2.19,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.4,
+						"angle": -11.71,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 1.8333,
+						"angle": -2.19,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 2.2333,
+						"angle": -7.11,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 2.6666, "angle": 0 }
+				]
+			}
+		}
+	}
+}
+}

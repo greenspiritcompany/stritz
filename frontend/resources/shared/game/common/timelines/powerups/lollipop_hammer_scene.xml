@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/lollipop_material.xml"/>
+	<SceneObject name="Scene" layerFlags="256">
+		<SceneObject name="lollipop_hammer">
+			<Model filename="shared/game/common/models/boosters/lollipop_hammer/lollipop_hammer.ffm">
+				<Animations>
+					<Animation
+							filename="shared/game/common/models/boosters/lollipop_hammer/lollipop_hammer_idle.ffa"
+							loopCount="-1" name="lollipop_idle" play="false"/>
+					<Animation
+							filename="shared/game/common/models/boosters/lollipop_hammer/lollipop_hammer_anim.ffa"
+							loopCount="0" name="lollipop_anim" play="false"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material parentMaterial="LollipopMaterial"/>
+			</Materials>
+			<Scale x="0.9" y="-0.9" z="0.9"/>
+			<Translation z="400"/>
+
+			<SceneObject name="lollipop_smash_debris">
+				<Model filename="shared/game/common/models/boosters/lollipop_hammer/smash_debris.ffm">
+					<Animations>
+						<Animation
+								filename="shared/game/common/models/boosters/lollipop_hammer/smash_debris_anim.ffa"
+								loopCount="0" name="lollipop_debris" play="false"/>
+					</Animations>
+				</Model>
+				<Materials>
+					<Material parentMaterial="LollipopMaterial"/>
+				</Materials>
+				<Translation x="0.0" y="0.0" z="-2.0"/>
+			</SceneObject>
+
+			<SceneObject name="PFXoffset">
+				<Translation x="0.0" y="70.0" z="-20.0"/>
+			</SceneObject>
+
+		</SceneObject>
+
+
+	</SceneObject>
+</Scene>

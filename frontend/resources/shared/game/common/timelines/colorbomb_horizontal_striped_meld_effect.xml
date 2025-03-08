@@ -1,0 +1,16 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="3.0">
+		<Triggers>
+			<EffectTrigger time="0.42" parentName="ParticleCtrl" name="CbPlusCbChargeEFQ">
+				<Offset z="500"/>
+			</EffectTrigger>
+			<EffectTrigger time="0.4" parentName="ParticleCtrl" name="ColorBombActivate">
+				<Offset z="500"/>
+			</EffectTrigger>
+		</Triggers>
+		<TimeControls>
+			<TimeJump time="1.41" jumpToTime="0.41"/>
+		</TimeControls>
+	</Timeline>
+</Timelines>

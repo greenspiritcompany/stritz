@@ -1,0 +1,24 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.5">
+		<Animate target="Scene">
+			<Hide time="0.0"/>
+			<Show time="0.0"/>
+		</Animate>
+		<Triggers>
+			<EffectTrigger name="SwipeSwoopInEFQ" time="0.0"/>
+			<EffectTrigger name="SwipeSwoopOutEFQ" time="0.51"/>
+
+			<CustomTrigger time="1.05" data="SwipeEnd" name="SwipeEnd"/>
+
+			<AnimationTrigger targetName="AnimateBg" animationName="SlideToRight" time="0.0"/>
+
+			<AnimationTrigger targetName="Scene" animationName="OnLoseAppear" time="0.0"/>
+			<AnimationTrigger targetName="Scene" animationName="OnLoseDisappear" time="0.30"/>
+		</Triggers>
+
+		<TimeControls>
+			<Pause time="0.25" timeout="2.1"/>
+		</TimeControls>
+	</Timeline>
+</Timelines>

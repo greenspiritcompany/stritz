@@ -1,0 +1,69 @@
+<Animations>
+    <Animation name="TreasureHuntSlideInFromLeft" recursiveForMaterialColors="true" speed="0.75">
+        <Translation time="0.000" x="-409.312" y="0.000"/>
+        <Translation time="0.017" x="-269.911" y="0.000"/>
+        <Translation time="0.033" x="-163.037" y="0.000"/>
+        <Translation time="0.050" x="-84.651" y="0.000"/>
+        <Translation time="0.067" x="-30.714" y="0.000"/>
+        <Translation time="0.083" x="2.811" y="0.000"/>
+        <Translation time="0.100" x="19.965" y="0.000"/>
+        <Translation time="0.117" x="24.785" y="0.000"/>
+        <Translation time="0.133" x="20.925" y="0.000"/>
+        <Translation time="0.150" x="11.720" y="0.000"/>
+        <Translation time="0.167" x="0.734" y="0.000"/>
+        <Translation time="0.183" x="-8.471" y="0.000"/>
+        <Translation time="0.200" x="-12.331" y="0.000"/>
+        <Translation time="0.217" x="-11.049" y="0.000"/>
+        <Translation time="0.233" x="-7.991" y="0.000"/>
+        <Translation time="0.250" x="-4.341" y="0.000"/>
+        <Translation time="0.267" x="-1.282" y="0.000"/>
+        <Translation time="0.283" x="0.000" y="0.000"/>
+        
+        <Color r="0" g="0" b="0" a="0" time="0.000"/>
+        <Color r="255" g="255" b="255" a="255" time="0.167"/>
+    </Animation>
+    
+    <Animation name="TreasureHuntSlideInFromRight" recursiveForMaterialColors="true" speed="0.75">
+        <Translation time="0.000" x="409.312" y="0.000"/>
+        <Translation time="0.017" x="269.911" y="0.000"/>
+        <Translation time="0.033" x="163.037" y="0.000"/>
+        <Translation time="0.050" x="84.651" y="0.000"/>
+        <Translation time="0.067" x="30.714" y="0.000"/>
+        <Translation time="0.083" x="-2.811" y="0.000"/>
+        <Translation time="0.100" x="-19.965" y="0.000"/>
+        <Translation time="0.117" x="-24.785" y="0.000"/>
+        <Translation time="0.133" x="-20.925" y="0.000"/>
+        <Translation time="0.150" x="-11.720" y="0.000"/>
+        <Translation time="0.167" x="-0.734" y="0.000"/>
+        <Translation time="0.183" x="8.471" y="0.000"/>
+        <Translation time="0.200" x="12.331" y="0.000"/>
+        <Translation time="0.217" x="11.049" y="0.000"/>
+        <Translation time="0.233" x="7.991" y="0.000"/>
+        <Translation time="0.250" x="4.341" y="0.000"/>
+        <Translation time="0.267" x="1.282" y="0.000"/>
+        <Translation time="0.283" x="0.000" y="0.000"/>
+        
+        <Color r="0" g="0" b="0" a="0" time="0.000"/>
+        <Color r="255" g="255" b="255" a="255" time="0.167"/>
+    </Animation>
+    
+    <Animation name="TreasureHuntSlideOutToLeft" recursiveForMaterialColors="true" speed="0.5">
+        <Translation time="0.000" x="0.000" y="0.000"/>
+        <Translation time="0.017" x="-139.401" y="0.000"/>
+        <Translation time="0.033" x="-246.275" y="0.000"/>
+        <Translation time="0.050" x="-324.661" y="0.000"/>
+        
+        <Color r="255" g="255" b="255" a="255" time="0.000"/>
+        <Color r="0" g="0" b="0" a="0" time="0.050"/>
+    </Animation>
+    
+    <Animation name="TreasureHuntSlideOutToRight" recursiveForMaterialColors="true" speed="0.5">
+        <Translation time="0.000" x="0.000" y="0.000"/>
+        <Translation time="0.017" x="139.401" y="0.000"/>
+        <Translation time="0.033" x="246.275" y="0.000"/>
+        <Translation time="0.050" x="324.661" y="0.000"/>
+        
+        <Color r="255" g="255" b="255" a="255" time="0.000"/>
+        <Color r="0" g="0" b="0" a="0" time="0.050"/>
+    </Animation>
+</Animations>

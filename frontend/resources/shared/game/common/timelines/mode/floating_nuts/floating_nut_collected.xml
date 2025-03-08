@@ -1,0 +1,43 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="3.8">
+
+		<Animate target="Bear">
+			<Show/>
+			<Translation time="0.0" z="0.0"/>
+			<Rotation time="0.0" z="0.0"/>
+			<Scale time="0.0" x="2.0" y="-2.0" z="2.0"/>
+
+			<Translation time="0.9" z="0.0"/>
+			<Rotation time="0.9" z="0.0"/>
+			<Scale time="0.9" x="2.0" y="-2.0" z="2.0"/>
+
+			<Translation time="1.4" z="5.0"/>
+			<Scale time="1.4" x="3.0" y="-3.0" z="3.0"/>
+
+			<Rotation time="1.9" z="10.0"/>
+			<Scale time="1.9" x="0.0" y="-0.0" z="0.0"/>
+			<Hide time="3.8"/>
+		</Animate>
+
+		<Triggers>
+			<AnimationTrigger animationName="BearJump" targetName="Bear" time="0.0"/>
+			<CustomTrigger name="ChangeLayerToInFrontOfCandies" time="0.01"/>
+			<CustomTrigger name="FlyToHud" time="0.9"/>
+
+			<EffectTrigger name="BearBubbleSFX" time="0.0"/>
+			<!-- This is the sound effect -->
+			<!--<EffectTrigger name="BearInBubbleWin" time="0.2"><Offset z="0"/></EffectTrigger>-->
+			<EffectTrigger name="BearInBubbleWin" targetName="Bear" followTarget="true"
+						   emitterInheritsTargetRotation="false" time="0.0"/>
+			<EffectTrigger name="EngineFix">
+				<Offset z="100"/>
+			</EffectTrigger>
+			<EffectTrigger name="EngineFix" time="1.9" targetName="Bear">
+				<Offset z="100"/>
+			</EffectTrigger>
+		</Triggers>
+
+
+	</Timeline>
+</Timelines>

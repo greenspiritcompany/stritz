@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="20" space="World" timeToEmit="60" name="Eve_UnlockLevelDust_particle_2">
+<Dampening max="1" min="1" />
+<DirectionalForce x="0" y="100" />
+<Emitter emissionRate="0.007" spread="360" angle="0">
+	<SpawnArea width="78" depth="23" height="0" />
+</Emitter>
+<EndColor b="255" r="255" g="255" a="0" />
+<Rotation min="0" max="0" />
+<RotationSpeed max="0" min="0" />
+<Size>
+	<Max x="4" y="17" />
+	<Min x="6" y="6" />
+</Size>
+<SizeChange>
+	<Max x="81" y="81" />
+	<Min x="3" y="40" />
+</SizeChange>
+<StartColor b="255" r="255" g="255" a="255" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/glowing_star.png" />
+<TextureFrame numTextureAnimationFrames="0" textureAnimationSpeed="0" startFrame="0" />
+<TimeToLive max="0.500" min="0.200" />
+<Velocity max="30" min="10" />
+</ParticleEffect>

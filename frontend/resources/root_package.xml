@@ -1,0 +1,39 @@
+<FictionFactory>
+  <Files>
+    <Textures     filename="shared/init/textures_mobile.xml"/>
+    <Textures     filename="client/textures.xml"/>
+	<Fonts        filename="shared/bootstrap/fonts.xml"/>
+	<Animations   filename="shared/init/animations.xml"/>
+	<Shaders      filename="client/init/shaders.xml"/>
+	<Effects      filename="shared/init/effects.xml"/>
+	<Particles    filename="shared/bootstrap/particles.xml"/>
+    <Sounds       filename="client/init/sounds.xml"/>
+    <Musics       filename="shared/init/music.xml"/>
+    <Translations filename="shared/init/translations.xml"/>
+  </Files>
+
+  <Settings>
+    <!-- Font settings -->
+    <Setting key="DefaultFontName" value="Typewriter"/>
+    <Setting key="HudMessagesFontName" value="Typewriter"/>
+    <Setting key="ConsoleFontName" value="ConsoleTypewriter"/>
+    <Setting key="StatsViewFontName" value="ConsoleTypewriter"/>
+    <Setting key="DebugRendererFontName" value="ConsoleTypewriter"/>
+
+    <!-- Shader settings -->
+    <Setting key="DefaultRendererColorShader" value="Color"/>
+    <Setting key="DefaultRendererTextShader" value="Color"/>
+    <Setting key="DefaultShaderName" value="TextureColor"/>
+    <Setting key="ParticleSystemShader" value="TextureColorParticleSystem"/>
+	<Setting key="ParticleSystemBillboardShader" value="TextureColorParticleSystem"/>
+    <Setting key="StatsViewShaderName" value="Color"/>
+    <Setting key="DefaultMeshRendererShaderName" value="TextureColor"/>
+
+    <!-- Hud message settings -->
+    <Setting key="HudMessagesTTLSeconds" value="5"/>
+    <Setting key="HudMessagesLayerFlags" value="256"/>
+    <Setting key="HudMessagesX" value="0"/>
+    <Setting key="HudMessagesY" value="30"/>
+    <Setting key="HudMessagesZ" value="992"/>
+  </Settings>
+</FictionFactory>

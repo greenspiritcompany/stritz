@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="CandyBar">
+		<SceneObject name="AttachToMe">
+			<Translation z="525" />
+			<Animation name="OnAppear" animationData="CandyBarAppear" loopCount="0" />
+			<Animation name="OnDisappear" animationData="CandyBarDisappear" loopCount="0" />
+			<Animation name="Open" animationData="CandyBarOpen" loopCount="0" />
+			<Animation name="Close" animationData="CandyBarClose" loopCount="0" />
+			<SceneObject name="Ornament">
+				<Translation z="100" x="-3" />
+				<SceneObject name="ornament-left">
+					<Translation y="-16" z="10" />
+					<Sprite vertexColors="false" wrap="repeat" filename="shared/diorama/common/tex/gui_elements/repeat/ornament.png">
+						<Pivot anchor="topLeft" />
+						<Rectangle minY="0" maxY="1350" minX="0" maxX="31" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="ornament-right">
+					<Translation y="-16" z="10" x="574" />
+					<Sprite vertexColors="false" wrap="repeat" filename="shared/diorama/common/tex/gui_elements/repeat/ornament.png">
+						<Flip u="true" />
+						<Pivot anchor="topRight" />
+						<Rectangle minY="0" maxY="1350" minX="0" maxX="31" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PortalsTabFrame">
+				<Translation y="15" x="2" />
+				<SceneObject name="TabBg">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_active.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Shadow">
+					<Translation y="-8" z="-20" x="-4" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_shadow.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="PortalsButton" class="Button">
+					<Translation y="65" z="4" x="-58" />
+					<Animation name="Idle" animationData="Idle" startTime="0.500" layer="1" />
+					<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+					<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+					<SceneObject name="Icon">
+						<Translation x="6.638" y="-15.189" z="4" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ccs_ccjs_portal_icon.png">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Scale x="0.814" y="0.814" z="1" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="CandyCrushTabFrame">
+				<Translation y="130" x="2" />
+				<SceneObject name="TabBg">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_active.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Shadow">
+					<Translation y="-8" z="-20" x="-4" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_shadow.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="CandyCrushButton" class="Button">
+					<Translation y="65" z="4" x="-58" />
+					<Animation name="Idle" animationData="Idle" startTime="0.500" layer="1" />
+					<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+					<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+					<SceneObject name="Icon">
+						<Translation y="-15.082" z="4" x="-2.903" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ccs_tab.png">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="OVTabFrame">
+				<Translation y="245" x="2" />
+				<SceneObject name="TabBg">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_active.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Shadow">
+					<Translation y="-8" z="-20" x="-4" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_shadow.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="OverviewButton" class="Button">
+					<Translation y="58" z="4" x="-50" />
+					<Animation name="Idle" animationData="Idle" startTime="0.500" layer="1" />
+					<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+					<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/pet_btn_blue.png">
+						<Pivot anchor="center" />
+						<Size width="96" height="98" />
+					</Sprite>
+					<SceneObject name="Icon">
+						<Translation y="-4" z="4" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/icon_overview_inactive.png">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="MessagesTabFrame">
+				<Translation y="475" x="2" />
+				<SceneObject name="TabBg">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_active.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Shadow">
+					<Translation y="-8" z="-20" x="-4" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_shadow.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="MessageButton" class="Button">
+					<Translation y="58" z="8" x="-50" />
+					<Animation name="Idle" animationData="Idle" startTime="0.500" layer="1" />
+					<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+					<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/pet_btn_blue.png">
+						<Pivot anchor="center" />
+						<Size width="96" height="98" />
+					</Sprite>
+					<SceneObject name="Icon">
+						<Translation y="-5" z="4" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/icon_messages_inactive.png">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Notifications">
+					<Translation y="105" z="9" x="-98" />
+					<SceneObject name="NotificationCircle">
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/mc_notification_box.png">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="NotificationCounter">
+						<Translation y="8" />
+						<Text font="Banana" canBreakWords="false" alignment="center">
+							<Size y="30" x="30" />
+							<TextString>0</TextString>
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="QuestFrame">
+				<Translation y="360" x="2" />
+				<SceneObject name="TabBg">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_active.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Shadow">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_shadow.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+					<Translation y="-8" z="-20" x="-4" />
+				</SceneObject>
+				<SceneObject name="QuestButton" class="Button">
+					<Animation name="Idle" animationData="Idle" startTime="0.500" layer="1" />
+					<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+					<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/pet_btn_blue.png">
+						<Pivot anchor="center" />
+						<Size width="96" height="98" />
+					</Sprite>
+					<Translation y="58" z="4" x="-50" />
+					<SceneObject name="Icon">
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/icon_quest_inactive.png">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation x="0" y="-2" z="4" />
+						<Scale y="1.080" z="1" x="1.080" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="QuestNotifications">
+					<Translation y="105" z="9" x="-98" />
+					<Animation animationData="IdleJumpy" name="QuestNotificationAnim" />
+					<SceneObject name="NotificationCircle">
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/mc_notification_box.png">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="NotificationCounter">
+						<Translation x="-3.038" y="8.759" z="0" />
+						<Text font="Banana" canBreakWords="false" alignment="center">
+							<Size y="30" x="30" />
+							<TextString>!</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="Effect">
+						<Effect name="Quest_InfiniteSparks" effectData="Quest_InfiniteSparks" />
+						<Translation z="-1" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="MemoriesFrame">
+				<Translation x="2" y="590" z="0" />
+				<SceneObject name="TabBg">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_active.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Shadow">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/tab_shadow.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+					<Translation y="-8" z="-20" x="-4" />
+				</SceneObject>
+				<SceneObject name="MemoriesButton" class="Button">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/pet_btn_blue.png">
+						<Pivot anchor="center" />
+						<Size width="96" height="98" />
+					</Sprite>
+					<Translation y="58" z="4" x="-50" />
+					<Animation name="Idle" animationData="Idle" startTime="0.500" layer="1" />
+					<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+					<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+					<SceneObject name="Icon">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/icon_memories_inactive.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation y="-5" z="4" />
+						<Scale x="1" y="1" z="1" />
+						<Rotation x="0" y="0" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="MemoriesNotifications">
+					<Translation y="105" z="9" x="-98" />
+					<Animation animationData="IdleJumpy" name="QuestNotificationAnim" />
+					<SceneObject name="NotificationCircle">
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/mc_notification_box.png">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="NotificationCounter">
+						<Translation x="-3.038" y="8.759" z="0" />
+						<Text font="Banana" canBreakWords="false" alignment="center">
+							<Size y="30" x="30" />
+							<TextString>!</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="Effect">
+						<Translation z="-1" />
+						<Effect name="Quest_InfiniteSparks" effectData="Quest_InfiniteSparks" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="100" />
+				<Y percentage="0" />
+			</Translation>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Landscape">
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize width="1" height="768" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<Height percentage="100" />
+				<Width percentage="80" />
+				<OriginalSize width="586" height="1024" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

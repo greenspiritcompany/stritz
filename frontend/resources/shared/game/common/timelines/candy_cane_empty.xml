@@ -1,0 +1,18 @@
+<Timelines>
+<Timeline startTime="0" endTime="4">
+	<Animate target="first">
+		<Show time="0" />
+		<Hide time="1.2" />
+	</Animate>
+	<Animate target="second">
+		<Show time="0" />
+		<Hide time="1.2" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="0" animationName="stripe_middle_spine_reverse" targetName="stripe_second" />
+		<AnimationTrigger time="0.15" animationName="stripe_middle_spine_reverse" targetName="stripe_first" />
+		<CustomTrigger time="0.3" name="EmptySecond" />
+		<CustomTrigger time="0.6" name="AllEmptyComplete" />
+	</Triggers>
+</Timeline>
+</Timelines>

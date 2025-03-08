@@ -1,0 +1,147 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="CommonMaterial2">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama02/episode04/tex/d02e04_base_TEX_v01.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="Ep06Backdrop">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama02/episode06/tex/d02e06_base_TEX.png"/>
+			</Textures>
+		</Material>
+
+
+		<Material name="Under_Construction_Icon">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/under_construction.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="Episode5Material">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama02/episode05/tex/d02e05_candycave.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="Episode5MaterialAlpha" parentMaterial="Episode5Material">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+
+
+		<Material name="Episode6Material">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama02/episode06/tex/d02e06_cococanyon.png"/>
+			</Textures>
+
+		</Material>
+
+		<Material name="Episode6MaterialAlpha" parentMaterial="Episode6Material">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+
+
+		<Material name="Episode4Material">
+			<Cull enabled="false" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama02/episode04/tex/d02e04_creambeach_v01.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="Episode4MaterialAlpha" parentMaterial="Episode4Material">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+
+		<Material name="PortalMaterial">
+			<Cull enabled="true" face="back"/>
+			<Blend enabled="true"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/portal_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="PortalMaterialSolid">
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/portal_c.png"/>
+			</Textures>
+		</Material>
+
+        <Material name="PortalDisabledMaterial">
+            <Cull enabled="true" face="back"/>
+            <Blend enabled="true"/>
+            <Depth writeMask="false" enabled="true"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/lvl_pin_btn_grey.png"/>
+            </Textures>
+        </Material>
+
+		<Material name="KimmyMaterialAlpha">
+			<Cull enabled="true" face="back"/>
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/kimmy/kimmy_diorama.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="BoardGamePieceMaterial">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/boardGamePiece.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="BoardGamePieceMaterialAlpha" parentMaterial="BoardGamePieceMaterial">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+
+		<Material name="Path4Material">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama02/episode04/tex/path_e04.png" wrap="repeat"/>
+			</Textures>
+		</Material>
+		<Material name="PathMaterialAlphaD2" parentMaterial="Path4Material">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+
+		<Material name="Path5Material">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama02/episode05/tex/path_e05.png" wrap="repeat"/>
+			</Textures>
+		</Material>
+		<Material name="PathMaterialAlphaEp5" parentMaterial="Path5Material">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+	</Materials>
+
+
+	<SceneObject name="Diorama" layerFlags="2">
+		<Import filename="shared/diorama/diorama02/episode04/scenes/episode04.xml"/>
+		<Import filename="shared/diorama/diorama02/episode05/scenes/episode05.xml"/>
+		<Import filename="shared/diorama/diorama02/episode06/scenes/episode06.xml"/>
+		<SceneObject name="Kimmy_group">
+			<Translation x="-1900" y="36" z="280"/>
+			<Rotation x="0" y="8" z="4"/>
+			<Import filename="shared/diorama/common/scenes/kimmy.xml"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

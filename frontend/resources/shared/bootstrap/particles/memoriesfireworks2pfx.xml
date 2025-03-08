@@ -1,0 +1,31 @@
+<ParticleEffect maxParticles="450" space="Local" timeToEmit="0.100" name="MemoriesFireworks2PFX" startDelayRandomOffset="0">
+<Dampening min="0.800" max="0.900" />
+<Emitter emissionRate="0" spread="360" angle="0">
+	<SpawnArea width="5" depth="0" height="5" />
+</Emitter>
+<Rotation max="90" min="90" />
+<RotationSpeed max="0" min="0" />
+<Size>
+	<Max x="30" y="40" />
+	<Min x="20" y="30" />
+</Size>
+<SizeChange>
+	<Max x="32" y="32" />
+	<Min x="32" y="32" />
+</SizeChange>
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png" blend="Add" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="1.100" min="0.500" />
+<Velocity max="900" min="500" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="255" g="255" b="255" a="100" />
+	</Keyframe>
+	<Keyframe lifeTime="0.109">
+		<Color r="255" g="0" b="174" a="250" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="255" g="255" b="97" a="0" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

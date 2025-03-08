@@ -1,0 +1,16 @@
+<Timelines>
+<Timeline startTime="0" endTime="5">
+	<Triggers>
+		<AnimationTrigger time="0" animationName="SpeechBubbleAppear" targetName="SpeechBubbleEp71" />
+		<AnimationTrigger time="1" animationName="Talk" crossFade="0.100" targetName="CharacterEp71" />
+		<AnimationTrigger time="3" animationName="Idle" crossFade="0.600" targetName="CharacterEp71" />
+		<AnimationTrigger time="4" animationName="SpeechBubbleDisappear" targetName="SpeechBubbleEp71" />
+		<!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+		<EffectTrigger time="0" name="character_ep71" />
+		<EffectTrigger time="0.409" name="Ep71SoundNotes" targetName="Episode71Character">
+			<Offset x="-30" y="200" z="20" />
+		</EffectTrigger>
+		<CustomTrigger time="0" name="SpeechBubbleText" data="SpeechBubbleEp71.0" />
+	</Triggers>
+</Timeline>
+</Timelines>

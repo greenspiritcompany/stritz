@@ -1,0 +1,529 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+		<Material name="Episode26Material">
+			<Cull enabled="false" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama09/episode26/tex/episode26_material.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="Episode26MaterialAlpha" parentMaterial="Episode26Material">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+    
+		<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+		<Material name="Episode26PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat"/>
+			</Textures>
+		</Material>
+		<Material name="Episode26PathMaterialAlpha" parentMaterial="Episode26PathMaterial">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+    
+		<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+		<Material name="Episode26BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama09/episode26/tex/episode26_material.png" wrap="repeat"/>
+			</Textures>
+		</Material>
+		<Material name="Episode26BackdropMaterialAlpha" parentMaterial="Episode26BackdropMaterial">
+			<Depth writeMask="false" enabled="true"/>
+			<Blend enabled="true"/>
+		</Material>
+	</Materials>
+  
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject name="Episode" layerFlags="2">
+		<SceneObject name="DioramaModel">
+      
+			<!--
+				BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+        FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+      -->
+      
+			<!--<Model filename="shared/diorama/diorama09/episode26/models/episode26_diorama_base.ffm"/>-->
+			<!--<Materials>-->
+				<!--<Material parentMaterial="Episode26BackdropMaterial"/>-->
+			<!--</Materials>-->
+			<Translation x="0"/>
+
+      <SceneObject name="Episode26_Backdrop">
+        <!--<SceneObject name="Episode26_Diorama_Sky">-->
+          <!--<Model filename="shared/diorama/diorama09/episode26/models/episode26_diorama_sky.ffm"/>-->
+          <!--<Materials>-->
+            <!--<Material parentMaterial="Episode26BackdropMaterial"/>-->
+          <!--</Materials>-->
+          <!--<Translation x="0.0" y="0.0"/>-->
+          <!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+        <!--</SceneObject>-->
+
+        <!--
+        EPISODE GROUND GEOMETRY ETC.
+        -->
+
+        <SceneObject name="Episode26_Ground">
+          <Model filename="shared/diorama/diorama09/episode26/models/episode26_ground.ffm"/>
+          <Materials>
+            <Material parentMaterial="Episode26Material"/>
+          </Materials>
+          <Translation x="0.0" y="0.0"/>
+          <Scale x="1.0" y="1.0" z="1.0"/>
+        </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Model filename="shared/diorama/diorama09/episode26/models/cloud_left1.ffm">
+                  <Bound minZ="-700"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.4" layer="4"
+                             loopCount="-1"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Model filename="shared/diorama/diorama09/episode26/models/cloud_left2.ffm">
+                  <Bound minZ="-700"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.2" layer="4"
+                             loopCount="-1"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Model filename="shared/diorama/diorama09/episode26/models/cloud_left3.ffm">
+                  <Bound minZ="-700"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.3" layer="4"
+                             loopCount="-1"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Model filename="shared/diorama/diorama09/episode26/models/cloud_left4.ffm">
+                  <Bound minZ="-700"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.2" layer="4"
+                             loopCount="-1"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Model filename="shared/diorama/diorama09/episode26/models/cloud_right1.ffm">
+                  <Bound minZ="-700"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.35" layer="4"
+                             loopCount="-1"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Model filename="shared/diorama/diorama09/episode26/models/cloud_right2.ffm">
+                  <Bound minZ="-700"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.25" layer="4"
+                             loopCount="-1"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Model filename="shared/diorama/diorama09/episode26/models/cloud_far_left.ffm">
+                  <Bound minZ="-700"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.25" layer="4"
+                             loopCount="-1"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Model filename="shared/diorama/diorama09/episode26/models/cloud_foreground_left.ffm">
+                  <Bound minZ="-700"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.25" layer="4"
+                             loopCount="-1"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Model filename="shared/diorama/diorama09/episode26/models/cloud_foreground_right.ffm">
+                  <Bound minZ="-700"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.25" layer="4"
+                             loopCount="-1"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="0.0" y="0.0"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+      </SceneObject>
+
+      <!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<SceneObject name="E26Path">
+				<Model filename="shared/diorama/diorama09/episode26/models/path/episode26_path.ffm">
+					<Bound minZ="-700"/>
+				</Model>
+				<Materials>
+					<Material parentMaterial="Episode26PathMaterialAlpha"/>
+				</Materials>
+				<Translation x="0" y="0" z="0"/>
+				<Scale x="1" y="1" z="1"/>
+			</SceneObject>
+      
+      <!--ADD PATH SHADOW - ADD YOUR -->
+      
+      <SceneObject name="E26PathShadow">
+        <Model filename="shared/diorama/diorama09/episode26/models/path/path_shadow.ffm">
+          <Bound minZ="-800"/>
+        </Model>
+        <Materials>
+          <Material parentMaterial="Episode26MaterialAlpha"/>
+        </Materials>
+        <Translation x="0" y="0" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </SceneObject>
+
+            <!--ASSET SHADOWS-->
+            <SceneObject name="AssetShadows">
+                <Model filename="shared/diorama/diorama09/episode26/models/asset_shadow.ffm">
+                    <Bound minZ="-1150"/>
+                </Model>
+                <Materials>
+                    <Material parentMaterial="Episode26MaterialAlpha"/>
+                </Materials>
+                <Translation x="0" y="0" z="0"/>
+                <Rotation x="0"/>
+                <Scale x="1" y="1" z="1"/>
+            </SceneObject>
+
+      
+	  
+            <SceneObject name="E26EndSign">
+                <Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm"/>
+                <Materials>
+                    <Material parentMaterial="Under_Construction_Icon"/>
+                </Materials>
+                <Translation x="758" y="84" z="40"/>
+                <Rotation x="-35.000" y="0.000" z="0.000"/>
+                <Scale x="1.000" y="1.000" z="1.000"/>
+            </SceneObject>
+		  <!-- DIORAMA ASSETS -->
+			
+      <!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+			-->
+      <SceneObject name="episode26_Non_Interactable_Group">
+        <!--<SceneObject name="episode26_Non_Interactable_01">-->
+          <!--<Model filename="shared/diorama/diorama09/episode26/models/non_interactable/episode26_non_interactable_01.ffm"/>-->
+          <!--<Materials>-->
+            <!--<Material parentMaterial="Episode26MaterialAlpha"/>-->
+          <!--</Materials>-->
+          <!--<Translation x="-413.886" y="40.955" z="-150.066"/>-->
+          <!--<Rotation x="0" y="0" z="0"/>-->
+          <!--<Scale x="1" y="1" z="1"/>-->
+        <!--</SceneObject>-->
+      </SceneObject>
+      
+      <!--
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+      <SceneObject name="episode26_Interactable_Group">
+        
+        <!--
+          INTERACTABLE 01
+        -->
+
+          <SceneObject name="Episode26_Clouds">
+              <Interactable upEffect="diorama_house"/>
+              <Model filename="shared/diorama/diorama09/episode26/models/interactable/dna_left_back.ffm">
+                  <Bound minZ="-750"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.5" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="-162.645" y="-45.981" z="-518.266"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Interactable upEffect="diorama_house"/>
+              <Model filename="shared/diorama/diorama09/episode26/models/interactable/dna_right_back.ffm">
+                  <Bound minZ="-750"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.3" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="395.023" y="0.0" z="-515.215"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Interactable upEffect="diorama_house"/>
+              <Model filename="shared/diorama/diorama09/episode26/models/interactable/dna_left_front.ffm">
+                  <Bound minZ="-100"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.25" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="-466.476" y="-165.948" z="-394.324"/>
+              <Scale x="1.1" y="1.1" z="1.1"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Interactable upEffect="diorama_house"/>
+              <Model filename="shared/diorama/diorama09/episode26/models/interactable/dna_right_front.ffm">
+                  <Bound minZ="-100"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.2" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="398.398" y="-167.807" z="-438.393"/>
+              <Scale x="1.05" y="1.05" z="1.05"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Interactable upEffect="diorama_lollipop"/>
+              <Model filename="shared/diorama/diorama09/episode26/models/interactable/dna_ground_left.ffm">
+                  <Bound minZ="-100"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.2" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="-288.796" y="-18.963" z="278.585"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+          <SceneObject name="Episode26_Clouds">
+              <Interactable upEffect="diorama_lollipop"/>
+              <Model filename="shared/diorama/diorama09/episode26/models/interactable/dna_ground_right.ffm">
+                  <Bound minZ="-100"/>
+              </Model>
+              <Animations>
+                  <Animation animationData="Idle" name="Idle" play="true" speed="0.2" layer="4"
+                             loopCount="-1"/>
+                  <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+                             loopCount="0" speed="1.3"/>
+                  <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+                             loopCount="0" speed="1.3"/>
+              </Animations>
+              <Materials>
+                  <Material parentMaterial="Episode26MaterialAlpha"/>
+              </Materials>
+              <Translation x="209.822" y="-11.245" z="288"/>
+              <Rotation x="-3.921"/>
+              <Scale x="1.0" y="1.0" z="1.0"/>
+          </SceneObject>
+
+      </SceneObject>
+      
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+
+			<SceneObject name="Episode26Character">
+				<Translation x="64.014" y="-53.782" z="-134.351"/>
+				<SceneObject name="CharacterEp26">
+					<Rotation x="-7.000" y="-10.416" z="1.343"/>
+					<Scale x="1.079" y="1.079" z="1.079"/>
+					<Model filename="shared/diorama/diorama09/episode26/models/character/episode26_character.ffm">
+						<Animations>
+							<Animation
+									filename="shared/diorama/diorama09/episode26/models/character/episode26_character_idle.ffa"
+									name="Idle" play="true" speed="0.65" loopCount="-1"/>
+							<!--<Animation-->
+									<!--filename="shared/diorama/diorama09/episode26/models/character/episode26_character_talk.ffa"-->
+									<!--name="Talk" play="false" speed="1.0" loopCount="-1"/>-->
+						</Animations>
+					</Model>
+					<Materials>
+						<Material parentMaterial="Episode26MaterialAlpha"/>
+					</Materials>
+				</SceneObject>
+			</SceneObject>
+      
+			<!--
+				SPEECHBUBBLE
+			-->
+			<SceneObject name="SpeechBubbleEp26">
+				<Animations>
+					<Animation name="SpeechBubbleAppear" animationData="SpeechBubbleAppear" loopCount="0"/>
+					<Animation name="SpeechBubbleDisappear" animationData="SpeechBubbleDisappear"
+							   loopCount="0"/>
+				</Animations>
+				<SpeechBubble>
+					<Speech key="episode26.intro"/>
+					<Speech key="episode26.outro"/>
+				</SpeechBubble>
+				<Translation x="50.0" y="150.0" z="-136.171"/>
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml"/>
+			</SceneObject>
+      
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<SceneObject name="Particles">
+				<Effects>
+					<Effect name="Wisps" effectData="Wisps" play="true"/>
+				</Effects>
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effects>
+					<Effect name="Wisps" effectData="Wisps" play="true"/>
+				</Effects>
+				<Translation z="-200"/>
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effects>
+					<Effect name="Wisps" effectData="Wisps" play="true"/>
+				</Effects>
+				<Translation z="-400"/>
+			</SceneObject>
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<SceneObject name="UnlockLevel362CameraTarget">
+				<Translation x="-135" y="19" z="-20"/>
+			</SceneObject>
+			<SceneObject name="UnlockLevel375CameraTarget">
+				<Translation x="-135" y="19" z="-20"/>
+			</SceneObject>
+      
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Import filename="shared/diorama/diorama09/episode26/scenes/episode26_levelpins.xml"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

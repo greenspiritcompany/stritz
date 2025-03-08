@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="PurchaseResult">
+		<Translation z="600" />
+		<Animation name="OnAppear" animationData="SlideInFromTop" loopCount="0" />
+		<Animation name="OnDisappear" animationData="SlideOutToBelow" loopCount="0" />
+		<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+		<SceneObject name="TitleText">
+			<Translation x="0" y="-300.193" z="0" />
+			<Text alignment="center" font="Banana" verticalAlignment="visualCenter" maxHeight="45" overflowBehaviour="fit" canBreakWords="false" maxWidth="370">
+				<Color b="255" a="255" g="255" r="255" />
+				<Size y="24" x="24" />
+				<TextString>#purchase result title</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="Success" visibility="always">
+			<SceneObject name="BoosterHolderTextBox">
+				<Translation z="2" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/booster_holder_txtbox.png" vertexColors="false">
+					<Insets left="50" top="50" bottom="50" right="50" />
+					<Size height="75" width="240" />
+					<Pivot anchor="center" />
+				</Panel>
+			</SceneObject>
+			<SceneObject>
+				<Translation y="-152" x="-144" z="3" />
+				<Rotation z="0" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/heart_ornament.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject>
+				<Translation y="-152" x="30" z="3" />
+				<Rotation z="0" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/heart_ornament.png" vertexColors="false">
+					<Flip u="true" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Background" />
+			<SceneObject name="MessageArea">
+				<Translation y="120" x="0" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/purchase_success_box.png" vertexColors="false">
+					<Insets left="50" top="50" bottom="50" right="50" />
+					<Size height="125" width="500" />
+					<Pivot anchor="center" />
+				</Panel>
+				<SceneObject>
+					<Translation x="-183.730" y="-3" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/check.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Message">
+					<Translation y="0" x="25" />
+					<Text alignment="center" font="Typewriter" verticalAlignment="visualCenter" maxHeight="80" overflowBehaviour="fit" canBreakWords="false" maxWidth="330">
+						<TextString>#message</TextString>
+						<Color b="4" g="139" r="1" />
+						<Size y="24" x="24" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Fail" visibility="never">
+			<SceneObject name="Background" />
+			<SceneObject name="MessageArea">
+				<Translation y="120" x="0" z="2" />
+				<SceneObject>
+					<Panel filename="shared/diorama/common/tex/gui_elements/purchase_fail_box.png" vertexColors="false">
+						<Insets left="50" top="50" bottom="50" right="50" />
+						<Size height="105" width="500" />
+						<Pivot anchor="center" />
+					</Panel>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-190.703" y="-3" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/cross.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation y="-272" x="-144" z="3" />
+					<Rotation z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/heart_ornament.png" vertexColors="false" />
+				</SceneObject>
+				<SceneObject>
+					<Translation y="-272" x="30" z="3" />
+					<Rotation z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/heart_ornament.png" vertexColors="false">
+						<Flip u="true" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="BoosterHolderTextBox">
+					<Translation y="-120" z="2" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/booster_holder_txtbox.png" vertexColors="false">
+						<Insets left="50" top="50" bottom="50" right="50" />
+						<Size height="75" width="240" />
+						<Pivot anchor="center" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="Message">
+					<Translation y="0" x="25" />
+					<Text alignment="center" font="Typewriter" verticalAlignment="visualCenter" maxHeight="60" overflowBehaviour="fit" canBreakWords="false" maxWidth="330">
+						<TextString>#message</TextString>
+						<Color b="48" g="21" r="209" />
+						<Size y="24" x="24" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ProductIcon">
+			<Translation y="-116" x="0" z="1" />
+		</SceneObject>
+		<SceneObject name="AmountAdded">
+			<Translation y="0" x="-5" z="4" />
+			<Text alignment="center" font="Banana_NarrowSpacing" verticalAlignment="visualCenter" maxHeight="50" overflowBehaviour="fit" canBreakWords="false" maxWidth="200">
+				<TextString>#number</TextString>
+				<Color b="0" a="255" g="55" r="117" />
+				<Size y="32" x="32" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="ContinueButton" class="Button">
+			<Translation x="0" y="248.379" z="0" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Pivot anchor="center" />
+				<Insets left="54" top="48" bottom="59" right="54" />
+				<Size height="108" width="380" />
+			</Panel>
+			<Animation name="Idle" animationData="Idle" layer="1" play="true" />
+			<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+			<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+			<SceneObject name="Text">
+				<Translation y="-8" />
+				<Text alignment="center" font="Banana" verticalAlignment="visualCenter" key="purchase_result_continue" maxHeight="220" overflowBehaviour="fit" canBreakWords="false" maxWidth="280">
+					<Size y="28" x="28" />
+					<Shadow>
+						<Color b="0" a="25" g="0" r="0" />
+						<Offset y="6" x="0" />
+					</Shadow>
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="95" />
+				<OriginalSize height="706" width="640" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

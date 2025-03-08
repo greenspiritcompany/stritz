@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="19" space="Local" timeToEmit="0.100" name="CollabPhotoBurst">
+    <Dampening max="0.750" min="0.730"/>
+    <DirectionalForce x="0" y="158.510"/>
+    <Emitter emissionRate="0" spread="342.360" angle="0">
+        <SpawnArea width="5" depth="0" height="5"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="360" min="-360"/>
+    <Size>
+        <Max x="23" y="23"/>
+        <Min x="10.260" y="10.260"/>
+    </Size>
+    <SizeChange>
+        <Max x="0" y="0"/>
+        <Min x="0" y="0"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/glowing_star.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.750" min="0.320"/>
+    <Velocity max="570" min="517.800"/>
+</ParticleEffect>

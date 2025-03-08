@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="64" space="World" timeToEmit="1.900" name="BottleCorrodaFoamPFX">
+    <Dampening max="0.800" min="0.800"/>
+    <DirectionalForce x="0" y="-300"/>
+    <Emitter emissionRate="0.010" spread="360" angle="-90.490">
+        <SpawnArea width="60" depth="0" height="60"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="53"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="90" min="90"/>
+    <Size>
+        <Max x="25" y="25"/>
+        <Min x="25" y="25"/>
+    </Size>
+    <SizeChange>
+        <Max x="3" y="3.800"/>
+        <Min x="3" y="3.800"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/soda_corroda_particle.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.390" min="0.280"/>
+    <Velocity max="480" min="480"/>
+</ParticleEffect>

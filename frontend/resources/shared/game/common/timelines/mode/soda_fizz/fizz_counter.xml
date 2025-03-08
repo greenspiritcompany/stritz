@@ -1,0 +1,26 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.1">
+		<Animate target="CountSprite">
+			<Show time="0.0"/>
+			<Translation time="0.0" x="0" y="0" z="0"/>
+			<Translation time="1.1" x="0" y="-8" z="0"/>
+
+            <Color time="0" a="0"/>
+            <Color time="0.2" a="255"/>
+            <Color time="0.9" a="255"/>
+            <Color time="1.1" a="0"/>
+
+            <Scale time="0" xyz="0.3"/>
+            <Scale time="0.2" xyz="1.15"/>
+            <Scale time="0.3" xyz="1.0"/>
+            <Scale time="0.9" xyz="1.0"/>
+            <Scale time="1.1" xyz="0.2"/>
+
+            <Hide time="1.1"/>
+		</Animate>
+        <Triggers>
+            <EffectTrigger name="FizzCounterGlowEFQ" parentName="ParticleHelper" time="0.2"/>
+        </Triggers>
+	</Timeline>
+</Timelines>

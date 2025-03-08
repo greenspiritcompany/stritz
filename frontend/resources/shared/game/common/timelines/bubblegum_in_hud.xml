@@ -1,0 +1,20 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="0.45">
+
+		<!--<Animate target="Bear">
+		  <Show/>
+		  <Hide time="1.8"/>
+		</Animate>-->
+
+		<Triggers>
+			<AnimationTrigger animationName="idle" targetName="BubblegumImg" time="0.45" crossFade="0.2"/>
+			<AnimationTrigger animationName="idle" targetName="BubblegumImgPortrait" time="0.45" crossFade="0.2"/>
+			<EffectTrigger time="0.0" name="BubblegumInHudSplashEFQ" parentName="BubblegumImgParticle"/>
+			<EffectTrigger time="0.0" name="BubblegumInHudSplashEFQ" parentName="BubblegumImgParticlePortrait"/>
+
+			<!--<AnimationTrigger animationName="idle" targetName="BearImg" time="2.8"/>-->
+		</Triggers>
+
+	</Timeline>
+</Timelines>

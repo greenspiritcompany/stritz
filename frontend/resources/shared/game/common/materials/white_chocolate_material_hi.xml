@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="WhiteChocolateMaterial">
+			<Blend enabled="false"/>
+            <Depth enabled="true" writeMask="false"/>
+			<Cull enabled="false" face="back"/>
+			<!-- Set to false since the vertex winding seems messed up between FF and SL -->
+			<Shader program="NormalMap"/>
+            <Light enabled="true" shininess="60">
+                <Ambient r="250" g="250" b="250" a="255"/>
+                <Diffuse r="8" g="8" b="8" a="255"/>
+                <Specular r="15" g="15" b="15" a="255"/>
+            </Light>
+		</Material>
+	</Materials>
+</Scene>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<SceneObject visibility="inherit" name="ModalBackground">
+		<Translation z="-2" y="0" x="0" />
+		<Panel filename="shared/castle/tex/kotc_cutoff_modal.png" vertexColors="false">
+			<Insets bottom="95" top="98" right="102" left="102" />
+			<Pivot anchor="center" />
+			<Size width="574" height="638" />
+		</Panel>
+		<SceneObject visibility="inherit" name="Border">
+			<SceneObject name="Left">
+				<Translation z="-2" y="1" x="-256" />
+				<Sprite wrap="repeat" filename="shared/castle/tex/modal_frame/kotc_frame_left.png" vertexColors="false">
+					<Pivot anchor="right" />
+					<Rectangle maxY="576" maxX="64" minX="2" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Right">
+				<Translation z="-2" y="1" x="256" />
+				<Sprite wrap="repeat" filename="shared/castle/tex/modal_frame/kotc_frame_right.png" vertexColors="false">
+					<Pivot anchor="left" />
+					<Rectangle maxY="576" maxX="62" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="BottomLeft">
+				<Translation z="-1" y="321" x="-256" />
+				<Sprite filename="shared/castle/tex/kotc_frame_corner_downleft.png" vertexColors="false">
+					<Pivot anchor="right" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="BottomRight">
+				<Translation z="-1" y="321" x="256" />
+				<Sprite filename="shared/castle/tex/kotc_frame_corner_downright.png" vertexColors="false">
+					<Pivot anchor="left" />
+				</Sprite>
+				<Rotation z="0" />
+			</SceneObject>
+			<SceneObject name="Bottom">
+				<Translation z="-3" y="321" />
+				<Sprite wrap="repeat" filename="shared/castle/tex/modal_frame/kotc_frame_down.png" vertexColors="false">
+					<Pivot y="1" anchor="center" />
+					<Rectangle maxY="62" maxX="512" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Header">
+			<Translation y="-15" />
+			<SceneObject name="Right">
+				<Translation y="-372" />
+				<Sprite filename="shared/castle/tex/kotc_modal_header.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject name="Left">
+				<Translation y="-372" x="-325" />
+				<Sprite filename="shared/castle/tex/kotc_modal_header.png" vertexColors="false">
+					<Flip u="true" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject class="Button" name="CloseButton">
+			<Translation y="-331" x="278" />
+			<Scale z="0.70" y="0.70" x="0.70" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Animation layer="1" animationData="Idle" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject visibility="inherit">
+				<Translation y="-3" x="0" />
+				<Scale z="1.50" y="1.50" x="1.50" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_exit.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="0" />
+			</Translation>
+			<Size>
+				<Height percentage="95" max="706" />
+				<OriginalSize width="640" height="706" />
+				<Width percentage="100" max="640" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,244 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Fonts SYSTEM "../dtd/fonts.dtd">
+<Fonts>
+	<BitmapFont name="PinkNumbers" texture="shared/bootstrap/fonts/tex/pink_numbers.png" 
+				shader="TextureColor"	
+				lineSpacing="-50" characterSpacing="-0" 
+				bmProperties="shared/bootstrap/fonts/bitmap_numbers.fnt">
+		<Scale x="0.0250" y="0.0250"/>
+	</BitmapFont>
+	<BitmapFont name="LevelPinNumbers" texture="shared/bootstrap/fonts/tex/level_pin_numbers_active.png"
+				shader="TextureColor"
+				characterSpacing="-0" 
+				bmProperties="shared/bootstrap/fonts/bitmap_numbers.fnt">
+		<Scale x="0.0330" y="0.0330"/>
+	</BitmapFont>
+	<BitmapFont name="LevelPinNumbersInactive" texture="shared/bootstrap/fonts/tex/level_pin_numbers_inactive.png"
+				shader="TextureColor"
+				characterSpacing="-0" 
+				bmProperties="shared/bootstrap/fonts/bitmap_numbers.fnt">
+		<Scale x="0.0330" y="0.0330"/>
+	</BitmapFont>
+	<BitmapFont name="KgfSprites" texture="shared/bootstrap/fonts/tex/kgf_sprites.png"
+				shader="TextureColor"
+				characterSpacing="-0" 
+				bmProperties="shared/bootstrap/fonts/kgf_sprites.fnt">
+		<Scale x="0.0330" y="0.0330"/>
+	</BitmapFont>
+
+
+	<!--  _______Shiny_____________________ -->
+
+	<BitmapFont name="BananaShiny"
+				notForLocales="ja,ko,zh-Hans"
+				texture="shared/bootstrap/fonts/tex/bananasp_large.png"
+				shader="TextureAlphaShiny"	charWidth="128" charHeight="128" spaceWidth="22" mapWidth="16" mapHeight="16"
+				lineSpacing="-32" characterSpacing="1"
+				bmProperties="shared/bootstrap/fonts/bananasp_large.fnt">
+		<Scale x="0.012" y="0.012"/>
+	</BitmapFont>
+
+	<UnicodeFont name="BananaShiny"
+				 onlyForLocales="ja"
+				 filename="king-fonts/fonts/king_super_happy_grotesk_ruika.otf" shader="AlphaTextureVertexColor"
+				 offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="BananaShiny"
+				 onlyForLocales="ko"
+				 filename="shared/bootstrap/fonts/Korean_New.ttf" shader="AlphaTextureVertexColor"
+				 offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="BananaShiny"
+				 onlyForLocales="zh-Hans"
+				 filename="king-fonts/fonts/king_FZY4JW_8989.ttf" shader="AlphaTextureVertexColor"
+				 offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+
+	<!--  ____________________________________ -->
+
+	<BitmapFont name="Banana"
+				notForLocales="ja,ko,zh-Hans"
+				texture="shared/bootstrap/fonts/tex/bananasp_large.png"
+				shader="TextureAlpha"	charWidth="128" charHeight="128" spaceWidth="22" mapWidth="16" mapHeight="16"
+				lineSpacing="-32" characterSpacing="1"
+				bmProperties="shared/bootstrap/fonts/bananasp_large.fnt">
+		<Scale x="0.012" y="0.012"/>
+	</BitmapFont>
+
+	<UnicodeFont name="Banana"
+				onlyForLocales="ja"
+				filename="king-fonts/fonts/king_super_happy_grotesk_ruika.otf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="Banana" 
+				onlyForLocales="ko"
+				filename="shared/bootstrap/fonts/Korean_New.ttf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="Banana"
+				onlyForLocales="zh-Hans"
+				filename="king-fonts/fonts/king_FZY4JW_8989.ttf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	
+	<BitmapFont name="Banana_NarrowSpacing" 
+				texture="shared/bootstrap/fonts/tex/bananasp_large.png"
+				shader="TextureAlpha" charWidth="128" charHeight="128" spaceWidth="22" mapWidth="16" mapHeight="16"
+				lineSpacing="-32" characterSpacing="-8"
+				bmProperties="shared/bootstrap/fonts/bananasp_large.fnt">
+		<Scale x="0.012" y="0.012"/>
+	</BitmapFont>
+
+	<BitmapFont name="Banana_HighScore" 
+				texture="shared/bootstrap/fonts/tex/bananasp_large.png"
+				shader="TextureAlpha" charWidth="128" charHeight="128" spaceWidth="22" mapWidth="16" mapHeight="16"
+				lineSpacing="-32" characterSpacing="-10"
+				bmProperties="shared/bootstrap/fonts/bananasp_large.fnt">
+		<Scale x="0.012" y="0.012"/>
+	</BitmapFont>
+
+
+
+	<!--  _____BananaLoadingScreen_______ -->
+
+
+	<BitmapFont name="BananaLoadingScreen"
+				notForLocales="ja,ko,zh-Hans"
+				texture="shared/bootstrap/fonts/tex/bananasp_large.png"
+				shader="TextureAlphaPMA"	charWidth="128" charHeight="128" spaceWidth="22" mapWidth="16" mapHeight="16"
+				lineSpacing="-32" characterSpacing="1"
+				bmProperties="shared/bootstrap/fonts/bananasp_large.fnt">
+		<Scale x="0.012" y="0.012"/>
+	</BitmapFont>
+	<UnicodeFont name="BananaLoadingScreen"
+				 onlyForLocales="ja"
+				 filename="king-fonts/fonts/king_super_happy_grotesk_ruika.otf" shader="AlphaTextureVertexColor"
+				 offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="BananaLoadingScreen"
+				 onlyForLocales="ko"
+				 filename="shared/bootstrap/fonts/Korean_New.ttf" shader="AlphaTextureVertexColor"
+				 offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="BananaLoadingScreen"
+				 onlyForLocales="zh-Hans"
+				 filename="king-fonts/fonts/king_FZY4JW_8989.ttf" shader="AlphaTextureVertexColor"
+				 offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+
+
+	<!--  ____________________________________ -->
+
+
+
+
+
+	<BitmapFont name="BananaInnerShadow" 
+				notForLocales="ja,ko,zh-Hans"
+				texture="shared/bootstrap/fonts/tex/bananasp_large.png"
+				shader="TextureColorPMA" charWidth="128" charHeight="128" spaceWidth="22" mapWidth="16" mapHeight="16"
+				lineSpacing="-32" characterSpacing="1"
+				bmProperties="shared/bootstrap/fonts/bananasp_large.fnt">
+		<Scale x="0.012" y="0.012"/>
+	</BitmapFont>
+	<UnicodeFont name="BananaInnerShadow" 
+				onlyForLocales="ja"
+				filename="king-fonts/fonts/king_super_happy_grotesk_ruika.otf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="BananaInnerShadow" 
+				onlyForLocales="ko"
+				filename="shared/bootstrap/fonts/Korean_New.ttf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="BananaInnerShadow"
+				onlyForLocales="zh-Hans"
+				filename="king-fonts/fonts/king_FZY4JW_8989.ttf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+
+	<BitmapFont name="ConsoleTypewriter"
+				texture="shared/bootstrap/fonts/tex/american_typewriter_0.png"
+				shader="AlphaTextureColor"
+				characterSpacing="0"
+				bmProperties="shared/bootstrap/fonts/american_typewriter.fnt">
+		<Scale x="0.217" y="0.217"/>
+	</BitmapFont>
+
+	<BitmapFont name="Typewriter" 
+				notForLocales="ja,ko,zh-Hans"
+				texture="shared/bootstrap/fonts/tex/american_typewriter_0.png"
+				shader="AlphaTextureColor"
+				characterSpacing="0" 
+				bmProperties="shared/bootstrap/fonts/american_typewriter.fnt">
+		<Scale x="0.017" y="0.017"/>
+	</BitmapFont>
+	<UnicodeFont name="Typewriter" 
+				onlyForLocales="ja"
+				filename="king-fonts/fonts/king_super_happy_grotesk_ruika.otf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.272258">
+		<Scale x="1.35" y="1.35"/>
+	</UnicodeFont>
+	<UnicodeFont name="Typewriter" 
+				onlyForLocales="ko"
+				filename="shared/bootstrap/fonts/Korean_New.ttf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="Typewriter"
+				onlyForLocales="zh-Hans"
+				filename="king-fonts/fonts/king_FZY4JW_8989.ttf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+
+	<BitmapFont name="TypewriterBold" 
+				notForLocales="ja,ko,zh-Hans"
+				texture="shared/bootstrap/fonts/tex/american_typewriter_bold_0.png"
+				shader="AlphaTextureColor"
+				characterSpacing="0" 
+				bmProperties="shared/bootstrap/fonts/american_typewriter_bold.fnt">
+		<Scale x="0.017" y="0.017"/>
+	</BitmapFont>
+	<UnicodeFont name="TypewriterBold" 
+				onlyForLocales="ja"
+				filename="king-fonts/fonts/king_super_happy_grotesk_ruika.otf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="TypewriterBold" 
+				onlyForLocales="ko"
+				filename="shared/bootstrap/fonts/Korean_New.ttf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+	<UnicodeFont name="TypewriterBold"
+				onlyForLocales="zh-Hans"
+				filename="king-fonts/fonts/king_FZY4JW_8989.ttf" shader="AlphaTextureVertexColor"
+				offsetX="-0.0" offsetY="-0.89" lineHeight="1.032258">
+		<Scale x="1.55" y="1.55"/>
+	</UnicodeFont>
+
+	
+	<BitmapFont name="super_grotesk_offc_pro_medium" texture="shared/bootstrap/fonts/tex/super_grotesk_offc_pro_medium.png" shader="SDFFont"
+				useSdf="true" offsetX="0.0" offsetY="0.0" bmProperties="shared/bootstrap/fonts/super_grotesk_offc_pro_medium.fnt">
+	    <Scale x="0.03" y="0.03"/>
+	</BitmapFont>
+	
+	<BitmapFont name="super_grotesk_offc_pro_regular" texture="shared/bootstrap/fonts/tex/super_grotesk_offc_pro_regular.png" shader="SDFFont"
+				useSdf="true" offsetX="0.0" offsetY="0.0" bmProperties="shared/bootstrap/fonts/super_grotesk_offc_pro_regular.fnt">
+	    <Scale x="0.03" y="0.03"/>
+	</BitmapFont>
+</Fonts>

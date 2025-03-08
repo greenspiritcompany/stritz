@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:b3170464000754d75dd4b69bf2cdd239:df25134b113b98cae2720f5fa4448ad4:dfa2d33fe66079e1a14cce0a31aeb676$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="quest_gui_2.png" width="1024" height="1024">
+    <sprite n="pin.png" x="464" y="913" w="45" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_beard_right.png" x="564" y="809" w="77" h="89" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pirate_body.png" x="101" y="817" w="271" h="202" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_eye.png" x="641" y="956" w="36" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_eye_blink.png" x="2" y="997" w="42" h="18" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_hand.png" x="376" y="809" w="84" h="151" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_hand_right.png" x="363" y="670" w="106" h="135" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pirate_hat.png" x="42" y="464" w="317" h="319" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pirate_hook.png" x="2" y="826" w="95" h="167" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pirate_hook_right.png" x="443" y="464" w="95" h="166" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pirate_knot.png" x="363" y="464" w="76" h="202" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_leg.png" x="513" y="913" w="73" h="43" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pirate_leg_foot.png" x="473" y="634" w="68" h="93" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="pirate_mustasche_left.png" x="84" y="787" w="47" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_mustasche_right.png" x="42" y="787" w="38" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_nose.png" x="681" y="2" w="83" h="77" pX="0.5" pY="0.5"/>
+    <sprite n="pirate_string.png" x="2" y="2" w="36" h="820" pX="0.5" pY="0.5"/>
+    <sprite n="quest_reward_box.png" x="464" y="809" w="96" h="100" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="quest_reward_shine_bg.png" x="42" y="2" w="438" h="458" pX="0.5" pY="0.5"/>
+    <sprite n="reward_text_x1.png" x="567" y="960" w="70" h="51" pX="0.5" pY="0.5"/>
+    <sprite n="reward_text_x10.png" x="376" y="964" w="109" h="51" pX="0.5" pY="0.5"/>
+    <sprite n="reward_text_x2.png" x="473" y="731" w="50" h="74" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="reward_text_x3.png" x="590" y="902" w="75" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="reward_text_x4.png" x="489" y="962" w="74" h="51" pX="0.5" pY="0.5"/>
+    <sprite n="reward_text_x5.png" x="527" y="731" w="50" h="74" pX="0.5" pY="0.5" r="y"/>
+</TextureAtlas>

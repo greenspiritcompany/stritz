@@ -1,0 +1,13 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Triggers>
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp05.0"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp05" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger targetName="BatAwoken" animationName="OnClick" crossFade="0.5" time="0.1"/>
+			<AnimationTrigger targetName="BatAwoken" animationName="Idle" crossFade="0.2" time="1.5"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp05" animationName="SpeechBubbleDisappear"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

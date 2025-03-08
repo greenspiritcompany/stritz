@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0.0" endTime="0.15">
+
+        <Triggers>
+            
+            <AnimationTrigger targetName="animTarget" animationName="QuestBoxViewDisappear" time="0.0" />
+            <CustomTrigger name="QuestBoxViewDisappearEnds" time="0.15"/>
+
+        </Triggers>
+    </Timeline>
+</Timelines>

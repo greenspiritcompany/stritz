@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="7" space="Local" timeToEmit="60" name="PurchaseLollipopGlitterPFX">
+    <Dampening max="0.900" min="0.600"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.300" spread="360" angle="0">
+        <SpawnArea width="180" depth="0" height="120"/>
+    </Emitter>
+    <EndColor b="221" r="225" g="74" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="24" y="24"/>
+        <Min x="16" y="16"/>
+    </Size>
+    <SizeChange>
+        <Max x="-24" y="-24"/>
+        <Min x="-16" y="-16"/>
+    </SizeChange>
+    <StartColor b="221" r="225" g="120" a="80"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="4" min="3"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

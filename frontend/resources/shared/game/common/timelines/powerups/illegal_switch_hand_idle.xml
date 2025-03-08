@@ -1,0 +1,18 @@
+<!DOCTYPE Timelines SYSTEM '../../../../../dtd/timeline.dtd'>
+<Timelines>
+    <Timeline startTime="0" endTime="1.2">
+        <Animate target="IllegalSwitchHand" time="0">
+            <Hide/>
+            <Show time="0.000"/>
+            <Translation time="0" z="0"/>
+            <Color time="0" r="255" g="255" b="255" a="0"/>
+            <Color time="0.1" r="255" g="255" b="255" a="210"/>
+        </Animate>
+        <Triggers>
+            <AnimationTrigger time="0.0" targetName="IllegalSwitchHand" animationName="Idle"/>
+        </Triggers>
+        <TimeControls>
+            <TimeJump time="1.1" jumpToTime="0.1"/>
+        </TimeControls>
+    </Timeline>
+</Timelines>

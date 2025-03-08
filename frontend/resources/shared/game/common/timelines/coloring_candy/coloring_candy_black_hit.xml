@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.0">
+		<Triggers>
+			<EffectTrigger time="0.0" name="ColoringCandyBlackEFQ" parentName="ColoringCandy"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

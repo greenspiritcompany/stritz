@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Include filename="shared/diorama/diorama01/episode01/timelines/outro_talk_ep01.xml"/>
+	<Timeline startTime="0.0" endTime="4.5">
+		<Animate target="Kimmy_group" time="0.0">
+			<Translation time="4.5" x="-430" y="20" z="250"/>
+			<Rotation time="4.5" x="-6"/>
+			<Scale time="4.5" xyz="1"/>
+		</Animate>
+	</Timeline>
+</Timelines>

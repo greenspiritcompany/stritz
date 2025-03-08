@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="5ExtraMoves" visibility="never">
+		<Translation x="0" y="0" z="0" />
+		<Scale x="1.210" y="1.210" z="1" />
+		<SceneObject name="Icon">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/5_moves_big.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="15ExtraMoves" visibility="never">
+		<SceneObject name="Icon">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_15_moves_big.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1.200" y="1.200" z="1" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="50ExtraMoves" visibility="never">
+		<SceneObject name="Icon">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_50_moves_big.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1.200" y="1.200" z="1" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="5ExtraMovesPersistent" visibility="inherit">
+		<SceneObject name="Icon">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/5_moves_pers.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="15ExtraMovesPersistent" visibility="never">
+		<SceneObject name="Icon">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/15_moves_pers.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation y="0" z="0" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="50ExtraMovesPersistent" visibility="never">
+		<SceneObject name="Icon">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/50_moves_pers.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation y="0" z="0" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

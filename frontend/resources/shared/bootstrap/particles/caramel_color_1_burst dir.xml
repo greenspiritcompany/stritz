@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="4" space="World" timeToEmit="0.150" name="Jam1BurstDirPFX">
+    <Dampening max="0.740" min="0.740"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.040" spread="120" angle="90">
+        <SpawnArea width="30" depth="0" height="20"/>
+    </Emitter>
+    <EndColor b="102" r="255" g="224" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="-220.920" min="-220.920"/>
+    <Size>
+        <Max x="35.170" y="35.170"/>
+        <Min x="25.540" y="25.540"/>
+    </Size>
+    <SizeChange>
+        <Max x="-36" y="-36"/>
+        <Min x="-36" y="-36"/>
+    </SizeChange>
+    <StartColor b="191" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/jam1_bubble.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.430" min="0.430"/>
+    <Velocity max="300" min="300"/>
+</ParticleEffect>

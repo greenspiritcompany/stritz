@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="EmphasizedToplistBoxes">
+		<SceneObject name="Box">
+			<SceneObject name="BG">
+				<SceneObject name="PinkBG" visibility="never">
+					<Panel filename="shared/diorama/common/tex/gui_elements/et_box_pink.png" vertexColors="false">
+						<Insets bottom="60" left="40" right="40" top="40" />
+						<Size width="700" />
+						<Pivot anchor="top" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="BlueBG" visibility="never">
+					<Panel filename="shared/diorama/common/tex/gui_elements/et_box_blue.png" vertexColors="false">
+						<Insets bottom="60" left="40" right="40" top="40" />
+						<Size width="700" />
+						<Pivot anchor="top" />
+					</Panel>
+					<Translation x="0" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Frames">
+				<Translation x="-346.667" y="0.865" z="0" />
+				<SceneObject name="Picture">
+					<Translation x="118" z="0" y="58" />
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="GoldFrame" visibility="never">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/et_frame_gold.png" vertexColors="false" />
+					<Translation x="75" y="14" z="0" />
+				</SceneObject>
+				<SceneObject name="SilverFrame" visibility="never">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/et_frame_silver.png" vertexColors="false" />
+					<Translation x="75" y="14" z="0" />
+				</SceneObject>
+				<SceneObject name="BronzeFrame" visibility="never">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/et_frame_bronze.png" vertexColors="false" />
+					<Translation x="75" y="14" z="0" />
+				</SceneObject>
+				<SceneObject name="PinkFrame" visibility="never">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/et_frame_pink.png" vertexColors="false" />
+					<Translation x="75" y="14" z="0" />
+				</SceneObject>
+				<SceneObject name="BlueFrame" visibility="never">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/et_frame_blue.png" vertexColors="false" />
+					<Translation x="75" y="14" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="ScoreBoxes">
+				<Translation x="-353.147" y="1.359" z="0" />
+				<SceneObject name="GoldBox" visibility="never">
+					<Panel filename="shared/diorama/common/tex/gui_elements/et_scorebox_gold.png" vertexColors="false">
+						<Insets bottom="20" left="50" right="50" top="20" />
+						<Size width="240" />
+					</Panel>
+					<Translation x="441.147" y="27.193" z="0" />
+					<SceneObject name="GoldScore">
+						<Text alignment="center" verticalAlignment="visualCenter" font="Banana" overflowBehaviour="fit" canBreakWords="false" allowWordWrapping="false" maxWidth="170" maxHeight="60">
+							<TextString>321 837</TextString>
+							<Size x="26" y="26" />
+							<Color r="217" g="116" b="35" a="255" />
+							<Shadow enabled="true">
+								<Color r="255" g="255" b="255" a="255" />
+								<Offset x="0" />
+							</Shadow>
+						</Text>
+						<Translation x="119.817" y="29.790" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="SilverBox" visibility="never">
+					<Panel filename="shared/diorama/common/tex/gui_elements/et_scorebox_silver.png" vertexColors="false">
+						<Insets bottom="20" left="50" right="50" top="20" />
+						<Size width="240" />
+					</Panel>
+					<Translation x="441.147" y="27.193" z="0" />
+					<SceneObject name="SilverScore">
+						<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="60" maxWidth="170" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color r="117" g="116" b="116" a="255" />
+							<Shadow enabled="true">
+								<Color a="255" b="255" g="255" r="255" />
+								<Offset x="0" />
+							</Shadow>
+							<Size x="26" y="26" />
+							<TextString>321 837</TextString>
+						</Text>
+						<Translation x="119.817" y="29.790" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="BronzeBox" visibility="never">
+					<Panel filename="shared/diorama/common/tex/gui_elements/et_scorebox_bronze.png" vertexColors="false">
+						<Insets bottom="20" left="50" right="50" top="20" />
+						<Size width="240" />
+					</Panel>
+					<Translation x="441.147" y="27.193" z="0" />
+					<SceneObject name="BronzeScore">
+						<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="60" maxWidth="170" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color r="187" g="88" b="7" a="255" />
+							<Shadow enabled="true">
+								<Color a="255" b="255" g="255" r="255" />
+								<Offset x="0" />
+							</Shadow>
+							<Size x="26" y="26" />
+							<TextString>321 837</TextString>
+						</Text>
+						<Translation x="119.817" y="29.790" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="PinkBox" visibility="never">
+					<Panel filename="shared/diorama/common/tex/gui_elements/et_scorebox_pink.png" vertexColors="false">
+						<Insets bottom="20" left="50" right="50" top="20" />
+						<Size width="186" />
+					</Panel>
+					<Translation x="469.059" y="34.381" z="0" />
+					<SceneObject name="PinkScore">
+						<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="60" maxWidth="170" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color r="175" g="28" b="116" a="255" />
+							<Shadow enabled="true">
+								<Color a="255" b="255" g="255" r="255" />
+								<Offset x="0" />
+							</Shadow>
+							<Size x="26" y="26" />
+							<TextString>321 837</TextString>
+						</Text>
+						<Translation x="92.685" y="25.268" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="BlueBox" visibility="never">
+					<Panel filename="shared/diorama/common/tex/gui_elements/et_scorebox_blue.png" vertexColors="false">
+						<Insets bottom="20" left="50" right="50" top="20" />
+						<Size width="186" />
+					</Panel>
+					<Translation x="469.059" y="34.381" z="0" />
+					<SceneObject name="BlueScore">
+						<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="60" maxWidth="170" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color r="0" g="101" b="145" a="255" />
+							<Shadow enabled="true">
+								<Color a="255" b="255" g="255" r="255" />
+								<Offset x="0" />
+							</Shadow>
+							<Size x="26" y="26" />
+							<TextString>321 837</TextString>
+						</Text>
+						<Translation x="92.685" y="25.268" z="0" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PlacingNumbers">
+				<Translation x="-351.650" y="0" z="0" />
+				<SceneObject name="1Gold" visibility="never">
+					<Sprite filename="shared/liveops/hero_quest/tex/kgf_toplist_1.png" vertexColors="false" />
+					<Translation x="22.352" y="28.302" z="0" />
+					<SceneObject name="GoldNumber">
+						<Text alignment="center" verticalAlignment="visualCenter" font="TypewriterBold" overflowBehaviour="fit">
+							<TextString>1</TextString>
+							<Size x="22" y="22" />
+							<Color r="217" g="116" b="35" a="255" />
+							<Shadow enabled="true">
+								<Color r="255" g="255" b="255" a="255" />
+								<Offset x="0" />
+							</Shadow>
+						</Text>
+						<Translation x="22.461" y="32.942" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="2Silver" visibility="never">
+					<Sprite filename="shared/liveops/hero_quest/tex/kgf_toplist_2.png" vertexColors="false" />
+					<Translation x="22.352" y="28.302" z="0" />
+					<SceneObject name="SilverNumber">
+						<Text alignment="center" verticalAlignment="visualCenter" font="TypewriterBold" overflowBehaviour="fit">
+							<TextString>2</TextString>
+							<Size x="22" y="22" />
+							<Color r="117" g="116" b="116" a="255" />
+							<Shadow enabled="true">
+								<Color r="255" g="255" b="255" a="255" />
+								<Offset x="0" />
+							</Shadow>
+						</Text>
+						<Translation x="22.461" y="32.942" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="3Bronze" visibility="never">
+					<Sprite filename="shared/liveops/hero_quest/tex/kgf_toplist_3.png" vertexColors="false" />
+					<Translation x="22.352" y="28.302" z="0" />
+					<SceneObject name="BronzeNumber">
+						<Text alignment="center" verticalAlignment="visualCenter" font="TypewriterBold" overflowBehaviour="fit">
+							<TextString>3</TextString>
+							<Size x="22" y="22" />
+							<Color r="187" g="88" b="7" a="255" />
+							<Shadow enabled="true">
+								<Color r="255" g="255" b="255" a="255" />
+								<Offset x="0" />
+							</Shadow>
+						</Text>
+						<Translation x="22.461" y="32.942" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="NumberPink" visibility="never">
+					<Text alignment="center" verticalAlignment="visualCenter" font="TypewriterBold" overflowBehaviour="fit" maxWidth="50" canBreakWords="false" allowWordWrapping="false" maxHeight="60">
+						<TextString>4</TextString>
+						<Size x="22" y="22" />
+						<Color r="175" g="28" b="116" a="255" />
+						<Shadow enabled="true">
+							<Color r="255" g="255" b="255" a="255" />
+							<Offset x="0" />
+						</Shadow>
+					</Text>
+					<Translation x="44.952" y="62.046" z="0" />
+				</SceneObject>
+				<SceneObject name="NumberBlue" visibility="never">
+					<Text alignment="center" verticalAlignment="visualCenter" font="TypewriterBold" overflowBehaviour="fit" maxWidth="50" canBreakWords="false" allowWordWrapping="false" maxHeight="60">
+						<TextString>4</TextString>
+						<Size x="22" y="22" />
+						<Color r="0" g="101" b="145" a="255" />
+						<Shadow enabled="true">
+							<Color r="255" g="255" b="255" a="255" />
+							<Offset x="0" />
+						</Shadow>
+					</Text>
+					<Translation x="44.952" y="62.046" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Name">
+				<Translation x="-351.650" y="0" z="0" />
+				<SceneObject name="NamePink" visibility="never">
+					<Text alignment="left" verticalAlignment="visualCenter" font="Typewriter" overflowBehaviour="fit" canBreakWords="false" allowWordWrapping="false" maxWidth="236" maxHeight="60">
+						<TextString>Tobbe</TextString>
+						<Color r="175" g="28" b="116" a="255" />
+						<Shadow enabled="true">
+							<Color r="255" g="255" b="255" a="255" />
+							<Offset x="0" />
+						</Shadow>
+						<Size x="26" y="26" />
+					</Text>
+					<Translation x="186.156" y="61.972" z="0" />
+				</SceneObject>
+				<SceneObject name="NameBlue" visibility="never">
+					<Text alignment="left" verticalAlignment="visualCenter" font="TypewriterBold" overflowBehaviour="fit" canBreakWords="false" allowWordWrapping="false" maxWidth="236" maxHeight="60">
+						<TextString>Me</TextString>
+						<Color r="0" g="101" b="145" a="255" />
+						<Shadow enabled="true">
+							<Color r="255" g="255" b="255" a="255" />
+							<Offset x="0" />
+						</Shadow>
+						<Size x="24" y="24" />
+					</Text>
+					<Translation x="186.156" y="61.972" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Leagues">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="0.500" y="0.500" z="1" />
+				<Translation x="-254.196" y="22.452" z="0" />
+				<SceneObject name="League1" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_1.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League2" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_2.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League3" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_3.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League4" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_4.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League5" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_5.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League6" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_6.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League7" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_7.png" vertexColors="false" />
+					<Translation x="80.533" y="-24.794" z="0" />
+				</SceneObject>
+				<SceneObject name="League8" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_8.png" vertexColors="false" />
+					<Translation x="81.025" y="-24.392" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

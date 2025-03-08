@@ -1,0 +1,82 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="CandyCrushLink">
+		<Translation z="-1"/>
+		<SceneObject name="Header">
+			<Translation y="-100" z="30"/>
+			<SceneObject name="HeaderBackground">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/ov_header_bg_ccs.png" wrap="repeat">
+					<Pivot anchor="topLeft"/>
+					<Rectangle maxX="1024" maxY="244" minX="0" minY="0"/>
+					<Size height="244" width="586"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="HeaderPanel">
+				<Translation x="286" y="150" z="1"/>
+				<Scale x="1.5" y="1.5" z="1.5"/>
+				<Panel filename="shared/diorama/common/tex/gui_elements/header_box_ov.png">
+					<Insets bottom="0" left="55" right="55" top="0"/>
+					<Pivot anchor="center"/>
+					<Size height="55" width="300"/>
+				</Panel>
+				<SceneObject name="text">
+					<Translation y="-7"/>
+					<Scale x="0.667" y="0.667" z="0.667"/>
+					<Text alignment="center" font="Banana" key="tab.name.candycrush" maxHeight="45" maxWidth="370" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="255" g="255" b="255" a="255"/>
+						<Size x="24" y="24"/>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Background">
+			<SceneObject name="BackgroundFill">
+				<Translation y="95" z="0"/>
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/syn_bg.png" wrap="repeat">
+					<Rectangle maxX="1024" maxY="2048" minX="0" minY="0"/>
+					<Size height="1400" width="586"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Tiffy">
+				<Translation x="301" y="300" z="0"/>
+				<Sprite filename="shared/diorama/common/tex/gui_elements/ccs_pic.png">
+					<Pivot anchor="center"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject>
+				<Translation x="421" y="266" z="10"/>
+				<Text alignment="center" font="Typewriter" key="go_to_candy_crush_text" maxHeight="118" maxWidth="210" verticalAlignment="visualCenter">
+					<Color r="230" g="20" b="145" a="255"/>
+					<GradientColor enabled="false"/>
+					<Shadow enabled="false"/>
+					<Size x="17" y="17"/>
+				</Text>
+			</SceneObject>
+			<SceneObject class="Button" name="LinkButton">
+				<Translation x="285" y="567"/>
+				<Scale x="1.2" y="1.2" z="1.2"/>
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+					<Insets bottom="59" left="54" right="54" top="48"/>
+					<Pivot anchor="center"/>
+					<Size height="108" width="300"/>
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true"/>
+				<Animation animationData="OnPress" loopCount="0" name="OnPress"/>
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease"/>
+				<SceneObject name="PlayButtonText">
+					<Translation y="-4"/>
+					<Scale x="1.2" y="1.2" z="1.2"/>
+					<Text alignment="center" font="Banana" key="go_to_candy_crush_button" maxHeight="40" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="255" g="255" b="255" a="225"/>
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25"/>
+							<Offset x="0" y="6"/>
+						</Shadow>
+						<Size x="24" y="24"/>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="12" space="Local" timeToEmit="0.100" name="FizzBurstSparkPFX">
+    <Dampening min="0.800" max="0.800"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="1" depth="0" height="1"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="50"/>
+    <Rotation min="0" max="0"/>
+    <RotationSpeed min="0" max="0"/>
+    <Size>
+        <Max x="20" y="20"/>
+        <Min x="5" y="5"/>
+    </Size>
+    <SizeChange>
+        <Max x="-20" y="-20"/>
+        <Min x="-30" y="-30"/>
+    </SizeChange>
+    <StartColor b="255" r="241" g="34" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/fizz_bubble.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive min="0.300" max="0.300"/>
+    <Velocity min="400" max="500"/>
+</ParticleEffect>

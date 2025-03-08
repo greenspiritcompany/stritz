@@ -1,0 +1,18 @@
+<Timelines>
+<Timeline startTime="0" endTime="4">
+	<Triggers>
+		<EffectTrigger time="0" name="emphasized_toplist_arrive_EFQ" targetName="emphasized_toplist_arrive_grp" />
+		<EffectTrigger time="0.100" name="emphasized_toplist_arrive_top_EFQ" targetName="OnTop" />
+		<EffectTrigger time="0.107" name="Eve_ConfettiRed_effect" targetName="emphasized_toplist_arrive_grp">
+			<Offset x="0" y="-15" z="0" />
+		</EffectTrigger>
+		<EffectTrigger time="0.150" name="Eve_ConfettiOrange_effect" targetName="emphasized_toplist_arrive_grp">
+			<Offset x="-220" y="-25" z="0" />
+		</EffectTrigger>
+		<EffectTrigger time="0.250" name="Eve_ConfettiCyan_effect" targetName="emphasized_toplist_arrive_grp">
+			<Offset x="220" y="-30" z="0" />
+		</EffectTrigger>
+	</Triggers>
+	<TimeControls />
+</Timeline>
+</Timelines>

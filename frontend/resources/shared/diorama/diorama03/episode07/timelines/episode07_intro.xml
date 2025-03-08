@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+    
+		<Triggers>
+      <EffectTrigger time="0.0" name="character_cookie_lady"/>
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp07.0"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp07" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp07" animationName="SpeechBubbleDisappear"/>
+			<EffectTrigger time="0.0" name="character_honey_dragon"/>
+			<AnimationTrigger time="0.10" targetName="HoneyDragon" animationName="Talk" crossFade="0.1"/>
+			<AnimationTrigger time="4.0" targetName="HoneyDragon" animationName="Idle" crossFade="0.4"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

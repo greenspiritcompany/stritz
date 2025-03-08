@@ -1,0 +1,13 @@
+<!DOCTYPE TimelineXML SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Triggers>
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp06.0"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp06" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger targetName="GoatIdle" animationName="goatTalk" crossFade="1.0" time="0"/>
+			<AnimationTrigger targetName="GoatIdle" animationName="idle_sad" crossFade="1.0" time="4.0"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp06" animationName="SpeechBubbleDisappear"/>
+			<EffectTrigger name="character_yeti" time="0.1"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

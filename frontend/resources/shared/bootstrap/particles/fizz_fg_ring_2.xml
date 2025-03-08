@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="2" space="Local" timeToEmit="20" name="FizzFgRing2">
+    <Dampening min="1" max="1"/>
+    <Emitter emissionRate="0.300" spread="0" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+        <Position x="18" y="-20"/>
+    </Emitter>
+    <EndColor b="255" r="254" g="251" a="0"/>
+    <Rotation min="0" max="0"/>
+    <RotationSpeed min="0" max="0"/>
+    <Size>
+        <Max x="30" y="30"/>
+        <Min x="30" y="30"/>
+    </Size>
+    <SizeChange>
+        <Max x="80" y="80"/>
+        <Min x="80" y="80"/>
+    </SizeChange>
+    <StartColor b="255" r="248" g="234" a="140"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/bright_ring64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive min="0.500" max="0.500"/>
+    <Velocity min="0" max="0"/>
+</ParticleEffect>

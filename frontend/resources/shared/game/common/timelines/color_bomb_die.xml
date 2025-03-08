@@ -1,0 +1,16 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.51">
+		<Triggers>
+			<AnimationTrigger time="0.0" animationName="explodeAnim" targetName="Colorbomb"/>
+			<AnimationTrigger time="0.0" animationName="hit_activate_01" targetName="colorbombfx_hit_01"/>
+			<AnimationTrigger time="0.0" animationName="hit_activate_02" targetName="colorbombfx_hit_02"/>
+			<AnimationTrigger time="0.0" animationName="hit_activate_03" targetName="colorbombfx_hit_03"/>
+			<AnimationTrigger time="0.0" animationName="hit_activate_04" targetName="colorbombfx_hit_04"/>
+
+			<EffectTrigger time="0.0" name="ColorbombCrushed"/>
+			<EffectTrigger time="0.0" name="ColorBombDie"/>
+			<EffectTrigger time="0.5" name="ColorBombHitSound"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

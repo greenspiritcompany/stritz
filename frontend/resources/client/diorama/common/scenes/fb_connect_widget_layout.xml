@@ -1,0 +1,21 @@
+<Layout>
+	<Object sceneObject="FbConnectIconRoot">
+		<Default>
+			<Size>
+				<Width percentage="10"/>
+				<Height percentage="10"/>
+				<OriginalSize width="64" height="64"/>
+			</Size>
+			<Translation>
+				<X percentage="100"/>
+				<Y percentage="100"/>
+			</Translation>
+		</Default>
+		<Portrait>
+			<Translation>
+				<X percentage="100"/>
+				<Y percentage="100"/>
+			</Translation>
+		</Portrait>
+	</Object>
+</Layout>

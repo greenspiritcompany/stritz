@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="LifeModal">
+		<Default>
+			<Translation>
+				<X percentage="50.0"/>
+				<Y percentage="50.0"/>
+			</Translation>
+		</Default>
+		<Landscape>
+			<Size>
+				<Height percentage="100.0"/>
+				<OriginalSize height="720" width="1024"/>
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Size>
+				<Width percentage="100.0"/>
+				<OriginalSize height="1024" width="668"/>
+			</Size>
+		</Portrait>
+	</Object>
+
+	<Object sceneObject="LandscapeBG">
+		<Landscape visible="true"/>
+		<Portrait visible="false"/>
+	</Object>
+	<Object sceneObject="PortraitBG">
+		<Landscape visible="false"/>
+		<Portrait visible="true"/>
+	</Object>
+
+
+	<!-- out of lives or get more lives position adjustments -->
+	<Object sceneObject="TopButtonGroup">
+		<OutOfLivesPortrait>
+			<Translation>
+				<Y percentage="14"/>
+			</Translation>
+		</OutOfLivesPortrait>
+		<GetMoreLivesPortrait>
+			<Translation>
+				<Y percentage="23"/>
+			</Translation>
+		</GetMoreLivesPortrait>
+		<OutOfLivesLandscape>
+			<Translation>
+				<Y percentage="20"/>
+			</Translation>
+		</OutOfLivesLandscape>
+		<GetMoreLivesLandscape>
+			<Translation>
+				<Y percentage="31"/>
+			</Translation>
+		</GetMoreLivesLandscape>
+	</Object>
+
+
+	<!-- out of lives or get more lives hide/show -->
+	<Object sceneObject="BuyButton">
+		<OutOfLives visible="true"/>
+		<GetMoreLives visible="false"/>
+	</Object>
+	<Object sceneObject="OutOfLivesHeader">
+		<OutOfLives visible="true"/>
+		<GetMoreLives visible="false"/>
+	</Object>
+	<Object sceneObject="GetMoreLivesHeader">
+		<OutOfLives visible="false"/>
+		<GetMoreLives visible="true"/>
+	</Object>
+	<Object sceneObject="OutOfLivesText">
+		<OutOfLives visible="true"/>
+		<GetMoreLives visible="false"/>
+	</Object>
+	<Object sceneObject="GetMoreLivesText">
+		<OutOfLives visible="false"/>
+		<GetMoreLives visible="true"/>
+	</Object>
+</Layout>

@@ -1,0 +1,11 @@
+<Timelines>
+<Timeline startTime="0" endTime="3">
+	<Triggers>
+		<AnimationTrigger time="0.064" targetName="exclgrp" animationName="jumparound" />
+		<EffectTrigger time="0.478" name="QuestNewQuestEFQ" targetName="exclgrp" />
+	</Triggers>
+	<TimeControls>
+		<TimeJump time="1.835" jumpToTime="0" />
+	</TimeControls>
+</Timeline>
+</Timelines>

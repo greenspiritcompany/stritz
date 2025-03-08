@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<Material name="SpriteMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="false" writeMask="false"/>
+
+		</Material>
+	</Materials>
+	<SceneObject name="Scene" visibility="always">
+		<Rotation x="40"/>
+		<SceneObject name="ParticleTransform">
+			<SceneObject name="ParticleTransformChild">
+				<Translation x="50"></Translation>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ParticleTransform2">
+			<SceneObject name="ParticleTransformChild2">
+				<Translation x="50"></Translation>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

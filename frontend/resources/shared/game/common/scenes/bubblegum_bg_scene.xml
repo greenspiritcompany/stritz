@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/bubblegum_material.xml"/>
+	<SceneObject name="Scene">
+		<SceneObject layerFlags="1" name="BubblegumBg">
+			<Scale y="-1"/>
+			<Model filename="shared/game/common/models/bubblegum/bubblegum_bg.ffm">
+				<Animation name="GrowFromLeft" 		filename="shared/game/common/models/bubblegum/grow_from_left.ffa" loopCount="0" play="false"/>
+				<Animation name="GrowFromRight" 	filename="shared/game/common/models/bubblegum/grow_from_right.ffa" loopCount="0" play="false"/>
+				<Animation name="GrowFromTop" 		filename="shared/game/common/models/bubblegum/grow_from_top.ffa" loopCount="0" play="false"/>
+				<Animation name="GrowFromBottom" 	filename="shared/game/common/models/bubblegum/grow_from_bottom.ffa" loopCount="0" play="false"/>
+				<Animation name="idle" 				filename="shared/game/common/models/bubblegum/bg_idle.ffa" loopCount="-1" play="false"/>
+				<Animation name="Wobble" 			filename="shared/game/common/models/bubblegum/bg_wobble.ffa" loopCount="0" play="false"/>
+				<Animation name="Die" 				filename="shared/game/common/models/bubblegum/bg_die.ffa" loopCount="0" play="false"/>
+			</Model>
+			<Material parentMaterial="BubblegumBgMaterial"/>
+		</SceneObject>
+
+        <!--Borrowing "HONEY_CRACK" model for this-->
+
+        <SceneObject layerFlags="512" name="BubblegumCrush">
+			<Scale x="0.22" y="-0.22" z="0.22"/>
+			<Model filename="shared/game/common/models/honey/honey_tile_cracked.ffm">
+				<Animation name="Break" 		filename="shared/game/common/models/honey/honey_tile_crack.ffa" loopCount="0" play="false"/>
+			</Model>
+            <Materials>
+                <Material name="BubblegumCrushMaterial">
+                    <Blend enabled="false"/>
+                    <Cull enabled="false" face="back"/>
+                    <Shader program="TextureColor"/>
+                    <Textures>
+                        <Texture filename="shared/game/common/tex/candy/bubblegum_crush_tex.png"/>
+                    </Textures>
+                </Material>
+            </Materials>
+		</SceneObject>
+	</SceneObject>
+</Scene>

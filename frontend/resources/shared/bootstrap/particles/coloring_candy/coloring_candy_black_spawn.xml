@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="9" space="Local" timeToEmit="1.920" name="ColoringCandyBlackSpawnPFX">
+    <Dampening max="0.720" min="0.720"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.030" spread="360" angle="0">
+        <SpawnArea width="19.320" depth="0" height="19.320"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="255"/>
+    <Rotation max="360" min="-360"/>
+    <RotationSpeed max="360" min="-360"/>
+    <Size>
+        <Max x="69.130" y="69.130"/>
+        <Min x="69.130" y="69.130"/>
+    </Size>
+    <SizeChange>
+        <Max x="-194.360" y="-194.360"/>
+        <Min x="-194.360" y="-194.360"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/coloring_black_blob64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.360" min="0.240"/>
+    <Velocity max="263.620" min="263.620"/>
+</ParticleEffect>

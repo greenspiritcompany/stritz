@@ -1,0 +1,25 @@
+{
+  "id": "scorechaser",
+  "nameKey" : "quests.names.scorechaser",
+  "difficulty" : 0,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "beatYourself",
+      "descriptionKey" : "quests.description.scorechaser",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_beat_old_score.png",
+      "data": {
+		"amount" : 2
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    }
+  ]
+}

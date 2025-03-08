@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="CollabLock">
+		<Animation name="ScaleDown" animationData="OnDisappearScale" loopCount="0" speed="0.300" />
+		<Animation name="InteractionWobble" animationData="Idle" startTime="0.500" />
+		<Material name="BoardGamePieceMaterial">
+			<Cull enabled="true" face="back" />
+			<Texture filename="shared/diorama/common/tex/boardGamePiece.png" />
+		</Material>
+		<Material name="BoardGamePieceMaterialAlpha" parentMaterial="BoardGamePieceMaterial">
+			<Depth writeMask="false" enabled="true" />
+			<Blend enabled="true" />
+		</Material>
+		<SceneObject name="CollabLockFoot">
+			<Material>
+				<Texture filename="shared/diorama/common/tex/boardGamePieceBlue.png" />
+			</Material>
+			<Model filename="shared/diorama/common/models/collab_lock/foot.ffm" />
+			<Scale xyz="2" />
+			<Translation x="0" y="2" z="0" />
+		</SceneObject>
+		<SceneObject name="Board_game_piece_Shadow">
+			<Model filename="shared/diorama/common/models/kimmy/kimmy_diorama/boardgamepieceshadow.ffm" />
+			<Material parentMaterial="BoardGamePieceMaterialAlpha">
+				<Color r="255" g="255" b="255" a="170" />
+			</Material>
+			<Translation x="2" y="2" z="0" />
+			<Rotation x="0" y="0" z="0" />
+			<Scale x="2" y="2" z="2" />
+		</SceneObject>
+		<SceneObject name="CollabLockPassed">
+			<Interactable upEffect="character_kimmy" />
+			<Translation z="5" />
+			<Rotation x="-14" />
+			<SceneObject name="BottlesIcon">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/bottles_icon.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Animation animationData="cloud_idle" name="Idle" play="false" speed="0.300" layer="4" loopCount="-1" />
+				<Animation animationData="interactable_v03_up" name="Up" layer="3" play="false" loopCount="0" speed="1.700" />
+				<Animation animationData="interactable_v03_up" name="OnPress" layer="3" loopCount="0" speed="1.700" />
+				<Animation animationData="interactable_out" name="OnRelease" layer="2" loopCount="0" speed="1.700" />
+				<Animation animationData="interactable_down" name="Down" layer="1" loopCount="0" speed="1.700" />
+				<Scale x="0.750" y="-0.750" z="0.750" />
+				<Translation x="0" y="90" z="-1" />
+			</SceneObject>
+			<SceneObject name="FriendBoxes">
+				<Translation x="0" y="57" z="10" />
+				<Scale y="-1" />
+				<SceneObject name="Box1">
+					<Translation x="-55" />
+					<Scale xyz="0.75" />
+					<SceneObject name="Friend1">
+						<Translation y="-1" z="-1" />
+						<Scale xyz="1.1" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/prof_pic.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Frame">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_pink.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Box2">
+					<Scale xyz="0.75" />
+					<SceneObject name="Friend2">
+						<Translation y="-1" z="-1" />
+						<Scale xyz="1.1" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/prof_pic.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Frame">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_pink.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Box3">
+					<Translation x="55" />
+					<Scale xyz="0.75" />
+					<SceneObject name="Friend3">
+						<Translation y="-1" z="-1" />
+						<Scale xyz="1.1" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/prof_pic.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Frame">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_pink.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

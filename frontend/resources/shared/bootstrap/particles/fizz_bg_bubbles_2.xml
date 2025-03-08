@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="3" space="World" timeToEmit="60" name="FizzBgBubbles2PFX">
+    <Dampening min="1" max="1"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.050" spread="0" angle="-90">
+        <SpawnArea width="76" depth="0" height="74"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation min="0" max="0"/>
+    <RotationSpeed min="0" max="0"/>
+    <Size>
+        <Max x="16" y="16"/>
+        <Min x="8" y="8"/>
+    </Size>
+    <StartColor b="255" r="255" g="255" a="194"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/fizz_bg_particle.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive min="0.200" max="0.400"/>
+    <Velocity min="20" max="50"/>
+    <SizeChange>
+        <Min x="32" y="32"/>
+        <Max x="32" y="32"/>
+    </SizeChange>
+</ParticleEffect>

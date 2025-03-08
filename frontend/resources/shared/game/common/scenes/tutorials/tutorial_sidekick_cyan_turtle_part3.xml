@@ -1,0 +1,141 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0.0" endTime="4.0">
+
+         <!--ALWAYS HIDE-->
+
+        <Animate target="TutorialText1">
+            <Hide/>
+        </Animate>
+
+        <Animate target="CyanCollectGRP">
+            <Hide/>
+        </Animate>
+
+        <Animate target="NextButton">
+            <Hide/>
+        </Animate>
+
+        <!-- Text -->
+        <Animate target="TutorialText2">
+            <Show/>
+        </Animate>
+
+        <Animate target="SidekickInactive">
+            <Hide/>
+        </Animate>
+
+        <Animate target="SidekickActive">
+            <Hide/>
+        </Animate>
+
+        <Animate target="ProgressBar">
+            <Hide/>
+        </Animate>
+
+        <Animate target="ChargeMeter">
+            <Hide/>
+        </Animate>
+
+        <Animate target="GameGrid">
+            <Show/>
+        </Animate>
+
+        <Animate target="CandyOrange1">
+            <Show/>
+            <Scale time="0.0" x="1" y="1" z="1"/>
+            <Scale time="1.8" x="1" y="1" z="1"/>
+            <Scale time="2.2" x="1.1" y="1.1" z="1.1"/>
+            <Hide time="2.3"/>
+        </Animate>
+
+        <Animate target="Glow1">
+            <Hide/>
+            <Show time="1.8"/>
+            <Color time="1.8" a="0" r="255" g="255" b="255"/>
+            <Color time="2.1" a="255" r="255" g="255" b="255"/>
+            <Color time="2.2" a="255" r="255" g="255" b="255"/>
+            <Color time="2.3" a="0" r="255" g="255" b="255"/>
+            <Hide time="2.3"/>
+        </Animate>
+
+        <Animate target="CandyOrange2">
+            <Show/>
+            <Scale time="0.0" x="1" y="1" z="1"/>
+            <Scale time="1.75" x="1" y="1" z="1"/>
+            <Scale time="2.15" x="1.1" y="1.1" z="1.1"/>
+            <Hide time="2.25"/>
+        </Animate>
+
+        <Animate target="Glow2">
+            <Hide/>
+            <Show time="1.75"/>
+            <Color time="1.75" a="0" r="255" g="255" b="255"/>
+            <Color time="1.85" a="255" r="255" g="255" b="255"/>
+            <Color time="2.15" a="255" r="255" g="255" b="255"/>
+            <Color time="2.25" a="0" r="255" g="255" b="255"/>
+            <Hide time="2.25"/>
+        </Animate>
+
+        <Animate target="CandyOrange3">
+            <Show/>
+            <Scale time="0.0" x="1" y="1" z="1"/>
+            <Scale time="1.85" x="1" y="1" z="1"/>
+            <Scale time="2.25" x="1.1" y="1.1" z="1.1"/>
+            <Hide time="2.35"/>
+        </Animate>
+
+        <Animate target="Glow3">
+            <Hide/>
+            <Show time="1.85"/>
+            <Color time="1.85" a="0" r="255" g="255" b="255"/>
+            <Color time="1.95" a="255" r="255" g="255" b="255"/>
+            <Color time="2.25" a="255" r="255" g="255" b="255"/>
+            <Color time="2.35" a="0" r="255" g="255" b="255"/>
+            <Hide time="2.35"/>
+        </Animate>
+
+        <Animate target="CandyOrange4">
+            <Show/>
+            <Scale time="0.0" x="1" y="1" z="1"/>
+            <Scale time="1.9" x="1" y="1" z="1"/>
+            <Scale time="2.3" x="1.1" y="1.1" z="1.1"/>
+            <Hide time="2.4"/>
+        </Animate>
+
+        <Animate target="Glow4">
+            <Hide/>
+            <Show time="1.9"/>
+            <Color time="1.9" a="0" r="0" g="0" b="0"/>
+            <Color time="2.0" a="255" r="255" g="255" b="255"/>
+            <Color time="2.3" a="255" r="255" g="255" b="255"/>
+            <Color time="2.4" a="0" r="0" g="0" b="0"/>
+            <Hide time="2.4"/>
+        </Animate>
+
+
+
+        <Triggers>
+            <AnimationTrigger animationName="idle" targetName="TutorialCharacter" time="0.0" crossFade="0.2"/>
+
+            <EffectTrigger name="character_yeti" time="0.0"/>
+            <EffectTrigger name="TutorialCandySelectedEFQ" targetName="CandyOrange2" time="0.7"/>
+
+            <EffectTrigger name="SwitcherExplodeNormalOrangeCandy" parentName="ScaleHelperOrange1" time="2.3"/>
+            <EffectTrigger name="SidekickCandyRemovedEFQ" parentName="ScaleHelperOrange1" time="2.3"/>
+            <EffectTrigger name="SwitcherExplodeNormalOrangeCandy" parentName="ScaleHelperOrange2" time="2.25"/>
+            <EffectTrigger name="SidekickCandyRemovedEFQ" parentName="ScaleHelperOrange2" time="2.25"/>
+            <EffectTrigger name="SwitcherExplodeNormalOrangeCandy" parentName="ScaleHelperOrange3" time="2.35"/>
+            <EffectTrigger name="SidekickCandyRemovedEFQ" parentName="ScaleHelperOrange3" time="2.35"/>
+            <EffectTrigger name="SwitcherExplodeNormalOrangeCandy" parentName="ScaleHelperOrange4" time="2.4"/>
+            <EffectTrigger name="SidekickCandyRemovedEFQ" parentName="ScaleHelperOrange4" time="2.4"/>
+
+        </Triggers>
+
+        <TimeControls>
+            <TimeJump time="3.9" jumpToTime="0.1"/>
+        </TimeControls>
+
+
+    </Timeline>
+</Timelines>

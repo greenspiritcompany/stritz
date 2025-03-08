@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Layout SYSTEM "../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="Background">
+		<Landscape>
+			<Size>
+				<Width percentage="100" />
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Size>
+				<Height percentage="100" />
+			</Size>
+		</Portrait>
+	</Object>
+	<Object sceneObject="Content">
+		<Portrait>
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="-0.900" />
+			</Translation>
+			<Size>
+				<Width percentage="55" />
+				<OriginalSize width="320" height="0" />
+			</Size>
+		</Portrait>
+		<Landscape>
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="1.100" />
+			</Translation>
+			<Size>
+				<Height percentage="56.200" />
+				<OriginalSize width="0" height="320" />
+			</Size>
+		</Landscape>
+	</Object>
+	<Object sceneObject="KingLogo">
+		<Portrait>
+			<Size>
+				<Height percentage="19.800" />
+			</Size>
+		</Portrait>
+		<Landscape>
+			<Size>
+				<Height percentage="26.100" />
+			</Size>
+		</Landscape>
+	</Object>
+	<Object sceneObject="LoadingScreen">
+		<Default>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</Default>
+	</Object>
+	<Object sceneObject="LoadingText">
+		<Portrait>
+			<Translation>
+				<Y percentage="19.200" />
+			</Translation>
+			<Size>
+				<Height percentage="39" />
+				<OriginalSize width="0" height="480" />
+			</Size>
+		</Portrait>
+		<Landscape>
+			<Size>
+				<Height percentage="42.500" />
+				<OriginalSize width="0" height="320" />
+			</Size>
+			<Translation>
+				<Y percentage="29.800" />
+			</Translation>
+		</Landscape>
+	</Object>
+</Layout>

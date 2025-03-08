@@ -1,0 +1,22 @@
+<ParticleEffect name="Eve_Twinkle_particle" timeToEmit="60" space="Local" maxParticles="2">
+<Dampening max="0.850" min="0.750" />
+<Emitter emissionRate="0.300" angle="0" spread="1">
+	<SpawnArea height="70" depth="50" width="0" />
+</Emitter>
+<EndColor r="255" g="247" b="184" a="0" />
+<Size>
+	<Max y="25" x="30" />
+	<Min y="10" x="15" />
+</Size>
+<SizeChange>
+	<Max y="0" x="0" />
+	<Min y="0" x="0" />
+</SizeChange>
+<StartColor r="255" g="255" b="127" a="255" />
+<Texture blend="Add" numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/eve_twinkle_pfx.png" />
+<TextureFrame numTextureAnimationFrames="1" startFrame="0" textureAnimationSpeed="60" />
+<TimeToLive min="0.500" max="1" />
+<Velocity max="50" min="50" />
+<Rotation min="90" max="90" />
+<RotationSpeed min="0" max="0" />
+</ParticleEffect>

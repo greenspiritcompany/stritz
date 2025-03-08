@@ -1,0 +1,24 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<Import filename="shared/game/common/materials/colorbomb_material.xml"/>
+	<Scale y="1"/>
+	<Translation x="0"/>
+	<SceneObject name="colorBomb">
+		<Model filename="shared/game/common/models/colorbomb/colorbomb.ffm">
+			<Animation play="true" loopCount="-1" name="idle" filename="shared/game/common/models/colorbomb/colorbomb.ffa" layer="999"/>
+			<Animation play="false" name="activate_spin" filename="shared/game/common/models/colorbomb/activate_spin.ffa" layer="999"/>
+		</Model>
+		<Material parentMaterial="ColorBombMaterial"/>
+		<Scale z="14.50" x="14.50" y="-14.50"/>
+		<Rotation y="0"/>
+		<Translation z="0"/>
+		<SceneObject name="ColorBombShadow">
+			<Model filename="shared/game/common/models/colorbomb/colorbomb_shadow.ffm"/>
+			<Material parentMaterial="ColorBombShadowMaterial"/>
+			<Translation z="2" x="0" y="0"/>
+		</SceneObject>
+		<SceneObject name="ParticleScaleNode">
+			<Scale z="1.07" x="1.07" y="1.07"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

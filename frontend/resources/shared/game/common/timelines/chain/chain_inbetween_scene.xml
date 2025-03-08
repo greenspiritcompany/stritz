@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+    <Material name="ChainInbetweenMaterial">
+        <Blend enabled="true"/>
+        <Depth enabled="true" writeMask="false"/>
+        <Cull enabled="false" face="back"/>
+        <!-- Set to false since the vertex winding seems messed up between FF and SL -->
+        <Shader program="TextureColor"/>
+    </Material>
+
+    <SceneObject name="Scene" visibility="always">
+        <SceneObject name="ChainInbetweenNorth">
+            <Sprite filename="shared/game/common/tex/candy/chain_inbetween_c.png">
+                <Pivot anchor="center"/>
+            </Sprite>
+            <Material parentMaterial="ChainInbetweenMaterial"/>
+            <Translation y="-37" z="-110"/>
+            <Rotation z="-90"/>
+        </SceneObject>
+        <SceneObject name="ChainInbetweenWest">
+            <Sprite filename="shared/game/common/tex/candy/chain_inbetween_c.png">
+                <Pivot anchor="center"/>
+            </Sprite>
+            <Material parentMaterial="ChainInbetweenMaterial"/>
+            <Translation x="-37" z="-110"/>
+        </SceneObject>
+
+    </SceneObject>
+</Scene>

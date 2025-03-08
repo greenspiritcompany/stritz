@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:63165ce35f4cc29233e83e921e06cc15:bd49f8fd2ac3c584290d45140349e8be:a5c1639fc55419a69d6e91a2237af692$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gui_elements_common.png" width="1024" height="1024">
+    <sprite n="arch_shadow_25percent.png" x="282" y="696" w="91" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="background_panel_1px.png" x="477" y="2" w="414" h="1" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="btn_arrow_icon.png" x="2" y="975" w="57" h="46" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="btn_blue.png" x="292" y="571" w="110" h="110" pX="0.5" pY="0.5"/>
+    <sprite n="btn_exit.png" x="178" y="939" w="33" h="30" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="btn_green.png" x="342" y="734" w="110" h="110" pX="0.5" pY="0.5"/>
+    <sprite n="btn_green_arrow.png" x="889" y="124" w="133" h="135" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="btn_grey.png" x="406" y="571" w="110" h="110" pX="0.5" pY="0.5"/>
+    <sprite n="btn_grey_arrow.png" x="866" y="263" w="135" h="133" pX="0.5" pY="0.5"/>
+    <sprite n="btn_mint.png" x="449" y="440" w="110" h="110" pX="0.5" pY="0.5"/>
+    <sprite n="btn_orange.png" x="456" y="685" w="110" h="110" pX="0.5" pY="0.5"/>
+    <sprite n="btn_pink.png" x="511" y="799" w="110" h="110" pX="0.5" pY="0.5"/>
+    <sprite n="ccjs_portal_header.png" x="224" y="571" w="64" h="121" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ccjs_portal_header_shadow.png" x="866" y="189" w="17" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="ccjs_portal_image.png" x="2" y="2" w="471" h="354" pX="0.5" pY="0.5"/>
+    <sprite n="ccjs_portal_tab.png" x="242" y="753" w="96" h="111" pX="0.5" pY="0.5"/>
+    <sprite n="ccs_ccjs_portal_icon.png" x="858" y="400" w="163" h="118" pX="0.5" pY="0.5"/>
+    <sprite n="ccs_tab.png" x="442" y="916" w="100" h="104" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="desk_glow.png" x="377" y="685" w="59" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="desk_shadow.png" x="449" y="396" w="59" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="double_fish_diorama.png" x="740" y="7" w="149" h="108" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_downleft.png" x="242" y="868" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_downright.png" x="310" y="868" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_upleft.png" x="374" y="936" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_upright.png" x="378" y="848" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="goalbox.png" x="219" y="939" w="85" h="82" pX="0.5" pY="0.5"/>
+    <sprite n="goalbox_left.png" x="63" y="975" w="74" h="43" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="goalbox_right.png" x="141" y="975" w="74" h="43" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="goalbox_shadow.png" x="178" y="753" w="60" h="182" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="goldbar_sticker.png" x="726" y="355" w="128" h="81" pX="0.5" pY="0.5"/>
+    <sprite n="hard_inner_modal.png" x="2" y="753" w="172" h="218" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="heart1.png" x="477" y="7" w="259" h="151" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_customercare.png" x="625" y="396" w="58" h="55" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_home.png" x="224" y="696" w="54" h="53" pX="0.5" pY="0.5"/>
+    <sprite n="icon_music_active.png" x="563" y="396" w="58" h="54" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_music_inactive.png" x="563" y="454" w="58" h="54" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_quit.png" x="546" y="913" w="54" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="icon_screen_max.png" x="604" y="913" w="54" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="icon_screen_min.png" x="520" y="554" w="54" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="icon_settings_active.png" x="520" y="616" w="54" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="icon_settings_inactive.png" x="570" y="678" w="54" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="icon_sound_active.png" x="570" y="740" w="58" h="54" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="icon_sound_inactive.png" x="625" y="798" w="54" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="inner_modal.png" x="227" y="360" w="218" h="207" pX="0.5" pY="0.5"/>
+    <sprite n="inner_modal_no_x.png" x="2" y="542" w="218" h="207" pX="0.5" pY="0.5"/>
+    <sprite n="kingdom_logo.png" x="446" y="848" w="61" h="62" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="lollipops.png" x="477" y="162" w="245" h="230" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="sales_icon_bg.png" x="895" y="2" w="123" h="118" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="sales_icon_box.png" x="308" y="936" w="62" h="72" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="sales_icon_image.png" x="740" y="119" w="145" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="settings_box.png" x="726" y="189" w="136" h="162" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="spring_sales_tab.png" x="2" y="360" w="221" h="178" pX="0.5" pY="0.5"/>
+</TextureAtlas>

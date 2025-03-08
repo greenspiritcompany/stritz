@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Entry" class="Button">
+		<SceneObject name="Content">
+			<Panel filename="shared/diorama/common/tex/gui_elements/friend_box.png">
+				<Insets bottom="50" left="50" right="50" top="50"/>
+				<Size width="290" height="80"/>
+				<Pivot anchor="center"/>
+			</Panel>
+            <SceneObject name="Frame">
+                <Translation x="-63" y="-1"/>
+                <Scale xyz="0.90" />
+                <Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_pink.png">
+                    <Pivot anchor="center"/>
+                </Sprite>
+            </SceneObject>
+			<SceneObject name="Checkbox">
+				<Translation x="-134" y="-16" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/check_box.png" />
+				<SceneObject name="Check">
+					<Translation x="-8" y="-12" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/check_blue.png"><Scale xy="0.6" /></Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Name">
+				<Translation x="-20"/>
+				<Text canBreakWords="false" alignment="left" font="Typewriter" maxWidth="150" maxHeight="48" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color r="174" g="12" b="97" a="255"/>
+				</Text>
+			</SceneObject>
+
+		</SceneObject>
+
+	</SceneObject>
+</Scene>

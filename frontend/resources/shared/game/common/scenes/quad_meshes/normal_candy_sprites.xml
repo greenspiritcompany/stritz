@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/candy/candy_material.xml"/>
+
+	<SceneObject name="BlueCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/blue_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="RedCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/red_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="YellowCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/yellow_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="OrangeCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/orange_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="GreenCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/green_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="CyanCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/cyan_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="PurpleCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/purple_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="BlackCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/8th_candy_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+</Scene>

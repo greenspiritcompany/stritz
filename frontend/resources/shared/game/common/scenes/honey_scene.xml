@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/honey_material.xml"/>
+
+
+	<SceneObject name="Solid1">
+		<Sprite filename="shared/game/common/tex/candy/honey_solid_1_c.png"/>
+		<Material name="HoneySolid1Mat"/>
+	</SceneObject>
+	<SceneObject name="Solid2">
+		<Sprite filename="shared/game/common/tex/candy/honey_solid_2_c.png"/>
+		<Material name="HoneySolid2Mat"/>
+	</SceneObject>
+	<SceneObject name="Solid3">
+		<Sprite filename="shared/game/common/tex/candy/honey_solid_3_c.png"/>
+		<Material name="HoneySolid3Mat"/>
+	</SceneObject>
+	<SceneObject name="Solid4">
+		<Sprite filename="shared/game/common/tex/candy/honey_solid_4_c.png"/>
+		<Material name="HoneySolid4Mat"/>
+	</SceneObject>
+
+	<SceneObject name="SeeThrough1">
+		<Sprite filename="shared/game/common/tex/candy/honey_bear_1_c.png"/>
+		<Material name="SeeThrough1Mat"/>
+	</SceneObject>
+	<SceneObject name="SeeThrough2">
+		<Sprite filename="shared/game/common/tex/candy/honey_bear_2_c.png"/>
+		<Material name="SeeThrough2Mat"/>
+	</SceneObject>
+
+	<SceneObject name="Empty1">
+		<Sprite filename="shared/game/common/tex/candy/honey_empty_1_c.png"/>
+		<Material name="Empty1Mat"/>
+	</SceneObject>
+	<SceneObject name="Empty2">
+		<Sprite filename="shared/game/common/tex/candy/honey_empty_2_c.png"/>
+		<Material name="Empty2Mat"/>
+	</SceneObject>
+
+	<SceneObject name="Special1">
+		<Sprite filename="shared/game/common/tex/candy/honey_special_1_c.png"/>
+		<Material name="Special1Mat"/>
+	</SceneObject>
+	<SceneObject name="Special2">
+		<Sprite filename="shared/game/common/tex/candy/honey_special_2_c.png"/>
+		<Material name="Special2Mat"/>
+	</SceneObject>
+</Scene>

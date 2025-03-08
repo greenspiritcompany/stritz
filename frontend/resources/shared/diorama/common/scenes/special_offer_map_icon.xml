@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="LiveOpsMapView">
+		<Translation z="520" />
+		<SceneObject name="SpecialOfferButton" editorEntityId="460">
+			<Translation y="290" x="120" />
+			<Animation animationData="OnAppearGrow" name="OnAppear" loopCount="0" startTime="0.100" />
+			<Animation animationData="OnDisappearScale" name="OnDisappear" loopCount="0" />
+			<SceneObject name="Icon" class="Button">
+				<Translation x="-330.143" y="-143.848" z="0" />
+				<SceneObject name="BG">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/sales_icon_bg.png" vertexColors="false" />
+					<Translation x="213.411" y="52.632" z="0" />
+					<SceneObject name="BG2">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/sales_icon_bg.png" vertexColors="false">
+							<Flip u="true" />
+						</Sprite>
+						<Translation x="118" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Image">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/sales_icon_image.png" vertexColors="false" />
+					<Translation x="262.262" y="116.083" z="0" />
+				</SceneObject>
+				<SceneObject name="Box">
+					<Panel filename="shared/diorama/common/tex/gui_elements/sales_icon_box.png" vertexColors="false">
+						<Insets bottom="40" left="34" right="34" top="16" />
+						<Size width="210" />
+					</Panel>
+					<Translation x="226.435" y="171.976" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Title">
+				<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" key="spring_sale_map_icon_title" maxHeight="45" maxWidth="135" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Size x="18" y="18" />
+				</Text>
+				<Translation x="1.776" y="-58.577" z="0" />
+			</SceneObject>
+			<SceneObject name="RemainingTime">
+				<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="45" maxWidth="160" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="2" g="50" r="115" />
+					<Shadow>
+						<Color a="255" b="165" g="252" r="255" />
+						<Offset x="0" />
+					</Shadow>
+					<TextString>0</TextString>
+				</Text>
+				<Translation x="3.426" y="53.112" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="0" />
+			</Translation>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Landscape">
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="1024" width="570" />
+				<Width percentage="80" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

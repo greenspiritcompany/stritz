@@ -1,0 +1,37 @@
+<Layout>
+	<Object sceneObject="TopLeft">
+		<Default>
+			<Size>
+				<Width percentage="45" max="289"/>
+				<Height percentage="100" max="124"/>
+				<OriginalSize width="289" height="124"/>
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="TopRight">
+		<Default>
+			<Size>
+				<Width percentage="45" max="289"/>
+				<Height percentage="100" max="124"/>
+				<OriginalSize width="289" height="124"/>
+			</Size>
+			<Translation>
+				<X percentage="100"/>
+			</Translation>
+		</Default>
+	</Object>
+	<Object sceneObject="BottomRight">
+		<Default>
+			<Size>
+				<Width percentage="45" max="289"/>
+				<Height percentage="100" max="124"/>
+				<OriginalSize width="289" height="124"/>
+			</Size>
+			<Translation>
+				<X percentage="100"/>
+				<Y percentage="100"/>
+			</Translation>
+		</Default>
+	</Object>
+	
+</Layout>

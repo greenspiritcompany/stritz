@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:3bd92a5b15e42b500fc4eb7334d6bc0f:3c3904a290f54a5a10672e84aef0429d:aa065c0d6089b6e5e70f603dc16d9895$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="quest_header.png" width="512" height="512">
+    <sprite n="backdrop.png" x="1" y="45" w="329" h="161" pX="0.5" pY="0.5"/>
+    <sprite n="beach.png" x="1" y="208" w="322" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="beach2.png" x="271" y="445" w="159" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="chest.png" x="338" y="1" w="167" h="223" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="glow_small.png" x="271" y="395" w="48" h="48" pX="0.5" pY="0.5"/>
+    <sprite n="glowquest.png" x="191" y="268" w="125" h="125" pX="0.5" pY="0.5"/>
+    <sprite n="palm_tree_big.png" x="325" y="226" w="165" h="208" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="palm_tree_small.png" x="191" y="436" w="78" h="61" pX="0.5" pY="0.5"/>
+    <sprite n="pirate.png" x="1" y="268" w="188" h="241" pX="0.5" pY="0.5"/>
+    <sprite n="wave.png" x="1" y="1" w="335" h="42" pX="0.5" pY="0.5"/>
+</TextureAtlas>

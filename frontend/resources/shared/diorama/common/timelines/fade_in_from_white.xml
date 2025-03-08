@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="0.81">
+		<Animate target="WhiteWall" time="0.0">
+			<Show time="0.0"/>
+			<Color time="0" a="255"/>
+			<!--<Color time="0.3" a="1"/>-->
+			<Color time="0.5" a="0"/>
+			<Hide time="0.5"/>
+		</Animate>
+		<TimeControls>
+			<!--<TimeJump time="11.0" jumpToTime="0.0"/>-->
+			<!--<TimeJump time="8.0" jumpToTime="7.9"/>-->
+			<!--<Pause time="2.684"/>-->
+			<!--<Pause time="8.684"/>-->
+		</TimeControls>
+	</Timeline>
+</Timelines>

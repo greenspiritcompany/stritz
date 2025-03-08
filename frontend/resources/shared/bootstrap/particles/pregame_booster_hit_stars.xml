@@ -1,0 +1,23 @@
+<ParticleEffect space="Local" timeToEmit="60" name="PregameBoosterHitStarsPFX" maxParticles="4">
+<Dampening min="0.500" max="0.800" />
+<DirectionalForce x="0" />
+<Emitter emissionRate="0" spread="360" angle="90">
+	<SpawnArea width="70" depth="0" height="70" />
+</Emitter>
+<EndColor r="255" g="225" b="75" a="0" />
+<Rotation max="5" min="5" />
+<RotationSpeed min="-20" max="80" />
+<Size>
+	<Max x="9" y="9" />
+	<Min x="7" y="7" />
+</Size>
+<SizeChange>
+	<Max x="10" y="10" />
+	<Min x="8" y="8" />
+</SizeChange>
+<StartColor r="249" g="255" b="135" a="210" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/glowing_star.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0" />
+<TimeToLive min="0.600" max="1.600" />
+<Velocity min="0" max="0" />
+</ParticleEffect>

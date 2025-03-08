@@ -1,0 +1,66 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+
+	<!-- Here we go! -->
+	<Timeline startTime="0.0" endTime="2.5">
+		<!-- Init hide -->
+		<Animate target="SwipeRoot">
+			<Hide/>
+		</Animate>
+		<Triggers>
+			<!-- Joint animation -->
+			<AnimationTrigger targetName="Soda" animationName="FillUp" time="0.01"/>
+			<!-- Sound -->
+			<EffectTrigger name="SugarCrushSwipeSFQ" time="0.0"/>
+
+			<!-- Particle effects -->
+			<EffectTrigger name="SugarCrushBubblesFoamEFQ" targetName="Soda" targetBoneIndex="4" time="0.04">
+				<Offset z="10"/>
+			</EffectTrigger>
+			<EffectTrigger name="SugarCrushBubblesFoamEFQ" targetName="Soda" targetBoneIndex="2" time="0.08">
+				<Offset z="10"/>
+			</EffectTrigger>
+			<EffectTrigger name="SugarCrushBubblesFoamEFQ" targetName="Soda" targetBoneIndex="1" time="0.12">
+				<Offset z="10"/>
+			</EffectTrigger>
+			<EffectTrigger name="SugarCrushBubblesFoamEFQ" targetName="Soda" targetBoneIndex="3" time="0.16">
+				<Offset z="10"/>
+			</EffectTrigger>
+			<EffectTrigger name="SugarCrushBubblesFoamEFQ" targetName="Soda" targetBoneIndex="8" time="0.20">
+				<Offset z="10"/>
+			</EffectTrigger>
+			<EffectTrigger name="SugarCrushBubblesFoamEFQ" targetName="Soda" targetBoneIndex="5" time="0.24">
+				<Offset z="10"/>
+			</EffectTrigger>
+			<EffectTrigger name="SugarCrushBubblesFoamEFQ" targetName="Soda" targetBoneIndex="6" time="0.28">
+				<Offset z="10"/>
+			</EffectTrigger>
+			<EffectTrigger name="SugarCrushBubblesFoamEFQ" targetName="Soda" targetBoneIndex="7" time="0.32">
+				<Offset z="10"/>
+			</EffectTrigger>
+		</Triggers>
+		<Animate target="SwipeRoot" time="0.6">
+			<Show/>
+		</Animate>
+		<Triggers>
+			<AnimationTrigger targetName="SwipeRoot" animationName="OnWinAppear" time="0.6"/>
+			<!-- Sound -->
+			<EffectTrigger name="SwipeSwoopInEFQ" time="0.6"/>
+
+			<!--<CustomTrigger time="1.05" data="SwipeEnd" name="SwipeEnd"/>-->
+			<AnimationTrigger targetName="SwipeRoot" animationName="OnWinDisappear" time="0.9"/>
+			<!-- Sound -->
+			<EffectTrigger name="SwipeSwoopOutEFQ" time="0.9"/>
+
+			<!-- Joint animation -->
+			<AnimationTrigger targetName="Soda" animationName="EmptyOut" time="1.4"/>
+			<!-- Sound -->
+			<EffectTrigger name="SugarCrushSwipeOutSFQ" time="1.4"/>
+
+		</Triggers>
+		<TimeControls>
+			<Pause time="0.89" timeout="2.0"/>
+		</TimeControls>
+
+	</Timeline>
+</Timelines>

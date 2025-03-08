@@ -1,0 +1,113 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/fish_wrapped_material.xml"/>
+	<Import filename="shared/game/common/materials/fish_material.xml"/>
+
+	<SceneObject name="Scene" layerFlags="512">
+		<SceneObject name="FishRoot">
+			<SceneObject name="FishAnimation">
+				<Sprite>
+					<Pivot anchor="center" x="-2.5" y="-1"/>
+                    <Scale x="4" y="4"/>
+				</Sprite>
+				<Materials>
+					<Material>
+						<Depth writeMask="false" enabled="true"/>
+						<Blend enabled="true" blendFuncDestinationFactor="One"/>
+						<Textures>
+							<Texture filename="shared/game/common/tex/candy/glow.png"/>
+						</Textures>
+					</Material>
+				</Materials>
+				<Animations>
+					<Animation name="FishGoAnim" animationData="FishGoAnimData" loopCount="-1"/>
+					<Animation name="FishWrappedAnim" animationData="FishWrappedAnimData" loopCount="-1" layer="1"/>
+				</Animations>
+				<SceneObject name="jam_1" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_jam_1_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="Jam1OnFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+                    <Translation x="5" y="-12" z="1000"/>
+				</SceneObject>
+				<SceneObject name="jam_2" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_jam_1_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="Jam1OnFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+                    <Translation x="5" y="-12" z="1000"/>
+				</SceneObject>
+				<SceneObject name="blue" visibility="never">
+					<Sprite filename="shared/game/common/tex/candy/fish_blue_wrapped_c.png" normals="true">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="BlueFishWrappedMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="cyan" visibility="never">
+					<Sprite filename="shared/game/common/tex/candy/fish_cyan_wrapped_c.png" normals="true">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="CyanFishWrappedMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="green" visibility="never">
+					<Sprite filename="shared/game/common/tex/candy/fish_green_wrapped_c.png" normals="true">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="GreenFishWrappedMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="orange" visibility="never">
+					<Sprite filename="shared/game/common/tex/candy/fish_orange_wrapped_c.png" normals="true">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="OrangeFishWrappedMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="purple" visibility="never">
+					<Sprite filename="shared/game/common/tex/candy/fish_purple_wrapped_c.png" normals="true">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="PurpleFishWrappedMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="red" visibility="never">
+					<Sprite filename="shared/game/common/tex/candy/fish_red_wrapped_c.png" normals="true">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="RedFishWrappedMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="yellow" visibility="never">
+					<Sprite filename="shared/game/common/tex/candy/fish_yellow_wrapped_c.png" normals="true">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="YellowFishWrappedMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

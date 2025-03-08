@@ -1,0 +1,33 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../../tools/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="2.0">
+
+        <Animate target="ThoughtBubble" time="0.0">
+            <Hide/>
+        </Animate>
+
+
+
+
+
+        <Animate target="Active" time="0.0">
+            <Show/>
+        </Animate>
+
+        <Animate target="Inactive" time="0.0">
+            <Hide/>
+        </Animate>
+
+        <TimeControls>
+            <TimeJump time="1.0" jumpToTime="0.01"/>
+        </TimeControls>
+
+
+		<Triggers>
+            <AnimationTrigger time="0.0" animationName="selected" targetName="Active" crossFade="0.0"/>
+			<EffectTrigger name="SidekickSelectedEFQ" time="0.02" parentName="ParticleHelperSelected"/>
+            <EffectTrigger name="SprinkleshellSelectSFX" time="0.0"/>
+		</Triggers>
+
+	</Timeline>
+</Timelines>

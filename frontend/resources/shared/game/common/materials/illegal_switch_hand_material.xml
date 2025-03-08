@@ -1,0 +1,10 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<Material name="IllegalSwitchHandMaterial">
+		<Blend enabled="true"/>
+		<Depth writeMask="false" enabled="true"/>
+		<Cull enabled="true" face="front"/>
+		<Shader program="TextureColor"/>
+		<Texture filename="shared/game/common/tex/boosters/illegal_switch_hand_c.png"/>
+	</Material>
+</Scene>

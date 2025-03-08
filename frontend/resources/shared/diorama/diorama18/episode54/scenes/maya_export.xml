@@ -1,0 +1,514 @@
+<Scene>
+	<Materials>
+		<Material name="Episode54Material">
+			<Cull enabled="false" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama18/episode54/tex/episode54_material.png"/>
+			</Textures>
+		</Material>
+		<Material name="Episode54MaterialAlpha" parentMaterial="Episode54Material">
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<Material name="Episode54PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/path_tex.png"/>
+			</Textures>
+		</Material>
+		<Material name="Episode54PathMaterialAlpha" parentMaterial="Episode54PathMaterial">
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<Material name="Episode54BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama18/episode54/tex/episode54_material.png"/>
+			</Textures>
+		</Material>
+		<Material name="Episode54BackdropMaterialAlpha" parentMaterial="Episode54BackdropMaterial">
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+	</Materials>
+	<SceneObject name="horse">
+		<Model filename="shared/diorama/diorama18/episode54/models/character/horse.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="351.260700675" y="-9.87391419138" z="-129.839532165"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar_blossom1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar_blossom1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="85.2038172197" y="5.71807853768" z="345.853514504"/>
+		<Rotation x="-30.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar_blossom1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar_blossom1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="85.2038172197" y="5.71807853768" z="345.853514504"/>
+		<Rotation x="-30.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar_blossom2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar_blossom2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-609.74856764" y="5.71807853768" z="353.875984591"/>
+		<Rotation x="-30.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar_blossom2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar_blossom2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-609.74856764" y="5.71807853768" z="353.875984591"/>
+		<Rotation x="-30.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-658.753337555" y="-3.88507948867e-16" z="-231.065523016"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-658.753337555" y="-3.88507948867e-16" z="-231.065523016"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="740.731783911" y="-9.18405393415" z="-350.089605582"/>
+		<Rotation x="-2.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="740.731783911" y="-9.18405393415" z="-350.089605582"/>
+		<Rotation x="-2.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="fontain">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/fontain.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-138.492463835" y="-28.0047120799" z="-298.580745251"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="fontain">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/fontain.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-138.492463835" y="-28.0047120799" z="-298.580745251"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="bush1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/bush1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-833.460646473" y="-1.49884946417e-16" z="-333.83852081"/>
+		<Rotation x="-5.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="bush1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/bush1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-833.460646473" y="-1.49884946417e-16" z="-333.83852081"/>
+		<Rotation x="-5.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="bush2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/bush2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="535.993971354" y="3.8398361658e-16" z="-305.092527547"/>
+		<Rotation x="-5.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="bush2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/bush2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="535.993971354" y="3.8398361658e-16" z="-305.092527547"/>
+		<Rotation x="-5.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar_broken_bottom">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar_broken_bottom.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="857.712722881" y="0.0" z="-163.305306279"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar_broken_bottom">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar_broken_bottom.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="857.712722881" y="0.0" z="-163.305306279"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar_broken_top1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar_broken_top1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-874.641284695" y="-6.14388983165" z="-121.398178029"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar_broken_top1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar_broken_top1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-874.641284695" y="-6.14388983165" z="-121.398178029"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar_broken_top2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar_broken_top2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="964.615252477" y="0.0" z="343.343137712"/>
+		<Rotation x="-30.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="pillar_broken_top2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/pillar_broken_top2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="964.615252477" y="0.0" z="343.343137712"/>
+		<Rotation x="-30.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_bubbels1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/soda_bubbels1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="6.77902267132" y="-32.9862422059" z="-178.371608557"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_bubbels1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/soda_bubbels1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="6.77902267132" y="-32.9862422059" z="-178.371608557"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="orange_candy1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/orange_candy1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="1.49898904664" y="-32.9862422059" z="-181.81711606"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="orange_candy1">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/orange_candy1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="1.49898904664" y="-32.9862422059" z="-181.81711606"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_bubbels2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/soda_bubbels2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-410.659459724" y="-32.9862422059" z="-96.9008571466"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_bubbels2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/soda_bubbels2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-410.659459724" y="-32.9862422059" z="-96.9008571466"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="orange_candy2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/orange_candy2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-818.210962104" y="-4.6939723167" z="-31.5720960568"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="orange_candy2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/orange_candy2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-818.210962104" y="-4.6939723167" z="-31.5720960568"/>
+		<Rotation x="-15.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="bg_hill2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/bg_hill2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-617.417501477" y="3.02232176339" z="-368.120468555"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="bg_hill2">
+		<Model filename="shared/diorama/diorama18/episode54/models/interactable/bg_hill2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-617.417501477" y="3.02232176339" z="-368.120468555"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_shadow1">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda_shadow1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="63.5852201655" y="-28.5722748175" z="-246.343071062"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_shadow1">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda_shadow1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="63.5852201655" y="-28.5722748175" z="-246.343071062"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_shadow2">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda_shadow2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-360.453097124" y="0.0" z="-166.900855319"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_shadow2">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda_shadow2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-360.453097124" y="0.0" z="-166.900855319"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow1">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/asset_shadow1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="110.242434702" y="4.31459941971" z="309.055101245"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow1">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/asset_shadow1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="110.242434702" y="4.31459941971" z="309.055101245"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow2">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/asset_shadow2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-546.794584035" y="-5.31011621582" z="278.459724197"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow2">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/asset_shadow2.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-546.794584035" y="-5.31011621582" z="278.459724197"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow3">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/asset_shadow3.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-829.782130802" y="-8.77108683182" z="-209.048186901"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow3">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/asset_shadow3.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="-829.782130802" y="-8.77108683182" z="-209.048186901"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow4">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/asset_shadow4.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="1568.81260596" y="0.0" z="-450.626498039"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow4">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/asset_shadow4.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="1568.81260596" y="0.0" z="-450.626498039"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow5">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/asset_shadow5.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="1646.64560556" y="0.0" z="50.8253796737"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow5">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/asset_shadow5.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="1646.64560556" y="0.0" z="50.8253796737"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="character_shadow">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/character_shadow.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="392.994116825" y="-8.66560593421" z="-221.945978205"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="character_shadow">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/character_shadow.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="392.994116825" y="-8.66560593421" z="-221.945978205"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="bg_hill1">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/bg_hill1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="106.674515355" y="16.74326061" z="-368.125216452"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="bg_hill1">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/bg_hill1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="106.674515355" y="16.74326061" z="-368.125216452"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="sky">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/sky.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="sky">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/sky.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_shore">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda_shore.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_shore">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda_shore.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda_shore">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda_shore.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda1">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="soda1">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/soda1.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ground">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/ground.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ground">
+		<Model filename="shared/diorama/diorama18/episode54/models/non_interactable/ground.ffm"/>
+		<Materials>
+			<Material parentMaterial="Episode54MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<Material name="KimmyHappy">
+		<Texture filename="shared/diorama/common/tex/kimmy/kimmy_happy_tex.png" />
+		<Blend enabled="true" />
+		<Cull face="back" enabled="false" />
+		<Depth writeMask="false" enabled="true" />
+	</Material>
+	<Material name="KimmySad">
+		<Texture filename="shared/diorama/common/tex/kimmy/kimmy_sad_tex.png" />
+		<Blend enabled="true" />
+		<Cull face="back" enabled="false" />
+		<Depth writeMask="false" enabled="true" />
+	</Material>
+	<SceneObject name="PlayGameSwipe">
+		<SceneObject name="Landscape">
+			<Translation x="-40" y="40" z="510" />
+			<Animation animationData="SlideInFromLeft" name="OnAppear" loopCount="0" />
+			<Animation animationData="SlideOutToLeft" name="OnDisappear" startDelay="0.050" loopCount="0" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="KimmyHappy" visibility="never">
+				<Translation x="180" y="120" z="50" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="2" y="-2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_happy.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_happy_idle.ffa" play="true" speed="1" name="idle" loopCount="-1" />
+				</Model>
+				<Material parentMaterial="KimmyHappy" />
+			</SceneObject>
+			<SceneObject name="speechBubbleKimmy" visibility="never">
+				<Translation x="-270" y="-70" z="0" />
+				<Scale x="0.930" y="0.930" z="0.930" />
+				<Sprite filename="shared/diorama/common/tex/kimmy/speechbubble.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject name="speechBubbleKimmyText" visibility="never">
+				<Translation x="-110" y="15" z="1" />
+				<Scale x="0.930" y="0.930" z="0.930" />
+				<Text font="BananaInnerShadow" overflowBehaviour="fit" alignment="center" verticalAlignment="visualCenter" maxHeight="150" maxWidth="300" key="Woo-hoo! Sweet moves!">
+					<Parameter name="speech">Level failed!</Parameter>
+					<Color a="255" b="229" g="154" r="10" />
+					<Size x="34" y="34" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="KimmySad" visibility="never">
+				<Translation x="180" y="120" z="50" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="2" y="-2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_sad.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_sad_idle.ffa" play="true" speed="1" name="idle" loopCount="-1" />
+				</Model>
+				<Material parentMaterial="KimmySad" />
+			</SceneObject>
+			<SceneObject name="GameModeIconAttachPoint">
+				<Translation x="-250" y="-214" z="100" />
+			</SceneObject>
+			<SceneObject name="LevelText">
+				<Translation x="-7" y="-322" />
+				<Text font="Banana" alignment="center" verticalAlignment="visualCenter" key="kotc.levelsLeft">
+					<Parameter name="levelsLeft">3</Parameter>
+					<Color a="255" b="128" g="62" r="165" />
+					<Shadow enabled="true">
+						<Color a="255" b="255" g="255" r="255" />
+						<Offset x="0" y="3" z="1" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="GoalBox">
+				<Translation x="0" y="-4.800" z="0" />
+				<SceneObject>
+					<Translation y="80" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/goalbox.png" vertexColors="false">
+						<Insets right="24" bottom="22" left="24" top="30" />
+						<Pivot anchor="center" />
+						<Size height="185" width="494" />
+					</Panel>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-1.200" y="-47.800" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_upper.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-228" y="79.400" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_left.png" vertexColors="false">
+						<Pivot anchor="right" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="227.200" y="2.400" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_right.png" vertexColors="false">
+						<Pivot y="-77" anchor="left" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation y="33.800" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/goalbox_shadow2.png" vertexColors="false">
+						<Insets right="145" left="145" bottom="0" top="0" />
+						<Pivot anchor="center" />
+						<Size height="60" width="460" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="goalbox_text">
+					<Translation x="-1.200" y="-23.600" z="0" />
+					<Text font="Banana" alignment="center" key="popup_game_start_task_title">
+						<Parameter name="level">13</Parameter>
+						<Color a="255" b="0" g="155" r="232" />
+						<Shadow enabled="true">
+							<Color a="255" b="255" g="255" r="255" />
+						</Shadow>
+						<Size x="27" y="27" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="GameModeGoalAttachmentPoint">
+					<Translation x="-159.598" y="87.203" z="0" />
+					<SceneObject name="GameModeText">
+						<Translation x="220.800" y="-4.799" z="2" />
+						<Text font="Banana" overflowBehaviour="fit" alignment="center" verticalAlignment="visualCenter" maxHeight="80" maxWidth="280" key="Get the bears above the candy string">
+							<Color a="255" b="0" g="155" r="232" />
+							<Outline enabled="true">
+								<Color a="255" b="0" g="0" r="0" />
+							</Outline>
+							<Pivot anchor="center" />
+							<Shadow enabled="true">
+								<Color a="255" b="255" g="255" r="255" />
+							</Shadow>
+							<Size x="23" y="23" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BrokenHeart" visibility="never">
+				<Translation y="-180" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/broken_heart.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject class="Button" name="PlayButton">
+				<Translation y="252" />
+				<Scale x="1.200" y="1.200" z="1.200" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets right="54" bottom="59" left="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="300" />
+				</Panel>
+				<Animation animationData="Idle" play="true" name="Idle" layer="1" />
+				<Animation animationData="OnPress" name="OnPress" loopCount="0" />
+				<Animation animationData="OnRelease" name="OnRelease" loopCount="0" />
+				<SceneObject name="PlayButtonText">
+					<Translation y="-7" />
+					<Text font="Banana" overflowBehaviour="fit" alignment="center" verticalAlignment="visualCenter" maxHeight="40" maxWidth="180" key="common.play">
+						<Color a="225" b="255" g="255" r="255" />
+						<Shadow enabled="true">
+							<Color a="25" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="25" y="25" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Path">
+				<Translation x="0" y="17.600" z="0" />
+				<SceneObject name="Hills">
+					<Translation x="-213" y="-284.349" />
+					<Sprite filename="shared/castle/tex/hills.png" vertexColors="false" />
+				</SceneObject>
+				<SceneObject name="Backing">
+					<SceneObject name="Left">
+						<Translation x="-239" y="-236" />
+						<Sprite filename="shared/castle/tex/path.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Right">
+						<Translation y="-235.824" />
+						<Sprite filename="shared/castle/tex/path.png" vertexColors="false">
+							<Flip u="true" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Fills">
+					<SceneObject name="Fill1" visibility="never">
+						<Translation x="-185" y="-140" />
+						<Rotation z="-27" />
+						<Sprite filename="shared/castle/tex/path_fill.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Fill2" visibility="never">
+						<Translation x="-85" y="-200" />
+						<Sprite filename="shared/castle/tex/path_fill.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Fill3" visibility="never">
+						<Translation x="35" y="-211" />
+						<Rotation z="25" />
+						<Sprite filename="shared/castle/tex/path_fill.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Fill4" visibility="never">
+						<Translation x="144.820" y="-173.101" />
+						<Rotation z="52" />
+						<Sprite filename="shared/castle/tex/path_fill.png" vertexColors="false" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Pins">
+					<SceneObject name="Pin1">
+						<Translation x="-231" y="-141" />
+						<Scale x="0.500" y="0.500" />
+						<Import filename="shared/castle/scenes/play_game_pin1.xml" />
+					</SceneObject>
+					<SceneObject name="Pin2">
+						<Translation x="-144" y="-204" />
+						<Scale x="0.500" y="0.500" />
+						<Import filename="shared/castle/scenes/play_game_pin2.xml" />
+					</SceneObject>
+					<SceneObject name="Pin3">
+						<Translation x="-37" y="-229" />
+						<Scale x="0.500" y="0.500" />
+						<Import filename="shared/castle/scenes/play_game_pin3.xml" />
+					</SceneObject>
+					<SceneObject name="Pin4">
+						<Translation x="69" y="-204" />
+						<Scale x="0.500" y="0.500" />
+						<Import filename="shared/castle/scenes/play_game_pin4.xml" />
+					</SceneObject>
+					<SceneObject name="Pin5">
+						<Translation x="157" y="-141" />
+						<Scale x="0.500" y="0.500" />
+						<Import filename="shared/castle/scenes/play_game_pin5.xml" />
+					</SceneObject>
+					<SceneObject name="Crown">
+						<Translation x="175" y="-183" />
+						<Sprite filename="shared/castle/tex/crown.png" vertexColors="false" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BoosterContainer">
+				<SceneObject name="LockedBoosters">
+					<Translation x="0" y="-2.040" z="0" />
+					<SceneObject name="LockedBooster1">
+						<Scale x="1.150" y="1.150" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false" />
+						<Translation x="-218.844" y="70.710" z="0" />
+						<SceneObject name="Lock">
+							<Scale x="0.435" y="0.435" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/ov_icon_locked.png" vertexColors="false" />
+							<Translation x="30.423" y="20.823" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="LockedBooster2">
+						<Scale x="1.150" y="1.150" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false" />
+						<Translation x="-69.167" y="70.710" z="0" />
+						<SceneObject name="Lock">
+							<Scale x="0.435" y="0.435" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/ov_icon_locked.png" vertexColors="false" />
+							<Translation x="30.423" y="20.823" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="LockedBooster3">
+						<Scale x="1.150" y="1.150" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false" />
+						<Translation x="81.150" y="70.710" z="0" />
+						<SceneObject name="Lock">
+							<Scale x="0.435" y="0.435" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/ov_icon_locked.png" vertexColors="false" />
+							<Translation x="30.423" y="20.823" z="0" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="UnlockedBoosters">
+					<Translation x="0" y="-2.040" z="0" />
+					<SceneObject class="Button" name="Booster1">
+						<Animation animationData="Idle" play="true" name="Idle" />
+						<Animation animationData="OnPress" name="OnPress" loopCount="0" />
+						<Animation animationData="OnRelease" name="OnRelease" loopCount="0" />
+						<Scale x="1.150" y="1.150" z="1" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation x="-155.381" y="134.286" z="0" />
+						<SceneObject name="Icon">
+							<Scale x="0.911" y="0.911" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon_playgame.png" vertexColors="false" />
+							<Translation x="-27.068" y="-33.221" z="0" />
+						</SceneObject>
+						<SceneObject name="Inactive">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_noti_icon.png" vertexColors="false" />
+							<Translation x="9.962" y="-6.627" z="0" />
+							<SceneObject name="Plus">
+								<Text font="Banana" key="+">
+									<Size x="28" y="28" />
+								</Text>
+								<Translation x="12.252" y="34.373" z="0" />
+							</SceneObject>
+							<SceneObject name="Number">
+								<Text font="Banana" alignment="center" verticalAlignment="center" key="3" />
+								<Translation x="23.690" y="31.244" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="Active" visibility="never">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" />
+							<Translation x="9.715" y="-6.399" z="0" />
+							<SceneObject name="Check">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" />
+								<Translation x="11.370" y="12.865" z="0" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject class="Button" name="Booster2">
+						<Animation animationData="Idle" play="true" name="Idle" />
+						<Animation animationData="OnPress" name="OnPress" loopCount="0" />
+						<Animation animationData="OnRelease" name="OnRelease" loopCount="0" />
+						<Scale x="1.150" y="1.150" z="1" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation x="-5.703" y="134.286" z="0" />
+						<SceneObject name="Icon">
+							<Scale x="0.911" y="0.911" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon_playgame.png" vertexColors="false" />
+							<Translation x="-25.936" y="-32.124" z="0" />
+						</SceneObject>
+						<SceneObject name="Inactive">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_noti_icon.png" vertexColors="false" />
+							<Translation x="9.962" y="-6.627" z="0" />
+							<SceneObject name="Plus">
+								<Text font="Banana" key="+">
+									<Size x="28" y="28" />
+								</Text>
+								<Translation x="12.252" y="34.373" z="0" />
+							</SceneObject>
+							<SceneObject name="Number">
+								<Text font="Banana" alignment="center" verticalAlignment="center" key="3" />
+								<Translation x="23.690" y="31.244" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="Active" visibility="never">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" />
+							<Translation x="9.715" y="-6.399" z="0" />
+							<SceneObject name="Check">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" />
+								<Translation x="11.370" y="12.865" z="0" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject class="Button" name="Booster3">
+						<Animation animationData="Idle" play="true" name="Idle" />
+						<Animation animationData="OnPress" name="OnPress" loopCount="0" />
+						<Animation animationData="OnRelease" name="OnRelease" loopCount="0" />
+						<Scale x="1.150" y="1.150" z="1" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation x="144.614" y="134.286" z="0" />
+						<SceneObject name="Icon">
+							<Scale x="0.858" y="0.858" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/doublefish_icon_playgame.png" vertexColors="false" />
+							<Translation x="-30.375" y="-32.719" z="0" />
+						</SceneObject>
+						<SceneObject name="Inactive">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_noti_icon.png" vertexColors="false" />
+							<Translation x="9.962" y="-6.627" z="0" />
+							<SceneObject name="Plus">
+								<Text font="Banana" key="+">
+									<Size x="28" y="28" />
+								</Text>
+								<Translation x="12.252" y="34.373" z="0" />
+							</SceneObject>
+							<SceneObject name="Number">
+								<Text font="Banana" alignment="center" verticalAlignment="center" key="3" />
+								<Translation x="23.690" y="31.244" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="Active" visibility="never">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" />
+							<Translation x="9.715" y="-6.399" z="0" />
+							<SceneObject name="Check">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" />
+								<Translation x="11.370" y="12.865" z="0" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject />
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<SceneObject name="Portrait">
+			<Translation z="400" />
+			<Animation animationData="SlideInFromLeft" name="OnAppear" loopCount="0" />
+			<Animation animationData="SlideOutToLeft" name="OnDisappear" startDelay="0.050" loopCount="0" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="KimmyHappy" visibility="never">
+				<Translation x="180" y="120" z="50" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="2" y="-2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_happy.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_happy_idle.ffa" play="true" speed="1" name="idle" loopCount="-1" />
+				</Model>
+				<Material parentMaterial="KimmyHappy" />
+			</SceneObject>
+			<SceneObject name="speechBubbleKimmy" visibility="never">
+				<Translation x="-270" y="-70" z="0" />
+				<Scale x="0.930" y="0.930" z="0.930" />
+				<Sprite filename="shared/diorama/common/tex/kimmy/speechbubble.png" vertexColors="false">
+					<Flip u="true" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="speechBubbleKimmyText" visibility="never">
+				<Translation x="-110" y="15" z="1" />
+				<Scale x="0.930" y="0.930" z="0.930" />
+				<Text font="BananaInnerShadow" overflowBehaviour="fit" alignment="center" verticalAlignment="visualCenter" maxHeight="150" maxWidth="300" key="Woo-hoo! Sweet moves!">
+					<Parameter name="speech">Level failed!</Parameter>
+					<Color a="255" b="229" g="154" r="10" />
+					<Size x="34" y="34" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="KimmySad" visibility="never">
+				<Translation x="180" y="120" z="50" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="2" y="-2" z="2" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_sad.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_sad_idle.ffa" play="true" speed="1" name="idle" loopCount="-1" />
+				</Model>
+				<Material parentMaterial="KimmySad" />
+			</SceneObject>
+			<SceneObject name="GameModeIconAttachPoint">
+				<Translation x="-250" y="-214" z="100" />
+			</SceneObject>
+			<SceneObject name="LevelText">
+				<Translation y="-322" />
+				<Text font="Banana" alignment="center" verticalAlignment="visualCenter" key="kotc.levelsLeft">
+					<Parameter name="levelsLeft">3</Parameter>
+					<Color a="255" b="128" g="62" r="165" />
+					<Shadow enabled="true">
+						<Color a="255" b="255" g="255" r="255" />
+						<Offset x="0" y="3" z="1" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="GoalBox">
+				<Translation x="0" y="-4.800" z="0" />
+				<SceneObject>
+					<Translation y="80" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/goalbox.png" vertexColors="false">
+						<Insets right="24" bottom="22" left="24" top="30" />
+						<Pivot anchor="center" />
+						<Size height="185" width="494" />
+					</Panel>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-1.200" y="-47.800" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_upper.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-228" y="79.400" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_left.png" vertexColors="false">
+						<Pivot anchor="right" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="227.200" y="2.400" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/goalbox_right.png" vertexColors="false">
+						<Pivot y="-77" anchor="left" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="0" y="33.200" z="0" />
+					<Panel filename="shared/diorama/common/tex/gui_elements/goalbox_shadow2.png" vertexColors="false">
+						<Insets right="145" left="145" bottom="0" top="0" />
+						<Pivot anchor="center" />
+						<Size height="60" width="460" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="goalbox_text">
+					<Translation x="-1.200" y="-23.600" z="0" />
+					<Text font="Banana" alignment="center" key="popup_game_start_task_title">
+						<Parameter name="level">13</Parameter>
+						<Color a="255" b="0" g="155" r="232" />
+						<Shadow enabled="true">
+							<Color a="255" b="255" g="255" r="255" />
+						</Shadow>
+						<Size x="27" y="27" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="GameModeGoalAttachmentPoint">
+					<Translation x="-159.598" y="87.203" z="0" />
+					<SceneObject name="GameModeText">
+						<Translation x="220.800" y="-4.799" z="2" />
+						<Text font="Banana" overflowBehaviour="fit" alignment="center" verticalAlignment="visualCenter" maxHeight="80" maxWidth="280" key="Get the bears above the candy string">
+							<Color a="255" b="0" g="155" r="232" />
+							<Outline enabled="true">
+								<Color a="255" b="0" g="0" r="0" />
+							</Outline>
+							<Pivot anchor="center" />
+							<Shadow enabled="true">
+								<Color a="255" b="255" g="255" r="255" />
+							</Shadow>
+							<Size x="23" y="23" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Path">
+				<Translation x="0" y="17.600" z="0" />
+				<SceneObject name="Hills">
+					<Translation x="-213" y="-284.349" />
+					<Sprite filename="shared/castle/tex/hills.png" vertexColors="false" />
+				</SceneObject>
+				<SceneObject name="Backing">
+					<SceneObject name="Left">
+						<Translation x="-239" y="-236" />
+						<Sprite filename="shared/castle/tex/path.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Right">
+						<Translation y="-235.824" />
+						<Sprite filename="shared/castle/tex/path.png" vertexColors="false">
+							<Flip u="true" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Fills">
+					<SceneObject name="Fill1" visibility="never">
+						<Translation x="-185" y="-140" />
+						<Rotation z="-27" />
+						<Sprite filename="shared/castle/tex/path_fill.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Fill2" visibility="never">
+						<Translation x="-85" y="-200" />
+						<Sprite filename="shared/castle/tex/path_fill.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Fill3" visibility="never">
+						<Translation x="35" y="-211" />
+						<Rotation z="25" />
+						<Sprite filename="shared/castle/tex/path_fill.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Fill4" visibility="never">
+						<Translation x="144.820" y="-173.101" />
+						<Rotation z="52" />
+						<Sprite filename="shared/castle/tex/path_fill.png" vertexColors="false" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Pins">
+					<SceneObject name="Pin1">
+						<Translation x="-231" y="-141" />
+						<Scale x="0.500" y="0.500" />
+						<Import filename="shared/castle/scenes/play_game_pin1.xml" />
+					</SceneObject>
+					<SceneObject name="Pin2">
+						<Translation x="-144" y="-204" />
+						<Scale x="0.500" y="0.500" />
+						<Import filename="shared/castle/scenes/play_game_pin2.xml" />
+					</SceneObject>
+					<SceneObject name="Pin3">
+						<Translation x="-37" y="-229" />
+						<Scale x="0.500" y="0.500" />
+						<Import filename="shared/castle/scenes/play_game_pin3.xml" />
+					</SceneObject>
+					<SceneObject name="Pin4">
+						<Translation x="69" y="-204" />
+						<Scale x="0.500" y="0.500" />
+						<Import filename="shared/castle/scenes/play_game_pin4.xml" />
+					</SceneObject>
+					<SceneObject name="Pin5">
+						<Translation x="157" y="-141" />
+						<Scale x="0.500" y="0.500" />
+						<Import filename="shared/castle/scenes/play_game_pin5.xml" />
+					</SceneObject>
+					<SceneObject name="Crown">
+						<Translation x="175" y="-183" />
+						<Sprite filename="shared/castle/tex/crown.png" vertexColors="false" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BrokenHeart" visibility="never">
+				<Translation y="-180" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/broken_heart.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject class="Button" name="PlayButton">
+				<Translation y="252" />
+				<Scale x="1.200" y="1.200" z="1.200" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets right="54" bottom="59" left="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="300" />
+				</Panel>
+				<Animation animationData="Idle" play="true" name="Idle" layer="1" />
+				<Animation animationData="OnPress" name="OnPress" loopCount="0" />
+				<Animation animationData="OnRelease" name="OnRelease" loopCount="0" />
+				<SceneObject name="PlayButtonText">
+					<Translation y="-7" />
+					<Text font="Banana" overflowBehaviour="fit" alignment="center" verticalAlignment="visualCenter" maxHeight="40" maxWidth="180" key="common.play">
+						<Color a="225" b="255" g="255" r="255" />
+						<Shadow enabled="true">
+							<Color a="25" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="27" y="27" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BoosterContainer2">
+				<SceneObject name="LockedBoosters">
+					<Translation x="0" y="-2.040" z="0" />
+					<SceneObject name="LockedBooster1">
+						<Scale x="1.150" y="1.150" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false" />
+						<Translation x="-218.844" y="70.710" z="0" />
+						<SceneObject name="Lock">
+							<Scale x="0.435" y="0.435" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/ov_icon_locked.png" vertexColors="false" />
+							<Translation x="30.423" y="20.823" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="LockedBooster2">
+						<Scale x="1.150" y="1.150" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false" />
+						<Translation x="-69.167" y="70.710" z="0" />
+						<SceneObject name="Lock">
+							<Scale x="0.435" y="0.435" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/ov_icon_locked.png" vertexColors="false" />
+							<Translation x="30.423" y="20.823" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="LockedBooster3">
+						<Scale x="1.150" y="1.150" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false" />
+						<Translation x="81.150" y="70.710" z="0" />
+						<SceneObject name="Lock">
+							<Scale x="0.435" y="0.435" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/ov_icon_locked.png" vertexColors="false" />
+							<Translation x="30.423" y="20.823" z="0" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="UnlockedBoosters">
+					<Translation x="0" y="-2.040" z="0" />
+					<SceneObject class="Button" name="Booster1">
+						<Animation animationData="Idle" play="true" name="Idle" />
+						<Animation animationData="OnPress" name="OnPress" loopCount="0" />
+						<Animation animationData="OnRelease" name="OnRelease" loopCount="0" />
+						<Scale x="1.150" y="1.150" z="1" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation x="-155.381" y="134.286" z="0" />
+						<SceneObject name="Icon">
+							<Scale x="0.911" y="0.911" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon_playgame.png" vertexColors="false" />
+							<Translation x="-27.068" y="-33.221" z="0" />
+						</SceneObject>
+						<SceneObject name="Inactive">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_noti_icon.png" vertexColors="false" />
+							<Translation x="9.962" y="-6.627" z="0" />
+							<SceneObject name="Plus">
+								<Text font="Banana" key="+">
+									<Size x="28" y="28" />
+								</Text>
+								<Translation x="12.252" y="34.373" z="0" />
+							</SceneObject>
+							<SceneObject name="Number">
+								<Text font="Banana" alignment="center" verticalAlignment="center" key="3" />
+								<Translation x="23.690" y="31.244" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="Active" visibility="never">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" />
+							<Translation x="9.715" y="-6.399" z="0" />
+							<SceneObject name="Check">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" />
+								<Translation x="11.370" y="12.865" z="0" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject class="Button" name="Booster2">
+						<Animation animationData="Idle" play="true" name="Idle" />
+						<Animation animationData="OnPress" name="OnPress" loopCount="0" />
+						<Animation animationData="OnRelease" name="OnRelease" loopCount="0" />
+						<Scale x="1.150" y="1.150" z="1" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation x="-5.703" y="134.286" z="0" />
+						<SceneObject name="Icon">
+							<Scale x="0.911" y="0.911" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon_playgame.png" vertexColors="false" />
+							<Translation x="-25.936" y="-32.124" z="0" />
+						</SceneObject>
+						<SceneObject name="Inactive">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_noti_icon.png" vertexColors="false" />
+							<Translation x="9.962" y="-6.627" z="0" />
+							<SceneObject name="Plus">
+								<Text font="Banana" key="+">
+									<Size x="28" y="28" />
+								</Text>
+								<Translation x="12.252" y="34.373" z="0" />
+							</SceneObject>
+							<SceneObject name="Number">
+								<Text font="Banana" alignment="center" verticalAlignment="center" key="3" />
+								<Translation x="23.690" y="31.244" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="Active" visibility="never">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" />
+							<Translation x="9.715" y="-6.399" z="0" />
+							<SceneObject name="Check">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" />
+								<Translation x="11.370" y="12.865" z="0" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject class="Button" name="Booster3">
+						<Animation animationData="Idle" play="true" name="Idle" />
+						<Animation animationData="OnPress" name="OnPress" loopCount="0" />
+						<Animation animationData="OnRelease" name="OnRelease" loopCount="0" />
+						<Scale x="1.150" y="1.150" z="1" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation x="144.614" y="134.286" z="0" />
+						<SceneObject name="Icon">
+							<Scale x="0.858" y="0.858" z="1" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/doublefish_icon_playgame.png" vertexColors="false" />
+							<Translation x="-30.375" y="-32.719" z="0" />
+						</SceneObject>
+						<SceneObject name="Inactive">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_noti_icon.png" vertexColors="false" />
+							<Translation x="9.962" y="-6.627" z="0" />
+							<SceneObject name="Plus">
+								<Text font="Banana" key="+">
+									<Size x="28" y="28" />
+								</Text>
+								<Translation x="12.252" y="34.373" z="0" />
+							</SceneObject>
+							<SceneObject name="Number">
+								<Text font="Banana" alignment="center" verticalAlignment="center" key="3" />
+								<Translation x="23.690" y="31.244" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="Active" visibility="never">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" />
+							<Translation x="9.715" y="-6.399" z="0" />
+							<SceneObject name="Check">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" />
+								<Translation x="11.370" y="12.865" z="0" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject />
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<OriginalSize height="1024" width="684" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

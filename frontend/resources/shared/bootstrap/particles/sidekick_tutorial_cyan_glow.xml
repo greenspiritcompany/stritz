@@ -1,0 +1,23 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="1" space="Local" timeToEmit="0.200" name="SidekickTutorialCyanGlowPFX">
+    <Dampening max="0" min="0"/>
+    <Emitter emissionRate="0" spread="0" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="70" y="70"/>
+        <Min x="70" y="70"/>
+    </Size>
+    <SizeChange>
+        <Max x="0" y="0"/>
+        <Min x="0" y="0"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="220"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/cyan_glow.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.500" min="0.500"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

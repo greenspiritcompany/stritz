@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="Landscape">
+		<Default>
+			<Size>
+				<Width percentage="100.0" max="972"/>
+				<Height percentage="95.0" max="730"/>
+				<OriginalSize width="972" height="730"/>
+			</Size>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="50"/>
+			</Translation>
+		</Default>
+		<Landscape visible="true"/>
+		<Portrait visible="false"/>
+	</Object>
+
+	<Object sceneObject="Portrait">
+		<Default>
+			<Size>
+				<Width percentage="100.0" max="730"/>
+				<Height percentage="95.0" max="972"/>
+				<OriginalSize width="730" height="972"/>
+			</Size>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="50"/>
+			</Translation>
+		</Default>
+		<Landscape visible="false"/>
+		<Portrait visible="true"/>
+	</Object>
+</Layout>

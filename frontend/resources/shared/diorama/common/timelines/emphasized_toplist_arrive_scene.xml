@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="emphasized_toplist_arrive_grp">
+		<SceneObject name="OnTop">
+			<Translation y="0" z="50" />
+		</SceneObject>
+		<Translation y="50" z="0" />
+	</SceneObject>
+</Scene>

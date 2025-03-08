@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<!-- ************************************************************** -->
+
+		<!-- Base material for all candies -->
+		<Material name="CandyMaterial">
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+			<Shader program="TextureColor"/>
+		</Material>
+
+		<!-- ************************************************************** -->
+
+	</Materials>
+</Scene>

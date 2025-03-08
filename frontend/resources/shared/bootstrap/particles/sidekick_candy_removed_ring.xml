@@ -1,0 +1,23 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="1" space="Local" timeToEmit="0.250" name="SidekickCandyRemovedRing">
+    <Dampening max="1" min="1"/>
+    <Emitter emissionRate="0.100" spread="0" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="33" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="20" y="20"/>
+        <Min x="20" y="20"/>
+    </Size>
+    <SizeChange>
+        <Max x="250" y="250"/>
+        <Min x="250" y="250"/>
+    </SizeChange>
+    <StartColor b="249" r="198" g="255" a="120"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/bright_ring64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.400" min="0.400"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

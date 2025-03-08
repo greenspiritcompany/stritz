@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<Material name="BottlesInHudMaterial">
+		<Texture filename="shared/game/common/tex/hud/bottles_in_hud.png" />
+		<Blend blendFuncSourceFactor="One" enabled="true" />
+		<Depth enabled="true" />
+		<Shader program="TextureColor" />
+	</Material>
+	<SceneObject __visibility="0" name="LandscapeSodaToTheBrimStats">
+		<SceneObject name="BearImg">
+			<Translation x="-1.679" y="-35.515" z="10" />
+			<Scale x="0.694" y="-0.694" z="0.430" />
+			<Model filename="shared/game/common/models/soda_candy/bottles_in_hud/bottles_in_hud.ffm">
+				<Animation filename="shared/game/common/models/soda_candy/bottles_in_hud/bottles_in_hud_idle.ffa" name="idle" play="true" />
+				<Animation filename="shared/game/common/models/soda_candy/bottles_in_hud/bottles_in_hud_switch.ffa" name="BottleSwitch" />
+			</Model>
+			<Material parentMaterial="BottlesInHudMaterial" />
+		</SceneObject>
+		<SceneObject name="BottlesText">
+			<Translation x="-7" y="34.500" z="20" />
+			<Text alignment="center" font="PinkNumbers" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="16" y="16" />
+				<TextString>0/3</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkLandscapeRoot">
+			<SceneObject name="CheckmarkLandscape" visibility="never">
+				<Translation x="-2.032" y="36" z="3" />
+				<Scale x="0.850" y="0.850" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject __visibility="3" name="PortraitSodaToTheBrimStats">
+		<SceneObject name="BearImg">
+			<Translation x="-10.393" y="-14.137" z="10" />
+			<Scale x="0.674" y="-0.674" z="0.400" />
+			<Model filename="shared/game/common/models/soda_candy/bottles_in_hud/bottles_in_hud.ffm" skinNormals="false" zSort="backToFront">
+				<Animation filename="shared/game/common/models/soda_candy/bottles_in_hud/bottles_in_hud_idle.ffa" name="idle" play="true" />
+				<Animation filename="shared/game/common/models/soda_candy/bottles_in_hud/bottles_in_hud_switch.ffa" name="BottleSwitch" />
+			</Model>
+			<Material parentMaterial="BottlesInHudMaterial" />
+		</SceneObject>
+		<SceneObject name="BottlesText">
+			<Translation x="64.283" y="23.348" z="20" />
+			<Text alignment="center" font="PinkNumbers" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="14" y="14" />
+				<TextString>0/1</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkPortraitRoot">
+			<SceneObject name="CheckmarkPortrait" visibility="never">
+				<Translation x="85.092" y="15" z="3" />
+				<Scale x="1.030" y="1.030" z="0.700" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/candy/candy_material.xml"/>
+
+	<SceneObject name="LiqSwirl">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/liquorice_swirl_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+</Scene>

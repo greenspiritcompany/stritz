@@ -1,0 +1,11 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="12.0">
+		<Triggers>
+			<EffectTrigger time="0.0" parentName="ParticleCtrl" name="ColorBombActivate">
+				<Offset z="500"/>
+			</EffectTrigger>
+			<EffectTrigger time="0.5" parentName="ParticleCtrl" name="ColorBombHitSound"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

@@ -1,0 +1,85 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Material name="HoneyMat">
+		<Blend enabled="true"/>
+		<Depth enabled="false" writeMask="false"/>
+		<Cull enabled="false" face="back"/>
+		<!-- Set to false since the vertex winding seems messed up between FF and SL -->
+		<Shader program="NormalMap"/>
+		<Light enabled="true" shininess="140">
+			<Ambient r="240" g="240" b="240" a="255"/>
+			<Diffuse r="30" g="30" b="30" a="255"/>
+			<Specular r="35" g="35" b="35" a="255"/>
+		</Light>
+	</Material>
+
+	<Material name="HoneySolid1Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_1_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_1_n.png"/>
+		</Textures>
+	</Material>
+	<Material name="HoneySolid2Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_2_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_2_n.png"/>
+		</Textures>
+	</Material>
+	<Material name="HoneySolid3Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_3_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_3_n.png"/>
+		</Textures>
+	</Material>
+	<Material name="HoneySolid4Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_4_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/honey_solid_4_n.png"/>
+		</Textures>
+	</Material>
+
+
+	<Material name="SeeThrough1Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_bear_1_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/honey_bear_1_n.png"/>
+		</Textures>
+	</Material>
+	<Material name="SeeThrough2Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_bear_2_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/honey_bear_2_n.png"/>
+		</Textures>
+	</Material>
+
+
+	<Material name="Empty1Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_empty_1_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/honey_empty_1_n.png"/>
+		</Textures>
+	</Material>
+	<Material name="Empty2Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_empty_2_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/honey_empty_2_n.png"/>
+		</Textures>
+	</Material>
+
+
+	<Material name="Special1Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_special_1_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/honey_special_1_n.png"/>
+		</Textures>
+	</Material>
+	<Material name="Special2Mat" parentMaterial="HoneyMat">
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/honey_special_2_c.png"/>
+			<Texture filename="shared/game/common/tex/candy/honey_special_2_n.png"/>
+		</Textures>
+	</Material>
+
+</Scene>

@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="18" space="Local" timeToEmit="0.200" name="SodaFishGoalBurstTopPFX">
+    <Dampening max="0.900" min="0.900"/>
+    <DirectionalForce x="0" y="2309.780"/>
+    <Emitter emissionRate="0" spread="18" angle="-90.490">
+        <SpawnArea width="100.270" depth="0" height="52.580"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="20" min="20"/>
+    <RotationSpeed max="90" min="90"/>
+    <Size>
+        <Max x="32" y="32"/>
+        <Min x="32" y="32"/>
+    </Size>
+    <SizeChange>
+        <Max x="-26.770" y="-26.770"/>
+        <Min x="-26.770" y="-26.770"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/soda_fish_particle.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="1.460" min="1.220"/>
+    <Velocity max="1020" min="435.340"/>
+</ParticleEffect>

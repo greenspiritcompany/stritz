@@ -1,0 +1,87 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<SceneObject name="Scene">
+		<SceneObject visibility="always" layerFlags="256" name="GameInstructionSwipe">
+			<SceneObject visibility="always" name="SwipeRoot">
+				<Translation x="6.06" y="60" z="500"/>
+				<Animation loopCount="0" animationData="SlideInFromBelow" name="SlideInFromTop"/>
+				<Animation loopCount="0" animationData="SlideOutToTop" name="SlideOutToTop"/>
+				<SceneObject __visibility="0" name="Chocolate">
+					<SceneObject name="MovingBg">
+						<Animation loopCount="-1" play="true" animationData="SlideToRightData" name="SlideToRight"/>
+						<SceneObject name="BgBottom">
+							<Translation y="290"/>
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/soda_fizz_swipe_bottom.png">
+								<Flip u="true"/>
+								<Pivot anchor="bottom" y="190"/>
+								<Rectangle maxY="128" maxX="2048"/>
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="BgTop">
+							<Translation x="0" y="40" z="0"/>
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/soda_fizz_swipe_top.png">
+								<Flip u="true"/>
+								<Pivot anchor="top" y="190"/>
+								<Rectangle maxY="64" maxX="2048"/>
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject __visibility="0" name="BgCenter">
+						<Translation y="67.41" z="1"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/instruction_swipe_top.png">
+							<Flip u="true"/>
+							<Pivot anchor="bottom" y="150"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject __visibility="0" name="Text">
+						<Translation y="-50.67" z="2"/>
+						<Text maxWidth="360" alignment="center" key="gamemode.sodafizz.instructions" maxHeight="55" verticalAlignment="visualCenter" font="Banana">
+							<Color r="144" b="149" g="0" a="255"/>
+							<GradientColor enabled="false"/>
+							<Shadow enabled="true">
+								<Color b="255" r="255" g="255" a="255"/>
+								<Offset x="1" y="4"/>
+							</Shadow>
+							<Size x="22" y="22"/>
+						</Text>
+					</SceneObject>
+					<SceneObject __visibility="0" name="Character">
+						<Translation x="-4" y="-220" z="2"/>
+						<Rotation z="-0.50"/>
+						<Scale x="0.80" y="0.80"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/fizz_shrimp.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject __visibility="0" name="BgMiddle">
+						<Translation x="18.55" y="519.61"/>
+						<Scale x="124.50" y="4.04"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/swipe_bg.png">
+							<Pivot anchor="top" y="150"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<LayoutConfiguration name="Portrait">
+					<Translation>
+						<X percentage="50.0"/>
+						<Y percentage="55.0"/>
+					</Translation>
+					<Size>
+						<Height percentage="25"/>
+						<OriginalSize width="1024" height="256"/>
+					</Size>
+				</LayoutConfiguration>
+				<LayoutConfiguration name="Landscape">
+					<Translation>
+						<X percentage="50.0"/>
+						<Y percentage="56.0"/>
+					</Translation>
+					<Size>
+						<Height percentage="31"/>
+						<OriginalSize width="1024" height="256"/>
+					</Size>
+				</LayoutConfiguration>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

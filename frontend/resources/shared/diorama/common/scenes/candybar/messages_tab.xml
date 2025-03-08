@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="MessageCenter">
+		<Translation z="-1" />
+		<SceneObject name="Header">
+			<Translation z="30" y="-100" />
+			<SceneObject name="HeaderBackground">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/header_bg_mc.png" wrap="repeat">
+					<Size width="586" height="244" />
+					<Rectangle minX="0" minY="0" maxX="1024" maxY="244" />
+					<Pivot anchor="topLeft" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="HeaderPanel">
+				<Panel filename="shared/diorama/common/tex/gui_elements/mc_header_box.png">
+					<Insets left="55" right="55" bottom="0" top="0" />
+					<Size width="300" height="55" />
+					<Pivot anchor="center" />
+				</Panel>
+				<Translation x="286" y="150" z="1" />
+				<Scale xyz="1.5" />
+				<SceneObject name="text">
+					<Text canBreakWords="false" font="Banana" key="tab.name.overview" alignment="center" verticalAlignment="top">
+						<TextString>Overview</TextString>
+						<Color r="255" g="255" b="255" a="255" />
+						<Size x="15" y="15" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Background">
+			<SceneObject name="BackgroundFill">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/message_bg.png" wrap="repeat">
+					<Size height="1400" width="586" />
+					<Rectangle minX="0" minY="0" maxX="1024" maxY="256" />
+				</Sprite>
+				<Translation y="95" z="2" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="MessageBoxContainer">
+			<Translation z="3" y="190" x="290" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+
+<Scene>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="ColorBombLightning" visibility="always" layerFlags="512">
+			<Model filename="shared/game/common/models/color_bomb_fx/color_bomb_fx.ffm">
+				<Animations>
+					<Animation name="Idle" speed="0.6"
+							   filename="shared/game/common/models/color_bomb_fx/activate.ffa"
+							   play="true" loopCount="-1" interpolateFrame="false"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material name="AddMaterial">
+					<Blend enabled="true" blendFuncDestinationFactor="One"/>
+					<Depth enabled="true" writeMask="false"/>
+					<Textures>
+						<Texture filename="shared/game/common/tex/candy/electricity.png"/>
+					</Textures>
+				</Material>
+			</Materials>
+			<Scale x="10" y="10" z="10"/>
+			<Translation x="0" y="0" z="300"/>
+		</SceneObject>
+
+	</SceneObject>
+</Scene>

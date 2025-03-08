@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:88e8ca9de9fa9289fbbc17804a85326d:4d0c53d9b964cb58cec8e0f5834e8959:a29dd7e3668b21b9f8b80888cf5b5d7a$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="episode_common.png" width="512" height="512">
+    <sprite n="bgh_lvl_pin.png" x="360" y="1" w="75" h="70" pX="0.5" pY="0.5"/>
+    <sprite n="hard_lvl_pin.png" x="360" y="75" w="75" h="70" pX="0.5" pY="0.5"/>
+    <sprite n="hard_pin_frame.png" x="276" y="1" w="80" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="hard_pin_skull.png" x="1" y="460" w="44" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="inactive_lvl_pin.png" x="244" y="85" w="75" h="70" pX="0.5" pY="0.5"/>
+    <sprite n="knot.png" x="117" y="1" w="25" h="24" pX="0.5" pY="0.5"/>
+    <sprite n="lvl_pin_btn_grey.png" x="117" y="166" w="73" h="73" pX="0.5" pY="0.5"/>
+    <sprite n="lvl_pin_crown.png" x="49" y="460" w="41" h="31" pX="0.5" pY="0.5"/>
+    <sprite n="lvl_pin_star.png" x="94" y="460" w="29" h="29" pX="0.5" pY="0.5"/>
+    <sprite n="lvl_pin_star_empty.png" x="127" y="460" w="29" h="29" pX="0.5" pY="0.5"/>
+    <sprite n="speechbubble.png" x="1" y="1" w="112" h="323" pX="0.5" pY="0.5"/>
+    <sprite n="speechbubble_head.png" x="160" y="1" w="112" h="77" pX="0.5" pY="0.5"/>
+    <sprite n="standard_lvl_pin.png" x="117" y="243" w="75" h="70" pX="0.5" pY="0.5"/>
+    <sprite n="standard_pin_frame.png" x="160" y="82" w="80" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="under_construction.png" x="1" y="328" w="128" h="128" pX="0.5" pY="0.5"/>
+</TextureAtlas>

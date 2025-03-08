@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="24" space="Local" timeToEmit="1" name="StripeWrappedSpark">
+    <Dampening max="0.900" min="0.900"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.010" spread="360" angle="-90">
+        <SpawnArea width="90" depth="0" height="90"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="500" min="500"/>
+    <Size>
+        <Max x="32" y="32"/>
+        <Min x="8" y="8"/>
+    </Size>
+    <SizeChange>
+        <Max x="-16" y="-16"/>
+        <Min x="-8" y="-8"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.300" min="0.300"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

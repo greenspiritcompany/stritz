@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Triggers>
+      <EffectTrigger name="character_farm_lady" time="0.0"/>
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp12.1"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp12" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp12" animationName="SpeechBubbleDisappear"/>
+			<AnimationTrigger time="0.1" targetName="Ep9Lady" animationName="Talk" crossFade="0.5"/>
+			<AnimationTrigger time="4.0" targetName="Ep9Lady" animationName="Idle" crossFade="0.8"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

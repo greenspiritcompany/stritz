@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+
+		<Material name="LollipopStripedMaterial">
+			<Blend enabled="false"/>
+			<Depth enabled="false" writeMask="true"/>
+			<Cull enabled="true" face="back"/>
+			<Shader program="TextureColor"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/boosters/lollipop_striped_hammer_c.png"/>
+			</Textures>
+		</Material>
+
+	</Materials>
+</Scene>

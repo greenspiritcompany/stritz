@@ -1,0 +1,9 @@
+<Timelines>
+<Timeline startTime="0" endTime="1">
+	<Triggers>
+		<AnimationTrigger targetName="Sign" animationName="OnDisappear" time="0"/>
+		<AnimationTrigger targetName="Kimmy" animationName="OnDisappear" time="0"/>
+		<CustomTrigger name="OnDisappearDone" time = "0.3"/>
+	</Triggers>
+</Timeline>
+</Timelines>

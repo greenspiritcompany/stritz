@@ -1,0 +1,32 @@
+<ParticleEffect maxParticles="32" timeToEmit="60" name="toplist_trail_sparkle">
+<DirectionalForce x="0" y="1000" />
+<Emitter emissionRate="0.010" spread="360" angle="0">
+	<SpawnArea width="710" depth="0" height="20" />
+</Emitter>
+<Rotation max="-90" min="-90" />
+<RotationSpeed max="-1000" min="-1000" />
+<Size>
+	<Max x="35" y="35" />
+	<Min x="15" y="15" />
+</Size>
+<SizeChange>
+	<Max x="-50" y="-50" />
+	<Min x="-50" y="-50" />
+</SizeChange>
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/diorama/common/tex/gui_elements/star_bright.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="0.600" min="0.400" />
+<Velocity max="100" min="100" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="0" g="0" b="0" a="255" />
+	</Keyframe>
+	<Keyframe lifeTime="0.261">
+		<Color r="50" g="50" b="50" a="255" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="255" g="255" b="255" a="255" />
+	</Keyframe>
+</ColorAnimation>
+<Dampening min="0.880" max="0.950" />
+</ParticleEffect>

@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="64" space="Local" timeToEmit="0.400" name="SugarCrushBubblesFoamPFX">
+    <Dampening max="1" min="1"/>
+    <DirectionalForce x="0" y="1347.370"/>
+    <Emitter emissionRate="0.010" spread="36.930" angle="-90.490">
+        <SpawnArea width="350" depth="0" height="141.630"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="90" min="90"/>
+    <Size>
+        <Max x="30" y="30"/>
+        <Min x="30" y="30"/>
+    </Size>
+    <SizeChange>
+        <Max x="-23" y="-23"/>
+        <Min x="-23" y="-23"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/bubble.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.410" min="0.410"/>
+    <Velocity max="963.500" min="963.500"/>
+</ParticleEffect>

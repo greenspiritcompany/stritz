@@ -1,0 +1,32 @@
+<Layout>
+	<Object sceneObject="PolicyLandscape">
+		<Default>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="49"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<Height percentage="100"/>
+				<OriginalSize width="1024" height="768"/>
+			</Size>
+		</Default>
+		<Landscape visible="true"/>
+		<Portrait visible="false"/>
+	</Object>
+	<Object sceneObject="PolicyPortrait">
+		<Default>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="50"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="768" height="1024"/>
+				<Height percentage="100"/>
+			</Size>
+		</Default>
+		<Landscape visible="false"/>
+		<Portrait visible="true"/>
+	</Object>
+</Layout>

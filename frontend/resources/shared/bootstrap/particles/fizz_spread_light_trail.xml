@@ -1,0 +1,22 @@
+<ParticleEffect maxParticles="5" space="Local" timeToEmit="0.100" name="FizzSpreadLightTrailPFX">
+    <Dampening max="0.200" min="0.200"/>
+    <Emitter emissionRate="0.090" spread="0" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="246" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="120" y="100"/>
+        <Min x="120" y="100"/>
+    </Size>
+    <SizeChange>
+        <Max x="-120" y="-120"/>
+        <Min x="-200" y="-200"/>
+    </SizeChange>
+    <StartColor b="161" r="254" g="255" a="100"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/light64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.700" min="0.600"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

@@ -1,0 +1,255 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="HighscoresList">
+		<Translation x="24" y="-4" z="-15"/>
+		<SceneObject layerFlags="8" name="HighscoresLandscape">
+			<Translation x="710" y="70" z="0"/>
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" startDelay="0.05"/>
+			<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear"/>
+			<SceneObject>
+				<Translation x="-549" y="-288" z="5"/>
+				<Text font="Banana" key="common.highscore" verticalAlignment="visualCenter">
+					<Color r="230" g="20" b="145" a="255"/>
+					<Size x="21" y="21"/>
+				</Text>
+			</SceneObject>
+			<SceneObject layerFlags="64" name="bg_color">
+				<Translation x="-571" y="-269" z="0"/>
+				<Sprite filename="shared/diorama/common/tex/gui_elements/scroll_bg_color.png">
+					<Size height="392" width="318"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="bg_color">
+				<Translation x="-573" y="-286" z="0"/>
+				<Sprite filename="shared/diorama/common/tex/gui_elements/scroll_bg_color.png">
+					<Size height="443" width="318"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="highscoreroot">
+				<Translation x="-604" y="-335" z="0"/>
+				<Panel filename="shared/diorama/common/tex/gui_elements/highscorebox_landscape.png" wrap="repeat">
+					<Insets bottom="156" left="61" right="61" top="63"/>
+					<Size height="582" width="384"/>
+				</Panel>
+				<SceneObject name="Header">
+					<Translation x="28" y="26" z="0"/>
+					<Sprite filename="shared/diorama/common/tex/gui_elements/header_landscape.png"/>
+				</SceneObject>
+				<SceneObject layerFlags="128" name="ToplistContainer">
+					<Translation x="125" y="78" z="1"/>
+				</SceneObject>
+				<SceneObject name="FacebookButtonBg" visibility="never">
+					<Translation x="201" y="321"/>
+					<SceneObject class="Button" name="FacebookButton">
+						<Translation x="-10" y="189" z="6"/>
+						<Scale x="0.9" y="0.9" z="1"/>
+						<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png">
+							<Insets bottom="59" left="54" right="54" top="48"/>
+							<Pivot anchor="center"/>
+							<Size height="108" width="360"/>
+						</Panel>
+						<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.3"/>
+						<Animation animationData="Idle" layer="1" name="Idle" play="true"/>
+						<Animation animationData="OnPress" loopCount="0" name="OnPress"/>
+						<Animation animationData="OnRelease" loopCount="0" name="OnRelease"/>
+						<SceneObject>
+							<Text alignment="center" font="Banana" key="button.connect" maxHeight="60" maxWidth="164" overflowBehaviour="fit">
+								<Color r="255" g="240" b="240" a="255"/>
+								<Pivot x="28" y="5"/>
+								<Shadow enabled="true">
+									<Color r="100" g="150" b="208" a="255"/>
+								</Shadow>
+								<Size x="20" y="20"/>
+							</Text>
+						</SceneObject>
+						<SceneObject name="FbLogo">
+							<Translation x="-95" y="-4"/>
+							<Sprite filename="shared/diorama/common/tex/gui_elements/fb_logo.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject class="Button" name="InviteFriends">
+						<Translation x="-10" y="189" z="6"/>
+						<Scale x="0.9" y="0.9" z="1"/>
+						<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png">
+							<Insets bottom="59" left="54" right="54" top="48"/>
+							<Pivot anchor="center"/>
+							<Size height="108" width="360"/>
+						</Panel>
+						<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.3"/>
+						<Animation animationData="Idle" layer="1" name="Idle" play="true"/>
+						<Animation animationData="OnPress" loopCount="0" name="OnPress"/>
+						<Animation animationData="OnRelease" loopCount="0" name="OnRelease"/>
+						<SceneObject>
+							<Translation x="2" y="-5"/>
+							<Text alignment="center" font="Banana" key="button_invite" maxHeight="50" maxWidth="165" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Color r="255" g="240" b="240" a="255"/>
+								<Pivot x="28" y="5"/>
+								<Shadow enabled="true">
+									<Color r="100" g="150" b="208" a="255"/>
+								</Shadow>
+								<Size x="20" y="20"/>
+							</Text>
+						</SceneObject>
+						<SceneObject name="FbLogo">
+							<Translation x="-90" y="-4"/>
+							<Sprite filename="shared/diorama/common/tex/gui_elements/fb_logo.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<SceneObject layerFlags="8" name="HighscoresPortrait">
+			<Translation x="295" y="507" z="0"/>
+			<Animation animationData="SlideInFromLeftToBottom" loopCount="0" name="OnAppear"/>
+			<Animation animationData="SlideOutToTop" loopCount="0" name="OnDisappear"/>
+			<SceneObject>
+				<Translation x="-556" y="-265.5" z="5"/>
+				<Text font="Banana" key="common.highscore" maxHeight="40" maxWidth="210" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color r="230" g="20" b="145" a="255"/>
+					<Size x="23" y="23"/>
+				</Text>
+			</SceneObject>
+			<SceneObject layerFlags="64" name="bg_color">
+				<Translation x="-565" y="-283" z="0"/>
+				<Sprite filename="shared/diorama/common/tex/gui_elements/scroll_bg_color.png">
+					<Size height="178" width="539"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="bg_color">
+				<Translation x="-576" y="-283" z="0"/>
+				<Sprite filename="shared/diorama/common/tex/gui_elements/scroll_bg_color.png">
+					<Size height="180" width="560"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject>
+				<Translation x="-575" y="-245"/>
+				<Scale x="11" y="0.7" z="0"/>
+				<Sprite filename="shared/diorama/common/tex/gui_elements/scroll_border.png"/>
+			</SceneObject>
+			<SceneObject name="highscoreroot">
+				<Translation x="-598.5" y="-335"/>
+				<Panel filename="shared/diorama/common/tex/gui_elements/highscorebox_portrait.png" wrap="repeat">
+					<Insets bottom="75" left="50" right="50" top="60"/>
+					<Size height="280" width="608"/>
+				</Panel>
+				<SceneObject layerFlags="128" name="ToplistContainer">
+					<Translation x="126" y="155" z="1"/>
+				</SceneObject>
+				<SceneObject name="FacebookButtonBg" visibility="always">
+					<Translation x="304.376" y="289.419" z="0"/>
+					<Panel filename="shared/diorama/common/tex/gui_elements/connect_btn_tab.png">
+						<Insets left="80" right="80"/>
+						<Pivot anchor="center"/>
+						<Size height="0" width="400"/>
+					</Panel>
+					<SceneObject __editorVisibility="false" __visibility="3" class="Button" name="FacebookButton">
+						<Translation x="-0.0390015" y="-15.622" z="6"/>
+						<Scale x="0.8" y="0.8" z="1"/>
+						<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png">
+							<Insets bottom="59" left="54" right="54" top="48"/>
+							<Pivot anchor="center"/>
+							<Size height="108" width="400"/>
+						</Panel>
+						<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.3"/>
+						<Animation animationData="Idle" layer="1" name="Idle" play="true"/>
+						<Animation animationData="OnPress" loopCount="0" name="OnPress"/>
+						<Animation animationData="OnRelease" loopCount="0" name="OnRelease"/>
+						<SceneObject>
+							<Text alignment="center" font="Banana" key="button.connect" maxHeight="60" maxWidth="164" overflowBehaviour="fit">
+								<Color r="255" g="240" b="240" a="255"/>
+								<Pivot x="28" y="5"/>
+								<Shadow enabled="true">
+									<Color r="100" g="150" b="208" a="255"/>
+								</Shadow>
+								<Size x="20" y="20"/>
+							</Text>
+						</SceneObject>
+						<SceneObject name="FbLogo">
+							<Translation x="-80" y="-4"/>
+							<Sprite filename="shared/diorama/common/tex/gui_elements/fb_logo.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject class="Button" name="InviteFriends">
+						<Translation x="-1" y="-16" z="6"/>
+						<Scale x="0.8" y="0.8" z="1"/>
+						<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png">
+							<Insets bottom="59" left="54" right="54" top="48"/>
+							<Pivot anchor="center"/>
+							<Size height="108" width="400"/>
+						</Panel>
+						<Animation animationData="OnAppearGrow" layer="2" loopCount="0" name="OnAppear" startTime="0.3"/>
+						<Animation animationData="Idle" layer="1" name="Idle" play="true"/>
+						<Animation animationData="OnPress" loopCount="0" name="OnPress"/>
+						<Animation animationData="OnRelease" loopCount="0" name="OnRelease"/>
+						<SceneObject>
+							<Translation x="3.8465" y="-5.48093"/>
+							<Text alignment="center" font="Banana" key="button_invite" maxHeight="60" maxWidth="204" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Color r="255" g="240" b="240" a="255"/>
+								<GradientColor enabled="false"/>
+								<Pivot x="28" y="5"/>
+								<Shadow enabled="true">
+									<Color r="100" g="150" b="208" a="255"/>
+								</Shadow>
+								<Size x="20" y="20"/>
+							</Text>
+						</SceneObject>
+						<SceneObject name="FbLogo">
+							<Translation x="-130" y="-4"/>
+							<Sprite filename="shared/diorama/common/tex/gui_elements/fb_logo.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="scroll_rings">
+				<Translation x="-71" y="0" z="0"/>
+				<SceneObject>
+					<Translation x="-240" y="-281" z="0"/>
+					<Sprite filename="shared/diorama/common/tex/gui_elements/scroll_dot_big.png"/>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-266" y="-277" z="0"/>
+					<Scale x="0.8" y="0.8"/>
+					<Sprite filename="shared/diorama/common/tex/gui_elements/scroll_dot_big.png"/>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-208" y="-277" z="0"/>
+					<Scale x="0.8" y="0.8"/>
+					<Sprite filename="shared/diorama/common/tex/gui_elements/scroll_dot_big.png"/>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize width="1024" height="768" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Width percentage="100" />
+				<OriginalSize width="684" height="1024" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

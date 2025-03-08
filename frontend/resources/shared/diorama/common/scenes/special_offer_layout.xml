@@ -1,0 +1,35 @@
+<!DOCTYPE Layout SYSTEM '../../../dtd/layout.dtd'>
+<Layout>
+	<Object sceneObject="Landscape">
+		<Landscape visible="true"/>
+		<Portrait visible="false"/>
+	</Object>
+	<Object sceneObject="Portrait">
+		<Landscape visible="false"/>
+		<Portrait visible="true"/>
+	</Object>
+	<Object sceneObject="SpecialOffer">
+		<Landscape>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="100"/>
+			</Translation>
+			<Size>
+				<Height max="740" percentage="92.500"/>
+				<OriginalSize height="800" width="1056"/>
+				<Width max="906" percentage="90"/>
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Translation>
+				<X percentage="49"/>
+				<Y percentage="100"/>
+			</Translation>
+			<Size>
+				<Height max="906" percentage="100"/>
+				<OriginalSize height="1056" width="800"/>
+				<Width max="760" percentage="112"/>
+			</Size>
+		</Portrait>
+	</Object>
+</Layout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="CollabLock">
+		<Translation z="500" />
+		<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+		<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+		<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+		<SceneObject name="Title">
+			<Translation x="0" y="-302" />
+			<Text canBreakWords="false" alignment="center" font="Banana" key="collab_lock_modal_title" maxHeight="45" maxWidth="370" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Color r="255" g="255" b="255" a="255" />
+				<Size x="24" y="24" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="BackgroundArc">
+			<Translation x="0" y="-170" />
+			<Scale x="4.500" y="4.500" z="4.500" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="Bottles">
+			<Translation y="-160" />
+			<Scale x="0.850" y="0.850" z="0.850" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bottles_icon.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="FriendBoxes">
+			<Translation x="0" y="-70" />
+			<SceneObject name="Box1">
+				<Translation x="-100" y="-20" />
+				<Scale x="1.100" y="1.100" z="1.100" />
+				<SceneObject name="Background">
+					<Scale x="1.200" y="1.200" z="1.200" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/prof_pic.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Frame">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_pink.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Box2">
+				<Translation y="-20" />
+				<Scale x="1.100" y="1.100" z="1.100" />
+				<SceneObject name="Background">
+					<Scale x="1.200" y="1.200" z="1.200" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/prof_pic.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Frame">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_pink.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Box3">
+				<Translation x="100" y="-20" />
+				<Scale x="1.100" y="1.100" z="1.100" />
+				<SceneObject name="Background">
+					<Scale x="1.200" y="1.200" z="1.200" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/prof_pic.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Frame">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_pink.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="InfoText">
+			<Translation x="0" y="72" z="0" />
+			<Text canBreakWords="false" alignment="center" font="Typewriter" key="collab_lock_modal_info" maxHeight="200" maxWidth="460" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Color r="116" g="58" b="11" a="255" />
+				<GradientColor enabled="false" />
+				<Shadow enabled="false" />
+				<Size x="16" y="16" />
+			</Text>
+		</SceneObject>
+		<SceneObject visibility="never" name="TimeUnlockContainer">
+			<Translation x="0" y="-64" z="0" />
+			<SceneObject>
+				<Translation y="28" />
+				<SceneObject>
+					<Translation x="-256" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/timeleft_box_left.png" vertexColors="false" />
+				</SceneObject>
+				<SceneObject>
+					<Translation x="-192" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/timeleft_box_middle.png" wrap="repeat" vertexColors="false">
+						<Rectangle maxX="384" maxY="64" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject>
+					<Translation x="192" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/timeleft_box_right.png" vertexColors="false" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="TimeRemainingText">
+				<Translation y="62" z="1" />
+				<Text canBreakWords="false" alignment="center" font="Typewriter" maxHeight="30" maxWidth="340" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color r="116" g="58" b="11" a="255" />
+					<GradientColor enabled="false" />
+					<Shadow enabled="false" />
+					<Size x="16" y="16" />
+					<TextString />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject class="Button" name="AskFriendsButton">
+			<Translation y="160" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+				<Insets bottom="0" left="128" right="128" top="0" />
+				<Pivot anchor="center" />
+				<Size height="115" width="380" />
+			</Panel>
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject>
+				<Translation x="0" y="5" />
+				<Text canBreakWords="false" alignment="center" font="Banana" key="common.askfriends" maxHeight="45" maxWidth="300" overflowBehaviour="fit" verticalAlignment="center">
+					<Shadow enabled="true">
+						<Color r="0" g="0" b="0" a="25" />
+						<Offset x="0" y="6" />
+					</Shadow>
+					<Size x="26" y="26" />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject class="Button" name="BuyButton">
+			<Translation y="270" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Insets bottom="0" left="128" right="128" top="0" />
+				<Pivot anchor="center" />
+				<Size height="115" width="380" />
+			</Panel>
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject>
+				<Translation x="-65" y="-7" />
+				<Text canBreakWords="false" alignment="center" font="Banana" key="button.generic.buy" maxHeight="45" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color r="255" g="255" b="255" a="225" />
+					<Shadow enabled="true">
+						<Color r="0" g="0" b="0" a="25" />
+						<Offset x="0" y="6" />
+					</Shadow>
+					<Size x="24" y="24" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="BuyText">
+				<SceneObject name="Cost">
+					<Translation x="95" y="-6" />
+					<SceneObject>
+						<Scale x="0.900" y="0.900" z="0.900" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/goldbar_sticker.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="CostAmountText">
+						<Translation x="-8" y="-3" />
+						<Text canBreakWords="false" alignment="center" font="Banana" maxHeight="40" maxWidth="50" overflowBehaviour="fit" verticalAlignment="visualCenter">
+							<Color r="117" g="54" b="0" a="255" />
+							<Pivot x="-17" />
+							<Shadow enabled="true">
+								<Color r="255" g="255" b="255" a="255" />
+								<Offset x="0" y="3" />
+							</Shadow>
+							<Size x="22" y="22" />
+							<TextString>12</TextString>
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="95" />
+				<OriginalSize width="640" height="706" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

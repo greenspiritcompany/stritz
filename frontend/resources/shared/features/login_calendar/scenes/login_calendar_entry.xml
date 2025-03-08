@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="Root">
+		<Translation x="0" y="0" z="0" />
+		<Scale x="1" y="1" z="1" />
+		<Rotation x="0" y="0" z="0" />
+		<SceneObject name="Offsets">
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Sprite vertexColors="false" mode="panel">
+				<Pivot x="33" y="34" />
+				<Size width="296" height="222" />
+				<RemoveQuads topLeft="true" top="true" topRight="true" right="true" center="true" left="true" bottomLeft="true" bottom="true" bottomRight="true" />
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="EntryPortrait" visibility="inherit" editorEntityId="195">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_box_bg.png" vertexColors="false" mode="panel">
+				<Pivot anchor="top" />
+				<Insets bottom="50" left="40" right="40" top="40" />
+				<Size width="735" height="228" />
+			</Sprite>
+			<Translation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<LayoutConfiguration name="Portrait" visible="true" />
+			<LayoutConfiguration name="Landscape" visible="false" />
+			<SceneObject name="InnerShadow" editorEntityId="196">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_box_innersha.png" vertexColors="false" mode="panel">
+					<Insets bottom="2" left="2" right="2" top="2" />
+					<Size width="703" />
+				</Sprite>
+				<Translation x="-351.619" y="110" z="0" />
+			</SceneObject>
+			<SceneObject name="Bridge" editorEntityId="197">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_box_bridge_left.png" vertexColors="false" mode="panel">
+					<Insets bottom="10" left="32" right="4" top="10" />
+					<Size width="90" />
+				</Sprite>
+				<Translation x="-335.227" y="-39" z="1" />
+				<SceneObject name="BridgeRight" editorEntityId="198">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_box_bridge_right.png" vertexColors="false" mode="panel">
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="82.315" y="0" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PathStart" editorEntityId="199">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/dlc_path.png" wrap="repeat" vertexColors="false" mode="sprite">
+					<Pivot anchor="bottom" />
+					<Rectangle maxY="128" minY="64" minX="64" maxX="128" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Translation x="-275" y="174.579" z="1" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject name="Edge" editorEntityId="200">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_start.png" vertexColors="false" mode="sprite">
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-32" y="0" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PathInactive" editorEntityId="206">
+				<Translation x="-275" y="55" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_locked.png" vertexColors="false" mode="panel">
+					<Insets bottom="4" left="4" right="4" top="4" />
+					<Size height="156" />
+					<Pivot anchor="bottom" />
+				</Sprite>
+				<SceneObject name="Arrow" editorEntityId="207">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_arrow.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="0" y="-60.389" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+					<Animation name="idle" animationData="CalendarArrows" play="true" />
+					<SceneObject name="Arrow2" editorEntityId="208">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_arrow.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation y="-17.494" z="0" />
+					</SceneObject>
+					<SceneObject name="Arrow3" editorEntityId="209">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_arrow.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation y="-35.518" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="DotsInactive" editorEntityId="202" visibility="never">
+					<Translation x="0" y="31.773" z="1" />
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<SceneObject name="Dot22" editorEntityId="203" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot_locked.png" vertexColors="false" mode="sprite">
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="-8.155" y="-95.619" z="0" />
+						<Scale z="1" />
+					</SceneObject>
+					<SceneObject name="Dot33" editorEntityId="204" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot_locked.png" vertexColors="false" mode="sprite">
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="-8.155" y="-117.299" z="0" />
+						<Scale z="1" />
+					</SceneObject>
+					<SceneObject name="Dot11" editorEntityId="205" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot_locked.png" vertexColors="false" mode="sprite">
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="-8.155" y="-138.630" z="0" />
+						<Scale z="1" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject editorEntityId="231" name="Gifts">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="0.400" y="0.400" z="0.400" />
+				<Translation y="110" z="1" x="10" />
+				<Sprite vertexColors="false" mode="panel">
+					<RemoveQuads topLeft="true" top="true" topRight="true" right="true" center="true" left="true" bottomLeft="true" bottom="true" bottomRight="true" />
+					<Pivot anchor="center" x="25" y="-2" />
+					<Size width="1757" height="490" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Scissor useObjectBoundingBox="true" />
+				<SceneObject name="RewardsP">
+					<Animation animationData="BoingScale" name="appear" loopCount="0" />
+					<SceneObject name="Rewards" editorEntityId="154">
+						<Translation x="0" y="10" z="1" />
+						<Scale x="4" y="4" z="1" />
+						<Rotation x="0" y="0" z="0" />
+						<SceneObject name="LollipopHammer" visibility="inherit" editorEntityId="155">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="156">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="2" y="3" z="0" />
+								<Scale x="1" y="1" z="1" />
+								<Rotation x="0" y="0" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="StripedLollipopHammer" visibility="inherit" editorEntityId="157">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="158">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/striped_lollipop_icon.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="2" y="3" />
+								<Scale x="1" y="1" z="1" />
+								<Rotation x="0" y="0" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="Colorbomb" visibility="inherit" editorEntityId="159">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="160">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="0" />
+								<Scale x="1" y="1" z="1" />
+								<Rotation x="0" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="ColoringCandy" visibility="inherit" editorEntityId="161">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="162">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="0" y="0" />
+								<Scale x="1" y="1" z="1" />
+								<Rotation x="0" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="DoubleDelishFish" visibility="inherit" editorEntityId="163">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="164">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/pregame_double_fish_modal_icon.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Scale x="0.500" y="0.500" z="1" />
+								<Translation x="0" y="-8" z="0" />
+								<Rotation x="0" y="0" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="IllegalSwitch" visibility="inherit" editorEntityId="165">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="166">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/free_switch_icon.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Scale x="0.900" y="0.900" z="1" />
+								<Translation x="0" y="-4" z="0" />
+								<Rotation x="0" y="0" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="UnlimitedLives" visibility="inherit" editorEntityId="155">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="156">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/unlimited_live_with_label.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="2" y="3" z="0" />
+								<Scale x="0.600" y="0.600" z="1" />
+								<Rotation x="0" y="0" z="0" />
+							</SceneObject>
+							<SceneObject name="text">
+								<Text font="Banana_NarrowSpacing">
+									<TextString>30 m</TextString>
+									<Color r="117" g="55" b="0" a="255" />
+									<Size x="11" y="11" />
+								</Text>
+								<Translation x="-15" y="26" z="0" />
+								<Rotation z="-7" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject editorEntityId="234" name="GiftExplosion">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Spine filename="shared/features/login_calendar/models/LoginCal.json" skin="Gift1">
+						<Animation name="normal" spineAnimation="logincal_explosion" loopCount="0" />
+						<Animation name="special" spineAnimation="logincal_explosion_special" loopCount="0" />
+					</Spine>
+					<Translation x="0" y="0" z="0" />
+					<Material name="LoginGifts">
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/features/login_calendar/tex/login_calendar.png" />
+					</Material>
+					<SceneObject name="GiftExplosionP" />
+				</SceneObject>
+				<SceneObject editorEntityId="232" name="GiftIdle">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Spine filename="shared/features/login_calendar/models/LoginCal.json" skin="Gift1">
+						<Animation name="normal" spineAnimation="logincal_idle" />
+						<Animation spineAnimation="logincal_idle_special" name="special" />
+					</Spine>
+					<Translation x="0" y="0" z="0" />
+					<Material name="LoginGifts">
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/features/login_calendar/tex/login_calendar.png" />
+					</Material>
+				</SceneObject>
+				<SceneObject editorEntityId="233" name="GiftDrop" parentBoneId="1">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Spine filename="shared/features/login_calendar/models/LoginCal.json" skin="Gift1">
+						<Animation name="normal" spineAnimation="logincal_drop" loopCount="0" />
+						<Animation spineAnimation="logincal_drop_special" name="special" loopCount="0" />
+					</Spine>
+					<Translation x="0" y="0" z="0" />
+					<Material name="LoginGifts">
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/features/login_calendar/tex/login_calendar.png" />
+					</Material>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Consecutive" editorEntityId="227">
+				<Translation x="175.237" y="35.920" z="2" />
+				<Rotation x="0" y="0" z="15.675" />
+				<SceneObject name="StampPinkP">
+					<Translation x="87.661" y="48.339" z="0" />
+					<SceneObject name="StampPink" editorEntityId="227">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_stamp_pink.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0" y="0" z="5" />
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<SceneObject name="StampPinkTextP" editorEntityId="228">
+							<Text alignment="center" verticalAlignment="visualCenter" font="TypewriterBold" canBreakWords="false" overflowBehaviour="fit" maxWidth="150" allowWordWrapping="true" maxHeight="80" key="feature.lc.stamp.tomorrow">
+								<Color r="241" g="57" b="183" a="255" />
+								<Size x="16" y="16" />
+							</Text>
+							<Translation z="0" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Animated">
+				<SceneObject name="StampGreenP">
+					<Translation x="0" y="0" z="0" />
+					<Rotation x="0" y="0" z="0" />
+					<SceneObject name="StampGreen" editorEntityId="229">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_stamp_green.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Rotation x="0" y="0" />
+						<SceneObject name="StampGreenTextP" editorEntityId="230">
+							<Text alignment="center" allowWordWrapping="true" canBreakWords="false" font="TypewriterBold" maxHeight="80" maxWidth="150" overflowBehaviour="fit" verticalAlignment="visualCenter" key="feature.lc.stamp.received">
+								<Color r="10" g="182" b="98" a="255" />
+								<Size x="16" y="16" />
+							</Text>
+							<Translation z="0" />
+						</SceneObject>
+						<Translation z="5" />
+					</SceneObject>
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<Translation x="246.250" y="108.742" z="2" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="-15.407" />
+			</SceneObject>
+			<SceneObject name="PathBoxActiveP" editorEntityId="210">
+				<Translation x="-275" y="108" z="4" />
+				<SceneObject name="Box" editorEntityId="211">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_day_box.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="0" y="1.844" z="0" />
+					<SceneObject name="Shadow" editorEntityId="212">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_day_shadow_port.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="top" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="-0.969" y="57.684" z="-1" />
+						<Scale z="1" />
+						<Rotation x="0" y="0" z="0" />
+					</SceneObject>
+					<SceneObject name="Consecutive" editorEntityId="215">
+						<Translation x="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<Rotation x="0" y="0" z="0" />
+						<SceneObject editorEntityId="216" name="DayText">
+							<Rotation x="0" y="0" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="TypewriterBold" key="feature.lc.day" maxHeight="40" maxWidth="90" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Shadow>
+									<Color a="100" b="154" g="35" r="155" />
+									<Offset x="0" y="-2" />
+								</Shadow>
+								<Size x="16" y="16" />
+							</Text>
+							<Translation y="-37" z="0" />
+						</SceneObject>
+						<SceneObject editorEntityId="217" name="DayNumber">
+							<Rotation x="0" y="0" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="90" maxWidth="86" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Shadow>
+									<Color a="100" b="72" g="16" r="72" />
+									<Offset x="0" y="-2" />
+								</Shadow>
+								<Size x="60" y="60" />
+								<TextString>3</TextString>
+							</Text>
+							<Translation x="-2.451" y="12.421" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="NonConsecutive" editorEntityId="218">
+						<Translation x="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<Rotation x="0" y="0" z="0" />
+						<SceneObject editorEntityId="219" name="DayNumber">
+							<Rotation x="0" y="0" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="90" maxWidth="86" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Shadow>
+									<Color a="100" b="72" g="16" r="72" />
+									<Offset x="0" y="-2" />
+								</Shadow>
+								<Size x="60" y="60" />
+								<TextString>3</TextString>
+							</Text>
+							<Translation x="-2.451" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="CheckBoxP" editorEntityId="213">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="57.247" y="56.906" z="1" />
+						<Scale z="1" y="1.200" x="1.200" />
+						<Rotation x="0" y="0" z="0" />
+						<SceneObject name="Check" editorEntityId="214">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" mode="sprite">
+								<Pivot anchor="center" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation x="-1.149" y="-3.448" z="0" />
+						</SceneObject>
+						<Animation animationData="OnAppearGrow" name="appear" loopCount="0" />
+						<Animation animationData="OnAppearGrow" name="hidden" loopCount="0" play="true" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PathBoxInactiveP" editorEntityId="220">
+				<Translation x="-275" y="108" z="4" />
+				<SceneObject name="Box" editorEntityId="221">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_day_box_locked.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="0" y="1.844" z="0" />
+					<SceneObject name="Consecutive" editorEntityId="222">
+						<Translation x="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<Rotation x="0" y="0" z="0" />
+						<SceneObject editorEntityId="223" name="DayText">
+							<Rotation x="0" y="0" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="TypewriterBold" maxHeight="40" maxWidth="90" overflowBehaviour="fit" verticalAlignment="visualCenter" key="feature.lc.day">
+								<Shadow>
+									<Color r="255" g="255" b="255" a="250" />
+									<Offset x="0" />
+								</Shadow>
+								<Size x="16" y="16" />
+								<Color r="232" g="214" b="166" a="255" />
+							</Text>
+							<Translation y="-37" z="0" />
+						</SceneObject>
+						<SceneObject editorEntityId="224" name="DayNumber">
+							<Rotation x="0" y="0" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="90" maxWidth="86" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Shadow>
+									<Color r="255" g="255" b="255" a="250" />
+									<Offset x="0" />
+								</Shadow>
+								<Size x="60" y="60" />
+								<TextString>3</TextString>
+								<Color r="232" g="214" b="166" a="255" />
+							</Text>
+							<Translation x="-2.451" y="12.421" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="NonConsecutive" editorEntityId="225">
+						<Translation x="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<Rotation x="0" y="0" z="0" />
+						<SceneObject editorEntityId="226" name="DayNumber">
+							<Rotation x="0" y="0" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="90" maxWidth="86" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Shadow>
+									<Color r="255" g="255" b="255" a="250" />
+									<Offset x="0" />
+								</Shadow>
+								<Size x="60" y="60" />
+								<TextString>3</TextString>
+								<Color r="232" g="214" b="166" a="255" />
+							</Text>
+							<Translation x="-2.451" z="0" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PathActive">
+				<SceneObject name="PathActiveP" editorEntityId="201">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/dlc_path.png" wrap="repeat" vertexColors="false" mode="sprite">
+						<Pivot anchor="top" />
+						<Rectangle maxY="227" minY="64" minX="64" maxX="128" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-275" y="150" z="2" />
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+					<SceneObject name="Dots" editorEntityId="202">
+						<Translation x="0" y="196" z="0" />
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<SceneObject name="Dot2" editorEntityId="203">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot.png" vertexColors="false" mode="sprite">
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation x="-8.155" y="-95.619" z="0" />
+							<Scale z="1" />
+						</SceneObject>
+						<SceneObject name="Dot3" editorEntityId="204">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot.png" vertexColors="false" mode="sprite">
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation x="-8.155" y="-117.299" z="0" />
+							<Scale z="1" />
+						</SceneObject>
+						<SceneObject name="Dot1" editorEntityId="205">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot.png" vertexColors="false" mode="sprite">
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation x="-8.155" y="-138.630" z="0" />
+							<Scale z="1" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="NonAnimated">
+				<Translation x="246.250" y="108.742" z="2" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="-15.407" />
+				<SceneObject name="StampGreen" editorEntityId="229">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_stamp_green.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="0" y="0" z="5" />
+					<Scale x="1" y="1" z="1" />
+					<SceneObject name="StampGreenTextP" editorEntityId="230">
+						<Text alignment="center" allowWordWrapping="true" canBreakWords="false" font="TypewriterBold" maxHeight="80" maxWidth="150" overflowBehaviour="fit" verticalAlignment="visualCenter" key="feature.lc.stamp.received">
+							<Color r="10" g="182" b="98" a="255" />
+							<Size x="16" y="16" />
+						</Text>
+						<Translation z="0" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="EntryLandscape" visibility="never">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_box_bg.png" vertexColors="false" mode="panel">
+				<Insets bottom="50" left="40" right="40" top="40" />
+				<Size width="300" height="570" />
+			</Sprite>
+			<Translation x="0" y="-282.050" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<LayoutConfiguration name="Landscape" visible="true" />
+			<LayoutConfiguration name="Portrait" visible="false" />
+			<SceneObject name="InnerShadow">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_box_innersha.png" vertexColors="false" mode="panel">
+					<Insets bottom="2" left="2" right="2" top="2" />
+					<Size width="268" />
+				</Sprite>
+				<Translation x="15.278" y="275.330" z="0" />
+			</SceneObject>
+			<SceneObject name="Bridge">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_box_bridge_up.png" vertexColors="false" mode="panel">
+					<Insets bottom="4" left="10" right="10" top="32" />
+					<Size height="90" />
+				</Sprite>
+				<Translation x="292.016" y="409.367" z="1" />
+				<SceneObject name="BridgeDown">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_box_bridge_down.png" vertexColors="false" mode="panel">
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation y="86.669" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PathInactive">
+				<Translation x="141" y="471" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_locked.png" vertexColors="false" mode="panel">
+					<Insets bottom="4" left="4" right="4" top="4" />
+					<Size height="300" />
+					<Pivot anchor="bottom" />
+				</Sprite>
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="90" />
+				<SceneObject name="Arrows">
+					<SceneObject name="Arrow" editorEntityId="55">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_arrow.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0" y="-154.935" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<Rotation x="0" y="0" z="0" />
+						<Animation name="idle" animationData="CalendarArrows" play="true" />
+						<SceneObject name="Arrow2" editorEntityId="56">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_arrow.png" vertexColors="false" mode="sprite">
+								<Pivot anchor="center" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation y="-17.494" z="0" />
+						</SceneObject>
+						<SceneObject name="Arrow3" editorEntityId="57">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_arrow.png" vertexColors="false" mode="sprite">
+								<Pivot anchor="center" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation y="-35.518" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<Animation name="idle" animationData="CalendarArrows" play="true" />
+				</SceneObject>
+				<SceneObject name="DotsInactive" editorEntityId="8" visibility="never">
+					<Translation x="130.726" y="-151.604" z="1" />
+					<Rotation x="0" y="0" z="-90" />
+					<Scale x="1" y="1" z="1" />
+					<SceneObject name="Dot22" editorEntityId="10" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot_locked.png" vertexColors="false" mode="sprite">
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="35" y="-138.837" z="0" />
+						<Scale z="1" />
+					</SceneObject>
+					<SceneObject name="Dot33" editorEntityId="11" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot_locked.png" vertexColors="false" mode="sprite">
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="13" y="-138.837" z="0" />
+						<Scale z="1" />
+					</SceneObject>
+					<SceneObject name="Dot11" editorEntityId="9" visibility="never">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot_locked.png" vertexColors="false" mode="sprite">
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="-9" y="-138.837" z="0" />
+						<Scale z="1" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PathStart">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/dlc_path.png" rotate="true" vertexColors="false" mode="sprite">
+					<Pivot anchor="right" />
+					<Flip u="true" v="true" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Translation x="130" y="471" z="0" />
+				<SceneObject name="Edge">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_start.png" rotate="true" vertexColors="false" mode="sprite">
+						<Pivot anchor="right" />
+						<Flip u="true" v="true" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-64" y="0" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject editorEntityId="231" name="Gifts">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="0.400" y="0.400" z="0.400" />
+				<Translation x="150" y="270" z="2" />
+				<Sprite vertexColors="false" mode="panel">
+					<RemoveQuads topLeft="true" top="true" right="true" topRight="true" center="true" left="true" bottomLeft="true" bottom="true" bottomRight="true" />
+					<Size height="1345" width="670" />
+					<Pivot anchor="center" y="-30" x="1" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Scissor useObjectBoundingBox="true" />
+				<SceneObject name="RewardsL">
+					<Animation animationData="BoingScale" name="appear" loopCount="0" />
+					<SceneObject name="Rewards" editorEntityId="209">
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="4" y="4" z="1" />
+						<Translation x="0" y="10" z="1" />
+						<SceneObject name="LollipopHammer" visibility="inherit" editorEntityId="210">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="211">
+								<Rotation x="0" y="0" z="0" />
+								<Scale x="1" y="1" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="2" y="3" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="StripedLollipopHammer" visibility="inherit" editorEntityId="212">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="213">
+								<Rotation x="0" y="0" z="0" />
+								<Scale x="1" y="1" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/striped_lollipop_icon.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="2" y="3" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="Colorbomb" visibility="inherit" editorEntityId="214">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="215">
+								<Rotation x="0" z="0" />
+								<Scale x="1" y="1" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="ColoringCandy" visibility="inherit" editorEntityId="216">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="217">
+								<Rotation x="0" z="0" />
+								<Scale x="1" y="1" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="0" y="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="DoubleDelishFish" visibility="inherit" editorEntityId="218">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="219">
+								<Rotation x="0" y="0" z="0" />
+								<Scale x="0.500" y="0.500" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/pregame_double_fish_modal_icon.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="0" y="-8" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="IllegalSwitch" visibility="inherit" editorEntityId="220">
+							<SceneObject name="Sprite" visibility="inherit" editorEntityId="221">
+								<Rotation x="0" y="0" z="0" />
+								<Scale x="0.900" y="0.900" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/free_switch_icon.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="0" y="-4" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject editorEntityId="155" name="UnlimitedLives" visibility="inherit">
+							<Scale z="1" />
+							<Rotation x="0" y="0" z="0" />
+							<SceneObject editorEntityId="156" name="Sprite" visibility="inherit">
+								<Rotation x="0" y="0" z="0" />
+								<Scale x="0.600" y="0.600" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/unlimited_live_with_label.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="2" y="3" z="0" />
+							</SceneObject>
+							<SceneObject name="text">
+								<Rotation z="-7" />
+								<Text font="Banana_NarrowSpacing">
+									<Color a="255" b="0" g="55" r="117" />
+									<Size x="11" y="11" />
+									<TextString>30 m</TextString>
+								</Text>
+								<Translation x="-15" y="26" z="0" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject editorEntityId="234" name="GiftExplosion">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Spine filename="shared/features/login_calendar/models/LoginCal.json" skin="Gift1">
+						<Animation loopCount="0" name="normal" spineAnimation="logincal_explosion" />
+						<Animation loopCount="0" name="special" spineAnimation="logincal_explosion_special" />
+					</Spine>
+					<Translation x="0" y="0" z="0" />
+					<Material name="LoginGifts">
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/features/login_calendar/tex/login_calendar.png" />
+					</Material>
+					<SceneObject name="GiftExplosionL" />
+				</SceneObject>
+				<SceneObject editorEntityId="233" name="GiftDrop" parentBoneId="1">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Spine filename="shared/features/login_calendar/models/LoginCal.json" skin="Gift1">
+						<Animation loopCount="0" name="normal" spineAnimation="logincal_drop" />
+						<Animation loopCount="0" name="special" spineAnimation="logincal_drop_special" />
+					</Spine>
+					<Translation x="0" y="0" z="0" />
+					<Material name="LoginGifts">
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/features/login_calendar/tex/login_calendar.png" />
+					</Material>
+				</SceneObject>
+				<SceneObject editorEntityId="232" name="GiftIdle">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Spine filename="shared/features/login_calendar/models/LoginCal.json" skin="Gift1">
+						<Animation name="normal" spineAnimation="logincal_idle" />
+						<Animation name="special" spineAnimation="logincal_idle_special" />
+					</Spine>
+					<Translation x="0" y="0" z="0" />
+					<Material name="LoginGifts">
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+						<Texture filename="shared/features/login_calendar/tex/login_calendar.png" />
+					</Material>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Consecutive">
+				<Translation x="80" y="38" z="3" />
+				<Rotation x="0" y="0" z="15.675" />
+				<Scale x="1" y="1" z="1" />
+				<SceneObject name="StampPinkL">
+					<Translation x="89.565" y="51.086" z="0" />
+					<SceneObject name="StampPink">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_stamp_pink.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0" y="0" z="5" />
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<SceneObject name="StampPinkTextL">
+							<Text alignment="center" verticalAlignment="visualCenter" font="TypewriterBold" canBreakWords="false" overflowBehaviour="fit" maxWidth="150" allowWordWrapping="true" maxHeight="80" key="feature.lc.stamp.tomorrow">
+								<Color r="241" g="57" b="183" a="255" />
+								<Size x="16" y="16" />
+							</Text>
+							<Translation z="0" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PathBoxInactiveL" editorEntityId="48">
+				<Translation x="150" y="469.304" z="4" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject name="Box" editorEntityId="49">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_day_box_locked.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation z="0" />
+					<SceneObject name="Consecutive">
+						<SceneObject name="DayText" editorEntityId="51">
+							<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="TypewriterBold" maxHeight="40" maxWidth="90" overflowBehaviour="fit" verticalAlignment="visualCenter" key="feature.lc.day">
+								<Shadow>
+									<Color r="255" g="255" b="255" a="250" />
+									<Offset x="0" />
+								</Shadow>
+								<Size x="16" y="16" />
+								<Color r="232" g="214" b="166" a="255" />
+							</Text>
+							<Translation z="0" y="-37" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+						</SceneObject>
+						<SceneObject name="DayNumber" editorEntityId="52">
+							<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="90" maxWidth="86" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Shadow>
+									<Color r="255" g="255" b="255" a="250" />
+									<Offset x="0" />
+								</Shadow>
+								<Size x="60" y="60" />
+								<TextString>3</TextString>
+								<Color r="232" g="214" b="166" a="255" />
+							</Text>
+							<Translation x="-2.451" y="12.421" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="NonConsecutive">
+						<SceneObject name="DayNumber" editorEntityId="52">
+							<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="90" maxWidth="86" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Shadow>
+									<Color r="255" g="255" b="255" a="250" />
+									<Offset x="0" />
+								</Shadow>
+								<Size x="60" y="60" />
+								<TextString>3</TextString>
+								<Color r="232" g="214" b="166" a="255" />
+							</Text>
+							<Translation z="0" x="-2.451" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PathBoxActiveL" editorEntityId="48">
+				<Translation x="150" y="469.304" z="4" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject name="Box" editorEntityId="49">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_day_box.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation z="0" />
+					<SceneObject name="Shadow" editorEntityId="50">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_day_shadow_landsc.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="top" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="-0.514" y="53.591" z="-1" />
+						<Scale z="1" />
+						<Rotation x="0" y="0" z="0" />
+					</SceneObject>
+					<SceneObject name="Consecutive">
+						<SceneObject name="DayText" editorEntityId="51">
+							<Text alignment="center" verticalAlignment="visualCenter" font="TypewriterBold" canBreakWords="false" allowWordWrapping="false" overflowBehaviour="fit" maxWidth="90" maxHeight="40" key="feature.lc.day">
+								<Size x="16" y="16" />
+								<Shadow>
+									<Color r="155" g="35" b="154" a="100" />
+									<Offset x="0" y="-2" />
+								</Shadow>
+							</Text>
+							<Translation z="0" y="-37" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+						</SceneObject>
+						<SceneObject name="DayNumber" editorEntityId="52">
+							<Text alignment="center" verticalAlignment="visualCenter" font="Banana" canBreakWords="false" allowWordWrapping="false" overflowBehaviour="fit" maxWidth="86" maxHeight="90">
+								<TextString>3</TextString>
+								<Size x="60" y="60" />
+								<Shadow>
+									<Color r="72" g="16" b="72" a="100" />
+									<Offset x="0" y="-2" />
+								</Shadow>
+							</Text>
+							<Translation x="-2.451" y="12.421" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="NonConsecutive">
+						<SceneObject name="DayNumber" editorEntityId="52">
+							<Text alignment="center" verticalAlignment="visualCenter" font="Banana" canBreakWords="false" allowWordWrapping="false" overflowBehaviour="fit" maxWidth="86" maxHeight="90">
+								<TextString>3</TextString>
+								<Size x="60" y="60" />
+								<Shadow>
+									<Color r="72" g="16" b="72" a="100" />
+									<Offset x="0" y="-2" />
+								</Shadow>
+							</Text>
+							<Translation z="0" x="-2.451" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="CheckBoxL" editorEntityId="53">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check_icon.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="57.247" y="56.906" z="4" />
+						<Scale z="1" y="1.200" x="1.200" />
+						<Rotation x="0" y="0" z="0" />
+						<SceneObject name="Check" editorEntityId="54">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/booster_check.png" vertexColors="false" mode="sprite">
+								<Pivot anchor="center" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation x="-1.149" y="-3.448" z="0" />
+						</SceneObject>
+						<Animation animationData="OnAppearGrow" name="hidden" loopCount="0" play="true" />
+						<Animation animationData="OnAppearGrow" name="appear" loopCount="0" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PathActive">
+				<SceneObject name="PathActiveL">
+					<Translation x="100" y="471" z="2" />
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/dlc_path.png" wrap="repeat" vertexColors="false" rotate="true" mode="sprite">
+						<Pivot anchor="right" />
+						<Rectangle maxY="300" minY="64" minX="64" maxX="128" />
+						<VertexColor r="255" g="255" b="255" a="255" />
+						<Flip u="true" v="true" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<SceneObject name="Dots" editorEntityId="8">
+						<Translation x="-137" y="129" z="0" />
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<SceneObject name="Dot2" editorEntityId="10">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot.png" vertexColors="false" mode="sprite">
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation x="35" y="-138.837" z="0" />
+							<Scale z="1" />
+						</SceneObject>
+						<SceneObject name="Dot3" editorEntityId="11">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot.png" vertexColors="false" mode="sprite">
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation x="13" y="-138.837" z="0" />
+							<Scale z="1" />
+						</SceneObject>
+						<SceneObject name="Dot1" editorEntityId="9">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_path_dot.png" vertexColors="false" mode="sprite">
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation x="-9" y="-138.837" z="0" />
+							<Scale z="1" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Animated">
+				<SceneObject name="StampGreenL">
+					<Translation x="0" y="0" z="0" />
+					<Rotation x="0" y="0" z="0" />
+					<SceneObject name="StampGreen">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_stamp_green.png" vertexColors="false" mode="sprite">
+							<Pivot anchor="center" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Rotation x="0" y="0" />
+						<Scale x="1" y="1" z="1" />
+						<SceneObject name="StampGreenTextL">
+							<Text alignment="center" allowWordWrapping="true" canBreakWords="false" font="TypewriterBold" maxHeight="80" maxWidth="150" overflowBehaviour="fit" verticalAlignment="visualCenter" key="feature.lc.stamp.received">
+								<Color r="10" g="182" b="98" a="255" />
+								<Size x="16" y="16" />
+							</Text>
+							<Translation z="0" />
+						</SceneObject>
+						<Translation z="5" />
+					</SceneObject>
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<Translation x="150" y="112" z="3" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="-15.407" />
+			</SceneObject>
+			<SceneObject name="NonAnimated">
+				<Translation x="150" y="112" z="3" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="-15.407" />
+				<SceneObject name="StampGreen">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/dlc_stamp_green.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Translation x="0" y="0" z="5" />
+					<SceneObject name="StampGreenTextL">
+						<Text alignment="center" allowWordWrapping="true" canBreakWords="false" font="TypewriterBold" maxHeight="80" maxWidth="150" overflowBehaviour="fit" verticalAlignment="visualCenter" key="feature.lc.stamp.received">
+							<Color r="10" g="182" b="98" a="255" />
+							<Size x="16" y="16" />
+						</Text>
+						<Translation z="0" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

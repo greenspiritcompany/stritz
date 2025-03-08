@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE ParticleEffect SYSTEM "../../dtd/particle_effect.dtd">
+<ParticleEffect space="Local" timeToEmit="0.5" maxParticles="32" name="EpisodeAllStars">
+	<Texture filename="shared/bootstrap/particles/tex/yellow_stripe.png" numFramesX="1" numFramesY="1" blend="Multiply"/>
+	<DirectionalForce x="0.0" y="0.0"/>
+
+	<Emitter emissionRate="0.05" angle="0" spread="0.0">
+		<SpawnArea width="0.0" height="0.0"/>
+	</Emitter>
+
+	<Velocity min="0.0" max="0.0"/>
+	<Size>
+		<Min x="180.0" y="60.0"/>
+		<Max x="180.0" y="60.0"/>
+	</Size>
+	<TimeToLive min="0.3" max="0.3"/>
+	<Dampening min="1.0" max="1.0"/>
+	<Rotation min="0" max="0"/>
+	<RotationSpeed min="0" max="0"/>
+	<SizeChange>
+		<Min x="0.0" y="-150.0"/>
+		<Max x="0.0" y="-150.0"/>
+	</SizeChange>
+	<StartColor r="255.0" g="255.0" b="255.0" a="128.0"/>
+	<EndColor r="255.0" g="255.0" b="255.0" a="255.0"/>
+	<TextureFrame startFrame="0" numTextureAnimationFrames="1" textureAnimationSpeed="60"/>
+</ParticleEffect>

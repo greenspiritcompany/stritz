@@ -1,0 +1,6 @@
+<TimelineFiles>
+	<!--Pregame Booster-->
+	<Timeline name="PregameBoostersPopupAppear" timeline="shared/diorama/common/timelines/pregame_boosters_popup_appear.xml"/>
+	<Timeline name="PregameBoostersPopupDisappear" timeline="shared/diorama/common/timelines/pregame_boosters_popup_disappear.xml"/>
+    <Timeline name="PreGameBoosterGlitter" timeline="shared/game/common/timelines/pre_game_booster_glitter.xml" scene="" />
+</TimelineFiles>

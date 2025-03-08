@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="3" space="Local" timeToEmit="0.300" name="CbStripedChargeUpPFX">
+    <Dampening max="0.500" min="0.500"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.050" spread="0" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="128" g="128" a="255"/>
+    <Rotation max="360" min="0"/>
+    <RotationSpeed max="20000" min="-20000"/>
+    <Size>
+        <Max x="300" y="200"/>
+        <Min x="150" y="100"/>
+    </Size>
+    <SizeChange>
+        <Max x="-200" y="-50"/>
+        <Min x="-200" y="-50"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="0"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="2" filename="shared/bootstrap/particles/tex/elec_64.png"/>
+    <TextureFrame numTextureAnimationFrames="2" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.400" min="0.400"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

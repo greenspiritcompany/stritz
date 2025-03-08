@@ -1,0 +1,109 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+
+		<Triggers>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp03" animationName="SpeechBubbleDisappear"/>
+		</Triggers>
+
+		<Animate target="cloud01" time="0.0">
+			<Hide/>
+			<Show time="0.0"/>
+		</Animate>
+
+		<Animate target="sun" time="0.0">
+			<Hide/>
+			<Show time="0.0"/>
+		</Animate>
+
+		<Animate target="sunrays" time="0.0">
+			<Hide/>
+			<Show time="0.0"/>
+		</Animate>
+
+		<Animate target="cloud02" time="0.0">
+			<Hide/>
+			<Show time="0.5"/>
+		</Animate>
+
+		<Animate target="donut01" time="0.0">
+			<Hide/>
+			<Show time="0.3"/>
+		</Animate>
+
+		<Animate target="donut01shadow" time="0.0">
+			<Hide/>
+			<Show time="0.3"/>
+		</Animate>
+
+		<Animate target="donut02" time="0.0">
+			<Hide/>
+			<Show time="0.6"/>
+		</Animate>
+
+		<Animate target="donut02shadow" time="0.0">
+			<Hide/>
+			<Show time="0.6"/>
+		</Animate>
+
+		<Animate target="donut03" time="0.0">
+			<Hide/>
+			<Show time="0.45"/>
+		</Animate>
+
+		<Animate target="donut03shadow" time="0.0">
+			<Hide/>
+			<Show time="0.45"/>
+		</Animate>
+
+		<Animate target="donut04" time="0.0">
+			<Hide/>
+			<Show time="0.25"/>
+		</Animate>
+
+		<Animate target="donut04shadow" time="0.0">
+			<Hide/>
+			<Show time="0.25"/>
+		</Animate>
+
+		<Animate target="donut05" time="0.0">
+			<Hide/>
+			<Show time="0.55"/>
+		</Animate>
+
+		<Animate target="donut07" time="0.0">
+			<Hide/>
+			<Show time="0.1"/>
+		</Animate>
+
+		<Animate target="donut_head" time="0.0">
+
+			<Show time="0.01"/>
+		</Animate>
+
+		<Animate target="donut_head_shadow" time="0.0">
+
+			<Show time="0.01"/>
+		</Animate>
+
+		<Animate target="BearGreen" time="0.0">
+			<Hide/>
+		</Animate>
+
+		<Animate target="BearBlue" time="0.0">
+			<Hide/>
+		</Animate>
+
+		<Animate target="BearPink" time="0.0">
+			<Hide/>
+		</Animate>
+
+		<Animate target="BearTurq" time="0.0">
+			<Hide/>
+		</Animate>
+
+		<Animate target="boat" time="0.0">
+			<Hide/>
+		</Animate>
+	</Timeline>
+</Timelines>

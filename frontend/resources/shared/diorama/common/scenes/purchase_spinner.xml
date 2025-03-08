@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="PurchaseResult">
+		<Translation z="500" />
+		<Animations>
+			<Animation name="OnAppear" animationData="OnAppearGrow" loopCount="0" />
+			<Animation name="OnDisappear" animationData="OnDisappearScale" loopCount="0" />
+		</Animations>
+		<SceneObject name="ConnectionSpinner">
+			<Animations>
+				<Animation name="IdleRotate" animationData="Rotate360" play="true" loopCount="-1" />
+			</Animations>
+			<Sprite filename="shared/diorama/common/tex/gui_elements/spinner_back.png">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation y="-6" />
+		</SceneObject>
+		<SceneObject name="ConnectionSpinnerFg">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/spinner_front.png">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100.0" max="640" />
+				<Height percentage="95.0" max="706" />
+				<OriginalSize width="640" height="706" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

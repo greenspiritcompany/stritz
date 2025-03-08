@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:b9ae6f6fb3d35c4c10ec63a9bbfe1ce4:dfaf4feb40b7b9c9434445c6dbf7eaf4:58e6b10d1a3fecd2f38be32653819d11$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="exclamations.png" width="1024" height="2048">
+    <sprite n="bubble.png" x="2" y="501" w="531" h="172" pX="0.5" pY="0.5"/>
+    <sprite n="bubble_blur.png" x="704" y="726" w="266" h="95" pX="0.5" pY="0.5"/>
+    <sprite n="crush.png" x="2" y="337" w="537" h="160" pX="0.5" pY="0.5"/>
+    <sprite n="crush_blur.png" x="704" y="642" w="269" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="divine.png" x="861" y="2" w="160" h="552" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="divine_blur.png" x="704" y="558" w="276" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="juicy.png" x="485" y="835" w="468" h="171" pX="0.5" pY="0.5"/>
+    <sprite n="juicy_blur.png" x="771" y="1099" w="234" h="86" pX="0.5" pY="0.5"/>
+    <sprite n="rush.png" x="2" y="933" w="406" h="173" pX="0.5" pY="0.5"/>
+    <sprite n="rush_blur.png" x="715" y="162" w="97" h="203" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="shuffling.png" x="2" y="162" w="709" h="171" pX="0.5" pY="0.5"/>
+    <sprite n="shuffling_blur.png" x="412" y="1010" w="355" h="86" pX="0.5" pY="0.5"/>
+    <sprite n="soda.png" x="543" y="337" w="157" h="411" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="soda_blur.png" x="485" y="752" w="206" h="79" pX="0.5" pY="0.5"/>
+    <sprite n="sodalicious.png" x="2" y="2" w="855" h="156" pX="0.5" pY="0.5"/>
+    <sprite n="sodalicious_blur.png" x="2" y="851" w="428" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="tasty.png" x="2" y="677" w="479" h="170" pX="0.5" pY="0.5"/>
+    <sprite n="tasty_blur.png" x="771" y="1010" w="240" h="85" pX="0.5" pY="0.5"/>
+</TextureAtlas>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="QuestCenter">
+		<Translation z="-1" />
+		<SceneObject name="Header">
+			<Translation y="-100" z="30" />
+			<SceneObject name="HeaderBackground">
+				<Sprite vertexColors="false" wrap="repeat" filename="shared/diorama/common/tex/gui_elements/repeat/quest_header_bg_mc.png">
+					<Size width="586" height="244" />
+					<Rectangle minX="0" maxX="1024" minY="0" maxY="244" />
+					<Pivot anchor="topLeft" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="HeaderPanel">
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ccjs_portal_header.png">
+					<Insets bottom="0" top="0" left="55" right="55" />
+					<Size width="300" height="55" />
+					<Pivot anchor="center" />
+				</Panel>
+				<Translation y="150" z="1" x="286" />
+				<Scale xyz="1.5" />
+				<SceneObject name="text">
+					<Text alignment="center" canBreakWords="false" key="quests.header" verticalAlignment="top" font="Banana">
+						<TextString>Overview</TextString>
+						<Color b="255" a="255" g="255" r="255" />
+						<Size y="15" x="15" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Background">
+			<Sprite vertexColors="false" wrap="repeat" filename="shared/diorama/common/tex/gui_elements/repeat/quest_bg.png">
+				<Size width="586" height="1530" />
+				<Rectangle minX="0" maxX="1024" minY="0" maxY="256" />
+			</Sprite>
+			<SceneObject name="Scrollable">
+				<SceneObject name="QuestBoxContainer">
+					<Translation y="150" z="3" x="284" />
+				</SceneObject>
+				<SceneObject name="QuestInfoBoxContainer">
+					<Translation y="150" z="3" x="284" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

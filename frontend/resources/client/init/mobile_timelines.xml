@@ -1,0 +1,5 @@
+<TimelineFiles>
+	<!-- Facebook Connect -->
+	<Timeline name="FacebookConnectSuccess" timeline="client/scenes/popup_fb_connect_success.xml"/>
+	<Timeline name="FacebookConnectFail" timeline="client/scenes/popup_fb_connect_fail.xml"/>
+</TimelineFiles>

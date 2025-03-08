@@ -1,0 +1,41 @@
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<Material name="SpriteMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="false" writeMask="false"/>
+
+		</Material>
+	</Materials>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<Translation x="0.0" y="0.0" z="6.0"/>
+		<SceneObject>
+			<Scale xyz="0.85"/>
+			<SceneObject name="ScoreText">
+				<Text canBreakWords="false" font="PinkNumbers" alignment="center">
+					<TextString>100</TextString>
+					<Color r="255" g="20" b="40" a="255"/>
+					<GradientColor r="255" g="255" b="255" a="255"/>
+
+
+					<Shadow>
+						<Color r="20" g="20" b="40" a="90"/>
+						<Offset y="2" x="2"/>
+					</Shadow>
+					<Size x="25" y="25"></Size>
+					<Pivot y="10"/>
+
+				</Text>
+				<Materials>
+					<Material parentMaterial="SpriteMaterial">
+
+					</Material>
+
+				</Materials>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ScoreTextParticles">
+
+		</SceneObject>
+	</SceneObject>
+</Scene>

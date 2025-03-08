@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="8" space="Local" timeToEmit="0.010" name="CbStripedEndCenterPFX">
+    <Dampening max="0.900" min="0.800"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="10" depth="0" height="10"/>
+    </Emitter>
+    <EndColor b="255" r="0" g="128" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="100" min="-100"/>
+    <Size>
+        <Max x="122" y="114"/>
+        <Min x="122" y="16"/>
+    </Size>
+    <SizeChange>
+        <Max x="16" y="16"/>
+        <Min x="8" y="8"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="0" textureAnimationSpeed="0" startFrame="0"/>
+    <TimeToLive max="0.800" min="0.500"/>
+    <Velocity max="100" min="250"/>
+</ParticleEffect>

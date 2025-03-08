@@ -1,0 +1,40 @@
+{
+  "id": "lovinggreen",
+  "nameKey" : "quests.names.lovinggreen",
+  "difficulty" : 1,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.likinggreen",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_candy_green.png",
+      "data": {
+		"amount" : 4000,
+        "color": "green"
+      }
+    }
+  ],
+   "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

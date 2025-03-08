@@ -1,0 +1,215 @@
+<!DOCTYPE Layout SYSTEM "../../../../externals/fictionfactory/core/tools/dtd/layout.dtd">
+<Layout>
+
+	<Object sceneObject="MissionPopup">
+		<Portrait>
+			<Size forceUniform="true">
+				<Width percentage="96"/>
+				<Height percentage="96"/>
+				<OriginalSize width="640" height="960"/>
+			</Size>
+		</Portrait>
+		<Landscape>
+			<Size forceUniform="true">
+				<Width percentage="96"/>
+				<Height percentage="96"/>
+				<OriginalSize width="640" height="960"/>
+			</Size>
+		</Landscape>
+	</Object>
+	
+	<!--Object sceneObject="KingLogoMissions">
+		<Portrait>
+			<Size>
+				<Width percentage="30"/>
+				<Height percentage="30"/>
+				<OriginalSize width="192" height="130"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="-53.0"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Size>
+				<Width percentage="30"/>
+				<Height percentage="30"/>
+				<OriginalSize width="192" height="130"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="-53.0"/>
+			</Translation>
+		</Landscape>
+	</Object>
+
+	<Object sceneObject="IconImageMissions">
+		<Portrait>
+			<Size>
+				<Width percentage="30"/>
+				<Height percentage="30"/>
+				<OriginalSize width="192" height="130"/>
+			</Size>
+			<Translation>
+				<X percentage="-44.0"/>
+				<Y percentage="-53.0"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Size>
+				<Width percentage="30"/>
+				<Height percentage="30"/>
+				<OriginalSize width="192" height="130"/>
+			</Size>
+			<Translation>
+				<X percentage="-44.0"/>
+				<Y percentage="-53.0"/>
+			</Translation>
+		</Landscape>
+	</Object-->
+	
+	<Object sceneObject="SCENEOBJECT_IMAGE_MISSION_OFFER_A_1">
+		<Portrait>
+			<Size>
+				<Width percentage="175"/>
+				<Height percentage="175"/>
+				<OriginalSize width="532" height="410"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="9.1"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Size>
+				<Width percentage="175"/>
+				<Height percentage="175"/>
+				<OriginalSize width="532" height="410"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="9.1"/>
+			</Translation>
+		</Landscape>
+	</Object>	
+	<Object sceneObject="SCENEOBJECT_IMAGE_MISSION_OFFER_B_1">
+		<Portrait>
+			<Size>
+				<Width percentage="135"/>
+				<Height percentage="135"/>
+				<OriginalSize width="475" height="144"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="-12.4"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Size>
+				<Width percentage="135"/>
+				<Height percentage="135"/>
+				<OriginalSize width="475" height="144"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="-12.4"/>	
+			</Translation>
+		</Landscape>
+	</Object>	
+	<Object sceneObject="SCENEOBJECT_IMAGE_MISSION_OFFER_B_2">
+		<Portrait>
+			<Size>
+				<Width percentage="135"/>
+				<Height percentage="135"/>
+				<OriginalSize width="475" height="144"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="9.9"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Size>
+				<Width percentage="135"/>
+				<Height percentage="135"/>
+				<OriginalSize width="475" height="144"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="9.9"/>
+			</Translation>
+		</Landscape>
+	</Object>
+	<Object sceneObject="SCENEOBJECT_IMAGE_REMINDER_POPUP_1">
+		<Portrait>
+			<Size>
+				<Width percentage="175"/>
+				<Height percentage="175"/>
+				<OriginalSize width="532" height="410"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="9.1"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Size>
+				<Width percentage="175"/>
+				<Height percentage="175"/>
+				<OriginalSize width="532" height="410"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="9.1"/>
+			</Translation>
+		</Landscape>
+	</Object>
+	<Object sceneObject="SCENEOBJECT_IMAGE_REWARD_CLAIMING_1">
+		<Portrait>
+			<Size>
+				<Width percentage="175"/>
+				<Height percentage="175"/>
+				<OriginalSize width="532" height="410"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="9.1"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Size>
+				<Width percentage="175"/>
+				<Height percentage="175"/>
+				<OriginalSize width="532" height="410"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="9.1"/>
+			</Translation>
+		</Landscape>
+	</Object>
+	<Object sceneObject="SCENEOBJECT_IMAGE_MISSION_ACCOMPLISH_A_1">
+		<Portrait>
+			<Size>
+				<Width percentage="175"/>
+				<Height percentage="175"/>
+				<OriginalSize width="532" height="410"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="9.1"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Size>
+				<Width percentage="175"/>
+				<Height percentage="175"/>
+				<OriginalSize width="532" height="410"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="9.1"/>
+			</Translation>
+		</Landscape>
+	</Object>	
+</Layout>

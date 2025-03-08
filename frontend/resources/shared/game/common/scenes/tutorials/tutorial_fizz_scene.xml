@@ -1,0 +1,598 @@
+<Scene>
+	<Material name="SidekickMat">
+		<Blend blendFuncSourceFactor="One" enabled="true"/>
+		<Cull enabled="true" face="back"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+	<Material name="GlowyMat">
+		<Blend blendFuncSourceFactor="One" enabled="true"/>
+		<Cull enabled="true" face="back"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+	<Material name="Episode1MaterialAlpha">
+		<Texture filename="shared/diorama/common/tex/yeti_tutorial.png"/>
+		<Blend enabled="true"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+	<Material name="SodaMat">
+		<Texture filename="shared/game/common/tex/candy/lemonade_v2.png"/>
+		<Blend enabled="true"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+	<Import filename="shared/game/common/materials/bottle_cap_material.xml"/>
+	<Import filename="shared/game/common/materials/fizz_material.xml"/>
+	<Import filename="shared/game/common/materials/tutorial_match_three_material.xml"/>
+	<SceneObject name="Scene">
+		<SceneObject name="TutorialCharacterLayout">
+			<SceneObject name="TutorialCharacterTransition">
+				<Animation loopCount="0" animationData="SlideInFromLeft" name="OnAppear"/>
+				<Animation loopCount="0" animationData="SlideOutToLeft" name="OnDisappear"/>
+				<Animation loopCount="0" animationData="StandStill" name="OnAppearImmediately"/>
+				<SceneObject layerFlags="256" name="TutorialCharacter">
+					<Translation z="500" y="-85"/>
+					<Scale y="-1"/>
+					<Model filename="shared/diorama/common/models/yeti/yeti_tutorial.ffm">
+						<Animation filename="shared/diorama/common/models/yeti/yeti_tutorial.ffa" play="false" loopCount="0" speed="1" name="idle"/>
+					</Model>
+					<Material parentMaterial="Episode1MaterialAlpha"/>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="8"/>
+					<Y percentage="103"/>
+				</Translation>
+				<Size>
+					<Height percentage="30"/>
+					<OriginalSize height="200" width="300"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="7"/>
+					<Y percentage="103"/>
+				</Translation>
+				<Size>
+					<Height percentage="50"/>
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject layerFlags="256" name="Tutorial" visibility="always">
+			<Animation play="true" loopCount="0" name="OnAppear" animationData="SlideInFromRight"/>
+			<Animation loopCount="0" name="OnDisappear" animationData="SlideOutToRight"/>
+			<SceneObject name="Offset">
+				<Translation z="500" y="-130"/>
+				<SceneObject class="Button" __visibility="0" name="PlayButton">
+					<Translation x="0" z="2" y="340"/>
+					<Scale x="0.80" z="0.80" y="0.80"/>
+					<Animation play="true" layer="1" name="Idle" animationData="Idle"/>
+					<Animation loopCount="0" name="OnPress" animationData="OnPress"/>
+					<Animation loopCount="0" name="OnRelease" animationData="OnRelease"/>
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+						<Insets right="128" bottom="0" left="128" top="0"/>
+						<Pivot anchor="center"/>
+						<Size width="280" height="127"/>
+					</Panel>
+					<SceneObject name="PlayButtonText">
+						<Translation x="0" y="5"/>
+						<Text alignment="center" font="Banana" key="common.play">
+							<Color b="255" g="255" r="255" a="225"/>
+							<Shadow enabled="true">
+								<Color b="0" g="0" r="0" a="25"/>
+								<Offset x="0" y="9"/>
+							</Shadow>
+							<Size x="30" y="30"/>
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject class="Button" __visibility="0" name="NextButton">
+					<Translation x="0" z="2" y="340"/>
+					<Scale x="0.80" z="0.80" y="0.80"/>
+					<Animation play="true" layer="1" name="Idle" animationData="Idle"/>
+					<Animation loopCount="0" name="OnPress" animationData="OnPress"/>
+					<Animation loopCount="0" name="OnRelease" animationData="OnRelease"/>
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+						<Insets right="128" bottom="0" left="128" top="0"/>
+						<Pivot anchor="center"/>
+						<Size width="280" height="127"/>
+					</Panel>
+					<SceneObject name="NextButtonText">
+						<Translation x="0" y="5"/>
+						<Text alignment="center" font="Banana" key="button.ok">
+							<Color b="255" g="255" r="255" a="225"/>
+							<Shadow enabled="true">
+								<Color b="0" g="0" r="0" a="25"/>
+								<Offset x="0" y="9"/>
+							</Shadow>
+							<Size x="30" y="30"/>
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="BgPanels">
+					<SceneObject name="Upper">
+						<Panel filename="shared/game/common/tex/hud/tutorial_text_bg_panel.png" vertexColors="false">
+							<Insets right="36" bottom="36" left="36" top="36"/>
+							<Pivot anchor="center" y="-3"/>
+							<Size width="320" height="300"/>
+						</Panel>
+					</SceneObject>
+					<SceneObject __visibility="0" name="Lower">
+						<Translation y="238"/>
+						<Panel filename="shared/game/common/tex/hud/tutorial_text_bg_panel.png" vertexColors="false">
+							<Insets right="36" bottom="36" left="36" top="36"/>
+							<Pivot anchor="center" y="-50"/>
+							<Size width="320" height="230"/>
+						</Panel>
+						<SceneObject name="TutorialText1">
+							<Translation z="1"/>
+							<Text alignment="center" maxWidth="280" font="Typewriter" verticalAlignment="center" key="ingame.tutorial.fizz_part_1">
+								<Color b="28" g="82" r="124" a="255"/>
+								<Size x="16" y="16"/>
+							</Text>
+						</SceneObject>
+						<SceneObject __visibility="3" name="TutorialText2">
+							<Translation z="1"/>
+							<Text alignment="center" maxWidth="280" font="Typewriter" verticalAlignment="center" key="ingame.tutorial.fizz_part_2">
+								<Color b="28" g="82" r="124" a="255"/>
+								<Size x="16" y="16"/>
+							</Text>
+						</SceneObject>
+						<SceneObject __visibility="3" name="TutorialText3">
+							<Translation z="1"/>
+							<Text alignment="center" maxWidth="280" font="Typewriter" verticalAlignment="center" key="ingame.tutorial.fizz_part_3">
+								<Color b="28" g="82" r="124" a="255"/>
+								<Size x="16" y="16"/>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="ParticleHelper">
+					<Translation x="-7" z="0" y="8"/>
+					<Scale x="1.07" y="1.07"/>
+				</SceneObject>
+				<SceneObject __visibility="3" name="GameGrid">
+					<SceneObject name="Bottle">
+						<SceneObject name="BottleCap">
+							<Model filename="shared/game/common/models/fizz_cap/fizz_bottle_cap.ffm">
+								<Animation filename="shared/game/common/models/soda_candy/soda_candy_collected.ffa" play="true" loopCount="1" speed="1.30" name="CollectWiggle"/>
+							</Model>
+							<Material parentMaterial="BottleCapMaterial"/>
+							<Scale x="0.56" z="0.56" y="0.56"/>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="Numbers">
+						<Translation z="100"/>
+						<SceneObject name="X2">
+							<Sprite filename="shared/bootstrap/particles/tex/x2.png" vertexColors="false">
+								<Pivot anchor="center"/>
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="X3">
+							<Sprite filename="shared/bootstrap/particles/tex/x3.png" vertexColors="false">
+								<Pivot anchor="center"/>
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="X4">
+							<Sprite filename="shared/bootstrap/particles/tex/x4.png" vertexColors="false">
+								<Pivot anchor="center"/>
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="X5">
+							<Sprite filename="shared/bootstrap/particles/tex/x5.png" vertexColors="false">
+								<Pivot anchor="center"/>
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="X6">
+							<Sprite filename="shared/bootstrap/particles/tex/x6.png" vertexColors="false">
+								<Pivot anchor="center"/>
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="Candies">
+						<Translation z="2"/>
+						<SceneObject name="FizzModel1">
+							<Material parentMaterial="FizzMaterialOrange"/>
+							<Model filename="shared/game/common/models/sodafizz/fizz_model.ffm">
+								<Animation filename="shared/game/common/models/sodafizz/fizz_1_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz1Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_2_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz2Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_3_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz3Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_4_idle.ffa" play="true" loopCount="-1" speed="0.50" name="Fizz4Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_charged.ffa" play="true" loopCount="-1" speed="1.50" name="FizzChargedIdle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_1.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo1"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_2.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo2"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_3.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo3"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_4.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo4"/>
+							</Model>
+							<Scale x="0.60" z="0.60" y="-0.60"/>
+							<Translation z="50"/>
+						</SceneObject>
+						<SceneObject name="FizzModel2">
+							<Material parentMaterial="FizzMaterialOrange"/>
+							<Model filename="shared/game/common/models/sodafizz/fizz_model.ffm">
+								<Animation filename="shared/game/common/models/sodafizz/fizz_1_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz1Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_2_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz2Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_3_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz3Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_4_idle.ffa" play="true" loopCount="-1" speed="0.50" name="Fizz4Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_charged.ffa" play="true" loopCount="-1" speed="1.50" name="FizzChargedIdle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_1.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo1"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_2.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo2"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_3.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo3"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_4.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo4"/>
+							</Model>
+							<Scale x="0.60" z="0.60" y="-0.60"/>
+							<Translation z="50"/>
+						</SceneObject>
+						<SceneObject name="FizzModel3">
+							<Material parentMaterial="FizzMaterialOrange"/>
+							<Model filename="shared/game/common/models/sodafizz/fizz_model.ffm">
+								<Animation filename="shared/game/common/models/sodafizz/fizz_1_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz1Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_2_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz2Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_3_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz3Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_4_idle.ffa" play="true" loopCount="-1" speed="0.50" name="Fizz4Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_charged.ffa" play="true" loopCount="-1" speed="1.50" name="FizzChargedIdle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_1.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo1"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_2.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo2"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_3.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo3"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_4.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo4"/>
+							</Model>
+							<Scale x="0.60" z="0.60" y="-0.60"/>
+							<Translation z="50"/>
+						</SceneObject>
+						<SceneObject name="FizzModel4">
+							<Material parentMaterial="FizzMaterialOrange"/>
+							<Model filename="shared/game/common/models/sodafizz/fizz_model.ffm">
+								<Animation filename="shared/game/common/models/sodafizz/fizz_1_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz1Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_2_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz2Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_3_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz3Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_4_idle.ffa" play="true" loopCount="-1" speed="0.50" name="Fizz4Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_charged.ffa" play="true" loopCount="-1" speed="1.50" name="FizzChargedIdle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_1.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo1"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_2.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo2"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_3.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo3"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_4.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo4"/>
+							</Model>
+							<Scale x="0.60" z="0.60" y="-0.60"/>
+							<Translation z="50"/>
+						</SceneObject>
+						<SceneObject name="FizzModel5">
+							<Material parentMaterial="FizzMaterialOrange"/>
+							<Model filename="shared/game/common/models/sodafizz/fizz_model.ffm">
+								<Animation filename="shared/game/common/models/sodafizz/fizz_1_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz1Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_2_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz2Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_3_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz3Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_4_idle.ffa" play="true" loopCount="-1" speed="0.50" name="Fizz4Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_charged.ffa" play="true" loopCount="-1" speed="1.50" name="FizzChargedIdle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_1.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo1"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_2.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo2"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_3.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo3"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_4.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo4"/>
+							</Model>
+							<Scale x="0.60" z="0.60" y="-0.60"/>
+							<Translation z="50"/>
+						</SceneObject>
+						<SceneObject name="FizzModel6">
+							<Material parentMaterial="FizzMaterialOrange"/>
+							<Model filename="shared/game/common/models/sodafizz/fizz_model.ffm">
+								<Animation filename="shared/game/common/models/sodafizz/fizz_1_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz1Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_2_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz2Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_3_idle.ffa" play="true" loopCount="-1" speed="1" name="Fizz3Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_4_idle.ffa" play="true" loopCount="-1" speed="0.50" name="Fizz4Idle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_charged.ffa" play="true" loopCount="-1" speed="1.50" name="FizzChargedIdle"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_1.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo1"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_2.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo2"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_3.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo3"/>
+								<Animation filename="shared/game/common/models/sodafizz/fizz_grow_to_4.ffa" play="true" loopCount="0" speed="1" name="FizzGrowTo4"/>
+							</Model>
+							<Scale x="0.60" z="0.60" y="-0.60"/>
+							<Translation z="50"/>
+						</SceneObject>
+						<SceneObject>
+							<SceneObject name="CandyOrange0">
+								<Sprite filename="shared/game/common/tex/candy/orange_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+								<Translation x="-74"/>
+							</SceneObject>
+							<SceneObject name="CandyOrange1">
+								<Sprite filename="shared/game/common/tex/candy/orange_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+								<Translation x="74"/>
+							</SceneObject>
+							<SceneObject name="CandyOrange5">
+								<Sprite filename="shared/game/common/tex/candy/orange_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="0" y="74"/>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+							<SceneObject name="CandyGreen1">
+								<Translation x="74" y="-74"/>
+								<Sprite filename="shared/game/common/tex/candy/green_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+							<SceneObject name="CandyCyan1">
+								<Translation y="-74"/>
+								<Sprite filename="shared/game/common/tex/candy/cyan_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+							<SceneObject name="CandyRed1">
+								<Translation x="-74" y="-74"/>
+								<Sprite filename="shared/game/common/tex/candy/red_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+							<SceneObject name="CandyGreen2">
+								<Translation x="-74" y="74"/>
+								<Sprite filename="shared/game/common/tex/candy/green_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+							<SceneObject name="CandyGreen3">
+								<Sprite filename="shared/game/common/tex/candy/green_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+								<Translation x="-74" y="148"/>
+							</SceneObject>
+							<SceneObject name="CandyRed2">
+								<Sprite filename="shared/game/common/tex/candy/red_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+							<SceneObject name="CandyRed3">
+								<Sprite filename="shared/game/common/tex/candy/red_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+								<Translation x="74" y="148"/>
+							</SceneObject>
+							<SceneObject name="CandyOrange2">
+								<Translation x="0" z="0" y="148"/>
+								<Sprite filename="shared/game/common/tex/candy/orange_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+							<SceneObject name="CandyOrange3">
+								<Translation x="74" z="0" y="148"/>
+								<Sprite filename="shared/game/common/tex/candy/orange_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+							<SceneObject name="CandyOrange4">
+								<Material parentMaterial="OrangeCandyMat"/>
+								<Sprite filename="shared/game/common/tex/candy/orange_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="-74" z="0" y="148"/>
+							</SceneObject>
+							<SceneObject name="CandyCyan2">
+								<Material parentMaterial="OrangeCandyMat"/>
+								<Sprite filename="shared/game/common/tex/candy/cyan_c.png" normals="true" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="74" z="0" y="74"/>
+							</SceneObject>
+							<SceneObject name="ScaleHelperOrange1">
+								<Translation x="-74" y="-74"/>
+								<Scale x="1" y="1"/>
+							</SceneObject>
+							<SceneObject name="ScaleHelperOrange2">
+								<Scale x="1" y="1"/>
+							</SceneObject>
+							<SceneObject name="ScaleHelperOrange3">
+								<Translation y="74"/>
+								<Scale x="1" y="1"/>
+							</SceneObject>
+							<SceneObject name="ScaleHelperOrange4">
+								<Translation x="74"/>
+								<Scale x="1" y="1"/>
+							</SceneObject>
+							<SceneObject name="ParticleHelperBurst1"/>
+							<SceneObject name="ParticleHelperBurst2"/>
+							<SceneObject name="ParticleHelperBurst3"/>
+							<SceneObject name="ParticleHelperBurst4"/>
+							<SceneObject name="ParticleHelperBurst5"/>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="Soda">
+						<Translation z="1" y="74"/>
+						<SceneObject name="SodaParticleHelper">
+							<Scale x="0.50" y="-0.50"/>
+							<Translation z="2"/>
+						</SceneObject>
+						<SceneObject name="SodaBg">
+							<Sprite filename="shared/game/common/tex/gamegrid/gb_big_002.png" vertexColors="false">
+								<Pivot anchor="center"/>
+								<Size width="222" height="148"/>
+							</Sprite>
+							<Scale y="0.50"/>
+						</SceneObject>
+						<SceneObject name="Soda1">
+							<Material parentMaterial="SodaMat"/>
+							<Model filename="shared/game/common/models/lemonade/straight.ffm">
+								<Animation filename="shared/game/common/models/lemonade/idle.ffa" play="true" loopCount="-1" name="Idle"/>
+							</Model>
+							<Scale x="0.50" z="0.50" y="-0.50"/>
+							<Translation x="-74" y="-74"/>
+						</SceneObject>
+						<SceneObject name="Soda2">
+							<Material parentMaterial="SodaMat"/>
+							<Model filename="shared/game/common/models/lemonade/straight.ffm">
+								<Animation filename="shared/game/common/models/lemonade/idle.ffa" play="true" loopCount="-1" name="Idle"/>
+							</Model>
+							<Scale x="-0.50" y="-0.50"/>
+							<Translation x="0" y="-74"/>
+						</SceneObject>
+						<SceneObject name="Soda3">
+							<Material parentMaterial="SodaMat"/>
+							<Model filename="shared/game/common/models/lemonade/straight.ffm">
+								<Animation filename="shared/game/common/models/lemonade/idle.ffa" play="true" loopCount="-1" name="Idle"/>
+							</Model>
+							<Scale x="0.50" z="0.50" y="-0.50"/>
+							<Translation x="74" y="-74"/>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="GridGFX">
+						<SceneObject>
+							<Translation y="-111"/>
+							<SceneObject name="Grid1">
+								<Translation x="-111"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_000.png" vertexColors="false">
+									<Pivot anchor="bottomRight"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid2">
+								<Translation x="0"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_004.png" vertexColors="false">
+									<Pivot anchor="bottom"/>
+									<Size width="222" height="37"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid3">
+								<Translation x="111"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_001.png" vertexColors="false">
+									<Pivot anchor="bottomLeft"/>
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="-74"/>
+							<SceneObject name="Grid4">
+								<Translation x="-74"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid5">
+								<Translation x="0"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_001.png" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid6">
+								<Translation x="74"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="0"/>
+							<SceneObject name="Grid7">
+								<Translation x="-111"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_021.png" vertexColors="false">
+									<Pivot anchor="right"/>
+									<Size width="37" height="222"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid8">
+								<Translation x="-74"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_001.png" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid9">
+								<Translation x="0"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid10">
+								<Translation x="74"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_001.png" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid11">
+								<Translation x="111"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_005.png" vertexColors="false">
+									<Pivot anchor="left"/>
+									<Size width="37" height="222"/>
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="74"/>
+							<SceneObject name="Grid12">
+								<Translation x="-74"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid13">
+								<Translation x="0"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_001.png" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid14">
+								<Translation x="74"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png" vertexColors="false">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="111"/>
+							<SceneObject name="Grid15">
+								<Translation x="-111"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_016.png" vertexColors="false">
+									<Pivot anchor="topRight"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid16">
+								<Translation x="0"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_020.png" vertexColors="false">
+									<Pivot anchor="top"/>
+									<Size width="222" height="37"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid17">
+								<Translation x="111"/>
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_017.png" vertexColors="false">
+									<Pivot anchor="topLeft"/>
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Size>
+					<OriginalSize height="550" width="300"/>
+					<Width percentage="60"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="60"/>
+					<Y percentage="50"/>
+				</Translation>
+				<Size>
+					<Height percentage="90"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="50"/>
+					<Y percentage="40"/>
+				</Translation>
+				<Size>
+					<Width percentage="50"/>
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+	</SceneObject>
+</Scene>

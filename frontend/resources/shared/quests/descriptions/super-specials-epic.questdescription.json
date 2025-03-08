@@ -1,0 +1,81 @@
+{
+  "id": "super_specials_epic",
+  "nameKey" : "quests.names.superspecials",
+  "difficulty" : 2,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.wrapitup",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_wrapped.png",
+      "data": {
+		 "itemType" : "wrappedCandy",
+         "amount" : 150
+      }
+    },
+  {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.striped",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_candy_striped.png",
+      "data": {
+		 "itemType" : "stripedCandy",
+         "amount" : 150
+      }
+    },
+
+    {
+      "type": "matchXWithY",
+      "descriptionKey" : "quests.description.matchwrappedstriped",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_candy_striped_wrapped.png",
+      "data": {
+		"itemType1" : "wrappedCandy",
+		"itemType2" : "stripedCandy",
+        "times" : 30
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12003,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12021,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

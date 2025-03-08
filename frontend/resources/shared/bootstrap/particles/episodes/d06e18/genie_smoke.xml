@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="28" space="Local" timeToEmit="0.200" name="GenieSmokeSmoke">
+    <Dampening max="0.900" min="0.900"/>
+    <DirectionalForce x="0" y="554.800"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="180.880" depth="0" height="180.880"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="175" a="0"/>
+    <Rotation max="200" min="200"/>
+    <RotationSpeed max="100" min="100"/>
+    <Size>
+        <Max x="86.120" y="86.120"/>
+        <Min x="62.340" y="64.610"/>
+    </Size>
+    <SizeChange>
+        <Max x="98.910" y="98.910"/>
+        <Min x="98.910" y="98.910"/>
+    </SizeChange>
+    <StartColor b="255" r="244" g="68" a="255"/>
+    <Texture numFramesY="16" blend="Multiply" numFramesX="16" filename="shared/bootstrap/particles/tex/particles.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="134"/>
+    <TimeToLive max="0.900" min="0.900"/>
+    <Velocity max="100" min="100"/>
+</ParticleEffect>

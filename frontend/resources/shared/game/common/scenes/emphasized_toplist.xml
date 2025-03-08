@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="EmphasizedToplist">
+		<Translation z="500" />
+		<SceneObject name="Background">
+			<Sprite vertexColors="false">
+				<VertexColor r="255" g="255" b="255" a="70" />
+			</Sprite>
+			<LayoutConfiguration>
+				<Size forceUniform="false">
+					<Width percentage="100" />
+					<Height percentage="100" />
+				</Size>
+			</LayoutConfiguration>
+			<Animation name="OnAppear" animationData="FadeInBlack" loopCount="0" />
+			<Animation name="OnDisappear" loopCount="0" animationData="FadeOutBlack" />
+			<Material>
+				<Color r="255" g="255" b="255" a="255" />
+				<Blend enabled="true" />
+			</Material>
+			<Translation z="-25" />
+		</SceneObject>
+		<SceneObject name="Landscape">
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="50" />
+					<Y percentage="50" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+			<SceneObject name="HeaderContainer">
+				<SceneObject name="LandscapeHeader">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/et_header.png" vertexColors="false" wrap="repeat">
+						<Pivot anchor="top" />
+						<Rectangle maxY="127" maxX="1315" />
+						<Size width="92" height="256" />
+					</Sprite>
+					<Translation x="0" y="0" z="1" />
+					<SceneObject name="Shadow">
+						<Panel filename="shared/diorama/common/tex/gui_elements/shop_header_shadow.png" vertexColors="false">
+							<Insets bottom="2" right="2" left="2" top="2" />
+							<Pivot anchor="top" />
+							<Size width="92" />
+							<Scale y="2" />
+						</Panel>
+						<Translation x="0" y="223.484" z="-2" />
+					</SceneObject>
+					<SceneObject name="Shadow3">
+						<Panel filename="shared/diorama/common/tex/gui_elements/shop_header_shadow.png" vertexColors="false">
+							<Insets bottom="2" right="2" left="2" top="2" />
+							<Pivot anchor="top" />
+							<Size width="92" height="16" />
+							<Scale y="2" />
+						</Panel>
+						<Translation x="0" y="217.198" z="-1" />
+					</SceneObject>
+					<LayoutConfiguration name="Default">
+						<Translation>
+							<Y percentage="-50" />
+						</Translation>
+						<Size forceUniform="false">
+							<Width percentage="100" />
+							<Height percentage="90" />
+							<OriginalSize width="92" height="1472" />
+						</Size>
+					</LayoutConfiguration>
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="Icons" visibility="dynamic">
+					<Translation x="0" y="0" z="1" />
+					<SceneObject name="closeLayout">
+						<Translation z="1" />
+						<SceneObject name="close">
+							<Translation z="0" y="-0.635" x="-7.682" />
+							<SceneObject class="Button" name="CloseButtonLandscape">
+								<Animation animationData="Idle" play="true" name="Idle" layer="1" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Scale x="1.176" y="1.211" z="0.700" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+									<Pivot anchor="center" />
+								</Sprite>
+								<Translation x="-75.693" y="77.592" z="0" />
+								<SceneObject>
+									<Scale xyz="1.5" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/btn_exit.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+									<Translation y="-3" x="0" />
+								</SceneObject>
+							</SceneObject>
+							<LayoutConfiguration name="Default">
+								<Size>
+									<Height percentage="14" />
+									<OriginalSize width="0" height="156" />
+								</Size>
+							</LayoutConfiguration>
+						</SceneObject>
+						<LayoutConfiguration name="Default">
+							<Translation>
+								<X percentage="50" />
+								<Y percentage="-50" />
+							</Translation>
+						</LayoutConfiguration>
+					</SceneObject>
+					<SceneObject name="textLayoutBox">
+						<Translation z="1" />
+						<SceneObject name="textLayout">
+							<SceneObject name="text" editorEntityId="111">
+								<Translation x="3.677" y="-0.119" z="0" />
+								<SceneObject name="ShopText">
+									<Text alignment="center" canBreakWords="false" allowWordWrapping="false" font="Banana" overflowBehaviour="fit" maxHeight="150" verticalAlignment="visualCenter" maxWidth="700" key="common.leaderboard">
+										<Size y="38" x="38" />
+										<Color r="175" g="28" b="116" a="255" />
+										<Shadow>
+											<Color g="255" b="255" r="255" a="255" />
+											<Offset y="4" x="0" />
+										</Shadow>
+										<Pivot y="57" />
+									</Text>
+									<Translation x="-3.124" y="41.359" z="0" />
+								</SceneObject>
+								<SceneObject name="LevelGrp2">
+									<Scale z="1" x="1.100" y="1.100" />
+									<Translation x="-9.654" y="96.292" z="0" />
+									<SceneObject name="LevelTildeLeft">
+										<Sprite filename="shared/diorama/common/tex/gui_elements/et_tilde_sign.png" vertexColors="false">
+											<Pivot anchor="right" />
+										</Sprite>
+										<Translation y="-5" />
+									</SceneObject>
+									<SceneObject name="LevelTildeRight">
+										<Sprite filename="shared/diorama/common/tex/gui_elements/et_tilde_sign.png" vertexColors="false">
+											<Pivot anchor="left" />
+										</Sprite>
+										<Translation y="-5" />
+									</SceneObject>
+									<SceneObject __visibility="0" name="LevelNumber">
+										<Text alignment="center" font="Banana">
+											<Color a="255" b="116" g="28" r="175" />
+											<GradientColor a="255" b="116" g="28" r="175" />
+											<Outline enabled="false">
+												<Color a="255" b="227" g="189" r="57" />
+											</Outline>
+											<Shadow enabled="true">
+												<Color a="255" b="255" g="255" r="255" />
+												<Offset x="0" />
+											</Shadow>
+											<Size x="24" y="24" />
+											<TextString>1</TextString>
+										</Text>
+										<Translation y="5" z="100" />
+									</SceneObject>
+								</SceneObject>
+								<LayoutConfiguration name="Default">
+									<Translation>
+										<X percentage="50" />
+										<Y percentage="-50" />
+									</Translation>
+									<Size>
+										<Height percentage="15" />
+										<OriginalSize height="134" width="0" />
+									</Size>
+								</LayoutConfiguration>
+							</SceneObject>
+						</SceneObject>
+						<LayoutConfiguration name="Default">
+							<Size>
+								<Width percentage="67" />
+							</Size>
+							<Translation>
+								<X percentage="-50" />
+							</Translation>
+						</LayoutConfiguration>
+					</SceneObject>
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<Animation name="OnAppear" animationData="SlideInFromTop" loopCount="0" />
+				<Animation name="OnDisappear" animationData="SlideOutToTop" loopCount="0" />
+			</SceneObject>
+			<SceneObject name="BarContainer">
+				<SceneObject name="Footer" visibility="inherit">
+					<Translation x="1365.105" y="0" z="0" />
+					<LayoutConfiguration name="Default">
+						<Translation>
+							<X percentage="100" />
+							<Y percentage="0" />
+						</Translation>
+						<Size forceUniform="false">
+							<Height percentage="100" />
+							<Width percentage="30" />
+							<OriginalSize width="384" height="832" />
+						</Size>
+					</LayoutConfiguration>
+					<SceneObject name="FooterTop">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/et_bank_top_landsc.png" wrap="repeat" vertexColors="false">
+							<Rectangle minX="64" maxX="440" minY="64" maxY="128" />
+						</Sprite>
+						<Translation x="-1015.941" y="-302.409" z="0" />
+					</SceneObject>
+					<SceneObject name="FooterLeft">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/et_bank_left_landsc.png" wrap="repeat" vertexColors="false">
+							<Rectangle maxY="720" minY="64" maxX="128" minX="64" />
+						</Sprite>
+						<Translation x="-1079.470" y="-238.806" z="0" />
+					</SceneObject>
+					<SceneObject name="FooterMid">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/et_bank_middle.png" wrap="repeat" vertexColors="false">
+							<Rectangle minX="64" maxX="440" minY="64" maxY="720" />
+						</Sprite>
+						<Translation x="-1015.941" y="-239.038" z="0" />
+					</SceneObject>
+					<SceneObject name="FooterTopLeft">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/et_bank_topleft_landsc.png" vertexColors="false" />
+						<Translation x="-1079.470" y="-302.409" z="0" />
+					</SceneObject>
+					<SceneObject name="Shadow">
+						<Panel filename="shared/diorama/common/tex/gui_elements/et_bank_bottom_shadow_landsc.png" vertexColors="false">
+							<Insets bottom="4" left="2" right="2" top="4" />
+							<Size width="440" />
+						</Panel>
+						<Translation x="-1079.704" y="383.350" z="0" />
+					</SceneObject>
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="BankBoxLayout" visibility="inherit">
+					<LayoutConfiguration>
+						<Size>
+							<Width percentage="30" />
+							<OriginalSize width="404" height="600" />
+						</Size>
+						<Translation>
+							<X percentage="100" />
+							<Y percentage="0" />
+						</Translation>
+					</LayoutConfiguration>
+					<Translation x="1324.851" y="0" z="0" />
+					<SceneObject name="BankBox">
+						<Panel filename="shared/diorama/common/tex/gui_elements/et_bank_box.png" vertexColors="false">
+							<Insets bottom="24" left="22" right="22" top="66" />
+							<Size height="600" width="404" />
+						</Panel>
+						<Scale z="1" />
+						<Translation x="-1102.672" y="-248.736" z="0" />
+						<Rotation x="0" y="0" z="0" />
+					</SceneObject>
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<Animation name="OnAppear" animationData="SlideInFromRight" loopCount="0" />
+				<Animation name="OnDisappear" animationData="SlideOutToRight" loopCount="0" />
+			</SceneObject>
+			<SceneObject name="BoxesLayoutBox">
+				<LayoutConfiguration name="Default">
+					<Translation>
+						<X percentage="-17" />
+						<Y percentage="-32" />
+					</Translation>
+					<Size>
+						<Width percentage="60" />
+						<OriginalSize width="700" height="100" />
+					</Size>
+				</LayoutConfiguration>
+				<SceneObject name="BoxesLandscape">
+					<Translation z="0" />
+					<SceneObject name="EntryPoint">
+						<PortsContext uuid="{0c2333e4-8a85-4dff-98aa-1aee04c062a2}" />
+						<Translation z="-1" y="-20" />
+						<Scale z="1" />
+					</SceneObject>
+				</SceneObject>
+				<Animation name="OnAppear" animationData="SlideInFromLeft" loopCount="0" />
+				<Animation name="OnDisappear" animationData="SlideOutToLeft" loopCount="0" />
+			</SceneObject>
+			<SceneObject name="Spinner">
+				<Translation z="0" />
+				<Scale x="-2" y="2" z="2" />
+				<Rotation x="0" y="0" z="0" />
+				<Sprite filename="shared/preloader/tex/spinner.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Animation play="true" speed="2" animationData="spinning_wheel" />
+				<LayoutConfiguration name="Landscape">
+					<Translation>
+						<X percentage="-16" />
+						<Y percentage="5" />
+					</Translation>
+				</LayoutConfiguration>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Portrait">
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+			<SceneObject name="PortraitHeader" editorEntityId="132">
+				<Translation z="1" y="-410.981" />
+				<SceneObject name="Shadow2">
+					<Panel filename="shared/diorama/common/tex/gui_elements/shop_header_shadow.png" vertexColors="false">
+						<Insets bottom="2" right="2" left="2" top="2" />
+						<Size width="1536" height="16" />
+						<Scale y="2" />
+					</Panel>
+					<Translation x="-764.175" y="217.319" z="0" />
+				</SceneObject>
+				<SceneObject visibility="inherit" name="Header" editorEntityId="140">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/et_header.png" vertexColors="false" wrap="repeat">
+						<Rectangle maxY="127" maxX="768" />
+						<Size width="1536" height="256" />
+					</Sprite>
+					<Translation z="0" y="-0.382" x="-767.902" />
+					<SceneObject name="Shadow">
+						<Panel filename="shared/diorama/common/tex/gui_elements/shop_header_shadow.png" vertexColors="false">
+							<Insets bottom="2" right="2" left="2" top="2" />
+							<Size width="1536" />
+							<Scale y="2" />
+						</Panel>
+						<Translation z="-1" y="223" />
+					</SceneObject>
+					<SceneObject name="ShopText">
+						<Text alignment="center" canBreakWords="false" allowWordWrapping="false" font="Banana" overflowBehaviour="fit" maxHeight="200" verticalAlignment="visualCenter" maxWidth="800" key="common.leaderboard">
+							<Color r="175" g="28" b="116" a="255" />
+							<Size y="60" x="60" />
+							<Shadow>
+								<Color g="255" b="255" r="255" a="255" />
+								<Offset y="4" x="0" />
+							</Shadow>
+						</Text>
+						<Translation x="773.505" y="72.054" z="0" />
+					</SceneObject>
+					<SceneObject name="LevelGrp">
+						<Translation x="778.032" y="166.128" z="0" />
+						<Scale x="2" y="2" z="1" />
+						<SceneObject name="LevelTildeLeft">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/et_tilde_sign.png" vertexColors="false">
+								<Pivot anchor="right" />
+							</Sprite>
+							<Translation y="-5" />
+						</SceneObject>
+						<SceneObject name="LevelTildeRight">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/et_tilde_sign.png" vertexColors="false">
+								<Pivot anchor="left" />
+							</Sprite>
+							<Translation y="-5" />
+						</SceneObject>
+						<SceneObject __visibility="0" name="LevelNumber">
+							<Text alignment="center" font="Banana">
+								<Color r="175" g="28" b="116" a="255" />
+								<GradientColor a="255" b="116" g="28" r="175" />
+								<Outline enabled="false">
+									<Color a="255" b="227" g="189" r="57" />
+								</Outline>
+								<Shadow enabled="true">
+									<Color r="255" g="255" b="255" a="255" />
+									<Offset x="0" />
+								</Shadow>
+								<Size x="24" y="24" />
+								<TextString>1</TextString>
+							</Text>
+							<Translation y="5" z="100" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject class="Button" name="CloseButtonPortrait">
+						<Animation animationData="Idle" play="true" name="Idle" layer="1" />
+						<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+						<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+						<Scale z="0.700" y="1.778" x="1.723" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation z="0" y="111.797" x="1437.009" />
+						<SceneObject>
+							<Scale xyz="1.5" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/btn_exit.png" vertexColors="false">
+								<Pivot anchor="center" />
+							</Sprite>
+							<Translation y="-3" x="0" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="PortraitOfferGrp" editorEntityId="133">
+					<Translation z="-1" y="230" x="0" />
+					<LayoutConfiguration name="Default">
+						<Size>
+							<Width percentage="100" />
+							<OriginalSize width="760" height="0" />
+							<Height percentage="993" />
+						</Size>
+					</LayoutConfiguration>
+				</SceneObject>
+				<LayoutConfiguration name="Default">
+					<Translation>
+						<Y percentage="0" />
+						<X percentage="50" />
+					</Translation>
+					<Size>
+						<Width percentage="100" />
+						<OriginalSize width="1536" height="240" />
+					</Size>
+				</LayoutConfiguration>
+				<Animation name="OnAppear" animationData="SlideInFromTop" loopCount="0" />
+				<Animation name="OnDisappear" animationData="SlideOutToTop" loopCount="0" />
+			</SceneObject>
+			<SceneObject name="Boxes">
+				<Translation x="15.554" y="0" z="0" />
+				<LayoutConfiguration name="Default">
+					<Size>
+						<OriginalSize width="750" height="120" />
+						<Width percentage="100" />
+					</Size>
+					<Translation>
+						<X percentage="50" />
+					</Translation>
+				</LayoutConfiguration>
+				<SceneObject name="EntryPoint">
+					<PortsContext uuid="{6a6c8164-3311-48da-88b6-905b5f4ef359}" />
+					<Translation y="125.560" z="0" />
+				</SceneObject>
+				<Animation name="OnAppear" animationData="SlideInFromLeft" loopCount="0" />
+				<Animation name="OnDisappear" loopCount="0" animationData="SlideOutToLeft" />
+			</SceneObject>
+			<SceneObject name="Footer" visibility="never">
+				<Translation x="-91.144" y="4937.188" z="0" />
+				<LayoutConfiguration name="Default">
+					<Size>
+						<Width percentage="100" />
+						<OriginalSize width="696" height="500" />
+					</Size>
+					<Translation>
+						<Y percentage="100" />
+						<X percentage="0" />
+					</Translation>
+				</LayoutConfiguration>
+				<SceneObject name="FooterTop">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/et_bank_top_portr.png" wrap="repeat" vertexColors="false">
+						<Rectangle minX="64" maxX="760" minY="64" maxY="128" />
+					</Sprite>
+					<Translation x="0.036" y="-343.329" z="0" />
+				</SceneObject>
+				<SceneObject name="FooterMid">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/et_bank_middle.png" wrap="repeat" vertexColors="false">
+						<Rectangle minX="64" maxX="760" minY="64" maxY="344" />
+					</Sprite>
+					<Translation x="0.036" y="-279.733" z="0" />
+					<SceneObject name="Shadow4">
+						<Panel filename="shared/diorama/common/tex/gui_elements/et_bank_bottom_shadow_landsc.png" vertexColors="false">
+							<Insets bottom="4" left="2" right="2" top="4" />
+							<Size width="696" />
+						</Panel>
+						<Translation x="0.173" y="246.481" z="0" />
+						<Scale x="1" y="1" z="1" />
+						<Rotation x="0" y="0" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="BankBox">
+					<Panel filename="shared/diorama/common/tex/gui_elements/et_bank_box.png" vertexColors="false">
+						<Insets bottom="24" left="22" right="22" top="66" />
+						<Size width="718" height="335" />
+					</Panel>
+					<Translation x="17.546" y="-322.122" z="0" />
+					<Scale x="0.920" y="0.920" />
+				</SceneObject>
+				<Animation name="Appear" animationData="SlideInFromBelow" loopCount="0" />
+				<Animation name="Disappear" animationData="SlideOutToBelow" loopCount="0" />
+			</SceneObject>
+			<SceneObject name="Spinner">
+				<Scale x="-2" y="2" z="2" />
+				<Translation z="0" />
+				<Rotation x="0" y="0" z="0" />
+				<Sprite filename="shared/preloader/tex/spinner.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Animation animationData="spinning_wheel" play="true" speed="2" />
+				<LayoutConfiguration name="Portrait">
+					<Translation>
+						<X percentage="50" />
+						<Y percentage="54" />
+					</Translation>
+				</LayoutConfiguration>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

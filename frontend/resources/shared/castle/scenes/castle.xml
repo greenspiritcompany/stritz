@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<Material name="CakeCastleMaterial">
+		<Cull face="back" enabled="true" />
+		<Texture filename="shared/castle/tex/cake_castle_atlas.png" />
+	</Material>
+	<Material name="CakeCastleMaterialAlpha" parentMaterial="CakeCastleMaterial">
+		<Depth writeMask="false" enabled="true" />
+		<Blend enabled="true" />
+	</Material>
+	<Material name="CastleMaterial">
+		<Cull face="back" enabled="true" />
+		<Texture filename="shared/castle/tex/castle_material.png" />
+	</Material>
+	<Material name="CastleMaterialAlpha" parentMaterial="CastleMaterial">
+		<Depth writeMask="false" enabled="true" />
+		<Blend enabled="true" />
+	</Material>
+	<Material name="CastleMaterialCaustics">
+		<Cull face="back" enabled="true" />
+		<Texture filename="shared/castle/tex/underwater_caustics.png" />
+	</Material>
+	<Material name="CastleMaterialCausticsAlpha" parentMaterial="CastleMaterialCaustics">
+		<Depth writeMask="false" enabled="true" />
+		<Blend enabled="true" />
+	</Material>
+	<Material name="CastleMaterialCausticsSeabed">
+		<Cull face="back" enabled="true" />
+		<Texture filename="shared/castle/tex/underwater_caustics2.png" />
+	</Material>
+	<Material name="CastleMaterialCausticsSeabedAlpha" parentMaterial="CastleMaterialCausticsSeabed">
+		<Depth writeMask="false" enabled="true" />
+		<Blend enabled="true" />
+	</Material>
+	<Material name="PathMaterial">
+		<Cull face="back" enabled="true" />
+		<Texture wrap="repeat" filename="shared/castle/tex/castle_path.png" />
+	</Material>
+	<Material name="PathMaterialAlpha" parentMaterial="PathMaterial">
+		<Depth writeMask="false" enabled="true" />
+		<Blend enabled="true" />
+	</Material>
+	<SceneObject layerFlags="2" name="CastleRoot">
+		<SceneObject name="ok">
+			<Translation x="-1000" />
+			<SceneObject name="KingName">
+				<Translation x="3.032" y="15.468" z="-286.842" />
+				<Scale z="1" x="1" y="-1" />
+				<Rotation x="-15" />
+				<Text verticalAlignment="visualCenter" maxWidth="110" overflowBehaviour="fit" font="TypewriterBold" alignment="center" maxHeight="20">
+					<Color b="0" g="55" r="117" a="255" />
+					<Shadow enabled="true">
+						<Color b="255" g="255" r="255" a="255" />
+						<Offset z="1" x="0" y="1" />
+					</Shadow>
+					<Size x="12" y="12" />
+					<TextString>TobiasH</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject name="Castle_Current_King">
+				<Translation z="-340" x="0" y="98.400" />
+				<SceneObject name="ProfilePicture">
+					<Translation x="0.007" y="-67.468" z="-13.224" />
+					<Rotation z="180" y="180" />
+					<Scale z="1.500" x="1.500" y="1.500" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/prof_pic.png">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Chest">
+				<Interactable upEffect="diorama_house" />
+				<Model filename="shared/castle/models/cake_castle_chest.ffm" />
+				<Material parentMaterial="CakeCastleMaterialAlpha">
+					<Cull face="front" />
+				</Material>
+				<Rotation x="-7.229" y="0" z="0" />
+				<Translation x="-30.130" y="20.336" z="-37.810" />
+				<Scale x="0.914" y="0.914" z="0.914" />
+				<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.500" />
+				<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+				<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+				<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+				<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+			</SceneObject>
+			<!--SPEECHBUBBLE-->
+			<SceneObject name="SpeechBubble">
+				<Animation name="SpeechBubbleAppear" loopCount="0" animationData="SpeechBubbleAppear" />
+				<Animation name="SpeechBubbleDisappear" loopCount="0" animationData="SpeechBubbleDisappear" />
+				<Translation z="-136.170" x="130" y="50" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+				<SpeechBubble>
+					<Speech key="castle.welcome_peasant" />
+					<Speech key="castle.welcome_regent" />
+					<Speech key="castle.welcome_pending" />
+				</SpeechBubble>
+			</SceneObject>
+			<SceneObject name="Levels1">
+				<Translation x="6.797" y="-1.949" z="82.362" />
+				<SceneObject name="Level1">
+					<Translation x="-81.755" y="13.921" z="177.874" />
+					<Scale y="-1" />
+					<Rotation x="-20" />
+					<Import filename="shared/diorama/common/scenes/level_button_content.xml" />
+					<SceneObject name="Player">
+						<Translation x="42.018" y="-31.800" z="14.399" />
+						<Scale x="0.800" y="0.800" z="0.800" />
+						<Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml" />
+					</SceneObject>
+					<SceneObject name="Friends">
+						<Translation x="1038.017" y="-45.622" z="-85.415" />
+						<Scale x="0.800" y="0.800" z="0.800" />
+						<Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Level2">
+					<Translation x="25.611" y="4.188" z="110.462" />
+					<Scale y="-1" />
+					<Rotation x="-20" />
+					<Import filename="shared/diorama/common/scenes/level_button_content.xml" />
+					<SceneObject name="Player">
+						<Translation x="42.018" y="-31.800" z="14.399" />
+						<Scale x="0.800" y="0.800" z="0.800" />
+						<Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml" />
+					</SceneObject>
+					<SceneObject name="Friends">
+						<Translation x="1035.129" y="5.589" z="-70.122" />
+						<Scale x="0.800" y="0.800" z="0.800" />
+						<Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Level3">
+					<Translation x="33.773" y="-0.839" z="-31.822" />
+					<Scale x="1" y="-1" z="1" />
+					<Rotation x="-20" />
+					<Import filename="shared/diorama/common/scenes/level_button_content.xml" />
+					<SceneObject name="Player">
+						<Translation x="42.018" y="-31.800" z="14.399" />
+						<Scale x="0.800" y="0.800" z="0.800" />
+						<Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml" />
+					</SceneObject>
+					<SceneObject name="Friends">
+						<Translation x="1062.866" y="21.939" z="-48.691" />
+						<Scale x="0.800" y="0.800" z="0.800" />
+						<Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Level4">
+					<Translation x="-82.946" y="0.075" z="-81.753" />
+					<Scale x="0.990" y="-0.990" z="0.990" />
+					<Rotation x="-20" />
+					<Import filename="shared/diorama/common/scenes/level_button_content.xml" />
+					<SceneObject name="Player">
+						<Translation x="42.018" y="-31.800" z="14.399" />
+						<Scale x="0.800" y="0.800" z="0.800" />
+						<Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml" />
+					</SceneObject>
+					<SceneObject name="Friends">
+						<Translation x="1076.722" y="38.802" z="-32.120" />
+						<Scale x="0.800" y="0.800" z="0.800" />
+						<Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Level5">
+					<Translation x="-5.960" y="-44.078" z="-241.619" />
+					<Scale x="1" y="-1" z="1" />
+					<Rotation x="-20" />
+					<Import filename="shared/diorama/common/scenes/level_button_content.xml" />
+					<SceneObject name="Player">
+						<Translation x="42.018" y="-31.800" z="14.399" />
+						<Scale x="0.800" y="0.800" z="0.800" />
+						<Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml" />
+					</SceneObject>
+					<SceneObject name="Friends">
+						<Translation x="1060.448" y="7.753" z="-88.156" />
+						<Scale x="0.800" y="0.800" z="0.800" />
+						<Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Bridge">
+				<Translation x="6.797" y="-1.949" z="47.177" />
+				<Scale x="1.102" y="1.102" z="1.102" />
+				<SceneObject name="CakeBridgeFenceRight">
+					<Material parentMaterial="CakeCastleMaterial">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_right_fence.ffm" />
+					<Translation x="7.183" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="CakeBridgeFenceLeft">
+					<Material parentMaterial="CakeCastleMaterial">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_left_fence.ffm" />
+					<Translation x="-7.404" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="CakeBridge">
+					<Material parentMaterial="CakeCastleMaterial">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_bridge.ffm" />
+					<Translation x="-2.229" y="0" z="0" />
+					<Scale x="1.059" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Pillar">
+				<Translation x="6.797" y="-21.045" z="47.177" />
+				<SceneObject name="CakePillar">
+					<Material parentMaterial="CakeCastleMaterial">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_pillar_left.ffm" />
+					<Translation x="11.039" y="-17.232" z="10.942" />
+					<Scale x="1.063" y="1" z="1" />
+					<Rotation x="-4.291" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="CakePillarTop">
+					<Material parentMaterial="CakeCastleMaterial">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_left_pillar_top.ffm" />
+					<Translation x="11.039" y="-17.232" z="10.942" />
+					<Scale x="1.063" y="1" z="1" />
+					<Rotation x="-4.291" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="CakePillarTop2">
+					<Material parentMaterial="CakeCastleMaterial">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_left_pillar_top2.ffm" />
+					<Translation x="11.039" y="-17.232" z="10.942" />
+					<Scale x="1.063" y="1" z="1" />
+					<Rotation x="-4.291" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="CakePillarFlower">
+					<Material parentMaterial="CakeCastleMaterialAlpha">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_flower.ffm" />
+					<Translation x="23.249" y="-45.334" z="-3.526" />
+					<Rotation x="-8.806" y="0" z="0" />
+					<Scale x="1.100" y="1.100" z="1.100" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Pillar2">
+				<Translation x="390.096" y="-25.793" z="47.177" />
+				<SceneObject name="CakePillar">
+					<Material parentMaterial="CakeCastleMaterial">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_pillar_left.ffm" />
+					<Translation x="12.328" y="-17.218" z="11.297" />
+					<Scale x="1.063" y="1" z="1" />
+					<Rotation x="-4.291" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="CakePillarTop">
+					<Material parentMaterial="CakeCastleMaterial">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_left_pillar_top.ffm" />
+					<Translation x="12.328" y="-17.218" z="11.297" />
+					<Scale x="1.063" y="1" z="1" />
+					<Rotation x="-4.291" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="CakePillarTop2">
+					<Material parentMaterial="CakeCastleMaterial">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_left_pillar_top2.ffm" />
+					<Translation x="12.328" y="-17.218" z="11.297" />
+					<Scale x="1.063" y="1" z="1" />
+					<Rotation x="-4.291" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="CakePillarFlower">
+					<Material parentMaterial="CakeCastleMaterialAlpha">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_flower.ffm" />
+					<Translation x="24.146" y="-50.299" z="-8.293" />
+					<Rotation x="-8.806" y="0" z="0" />
+					<Scale x="1.108" y="1.108" z="1.108" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="CakeClouds">
+				<Material parentMaterial="CakeCastleMaterialAlpha">
+					<Cull face="front" />
+				</Material>
+				<Model filename="shared/castle/models/cake_castle_clouds.ffm" />
+			</SceneObject>
+			<SceneObject name="CakeEntrance">
+				<Material parentMaterial="CakeCastleMaterialAlpha">
+					<Cull face="front" />
+				</Material>
+				<Model filename="shared/castle/models/cake_castle_entrance.ffm" zSort="backToFront" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="0.878" y="0.878" z="0.878" />
+				<Translation x="0" y="2.490" z="-4.114" />
+			</SceneObject>
+			<SceneObject name="CakePath">
+				<Material parentMaterial="PathMaterialAlpha">
+					<Cull face="front" />
+				</Material>
+				<Model filename="shared/castle/models/cake_castle_path.ffm" zSort="backToFront">
+					<Bound maxZ="0" minZ="-500" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="6.797" y="0.565" z="62.149" />
+			</SceneObject>
+			<SceneObject name="Bubblegum_troll">
+				<Model filename="shared/castle/models/cake_castle_bubblegum_troll.ffm">
+					<Animation filename="shared/castle/models/cake_castle_bubblegum_troll.ffa" play="true" name="Idle" />
+				</Model>
+				<Material parentMaterial="CakeCastleMaterialAlpha">
+					<Cull face="front" />
+				</Material>
+				<Translation x="233.081" y="-125.181" z="-149.797" />
+				<Rotation x="-12.521" y="0.324" z="1.765" />
+				<Scale x="1.079" y="1.079" z="1.079" />
+			</SceneObject>
+			<SceneObject name="Particles">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Translation z="-200" />
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Translation z="-400" />
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Bubbles">
+				<SceneObject name="PFXMoteBubbles3">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-90.485" y="8.808" z="-8.978" />
+					<Scale x="0.848" y="0.848" z="0.848" />
+					<Translation x="-394.542" y="-74.068" z="18.703" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles4">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-91.942" y="15.225" z="-30.617" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="-501.774" y="-70.041" z="-47.806" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles5">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-93.026" y="2.454" z="25.598" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="357.359" y="-74.914" z="4.291" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles6">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-97.571" y="1.597" z="9.767" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="244.752" y="-71.738" z="55.373" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles7">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-96.455" y="12.524" z="18.906" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="-567.794" y="-79.677" z="-128.403" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles8">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-91.971" y="-0.040" z="-8.984" />
+					<Translation x="-279.028" y="-78.277" z="54.926" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles9">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-95.479" y="0.328" z="34.319" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="444.888" y="-82.548" z="-41.457" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles10">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-95.567" y="-3.013" z="44.586" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="520.685" y="-91.166" z="-103.870" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles11">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-91.176" y="-3.091" z="18.467" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="580.169" y="-95.066" z="-202.665" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles12">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-91.563" y="-1.932" z="18.450" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="559.934" y="-107.918" z="-305.638" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles16">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-92.903" y="2.085" z="18.452" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="-551.656" y="-114.011" z="-391.977" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles17">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-92.903" y="2.085" z="18.452" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="-617.397" y="-108.601" z="-332.480" />
+				</SceneObject>
+				<SceneObject name="PFXMoteBubbles18">
+					<Effect effectData="CakeCastleSodaMoteBubblesEFQ" name="CakeSoda" play="true" />
+					<Rotation x="-92.903" y="2.085" z="18.452" />
+					<Scale x="0.702" y="0.702" z="0.702" />
+					<Translation x="-636.474" y="-104.081" z="-256.997" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="CastleNameTag" editorEntityId="66">
+				<Translation x="3.032" y="7.468" z="-286.852" />
+				<Scale x="0.899" y="-0.899" z="0.899" />
+				<Rotation x="-15" />
+				<Sprite vertexColors="false" filename="shared/castle/tex/castle_nametag.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="CakeMain">
+				<Model />
+			</SceneObject>
+			<SceneObject name="CakeMoteBack">
+				<Material parentMaterial="CakeCastleMaterial" />
+				<Model filename="shared/castle/models/cake_castle_soda_mote_back.ffm" />
+				<Translation x="0" y="0" />
+			</SceneObject>
+			<SceneObject name="CakeMoteFront">
+				<Material parentMaterial="CakeCastleMaterial" />
+				<Model filename="shared/castle/models/cake_castle_soda_mote_front.ffm" />
+			</SceneObject>
+			<SceneObject name="CakeMainCastle">
+				<Material parentMaterial="CakeCastleMaterialAlpha">
+					<Cull enabled="true" />
+				</Material>
+				<Model filename="shared/castle/models/cake_castle_main_cake.ffm" />
+				<Translation x="-0.153" y="-17.506" z="13.353" />
+				<Scale x="0.973" y="0.973" z="0.973" />
+				<Rotation x="0" y="-1.564" z="0" />
+			</SceneObject>
+			<SceneObject name="CakeIceCream">
+				<Model filename="shared/castle/models/cake_castle_icecream_left.ffm" />
+				<Material parentMaterial="CakeCastleMaterialAlpha" />
+				<Translation x="21.956" y="0" z="32.438" />
+				<Scale x="1.069" y="1.069" z="1.069" />
+				<Rotation x="0" y="2.241" z="0" />
+			</SceneObject>
+			<SceneObject name="CakeIceCreamRight">
+				<Model filename="shared/castle/models/cake_castle_icecream_right.ffm" />
+				<Material parentMaterial="CakeCastleMaterialAlpha" />
+				<Translation x="0" y="0" />
+			</SceneObject>
+			<SceneObject name="CakeSodaMoteBack">
+				<Material parentMaterial="CakeCastleMaterial">
+					<Cull face="front" />
+				</Material>
+				<Model filename="shared/castle/models/cake_castle_soda_mote_back.ffm" />
+			</SceneObject>
+			<SceneObject name="Vines">
+				<Translation x="0" y="0" z="-75.984" />
+				<SceneObject name="CakeVineRight">
+					<Material parentMaterial="CakeCastleMaterialAlpha">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_vine.ffm" />
+					<Translation x="174.862" y="1.922" z="406.777" />
+					<Scale x="-0.800" y="0.800" z="0.800" />
+					<Rotation z="-16" />
+				</SceneObject>
+				<SceneObject name="CakeVineLeft">
+					<Material parentMaterial="CakeCastleMaterialAlpha">
+						<Cull face="front" />
+					</Material>
+					<Model filename="shared/castle/models/cake_castle_vine.ffm" />
+					<Translation x="-190" y="-0.714" z="406.777" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Group">
+				<SceneObject name="Ground">
+					<Material parentMaterial="CakeCastleMaterial" />
+					<Model filename="shared/castle/models/cake_castle_ground.ffm" />
+				</SceneObject>
+				<SceneObject name="GroundHolesBack">
+					<Model filename="shared/castle/models/cake_castle_ground_holes_back.ffm" />
+					<Material parentMaterial="CakeCastleMaterial" />
+				</SceneObject>
+				<SceneObject name="GroundHolesMid">
+					<Material parentMaterial="CakeCastleMaterial" />
+					<Model filename="shared/castle/models/cake_castle_ground_holes_mid.ffm" />
+				</SceneObject>
+				<SceneObject name="GroundHolesFront">
+					<Material parentMaterial="CakeCastleMaterial" />
+					<Model filename="shared/castle/models/cake_castle_ground_holes_front.ffm" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="BubbleGum1">
+				<Material parentMaterial="CakeCastleMaterialAlpha" />
+				<Model filename="shared/castle/models/cake_castle_bubblegum.ffm" />
+				<Rotation x="-0.057" y="0.968" z="-2.573" />
+				<Scale x="1.069" y="1.069" z="1.069" />
+				<Translation x="-10.078" y="-7.310" z="45.071" />
+			</SceneObject>
+			<SceneObject name="BubbleGum2">
+				<Material parentMaterial="CakeCastleMaterialAlpha" />
+				<Model filename="shared/castle/models/cake_castle_bubblegum_two.ffm" />
+				<Rotation x="25.526" y="-4.054" z="15.472" />
+				<Scale x="1.237" y="1.237" z="1.237" />
+				<Translation x="150.774" y="-53.744" z="208.666" />
+			</SceneObject>
+			<SceneObject name="CakeSky">
+				<Material parentMaterial="CakeCastleMaterial">
+					<Cull face="front" />
+				</Material>
+				<Model filename="shared/castle/models/cake_castle_sky.ffm" />
+				<Translation x="0" y="28.091" z="0" />
+				<Scale x="1" y="1.038" z="1" />
+			</SceneObject>
+			<SceneObject name="CakePathShadow">
+				<Material parentMaterial="CakeCastleMaterialAlpha">
+					<Cull face="front" />
+				</Material>
+				<Model filename="shared/castle/models/cake_castle_path_shadow.ffm" zSort="backToFront">
+					<Bound maxZ="0" minZ="-500" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="6.797" y="-4.955" z="52.424" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

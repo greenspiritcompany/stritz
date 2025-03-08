@@ -1,0 +1,15 @@
+<Timelines>
+	<Timeline startTime="0.0" endTime="3.1">
+		<Animate target="memory_feature" time="0.0">
+			<Show/>
+			<Hide/>
+		</Animate>
+		<Animate target="Info_box" time="0.0">
+			<Show/>
+			<Hide/>
+		</Animate>
+		<Triggers>
+			<AnimationTrigger time="0" animationName="OnAppear" crossFade="0" targetName="postGameModalBase" />
+		</Triggers>
+	</Timeline>
+</Timelines>

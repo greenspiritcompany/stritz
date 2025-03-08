@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/liquorice_swirl_remove_material.xml"/>
+
+	<SceneObject name="Scene" visibility="always" layerFlags="128">
+		<SceneObject name="Liquorice_Swirl_Remove" visibility="always" layerFlags="128">
+			<Model filename="shared/game/common/models/liquorice_swirl/liquorice_swirl.ffm">
+				<Animations>
+					<Animation name="Remove_Animation" speed="2.0"
+							   filename="shared/game/common/models/liquorice_swirl/liquorice_swirl_break.ffa"
+							   play="true" loopCount="0"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material parentMaterial="LiquoriceSwirlRemoveMaterial"/>
+			</Materials>
+			<Scale x="0.5" y="-0.5"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

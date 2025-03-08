@@ -1,0 +1,3116 @@
+{
+  "cutScenesOnDioramas": [
+    {
+      "dioramaId": 1,
+      "dioramaSetup": [
+        "StartEpisode01",
+        "StartEpisode02",
+        "StartEpisode03"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 0,
+          "cutScenes": [
+            "GodRaysAnimation"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 30,
+          "cutScenes": [
+            "StartPortalEpisode03"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 1,
+          "cutScenes": [
+            "IntroEpisode01"
+          ]
+        },
+        {
+          "levelId": 5,
+          "cutScenes": [
+            "OutroEpisode01"
+          ]
+        },
+        {
+          "levelId": 6,
+          "cutScenes": [
+            "IntroEpisode02"
+          ]
+        },
+        {
+          "levelId": 15,
+          "cutScenes": [
+            "OutroEpisode02"
+          ]
+        },
+        {
+          "levelId": 16,
+          "cutScenes": [
+            "IntroEpisode03"
+          ]
+        },
+        {
+          "levelId": 30,
+          "cutScenes": [
+            "OutroEpisode03"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Yeti",
+          "requiredCompletedLevelId": 0,
+          "requiredNotCompletedLevelId": 5,
+          "cutScenes": [
+            "IntroEpisode01"
+          ]
+        },
+        {
+          "objectName": "Yeti",
+          "requiredCompletedLevelId": 5,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "OutroTalkEpisode01"
+          ]
+        },
+        {
+          "objectName": "Monkeh",
+          "requiredCompletedLevelId": 6,
+          "requiredNotCompletedLevelId": 15,
+          "cutScenes": [
+            "IntroEpisode02"
+          ]
+        },
+        {
+          "objectName": "Monkeh",
+          "requiredCompletedLevelId": 15,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "OutroTalkEpisode02"
+          ]
+        },
+        {
+          "objectName": "donut_head",
+          "requiredCompletedLevelId": 16,
+          "requiredNotCompletedLevelId": 30,
+          "cutScenes": [
+            "IntroEpisode03"
+          ]
+        },
+        {
+          "objectName": "donut_head",
+          "requiredCompletedLevelId": 30,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "OutroEpisode03"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 2,
+      "dioramaSetup": [
+        "StartEpisode04",
+        "StartEpisode05",
+        "StartEpisode06"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 30,
+          "cutScenes": [
+            "StartPortalEpisode04"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 31,
+          "cutScenes": [
+            "IntroEpisode04"
+          ]
+        },
+        {
+          "levelId": 45,
+          "cutScenes": [
+            "OutroEpisode04"
+          ]
+        },
+        {
+          "levelId": 46,
+          "cutScenes": [
+            "IntroEpisode05"
+          ]
+        },
+        {
+          "levelId": 60,
+          "cutScenes": [
+            "OutroEpisode05"
+          ]
+        },
+        {
+          "levelId": 61,
+          "cutScenes": [
+            "IntroEpisode06"
+          ]
+        },
+        {
+          "levelId": 75,
+          "cutScenes": [
+            "OutroEpisode06"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Big_Crab_Mama",
+          "requiredCompletedLevelId": 30,
+          "requiredNotCompletedLevelId": 45,
+          "cutScenes": [
+            "IntroEpisode04"
+          ]
+        },
+        {
+          "objectName": "Big_Crab_Mama",
+          "requiredCompletedLevelId": 45,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "OutroTalkEpisode04"
+          ]
+        },
+        {
+          "objectName": "BatAwoken",
+          "requiredCompletedLevelId": 46,
+          "requiredNotCompletedLevelId": 59,
+          "cutScenes": [
+            "TalkEpisode05"
+          ]
+        },
+        {
+          "objectName": "BatAwoken",
+          "requiredCompletedLevelId": 59,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "OutroTalkEpisode05"
+          ]
+        },
+        {
+          "objectName": "GoatIdle",
+          "requiredCompletedLevelId": 61,
+          "requiredNotCompletedLevelId": 74,
+          "cutScenes": [
+            "TalkEpisode06"
+          ]
+        },
+        {
+          "objectName": "GoatWin",
+          "requiredCompletedLevelId": 75,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "OutroEpisode06"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 3,
+      "dioramaSetup": [
+        "Episode07Start",
+        "Episode08Start",
+        "Episode09Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 75,
+          "cutScenes": [
+            "Episode07StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 120,
+          "cutScenes": [
+            "Episode09OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 76,
+          "cutScenes": [
+            "Episode07Intro"
+          ]
+        },
+        {
+          "levelId": 90,
+          "cutScenes": [
+            "Episode07Outro"
+          ]
+        },
+        {
+          "levelId": 91,
+          "cutScenes": [
+            "Episode08Intro"
+          ]
+        },
+        {
+          "levelId": 105,
+          "cutScenes": [
+            "Episode08Outro"
+          ]
+        },
+        {
+          "levelId": 106,
+          "cutScenes": [
+            "Episode09Intro"
+          ]
+        },
+        {
+          "levelId": 120,
+          "cutScenes": [
+            "Episode09Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode07Character",
+          "requiredCompletedLevelId": 76,
+          "requiredNotCompletedLevelId": 90,
+          "cutScenes": [
+            "Episode07Intro"
+          ]
+        },
+        {
+          "objectName": "Episode07Character",
+          "requiredCompletedLevelId": 90,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode07Outro"
+          ]
+        },
+        {
+          "objectName": "Episode08Character",
+          "requiredCompletedLevelId": 91,
+          "requiredNotCompletedLevelId": 105,
+          "cutScenes": [
+            "Episode08Intro"
+          ]
+        },
+        {
+          "objectName": "Episode08Character",
+          "requiredCompletedLevelId": 105,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode08Outro"
+          ]
+        },
+        {
+          "objectName": "Episode09Character",
+          "requiredCompletedLevelId": 106,
+          "requiredNotCompletedLevelId": 120,
+          "cutScenes": [
+            "Episode09Intro"
+          ]
+        },
+        {
+          "objectName": "Episode09Character",
+          "requiredCompletedLevelId": 120,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode09Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 4,
+      "dioramaSetup": [
+        "Episode10Start",
+        "Episode11Start",
+        "Episode12Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 120,
+          "cutScenes": [
+            "Episode10StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 165,
+          "cutScenes": [
+            "Episode12OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 121,
+          "cutScenes": [
+            "Episode10Intro"
+          ]
+        },
+        {
+          "levelId": 135,
+          "cutScenes": [
+            "Episode10Outro"
+          ]
+        },
+        {
+          "levelId": 136,
+          "cutScenes": [
+            "Episode11Intro"
+          ]
+        },
+        {
+          "levelId": 150,
+          "cutScenes": [
+            "Episode11Outro"
+          ]
+        },
+        {
+          "levelId": 151,
+          "cutScenes": [
+            "Episode12Intro"
+          ]
+        },
+        {
+          "levelId": 164,
+          "cutScenes": [
+            "Episode12Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode10Character",
+          "requiredCompletedLevelId": 121,
+          "requiredNotCompletedLevelId": 135,
+          "cutScenes": [
+            "Episode10Intro"
+          ]
+        },
+        {
+          "objectName": "Episode10Character",
+          "requiredCompletedLevelId": 135,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode10Outro"
+          ]
+        },
+        {
+          "objectName": "Episode11Character",
+          "requiredCompletedLevelId": 136,
+          "requiredNotCompletedLevelId": 150,
+          "cutScenes": [
+            "Episode11Intro"
+          ]
+        },
+        {
+          "objectName": "Episode11Character",
+          "requiredCompletedLevelId": 150,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode11Outro"
+          ]
+        },
+        {
+          "objectName": "Episode12Character",
+          "requiredCompletedLevelId": 151,
+          "requiredNotCompletedLevelId": 165,
+          "cutScenes": [
+            "Episode12Intro"
+          ]
+        },
+        {
+          "objectName": "Episode12Character",
+          "requiredCompletedLevelId": 164,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode12Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 5,
+      "dioramaSetup": [
+        "Episode13Start",
+        "Episode14Start",
+        "Episode15Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 165,
+          "cutScenes": [
+            "Episode13StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 210,
+          "cutScenes": [
+            "Episode15OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 166,
+          "cutScenes": [
+            "Episode13Intro"
+          ]
+        },
+        {
+          "levelId": 180,
+          "cutScenes": [
+            "Episode13Outro"
+          ]
+        },
+        {
+          "levelId": 181,
+          "cutScenes": [
+            "Episode14Intro"
+          ]
+        },
+        {
+          "levelId": 194,
+          "cutScenes": [
+            "Episode14Outro"
+          ]
+        },
+        {
+          "levelId": 196,
+          "cutScenes": [
+            "Episode15Intro"
+          ]
+        },
+        {
+          "levelId": 209,
+          "cutScenes": [
+            "Episode15Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode13Character",
+          "requiredCompletedLevelId": 166,
+          "requiredNotCompletedLevelId": 180,
+          "cutScenes": [
+            "Episode13Intro"
+          ]
+        },
+        {
+          "objectName": "Episode13Character",
+          "requiredCompletedLevelId": 180,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode13Outro"
+          ]
+        },
+        {
+          "objectName": "Episode14Character",
+          "requiredCompletedLevelId": 181,
+          "requiredNotCompletedLevelId": 195,
+          "cutScenes": [
+            "Episode14Intro"
+          ]
+        },
+        {
+          "objectName": "Episode14Character",
+          "requiredCompletedLevelId": 194,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode14Outro"
+          ]
+        },
+        {
+          "objectName": "Episode15Character",
+          "requiredCompletedLevelId": 196,
+          "requiredNotCompletedLevelId": 210,
+          "cutScenes": [
+            "Episode15Intro"
+          ]
+        },
+        {
+          "objectName": "Episode15Character",
+          "requiredCompletedLevelId": 209,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode15Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 6,
+      "dioramaSetup": [
+        "Episode16Start",
+        "Episode17Start",
+        "Episode18Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 211,
+          "cutScenes": [
+            "Episode16StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 255,
+          "cutScenes": [
+            "Episode18OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 211,
+          "cutScenes": [
+            "Episode16Intro"
+          ]
+        },
+        {
+          "levelId": 224,
+          "cutScenes": [
+            "Episode16Outro"
+          ]
+        },
+        {
+          "levelId": 226,
+          "cutScenes": [
+            "Episode17Intro"
+          ]
+        },
+        {
+          "levelId": 239,
+          "cutScenes": [
+            "Episode17Outro"
+          ]
+        },
+        {
+          "levelId": 241,
+          "cutScenes": [
+            "Episode18IntroSmoky"
+          ]
+        },
+        {
+          "levelId": 254,
+          "cutScenes": [
+            "Episode18Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode16Character",
+          "requiredCompletedLevelId": 211,
+          "requiredNotCompletedLevelId": 225,
+          "cutScenes": [
+            "Episode16Intro"
+          ]
+        },
+        {
+          "objectName": "Episode16Character",
+          "requiredCompletedLevelId": 224,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode16Outro"
+          ]
+        },
+        {
+          "objectName": "Episode17Character",
+          "requiredCompletedLevelId": 226,
+          "requiredNotCompletedLevelId": 240,
+          "cutScenes": [
+            "Episode17Intro"
+          ]
+        },
+        {
+          "objectName": "Episode17Character",
+          "requiredCompletedLevelId": 239,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode17Outro"
+          ]
+        },
+        {
+          "objectName": "Episode18Character",
+          "requiredCompletedLevelId": 241,
+          "requiredNotCompletedLevelId": 242,
+          "cutScenes": [
+            "Episode18IntroSmoky"
+          ]
+        },
+        {
+          "objectName": "Episode18Character",
+          "requiredCompletedLevelId": 242,
+          "requiredNotCompletedLevelId": 255,
+          "cutScenes": [
+            "Episode18Intro"
+          ]
+        },
+        {
+          "objectName": "Episode18Character",
+          "requiredCompletedLevelId": 254,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode18Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 7,
+      "dioramaSetup": [
+        "Episode19Start",
+        "Episode20Start",
+        "Episode21Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 255,
+          "cutScenes": [
+            "Episode19StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 300,
+          "cutScenes": [
+            "Episode21OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 256,
+          "cutScenes": [
+            "Episode19Intro"
+          ]
+        },
+        {
+          "levelId": 269,
+          "cutScenes": [
+            "Episode19Outro"
+          ]
+        },
+        {
+          "levelId": 271,
+          "cutScenes": [
+            "Episode20Intro"
+          ]
+        },
+        {
+          "levelId": 284,
+          "cutScenes": [
+            "Episode20Outro"
+          ]
+        },
+        {
+          "levelId": 286,
+          "cutScenes": [
+            "Episode21Intro"
+          ]
+        },
+        {
+          "levelId": 299,
+          "cutScenes": [
+            "Episode21Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode19Character",
+          "requiredCompletedLevelId": 256,
+          "requiredNotCompletedLevelId": 270,
+          "cutScenes": [
+            "Episode19Intro"
+          ]
+        },
+        {
+          "objectName": "Episode19Character",
+          "requiredCompletedLevelId": 269,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode19Outro"
+          ]
+        },
+        {
+          "objectName": "Episode20Character",
+          "requiredCompletedLevelId": 271,
+          "requiredNotCompletedLevelId": 285,
+          "cutScenes": [
+            "Episode20Intro"
+          ]
+        },
+        {
+          "objectName": "Episode20Character",
+          "requiredCompletedLevelId": 284,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode20Outro"
+          ]
+        },
+        {
+          "objectName": "Episode21Character",
+          "requiredCompletedLevelId": 286,
+          "requiredNotCompletedLevelId": 300,
+          "cutScenes": [
+            "Episode21Intro"
+          ]
+        },
+        {
+          "objectName": "Episode21Character",
+          "requiredCompletedLevelId": 299,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode21Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 8,
+      "dioramaSetup": [
+        "Episode22Start",
+        "Episode23Start",
+        "Episode24Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 300,
+          "cutScenes": [
+            "Episode22StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 345,
+          "cutScenes": [
+            "Episode24OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 301,
+          "cutScenes": [
+            "Episode22Intro"
+          ]
+        },
+        {
+          "levelId": 314,
+          "cutScenes": [
+            "Episode22Outro"
+          ]
+        },
+        {
+          "levelId": 316,
+          "cutScenes": [
+            "Episode23Intro"
+          ]
+        },
+        {
+          "levelId": 329,
+          "cutScenes": [
+            "Episode23Outro"
+          ]
+        },
+        {
+          "levelId": 331,
+          "cutScenes": [
+            "Episode24Intro"
+          ]
+        },
+        {
+          "levelId": 344,
+          "cutScenes": [
+            "Episode24Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "LollipopFront",
+          "requiredCompletedLevelId": 300,
+          "requiredNotCompletedLevelId": 315,
+          "cutScenes": [
+            "Episode22LollipopFront"
+          ]
+        },
+        {
+          "objectName": "LollipopBack",
+          "requiredCompletedLevelId": 300,
+          "requiredNotCompletedLevelId": 315,
+          "cutScenes": [
+            "Episode22LollipopBack"
+          ]
+        },
+        {
+          "objectName": "Episode22Character",
+          "requiredCompletedLevelId": 301,
+          "requiredNotCompletedLevelId": 315,
+          "cutScenes": [
+            "Episode22Intro"
+          ]
+        },
+        {
+          "objectName": "Episode22Character",
+          "requiredCompletedLevelId": 314,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode22Outro"
+          ]
+        },
+        {
+          "objectName": "Episode23Character",
+          "requiredCompletedLevelId": 316,
+          "requiredNotCompletedLevelId": 330,
+          "cutScenes": [
+            "Episode23Intro"
+          ]
+        },
+        {
+          "objectName": "Episode23Character",
+          "requiredCompletedLevelId": 329,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode23Outro"
+          ]
+        },
+        {
+          "objectName": "Episode24Character",
+          "requiredCompletedLevelId": 331,
+          "requiredNotCompletedLevelId": 345,
+          "cutScenes": [
+            "Episode24Intro"
+          ]
+        },
+        {
+          "objectName": "Episode24Character",
+          "requiredCompletedLevelId": 344,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode24Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 9,
+      "dioramaSetup": [
+        "Episode25Start",
+        "Episode26Start",
+        "Episode27Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 345,
+          "cutScenes": [
+            "Episode25StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 390,
+          "cutScenes": [
+            "Episode27OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 346,
+          "cutScenes": [
+            "Episode25Intro"
+          ]
+        },
+        {
+          "levelId": 359,
+          "cutScenes": [
+            "Episode25Outro"
+          ]
+        },
+        {
+          "levelId": 361,
+          "cutScenes": [
+            "Episode26Intro"
+          ]
+        },
+        {
+          "levelId": 374,
+          "cutScenes": [
+            "Episode26Outro"
+          ]
+        },
+        {
+          "levelId": 376,
+          "cutScenes": [
+            "Episode27Intro"
+          ]
+        },
+        {
+          "levelId": 389,
+          "cutScenes": [
+            "Episode27Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode25Character",
+          "requiredCompletedLevelId": 346,
+          "requiredNotCompletedLevelId": 360,
+          "cutScenes": [
+            "Episode25Intro"
+          ]
+        },
+        {
+          "objectName": "Episode25Character",
+          "requiredCompletedLevelId": 359,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode25Outro"
+          ]
+        },
+        {
+          "objectName": "Episode26Character",
+          "requiredCompletedLevelId": 361,
+          "requiredNotCompletedLevelId": 375,
+          "cutScenes": [
+            "Episode26Intro"
+          ]
+        },
+        {
+          "objectName": "Episode26Character",
+          "requiredCompletedLevelId": 374,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode26Outro"
+          ]
+        },
+        {
+          "objectName": "Episode27Character",
+          "requiredCompletedLevelId": 376,
+          "requiredNotCompletedLevelId": 390,
+          "cutScenes": [
+            "Episode27Intro"
+          ]
+        },
+        {
+          "objectName": "Episode27Character",
+          "requiredCompletedLevelId": 389,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode27Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 10,
+      "dioramaSetup": [
+        "Episode28Start",
+        "Episode29Start",
+        "Episode30Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 390,
+          "cutScenes": [
+            "Episode28StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 435,
+          "cutScenes": [
+            "Episode30OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 391,
+          "cutScenes": [
+            "Episode28Intro"
+          ]
+        },
+        {
+          "levelId": 404,
+          "cutScenes": [
+            "Episode28Outro"
+          ]
+        },
+        {
+          "levelId": 406,
+          "cutScenes": [
+            "Episode29Intro"
+          ]
+        },
+        {
+          "levelId": 419,
+          "cutScenes": [
+            "Episode29Outro"
+          ]
+        },
+        {
+          "levelId": 421,
+          "cutScenes": [
+            "Episode30Intro"
+          ]
+        },
+        {
+          "levelId": 434,
+          "cutScenes": [
+            "Episode30Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode28Character",
+          "requiredCompletedLevelId": 391,
+          "requiredNotCompletedLevelId": 405,
+          "cutScenes": [
+            "Episode28Intro"
+          ]
+        },
+        {
+          "objectName": "Episode28Character",
+          "requiredCompletedLevelId": 404,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode28Outro"
+          ]
+        },
+        {
+          "objectName": "Episode29Character",
+          "requiredCompletedLevelId": 406,
+          "requiredNotCompletedLevelId": 420,
+          "cutScenes": [
+            "Episode29Intro"
+          ]
+        },
+        {
+          "objectName": "Episode29Character",
+          "requiredCompletedLevelId": 419,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode29Outro"
+          ]
+        },
+        {
+          "objectName": "Episode30Character",
+          "requiredCompletedLevelId": 421,
+          "requiredNotCompletedLevelId": 435,
+          "cutScenes": [
+            "Episode30Intro"
+          ]
+        },
+        {
+          "objectName": "Episode30Character",
+          "requiredCompletedLevelId": 434,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode30Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 11,
+      "dioramaSetup": [
+        "Episode31Start",
+        "Episode32Start",
+        "Episode33Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 435,
+          "cutScenes": [
+            "Episode31StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 480,
+          "cutScenes": [
+            "Episode33OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 436,
+          "cutScenes": [
+            "Episode31Intro"
+          ]
+        },
+        {
+          "levelId": 449,
+          "cutScenes": [
+            "Episode31Outro"
+          ]
+        },
+        {
+          "levelId": 451,
+          "cutScenes": [
+            "Episode32Intro"
+          ]
+        },
+        {
+          "levelId": 464,
+          "cutScenes": [
+            "Episode32Outro"
+          ]
+        },
+        {
+          "levelId": 466,
+          "cutScenes": [
+            "Episode33Intro"
+          ]
+        },
+        {
+          "levelId": 479,
+          "cutScenes": [
+            "Episode33Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode31Character",
+          "requiredCompletedLevelId": 436,
+          "requiredNotCompletedLevelId": 450,
+          "cutScenes": [
+            "Episode31Intro"
+          ]
+        },
+        {
+          "objectName": "Episode31Character",
+          "requiredCompletedLevelId": 449,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode31Outro"
+          ]
+        },
+        {
+          "objectName": "Episode32Character",
+          "requiredCompletedLevelId": 451,
+          "requiredNotCompletedLevelId": 465,
+          "cutScenes": [
+            "Episode32Intro"
+          ]
+        },
+        {
+          "objectName": "Episode32Character",
+          "requiredCompletedLevelId": 464,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode32Outro"
+          ]
+        },
+        {
+          "objectName": "Episode33Character",
+          "requiredCompletedLevelId": 466,
+          "requiredNotCompletedLevelId": 480,
+          "cutScenes": [
+            "Episode33Intro"
+          ]
+        },
+        {
+          "objectName": "Episode33Character",
+          "requiredCompletedLevelId": 479,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode33Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 12,
+      "dioramaSetup": [
+        "Episode34Start",
+        "Episode35Start",
+        "Episode36Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 480,
+          "cutScenes": [
+            "Episode34StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 525,
+          "cutScenes": [
+            "Episode36OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 481,
+          "cutScenes": [
+            "Episode34Intro"
+          ]
+        },
+        {
+          "levelId": 494,
+          "cutScenes": [
+            "Episode34Outro"
+          ]
+        },
+        {
+          "levelId": 496,
+          "cutScenes": [
+            "Episode35Intro"
+          ]
+        },
+        {
+          "levelId": 509,
+          "cutScenes": [
+            "Episode35Outro"
+          ]
+        },
+        {
+          "levelId": 511,
+          "cutScenes": [
+            "Episode36Intro"
+          ]
+        },
+        {
+          "levelId": 524,
+          "cutScenes": [
+            "Episode36Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode34Character",
+          "requiredCompletedLevelId": 481,
+          "requiredNotCompletedLevelId": 494,
+          "cutScenes": [
+            "Episode34Intro"
+          ]
+        },
+        {
+          "objectName": "Episode34Character",
+          "requiredCompletedLevelId": 494,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode34Outro"
+          ]
+        },
+        {
+          "objectName": "Episode35Character",
+          "requiredCompletedLevelId": 496,
+          "requiredNotCompletedLevelId": 509,
+          "cutScenes": [
+            "Episode35Intro"
+          ]
+        },
+        {
+          "objectName": "Episode35Character",
+          "requiredCompletedLevelId": 509,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode35Outro"
+          ]
+        },
+        {
+          "objectName": "Episode36Character",
+          "requiredCompletedLevelId": 511,
+          "requiredNotCompletedLevelId": 524,
+          "cutScenes": [
+            "Episode36Intro"
+          ]
+        },
+        {
+          "objectName": "Episode36Character",
+          "requiredCompletedLevelId": 524,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode36Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 13,
+      "dioramaSetup": [
+        "Episode37Start",
+        "Episode38Start",
+        "Episode39Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 525,
+          "cutScenes": [
+            "Episode37StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 585,
+          "cutScenes": [
+            "Episode39OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 526,
+          "cutScenes": [
+            "Episode37Intro"
+          ]
+        },
+        {
+          "levelId": 544,
+          "cutScenes": [
+            "Episode37Outro"
+          ]
+        },
+        {
+          "levelId": 546,
+          "cutScenes": [
+            "Episode38Intro"
+          ]
+        },
+        {
+          "levelId": 564,
+          "cutScenes": [
+            "Episode38Outro"
+          ]
+        },
+        {
+          "levelId": 566,
+          "cutScenes": [
+            "Episode39Intro"
+          ]
+        },
+        {
+          "levelId": 584,
+          "cutScenes": [
+            "Episode39Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode37Character",
+          "requiredCompletedLevelId": 526,
+          "requiredNotCompletedLevelId": 544,
+          "cutScenes": [
+            "Episode37Intro"
+          ]
+        },
+        {
+          "objectName": "Episode37Character",
+          "requiredCompletedLevelId": 544,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode37Outro"
+          ]
+        },
+        {
+          "objectName": "Episode38Character",
+          "requiredCompletedLevelId": 546,
+          "requiredNotCompletedLevelId": 564,
+          "cutScenes": [
+            "Episode38Intro"
+          ]
+        },
+        {
+          "objectName": "Episode38Character",
+          "requiredCompletedLevelId": 564,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode38Outro"
+          ]
+        },
+        {
+          "objectName": "Episode39Character",
+          "requiredCompletedLevelId": 566,
+          "requiredNotCompletedLevelId": 584,
+          "cutScenes": [
+            "Episode39Intro"
+          ]
+        },
+        {
+          "objectName": "Episode39Character",
+          "requiredCompletedLevelId": 584,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode39Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 14,
+      "dioramaSetup": [
+        "Episode40Start",
+        "Episode41Start",
+        "Episode42Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 585,
+          "cutScenes": [
+            "Episode40StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 645,
+          "cutScenes": [
+            "Episode42OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 586,
+          "cutScenes": [
+            "Episode40Intro"
+          ]
+        },
+        {
+          "levelId": 604,
+          "cutScenes": [
+            "Episode40Outro"
+          ]
+        },
+        {
+          "levelId": 606,
+          "cutScenes": [
+            "Episode41Intro"
+          ]
+        },
+        {
+          "levelId": 624,
+          "cutScenes": [
+            "Episode41Outro"
+          ]
+        },
+        {
+          "levelId": 626,
+          "cutScenes": [
+            "Episode42Intro"
+          ]
+        },
+        {
+          "levelId": 644,
+          "cutScenes": [
+            "Episode42Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "episode40Character",
+          "requiredCompletedLevelId": 586,
+          "requiredNotCompletedLevelId": 605,
+          "cutScenes": [
+            "Episode40Intro"
+          ]
+        },
+        {
+          "objectName": "episode40Character",
+          "requiredCompletedLevelId": 604,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode40Outro"
+          ]
+        },
+        {
+          "objectName": "episode41Character",
+          "requiredCompletedLevelId": 606,
+          "requiredNotCompletedLevelId": 614,
+          "cutScenes": [
+            "Episode41Intro"
+          ]
+        },
+        {
+          "objectName": "episode41Character",
+          "requiredCompletedLevelId": 624,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode41Outro"
+          ]
+        },
+        {
+          "objectName": "episode42Character",
+          "requiredCompletedLevelId": 626,
+          "requiredNotCompletedLevelId": 629,
+          "cutScenes": [
+            "Episode42Intro"
+          ]
+        },
+        {
+          "objectName": "episode42Character",
+          "requiredCompletedLevelId": 644,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode42Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 15,
+      "dioramaSetup": [
+        "Episode43Start",
+        "Episode44Start",
+        "Episode45Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 645,
+          "cutScenes": [
+            "Episode43StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 705,
+          "cutScenes": [
+            "Episode45OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 646,
+          "cutScenes": [
+            "Episode43Intro"
+          ]
+        },
+        {
+          "levelId": 664,
+          "cutScenes": [
+            "Episode43Outro"
+          ]
+        },
+        {
+          "levelId": 666,
+          "cutScenes": [
+            "Episode44Intro"
+          ]
+        },
+        {
+          "levelId": 684,
+          "cutScenes": [
+            "Episode44Outro"
+          ]
+        },
+        {
+          "levelId": 686,
+          "cutScenes": [
+            "Episode45Intro"
+          ]
+        },
+        {
+          "levelId": 704,
+          "cutScenes": [
+            "Episode45Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode43Character",
+          "requiredCompletedLevelId": 646,
+          "requiredNotCompletedLevelId": 664,
+          "cutScenes": [
+            "Episode43Intro"
+          ]
+        },
+        {
+          "objectName": "Episode43Character",
+          "requiredCompletedLevelId": 664,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode43Outro"
+          ]
+        },
+        {
+          "objectName": "Episode44Character",
+          "requiredCompletedLevelId": 666,
+          "requiredNotCompletedLevelId": 684,
+          "cutScenes": [
+            "Episode44Intro"
+          ]
+        },
+        {
+          "objectName": "Episode44Character",
+          "requiredCompletedLevelId": 684,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode44Outro"
+          ]
+        },
+        {
+          "objectName": "Episode45Character",
+          "requiredCompletedLevelId": 686,
+          "requiredNotCompletedLevelId": 704,
+          "cutScenes": [
+            "Episode45Intro"
+          ]
+        },
+        {
+          "objectName": "Episode45Character",
+          "requiredCompletedLevelId": 704,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode45Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 16,
+      "dioramaSetup": [
+        "Episode46Start",
+        "Episode47Start",
+        "Episode48Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 705,
+          "cutScenes": [
+            "Episode46StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 765,
+          "cutScenes": [
+            "Episode48OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 706,
+          "cutScenes": [
+            "Episode46Intro"
+          ]
+        },
+        {
+          "levelId": 724,
+          "cutScenes": [
+            "Episode46Outro"
+          ]
+        },
+        {
+          "levelId": 726,
+          "cutScenes": [
+            "Episode47Intro"
+          ]
+        },
+        {
+          "levelId": 744,
+          "cutScenes": [
+            "Episode47Outro"
+          ]
+        },
+        {
+          "levelId": 746,
+          "cutScenes": [
+            "Episode48Intro"
+          ]
+        },
+        {
+          "levelId": 764,
+          "cutScenes": [
+            "Episode48Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode46Character",
+          "requiredCompletedLevelId": 707,
+          "requiredNotCompletedLevelId": 724,
+          "cutScenes": [
+            "Episode46Intro"
+          ]
+        },
+        {
+          "objectName": "Episode46Character",
+          "requiredCompletedLevelId": 724,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode46Outro"
+          ]
+        },
+        {
+          "objectName": "Episode47Character",
+          "requiredCompletedLevelId": 727,
+          "requiredNotCompletedLevelId": 744,
+          "cutScenes": [
+            "Episode47Intro"
+          ]
+        },
+        {
+          "objectName": "Episode47Character",
+          "requiredCompletedLevelId": 744,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode47Outro"
+          ]
+        },
+        {
+          "objectName": "Episode48Character",
+          "requiredCompletedLevelId": 747,
+          "requiredNotCompletedLevelId": 764,
+          "cutScenes": [
+            "Episode48Intro"
+          ]
+        },
+        {
+          "objectName": "Episode48Character",
+          "requiredCompletedLevelId": 764,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode48Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 17,
+      "dioramaSetup": [
+        "Episode49Start",
+        "Episode50Start",
+        "Episode51Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 765,
+          "cutScenes": [
+            "Episode49StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 825,
+          "cutScenes": [
+            "Episode51OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 766,
+          "cutScenes": [
+            "Episode49Intro"
+          ]
+        },
+        {
+          "levelId": 784,
+          "cutScenes": [
+            "Episode49Outro"
+          ]
+        },
+        {
+          "levelId": 786,
+          "cutScenes": [
+            "Episode50Intro"
+          ]
+        },
+        {
+          "levelId": 804,
+          "cutScenes": [
+            "Episode50Outro"
+          ]
+        },
+        {
+          "levelId": 806,
+          "cutScenes": [
+            "Episode51Intro"
+          ]
+        },
+        {
+          "levelId": 824,
+          "cutScenes": [
+            "Episode51Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode49Character",
+          "requiredCompletedLevelId": 767,
+          "requiredNotCompletedLevelId": 784,
+          "cutScenes": [
+            "Episode49Intro"
+          ]
+        },
+        {
+          "objectName": "Episode49Character",
+          "requiredCompletedLevelId": 784,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode49Outro"
+          ]
+        },
+        {
+          "objectName": "Episode50Character",
+          "requiredCompletedLevelId": 787,
+          "requiredNotCompletedLevelId": 804,
+          "cutScenes": [
+            "Episode50Intro"
+          ]
+        },
+        {
+          "objectName": "Episode50Character",
+          "requiredCompletedLevelId": 804,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode50Outro"
+          ]
+        },
+        {
+          "objectName": "Episode51Character",
+          "requiredCompletedLevelId": 807,
+          "requiredNotCompletedLevelId": 824,
+          "cutScenes": [
+            "Episode51Intro"
+          ]
+        },
+        {
+          "objectName": "Episode51Character",
+          "requiredCompletedLevelId": 824,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode51Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 18,
+      "dioramaSetup": [
+        "Episode52Start",
+        "Episode53Start",
+        "Episode54Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 825,
+          "cutScenes": [
+            "Episode52StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 885,
+          "cutScenes": [
+            "Episode54OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 826,
+          "cutScenes": [
+            "Episode52Intro"
+          ]
+        },
+        {
+          "levelId": 844,
+          "cutScenes": [
+            "Episode52Outro"
+          ]
+        },
+        {
+          "levelId": 846,
+          "cutScenes": [
+            "Episode53Intro"
+          ]
+        },
+        {
+          "levelId": 864,
+          "cutScenes": [
+            "Episode53Outro"
+          ]
+        },
+        {
+          "levelId": 866,
+          "cutScenes": [
+            "Episode54Intro"
+          ]
+        },
+        {
+          "levelId": 884,
+          "cutScenes": [
+            "Episode54Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode52Character",
+          "requiredCompletedLevelId": 827,
+          "requiredNotCompletedLevelId": 844,
+          "cutScenes": [
+            "Episode52Intro"
+          ]
+        },
+        {
+          "objectName": "Episode52Character",
+          "requiredCompletedLevelId": 844,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode52Outro"
+          ]
+        },
+        {
+          "objectName": "Episode53Character",
+          "requiredCompletedLevelId": 847,
+          "requiredNotCompletedLevelId": 864,
+          "cutScenes": [
+            "Episode53Intro"
+          ]
+        },
+        {
+          "objectName": "Episode53Character",
+          "requiredCompletedLevelId": 864,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode53Outro"
+          ]
+        },
+        {
+          "objectName": "Episode54Character",
+          "requiredCompletedLevelId": 866,
+          "requiredNotCompletedLevelId": 884,
+          "cutScenes": [
+            "Episode54Intro"
+          ]
+        },
+        {
+          "objectName": "Episode54Character",
+          "requiredCompletedLevelId": 884,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode54Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 19,
+      "dioramaSetup": [
+        "Episode55Start",
+        "Episode56Start",
+        "Episode57Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 885,
+          "cutScenes": [
+            "Episode55StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 945,
+          "cutScenes": [
+            "Episode57OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 886,
+          "cutScenes": [
+            "Episode55Intro"
+          ]
+        },
+        {
+          "levelId": 904,
+          "cutScenes": [
+            "Episode55Outro"
+          ]
+        },
+        {
+          "levelId": 906,
+          "cutScenes": [
+            "Episode56Intro"
+          ]
+        },
+        {
+          "levelId": 924,
+          "cutScenes": [
+            "Episode56Outro"
+          ]
+        },
+        {
+          "levelId": 926,
+          "cutScenes": [
+            "Episode57Intro"
+          ]
+        },
+        {
+          "levelId": 944,
+          "cutScenes": [
+            "Episode57Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode55Character",
+          "requiredCompletedLevelId": 887,
+          "requiredNotCompletedLevelId": 904,
+          "cutScenes": [
+            "Episode55Intro"
+          ]
+        },
+        {
+          "objectName": "Episode55Character",
+          "requiredCompletedLevelId": 904,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode55Outro"
+          ]
+        },
+        {
+          "objectName": "Episode56Character",
+          "requiredCompletedLevelId": 907,
+          "requiredNotCompletedLevelId": 924,
+          "cutScenes": [
+            "Episode56Intro"
+          ]
+        },
+        {
+          "objectName": "Episode56Character",
+          "requiredCompletedLevelId": 924,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode56Outro"
+          ]
+        },
+        {
+          "objectName": "Episode57Character",
+          "requiredCompletedLevelId": 927,
+          "requiredNotCompletedLevelId": 944,
+          "cutScenes": [
+            "Episode57Intro"
+          ]
+        },
+        {
+          "objectName": "Episode57Character",
+          "requiredCompletedLevelId": 944,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode57Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 20,
+      "dioramaSetup": [
+        "Episode58Start",
+        "Episode59Start",
+        "Episode60Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 945,
+          "cutScenes": [
+            "Episode58StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 1005,
+          "cutScenes": [
+            "Episode60OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 946,
+          "cutScenes": [
+            "Episode58Intro"
+          ]
+        },
+        {
+          "levelId": 964,
+          "cutScenes": [
+            "Episode58Outro"
+          ]
+        },
+        {
+          "levelId": 966,
+          "cutScenes": [
+            "Episode59Intro"
+          ]
+        },
+        {
+          "levelId": 984,
+          "cutScenes": [
+            "Episode59Outro"
+          ]
+        },
+        {
+          "levelId": 986,
+          "cutScenes": [
+            "Episode60Intro"
+          ]
+        },
+        {
+          "levelId": 1000,
+          "cutScenes": [
+            "Episode60Middle"
+          ]
+        },
+        {
+          "levelId": 1004,
+          "cutScenes": [
+            "Episode60Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode58Character",
+          "requiredCompletedLevelId": 947,
+          "requiredNotCompletedLevelId": 964,
+          "cutScenes": [
+            "Episode58Intro"
+          ]
+        },
+        {
+          "objectName": "Episode58Character",
+          "requiredCompletedLevelId": 964,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode58Outro"
+          ]
+        },
+        {
+          "objectName": "Episode59Character",
+          "requiredCompletedLevelId": 967,
+          "requiredNotCompletedLevelId": 984,
+          "cutScenes": [
+            "Episode59Intro"
+          ]
+        },
+        {
+          "objectName": "Episode59Character",
+          "requiredCompletedLevelId": 984,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode59Outro"
+          ]
+        },
+        {
+          "objectName": "Episode60Character",
+          "requiredCompletedLevelId": 986,
+          "requiredNotCompletedLevelId": 1000,
+          "cutScenes": [
+            "Episode60Intro"
+          ]
+        },
+        {
+          "objectName": "Episode60Character",
+          "requiredCompletedLevelId": 1000,
+          "requiredNotCompletedLevelId": 1004,
+          "cutScenes": [
+            "Episode60Middle_b"
+          ]
+        },
+        {
+          "objectName": "Episode60Character",
+          "requiredCompletedLevelId": 1004,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode60Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 21,
+      "dioramaSetup": [
+        "Episode61Start",
+        "Episode62Start",
+        "Episode63Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 1005,
+          "cutScenes": [
+            "Episode61StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 1060,
+          "cutScenes": [
+            "Episode63OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 1006,
+          "cutScenes": [
+            "Episode61Intro"
+          ]
+        },
+        {
+          "levelId": 1024,
+          "cutScenes": [
+            "Episode61Outro"
+          ]
+        },
+        {
+          "levelId": 1026,
+          "cutScenes": [
+            "Episode62Intro"
+          ]
+        },
+        {
+          "levelId": 1044,
+          "cutScenes": [
+            "Episode62Outro"
+          ]
+        },
+        {
+          "levelId": 1046,
+          "cutScenes": [
+            "Episode63Intro"
+          ]
+        },
+        {
+          "levelId": 1059,
+          "cutScenes": [
+            "Episode63Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode61Character",
+          "requiredCompletedLevelId": 1006,
+          "requiredNotCompletedLevelId": 1024,
+          "cutScenes": [
+            "Episode61Intro"
+          ]
+        },
+        {
+          "objectName": "Episode61Character",
+          "requiredCompletedLevelId": 1024,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode61Outro"
+          ]
+        },
+        {
+          "objectName": "Episode62Character",
+          "requiredCompletedLevelId": 1026,
+          "requiredNotCompletedLevelId": 1044,
+          "cutScenes": [
+            "Episode62Intro"
+          ]
+        },
+        {
+          "objectName": "Episode62Character",
+          "requiredCompletedLevelId": 1044,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode62Outro"
+          ]
+        },
+        {
+          "objectName": "Episode63Character",
+          "requiredCompletedLevelId": 1046,
+          "requiredNotCompletedLevelId": 1059,
+          "cutScenes": [
+            "Episode63Intro"
+          ]
+        },
+        {
+          "objectName": "Episode63Character",
+          "requiredCompletedLevelId": 1059,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode63Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 22,
+      "dioramaSetup": [
+        "Episode64Start",
+        "Episode65Start",
+        "Episode66Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 1060,
+          "cutScenes": [
+            "Episode64StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 1105,
+          "cutScenes": [
+            "Episode66OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 1061,
+          "cutScenes": [
+            "Episode64Intro"
+          ]
+        },
+        {
+          "levelId": 1074,
+          "cutScenes": [
+            "Episode64Outro"
+          ]
+        },
+        {
+          "levelId": 1076,
+          "cutScenes": [
+            "Episode65Intro"
+          ]
+        },
+        {
+          "levelId": 1089,
+          "cutScenes": [
+            "Episode65Outro"
+          ]
+        },
+        {
+          "levelId": 1091,
+          "cutScenes": [
+            "Episode66Intro"
+          ]
+        },
+        {
+          "levelId": 1104,
+          "cutScenes": [
+            "Episode66Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode64Character",
+          "requiredCompletedLevelId": 1061,
+          "requiredNotCompletedLevelId": 1074,
+          "cutScenes": [
+            "Episode64Intro"
+          ]
+        },
+        {
+          "objectName": "Episode64Character",
+          "requiredCompletedLevelId": 1074,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode64Outro"
+          ]
+        },
+        {
+          "objectName": "Episode65Character",
+          "requiredCompletedLevelId": 1076,
+          "requiredNotCompletedLevelId": 1089,
+          "cutScenes": [
+            "Episode65Intro"
+          ]
+        },
+        {
+          "objectName": "Episode65Character",
+          "requiredCompletedLevelId": 1089,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode65Outro"
+          ]
+        },
+        {
+          "objectName": "Episode66Character",
+          "requiredCompletedLevelId": 1091,
+          "requiredNotCompletedLevelId": 1104,
+          "cutScenes": [
+            "Episode66Intro"
+          ]
+        },
+        {
+          "objectName": "Episode66Character",
+          "requiredCompletedLevelId": 1104,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode66Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 23,
+      "dioramaSetup": [
+        "Episode67Start",
+        "Episode68Start",
+        "Episode69Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 1105,
+          "cutScenes": [
+            "Episode67StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 1150,
+          "cutScenes": [
+            "Episode69OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 1106,
+          "cutScenes": [
+            "Episode67Intro"
+          ]
+        },
+        {
+          "levelId": 1119,
+          "cutScenes": [
+            "Episode67Outro"
+          ]
+        },
+        {
+          "levelId": 1121,
+          "cutScenes": [
+            "Episode68Intro"
+          ]
+        },
+        {
+          "levelId": 1134,
+          "cutScenes": [
+            "Episode68Outro"
+          ]
+        },
+        {
+          "levelId": 1136,
+          "cutScenes": [
+            "Episode69Intro"
+          ]
+        },
+        {
+          "levelId": 1149,
+          "cutScenes": [
+            "Episode69Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode67Character",
+          "requiredCompletedLevelId": 1106,
+          "requiredNotCompletedLevelId": 1119,
+          "cutScenes": [
+            "Episode67Intro"
+          ]
+        },
+        {
+          "objectName": "Episode67Character",
+          "requiredCompletedLevelId": 1119,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode67Outro"
+          ]
+        },
+        {
+          "objectName": "Episode68Character",
+          "requiredCompletedLevelId": 1121,
+          "requiredNotCompletedLevelId": 1134,
+          "cutScenes": [
+            "Episode68Intro"
+          ]
+        },
+        {
+          "objectName": "Episode68Character",
+          "requiredCompletedLevelId": 1134,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode68Outro"
+          ]
+        },
+        {
+          "objectName": "Episode69Character",
+          "requiredCompletedLevelId": 1136,
+          "requiredNotCompletedLevelId": 1149,
+          "cutScenes": [
+            "Episode69Intro"
+          ]
+        },
+        {
+          "objectName": "Episode69Character",
+          "requiredCompletedLevelId": 1149,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode69Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 24,
+      "dioramaSetup": [
+        "Episode70Start",
+        "Episode71Start",
+        "Episode72Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 1150,
+          "cutScenes": [
+            "Episode70StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 1195,
+          "cutScenes": [
+            "Episode72OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 1151,
+          "cutScenes": [
+            "Episode70Intro"
+          ]
+        },
+        {
+          "levelId": 1164,
+          "cutScenes": [
+            "Episode70Outro"
+          ]
+        },
+        {
+          "levelId": 1166,
+          "cutScenes": [
+            "Episode71Intro"
+          ]
+        },
+        {
+          "levelId": 1179,
+          "cutScenes": [
+            "Episode71Outro"
+          ]
+        },
+        {
+          "levelId": 1181,
+          "cutScenes": [
+            "Episode72Intro"
+          ]
+        },
+        {
+          "levelId": 1194,
+          "cutScenes": [
+            "Episode72Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode70Character",
+          "requiredCompletedLevelId": 1151,
+          "requiredNotCompletedLevelId": 1164,
+          "cutScenes": [
+            "Episode70Intro"
+          ]
+        },
+        {
+          "objectName": "Episode70Character",
+          "requiredCompletedLevelId": 1164,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode70Outro"
+          ]
+        },
+        {
+          "objectName": "Episode71Character",
+          "requiredCompletedLevelId": 1166,
+          "requiredNotCompletedLevelId": 1179,
+          "cutScenes": [
+            "Episode71Intro"
+          ]
+        },
+        {
+          "objectName": "Episode71Character",
+          "requiredCompletedLevelId": 1179,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode71Outro"
+          ]
+        },
+        {
+          "objectName": "Episode72Character",
+          "requiredCompletedLevelId": 1181,
+          "requiredNotCompletedLevelId": 1194,
+          "cutScenes": [
+            "Episode72Intro"
+          ]
+        },
+        {
+          "objectName": "Episode72Character",
+          "requiredCompletedLevelId": 1194,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode72Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 25,
+      "dioramaSetup": [
+        "Episode73Start",
+        "Episode74Start",
+        "Episode75Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 1195,
+          "cutScenes": [
+            "Episode73StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 1240,
+          "cutScenes": [
+            "Episode75OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 1196,
+          "cutScenes": [
+            "Episode73Intro"
+          ]
+        },
+        {
+          "levelId": 1209,
+          "cutScenes": [
+            "Episode73Outro"
+          ]
+        },
+        {
+          "levelId": 1211,
+          "cutScenes": [
+            "Episode74Intro"
+          ]
+        },
+        {
+          "levelId": 1224,
+          "cutScenes": [
+            "Episode74Outro"
+          ]
+        },
+        {
+          "levelId": 1226,
+          "cutScenes": [
+            "Episode75Intro"
+          ]
+        },
+        {
+          "levelId": 1239,
+          "cutScenes": [
+            "Episode75Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode73Character",
+          "requiredCompletedLevelId": 1196,
+          "requiredNotCompletedLevelId": 1209,
+          "cutScenes": [
+            "Episode73Intro"
+          ]
+        },
+        {
+          "objectName": "Episode73Character",
+          "requiredCompletedLevelId": 1209,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode73Outro"
+          ]
+        },
+        {
+          "objectName": "Episode74Character",
+          "requiredCompletedLevelId": 1211,
+          "requiredNotCompletedLevelId": 1224,
+          "cutScenes": [
+            "Episode74Intro"
+          ]
+        },
+        {
+          "objectName": "Episode74Character",
+          "requiredCompletedLevelId": 1224,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode74Outro"
+          ]
+        },
+        {
+          "objectName": "Episode75Character",
+          "requiredCompletedLevelId": 1226,
+          "requiredNotCompletedLevelId": 1239,
+          "cutScenes": [
+            "Episode75Intro"
+          ]
+        },
+        {
+          "objectName": "Episode75Character",
+          "requiredCompletedLevelId": 1239,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode75Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 26,
+      "dioramaSetup": [
+        "Episode76Start",
+        "Episode77Start",
+        "Episode78Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 1240,
+          "cutScenes": [
+            "Episode76StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 1285,
+          "cutScenes": [
+            "Episode78OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 1241,
+          "cutScenes": [
+            "Episode76Intro"
+          ]
+        },
+        {
+          "levelId": 1254,
+          "cutScenes": [
+            "Episode76Outro"
+          ]
+        },
+        {
+          "levelId": 1256,
+          "cutScenes": [
+            "Episode77Intro"
+          ]
+        },
+        {
+          "levelId": 1269,
+          "cutScenes": [
+            "Episode77Outro"
+          ]
+        },
+        {
+          "levelId": 1271,
+          "cutScenes": [
+            "Episode78Intro"
+          ]
+        },
+        {
+          "levelId": 1284,
+          "cutScenes": [
+            "Episode78Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode76Character",
+          "requiredCompletedLevelId": 1241,
+          "requiredNotCompletedLevelId": 1254,
+          "cutScenes": [
+            "Episode76Intro"
+          ]
+        },
+        {
+          "objectName": "Episode76Character",
+          "requiredCompletedLevelId": 1254,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode76Outro"
+          ]
+        },
+        {
+          "objectName": "Episode77Character",
+          "requiredCompletedLevelId": 1256,
+          "requiredNotCompletedLevelId": 1269,
+          "cutScenes": [
+            "Episode77Intro"
+          ]
+        },
+        {
+          "objectName": "Episode77Character",
+          "requiredCompletedLevelId": 1269,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode77Outro"
+          ]
+        },
+        {
+          "objectName": "Episode78Character",
+          "requiredCompletedLevelId": 1271,
+          "requiredNotCompletedLevelId": 1284,
+          "cutScenes": [
+            "Episode78Intro"
+          ]
+        },
+        {
+          "objectName": "Episode78Character",
+          "requiredCompletedLevelId": 1284,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode78Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 27,
+      "dioramaSetup": [
+        "Episode79Start",
+        "Episode80Start",
+        "Episode81Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 1285,
+          "cutScenes": [
+            "Episode79StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 1330,
+          "cutScenes": [
+            "Episode81OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 1286,
+          "cutScenes": [
+            "Episode79Intro"
+          ]
+        },
+        {
+          "levelId": 1299,
+          "cutScenes": [
+            "Episode79Outro"
+          ]
+        },
+        {
+          "levelId": 1301,
+          "cutScenes": [
+            "Episode80Intro"
+          ]
+        },
+        {
+          "levelId": 1314,
+          "cutScenes": [
+            "Episode80Outro"
+          ]
+        },
+        {
+          "levelId": 1316,
+          "cutScenes": [
+            "Episode81Intro"
+          ]
+        },
+        {
+          "levelId": 1329,
+          "cutScenes": [
+            "Episode81Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode79Character",
+          "requiredCompletedLevelId": 1286,
+          "requiredNotCompletedLevelId": 1299,
+          "cutScenes": [
+            "Episode79Intro"
+          ]
+        },
+        {
+          "objectName": "Episode79Character",
+          "requiredCompletedLevelId": 1299,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode79Outro"
+          ]
+        },
+        {
+          "objectName": "Episode80Character",
+          "requiredCompletedLevelId": 1301,
+          "requiredNotCompletedLevelId": 1314,
+          "cutScenes": [
+            "Episode80Intro"
+          ]
+        },
+        {
+          "objectName": "Episode80Character",
+          "requiredCompletedLevelId": 1314,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode80Outro"
+          ]
+        },
+        {
+          "objectName": "Episode81Character",
+          "requiredCompletedLevelId": 1316,
+          "requiredNotCompletedLevelId": 1329,
+          "cutScenes": [
+            "Episode81Intro"
+          ]
+        },
+        {
+          "objectName": "Episode81Character",
+          "requiredCompletedLevelId": 1329,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode81Outro"
+          ]
+        }
+      ]
+    },
+    {
+      "dioramaId": 28,
+      "dioramaSetup": [
+        "Episode82Start",
+        "Episode83Start",
+        "Episode84Start"
+      ],
+      "playOnEntry": [
+        {
+          "requiredCompletedLevelId": 1330,
+          "cutScenes": [
+            "Episode82StartPortal"
+          ]
+        },
+        {
+          "requiredCompletedLevelId": 1375,
+          "cutScenes": [
+            "Episode84OutroPortal"
+          ]
+        }
+      ],
+      "playOnLevelCompleted": [
+        {
+          "levelId": 1331,
+          "cutScenes": [
+            "Episode82Intro"
+          ]
+        },
+        {
+          "levelId": 1344,
+          "cutScenes": [
+            "Episode82Outro"
+          ]
+        },
+        {
+          "levelId": 1346,
+          "cutScenes": [
+            "Episode83Intro"
+          ]
+        },
+        {
+          "levelId": 1359,
+          "cutScenes": [
+            "Episode83Outro"
+          ]
+        },
+        {
+          "levelId": 1361,
+          "cutScenes": [
+            "Episode84Intro"
+          ]
+        },
+        {
+          "levelId": 1374,
+          "cutScenes": [
+            "Episode84Outro"
+          ]
+        }
+      ],
+      "playOnObject": [
+        {
+          "objectName": "Episode82Character",
+          "requiredCompletedLevelId": 1331,
+          "requiredNotCompletedLevelId": 1344,
+          "cutScenes": [
+            "Episode82Intro"
+          ]
+        },
+        {
+          "objectName": "Episode82Character",
+          "requiredCompletedLevelId": 1344,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode82Outro"
+          ]
+        },
+        {
+          "objectName": "Episode83Character",
+          "requiredCompletedLevelId": 1346,
+          "requiredNotCompletedLevelId": 1359,
+          "cutScenes": [
+            "Episode83Intro"
+          ]
+        },
+        {
+          "objectName": "Episode83Character",
+          "requiredCompletedLevelId": 1359,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode83Outro"
+          ]
+        },
+        {
+          "objectName": "Episode84Character",
+          "requiredCompletedLevelId": 1361,
+          "requiredNotCompletedLevelId": 1374,
+          "cutScenes": [
+            "Episode84Intro"
+          ]
+        },
+        {
+          "objectName": "Episode84Character",
+          "requiredCompletedLevelId": 1374,
+          "requiredNotCompletedLevelId": 0,
+          "cutScenes": [
+            "Episode84Outro"
+          ]
+        }
+      ]
+    }
+  ]
+}

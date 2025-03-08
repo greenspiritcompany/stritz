@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../shared/dtd/scene.dtd">
+<Scene>
+	<SceneObjects>
+		<SceneObject name="MapHud">
+			<Transformation>
+				<Translation x="0.0" y="0.0" z="250.0" />
+			</Transformation>
+			<SceneObjects>
+				<SceneObject name="BottomRight">
+					<SceneObject name="DatOffset">
+						<Translation x="-200" />
+						<SceneObject name="CheatButton">
+							<Mesh>
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png">
+									<Pivot anchor="center" />
+									<Insets left="54" top="48" right="54" bottom="59" />
+									<Size width="140" height="108" />
+								</Panel>
+							</Mesh>
+							<Transformation>
+								<Translation x="-90.0" y="-40.0" z="5.0" />
+							</Transformation>
+							<Animations>
+								<Animation name="Idle" animationData="Idle" layer="1" />
+								<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+								<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+							</Animations>
+							<SceneObjects>
+								<SceneObject>
+									<Transformation>
+										<Translation y="5" z="1" />
+									</Transformation>
+									<Mesh>
+										<Text canBreakWords="false" alignment="center" font="Banana">
+											<Color r="255" g="255" b="255" a="255" />
+											<Shadow>
+												<Color r="0" g="0" b="0" a="255" />
+											</Shadow>
+											<TextString>Level</TextString>
+											<Size x="22" y="22" />
+										</Text>
+									</Mesh>
+								</SceneObject>
+							</SceneObjects>
+						</SceneObject>
+						<SceneObject name="CheatImproveButton">
+							<Mesh>
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png">
+									<Pivot anchor="center" />
+									<Insets left="54" top="48" right="54" bottom="59" />
+									<Size width="140" height="108" />
+								</Panel>
+							</Mesh>
+							<Transformation>
+								<Translation x="-220.0" y="-40.0" z="5.0" />
+							</Transformation>
+							<Animations>
+								<Animation name="Idle" animationData="Idle" layer="1" />
+								<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+								<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+							</Animations>
+							<SceneObjects>
+								<SceneObject>
+									<Transformation>
+										<Translation y="5" z="1" />
+									</Transformation>
+									<Mesh>
+										<Text canBreakWords="false" alignment="center" font="Banana">
+											<Color r="255" g="255" b="255" a="255" />
+											<Shadow>
+												<Color r="0" g="0" b="0" a="255" />
+											</Shadow>
+											<TextString>Star</TextString>
+											<Size x="22" y="22" />
+										</Text>
+									</Mesh>
+								</SceneObject>
+							</SceneObjects>
+						</SceneObject>
+						<SceneObject name="CheatLifeButton">
+							<Mesh>
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png">
+									<Pivot anchor="center" />
+									<Insets left="54" top="48" right="54" bottom="59" />
+									<Size width="140" height="108" />
+								</Panel>
+							</Mesh>
+							<Transformation>
+								<Translation x="-350.0" y="-40.0" z="5.0" />
+							</Transformation>
+							<Animations>
+								<Animation name="Idle" animationData="Idle" layer="1" />
+								<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+								<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+							</Animations>
+							<SceneObjects>
+								<SceneObject>
+									<Transformation>
+										<Translation y="5" z="1" />
+									</Transformation>
+									<Mesh>
+										<Text canBreakWords="false" alignment="center" font="Banana">
+											<Color r="255" g="255" b="255" a="255" />
+											<Shadow>
+												<Color r="0" g="0" b="0" a="255" />
+											</Shadow>
+											<TextString>Life</TextString>
+											<Size x="22" y="22" />
+										</Text>
+									</Mesh>
+								</SceneObject>
+							</SceneObjects>
+						</SceneObject>
+					</SceneObject>
+					<LayoutConfiguration name="Default">
+						<Size>
+							<Width percentage="45" max="289" />
+							<Height percentage="100" max="124" />
+							<OriginalSize width="289" height="124" />
+						</Size>
+						<Translation>
+							<X percentage="100" />
+							<Y percentage="100" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+			</SceneObjects>
+		</SceneObject>
+	</SceneObjects>
+</Scene>

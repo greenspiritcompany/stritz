@@ -1,0 +1,4370 @@
+<Effects>
+<Effect name="ActiveLevel">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ActiveLevel" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ActiveLevelRing">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ActiveLevelRing" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LevelUnlock">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineBlastFlash" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="LevelUnlockSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CollabPhotoBurst">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CollabPhotoBurst" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="BestOnLevelHighlight">
+<ParticleEffects>
+	<ParticleEffect name="BestOnLevelHighlight" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="character_kimmy">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_kimmy" volume="-6" />
+</SoundEffects>
+<!-- Sound for Kimmy -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_yeti">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_yeti" />
+</SoundEffects>
+<!-- 1 Sound for Yeti, Sea Monster and Goat -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_crab">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_crab" />
+</SoundEffects>
+<!-- 4 Sound for Giant Crab -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_bat">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_bat" />
+</SoundEffects>
+<!-- 5 Sound for Giant Bat -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_monkey">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_monkey" />
+</SoundEffects>
+<!-- 2 Sound for monkey -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_honey_dragon">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_honey_dragon" volume="-3" />
+</SoundEffects>
+<!-- 7 Sound for monkey -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_cookie_lady">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_cookie_lady" volume="-6" />
+</SoundEffects>
+<!-- 8 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_squid">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_squid" volume="-1" />
+</SoundEffects>
+<!-- 9 Sound for squid -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_pirate">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_pirate" volume="-3" />
+</SoundEffects>
+<!-- 10 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_toad">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_toad" volume="-2" />
+</SoundEffects>
+<!-- 11 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_farm_lady">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_farm_girl" volume="-3" />
+</SoundEffects>
+<!-- 12 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_seahorse">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_seahorse" volume="-1" />
+</SoundEffects>
+<!-- 13 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_liquorice_troll">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_liquorice_troll" volume="-1" />
+</SoundEffects>
+<!-- 14 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_robot">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_robot" volume="-4" />
+</SoundEffects>
+<!-- 15 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_ice_mammoth">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ice_mammoth" volume="-2" />
+</SoundEffects>
+<!-- 16 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_plant">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_plant" volume="-1" />
+</SoundEffects>
+<!-- Sound for plant episode 17 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_genie">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_genie" volume="-1" />
+</SoundEffects>
+<!-- 18 & 19 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_bubblegum_monster">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_bubblegum_monster" volume="-1" />
+</SoundEffects>
+<!-- 18 & 19 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_chocolate_centipede">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_chocolate_centipede" volume="-1" />
+</SoundEffects>
+<!-- 18 & 19 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_factory_manager">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_factory_manager" volume="-4" />
+</SoundEffects>
+<!-- 18 & 19 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_bunny_rabbit">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_bunny_rabbit" volume="-4" />
+</SoundEffects>
+<!-- 25 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_kimmy_in_mirror">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_kimmy_in_mirror" volume="-4" />
+</SoundEffects>
+<!-- 26 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_snowmountain_wizard">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_snowmountain_wizard" volume="-4" />
+</SoundEffects>
+<!-- 27 -->
+<SoundEffects />
+</Effect>
+
+<Effect name="character_dinosaur">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_dinosaur" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_digger">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_digger" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_big_ape">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_big_ape" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_gardener">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_gardener" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_whale">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_whale" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_alligator">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_alligator" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_knight">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_knight" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_camel">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_camel" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_paer">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_paer" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_hippo">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_hippo" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_skelloman">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_skelloman" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_crazymonkey">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_crazymonkey" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep40">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep40" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep41">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep41" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep42">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep42" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep43">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep43" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep44">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep44" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep45">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep45" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep46">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep46" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep47">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep47" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep48">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep48" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep49">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep49" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep50">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep50" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep51">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep51" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep52">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep52" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep53">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep53" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep54">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep54" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep55">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep55" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep56">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep56" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep57">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep57" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Ep31GreenBushPFX">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="Ep31GreenBush" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Ep33SoundMachineNotes">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="Ep33SoundMachineNotes" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_grammophone" volume="-3" />
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_bush">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_bush" volume="-5" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for all bushes -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_lollipop">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_lollipop" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for EP2 lollipops -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_tree">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_tree" volume="-3" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for all trees -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_house">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_house" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for houses (ep1), cave rocks/pillars (ep5) and chocolate mounds (ep6) -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_sun">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_sun" volume="-3" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for the sun -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_donut">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_donut" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for sea monster donut segments -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_cloud">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_cloud" volume="-3" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for all clouds -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_strawberry">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_strawberry" volume="-5" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for strawberry sand crabs (ep4) -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_pile">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_pile" volume="-5" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for piles of candy (various episodes) -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_squishy">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_squishy" volume="-5" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for squishy candies (various episodes) -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_squeeker">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_squeeker" volume="-5" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for squeekie toy things (Episode 37) -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_frozen">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_frozen" volume="-5" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for frozen assets(various episodes) -->
+</SoundEffects>
+</Effect>
+
+<Effect name="diorama_grammophone">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_grammophone" volume="-5" />
+</SoundEffects>
+<SoundEffects>
+	<!-- Sound for vinyl needles (various episodes) -->
+</SoundEffects>
+</Effect>
+
+<Effect name="Ep01FountainBase">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Ep01FountainBase" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Ep01FountainSoda">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Ep01FountainSoda" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="WaterRipplesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="WaterRipplesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CandyLand1">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="item_land_1" volume="-16" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CandyLand2">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="item_land_2" volume="-16" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CandyLand3">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="item_land_3" volume="-16" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CandyLand4">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="item_land_4" volume="-16" />
+</SoundEffects>
+</Effect>
+
+<Effect name="WaterfallFallSplash">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="WaterFallSplash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SprinkleSprinkleLeft">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SprinkleLeft" />
+</ParticleEffects>
+<!-- <SoundEffects>
+																									<SoundEffect name="ep01_house_small"/>
+																								</SoundEffects> -->
+</Effect>
+
+<Effect name="SprinkleSprinkleCenter">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SprinkleCenter" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SprinkleSprinkleRight">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SprinkleRight" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SquidBubbles">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SquidBubbles" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_donut" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CannonEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Cannon1" />
+	<ParticleEffect follow="true" name="CannonSmoke" />
+	<ParticleEffect follow="true" name="WrappedExplodeFlash" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="bomb_explode" />
+</SoundEffects>
+</Effect>
+
+<Effect name="WindowBubbles">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BubblesEp14" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ep13Bubbles">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BubblesEp13" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CakeCastleSodaMoteBubblesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CakeCastleSodaMoteBubblesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="GenieSmokeEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="GenieSmokeSmoke" />
+	<ParticleEffect follow="true" name="GenieSmokeFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishBubbles">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SquidBubbles" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_donut" />
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_donut" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CreamSplashEffect_left">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreamSplash01" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CreamSplashEffect_right">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreamSplash02" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CreamSplashEffect_center">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreamSplash03" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Wisps">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Wisps" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="EngineSmoke">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="EngineSmoke" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="EngineFix">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="EngineFix" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="StarWinSparkleEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="StarWinSparkle" />
+	<ParticleEffect follow="true" name="StarWinSparkleDot" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CyanFrogFullFX">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CyanFrogFullFX" />
+</ParticleEffects>
+<SoundEffects>
+	<!--- <SoundEffect name="SuperLineBlastCreated"/>  -->
+</SoundEffects>
+</Effect>
+
+<Effect name="PortalHintSparkle">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PortalHintSparkle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LineBlastGeneralSparks">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineBlastGeneralSparks" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="InfiniteSparks">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="InfiniteSparks" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LineBlastDoubleFlashLight">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineBlastDoubleFlashLight" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="StripedWrappedSFX">
+<SoundEffects>
+	<SoundEffect name="striped_wrapped" />
+</SoundEffects>
+</Effect>
+
+<Effect name="LineBlastFlash">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineBlastFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="UnlockLevelDust">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="UnlockLevelDust" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CandyBreak">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CandyBreak" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CbStripedLightFlashEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CbStripedLightFlashPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CbStripedSparkTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CbStripedSparkTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CbStripedTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CbStripedTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CbStripedLightStaticEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CbStripedLightStaticPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CbStripedLightTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CbStripedLightTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CbStripedChargeUpEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CbStripedChargeUpPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CbStripedEndEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CbStripedEndPFX" />
+	<ParticleEffect follow="true" name="CandyBreakLight" />
+	<ParticleEffect follow="true" name="CbStripedEndSparksPFX" />
+	<ParticleEffect follow="true" name="CbStripedEndSparksPFX" />
+	<ParticleEffect follow="true" name="CbStripedEndCenterPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="color_bomb_die" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandySFQ">
+<SoundEffects>
+	<SoundEffect name="ColoringCandySFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SuperColoringSFQ">
+<SoundEffects>
+	<SoundEffect name="SuperColoringSFX" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="BigStripeTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BigStripeTrailPFX" />
+	<ParticleEffect follow="true" name="BigInfiniteSparksPFX" />
+	<ParticleEffect follow="true" name="ColoringRainbowTrail" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ChainBreakEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ChainHitBigPFX" />
+	<ParticleEffect follow="true" name="ChainButtonCrushedPFX" />
+	<ParticleEffect follow="true" name="ChainHitBigSparksPFX" />
+	<ParticleEffect follow="true" name="ChainHitCrushedPFX" />
+	<ParticleEffect follow="true" name="ChainHitSparklePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="sidekick_remove_candy" volume="-4" />
+	<SoundEffect name="chain_blocker_hit" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ChainHit1EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ChainHitBig2PFX" />
+	<ParticleEffect follow="true" name="ChainHitSmallPFX" />
+	<ParticleEffect follow="true" name="ColorBombHit" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="chain_blocker_hit" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ChainHit2EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ChainHitBig2PFX" />
+	<!--<ParticleEffect follow="true" name="ChainHitBigPFX"/>-->
+	<ParticleEffect follow="true" name="ChainHitSmallPFX" />
+	<ParticleEffect follow="true" name="ColorBombHit" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="chain_blocker_hit" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringShockwaveEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringShockwave" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyGreenTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyGreenTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyGreenTrailConstantEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyGreenTrailConstantPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyGreenSpawnEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyGreenSpawnPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyGreenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyGreenImpactSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyGreenImpact01PFX" />
+	<ParticleEffect follow="true" name="ColoringCandyGreenImpact02PFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="coloring_candy_hit" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyGreenDieEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyGreenDieSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyGreenDiePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="ColoringCandyBurstSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyBlueTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyBlueTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyBlueTrailConstantEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyBlueTrailConstantPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyBlueSpawnEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyBlueSpawnPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyBlueEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyBlueImpactSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyBlueImpact01PFX" />
+	<ParticleEffect follow="true" name="ColoringCandyBlueImpact02PFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="coloring_candy_hit" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyBlueDieEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyBlueDieSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyBlueDiePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="ColoringCandyBurstSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyRedTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyRedTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyRedTrailConstantEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyRedTrailConstantPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyRedSpawnEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyRedSpawnPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyRedEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyRedImpactSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyRedImpact01PFX" />
+	<ParticleEffect follow="true" name="ColoringCandyRedImpact02PFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="coloring_candy_hit" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyRedDieEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyRedDieSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyRedDiePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="ColoringCandyBurstSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyOrangeTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyOrangeTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyOrangeTrailConstantEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyOrangeTrailConstantPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyOrangeSpawnEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyOrangeSpawnPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyOrangeEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyOrangeImpactSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyOrangeImpact01PFX" />
+	<ParticleEffect follow="true" name="ColoringCandyOrangeImpact02PFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="coloring_candy_hit" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyOrangeDieEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyOrangeDieSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyOrangeDiePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="ColoringCandyBurstSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyPurpleTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyPurpleTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyPurpleTrailConstantEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyPurpleTrailConstantPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyPurpleSpawnEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyPurpleSpawnPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyPurpleEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyPurpleImpactSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyPurpleImpact01PFX" />
+	<ParticleEffect follow="true" name="ColoringCandyPurpleImpact02PFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="coloring_candy_hit" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyPurpleDieEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyPurpleDieSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyPurpleDiePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="ColoringCandyBurstSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyBlackTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyBlackTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyBlackEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyBlackImpactSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyBlackImpact01PFX" />
+	<ParticleEffect follow="true" name="ColoringCandyBlackImpact02PFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="coloring_candy_hit" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyBlackTrailConstantEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyBlackTrailConstantPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyBlackSpawnEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyBlackSpawnPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyBlackDieEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyBlackDieSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyBlackDiePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="ColoringCandyBurstSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyCyanTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyCyanTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyCyanTrailConstantEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyCyanTrailConstantPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyCyanSpawnEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyCyanSpawnPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyCyanEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyCyanImpactSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyCyanImpact01PFX" />
+	<ParticleEffect follow="true" name="ColoringCandyCyanImpact02PFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="coloring_candy_hit" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyCyanDieEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyCyanDieSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyCyanDiePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="ColoringCandyBurstSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyYellowTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyYellowTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyYellowTrailConstantEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyYellowTrailConstantPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyYellowSpawnEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyYellowSpawnPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColoringCandyYellowEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyYellowImpactSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyYellowImpact01PFX" />
+	<ParticleEffect follow="true" name="ColoringCandyYellowImpact02PFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="coloring_candy_hit" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColoringCandyYellowDieEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColoringCandyYellowDieSplatterPFX" />
+	<ParticleEffect follow="true" name="ColoringCandyYellowDiePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="ColoringCandyBurstSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CandyBreakLight">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CandyBreakLight" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SparkTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SparkTrail" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="BlueStripeTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BlueStripeTrail" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- horizontal -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="BlueStripeTrailV">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BlueStripeTrailVPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- vertical -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="RedStripeTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="RedStripeTrail" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- horizontal -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="RedStripeTrailV">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="RedStripeTrailVPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- vertical -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="GreenStripeTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="GreenStripeTrail" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- horizontal -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="GreenStripeTrailV">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="GreenStripeTrailVPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- vertical -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="YellowStripeTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="YellowStripeTrail" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- horizontal -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="YellowStripeTrailV">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="YellowStripeTrailVPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- vertical -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="CyanStripeTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CyanStripeTrail" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- horizontal -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="CyanStripeTrailV">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CyanStripeTrailVPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- vertical -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="PurpleStripeTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PurpleStripeTrail" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- horizontal -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="PurpleStripeTrailV">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PurpleStripeTrailVPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- vertical -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="OrangeStripeTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="OrangeStripeTrail" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- horizontal -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="OrangeStripeTrailV">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="OrangeStripeTrailVPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- vertical -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="BlackStripeTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BlackStripeTrailPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- horizontal -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="BlackStripeTrailVEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BlackStripeTrailVPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- vertical -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="CastleConfetti">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CastleConfetti01" />
+	<ParticleEffect follow="true" name="CastleConfetti02" />
+	<ParticleEffect follow="true" name="CastleConfetti03" />
+	<ParticleEffect follow="true" name="StarWinSparkle" />
+	<ParticleEffect follow="true" name="StarWinSparkleDot" />
+	<ParticleEffect follow="true" name="ReachGoalSpark" />
+	<ParticleEffect follow="true" name="WrappedExplodeFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="castle_bubblegum_bubbles">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="castle_bubble_pfx" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_donut" />
+	<SoundEffect maxSimultaneousInstances="1" name="diorama_donut" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CastleWinGlow">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CastleWinGlowFlare" />
+	<ParticleEffect follow="true" name="CastleWinGlowBigFlare" />
+	<ParticleEffect follow="true" name="CastleWinGlowBig" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LineblastLightStatic">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineblastLightStatic" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LineblastLightTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineblastLightTrail" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LineblastLightTrailV">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineblastLightTrailV" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LineblastWrappedLightTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineblastWrappedLightTrail" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LineblastWrappedLightTrailV">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineblastWrappedLightTrailV" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LineblastWrappedStaticLight">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineblastWrappedStaticLight" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LineblastWrappedStaticLightV">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineblastWrappedStaticLightV" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColorbombCrushed">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColorbombCrushed" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="StripedWrappedHorizontal">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="StripeWrappedLightH" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="StripedWrappedVertical">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="StripeWrappedLightV" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="StripedWrappedSpark">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="StripeWrappedSpark" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="StripeWrappedCharge">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="StripeWrappedCharge" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalCyanCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="CyanCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalBlueCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="BlueCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+<!--<SoundEffects>-->
+<!--<SoundEffect name="Combo1"/>-->
+<!--</SoundEffects>-->
+</Effect>
+
+<Effect name="SwitcherExplodeNormalYellowCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="YellowCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalRedCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="RedCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalGreenCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="GreenCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalPurpleCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="PurpleCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalOrangeCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="OrangeCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalBlackCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="BlackCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalByWrappedCyanCandy">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CyanCandyCrushed" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalByWrappedBlueCandy">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BlueCandyCrushed" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalByWrappedYellowCandy">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="YellowCandyCrushed" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalByWrappedBlackCandy">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BlueCandyCrushed" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalByWrappedRedCandy">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="RedCandyCrushed" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalByWrappedGreenCandy">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="GreenCandyCrushed" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalByWrappedPurpleCandy">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PurpleCandyCrushed" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeNormalByWrappedOrangeCandy">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="OrangeCandyCrushed" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="fishCreated">
+<SoundEffects>
+	<SoundEffect name="fish_created" />
+</SoundEffects>
+</Effect>
+
+<Effect name="fish_swim">
+<SoundEffects>
+	<SoundEffect name="fish_swim" />
+</SoundEffects>
+</Effect>
+
+<Effect name="fish_swim_wrapped">
+<SoundEffects>
+	<SoundEffect name="fish_swim_wrapped" />
+</SoundEffects>
+</Effect>
+
+<Effect name="fish_swim_striped">
+<SoundEffects>
+	<SoundEffect name="fish_swim_striped" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeFishCyanCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="CyanCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeFishBlueCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="BlueCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+<!--<SoundEffects>-->
+<!--<SoundEffect name="Combo1"/>-->
+<!--</SoundEffects>-->
+</Effect>
+
+<Effect name="SwitcherExplodeFishYellowCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="YellowCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeFishBlackCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="YellowCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeFishRedCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="RedCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeFishGreenCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="GreenCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeFishPurpleCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="PurpleCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherExplodeFishOrangeCandy">
+<ParticleEffects>
+	<!--ParticleEffect name="LightCandyCrushed" follow="true"/-->
+	<ParticleEffect follow="true" name="OrangeCandyCrushed" />
+	<ParticleEffect follow="true" name="CandyCrushedSpark" />
+	<ParticleEffect follow="true" name="CandyCrushedFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ChocolateCrush">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ChocolateCrushedLarge" />
+	<ParticleEffect follow="true" name="ChocolateCrushedSmall" />
+	<ParticleEffect follow="true" name="ChocolateCrushedNuts" />
+	<ParticleEffect follow="true" name="ChocolateFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="WhiteChocolateCrushLayer2">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="WhiteChocolateCrushedSmall" />
+</ParticleEffects>
+<ParticleEffects>
+	<!--<ParticleEffect name="WhiteChocolateFlash" follow="true"/>-->
+</ParticleEffects>
+</Effect>
+
+<Effect name="WhiteChocolateCrushLayer1">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="WhiteChocolateCrushedLarge" />
+	<ParticleEffect follow="true" name="WhiteChocolateCrushedSmall" />
+	<ParticleEffect follow="true" name="WhiteChocolateFlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ChocolateInHudCrush">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ChocolateInHudCrush" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ReachGoalSpark">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ReachGoalSpark" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherSwitch">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Switch" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="successful_switch" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SwitcherSwitchFail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="NoSwitch" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="unsuccessful_switch" volume="-16" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColorBombSlash">
+<ParticleEffects>
+	<ParticleEffect name="ColorBombSlash" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherCreateColorBomb">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreateSpecialShake" />
+	<ParticleEffect follow="true" name="CreateSpecialGlitter" />
+	<ParticleEffect follow="true" name="CreateSpecialSmall" />
+	<ParticleEffect follow="true" name="CreateSpecialBig" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="colorbomb_candy_created" />
+</SoundEffects>
+</Effect>
+
+<Effect name="wrapped_candy_created">
+<SoundEffects>
+	<SoundEffect name="wrapped_candy_created" />
+</SoundEffects>
+</Effect>
+
+<Effect name="striped_candy_created">
+<SoundEffects>
+	<SoundEffect name="striped_candy_created" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColorBombDie">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColorBombDie" />
+	<ParticleEffect follow="true" name="ColorBombDieSparkle" />
+	<ParticleEffect follow="true" name="ColorBombDieFlash" />
+	<ParticleEffect follow="true" name="Wrapped2ndExplodeShockwave" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="color_bomb_die" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColorBombActivate">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColorBombActivate" />
+	<ParticleEffect follow="true" name="ColorBombActivateSparkle" />
+	<ParticleEffect follow="true" name="ColorBombActivateFlash" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="colorbomb_exploded" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColorBombSwap">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColorBombSwapMain" />
+	<ParticleEffect follow="true" name="ColorBombSwapSparkle" />
+	<ParticleEffect follow="true" name="ColorBombSwapFlash" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="colorbomb_exploded" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColorBombSwapCandy">
+<ParticleEffects>
+	<!--<ParticleEffect name="ColorBombSwapCandy" follow="true"/>-->
+	<ParticleEffect follow="true" name="ColorBombSwapSparkle" />
+	<ParticleEffect follow="true" name="ColorBombSwapCandyFlash" />
+</ParticleEffects>
+<!--<SoundEffects>
+																								  <SoundEffect name="colorbomb_exploded"/>
+																								</SoundEffects>-->
+</Effect>
+
+<Effect name="ColorBombHitSound">
+<!--<SoundEffects>
+																									<SoundEffect name="colorbomb_hit"/>
+																								</SoundEffects>-->
+</Effect>
+
+<Effect name="ColorBombHit">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColorBombHitFlash" />
+	<ParticleEffect follow="true" name="ColorbombHitElectricSpark" />
+	<ParticleEffect follow="true" name="ColorBombHit" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="color_bomb_hit" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ColorBombHitCreateSpecialItem">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ColorBombHitFlash" />
+	<ParticleEffect follow="true" name="ColorbombHitElectricSpark" />
+	<ParticleEffect follow="true" name="ColorBombHit" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CbPlusCbChargeEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CbPlusCbChargePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CbPlusCbShockwaveEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CbPlusCbShockwavePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ColorBombColorBombChargeSound">
+<SoundEffects>
+	<SoundEffect name="super_colorbomb" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CyanCandyButtonGlow">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CyanCandyButtonGlow" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CyanTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CyanTrail" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CorrodaHitEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CorrodaHitRingPFX" />
+	<ParticleEffect follow="true" name="CorrodaHitBubblesPFX" />
+	<ParticleEffect follow="true" name="CorrodaHitStarsPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="HeartTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="HeartTrail" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="WrappedExplodeEffect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Wrapped2ndExplodeShockwave" />
+	<ParticleEffect follow="true" name="WrappedExplode" />
+	<!--ParticleEffect name="WrappedExplodeSpark" follow="true"/-->
+	<ParticleEffect follow="true" name="WrappedExplodeFlash" />
+	<ParticleEffect follow="true" name="WrappedDots" />
+	<ParticleEffect follow="true" name="CrushedByWrappedHighlightPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="3" name="bomb_explode" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Wrapped2ndExplode">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Wrapped2ndExplodeShockwave" />
+	<ParticleEffect follow="true" name="WrappedWrappedExplodeFlash" />
+	<!--ParticleEffect name="WrappedExplodeSpark" follow="true"/-->
+	<ParticleEffect follow="true" name="WrappedExplodeFlash" />
+	<ParticleEffect follow="true" name="WrappedDots" />
+	<ParticleEffect follow="true" name="CrushedByWrappedHighlightPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="bomb_explode" />
+</SoundEffects>
+</Effect>
+
+<Effect name="WrappedWrappedExplodeEffect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="WrappedWrappedExplodeFlash" />
+	<ParticleEffect follow="true" name="WrappedExplode" />
+	<ParticleEffect follow="true" name="Wrapped2ndExplodeShockwave" />
+	<ParticleEffect follow="true" name="WrappedExplodeFlash" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="bomb_explode" />
+</SoundEffects>
+</Effect>
+
+<Effect name="BombExplodeSFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="6" name="bomb_explode" />
+</SoundEffects>
+</Effect>
+
+<Effect name="WrappedHintExplode">
+<ParticleEffects>
+	<!--<ParticleEffect name="WrappedHintExplodeSpark" follow="true"/>-->
+	<ParticleEffect follow="true" name="WrappedHintGlitter" />
+	<ParticleEffect follow="true" name="WrappedHintExplodeSmoke" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LemonadeCorrodaBurstMeshEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeCorrodaBurstMeshPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LemonadeCorrodaBalloonExplodeDropsEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeCorrodaBalloonExplodeDropsPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LemonadeCorrodaGrowBurstEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeCorrodaGrowBurstPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LemonadeCorrodaBalloonExplodeShockwaveEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeCorrodaBalloonExplodeShockwavePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LemonadeBalloonBurstMesh">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeBalloonBurstMesh" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishHitEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishHitPFX" />
+	<ParticleEffect follow="true" name="FishHitSparksPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishJam1TrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishJam1TrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishStripeTrailBlueEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishStripeLightTrailPFX" />
+	<ParticleEffect follow="true" name="FishStripeTrailBluePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishStripeTrailCyanEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishStripeLightTrailPFX" />
+	<ParticleEffect follow="true" name="FishStripeTrailCyanPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishStripeTrailGreenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishStripeLightTrailPFX" />
+	<ParticleEffect follow="true" name="FishStripeTrailGreenPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishStripeTrailRedEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishStripeLightTrailPFX" />
+	<ParticleEffect follow="true" name="FishStripeTrailRedPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishStripeTrailYellowEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishStripeLightTrailPFX" />
+	<ParticleEffect follow="true" name="FishStripeTrailYellowPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishStripeTrailOrangeEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishStripeLightTrailPFX" />
+	<ParticleEffect follow="true" name="FishStripeTrailOrangePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishStripeTrailPurpleEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishStripeLightTrailPFX" />
+	<ParticleEffect follow="true" name="FishStripeTrailPurplePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishMarkTargetEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FishFreeze" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LemonadeGrowBurstEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeGrowBurst" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="SodaRiseSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SodaGoalBurstTopEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SodaGoalBurstTopPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SodaGoalBurstSoundEFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="SodaBubblesRiseSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SodaGoalBurstEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SodaGoalBurstPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LemonadeBalloonBurst">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeBalloonExplodeShockwave" />
+	<ParticleEffect follow="true" name="LemonadeBalloonExplodeSplashPFX" />
+	<ParticleEffect follow="true" name="LemonadeBalloonExplodeDrops" />
+	<ParticleEffect follow="true" name="LemonadeHudCollectStarsPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="water_balloon_pop" />
+</SoundEffects>
+</Effect>
+
+<Effect name="LemonadeBalloonBurstTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeBalloonTrailDrops" />
+	<ParticleEffect follow="true" name="LemonadeBalloonTrailMist" />
+</ParticleEffects>
+<!--<SoundEffects>
+																								  <SoundEffect name="bomb_explode"/>
+																								</SoundEffects>-->
+<ParticleEffects />
+</Effect>
+
+<Effect name="LemonadeCorrodaBalloonBurstMeshEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeCorrodaBalloonBurstMeshPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="SodaRiseSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="LemonadeFishGrowBurstEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeFishGrowBurst" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="SodaRiseSFX" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SodaCorrodaGoalBurstEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SodaCorrodaGoalBurstPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SodaCorrodaGoalBurstTopEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SodaCorrodaGoalBurstTopPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SodaFishGoalBurstTopEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SodaFishGoalBurstTopPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SodaFishGoalBurstEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SodaFishGoalBurstPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LemonadeFishBalloonBurstEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeFishBalloonExplodeShockwave" />
+	<ParticleEffect follow="true" name="LemonadeBalloonExplodeSplashPFX" />
+	<ParticleEffect follow="true" name="LemonadeFishBalloonExplodeDrops" />
+	<ParticleEffect follow="true" name="LemonadeHudCollectStarsPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="water_balloon_pop" />
+</SoundEffects>
+</Effect>
+
+<Effect name="LemonadeCorrodaBalloonBurstEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeCorrodaBalloonExplodeShockwavePFX" />
+	<ParticleEffect follow="true" name="LemonadeBalloonExplodeSplashPFX" />
+	<ParticleEffect follow="true" name="LemonadeCorrodaBalloonExplodeDropsPFX" />
+	<ParticleEffect follow="true" name="LemonadeHudCollectStarsPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="water_balloon_pop" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SodaFishSwimTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SodaFishSwimTrail" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LiquidCorrodaBubblesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LiquidCorrodaBubblesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LiquidFishBubblesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LiquidFishBubblesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="BottleCorrodaFoamEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BottleCorrodaFoamPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="BottleFishFoamEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BottleFishFoamPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LemonadeFishBalloonBurstMeshEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LemonadeFishBalloonBurstMesh" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherCreateSpecialTrailGlitter">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="CreateSpecialTrailGlitter" />
+	<ParticleEffect follow="false" name="CreateSpecialCandySelected" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SwitcherCreateSpecial">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreateSpecialShake" />
+	<ParticleEffect follow="true" name="CreateSpecialGlitter" />
+	<ParticleEffect follow="true" name="CreateSpecialSmall" />
+	<ParticleEffect follow="true" name="CreateSpecialBig" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_candy_created" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SwitcherCreateSugarCrushSpecial">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreateSpecialShake" />
+	<ParticleEffect follow="true" name="CreateSpecialGlitter" />
+	<ParticleEffect follow="true" name="CreateSpecialSmall" />
+	<ParticleEffect follow="true" name="CreateSpecialBig" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="sugar_crush_special_candy_created" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SwitcherCreateSpecialEGP">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreateSpecialShake2" />
+	<ParticleEffect follow="true" name="CreateSpecialGlitter" />
+	<ParticleEffect follow="true" name="CreateSpecialSmall2" />
+	<ParticleEffect follow="true" name="CreateSpecialBig2" />
+	<ParticleEffect follow="true" name="WrappedExplode" />
+	<ParticleEffect follow="true" name="WrappedExplodeFlash" />
+	<ParticleEffect follow="true" name="WrappedExplodeStars" />
+	<ParticleEffect follow="true" name="Wrapped2ndExplodeShockwave" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="sugar_crush_special_candy_created" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FishStripedMergeEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreateSpecialShake" />
+	<ParticleEffect follow="true" name="CreateSpecialGlitter" />
+	<ParticleEffect follow="true" name="CreateSpecialSmall" />
+	<ParticleEffect follow="true" name="CreateSpecialBig" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_candy_created" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FishWrappedMergeEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreateSpecialShake" />
+	<ParticleEffect follow="true" name="CreateSpecialGlitter" />
+	<ParticleEffect follow="true" name="CreateSpecialSmall" />
+	<ParticleEffect follow="true" name="CreateSpecialBig" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_candy_created" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FishFishMergeEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreateSpecialShake" />
+	<ParticleEffect follow="true" name="CreateSpecialGlitter" />
+	<ParticleEffect follow="true" name="CreateFishFishPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_candy_created" />
+</SoundEffects>
+<ParticleEffects>
+	<!--ParticleEffect name="CreateSpecialBig" follow="true"/-->
+</ParticleEffects>
+</Effect>
+
+<Effect name="FishCreatedEFQ">
+<ParticleEffects>
+	<ParticleEffect name="CreateFishPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="BearInBubbleWin">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SodaBurstPFX" />
+	<ParticleEffect follow="true" name="BearInBubbleWinGlitterPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="HoneyBearWinEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BearInBubbleWinGlitterPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Coockie_batter">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="coockie_batter" />
+</SoundEffects>
+</Effect>
+
+<Effect name="BubblegumSplashEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BubblegumSplashPFX" />
+	<ParticleEffect follow="true" name="BubblegumSplashSmallPFX" />
+	<ParticleEffect follow="true" name="BubblegumCrushPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="bubble_gum_burst01" />
+</SoundEffects>
+</Effect>
+
+<Effect name="BubblegumDeathEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BubblegumDeathPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="bubble_gum_burst02" />
+</SoundEffects>
+</Effect>
+
+<Effect name="BubblegumInHudSplashEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BubblegumSplashSmallPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="BubblegumGrowEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BubblegumCrushPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="bubble_gum_grow" />
+</SoundEffects>
+</Effect>
+
+<Effect name="IceTileBreak">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="IceCrushedIcePFX" />
+	<ParticleEffect follow="true" name="IceCrushedSmokePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="ice_removed3" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="IceBlockerHit2EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="IceBlockerHit1aPFX" />
+	<ParticleEffect follow="true" name="IceBlockerHit1bPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="ice_removed3" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="IceBlockerHit3EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="IceBlockerHit1aPFX" />
+	<ParticleEffect follow="true" name="IceBlockerHit1bPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="ice_removed3" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="IceBlockerHit4EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="IceBlockerHit1aPFX" />
+	<ParticleEffect follow="true" name="IceBlockerHit1bPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="ice_removed3" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="IceBlockerHit5EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="IceBlockerHit1aPFX" />
+	<ParticleEffect follow="true" name="IceBlockerHit1bPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="ice_removed3" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="IceBlockerHit6EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="IceBlockerHit1aPFX" />
+	<ParticleEffect follow="true" name="IceBlockerHit1bPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="ice_removed3" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="GiantFishConfettiEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="GiantFishConfettiPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="GiantBearsIceBreakSound1">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="ice_removed1" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="GiantBearsIceBreakSound2">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="ice_removed2" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="GiantBearsIceBreakSound3">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="ice_removed3" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="BearFoundEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BearFoundPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="GiantBearRevealedEffect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="GiantBearRevealedPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="giant_bear_appears" />
+</SoundEffects>
+</Effect>
+
+<Effect name="BearBubbleSFX">
+<SoundEffects>
+	<SoundEffect name="bear_escape_bubble" />
+</SoundEffects>
+</Effect>
+
+<Effect name="GiantBearRevealedTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="GiantBearRevealedTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="GiantBearDisappear">
+<SoundEffects>
+	<SoundEffect name="giant_bear_jump_to_meter" />
+</SoundEffects>
+</Effect>
+
+<Effect name="GiantBearHitCollectionMeter">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="GiantBearDisappearPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="giant_bear_hit_meter" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CardFall">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CardFallPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ScorePop">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ScorePopPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ScorePopDestroy">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ScorePopDestroyPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ChargeDots">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ChargeDots" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LollipopHammerEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LollipopHammerShockwave" />
+	<ParticleEffect follow="true" name="LollipopHammerCrushed" />
+	<ParticleEffect follow="true" name="LollipopHammerMist" />
+	<ParticleEffect follow="true" name="LollipopHammerSparks" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LollipopStripedHammerEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LollipopHammerShockwave" />
+	<ParticleEffect follow="true" name="LollipopHammerCrushed" />
+	<ParticleEffect follow="true" name="LollipopHammerMist" />
+	<ParticleEffect follow="true" name="LollipopHammerSparks" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LollipopPurpleStripeTrail">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LollipopPurpleStripeTrail" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="special_effect" volume="-3" />
+</SoundEffects>
+<!-- horizontal -->
+<ParticleEffects />
+</Effect>
+
+<Effect name="IllegalHandSwitchSFQ">
+<SoundEffects>
+	<SoundEffect name="illegal_hand_switch" />
+</SoundEffects>
+</Effect>
+
+<Effect name="LollipopHammerSFQ">
+<SoundEffects>
+	<SoundEffect name="lollipop_hit" />
+</SoundEffects>
+</Effect>
+
+<Effect name="LollipopHammerSelectionPFX">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LollipopHammerSelectionOne" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LollipopHammerSelectionMobilePFX">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LollipopHammerSelectionMobile" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LollipopActiveButtonMoving">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LollipopActiveButtonMoving" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="PurchaseItemFlareModalEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PurchaseLollipopFlarePFX" />
+	<ParticleEffect follow="true" name="PurchaseLollipopBigFlarePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="PurchaseItemGlitterModalEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PurchaseLollipopGlitterPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CandyConeEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CandyConePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CandyConeStopEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CandyConeStopPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LiquidBubblesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LiquidBubblesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CupcakeSplash">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CupCakeSplash" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="successful_switch" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CupcakeSplash1">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CupCakeSplash1PFX" />
+	<ParticleEffect follow="true" name="CupCakeSplash1SmallPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="successful_switch" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CupcakeSplash2">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CupCakeSplash2PFX" />
+	<ParticleEffect follow="true" name="CupCakeSplash2SmallPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="successful_switch" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CupcakeSplash3">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CupCakeSplash3PFX" />
+	<ParticleEffect follow="true" name="CupCakeSplash3SmallPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="successful_switch" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CupcakeSplash4">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CupCakeSplash4PFX" />
+	<ParticleEffect follow="true" name="CupCakeSplash4SmallPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="successful_switch" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CupcakeSplash5">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CupCakeSplash5PFX" />
+	<ParticleEffect follow="true" name="CupCakeSplash5SmallPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="successful_switch" />
+</SoundEffects>
+</Effect>
+
+<Effect name="HoneySplashEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="HoneySplashPFX" />
+	<!--<ParticleEffect name="HoneyGlitterPFX" follow="true"/> -->
+	<ParticleEffect follow="true" name="HoneyCrushPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="HoneySplashLidEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="HoneySplashSmallPFX" />
+	<ParticleEffect follow="true" name="HoneyCrushPFX" />
+	<ParticleEffect follow="true" name="HoneyLidCrushPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="honey_tile_splat0">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="honey_tile_splat0" volume="-6" />
+</SoundEffects>
+</Effect>
+
+<Effect name="honey_tile_splat1">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="honey_tile_splat1" volume="-6" />
+</SoundEffects>
+</Effect>
+
+<Effect name="honey_tile_lid_soft_crack">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="honey_tile_lid_soft_crack" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CollabUnlockEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CollabUnlockFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="RiverStreamEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="RiverStreamPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Bear_frosting_1">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="bear_frosting_1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Bear_frosting_2">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="bear_frosting_2" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Bear_frosting_3">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="bear_frosting_3" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Bear_frosting_4">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="bear_frosting_4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Bear_frosting_5">
+<SoundEffects>
+	<!-- <SoundEffect name="bear_frosting_5" maxSimultaneousInstances="1"/> -->
+</SoundEffects>
+</Effect>
+
+<Effect name="Chocolate_grows">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="chocolate_grows" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Chocolate_removed">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="chocolate_removed" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Candy_Cannon_Spinner">
+<SoundEffects>
+	<SoundEffect name="candy_cannon_spinner" volume="-3" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Frosting_cleared1">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="frosting_cleared1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="LiqLockCrushed">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LiqLockCrushed" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="liqourice_lock_broken" />
+</SoundEffects>
+</Effect>
+
+<Effect name="LiquoriceSwirlBlackCrushedEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LiquoriceSwirlBlackCrushedPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="liquorice_swirl" />
+</SoundEffects>
+</Effect>
+
+<Effect name="LiquoriceSwirlWhiteCrushedEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LiquoriceSwirlWhiteCrushedPFX" />
+	<ParticleEffect follow="true" name="LiquoriceSwirlBlackCrushedPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="LineBlastHitLiqEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="LineBlastHitLiq1PFX" />
+	<ParticleEffect follow="true" name="LineBlastHitLiq2PFX" />
+	<ParticleEffect follow="true" name="LineBlastHitLiq3PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="BorderHighglightGlitterEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BorderHighglightGlitterPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ExclamationGlitterEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ExclamationGlitterPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SweetEFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="sweet_exclamation" />
+</SoundEffects>
+</Effect>
+
+<Effect name="TastyEFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="tasty_exclamation" />
+</SoundEffects>
+</Effect>
+
+<Effect name="DeliciousEFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="delicious_exclamation" />
+</SoundEffects>
+</Effect>
+
+<Effect name="DivineEFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="divine_exclamation" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SugarCrushVoiceSFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="sugar_crush_exclamation" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SugarCrushSwipeSFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="soda_wave" volume="-5" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SugarCrushSwipeOutSFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="soda_wave_out" volume="-2" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SugarCrushBubblesSlowEFQ">
+<ParticleEffects>
+	<ParticleEffect name="SugarCrushBubblesSlowPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SugarCrushBubblesFoamEFQ">
+<ParticleEffects>
+	<ParticleEffect name="SugarCrushBubblesFoamPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="WaterBallon_Pop">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="water_balloon_pop" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="BottleJumpToMeterSFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="BottleJumpToMeterSFX" volume="-3" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SwipeSwoopInEFQ">
+<SoundEffects>
+	<SoundEffect name="info_swoop_in1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SwipeSwoopOutEFQ">
+<SoundEffects>
+	<SoundEffect name="info_swoop_in1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="StarSparkle">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="StarSparkle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="BottleFoamEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BottleFoamPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="StarMeterExplosion">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="StarMeterExplosion" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="HudStarSfx1">
+<SoundEffects>
+	<SoundEffect name="hud_1_star" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="HudStarSfx2">
+<SoundEffects>
+	<SoundEffect name="hud_2_star" volume="-9" />
+</SoundEffects>
+</Effect>
+
+<Effect name="HudStarSfx3">
+<SoundEffects>
+	<SoundEffect name="hud_3_star" volume="-9" />
+</SoundEffects>
+<!-- </Effect>
+																								<Effect name="diorama_marsh_mallow_sfx">
+																									<SoundEffects>
+																										<SoundEffect name="diorama_marsh_mallow"/>
+																									</SoundEffects> -->
+</Effect>
+
+<Effect name="stinger_win_intro">
+<SoundEffects>
+	<SoundEffect name="stinger_win_intro" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ShuffleEFQ">
+<SoundEffects>
+	<SoundEffect name="shuffle" />
+	<SoundEffect name="shuffle_exclamation" />
+</SoundEffects>
+</Effect>
+
+<Effect name="BoosterSelectedEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BoosterSelectedPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Plus5MovesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Plus5MovesPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="jelly_cake" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JellyCakeHitPart0EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="JellyCakeHitRedPFX" />
+	<ParticleEffect follow="true" name="JellyCakeHitGlitter" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="jelly_cake" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JellyCakeHitPart1EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="JellyCakeHitYellowPFX" />
+	<ParticleEffect follow="true" name="JellyCakeHitGlitter" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="jelly_cake" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JellyCakeHitPart2EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="JellyCakeHitGreenPFX" />
+	<ParticleEffect follow="true" name="JellyCakeHitGlitter" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="jelly_cake" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JellyCakeHitPart3EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="JellyCakeHitCyanPFX" />
+	<ParticleEffect follow="true" name="JellyCakeHitGlitter" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="jelly_cake" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JellyCakeHitPart4EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="JellyCakeHitBluePFX" />
+	<ParticleEffect follow="true" name="JellyCakeHitGlitter" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="jelly_cake" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JellyCakeHitPart5EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="JellyCakeHitPinkPFX" />
+	<ParticleEffect follow="true" name="JellyCakeHitGlitter" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="jelly_cake" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JellyCakeHitPart6EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="JellyCakeHitCerisPFX" />
+	<ParticleEffect follow="true" name="JellyCakeHitGlitter" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="jelly_cake" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JellyCakeHitPart7EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="JellyCakeHitPurplePFX" />
+	<ParticleEffect follow="true" name="JellyCakeHitGlitter" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="jelly_cake" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JellyCakeBlast1EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="JellyCakeBlast1PFX" />
+	<ParticleEffect follow="true" name="JellyCakeBlast2PFX" />
+	<ParticleEffect follow="true" name="JellyCakeBlast3PFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="jelly_cake_explode" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JellyCakeChargeSFX">
+<SoundEffects>
+	<SoundEffect name="jelly_cake_charge" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Jam1SplashEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Jam1SplashPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Jam2SplashEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Jam2SplashPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Jam1SplashDirEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Jam1SplashDirPFX" />
+	<ParticleEffect follow="true" name="Jam1WaveDirPFX" />
+	<ParticleEffect follow="true" name="Jam1BurstDirPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Jam2SplashDirEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Jam2SplashDirPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="JamSplashSFX1">
+<SoundEffects>
+	<SoundEffect name="jam_1" volume="-2" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JamSplashSFX2">
+<SoundEffects>
+	<SoundEffect name="jam_2" volume="-2" />
+</SoundEffects>
+</Effect>
+
+<Effect name="JamSplashSFX3">
+<SoundEffects>
+	<SoundEffect name="jam_3" volume="-2" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ProgressTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ProgressTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SidekickChargeMeterFullEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SidekickChargeMeterSparks" />
+	<ParticleEffect follow="true" name="SidekickChargeMeterGlow" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="RedCandyEatenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="RedCandyEaten" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="GreenCandyEatenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="GreenCandyEaten" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CyanCandyEatenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CyanCandyEaten" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="YellowCandyEatenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="YellowCandyEaten" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="OrangeCandyEatenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="OrangeCandyEaten" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="BlueCandyEatenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BlueCandyEaten" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="PurpleCandyEatenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PurpleCandyEaten" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="BlackCandyEatenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PurpleCandyEaten" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SmokepuffEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Smokepuff" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ThoughtBubbleSmokepuffEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ThoughtBubbleSmokepuffPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SidekickCyanSelectedEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SidekickCyanCollectedSparks" />
+	<ParticleEffect follow="true" name="SidekickCyanSelectedRings" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SidekickCandyRemovedEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="SidekickCandyRemovedGlitter" />
+	<ParticleEffect follow="false" name="SidekickCandyRemovedSquare" />
+	<ParticleEffect follow="false" name="SidekickCandyRemovedRing" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="color_bomb_hit" volume="-2" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SidekickCyanFlyToHudEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SidekickCyanFlyToHudGlitter" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SidekickSelectedEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SidekickSelectedGlitter" />
+	<ParticleEffect follow="true" name="SidekickActivatedOutline" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SprinkleshellChargedSFX">
+<SoundEffects>
+	<SoundEffect name="sprinkleshell_charged" volume="-2" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SprinkleshellChewSFX">
+<SoundEffects>
+	<SoundEffect name="sprinkleshell_chew" volume="-1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SprinkleshellSelectSFX">
+<SoundEffects>
+	<SoundEffect name="sprinkleshell_select" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SidekickCollectSFX">
+<SoundEffects>
+	<SoundEffect name="collect" volume="-10" />
+</SoundEffects>
+</Effect>
+
+<Effect name="SidekickChargeSFX">
+<SoundEffects>
+	<SoundEffect name="charge" volume="-10" />
+</SoundEffects>
+</Effect>
+
+<Effect name="TutorialCandySelectedEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="TutorialCandySelectedPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SidekickTutorialCyanGlowEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="SidekickTutorialCyanGlowPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="SprinkleshellActiveIdleSFX">
+<SoundEffects>
+	<SoundEffect name="sprinkleshell_active_idle" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="CastleFireworks1EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="CastleFireworks1PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBottleCapLandingEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBottleCapBubblesPFX" />
+	<ParticleEffect follow="true" name="FizzBottleCapSparksPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBottleCapStartEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBottleCapBubbles2PFX" />
+	<ParticleEffect follow="true" name="FizzBottleCapSparks2PFX" />
+	<ParticleEffect follow="true" name="FizzBottleCapDotsPFX" />
+	<ParticleEffect follow="true" name="FizzBottleCapRingPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBgBubbles0EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBgBubbles0PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBgBubbles1EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBgBubbles1PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBgBubbles2EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBgBubbles2PFX" />
+	<ParticleEffect follow="true" name="FizzBgBubblesSmall1PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBgBubbles3EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBgBubbles3PFX" />
+	<ParticleEffect follow="true" name="FizzBgBubblesSmall2PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBgBubbles4EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBgBubbles3PFX" />
+	<ParticleEffect follow="true" name="FizzBgBubblesSmall2PFX" />
+	<!--<ParticleEffect follow="true" name="FizzBgRing1"/>-->
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzFgActiveRingsEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzFgRing1" />
+	<ParticleEffect follow="true" name="FizzFgRing2" />
+	<ParticleEffect follow="true" name="FizzFgRing3" />
+	<ParticleEffect follow="true" name="FizzFgRing4" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzFgActiveRingsTutorialEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzFgRingTutorial1" />
+	<ParticleEffect follow="true" name="FizzFgRingTutorial2" />
+	<ParticleEffect follow="true" name="FizzFgRingTutorial3" />
+	<ParticleEffect follow="true" name="FizzFgRingTutorial4" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzExplodeEffect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzExplodeFlash" />
+	<ParticleEffect follow="true" name="FizzExplode" />
+	<ParticleEffect follow="true" name="FizzExplodeShockwave" />
+	<ParticleEffect follow="true" name="FizzBurstSplatterPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="fizz_bomb" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzTutorialBubblesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzTutorialBubblesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBurstTutorialEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBurstSplatterPFX" />
+	<ParticleEffect follow="true" name="FizzBurstSparkPFX" />
+	<!--<ParticleEffect follow="true" name="FizzBurstBubbles1PFX"/>-->
+	<ParticleEffect follow="true" name="FizzBurstBlastPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzTutorialBottleCapBubblesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzTutorialBottleCapBubblesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzGrowBubblesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSplashBubblesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzDissolveBubblesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzDissolveBubblesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzDissolveSplashEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSplashBubblesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzRushDirectionEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzRushBubblesPFX" />
+	<ParticleEffect follow="true" name="FizzRushGlowPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzSpreadEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSpreadBubbles1PFX" />
+	<ParticleEffect follow="true" name="FizzSpreadBubbles2PFX" />
+	<ParticleEffect follow="true" name="FizzSpreadLightTrailPFX" />
+	<ParticleEffect follow="true" name="FizzSpreadDotPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzSpreadBlueEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSpreadBluePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzSpreadCyanEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSpreadCyanPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzSpreadGreenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSpreadGreenPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzSpreadPurpleEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSpreadPurplePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzSpreadYellowEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSpreadYellowPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzSpreadRedEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSpreadRedPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzSpreadOrangeEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSpreadOrangePFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzSpreadTrailConstantEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSpreadTrailConstantPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzSpreadTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzSpreadTrailPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBgEffect1EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBgEffect1PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBgEffect2EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBgEffect2PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzCounterGlowEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzCounterGlowPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzBubble1SFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="fizz_bubble_1" volume="-8" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzBubble2SFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="fizz_bubble_2" volume="-8" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzBubble3SFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="fizz_bubble_3" volume="-8" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzBurstEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBurstSplatterPFX" />
+	<ParticleEffect follow="true" name="FizzBurstSparkPFX" />
+	<!--<ParticleEffect follow="true" name="FizzBurstBubbles1PFX"/>-->
+	<ParticleEffect follow="true" name="FizzBurstBlastPFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="fizz_burst" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzBubbleRushEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="FizzBubbleRushPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="FizzChain1SFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="fizz_chain_1" volume="-3" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzChain2SFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="fizz_chain_2" volume="-3" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzChain3SFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="fizz_chain_3" volume="-3" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzChain4SFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="fizz_chain_4" volume="-3" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzChain5SFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="fizz_chain_5" volume="-3" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzWaterLevelRaiseSFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="fizz_water_level_raise" volume="-7" />
+</SoundEffects>
+</Effect>
+
+<Effect name="FizzFlushSFX">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="fizz_flush" volume="-7" />
+</SoundEffects>
+</Effect>
+
+<Effect name="BubbleRushVoiceSFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="instruction_swipe_bubble_rush" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Wisps_snow">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="Wisps_snow" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="HardLevelPinEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="HardLevelPinSmokePFX" />
+	<ParticleEffect follow="false" name="LevelPinElecPFX" />
+</ParticleEffects>
+<SoundEffects />
+</Effect>
+
+<Effect name="CurrentLevelEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="LevelPin1PFX" />
+	<ParticleEffect follow="false" name="LevelPin2PFX" />
+</ParticleEffects>
+<SoundEffects />
+</Effect>
+
+<Effect name="PregameColorbombSpawnHitEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="PregameColorbombSpawnRingPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="PregameColorbombSpawnElectricEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="PregameColorbombSpawnElectricPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="PregameColorbombSpawnedSpecialEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreateSpecialShake" />
+	<ParticleEffect follow="true" name="CreateSpecialGlitter" />
+	<ParticleEffect follow="true" name="CreateSpecialSmall" />
+	<ParticleEffect follow="true" name="CreateSpecialBig" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="colorbomb_candy_created" />
+</SoundEffects>
+</Effect>
+
+<Effect name="PregameColorbombSpawnSFX">
+<SoundEffects>
+	<SoundEffect name="pregamebooster_spawn_colorbomb" />
+</SoundEffects>
+</Effect>
+
+<Effect name="PregameDoubleFishSpawnedSpecialEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CreateSpecialShake" />
+	<ParticleEffect follow="true" name="CreateSpecialGlitter" />
+	<ParticleEffect follow="true" name="CreateSpecialSmall" />
+	<ParticleEffect follow="true" name="CreateSpecialBig" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="pregamebooster_spawn_double_fish" />
+</SoundEffects>
+</Effect>
+
+<Effect name="PregameBoosterPopupEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="PregameBoosterHitRingPFX" />
+	<ParticleEffect follow="false" name="PregameBoosterHitStarsPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="PregameBoosterDoubleFishGlitterEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="PregameBoosterDoubleFishGlitterPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="PregameBoosterTutorialGlitterEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="PregameBoosterGlitterSparks1PFX" />
+	<!--<ParticleEffect name="PregameBoosterGlitterSparks2PFX" follow="false" />-->
+	<!--<ParticleEffect name="PregameBoosterHitStarsPFX" follow="false" />-->
+</ParticleEffects>
+</Effect>
+
+<Effect name="PregameColoringcandySpawnSFX">
+<SoundEffects>
+	<SoundEffect name="pregamebooster_spawn_coloringcandy" />
+</SoundEffects>
+</Effect>
+
+<Effect name="PregameDoubleFishSpawnSwimSFX">
+<SoundEffects>
+	<SoundEffect name="pregamebooster_spawn_swim_fish" volume="-1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="HardlevelConfetti">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="CastleConfetti01_002" />
+	<ParticleEffect follow="false" name="CastleConfetti02_001" />
+	<ParticleEffect follow="false" name="CastleConfetti03_002" />
+	<ParticleEffect follow="false" name="StarWinSparkle_001" />
+	<ParticleEffect follow="false" name="StarWinSparkleDot_001" />
+	<ParticleEffect follow="false" name="ReachGoalSpark_001" />
+	<ParticleEffect follow="false" name="WrappedExplodeFlash_001" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="HeartBreakPieces">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="RedCrumblingPieces" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Eve_ConfettiOrange_effect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Eve_ConfettiOrange_particle" />
+	<ParticleEffect follow="true" name="Eve_ConfettiPurple_particle" />
+	<ParticleEffect follow="true" name="Eve_ConfettiRed_particle" />
+	<ParticleEffect follow="true" name="Eve_CandyOrange_particle" />
+	<ParticleEffect follow="true" name="Eve_StarWinSparkleDot_particle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Eve_BorderHighglightGlitterEFQ_effect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Eve_BorderHighglightGlitterPFX_particle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Eve_EnergyBall_effect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Eve_WrappedExplodeFlash_particle" />
+	<ParticleEffect follow="true" name="Eve_StarWinSparkle_particle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Eve_ConfettiRed_effect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Eve_ConfettiOrange_particle" />
+	<ParticleEffect follow="true" name="Eve_ConfettiGreen_particle" />
+	<ParticleEffect follow="true" name="Eve_ConfettiRed_particle" />
+	<ParticleEffect follow="true" name="Eve_CandyBean_particle" />
+	<ParticleEffect follow="true" name="Eve_StarWinSparkleDot_particle" />
+	<ParticleEffect follow="false" name="Eve_ConfettiBlue_particle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Eve_ConfettiCyan_effect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Eve_ConfettiBlue_particle" />
+	<ParticleEffect follow="true" name="Eve_ConfettiPurple_particle" />
+	<ParticleEffect follow="true" name="Eve_ConfettiRed_particle" />
+	<ParticleEffect follow="true" name="Eve_CandyCyan_particle" />
+	<ParticleEffect follow="true" name="Eve_StarWinSparkleDot_particle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Eve_Twinkle_effect">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="Eve_Twinkle_particle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="PinkPetalsEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PinkPetalsPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="PinkPetals2EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PinkPetals2PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="KimmyGlobeBubblesEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="KimmyGlobeBubblesPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ep57_blinking_eyes">
+<SoundEffects />
+<ParticleEffects>
+	<ParticleEffect follow="false" name="ep57_blinking_eyes" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Eve_WandStars_effect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Eve_WandStars_particle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="character_ep58">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep58" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep59">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep59" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep60">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep60" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Eve_Stars_effect">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="Eve_Stars_particle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CrystalGreenEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CrystalGreenSparklePFX" />
+	<ParticleEffect follow="false" name="CrystalMistPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Lvl_1000_Effect">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="Eve_SparksLvL1000_particle_001" />
+	<ParticleEffect follow="false" name="Eve_SparksLvL1000_particle_002" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="quest_completed_EFQ">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="quest_completed" />
+</SoundEffects>
+</Effect>
+
+<Effect name="quest_tab_burst_EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="quest_tab_burst_PFX" />
+	<ParticleEffect follow="true" name="quest_tab_burst_glow_PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="character_ep61">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep61" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep62">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep62" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep63">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep63" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Quest_InfiniteSparks">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Quest_InfiniteSparksPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="RainEffect">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="Rain" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Rain_drop_Effect">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="Rain_drop_ground" />
+</ParticleEffects>
+<SoundEffects />
+</Effect>
+
+<Effect name="Rain_drop_Effect_2">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="Rain_drop_ground_2" />
+</ParticleEffects>
+<SoundEffects />
+</Effect>
+
+<Effect name="QuestNewQuestEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="QuestNewQuestShockwavePFX" />
+</ParticleEffects>
+<SoundEffects />
+</Effect>
+
+<Effect name="character_crow">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_crow" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="QuestPirateReminderEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="QuestReminderGlowPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="PolkaPigBurstEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="PolkaPigSparksPFX" />
+	<ParticleEffect follow="true" name="PolkaPigCrushedPFX" />
+	<!--<ParticleEffect follow="true" name="PolkaPigCrushedRedPFX" />-->
+</ParticleEffects>
+</Effect>
+
+<Effect name="QuestPirateWinGlowEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CastleWinGlowFlare" />
+	<ParticleEffect follow="true" name="CastleWinGlowBigFlare" />
+	<ParticleEffect follow="true" name="CastleWinGlowBig" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="character_ep64">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep64" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep65">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep65" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep66">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep66" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ep64Bubbles">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="BubblesEp64" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CalendarRecieved">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="CalendarRecieved" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="emphasized_toplist_arrive_EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="toplist_sparkle" />
+	<ParticleEffect follow="true" name="toplist_shockwave" />
+	<ParticleEffect follow="true" name="toplist_sparkle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="emphasized_toplist_arrive_top_EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="toplist_sparkle" />
+	<ParticleEffect follow="false" name="emphasized_toplist_top_glow" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="emphasized_toplist_travel_EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="toplist_trail_sparkle" />
+	<ParticleEffect follow="true" name="toplist_trail_sparkle" />
+	<ParticleEffect follow="true" name="toplist_trail_glowy" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="character_ep67">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep67" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep68">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep68" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep69">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep69" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="StampDustGreenEFQ">
+<ParticleEffects>
+	<ParticleEffect name="StampDustGreenPFX" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="StampDustPinkEFQ">
+<ParticleEffects>
+	<ParticleEffect name="StampDustPinkPFX" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="RevealDayEFQ">
+<ParticleEffects>
+	<ParticleEffect name="RevealDayPFX" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="lc_enter">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="lc_enter" volume="-1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="lc_green_tick">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="lc_green_tick" volume="0" />
+</SoundEffects>
+</Effect>
+
+<Effect name="lc_gift_explosion">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="lc_gift_explosion" volume="-1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="lc_gift_explosion_special">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="lc_gift_explosion_special" volume="-1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="lc_stamp_green">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="lc_stamp_green" volume="-1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="lc_stamp_pink">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="lc_stamp_pink" volume="-1" />
+</SoundEffects>
+</Effect>
+
+<Effect name="lc_vertical_bar_fill">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="lc_vertical_bar_fill" volume="-8" />
+</SoundEffects>
+</Effect>
+
+<Effect name="quest_reward_glitter_EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="quest_reward_sparkle" />
+	<ParticleEffect follow="true" name="quest_reward_shockwave" />
+	<ParticleEffect follow="true" name="quest_reward_sparkle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="gold_bling_EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="GoldBling3PFX" />
+	<ParticleEffect follow="true" name="GoldBling2PFX" />
+	<ParticleEffect follow="true" name="GoldBling1PFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CandyCaneBreakEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CandyCaneBurstPFX" />
+	<ParticleEffect follow="true" name="CandyCaneDustPFX" />
+	<ParticleEffect follow="true" name="CandyCaneBurstSmallPFX" />
+	<ParticleEffect follow="true" name="JellyCakeHitGlitter" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CandyCaneBurstModeEFQ">
+<ParticleEffects>
+	<ParticleEffect name="polkapigburstmodepfx1" follow="false" />
+	<ParticleEffect name="polkapigburstmodepfx2" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CandyCaneBuildupEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="CandyCaneBuildupElectricSparkPFX" />
+	<ParticleEffect follow="true" name="CandyCaneBuildupFlashPFX" />
+	<!--<ParticleEffect follow="true" name="CandyCaneBuildupSmokePFX" />-->
+</ParticleEffects>
+</Effect>
+
+<Effect name="character_ep70">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep70" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="facman_candymachine_1">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="facman_candymachine_1" volume="-8" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep71">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep71" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="facman_candymachine_2">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="facman_candymachine_2" volume="-8" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep72">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep72" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="facman_candymachine_3">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="facman_candymachine_3" volume="-8" />
+</SoundEffects>
+</Effect>
+
+<Effect name="facman_manager_mumble_1">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="facman_manager_mumble_1" volume="-10" />
+</SoundEffects>
+</Effect>
+
+<Effect name="starman_starpop">
+<SoundEffects>
+	<SoundEffect name="starman_starpop" volume="0" />
+</SoundEffects>
+</Effect>
+
+<Effect name="egp_gumballmachine_sfx">
+<SoundEffects>
+	<SoundEffect name="egp_gumballmachine" volume="0" />
+</SoundEffects>
+</Effect>
+
+<Effect name="egp_gumball_open_sfx">
+<SoundEffects>
+	<SoundEffect name="egp_gumball_open" volume="0" />
+</SoundEffects>
+</Effect>
+
+<Effect name="candy_cane_stripe_added">
+<SoundEffects>
+	<SoundEffect name="candy_cane_stripedadded" />
+</SoundEffects>
+</Effect>
+
+<Effect name="candy_cane_explode">
+<SoundEffects>
+	<SoundEffect name="candy_cane_explode" />
+</SoundEffects>
+</Effect>
+
+<Effect name="candy_cane_powerup">
+<SoundEffects>
+	<SoundEffect name="candy_cane_powerup" />
+</SoundEffects>
+</Effect>
+
+<Effect name="candy_cane_stripe_intro">
+<SoundEffects>
+	<SoundEffect name="candy_cane_stripe_intro" />
+</SoundEffects>
+</Effect>
+
+<Effect name="candy_cane_stripe_outro">
+<SoundEffects>
+	<SoundEffect name="candy_cane_stripe_outro" />
+</SoundEffects>
+</Effect>
+
+<Effect name="facman_manager_mumble_2">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="facman_manager_mumble_2" volume="-10" />
+</SoundEffects>
+</Effect>
+
+<Effect name="facman_steam_1">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="facman_steam_1" volume="-12" />
+</SoundEffects>
+</Effect>
+
+<Effect name="facman_steam_2">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="facman_steam_2" volume="-15" />
+</SoundEffects>
+</Effect>
+
+<Effect name="facman_steam_3">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="2" name="facman_steam_3" volume="-15" />
+</SoundEffects>
+</Effect>
+
+<Effect name="ep72_blinking_eyes">
+<SoundEffects />
+<ParticleEffects>
+	<ParticleEffect name="ep72_blinking_eyes" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="character_ep73">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep73" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep74">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep74" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep75">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep75" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep76">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep76" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep77">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep77" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep78">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep78" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Ep76_Wand_Effect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Ep76_Wand_ExplodeFlash_Particle" />
+	<ParticleEffect follow="true" name="Ep76_Wand_Star_Particle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="Ep76_Firefly_Effect">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="Ep76_Wand_Star_Particle" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="character_ep66_sneeze">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep66_sneeze" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="Ep71SoundNotes">
+<ParticleEffects>
+	<ParticleEffect name="Ep71SoundNotesPFX" follow="true" />
+</ParticleEffects>
+<SoundEffects />
+</Effect>
+
+<Effect name="MemoriesCelebrationEFQ">
+<ParticleEffects>
+	<ParticleEffect name="MemoriesCelebrationFlashPFX" follow="false" />
+	<ParticleEffect name="MemoriesCelebrationFlash2PFX" follow="false" />
+	<ParticleEffect name="MemoriesFireworks2PFX" follow="false" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="memories_complete_photo" />
+</SoundEffects>
+</Effect>
+
+<Effect name="MemoriesCelebrationFlashEFQ">
+<ParticleEffects>
+	<ParticleEffect name="MemoriesCelebrationFlashPFX" follow="false" />
+	<ParticleEffect name="MemoriesCelebrationShockwavePFX" follow="false" />
+	<ParticleEffect name="MemoriesCelebrationSparklePFX" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="MemoriesWinGlitterEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="memories_win_shockwavePFX" />
+	<ParticleEffect follow="true" name="memories_win_shockwave2PFX" />
+	<ParticleEffect follow="true" name="memories_win_sparklePFX" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="memories_win_piece" />
+</SoundEffects>
+</Effect>
+
+<Effect name="MemoriesWinFireworksEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="MemoriesFireworksPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="MemoriesIconEFQ">
+<ParticleEffects>
+	<ParticleEffect name="MemoriesIconRingPFX" follow="false" />
+	<ParticleEffect name="MemoriesIconDotsPFX" follow="false" />
+	<ParticleEffect name="MemoriesIconSparksPFX" follow="false" />
+</ParticleEffects>
+<SoundEffects>
+	<SoundEffect name="memories_icon_collect" />
+</SoundEffects>
+</Effect>
+
+<Effect name="MemoriesRevealPieceEFQ">
+<SoundEffects>
+	<SoundEffect name="memories_flip_piece" />
+</SoundEffects>
+</Effect>
+
+<Effect name="MemoriesAttemptEFQ">
+<SoundEffects>
+	<SoundEffect name="memories_attempts" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep79">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep79" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep80">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep80" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep81">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep81" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep82">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep82" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep83">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep83" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="character_ep84">
+<SoundEffects>
+	<SoundEffect maxSimultaneousInstances="1" name="character_ep84" volume="-4" />
+</SoundEffects>
+</Effect>
+
+<Effect name="MemoriesCelebrationGlitterEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="MemoriesCelebrationShockwavePFX" />
+	<ParticleEffect name="MemoriesFireworks2PFX" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="MemoriesCelebrationGlitter2EFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="MemoriesCelebrationSparklePFX" />
+	<ParticleEffect name="MemoriesCelebrationSparklePFX" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="MemoriesRevealHitEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="MemoriesRevealHitPFX" />
+	<ParticleEffect name="ChainHitSparklePFX" follow="false" />
+	<ParticleEffect name="WrappedExplodeFlash" follow="false" />
+	<ParticleEffect name="MemoriesIconRingPFX" follow="false" />
+	<ParticleEffect name="LollipopHammerSparks" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="MemoriesRevealTrailEFQ">
+<ParticleEffects>
+	<ParticleEffect name="MemoriesRevealTrailPFX" follow="true" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ep84_Wisps_snow">
+<ParticleEffects>
+	<ParticleEffect follow="false" name="ep84_Wisps_snow" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="ep84_BubbleSmokepuffEFQ">
+<ParticleEffects>
+	<ParticleEffect follow="true" name="ep84_SmokepuffPFX" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="QuestRewardGlowEFQ">
+<ParticleEffects>
+	<ParticleEffect name="QuestRewardGlowBig" follow="false" />
+	<ParticleEffect name="QuestRewardGlowBigFlare" follow="false" />
+	<ParticleEffect name="QuestRewardGlowFlare" follow="false" />
+	<ParticleEffect name="QuestRewardGlitterPFX" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="QuestRewardGlittersEFQ">
+<ParticleEffects>
+	<ParticleEffect name="QuestRewardGlitterPFX" follow="false" />
+</ParticleEffects>
+</Effect>
+
+<Effect name="CapsuleParticleEFQ">
+<ParticleEffects>
+	<ParticleEffect name="CapsuleParticle1PFX" follow="false" />
+	<ParticleEffect name="CapsuleParticle2PFX" follow="false">
+		<Scale x="1.500" y="1.500" />
+	</ParticleEffect>
+</ParticleEffects>
+</Effect>
+
+</Effects>

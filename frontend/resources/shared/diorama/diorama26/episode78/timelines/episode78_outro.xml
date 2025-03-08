@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline endTime="5.0" startTime="0.0">
+        <!--COMMENT/REMOVE THIS FOR THE 3RD EPISODE IN THE DIORAMA! SHE IS ONLY MOVED ON FIRST AND SECOND EPISODE-->
+        <Triggers>
+            <!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+            <EffectTrigger name="character_ep78" time="0.0"/>
+            <CustomTrigger data="SpeechBubbleEp78.1"
+                name="SpeechBubbleText" time="0.0"/>
+            <AnimationTrigger animationName="SpeechBubbleAppear"
+                targetName="SpeechBubbleEp78" time="0.0"/>
+            <AnimationTrigger animationName="SpeechBubbleDisappear"
+                targetName="SpeechBubbleEp78" time="4.0"/>
+            <AnimationTrigger animationName="Talk" crossFade="0.1"
+                targetName="CharacterEp78" time="1.0"/>
+            <AnimationTrigger animationName="Idle" crossFade="0.6"
+                targetName="CharacterEp78" time="3.0"/>
+        </Triggers>
+    </Timeline>
+</Timelines>

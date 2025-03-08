@@ -1,0 +1,300 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<SceneObject name="GoldbarShop">
+		<Translation z="500"/>
+		<Animation name="OnAppear" animationData="SlideInFromTop" loopCount="0"/>
+		<Animation name="OnDisappear" animationData="SlideOutToBelow" loopCount="0"/>
+		<Import filename="shared/diorama/common/scenes/modal_background_medium.xml"/>
+		<SceneObject name="title">
+			<Translation y="-302" x="0"/>
+			<Text overflowBehaviour="fit" key="goldbar_shop_title" alignment="center" verticalAlignment="visualCenter" canBreakWords="false" font="Banana" maxWidth="370" maxHeight="45">
+				<Color a="255" b="255" r="255" g="255"/>
+				<Size y="24" x="24"/>
+			</Text>
+		</SceneObject>
+		<SceneObject name="entity">
+			<Scale z="1"/>
+			<Translation y="-13.030" x="0.934" z="0"/>
+			<SceneObject name="RowXS">
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ornament_top.png">
+					<Insets left="50" bottom="0" right="50" top="50"/>
+					<Pivot anchor="top"/>
+					<Size width="532" height="74"/>
+				</Panel>
+				<Translation y="-240" x="0"/>
+				<SceneObject>
+					<Translation y="61" x="0" z="1"/>
+					<SceneObject name="Amount">
+						<Text overflowBehaviour="fit" alignment="left" verticalAlignment="visualCenter" canBreakWords="false" font="Banana_NarrowSpacing" maxWidth="100" maxHeight="40">
+							<Color a="255" b="15" r="127" g="31"/>
+							<Size y="28" x="28"/>
+							<TextString>0</TextString>
+						</Text>
+						<Translation y="-6.550" x="-241.779" z="0"/>
+					</SceneObject>
+					<SceneObject>
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gold_1.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<Translation x="-29.087" y="-6.702" z="0"/>
+					</SceneObject>
+					<SceneObject name="BuyXSButton" class="Button">
+						<Animation name="Idle" animationData="Idle" play="true" startTime="0" layer="1"/>
+						<Animation name="OnPress" animationData="OnPress" loopCount="0"/>
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0"/>
+						<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+							<Insets left="54" bottom="59" right="54" top="48"/>
+							<Pivot anchor="center"/>
+							<Size width="260" height="108"/>
+						</Panel>
+						<Scale y="0.700" x="0.700" z="0.700"/>
+						<Translation y="-7.875" x="166.195" z="0"/>
+						<SceneObject name="Text">
+							<Text overflowBehaviour="fit" key="store_contacting" alignment="center" verticalAlignment="visualCenter" canBreakWords="false" font="Typewriter" maxWidth="170" maxHeight="50">
+								<Color a="255" b="255" r="255" g="255"/>
+								<Shadow enabled="true">
+									<Color a="64" b="15" r="127" g="31"/>
+									<Offset y="3" x="0"/>
+								</Shadow>
+								<Size y="26" x="26"/>
+								<TextString>0</TextString>
+							</Text>
+							<Translation y="-6.233" x="3.067" z="0"/>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RowS">
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ornament_middle.png">
+					<Insets left="50" bottom="0" right="50" top="100"/>
+					<Pivot anchor="top"/>
+					<Size width="532" height="84"/>
+				</Panel>
+				<Translation y="-166.183" x="0" z="0"/>
+				<SceneObject>
+					<Translation y="75" x="0" z="1"/>
+					<SceneObject name="Amount">
+						<Text overflowBehaviour="fit" alignment="left" verticalAlignment="visualCenter" canBreakWords="false" font="Banana_NarrowSpacing" maxWidth="100" maxHeight="40">
+							<Color a="255" b="15" r="127" g="31"/>
+							<Size y="28" x="28"/>
+							<TextString>0</TextString>
+						</Text>
+						<Translation y="-10.221" x="-241.779" z="0"/>
+					</SceneObject>
+					<SceneObject>
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gold_2.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<Translation x="-30" y="-9.523" z="0"/>
+					</SceneObject>
+					<SceneObject name="BuySButton" class="Button">
+						<Animation name="Idle" animationData="Idle" play="true" startTime="0" layer="1"/>
+						<Animation name="OnPress" animationData="OnPress" loopCount="0"/>
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0"/>
+						<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+							<Insets left="54" bottom="59" right="54" top="48"/>
+							<Pivot anchor="center"/>
+							<Size width="260" height="108"/>
+						</Panel>
+						<Scale y="0.700" x="0.700" z="0.700"/>
+						<Translation y="-7.875" x="166.195" z="0"/>
+						<SceneObject name="Text">
+							<Text overflowBehaviour="fit" key="store_contacting" alignment="center" verticalAlignment="visualCenter" canBreakWords="false" font="Typewriter" maxWidth="170" maxHeight="50">
+								<Color a="255" b="255" r="255" g="255"/>
+								<Shadow enabled="true">
+									<Color a="64" b="15" r="127" g="31"/>
+									<Offset y="3" x="0"/>
+								</Shadow>
+								<Size y="26" x="26"/>
+								<TextString>0</TextString>
+							</Text>
+							<Translation y="-6.233" x="3.067" z="0"/>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RowM">
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ornament_middle.png">
+					<Insets left="50" bottom="0" right="50" top="100"/>
+					<Pivot anchor="top"/>
+					<Size width="532" height="84"/>
+				</Panel>
+				<Translation y="-82.284" x="0" z="0"/>
+				<SceneObject>
+					<Translation y="75" x="0" z="1"/>
+					<SceneObject name="Amount">
+						<Text overflowBehaviour="fit" alignment="left" verticalAlignment="visualCenter" canBreakWords="false" font="Banana_NarrowSpacing" maxWidth="100" maxHeight="40">
+							<Color a="255" b="15" r="127" g="31"/>
+							<Size y="28" x="28"/>
+							<TextString>0</TextString>
+						</Text>
+						<Translation y="-11.274" x="-241.779" z="0"/>
+					</SceneObject>
+					<SceneObject>
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gold_3.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<Translation x="-33.316" y="-10.243" z="0"/>
+					</SceneObject>
+					<SceneObject name="HighPopularPkg">
+						<Scale y="0.967" x="0.967" z="1"/>
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/popular_banner2.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<Translation x="46.992" y="-15.523" z="1"/>
+						<SceneObject>
+							<Rotation z="-47"/>
+							<Text overflowBehaviour="fit" key="popular" alignment="center" verticalAlignment="visualCenter" canBreakWords="false" font="TypewriterBold" maxWidth="100" maxHeight="40">
+								<Color a="200" b="10" r="166" g="70"/>
+								<Shadow enabled="true">
+									<Color a="255" b="255" r="255" g="255"/>
+									<Offset y="1.500" x="0"/>
+								</Shadow>
+								<Size y="11" x="11"/>
+							</Text>
+							<Translation y="1" x="-4" z="0"/>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="BuyMButton" class="Button">
+						<Animation name="Idle" animationData="Idle" play="true" startTime="0" layer="1"/>
+						<Animation name="OnPress" animationData="OnPress" loopCount="0"/>
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0"/>
+						<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+							<Insets left="54" bottom="59" right="54" top="48"/>
+							<Pivot anchor="center"/>
+							<Size width="260" height="108"/>
+						</Panel>
+						<Scale y="0.700" x="0.700" z="0.700"/>
+						<Translation y="-7.875" x="166.195" z="0"/>
+						<SceneObject name="Text">
+							<Text overflowBehaviour="fit" key="store_contacting" alignment="center" verticalAlignment="visualCenter" canBreakWords="false" font="Typewriter" maxWidth="170" maxHeight="50">
+								<Color a="255" b="255" r="255" g="255"/>
+								<Shadow enabled="true">
+									<Color a="64" b="15" r="127" g="31"/>
+									<Offset y="3" x="0"/>
+								</Shadow>
+								<Size y="26" x="26"/>
+								<TextString>0</TextString>
+							</Text>
+							<Translation y="-6.233" x="3.067" z="0"/>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RowL">
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ornament_middle.png">
+					<Insets left="50" bottom="0" right="50" top="100"/>
+					<Pivot anchor="top"/>
+					<Size width="532" height="105"/>
+				</Panel>
+				<Translation y="1.360" x="0" z="0"/>
+				<SceneObject>
+					<Translation y="75" x="0" z="1"/>
+					<SceneObject name="Amount">
+						<Text overflowBehaviour="fit" alignment="left" verticalAlignment="visualCenter" canBreakWords="false" font="Banana_NarrowSpacing" maxWidth="100" maxHeight="40">
+							<Color a="255" b="15" r="127" g="31"/>
+							<Size y="28" x="28"/>
+							<TextString>0</TextString>
+						</Text>
+						<Translation y="0" x="-241.779" z="0"/>
+					</SceneObject>
+					<SceneObject>
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gold_6.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<Translation x="-35.436" y="-7.867" z="0"/>
+						<Scale x="0.972" y="0.972" z="1"/>
+					</SceneObject>
+					<SceneObject name="BuyLButton" class="Button">
+						<Animation name="Idle" animationData="Idle" play="true" startTime="0" layer="1"/>
+						<Animation name="OnPress" animationData="OnPress" loopCount="0"/>
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0"/>
+						<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+							<Insets left="54" bottom="59" right="54" top="48"/>
+							<Pivot anchor="center"/>
+							<Size width="260" height="108"/>
+						</Panel>
+						<Scale y="0.700" x="0.700" z="0.700"/>
+						<Translation y="10.365" x="166.195" z="0"/>
+						<SceneObject name="Text">
+							<Text overflowBehaviour="fit" key="store_contacting" alignment="center" verticalAlignment="visualCenter" canBreakWords="false" font="Typewriter" maxWidth="170" maxHeight="50">
+								<Color a="255" b="255" r="255" g="255"/>
+								<Shadow enabled="true">
+									<Color a="64" b="15" r="127" g="31"/>
+									<Offset y="3" x="0"/>
+								</Shadow>
+								<Size y="26" x="26"/>
+								<TextString>0</TextString>
+							</Text>
+							<Translation y="-6.233" x="3.067" z="0"/>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RowXL">
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ornament_middle.png">
+					<Insets left="50" bottom="0" right="50" top="100"/>
+					<Pivot anchor="top"/>
+					<Size width="532" height="165"/>
+				</Panel>
+				<Translation y="106.616" x="0" z="0"/>
+				<SceneObject>
+					<Translation y="75" x="0" z="1"/>
+					<SceneObject name="Amount">
+						<Text overflowBehaviour="fit" alignment="left" verticalAlignment="visualCenter" canBreakWords="false" font="Banana_NarrowSpacing" maxWidth="100" maxHeight="40">
+							<Color a="255" b="15" r="127" g="31"/>
+							<Size y="28" x="28"/>
+							<TextString>0</TextString>
+						</Text>
+						<Translation y="30.031" x="-241.779" z="0"/>
+					</SceneObject>
+					<SceneObject>
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gold_7.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<Translation x="-24.622" y="27.374" z="0"/>
+					</SceneObject>
+					<SceneObject name="BuyXLButton" class="Button">
+						<Animation name="Idle" animationData="Idle" play="true" startTime="0" layer="1"/>
+						<Animation name="OnPress" animationData="OnPress" loopCount="0"/>
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0"/>
+						<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+							<Insets left="54" bottom="59" right="54" top="48"/>
+							<Pivot anchor="center"/>
+							<Size width="260" height="108"/>
+						</Panel>
+						<Scale y="0.700" x="0.700" z="0.700"/>
+						<Translation y="75.298" x="165.465" z="0"/>
+						<SceneObject name="Text">
+							<Text overflowBehaviour="fit" key="store_contacting" alignment="center" verticalAlignment="visualCenter" canBreakWords="false" font="Typewriter" maxWidth="170" maxHeight="50">
+								<Color a="255" b="255" r="255" g="255"/>
+								<Shadow enabled="true">
+									<Color a="64" b="15" r="127" g="31"/>
+									<Offset y="3" x="0"/>
+								</Shadow>
+								<Size y="26" x="26"/>
+								<TextString>0</TextString>
+							</Text>
+							<Translation y="-6.233" x="3.067" z="0"/>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject>
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ornament_bottom.png">
+					<Insets left="50" bottom="50" right="50" top="0"/>
+					<Pivot anchor="top"/>
+					<Size width="532" height="34"/>
+				</Panel>
+				<Translation y="271.341" x="0" z="0"/>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="CanvasPaymentSymbols">
+			<Translation y="308" x="0"/>
+			<Scale y="0.800" x="0.800"/>
+			<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/payment_symbol_fb.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+		</SceneObject>
+	</SceneObject>
+</Scene>

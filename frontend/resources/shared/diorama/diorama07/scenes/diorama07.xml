@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+    <!--
+		Diorama 07 materials
+	-->
+    <Materials>
+        <!--
+			KIMMY MATERIAL
+		-->
+        <Material name="KimmyMaterialAlpha">
+            <Cull enabled="true" face="back"/>
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/kimmy/kimmy_diorama.png"/>
+            </Textures>
+        </Material>
+        <!--
+			CONSTRUCTION SIGN MATERIAL
+		-->
+        <Material name="Under_Construction_Icon">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/under_construction.png"/>
+            </Textures>
+        </Material>
+
+        <!--
+			BOARDPIECEMATERIAL & BOARDPIECEMATERIALALPHA
+		-->
+        <Material name="BoardGamePieceMaterial">
+            <Cull enabled="true" face="back"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/boardGamePiece.png"/>
+            </Textures>
+        </Material>
+        <Material name="BoardGamePieceMaterialAlpha" parentMaterial="BoardGamePieceMaterial">
+            <Depth enabled="true" writeMask="false"/>
+            <Blend enabled="true"/>
+        </Material>
+        <!--
+			PORTALMATERIAL & PORTALDISABLEDMATERIAL
+		-->
+        <Material name="PortalMaterial">
+            <Cull enabled="true" face="back"/>
+            <Blend enabled="true"/>
+            <Depth enabled="true" writeMask="false"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/portal_c.png"/>
+            </Textures>
+        </Material>
+        <Material name="PortalDisabledMaterial">
+            <Cull enabled="true" face="back"/>
+            <Blend enabled="true"/>
+            <Depth enabled="true" writeMask="false"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/lvl_pin_btn_grey.png"/>
+            </Textures>
+        </Material>
+    </Materials>
+    <!--
+		DIORAMA SCENEOBJECTS
+	-->
+    <SceneObject layerFlags="2" name="Diorama">
+        <Import filename="shared/diorama/diorama07/episode19/scenes/episode19.xml"/>
+        <Import filename="shared/diorama/diorama07/episode20/scenes/episode20.xml"/>
+        <Import filename="shared/diorama/diorama07/episode21/scenes/episode21.xml"/>
+        <!--
+      KIMMY GROUP
+    -->
+        <SceneObject name="Kimmy_group">
+            <Translation x="-2170" y="22" z="232"/>
+            <Rotation x="0" y="10" z="0"/>
+            <Import filename="shared/diorama/common/scenes/kimmy.xml"/>
+        </SceneObject>
+    </SceneObject>
+</Scene>
+<!-- <!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd"> -->

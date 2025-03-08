@@ -1,0 +1,43 @@
+<!DOCTYPE Timelines SYSTEM '../../../../../dtd/timeline.dtd'>
+<Timelines>
+    <Timeline startTime="0" endTime="3.80">
+        <Animate target="Bottle">
+            <Show time="0.10"/>
+            <Translation z="0" time="0"/>
+            <Translation z="0" time="0.90"/>
+            <Translation z="5" time="1.40"/>
+            <Rotation x="-50" z="0" time="0" y="30"/>
+            <Rotation x="-70" z="0" time="0.90" y="40"/>
+            <Rotation x="359" z="10" time="1.40"/>
+            <Rotation x="720" z="10" time="1.89"/>
+            <Scale x="1" z="1" time="0" y="-1"/>
+            <Scale x="1.50" z="1.50" time="0.20" y="-1.50"/>
+            <Scale x="1.25" z="1.25" time="0.30" y="-1.25"/>
+            <Scale x="1.35" z="1.35" time="0.40" y="-1.35"/>
+            <Scale x="1.35" z="1.35" time="0.90" y="-1.35"/>
+            <Scale x="2.50" z="2.50" time="1.40" y="-2.50"/>
+            <Scale x="0.10" z="0.10" time="1.90" y="0.10"/>
+            <Hide time="3.80"/>
+            <Hide time="1.90"/>
+        </Animate>
+        <Triggers>
+            <CustomTrigger time="0.01" name="ChangeLayerToInFrontOfCandies"/>
+            <CustomTrigger time="0.90" name="FlyToHud"/>
+            <EffectTrigger targetName="Bottle" time="0" name="FizzBottleCapStartEFQ">
+                <Offset z="100"/>
+            </EffectTrigger>
+            <EffectTrigger time="0" name="BottleJumpToMeterSFQ"/>
+            <!-- This is the sound effect -->
+            <!--<EffectTrigger name="BearInBubbleWin" time="0.2"><Offset z="0"/></EffectTrigger>-->
+            <!--<AnimationTrigger targetName="Bottle" animationName="JumpToHud" time="0.0"/>-->
+            <!--<EffectTrigger targetName="Bottle" name="BearInBubbleWin" followTarget="true"-->
+            <!--emitterInheritsTargetRotation="false" time="0.0"/>-->
+            <!--<EffectTrigger name="EngineFix">-->
+            <!--<Offset z="100"/>-->
+            <!--</EffectTrigger>-->
+            <EffectTrigger targetName="Bottle" time="1.90" name="FizzBottleCapLandingEFQ">
+                <Offset z="100"/>
+            </EffectTrigger>
+        </Triggers>
+    </Timeline>
+</Timelines>

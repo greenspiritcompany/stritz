@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="Anchor" visibility="always" layerFlags="512">
+			<SceneObject name="Light" visibility="always">
+				<!--							  <Sprite filename="shared/game/common/tex/mode/lemonade_sea/lemonade_drop.png">
+					<Pivot anchor="center"/>
+				  </Sprite>
+				-->
+				<Translation x="0" y="0" z="1"/>
+				<Materials>
+					<Material>
+						<!--<Cull enabled="true" face="back"/>-->
+						<Blend enabled="true" blendFuncDestinationFactor="One"/>
+						<Depth enabled="true" writeMask="false"/>
+						<!--<AlphaTest functionValue="255" enabled="false"/>-->
+					</Material>
+				</Materials>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

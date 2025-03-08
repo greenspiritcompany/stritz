@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="MemoriesHolderPanelGrp">
+		<Translation x="3" />
+		<SceneObject name="MemoryContainer" editorEntityId="42">
+			<Translation x="-258.241" y="-3.398" z="0" />
+			<Scale x="1.500" y="1.500" z="1" />
+			<Rotation x="0" y="0" z="0" />
+		</SceneObject>
+		<SceneObject name="BackgroundPanel" editorEntityId="21">
+			<Sprite filename="shared/features/memories/tex/memories_pink_panel.png" vertexColors="false" mode="sprite">
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<Translation x="0" y="259.623" z="0" />
+			<Scale z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<Sprite vertexColors="false" mode="panel">
+				<Pivot anchor="center" />
+				<Insets bottom="66" left="48" right="56" top="52" />
+				<Size height="546" width="516" />
+				<VertexColor r="255" g="255" b="255" a="255" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="ButtonGrp">
+			<Translation x="-7" y="124" z="1" />
+			<SceneObject name="AmountTxt" editorEntityId="104">
+				<Text alignment="center" canBreakWords="false" font="Banana" allowWordWrapping="false">
+					<Color r="254" g="77" b="106" a="255" />
+					<Size y="30" x="30" />
+					<TextString>20</TextString>
+				</Text>
+				<Translation x="-105" y="334" z="3" />
+				<Rotation x="0" y="0" z="10.326" />
+				<Scale x="0.940" y="0.940" z="1" />
+			</SceneObject>
+			<SceneObject name="MemoryPiece4">
+				<Rotation x="0" y="0" z="20" />
+				<Scale x="0.750" y="0.760" z="1" />
+				<Sprite filename="shared/features/memories/tex/memory_piece_reveal.png" vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Translation x="-119" y="277" z="2" />
+			</SceneObject>
+			<SceneObject name="MemoryPiece3">
+				<Rotation x="0" y="0" z="10.713" />
+				<Scale x="0.750" y="0.750" z="1" />
+				<Sprite filename="shared/features/memories/tex/memory_piece_reveal.png" vertexColors="false" mode="sprite">
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Translation x="-131" y="284" z="2" />
+			</SceneObject>
+			<SceneObject name="Button" editorEntityId="106">
+				<Scale xyz="0.8" />
+				<Translation y="330" z="1" x="20" />
+				<Sprite vertexColors="false" filename="shared/game/common/tex/hud/btn_green.png" mode="panel">
+					<Pivot anchor="center" />
+					<Insets bottom="59" top="48" left="54" right="54" />
+					<Size width="300" height="108" />
+				</Sprite>
+				<Animation animationData="Idle" name="Idle" layer="1" />
+				<Animation loopCount="0" animationData="OnPress" name="OnPress" />
+				<Animation loopCount="0" animationData="OnRelease" name="OnRelease" />
+				<SceneObject name="ButtonTxt" editorEntityId="107">
+					<Text maxHeight="50" alignment="center" canBreakWords="false" key="memories_button_reveal" verticalAlignment="visualCenter" font="Banana" overflowBehaviour="fit" maxWidth="235">
+						<Size y="26" x="26" />
+						<Shadow enabled="true">
+							<Color b="0" a="25" g="0" r="0" />
+							<Offset y="6" x="0" />
+						</Shadow>
+					</Text>
+					<Translation y="-6" x="-2" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject editorEntityId="106" name="ButtonInactive">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false" mode="panel">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="300" />
+				</Sprite>
+				<Scale xyz="0.8" />
+				<Translation y="330" x="20" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject editorEntityId="107" name="ButtonTxt">
+					<Text alignment="center" canBreakWords="false" font="Banana" key="memories_button_reveal" maxHeight="50" maxWidth="235" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Shadow enabled="true">
+							<Color a="25" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="26" y="26" />
+					</Text>
+					<Translation x="-2" y="-6" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="MemoriesBox">
+			<SceneObject name="LeftClip" editorEntityId="40">
+				<Translation z="0" x="-20" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<SceneObject name="BackClip" editorEntityId="41">
+					<Sprite filename="shared/features/memories/tex/memories_ring_back.png" vertexColors="false" mode="sprite">
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-144.934" y="500.970" z="-1" />
+				</SceneObject>
+				<SceneObject editorEntityId="47" name="ClipShadow2">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Sprite filename="shared/features/memories/tex/memories_circle.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-145" y="551" z="1" />
+				</SceneObject>
+				<SceneObject name="LeftClip" editorEntityId="43">
+					<Sprite filename="shared/features/memories/tex/memories_ring_front.png" vertexColors="false" mode="sprite">
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-165.506" y="475.871" z="2" />
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject editorEntityId="47" name="ClipShadow1">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Sprite filename="shared/features/memories/tex/memories_circle.png" vertexColors="false" mode="sprite">
+						<Scale x="1.100" y="1.100" />
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-142" y="485" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject editorEntityId="40" name="RighttClip">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Translation x="315" z="0" />
+				<SceneObject editorEntityId="41" name="BackClip">
+					<Sprite filename="shared/features/memories/tex/memories_ring_back.png" vertexColors="false" mode="sprite">
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-144.934" y="500.970" z="-1" />
+				</SceneObject>
+				<SceneObject editorEntityId="47" name="ClipShadow2">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Sprite filename="shared/features/memories/tex/memories_circle.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-142" y="485" z="1" />
+				</SceneObject>
+				<SceneObject editorEntityId="47" name="ClipShadow">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Sprite filename="shared/features/memories/tex/memories_circle.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-145" y="551" z="1" />
+				</SceneObject>
+				<SceneObject editorEntityId="43" name="LeftClip">
+					<Rotation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Sprite filename="shared/features/memories/tex/memories_ring_front.png" vertexColors="false" mode="sprite">
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation x="-165.506" y="475.871" z="2" />
+				</SceneObject>
+			</SceneObject>
+			<Translation x="0" y="63" z="0" />
+			<Scale y="0.900" x="0.900" />
+		</SceneObject>
+		<SceneObject name="StoryTitleTab">
+			<Translation y="450" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="middle" editorEntityId="26">
+				<Translation x="4" y="0" z="0" />
+				<Rotation x="0" y="0" z="0" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/story_title_box_middle.png" vertexColors="false" mode="panel">
+					<MiddleTiles countX="9" />
+					<Scale x="9" />
+					<Pivot anchor="center" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="left">
+				<Sprite filename="shared/features/memories/tex/story_title_box_left.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Translation x="-172" y="0" z="0" />
+				<Scale z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="right">
+				<Sprite filename="shared/features/memories/tex/story_title_box_right.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Translation x="180" y="0" z="0" />
+				<Scale z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject editorEntityId="107" name="StoryTitle">
+				<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="50" maxWidth="310" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Shadow enabled="true">
+						<Color r="255" g="255" b="255" a="25" />
+						<Offset x="0" />
+					</Shadow>
+					<Size x="24" y="24" />
+					<TextString>Testtesttestesttesttestte</TextString>
+					<Color r="255" g="66" b="96" a="255" />
+				</Text>
+				<Translation z="0" />
+			</SceneObject>
+			<Animation name="appearanimation" animationData="RewardScaleIn" loopCount="0" />
+		</SceneObject>
+	</SceneObject>
+	<Translation x="0" y="0" z="0" />
+	<Rotation x="0" y="0" z="0" />
+	<Scale x="1" y="1" z="1" />
+</Scene>

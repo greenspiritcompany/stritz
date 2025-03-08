@@ -1,0 +1,23 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0" endTime="1.10">
+        <Animate target="IllegalSwitchHand" time="0">
+            <Hide/>
+            <Show time="0.0"/>
+            <Translation x="0" time="0.300" y="0"/>
+            <Translation z="0" time="0.400"/>
+            <Translation z="0" time="0.500"/>
+            <Translation y="75" time="0.650"/>
+            <Translation y="75" time="0.850"/>
+            <Color time="0" r="255" g="255" b="255" a="210"/>
+            <Color time="0.9" r="255" g="255" b="255" a="210"/>
+            <Color time="1.0" r="254" g="255" b="255" a="0"/>
+        </Animate>
+        <Triggers>
+            <AnimationTrigger time="0.05" targetName="IllegalSwitchHand" animationName="Grab" crossFade="0.1"/>
+            <EffectTrigger name="IllegalHandSwitchSFQ" time="0.0"/>
+            <CustomTrigger name="Hide" time="1.1"/>
+        </Triggers>
+
+    </Timeline>
+</Timelines>

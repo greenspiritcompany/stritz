@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="SpeechBubble">
+		<Translation x="-220" y="150" z="100"/>
+		<Scale x="1.0" y="-1.0" z="1.0"/>
+		<Rotation x="0"/>
+		<!--<Translation x="500" y="500" z="100"/>-->
+		<SceneObject name="SpeechBubblePanel">
+			<Panel filename="shared/diorama/common/tex/speechbubble.png">
+				<Insets bottom="108" left="40" right="60" top="45"/>
+				<Size width="579" height="323"/>
+				<Pivot anchor="center"/>
+			</Panel>
+			<Translation y="37" x="3"/>
+			<Scale x="0.52" y="0.54"/>
+		</SceneObject>
+		<SceneObject name="SpeechBubbleHead">
+			<Sprite filename="shared/diorama/common/tex/speechbubble_head.png">
+				<Pivot anchor="bottom"/>
+			</Sprite>
+			<Translation x="-3" y="-35"/>
+			<Scale xyz="0.5"/>
+		</SceneObject>
+		<SceneObject name="SpeechBubbleKnot">
+			<Sprite filename="shared/diorama/common/tex/knot.png">
+				<Pivot anchor="bottom"/>
+			</Sprite>
+			<Translation x="-8" y="-53"/>
+		</SceneObject>
+
+		<SceneObject name="SpeechBubbleRope">
+			<Translation x="-4.1" y="-77"/>
+			<Scale y="80.0"/>
+			<Sprite filename="shared/diorama/common/tex/rope.png">
+				<Pivot anchor="bottom"/>
+			</Sprite>
+		</SceneObject>
+
+		<SceneObject name="Text1">
+			<Text canBreakWords="false" font="Typewriter" overflowBehaviour="fit" maxWidth="250" maxHeight="180"
+				  alignment="left">
+				<Color r="50" g="25" b="30" a="255"/>
+				<Size x="12.6" y="12.6"/>
+			</Text>
+			<Translation x="-125" y="-25.5"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

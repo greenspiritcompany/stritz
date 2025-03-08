@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="12" space="Local" timeToEmit="0.200" name="FishHitPFX">
+    <Dampening max="1" min="1"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="360" angle="-100.800">
+        <SpawnArea width="36" depth="0" height="36"/>
+    </Emitter>
+    <EndColor b="102" r="255" g="224" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="360" min="360"/>
+    <Size>
+        <Max x="51" y="51"/>
+        <Min x="51" y="51"/>
+    </Size>
+    <SizeChange>
+        <Max x="-22" y="-22"/>
+        <Min x="-29" y="-29"/>
+    </SizeChange>
+    <StartColor b="191" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.280" min="0.280"/>
+    <Velocity max="340" min="340"/>
+</ParticleEffect>

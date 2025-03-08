@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+
+
+  <Timeline startTime="0.0" endTime="4.0">
+
+
+    <Triggers>
+
+      <EffectTrigger name="diorama_donut"/>
+
+      <EffectTrigger name="SquidBubbles" targetName="soda_bubbels1" time="0.20">
+        <Offset x="200" y="0" z="-100"/>
+      </EffectTrigger>
+
+
+    </Triggers>
+    <TimeControls>
+      <!--<Loop time="1.49" jumpToTime="0.0"/>-->
+    </TimeControls>
+  </Timeline>
+</Timelines>

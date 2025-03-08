@@ -1,0 +1,41 @@
+{
+  "id": "fishingformore",
+  "nameKey" : "quests.names.fishingformore",
+  "difficulty" : 1,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "matchXWithY",
+      "descriptionKey" : "quests.description.gofish",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_candy_fishes.png",
+      "data": {
+        "itemType1" : "fish",
+        "itemType2" : "fish",
+        "times" : 35
+      }
+    }
+  ],
+   "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12003,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    }
+  ]
+}

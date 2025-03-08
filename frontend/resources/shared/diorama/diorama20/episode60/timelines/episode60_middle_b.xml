@@ -1,0 +1,17 @@
+<Timelines>
+<Timeline startTime="0" endTime="5">
+	<Animate time="0" target="SpeechBubbleEp60">
+		<Translation time="0.001" x="0" />
+		<Translation time="0.004" x="-150" y="20" z="-200" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="0.01" targetName="SpeechBubbleEp60" animationName="SpeechBubbleAppear" />
+		<AnimationTrigger time="4" targetName="SpeechBubbleEp60" animationName="SpeechBubbleDisappear" />
+		<AnimationTrigger time="1" targetName="CharacterEp60" animationName="Talk" crossFade="0.100" />
+		<AnimationTrigger time="3" targetName="CharacterEp60" animationName="Idle" crossFade="0.600" />
+		<!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+		<EffectTrigger name="character_ep60" time="0" />
+		<CustomTrigger time="0" name="SpeechBubbleText" data="SpeechBubbleEp60.1" />
+	</Triggers>
+</Timeline>
+</Timelines>

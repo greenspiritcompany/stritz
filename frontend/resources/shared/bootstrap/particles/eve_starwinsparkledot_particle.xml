@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="9" space="Local" timeToEmit="0.100" name="Eve_StarWinSparkleDot_particle">
+<Dampening max="0.850" min="0.750" />
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0" spread="360" angle="0">
+	<SpawnArea width="50" depth="0" height="50" />
+</Emitter>
+<EndColor b="255" r="255" g="255" a="0" />
+<Rotation max="100" min="-100" />
+<RotationSpeed max="154.080" min="-155.710" />
+<Size>
+	<Max x="10.520" y="10.520" />
+	<Min x="5.860" y="5.860" />
+</Size>
+<SizeChange>
+	<Max x="20.880" y="20.880" />
+	<Min x="7" y="7" />
+</SizeChange>
+<StartColor b="255" r="255" g="255" a="255" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="1.500" min="0.500" />
+<Velocity max="440.440" min="298.910" />
+</ParticleEffect>

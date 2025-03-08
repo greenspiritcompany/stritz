@@ -1,0 +1,25 @@
+{
+  "id": "completionist",
+  "nameKey" : "quests.names.movingforward",
+  "difficulty" : 0,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "progressLevels",
+      "descriptionKey" : "quests.description.movingforward",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_checkmark.png",
+      "data": {
+         "levels": 3
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    }
+  ]
+}

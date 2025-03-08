@@ -1,0 +1,11 @@
+<Timelines>
+<Timeline startTime="0" endTime="4">
+	<Animate target="second">
+		<Show time="0" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="0" animationName="stripe_middle_spine_reverse" targetName="stripe_second" />
+		<CustomTrigger time="0.30" name="AnimationComplete" />
+	</Triggers>
+</Timeline>
+</Timelines>

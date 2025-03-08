@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.5">
+		<Animate target="Crown" time="0.0">
+			<Show time="0.0"/>
+			<Color time="0.0" r="255" g="255" b="255" a="0"/>
+			<Color time="2.0" r="255" g="255" b="255" a="0"/>
+			<Color time="2.5" r="255" g="255" b="255" a="255"/>
+			<Color time="4.5" r="255" g="255" b="255" a="255"/>
+			<Color time="5.0" r="255" g="255" b="255" a="0"/>
+		</Animate>
+		<Animate target="Star1" time="0.0">
+			<Show time="0.0"/>
+			<Color time="0.0" r="255" g="255" b="255" a="255"/>
+			<Color time="1.6" r="255" g="255" b="255" a="255"/>
+			<Color time="2.1" r="255" g="255" b="255" a="0"/>
+			<Color time="4.9" r="255" g="255" b="255" a="0"/>
+			<Color time="5.4" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Star2" time="0.0">
+			<Show time="0.0"/>
+			<Color time="0.0" r="255" g="255" b="255" a="255"/>
+			<Color time="1.6" r="255" g="255" b="255" a="255"/>
+			<Color time="2.1" r="255" g="255" b="255" a="0"/>
+			<Color time="4.9" r="255" g="255" b="255" a="0"/>
+			<Color time="5.4" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Star3" time="0.0">
+			<Show time="0.0"/>
+			<Color time="0.0" r="255" g="255" b="255" a="255"/>
+			<Color time="1.6" r="255" g="255" b="255" a="255"/>
+			<Color time="2.1" r="255" g="255" b="255" a="0"/>
+			<Color time="4.9" r="255" g="255" b="255" a="0"/>
+			<Color time="5.4" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Triggers>
+			<EffectTrigger targetName="Crown" name="BestOnLevelHighlight" time="2.4">
+				<Offset z="17"/>
+			</EffectTrigger>
+		</Triggers>
+		<TimeControls>
+			<TimeJump time="5.45" jumpToTime="0.0"/>
+		</TimeControls>
+	</Timeline>
+</Timelines>

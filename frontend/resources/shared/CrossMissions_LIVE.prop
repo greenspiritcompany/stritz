@@ -1,0 +1,8 @@
+missionserver.host igp.king.com
+missionserver.port 80
+missionserver.secure false
+missionserver.page /
+missionserver.waiting.noMissions 7200
+missionserver.waiting.cache 60
+missionserver.waiting.cache2 120
+missionserver.waiting.noStartedMissions 3600

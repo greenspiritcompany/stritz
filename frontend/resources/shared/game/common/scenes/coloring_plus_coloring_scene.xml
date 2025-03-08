@@ -1,0 +1,36 @@
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+
+    <Material name="KimmyColoring">
+      <Blend enabled="true"/>
+      <Depth enabled="false" writeMask="false"/>
+      <Textures>
+		  <Texture filename="shared/game/common/tex/candy/kimmy_coloring_coloring_tex.png"/>
+      </Textures>
+    </Material>
+
+
+
+    <SceneObject name="Scene" visibility="always" layerFlags="256">
+        <SceneObject name="ParticleCtrl">
+        </SceneObject>
+
+        <SceneObject name="KimmyColoringGRP">
+          <Translation y="100"/>
+        <SceneObject name="KimmyColoring">
+          <Model filename="shared/diorama/common/models/kimmy/kimmy_coloring_coloring.ffm">
+              <Animation filename="shared/diorama/common/models/kimmy/kimmy_coloring_coloring.ffa" name="idle" play="true" speed="1.0" loopCount="0"/>
+
+          </Model>
+          <Translation x="0" y="0" z="200"/>
+          <Scale y="-2.0" x="2.0" z="2.0"/>
+
+            <Material parentMaterial="KimmyColoring"/>
+
+        </SceneObject>
+        </SceneObject>
+
+    </SceneObject>
+
+</Scene>

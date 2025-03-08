@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="2" space="Local" timeToEmit="0.020" name="CreateFishFishPFX">
+    <Dampening max="0.800" min="0.800"/>
+    <DirectionalForce x="0" y="10"/>
+    <Emitter emissionRate="2" spread="360" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="100"/>
+    <Rotation max="360" min="-360"/>
+    <RotationSpeed max="-2000" min="-2000"/>
+    <Size>
+        <Max x="120" y="120"/>
+        <Min x="100" y="100"/>
+    </Size>
+    <SizeChange>
+        <Max x="-100" y="-100"/>
+        <Min x="-70" y="-70"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="250"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/fish_ripple.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.400" min="0.400"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

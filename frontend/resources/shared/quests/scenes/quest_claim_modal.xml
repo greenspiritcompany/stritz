@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="QuestIntroModal">
+		<Translation z="580" />
+		<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+		<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+		<SceneObject name="ModalBackground">
+			<Translation x="0" y="0" z="0" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/inner_modal_no_x.png" vertexColors="false">
+				<Insets bottom="95" left="102" right="102" top="98" />
+				<Size width="574" height="672" />
+				<Pivot anchor="center" />
+			</Panel>
+			<SceneObject name="Border">
+				<SceneObject name="TopLeft">
+					<Translation x="-256" y="-302" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/frame_corner_upleft.png" vertexColors="false">
+						<Pivot anchor="right" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="TopRight">
+					<Translation x="256" y="-302" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/frame_corner_upright.png" vertexColors="false">
+						<Pivot anchor="left" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Top">
+					<Translation y="-302" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/frame_up.png" wrap="repeat" vertexColors="false">
+						<Rectangle maxX="512" maxY="64" minX="0" minY="2" />
+						<Pivot anchor="center" y="-1" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Left">
+					<Translation x="-256" y="18" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/frame_left.png" wrap="repeat" vertexColors="false">
+						<Rectangle maxX="64" maxY="576" minX="2" minY="0" />
+						<Pivot anchor="right" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Right">
+					<Translation x="256" y="18" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/frame_right.png" wrap="repeat" vertexColors="false">
+						<Rectangle maxX="62" maxY="576" minX="0" minY="0" />
+						<Pivot anchor="left" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="BottomLeft">
+					<Translation x="-256" y="338" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/frame_corner_downleft.png" vertexColors="false">
+						<Pivot anchor="right" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="BottomRight">
+					<Translation x="256" y="338" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/frame_corner_downright.png" vertexColors="false">
+						<Pivot anchor="left" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Bottom">
+					<Translation y="338" z="-1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/frame_down.png" wrap="repeat" vertexColors="false">
+						<Rectangle maxX="512" maxY="62" minX="0" minY="0" />
+						<Pivot anchor="center" y="1" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject name="TitleText">
+			<Translation x="0" y="-299.475" z="0" />
+			<Text alignment="center" font="Banana" key="quests.claim.header" maxHeight="0" maxWidth="370" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Color r="255" g="255" b="255" a="255" />
+				<Size x="24" y="24" />
+			</Text>
+		</SceneObject>
+		<SceneObject class="Button" name="GoButton">
+			<Translation y="256.264" />
+			<Scale x="1.200" y="1.200" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="320" />
+			</Panel>
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject name="Text">
+				<Translation x="0" y="-5.576" z="0" />
+				<Text alignment="center" font="Banana" key="quests.claim.button" maxHeight="100" maxWidth="290" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Shadow enabled="true">
+						<Color r="0" g="0" b="0" a="25" />
+						<Offset x="0" y="6" />
+					</Shadow>
+					<Size x="22" y="22" />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ContentText">
+			<Translation x="-1.429" y="110" z="0" />
+			<Text alignment="center" font="Typewriter" key="quests.claim.text" maxHeight="80" maxWidth="480" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Color r="131" g="102" b="51" a="255" />
+				<GradientColor enabled="false" />
+				<Shadow enabled="false" />
+				<Size x="20" y="20" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="circle">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/booster_holder.png" vertexColors="false" />
+			<Translation x="-161.063" y="-253.669" z="0" />
+			<Scale x="1.525" y="1.525" z="1" />
+		</SceneObject>
+		<SceneObject name="claim_img">
+			<Spine filename="shared/quests/models/quest_claim.json">
+				<Animation name="Claim" spineAnimation="animation" play="true" />
+			</Spine>
+			<Material>
+				<Texture filename="shared/diorama/common/tex/gui_elements/quest_header.png" />
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+			</Material>
+			<Translation x="-4.096" y="-92.343" z="0" />
+			<Scale x="0.606" y="0.606" z="1" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="70" />
+				<OriginalSize width="640" height="550" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

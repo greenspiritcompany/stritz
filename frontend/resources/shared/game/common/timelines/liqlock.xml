@@ -1,0 +1,10 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="0.69">
+		<Triggers>
+			<EffectTrigger name="LiqLockCrushed" parentName="LicoriceLock"/>
+			<AnimationTrigger targetName="LicoriceLock" animationName="Disappear" time="0.0"/>
+			<CustomTrigger name="RemoveLockView" time="0.68"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

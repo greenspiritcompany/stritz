@@ -1,0 +1,38 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+  <Timeline startTime="0.0" endTime="4.0">
+
+    <Animate target="StarLeft" time="0.7">
+      <Show/>
+      <Translation time="0.0" x="100.0" y="-50.000" z="0.0"/>
+      <Translation time="0.5" x="0.0" y="0.000" z="0.0"/>
+
+        <Scale time="0.0" xyz="3.0"/>
+        <Scale time="0.35" xyz="2.0"/>
+        <Scale time="0.5" xyz="1.0"/>
+        <Scale time="0.55" xyz="1.1"/>
+        <Scale time="0.65" xyz="1.0"/>
+
+      <Color time="0.0" r="0" g="0" b="0" a="0"/>
+      <Color time="0.4" r="255" g="255" b="255" a="255"/>
+    </Animate>
+
+    <Animate target="StarBright" time="1.2">
+      <Show time="0.4"/>
+      <Color time="0.4" r="0" g="0" b="0" a="0"/>
+      <Color time="0.65" r="255" g="255" b="255" a="255"/>
+      <Color time="0.85" r="0" g="0" b="0" a="0"/>
+      <Hide time="0.8"/>
+    </Animate>
+
+    <Triggers>
+      <CustomTrigger name="StarAppearRight" time="1.5"/>
+      <EffectTrigger name="StarWinSparkleEFQ" followTarget="true" targetName="StarRight" time="1.2">
+        <Offset z="0.0"/>
+      </EffectTrigger>
+        <EffectTrigger name="HudStarSfx3" time="1.1"/>
+      
+    </Triggers>
+
+  </Timeline>
+</Timelines>

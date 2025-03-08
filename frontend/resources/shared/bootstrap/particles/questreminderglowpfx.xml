@@ -1,0 +1,24 @@
+<ParticleEffect maxParticles="2" space="Local" timeToEmit="7" name="QuestReminderGlowPFX">
+<Dampening max="0" min="0" />
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0" spread="0" angle="0">
+	<SpawnArea width="0" depth="0" height="0" />
+</Emitter>
+<!-- ADD MIDCOLOR THINGIE MARTIN SAYS WILL COME BACK IN ANOTHER FORM OR SHAPE -->
+<EndColor b="255" r="255" g="255" a="0" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="0" min="0" />
+<Size>
+	<Max x="160" y="150" />
+	<Min x="160" y="150" />
+</Size>
+<SizeChange>
+	<Max x="-5" y="-5" />
+	<Min x="-5" y="-5" />
+</SizeChange>
+<StartColor r="255" g="255" b="255" a="100" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/light64.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="1" min="1" />
+<Velocity max="0" min="0" />
+</ParticleEffect>

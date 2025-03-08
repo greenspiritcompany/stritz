@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<Material name="BearInHudMaterial">
+		<Texture filename="shared/game/common/tex/hud/digger_bear_icon_v2.png" />
+		<Blend blendFuncSourceFactor="One" enabled="true" />
+		<Depth enabled="true" />
+	</Material>
+	<SceneObject __visibility="0" name="LandscapeDiggerStats">
+		<SceneObject name="BearImg">
+			<Translation x="-1.723" y="-31.642" z="10" />
+			<Scale x="-0.341" y="-0.341" z="-0.260" />
+			<Model filename="shared/game/common/models/honey/hud/honey_bear_hud.ffm">
+				<Animation filename="shared/game/common/models/honey/hud/honey_bear_hud_idle.ffa" loopCount="-1" name="idle" play="true" speed="0.300" />
+				<Animation filename="shared/game/common/models/honey/hud/honey_bear_hud_happy.ffa" loopCount="-1" name="HudBearSaved" play="false" />
+			</Model>
+			<Material parentMaterial="BearInHudMaterial" />
+		</SceneObject>
+		<SceneObject name="BearText">
+			<Translation x="-6" y="35.500" z="20" />
+			<Text alignment="center" font="PinkNumbers" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="15" y="15" />
+				<TextString>0/3</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkLandscapeRoot">
+			<SceneObject name="CheckmarkLandscape" visibility="never">
+				<Translation x="-1.575" y="36" z="3" />
+				<Scale x="0.850" y="0.850" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject __visibility="3" name="PortraitDiggerStats">
+		<SceneObject name="BearImg">
+			<Translation x="-11.176" y="-3.845" z="10" />
+			<Scale x="-0.344" y="-0.344" z="-0.220" />
+			<Model filename="shared/game/common/models/honey/hud/honey_bear_hud.ffm">
+				<Animation filename="shared/game/common/models/honey/hud/honey_bear_hud_idle.ffa" loopCount="-1" name="idle" play="true" speed="0.300" />
+				<Animation filename="shared/game/common/models/honey/hud/honey_bear_hud_happy.ffa" loopCount="-1" name="HudBearSaved" play="false" />
+			</Model>
+			<Material parentMaterial="BearInHudMaterial" />
+		</SceneObject>
+		<SceneObject name="BearText">
+			<Translation x="77.385" y="22.818" z="20" />
+			<Text alignment="center" font="PinkNumbers" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="14" y="14" />
+				<TextString>0/1</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkPortraitRoot">
+			<SceneObject name="CheckmarkPortrait" visibility="never">
+				<Translation x="85.109" y="16" z="3" />
+				<Scale x="1.022" y="1.022" z="0.700" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

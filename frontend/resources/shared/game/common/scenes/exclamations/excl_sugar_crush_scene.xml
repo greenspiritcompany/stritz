@@ -1,0 +1,43 @@
+
+<Scene>
+	<SceneObject layerFlags="256" name="Scene" visibility="always">
+		<SceneObject name="TextLayout">
+			<SceneObject name="TransformationHelper">
+				<Translation x="0" y="0" z="401"/>
+				<Scale y="-1"/>
+				<SceneObject name="SugarTextGroup">
+					<Translation x="0" y="60" z="0"/>
+					<Animation animationData="ExclGeneralData" loopCount="0" name="SwipeBy" play="false" speed="1"/>
+					<SceneObject name="ExclSodaBlurred">
+						<Translation x="0" y="15" z="2"/>
+						<Sprite filename="shared/game/common/tex/hud/soda_blur.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="ExclSoda">
+						<Translation x="0" y="15"/>
+						<Sprite filename="shared/game/common/tex/hud/soda.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="CrushTextGroup">
+					<Translation x="0" y="-70" z="0"/>
+					<Animation animationData="ExclGeneralData" loopCount="0" name="SwipeBy" play="false" speed="1"/>
+					<SceneObject name="ExclCrushBlurred">
+						<Translation z="2"/>
+						<Sprite filename="shared/game/common/tex/hud/crush_blur.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="ExclCrush">
+						<Scale y="-1"/>
+						<Sprite filename="shared/game/common/tex/hud/crush.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,80 @@
+{
+  "id": "color_champion_epic",
+  "nameKey" : "quests.names.colorchampions",
+  "difficulty" : 2,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.explosivenovice",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_colorbomb.png",
+      "data": {
+        "itemType":"colorBomb",
+        "amount" : 30
+      }
+    },
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.colourcreator",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_coloring.png",
+      "data": {
+        "itemType":"coloring_candy",
+        "amount" : 5
+      }
+    },
+    {
+      "type": "matchXWithY",
+      "descriptionKey" : "quests.description.matchbombscoloring",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_colorbomb_coloring.png",
+      "data": {
+        "itemType1" : "colorBomb",
+        "itemType2" : "coloring_candy",
+        "times": 2
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12003,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12021,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

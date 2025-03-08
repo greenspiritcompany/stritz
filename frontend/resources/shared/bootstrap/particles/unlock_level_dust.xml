@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="320" space="World" timeToEmit="1.350" name="UnlockLevelDust">
+    <Dampening max="1" min="1"/>
+    <DirectionalForce x="0" y="100"/>
+    <Emitter emissionRate="0.007" spread="360" angle="0">
+        <SpawnArea width="10" depth="0" height="10"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="360" min="0"/>
+    <RotationSpeed max="1000" min="-1000"/>
+    <Size>
+        <Max x="48" y="48"/>
+        <Min x="6" y="6"/>
+    </Size>
+    <SizeChange>
+        <Max x="81" y="81"/>
+        <Min x="40" y="40"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="0" textureAnimationSpeed="0" startFrame="0"/>
+    <TimeToLive max="0.500" min="0.200"/>
+    <Velocity max="30" min="10"/>
+</ParticleEffect>

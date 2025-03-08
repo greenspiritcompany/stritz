@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="6.0">
+		<Triggers>
+
+      <!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+      <EffectTrigger name="character_bunny_rabbit" time="0.0"/>
+      
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp25.0"/>
+			<AnimationTrigger time="0.5" targetName="SpeechBubbleEp25" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp25" animationName="SpeechBubbleDisappear"/>
+			<AnimationTrigger time="1.0" targetName="CharacterEp25" animationName="Talk" crossFade="0.2"/>
+			<AnimationTrigger time="3.0" targetName="CharacterEp25" animationName="Idle" crossFade="1.5"/>
+
+            <AnimationTrigger time="0.25" targetName="episode25_carrot_hanging_2" animationName="SpeechBubbleDisappear"/>
+            <AnimationTrigger time="0.0" targetName="episode25_carrot_hanging" animationName="SpeechBubbleDisappear"/>
+
+            <AnimationTrigger time="5.0" targetName="episode25_carrot_hanging_2" animationName="SpeechBubbleAppear"/>
+            <AnimationTrigger time="5.25" targetName="episode25_carrot_hanging" animationName="SpeechBubbleAppear"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

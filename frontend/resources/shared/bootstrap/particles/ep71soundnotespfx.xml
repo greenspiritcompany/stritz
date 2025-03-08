@@ -1,0 +1,29 @@
+<ParticleEffect maxParticles="2" space="Local" timeToEmit="0.200" name="Ep71SoundNotesPFX">
+<Dampening max="0.750" min="0.550" />
+<DirectionalForce x="-2000" y="1200" />
+<Emitter emissionRate="0.200" spread="0" angle="180">
+	<SpawnArea width="5" depth="0" height="5" />
+</Emitter>
+<Rotation max="0" min="0" />
+<RotationSpeed max="5" min="-5" />
+<Size>
+	<Max x="-80" y="80" />
+	<Min x="-30" y="30" />
+</Size>
+<SizeChange>
+	<Max x="-40" y="-40" />
+	<Min x="0" y="0" />
+</SizeChange>
+<Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/soundnote.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive max="1.200" min="0.800" />
+<Velocity max="800" min="200" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color b="255" r="255" g="255" a="255" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color b="255" r="255" g="255" a="0" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

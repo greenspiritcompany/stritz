@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<Material name="SpriteMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+		</Material>
+	</Materials>
+	<SceneObject name="Scene" visibility="always">
+		<Translation x="0.0" y="0.0" z="6.0"/>
+		<SceneObject name="VertRotNode">
+			<Rotation z="90"/>
+
+			<SceneObject name="FlyLeft">
+				<SceneObject name="Twirl1">
+					<Animations>
+						<Animation name="GoUpDown" animationData="GoUpDownData" play="false" loopCount="0"/>
+					</Animations>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="FlyRight">
+				<SceneObject name="Twirl2">
+					<Animations>
+						<Animation name="GoDownUp" animationData="GoDownUpData" play="false" loopCount="0"/>
+					</Animations>
+				</SceneObject>
+			</SceneObject>
+
+		</SceneObject>
+
+	</SceneObject>
+</Scene>

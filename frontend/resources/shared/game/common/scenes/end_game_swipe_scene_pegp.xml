@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene name="HardLevelHeaderR">
+	<Material name="KimmyOops">
+		<Texture filename="shared/diorama/common/tex/kimmy/kimmy_oops_tex.png" />
+		<Blend enabled="true" />
+		<Cull face="back" enabled="false" />
+		<Depth writeMask="false" enabled="true" />
+	</Material>
+	<Material name="NinjaKimmyOops">
+		<Texture filename="shared/diorama/common/tex/kimmy/ninja_kimmy_oops_tex.png" />
+		<Blend enabled="true" />
+		<Cull face="back" enabled="false" />
+		<Depth writeMask="false" enabled="true" />
+	</Material>
+	<SceneObject name="Scene" visibility="always">
+		<Translation z="495" />
+		<Animation name="OnWinAppear" loopCount="0" animationData="SlideInFromBelow" />
+		<Animation name="OnWinDisappear" loopCount="0" animationData="SlideOutToTop" />
+		<Animation name="OnLoseAppear" loopCount="0" animationData="SlideInFromTop" />
+		<Animation name="OnLoseDisappear" loopCount="0" animationData="SlideOutToBelow" />
+		<SceneObject name="SwipeRoot">
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="50" />
+					<Y percentage="50" />
+				</Translation>
+				<Size>
+					<Width percentage="90" />
+					<OriginalSize width="836" height="256" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="50" />
+					<Y percentage="50" />
+				</Translation>
+				<Size>
+					<Width percentage="100" />
+					<OriginalSize width="1491" height="256" />
+				</Size>
+			</LayoutConfiguration>
+			<SceneObject __visibility="0" name="SmallBackground" visibility="never">
+				<SceneObject name="Background">
+					<Animation name="SlideToRight" loopCount="-1" play="true" animationData="SlideToRightData" />
+					<SceneObject name="middle">
+						<Translation y="507.920" x="1.440" />
+						<Scale y="4.430" x="127.910" />
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/swipe_bg.png" mode="sprite">
+							<Pivot y="130" anchor="top" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject __visibility="0" name="ChocolateGameMode">
+						<SceneObject name="top">
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/chocolate_swipe_top.png" mode="sprite">
+								<Pivot y="130" anchor="top" />
+								<Rectangle maxY="64" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="bottom">
+							<Translation y="252" />
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/chocolate_swipe_bottom.png" mode="sprite">
+								<Pivot y="130" anchor="bottom" />
+								<Rectangle maxY="128" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject __visibility="0" name="FloatingBearGameMode">
+						<SceneObject name="top">
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/floatingbear_swipe_top.png" mode="sprite">
+								<Pivot y="130" anchor="top" />
+								<Rectangle maxY="64" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="bottom">
+							<Translation y="252" />
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/floatingbear_swipe_bottom.png" mode="sprite">
+								<Pivot y="130" anchor="bottom" />
+								<Rectangle maxY="128" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject __visibility="0" name="FrozenBearGameMode">
+						<SceneObject name="top">
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/frozenbear_swipe_top.png" mode="sprite">
+								<Pivot y="130" anchor="top" />
+								<Rectangle maxY="64" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="bottom">
+							<Translation y="252" />
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/frozenbear_swipe_bottom.png" mode="sprite">
+								<Pivot y="130" anchor="bottom" />
+								<Rectangle maxY="128" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject __visibility="0" name="PaintBattleMode">
+						<SceneObject name="top">
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/jam_swipe_top.png" mode="sprite">
+								<Pivot y="130" anchor="top" />
+								<Rectangle maxY="64" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="bottom">
+							<Translation y="252" />
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/jam_swipe_bottom.png" mode="sprite">
+								<Pivot y="130" anchor="bottom" />
+								<Rectangle maxY="128" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject __visibility="0" name="SodaFizzGameMode">
+						<SceneObject name="top">
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/soda_fizz_swipe_top.png" mode="sprite">
+								<Pivot y="130" anchor="top" />
+								<Rectangle maxY="64" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="bottom">
+							<Translation y="252" />
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/soda_fizz_swipe_bottom.png" mode="sprite">
+								<Pivot y="130" anchor="bottom" />
+								<Rectangle maxY="128" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject __visibility="0" name="HardLevels">
+						<SceneObject name="top">
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/hardlevel_swipe_top.png" mode="sprite">
+								<Pivot y="130" anchor="top" />
+								<Rectangle maxY="64" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="bottom">
+							<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/hardlevel_swipe_bottom.png" mode="sprite">
+								<Pivot y="130" anchor="bottom" />
+								<Rectangle maxY="128" minY="0" minX="0" maxX="2048" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation y="252" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="HardLevelHeader2">
+					<Scale z="1" />
+					<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_egp_swipe_top.png" mode="sprite">
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation y="-135.500" z="0" x="-307" />
+					<SceneObject name="HardLevelHeaderR">
+						<Scale x="-1" />
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_egp_swipe_top.png" mode="sprite">
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation y="0.180" z="0" x="615" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="HardLevelFooter2">
+					<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_innerswipe_bottom.png" mode="sprite">
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation y="-6.320" z="0" x="-185.145" />
+					<SceneObject name="HardLevelFooterL">
+						<Scale x="-1" />
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_innerswipe_bottom.png" mode="sprite">
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation y="0.158" z="0" x="360" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="LoseTextRoot" visibility="never">
+					<Translation x="0" y="114.192" z="1" />
+					<SceneObject name="TitleText">
+						<Translation x="0" y="-202.040" z="1" />
+						<Text font="Banana" maxWidth="460" key="Oh No!" alignment="center" verticalAlignment="center" maxHeight="80" overflowBehaviour="fit">
+							<Color r="254" a="255" g="20" b="92" />
+							<Shadow enabled="true">
+								<Color r="255" a="255" g="255" b="255" />
+							</Shadow>
+							<Size y="36" x="36" />
+						</Text>
+					</SceneObject>
+					<SceneObject name="ContentText">
+						<Translation x="0" y="-153.922" z="1" />
+						<Text font="Typewriter" maxWidth="480" key="You only have 1 bear left!" alignment="center" verticalAlignment="visualCenter" maxHeight="45" overflowBehaviour="fit">
+							<Color r="2" a="255" g="73" b="134" />
+							<Shadow enabled="true">
+								<Color r="255" a="255" g="255" b="255" />
+							</Shadow>
+							<Size y="26" x="26" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="WinTextRoot">
+				<SceneObject name="TitleText">
+					<Translation y="-17" z="1" />
+					<Text font="Banana" maxWidth="560" key="You found all the bears!" alignment="center" verticalAlignment="center" maxHeight="100" overflowBehaviour="fit">
+						<Color r="2" a="255" g="73" b="134" />
+						<Shadow enabled="true">
+							<Color r="255" a="255" g="255" b="255" />
+						</Shadow>
+						<Size y="36" x="36" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="IconRoot" />
+			<SceneObject __visibility="0" name="LoseWithShopBackground" visibility="never">
+				<SceneObject name="NinjaKimmyRoot" visibility="never">
+					<SceneObject name="NinjaKimmyOopsLandscape" visibility="never">
+						<Translation z="0" />
+						<SceneObject name="HardLevelHeaderR">
+							<Translation x="-661.346" y="-117.866" z="20" />
+							<Rotation z="25" />
+							<Scale x="1.949" y="-1.949" z="2" />
+							<Model filename="shared/diorama/common/models/kimmy/ninja_kimmy_oops.ffm">
+								<Animation name="idle" loopCount="-1" filename="shared/diorama/common/models/kimmy/ninja_kimmy_oops.ffa" play="true" speed="1" />
+							</Model>
+							<Material parentMaterial="NinjaKimmyOops" />
+						</SceneObject>
+						<LayoutConfiguration visible="true" name="Landscape" />
+						<LayoutConfiguration visible="false" name="Portrait" />
+					</SceneObject>
+					<SceneObject name="NinjaKimmyOopsPortrait" visibility="never">
+						<Translation z="0" />
+						<Rotation x="0" y="0" />
+						<SceneObject name="HardLevelHeaderR">
+							<Translation x="-341.592" y="-282.836" z="20" />
+							<Rotation x="0" y="0" z="22.511" />
+							<Scale y="-2.200" z="2" x="2.200" />
+							<Model filename="shared/diorama/common/models/kimmy/ninja_kimmy_oops.ffm">
+								<Animation name="idle" loopCount="-1" filename="shared/diorama/common/models/kimmy/ninja_kimmy_oops.ffa" play="true" speed="1" />
+							</Model>
+							<Material parentMaterial="NinjaKimmyOops" />
+						</SceneObject>
+						<LayoutConfiguration visible="false" name="Landscape" />
+						<LayoutConfiguration visible="true" name="Portrait" />
+					</SceneObject>
+					<LayoutConfiguration name="ExtraContentLayout" visible="false" />
+				</SceneObject>
+				<SceneObject name="KimmyRoot" visibility="never">
+					<SceneObject name="KimmyOopsLandscape" visibility="never">
+						<Translation z="0" />
+						<Scale z="1" />
+						<SceneObject name="HardLevelHeaderR">
+							<Translation x="-678.629" y="-66.015" z="20" />
+							<Rotation z="25" />
+							<Scale x="1.949" y="-1.949" z="2" />
+							<Model filename="shared/diorama/common/models/kimmy/kimmy_oops.ffm">
+								<Animation name="idle" loopCount="-1" filename="shared/diorama/common/models/kimmy/kimmy_oops_idle.ffa" play="true" speed="1" />
+							</Model>
+							<Material parentMaterial="KimmyOops" />
+						</SceneObject>
+						<LayoutConfiguration visible="true" name="Landscape" />
+						<LayoutConfiguration visible="false" name="Portrait" />
+					</SceneObject>
+					<SceneObject name="KimmyOopsPortrait" visibility="never">
+						<Translation z="0" />
+						<Rotation x="0" y="0" />
+						<SceneObject name="HardLevelHeaderR">
+							<Translation x="-359.330" y="-238.372" z="20" />
+							<Rotation x="0" y="0" z="22.511" />
+							<Scale y="-2" z="2" x="2" />
+							<Model filename="shared/diorama/common/models/kimmy/kimmy_oops.ffm">
+								<Animation loopCount="-1" filename="shared/diorama/common/models/kimmy/kimmy_oops_idle.ffa" play="true" speed="1" name="idle" />
+							</Model>
+							<Material parentMaterial="KimmyOops" />
+						</SceneObject>
+						<LayoutConfiguration visible="false" name="Landscape" />
+						<LayoutConfiguration visible="true" name="Portrait" />
+					</SceneObject>
+					<LayoutConfiguration name="ExtraContentLayout" visible="false" />
+				</SceneObject>
+				<SceneObject name="BackgroundLS">
+					<SceneObject name="middle">
+						<Translation x="0" y="17" />
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/swipe_bg.png" mode="sprite">
+							<Pivot y="190" anchor="top" />
+							<Size width="1655" height="297" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="AnimateBorders">
+						<Animation name="SlideToRight" loopCount="-1" play="true" animationData="SlideToRightData" />
+						<SceneObject name="ChocolateGameMode">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/chocolate_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-40.792" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Translation x="-200" y="436.790" z="0" />
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/chocolate_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="FloatingBearGameMode">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/floatingbear_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-40.792" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Translation x="-200" y="436.790" z="0" />
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/floatingbear_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="FrozenBearGameMode">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/frozenbear_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-40.792" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Translation x="-200" y="436.790" z="0" />
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/frozenbear_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="PaintBattleMode">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/jam_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-40.792" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Translation x="-200" y="436.790" z="0" />
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/jam_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="SodaFizzGameMode">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/soda_fizz_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-40.792" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Translation x="-200" y="436.790" z="0" />
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/soda_fizz_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="HardLevel">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/hardlevel_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-40.792" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/hardlevel_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="2000" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="436.790" z="0" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<LayoutConfiguration visible="true" name="Landscape" />
+					<LayoutConfiguration visible="false" name="Portrait" />
+				</SceneObject>
+				<SceneObject name="BackgroundP">
+					<SceneObject name="middle">
+						<Translation x="0" y="-64" />
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/swipe_bg.png" mode="sprite">
+							<Pivot y="190" anchor="top" />
+							<Size width="1296" height="500" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="AnimateBorders">
+						<Animation name="SlideToRight" loopCount="-1" play="true" animationData="SlideToRightData" />
+						<SceneObject name="ChocolateGameMode">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/chocolate_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-126.002" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Translation x="-200" y="527.792" z="0" />
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/chocolate_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="FloatingBearGameMode">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/floatingbear_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-126.002" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Translation x="-200" y="527.792" z="0" />
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/floatingbear_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="FrozenBearGameMode">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/frozenbear_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-126.002" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Translation x="-200" y="527.792" z="0" />
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/frozenbear_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="PaintBattleMode">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/jam_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-126.002" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Translation x="-200" y="527.792" z="0" />
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/jam_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="SodaFizzGameMode">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/soda_fizz_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-126.002" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Translation x="-200" y="527.792" z="0" />
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/soda_fizz_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="HardLevel">
+							<SceneObject name="top">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/hardlevel_swipe_top.png" mode="sprite">
+									<Pivot y="190" anchor="top" />
+									<Rectangle maxY="64" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="-126.002" z="0" />
+							</SceneObject>
+							<SceneObject name="bottom">
+								<Sprite wrap="repeat" vertexColors="false" filename="shared/game/common/tex/hud/hardlevel_swipe_bottom.png" mode="sprite">
+									<Pivot y="190" anchor="bottom" />
+									<Rectangle maxY="128" minY="0" minX="0" maxX="1500" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation x="-200" y="527.792" z="0" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<LayoutConfiguration visible="false" name="Landscape" />
+					<LayoutConfiguration visible="true" name="Portrait" />
+				</SceneObject>
+				<SceneObject name="HardLevelHeaderLS">
+					<Translation z="0" />
+					<Scale z="1" />
+					<SceneObject name="HardLevelHeaderR">
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_egp_swipe_top.png" mode="sprite">
+							<Pivot anchor="topRight" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0" y="-236.375" z="0" />
+						<Scale x="-1" />
+					</SceneObject>
+					<SceneObject name="HardLevelHeaderL">
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_egp_swipe_top.png" mode="sprite">
+							<Flip u="true" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0" y="-236.375" z="0" />
+						<Scale x="-1" />
+					</SceneObject>
+					<LayoutConfiguration visible="true" name="Landscape" />
+					<LayoutConfiguration visible="false" name="Portrait" />
+					<LayoutConfiguration name="Default">
+						<Translation>
+							<Y percentage="0" />
+							<X percentage="0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="HardLevelFooterLS">
+					<Translation z="0" />
+					<SceneObject name="HardLevelFooterL">
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_innerswipe_bottom.png" mode="sprite">
+							<Flip u="true" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0" y="118.506" z="0" />
+						<Scale x="-1" />
+					</SceneObject>
+					<SceneObject name="HardLevelFooterR">
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_innerswipe_bottom.png" mode="sprite">
+							<Pivot anchor="topRight" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0" y="118.506" z="0" />
+						<Scale x="-1" />
+					</SceneObject>
+					<LayoutConfiguration visible="true" name="Landscape" />
+					<LayoutConfiguration visible="false" name="Portrait" />
+					<LayoutConfiguration name="Default">
+						<Translation>
+							<Y percentage="0" />
+							<X percentage="0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="HardLevelFooterP">
+					<Translation z="0" />
+					<SceneObject name="HardLevelFooterR">
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_innerswipe_bottom.png" mode="sprite">
+							<Flip u="true" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0" y="209.521" z="0" />
+					</SceneObject>
+					<SceneObject name="HardLevelFooterL">
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_innerswipe_bottom.png" mode="sprite">
+							<Pivot anchor="topRight" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0" y="209.521" z="0" />
+					</SceneObject>
+					<LayoutConfiguration visible="false" name="Landscape" />
+					<LayoutConfiguration visible="true" name="Portrait" />
+					<LayoutConfiguration name="Default">
+						<Translation>
+							<Y percentage="0" />
+							<X percentage="0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="HardLevelHeaderP">
+					<Translation z="0" />
+					<Scale z="1" />
+					<SceneObject name="HardLevelHeaderR">
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_egp_swipe_top.png" mode="sprite">
+							<Pivot anchor="topRight" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation x="0" y="-322.142" z="0" />
+						<Scale x="-1" />
+					</SceneObject>
+					<SceneObject name="HardLevelHeaderL">
+						<Sprite vertexColors="false" mode="sprite">
+							<Flip u="true" />
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+						<Translation y="-322.142" z="0" />
+						<Scale x="-1" />
+						<Material name="asd">
+							<Blend enabled="true" blendFuncSourceFactor="One" />
+							<Texture filename="shared/game/common/tex/hud/hard_egp_swipe_top.png" />
+							<Depth enabled="true" />
+							<Color r="255" g="255" b="255" a="255" />
+							<Shader program="TextureColor" />
+							<Cull enabled="true" face="front" />
+						</Material>
+					</SceneObject>
+					<LayoutConfiguration visible="false" name="Landscape" />
+					<LayoutConfiguration visible="true" name="Portrait" />
+					<LayoutConfiguration name="Default">
+						<Translation>
+							<Y percentage="0" />
+							<X percentage="0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="SpecialOffer" visibility="never">
+					<SceneObject name="SpecialOfferPortrait">
+						<SceneObject name="panel">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/egp_special_offer_box.png" vertexColors="false" mode="panel">
+								<Size width="378" height="44" />
+								<Pivot anchor="top" />
+								<Insets left="19" right="19" bottom="22" top="0" />
+							</Sprite>
+							<Translation x="0" y="187.566" z="1" />
+							<SceneObject name="text">
+								<Text font="TypewriterBold" alignment="center" verticalAlignment="top" key="special_offer">
+									<Size y="16" x="16" />
+									<Shadow enabled="true">
+										<Offset y="-2.500" x="0" />
+										<Color r="180" g="45" b="64" a="255" />
+									</Shadow>
+								</Text>
+								<Translation x="0" y="29.387" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<LayoutConfiguration visible="false" name="Landscape" />
+						<LayoutConfiguration visible="true" name="Portrait" />
+						<LayoutConfiguration name="Default">
+							<Translation>
+								<Y percentage="0" />
+								<X percentage="0" />
+							</Translation>
+						</LayoutConfiguration>
+					</SceneObject>
+					<SceneObject name="SpecialOfferLandscape">
+						<SceneObject name="panel">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/egp_special_offer_box.png" vertexColors="false" mode="panel">
+								<Size width="378" height="44" />
+								<Pivot anchor="top" />
+								<Insets left="19" right="19" bottom="22" top="0" />
+							</Sprite>
+							<Translation x="370.796" y="96.566" z="1" />
+							<SceneObject name="text">
+								<Text font="TypewriterBold" alignment="center" verticalAlignment="top" key="special_offer">
+									<Size y="16" x="16" />
+									<Shadow enabled="true">
+										<Offset y="-2.500" x="0" />
+										<Color r="180" g="45" b="64" a="255" />
+									</Shadow>
+								</Text>
+								<Translation x="0" y="29.387" z="0" />
+							</SceneObject>
+							<LayoutConfiguration visible="true" name="Landscape" />
+							<LayoutConfiguration visible="false" name="Portrait" />
+							<LayoutConfiguration name="Default">
+								<Translation>
+									<Y percentage="0" />
+									<X percentage="0" />
+								</Translation>
+							</LayoutConfiguration>
+						</SceneObject>
+						<Translation x="380.866" y="98.661" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="OffersLS">
+					<SceneObject name="upper">
+						<Translation x="0" y="-84.936" z="0" />
+						<SceneObject name="right">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/egp_box_2.png" rotate="true" vertexColors="false" mode="panel">
+								<Size width="685" height="151" />
+								<Insets bottom="2" left="0" right="0" top="91" />
+								<Pivot anchor="left" />
+							</Sprite>
+							<Translation x="20" y="131" z="0" />
+							<SceneObject name="BuyButtons2">
+								<Import filename="shared/game/common/scenes/end_game_swipe_buy_button.xml" />
+								<Scale x="1.500" y="1.500" z="1" />
+								<Translation x="349.796" y="5.571" z="2" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="left">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/egp_box_1.png" rotate="true" vertexColors="false" mode="panel">
+								<Size width="708" height="151" />
+								<Insets bottom="35" top="35" left="0" right="0" />
+								<RemoveQuads bottomLeft="true" bottomRight="true" topLeft="true" topRight="true" bottom="true" top="true" />
+								<Pivot anchor="right" />
+							</Sprite>
+							<Translation x="20" y="131" z="0" />
+							<SceneObject name="moves">
+								<Scale z="0.750" />
+								<Translation x="-639.901" y="-1.626" z="0" />
+								<Import filename="shared/game/common/scenes/end_game_swipe_moves_icons.xml" />
+								<PortsContext uuid="{70f38018-c9ed-4685-9ee0-c9e7277a53e6}" />
+							</SceneObject>
+							<SceneObject name="text">
+								<Text alignment="left" font="TypewriterBold" key="play_on_pegp_desc" maxHeight="101" maxWidth="360" overflowBehaviour="fit" verticalAlignment="visualCenter" canBreakWords="false">
+									<Color r="117" g="55" b="0" a="255" />
+									<Shadow enabled="true">
+										<Color a="255" b="255" g="255" r="255" />
+									</Shadow>
+									<Size y="18" x="18" />
+								</Text>
+								<Translation x="-570.958" y="0" z="1" />
+							</SceneObject>
+							<SceneObject name="arrow">
+								<Translation x="-0.096" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/egp_arrow.png" rotate="true" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="OffersAttachment">
+								<Import filename="shared/game/common/scenes/end_game_swipe_offer_icons.xml" />
+								<PortsContext uuid="{ba377f9c-c5fe-4577-b82e-4ac8f608c016}" />
+								<Scale z="1" />
+								<Translation x="-110.101" y="-1.353" z="0" />
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<LayoutConfiguration visible="true" name="Landscape" />
+					<LayoutConfiguration visible="false" name="Portrait" />
+				</SceneObject>
+				<SceneObject name="OffersP">
+					<SceneObject name="upper">
+						<Translation x="0" y="42.112" z="0" />
+						<SceneObject name="bottom">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/egp_box_2.png" vertexColors="false" mode="panel">
+								<Size width="750" height="172" />
+								<Insets bottom="73" left="73" right="73" top="0" />
+								<RemoveQuads topLeft="true" top="true" topRight="true" />
+								<Pivot anchor="top" />
+							</Sprite>
+							<Translation z="0" />
+							<SceneObject name="BuyButtons2">
+								<Import filename="shared/game/common/scenes/end_game_swipe_buy_button.xml" />
+								<Scale x="1.680" y="1.680" z="1" />
+								<Translation x="-2.576" y="94.854" z="2" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="top">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/egp_box_1.png" vertexColors="false" mode="panel">
+								<Size width="750" height="150" />
+								<Insets left="35" right="35" bottom="35" top="35" />
+								<Pivot anchor="bottom" />
+							</Sprite>
+							<Translation z="0" />
+							<SceneObject name="moves">
+								<Scale z="0.750" />
+								<Translation x="-294.629" y="-74.644" z="0" />
+								<Import filename="shared/game/common/scenes/end_game_swipe_moves_icons.xml" />
+								<PortsContext uuid="{41a6dec2-0a89-4be0-b22a-025e49342455}" />
+							</SceneObject>
+							<SceneObject name="text">
+								<Text alignment="left" font="TypewriterBold" key="play_on_pegp_desc" maxHeight="101" maxWidth="360" overflowBehaviour="fit" verticalAlignment="visualCenter" canBreakWords="false">
+									<Color r="117" g="55" b="0" a="255" />
+									<Shadow enabled="true">
+										<Color a="255" b="255" g="255" r="255" />
+									</Shadow>
+									<Size y="18" x="18" />
+								</Text>
+								<Translation x="-218.784" y="-71.677" z="1" />
+							</SceneObject>
+							<SceneObject name="OffersAttachment">
+								<Translation x="262.539" y="-76.855" z="0" />
+								<Scale z="1" />
+								<Import filename="shared/game/common/scenes/end_game_swipe_offer_icons.xml" />
+								<PortsContext uuid="{af77feb4-4b7f-4386-a2c9-edc4ff128846}" />
+							</SceneObject>
+							<SceneObject name="arrow">
+								<Translation x="-0.096" y="-0.661" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/egp_arrow.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="arrow2">
+								<Translation x="-67" y="-0.661" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/egp_arrow.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="arrow3">
+								<Translation x="67" y="-0.661" z="1" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/egp_arrow.png" vertexColors="false" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<LayoutConfiguration visible="false" name="Landscape" />
+					<LayoutConfiguration visible="true" name="Portrait" />
+				</SceneObject>
+				<SceneObject name="LoseTextRootLS" visibility="never">
+					<Translation z="1" />
+					<SceneObject name="TitleText">
+						<Translation x="0" y="-126.395" z="1" />
+						<Text font="Banana" maxWidth="460" key="Oh No!" alignment="center" verticalAlignment="center" maxHeight="80" overflowBehaviour="fit">
+							<Color r="254" a="255" g="20" b="92" />
+							<Shadow enabled="true">
+								<Color r="255" a="255" g="255" b="255" />
+							</Shadow>
+							<Size y="36" x="36" />
+						</Text>
+					</SceneObject>
+					<SceneObject name="ContentText">
+						<Translation x="0" y="-78.277" z="1" />
+						<Text font="Typewriter" maxWidth="480" key="You only have 1 bear left!" alignment="center" verticalAlignment="visualCenter" maxHeight="45" overflowBehaviour="fit">
+							<Color r="2" a="255" g="73" b="134" />
+							<Shadow enabled="true">
+								<Color r="255" a="255" g="255" b="255" />
+							</Shadow>
+							<Size y="26" x="26" />
+						</Text>
+					</SceneObject>
+					<LayoutConfiguration visible="true" name="Landscape" />
+					<LayoutConfiguration visible="false" name="Portrait" />
+				</SceneObject>
+				<SceneObject name="LoseTextRootP" visibility="never">
+					<Translation x="0" z="1" />
+					<SceneObject name="TitleText">
+						<Translation x="-2.747" y="-199.057" z="1" />
+						<Text font="Banana" maxWidth="460" key="Oh No!" alignment="center" verticalAlignment="center" maxHeight="80" overflowBehaviour="fit">
+							<Color r="254" a="255" g="20" b="92" />
+							<Shadow enabled="true">
+								<Color r="255" a="255" g="255" b="255" />
+							</Shadow>
+							<Size y="36" x="36" />
+						</Text>
+					</SceneObject>
+					<SceneObject name="ContentText">
+						<Translation x="0" y="-153.804" z="1" />
+						<Text font="Typewriter" maxWidth="480" key="You only have 1 bear left!" alignment="center" verticalAlignment="visualCenter" maxHeight="45" overflowBehaviour="fit">
+							<Color r="2" a="255" g="73" b="134" />
+							<Shadow enabled="true">
+								<Color r="255" a="255" g="255" b="255" />
+							</Shadow>
+							<Size y="26" x="26" />
+						</Text>
+					</SceneObject>
+					<LayoutConfiguration visible="false" name="Landscape" />
+					<LayoutConfiguration visible="true" name="Portrait" />
+				</SceneObject>
+				<SceneObject name="CloseButtons">
+					<SceneObject name="CloseButtonGroupPortrait">
+						<Translation z="5" />
+						<SceneObject name="Mover">
+							<Translation x="-26" y="-358" z="0" />
+							<SceneObject name="Holder">
+								<Sprite vertexColors="false" filename="shared/game/common/tex/hud/exit_btn_holder.png" mode="sprite">
+									<Pivot y="-22" anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+							<SceneObject class="Button" name="EndGameButton">
+								<Scale y="0.700" z="0.700" x="0.700" />
+								<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_pink.png" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Animation name="Idle" layer="1" play="true" animationData="Idle" />
+								<Animation name="OnPress" loopCount="0" animationData="OnPress" />
+								<Animation name="OnRelease" loopCount="0" animationData="OnRelease" />
+								<SceneObject name="HardLevelHeaderR">
+									<Translation y="-3" x="0" />
+									<Scale y="1.500" z="1.500" x="1.500" />
+									<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_exit.png" mode="sprite">
+										<Pivot anchor="center" />
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+								</SceneObject>
+							</SceneObject>
+						</SceneObject>
+						<LayoutConfiguration visible="false" name="Landscape" />
+						<LayoutConfiguration visible="true" name="Portrait">
+							<Translation>
+								<X percentage="50" />
+								<Y percentage="50" />
+							</Translation>
+							<Size>
+								<Width percentage="100" />
+								<OriginalSize width="768" height="256" />
+							</Size>
+						</LayoutConfiguration>
+					</SceneObject>
+					<SceneObject name="CloseButtonGroupLandscape">
+						<Translation z="5" />
+						<SceneObject name="Mover">
+							<Translation x="-47.076" y="-201.094" z="0" />
+							<SceneObject name="Holder">
+								<Sprite vertexColors="false" filename="shared/game/common/tex/hud/exit_btn_holder.png" mode="sprite">
+									<Pivot y="-22" anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+							</SceneObject>
+							<SceneObject class="Button" name="EndGameButton">
+								<Scale y="0.700" z="0.700" x="0.700" />
+								<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_pink.png" mode="sprite">
+									<Pivot anchor="center" />
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Animation name="Idle" layer="1" play="true" animationData="Idle" />
+								<Animation name="OnPress" loopCount="0" animationData="OnPress" />
+								<Animation name="OnRelease" loopCount="0" animationData="OnRelease" />
+								<SceneObject name="HardLevelHeaderR">
+									<Translation y="-3" x="0" />
+									<Scale y="1.500" z="1.500" x="1.500" />
+									<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_exit.png" mode="sprite">
+										<Pivot anchor="center" />
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+								</SceneObject>
+							</SceneObject>
+						</SceneObject>
+						<LayoutConfiguration visible="false" name="Portrait" />
+						<LayoutConfiguration visible="true" name="Landscape">
+							<Translation>
+								<X percentage="50" />
+								<Y percentage="50" />
+							</Translation>
+							<Size>
+								<Width percentage="100" />
+								<OriginalSize width="1024" height="256" />
+							</Size>
+						</LayoutConfiguration>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="AdBackground" editorEntityId="672" visibility="never">
+					<Translation x="0" y="-93" z="0" />
+					<SceneObject name="Portrait" editorEntityId="673" visibility="inherit">
+						<Translation y="73" />
+						<SceneObject name="background_panel" editorEntityId="674">
+							<Translation y="313" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/background_panel_1px.png" vertexColors="false" mode="sprite">
+								<Size width="1302" height="445" />
+								<Pivot anchor="top" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="content" editorEntityId="675">
+							<Translation x="0" y="501" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+							<SceneObject name="PlayButtonIADs" editorEntityId="676" class="Button">
+								<Translation y="70" z="3" />
+								<Scale x="1.450" y="1.450" z="1" />
+								<Rotation x="0" y="0" z="0" />
+								<Animation animationData="Idle" interpolateFrame="true" layer="1" name="Idle" play="true" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<Animation name="OnRelease" loopCount="0" animationData="OnRelease" />
+								<SceneObject name="entity">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/btn_mint.png" vertexColors="false" mode="panel">
+										<Insets bottom="10" left="56" right="49" top="155" />
+										<Pivot anchor="center" />
+										<Size height="73" width="522" />
+									</Sprite>
+									<Translation x="0" y="0" z="0" />
+									<Scale x="1" y="1" z="1" />
+									<Rotation x="0" y="0" z="0" />
+								</SceneObject>
+								<SceneObject name="ButtonText" editorEntityId="678">
+									<Text alignment="center" font="Banana" key="button_play_on" maxHeight="50" maxWidth="206" overflowBehaviour="fit" verticalAlignment="visualCenter">
+										<Color a="225" b="255" g="255" r="255" />
+										<Shadow>
+											<Color a="25" b="0" g="0" r="0" />
+											<Offset x="0" y="6" />
+										</Shadow>
+										<Size x="28" y="28" />
+										<TextString />
+									</Text>
+									<Translation x="-38" y="9" z="2" />
+									<Scale x="1" y="1" z="1" />
+									<Rotation x="0" y="0" z="0" />
+								</SceneObject>
+								<SceneObject name="IADSign" visibility="inherit" editorEntityId="679">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/video_ads_icon.png" vertexColors="false" mode="sprite">
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+									<Translation x="142" y="-21" z="2" />
+									<Rotation x="0" y="0" z="0" />
+									<Scale x="1" y="1" z="1" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="top" editorEntityId="680">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/egp_box_1.png" vertexColors="false" mode="panel">
+									<Insets bottom="35" left="35" right="35" top="35" />
+									<Pivot anchor="bottom" />
+									<Size height="150" width="750" />
+								</Sprite>
+								<Translation z="0" />
+								<SceneObject name="text" editorEntityId="681">
+									<Text alignment="left" canBreakWords="false" font="TypewriterBold" key="play_on_ads_egp_desc" maxHeight="101" maxWidth="400" overflowBehaviour="fit" verticalAlignment="visualCenter">
+										<Color a="255" b="0" g="55" r="117" />
+										<Shadow enabled="true">
+											<Color a="255" b="255" g="255" r="255" />
+										</Shadow>
+										<Size x="18" y="18" />
+									</Text>
+									<Translation x="-218.784" y="-71.677" z="1" />
+								</SceneObject>
+								<SceneObject name="arrow" editorEntityId="682">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/egp_arrow.png" vertexColors="false" mode="sprite">
+										<Pivot anchor="center" />
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+									<Translation x="-0.096" y="-0.661" z="1" />
+								</SceneObject>
+								<SceneObject name="arrow2" editorEntityId="683">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/egp_arrow.png" vertexColors="false" mode="sprite">
+										<Pivot anchor="center" />
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+									<Translation x="-67" y="-0.661" z="1" />
+								</SceneObject>
+								<SceneObject name="arrow3" editorEntityId="684">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/egp_arrow.png" vertexColors="false" mode="sprite">
+										<Pivot anchor="center" />
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+									<Translation x="67" y="-0.661" z="1" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="bottom_bkg" editorEntityId="689">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/egp_box_2.png" vertexColors="false" mode="panel">
+									<Insets bottom="73" left="73" right="73" top="0" />
+									<Pivot anchor="top" />
+									<RemoveQuads top="true" topLeft="true" topRight="true" />
+									<Size height="172" width="750" />
+								</Sprite>
+								<Translation x="0" y="0" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="gumball_machine_icon2">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/gumball_machine_icon.png" mode="sprite" vertexColors="false">
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+							<Translation x="-398" y="331" />
+						</SceneObject>
+						<LayoutConfiguration visible="false" name="Landscape" />
+						<LayoutConfiguration visible="true" name="Portrait" />
+					</SceneObject>
+					<SceneObject name="Landscape" editorEntityId="690">
+						<Translation y="-17" />
+						<SceneObject name="background_panel" editorEntityId="691">
+							<Translation y="313" z="0" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/background_panel_1px.png" vertexColors="false" mode="sprite">
+								<Size width="1941" height="275" />
+								<Pivot anchor="top" />
+								<Insets bottom="0" left="0" right="0" top="0" />
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="content" editorEntityId="692">
+							<Translation x="0" z="0" y="475" />
+							<Scale x="1" y="1" z="1" />
+							<Rotation x="0" y="0" z="0" />
+							<SceneObject name="background" editorEntityId="693">
+								<Translation x="0" y="-164.936" z="0" />
+								<Scale x="1" y="1" z="1" />
+								<Rotation x="0" y="0" z="0" />
+								<SceneObject name="right" editorEntityId="694">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/egp_box_2.png" rotate="true" vertexColors="false" mode="panel">
+										<Insets bottom="2" left="0" right="0" top="91" />
+										<Pivot anchor="left" />
+										<Size height="151" width="685" />
+									</Sprite>
+									<Translation x="20" y="131" z="0" />
+									<SceneObject name="BuyButtons2" editorEntityId="695">
+										<Import filename="shared/game/common/scenes/end_game_swipe_buy_button.xml" />
+										<Scale x="1.500" y="1.500" z="1" />
+										<Translation x="349.796" y="5.571" z="2" />
+									</SceneObject>
+								</SceneObject>
+								<SceneObject name="left" editorEntityId="696">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/egp_box_1.png" rotate="true" vertexColors="false" mode="panel">
+										<Insets bottom="35" left="0" right="0" top="35" />
+										<Pivot anchor="right" />
+										<RemoveQuads bottom="true" bottomLeft="true" bottomRight="true" top="true" topLeft="true" topRight="true" />
+										<Size height="151" width="685" />
+									</Sprite>
+									<Translation x="20" y="131" z="0" />
+									<SceneObject name="arrow" editorEntityId="697">
+										<Sprite filename="shared/diorama/common/tex/gui_elements/egp_arrow.png" rotate="true" vertexColors="false" mode="sprite">
+											<Pivot anchor="center" />
+											<Insets bottom="0" left="0" right="0" top="0" />
+										</Sprite>
+										<Translation x="-0.096" z="1" />
+									</SceneObject>
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="PlayButtonIADs" editorEntityId="698" class="Button">
+								<Translation x="377" y="-28" z="3" />
+								<Scale z="1" x="1.280" y="1.280" />
+								<Rotation x="0" y="0" z="0" />
+								<SceneObject name="button_bkg" visibility="inherit" editorEntityId="699">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/btn_mint.png" vertexColors="false" mode="panel">
+										<Insets bottom="10" left="56" right="49" top="155" />
+										<Pivot anchor="center" />
+										<Size height="0" width="526" />
+									</Sprite>
+									<Scale x="1" y="1" z="1" />
+									<Translation x="-6" />
+									<Rotation x="0" y="0" z="0" />
+								</SceneObject>
+								<SceneObject name="ButtonText" editorEntityId="700">
+									<Text alignment="center" font="Banana" key="button_play_on" maxHeight="50" maxWidth="206" overflowBehaviour="fit" verticalAlignment="visualCenter">
+										<Color a="225" b="255" g="255" r="255" />
+										<Shadow>
+											<Color a="25" b="0" g="0" r="0" />
+											<Offset x="0" y="6" />
+										</Shadow>
+										<Size x="28" y="28" />
+										<TextString />
+									</Text>
+									<Translation x="-34" y="-6" />
+									<Scale z="1" />
+									<Rotation x="0" y="0" z="0" />
+								</SceneObject>
+								<SceneObject name="IADSign" visibility="inherit" editorEntityId="701">
+									<Sprite filename="shared/diorama/common/tex/gui_elements/video_ads_icon.png" vertexColors="false" mode="sprite">
+										<Insets bottom="0" left="0" right="0" top="0" />
+									</Sprite>
+									<Translation x="142" y="-40" z="0" />
+									<Rotation x="0" y="0" z="0" />
+								</SceneObject>
+								<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+							</SceneObject>
+							<SceneObject name="text" editorEntityId="705">
+								<Text alignment="left" canBreakWords="false" font="TypewriterBold" key="play_on_ads_egp_desc" maxHeight="101" maxWidth="360" overflowBehaviour="fit" verticalAlignment="visualCenter">
+									<Color a="255" b="0" g="55" r="117" />
+									<Shadow enabled="true">
+										<Color a="255" b="255" g="255" r="255" />
+									</Shadow>
+									<Size x="18" y="18" />
+								</Text>
+								<Translation x="-529" y="-33" z="1" />
+								<Scale x="1" y="1" z="1" />
+								<Rotation x="0" y="0" z="0" />
+							</SceneObject>
+							<SceneObject name="gumball_machine_icon">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/gumball_machine_icon.png" mode="sprite" vertexColors="false">
+									<Insets bottom="0" left="0" right="0" top="0" />
+								</Sprite>
+								<Translation y="-137" x="-688" />
+							</SceneObject>
+						</SceneObject>
+						<LayoutConfiguration visible="true" name="Landscape" />
+						<LayoutConfiguration visible="false" name="Portrait" />
+					</SceneObject>
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+					<Animation animationData="SlideInFromBelow" loopCount="0" name="OnAppear" startDelay="0" />
+					<LayoutConfiguration name="ExtraContentLayout" visible="true" />
+					<LayoutConfiguration name="RegularContentLayout" visible="false" />
+				</SceneObject>
+				<LayoutConfiguration name="ExtraContentLayout">
+					<Translation>
+						<Y percentage="-50" />
+					</Translation>
+				</LayoutConfiguration>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

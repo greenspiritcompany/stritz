@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Stars">
+		<Sprite filename="shared/diorama/common/tex/ov_starmeter_bg.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation y="-84" z="1"/>
+		<SceneObject name="StarIcon">
+			<Sprite filename="shared/diorama/common/tex/lvl_pin_star.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+			<Translation x="-40" y="-3"/>
+		</SceneObject>
+		<SceneObject name="StarText">
+			<Text canBreakWords="false" alignment="center" verticalAlignment="visualCenter" font="Banana">
+				<TextString>23/45</TextString>
+				<Color r="111" g="97" b="52" a="255"/>
+				<Size x="19" y="19"/>
+			</Text>
+			<Translation x="12" y="-4" z="5"/>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="StarsRainbow">
+		<Sprite filename="shared/diorama/common/tex/ov_starmeter_bg_allstars.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation y="-84" z="1"/>
+		<SceneObject name="StarIcon">
+			<Sprite filename="shared/diorama/common/tex/lvl_pin_star.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+			<Translation x="-40" y="-3"/>
+		</SceneObject>
+		<SceneObject name="StarText">
+			<Text canBreakWords="false" alignment="center" verticalAlignment="visualCenter" font="Banana">
+				<Shadow enabled="true">
+					<Offset x="0" y="1"/>
+					<Color r="50" g="50" b="50" a="100"/>
+				</Shadow>
+				<TextString>23/45</TextString>
+				<Color r="253" g="253" b="253" a="255"/>
+				<Size x="19" y="19"/>
+			</Text>
+			<Translation x="12" y="-4" z="5"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

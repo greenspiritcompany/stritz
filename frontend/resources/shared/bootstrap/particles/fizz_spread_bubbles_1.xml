@@ -1,0 +1,22 @@
+<ParticleEffect maxParticles="20" timeToEmit="0.600" name="FizzSpreadBubbles1PFX" startDelay="0">
+    <Dampening max="0.900" min="0.600"/>
+    <Emitter emissionRate="0.010" spread="360" angle="0">
+        <SpawnArea width="20" depth="0" height="20"/>
+    </Emitter>
+    <EndColor b="255" r="0" g="251" a="100"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="500" min="-500"/>
+    <Size>
+        <Max x="22" y="22"/>
+        <Min x="5" y="5"/>
+    </Size>
+    <SizeChange>
+        <Max x="-24" y="-24"/>
+        <Min x="-85" y="-85"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/fizz_grow_particle.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.500" min="0.250"/>
+    <Velocity max="60" min="50"/>
+</ParticleEffect>

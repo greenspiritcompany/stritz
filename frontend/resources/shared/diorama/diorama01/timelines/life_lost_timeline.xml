@@ -1,0 +1,52 @@
+<Timelines>
+<Timeline startTime="0" endTime="3">
+	<Triggers>
+		<EffectTrigger time="0.257" name="HeartBreakPieces" targetName="HeartCrackEffect" />
+		<EffectTrigger time="0.786" targetName="HeartCrackEffect" name="HeartBreakPieces">
+			<Offset x="0" y="-20" z="0" />
+		</EffectTrigger>
+		<EffectTrigger time="1.565" name="HeartBreakPieces" targetName="HeartCrackEffect">
+			<Offset x="0" y="-40" z="0" />
+		</EffectTrigger>
+		<AnimationTrigger time="2.057" targetName="HeartL" animationName="HeartLFall" />
+		<AnimationTrigger time="2.072" targetName="HeartR" animationName="HeartRFall" />
+		<AnimationTrigger time="1.670" targetName="HeartWhole" animationName="HeartShake" />
+	</Triggers>
+	<Animate target="HeartWhole" time="0">
+		<Show time="0" />
+		<Hide time="2.072" />
+	</Animate>
+	<Animate target="crack1" time="0">
+		<Hide time="0" />
+		<Show time="0.247" />
+	</Animate>
+	<Animate target="crack2" time="0">
+		<Hide time="0" />
+		<Show time="0.742" />
+	</Animate>
+	<Animate target="crack3" time="0">
+		<Hide time="0" />
+		<Show time="1.010" />
+	</Animate>
+	<Animate target="crack4" time="0">
+		<Hide time="0" />
+		<Show time="1.528" />
+	</Animate>
+	<Animate target="HeartL" time="0">
+		<Hide time="0" />
+		<Show time="2.072" />
+	</Animate>
+	<Animate target="HeartR" time="0">
+		<Hide time="0" />
+		<Show time="2.072" />
+	</Animate>
+	<Animate target="HeartRight" time="0">
+		<Color time="2.088" a="255" b="255" g="255" r="255" />
+		<Color time="2.957" a="0" />
+	</Animate>
+	<Animate target="HeartLeft" time="0">
+		<Color time="2.085" a="255" b="255" g="255" r="255" />
+		<Color time="2.966" a="0" />
+	</Animate>
+</Timeline>
+</Timelines>

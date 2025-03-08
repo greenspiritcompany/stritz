@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0.0" endTime="2.0">
+
+        <Triggers>
+
+            <EffectTrigger name="quest_tab_burst_EFQ" time="0.0">
+                <Offset x="0" y="60" z="200"/>
+            </EffectTrigger>
+
+           <CustomTrigger name="RewardClaimed" time="1.0"/>
+
+        </Triggers>
+    </Timeline>
+</Timelines>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:993c022fc618f1c4715586367949ed7c:91c076ff1a98ba273c26e64063f99280:d637253069d84fa3592e42645d1e5e5f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gui_elements_sales.png" width="1024" height="1024">
+    <sprite n="heart_sale_part.png" x="2" y="152" w="405" h="166" pX="0.5" pY="0.5"/>
+    <sprite n="lolipop_sale_part.png" x="788" y="2" w="197" h="370" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="sign.png" x="411" y="152" w="344" h="252" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="skies.png" x="409" y="408" w="295" h="269" pX="0.5" pY="0.5"/>
+    <sprite n="skies_longer.png" x="759" y="376" w="249" h="288" pX="0.5" pY="0.5"/>
+    <sprite n="snow_cover.png" x="2" y="2" w="782" h="146" pX="0.5" pY="0.5"/>
+    <sprite n="stand_polka_winter.png" x="304" y="322" w="101" h="271" pX="0.5" pY="0.5"/>
+    <sprite n="stand_umbrella_winter.png" x="2" y="376" w="298" h="406" pX="0.5" pY="0.5" r="y"/>
+</TextureAtlas>

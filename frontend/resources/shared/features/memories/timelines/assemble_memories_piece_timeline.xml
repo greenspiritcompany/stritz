@@ -1,0 +1,33 @@
+<Timelines>
+<Timeline startTime="0" endTime="3.002">
+	<Animate time="0" target="flash_effect">
+		<Show time="1.082" />
+		<Hide time="0" />
+		<Hide time="2.394" />
+		<Color time="1.081" r="255" g="255" b="255" a="255" />
+		<Color time="2.216" r="255" g="255" b="255" a="0" />
+	</Animate>
+
+	<Animate time="0" target="glance_effect">
+
+		<Hide time="0" />
+		<Show time="2.5" />
+
+	</Animate>
+
+	<Triggers>
+		<EffectTrigger time="0.008" name="MemoriesCelebrationEFQ" parentName="EFQ_group" targetBoneIndex="1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="0" y="-50" z="20" />
+		</EffectTrigger>
+		<EffectTrigger time="0.010" name="MemoriesCelebrationFlashEFQ" parentName="EFQ_group" targetBoneIndex="1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="0" y="-50" z="25" />
+		</EffectTrigger>
+		<!--<EffectTrigger time="1.056" name="MemoriesCelebrationFlashEFQ" parentName="" targetName="EFQ_group" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">-->
+		<!--<Offset x="0" y="50" z="40" />-->
+		<!--</EffectTrigger>-->
+		<EffectTrigger time="1.100" name="MemoriesCelebrationGlitter2EFQ" parentName="" targetName="EFQ_group" targetBoneIndex="-1" followTarget="true" emitterInheritsTargetRotation="false">
+			<Offset x="0" y="50" z="40" />
+		</EffectTrigger>
+	</Triggers>
+</Timeline>
+</Timelines>

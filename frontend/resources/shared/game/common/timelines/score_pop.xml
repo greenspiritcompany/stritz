@@ -1,0 +1,51 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="3.5">
+		<Animate target="ScoreText">
+			<Show/>
+			<Scale time="0.000" x="0.200" y="0.200" z="0.200"/>
+			<Scale time="0.117" x="1.224" y="1.224" z="1.224"/>
+			<Scale time="0.133" x="0.927" y="0.927" z="0.927"/>
+			<Scale time="0.150" x="0.802" y="0.802" z="0.802"/>
+			<Scale time="0.167" x="0.830" y="0.830" z="0.830"/>
+			<Scale time="0.183" x="0.896" y="0.896" z="0.896"/>
+			<Scale time="0.200" x="0.975" y="0.975" z="0.975"/>
+			<Scale time="0.217" x="1.041" y="1.041" z="1.041"/>
+			<Scale time="0.233" x="1.068" y="1.068" z="1.068"/>
+			<Scale time="0.250" x="1.056" y="1.056" z="1.056"/>
+			<Scale time="0.267" x="1.028" y="1.028" z="1.028"/>
+			<Scale time="0.283" x="0.994" y="0.994" z="0.994"/>
+			<Scale time="0.300" x="0.966" y="0.966" z="0.966"/>
+			<Scale time="0.317" x="0.954" y="0.954" z="0.954"/>
+			<Scale time="0.333" x="0.966" y="0.966" z="0.966"/>
+			<Scale time="0.350" x="0.994" y="0.994" z="0.994"/>
+			<Scale time="0.367" x="1.022" y="1.022" z="1.022"/>
+			<Scale time="0.383" x="1.034" y="1.034" z="1.034"/>
+			<Scale time="0.400" x="1.027" y="1.027" z="1.027"/>
+			<Scale time="0.417" x="1.011" y="1.011" z="1.011"/>
+			<Scale time="0.433" x="0.995" y="0.995" z="0.995"/>
+			<Scale time="0.450" x="0.988" y="0.988" z="0.988"/>
+			<Scale time="0.467" x="0.990" y="0.990" z="0.990"/>
+			<Scale time="0.483" x="0.994" y="0.994" z="0.994"/>
+			<Scale time="0.500" x="0.998" y="0.998" z="0.998"/>
+			<Scale time="0.517" x="1.000" y="1.000" z="1.000"/>
+			<Scale time="0.75" x="1.000" y="1.000" z="1.000"/>
+			<Scale time="1.0" x="0.000" y="0.000" z="0.000"/>
+
+
+			<Translation time="0.0" y="0"/>
+			<Translation time="1.0" y="-50"/>
+			<Hide time="1.0"/>
+
+			<Color time="0.8" a="255"/>
+			<Color time="1.0" a="0"/>
+
+		</Animate>
+		<Animate target="ScoreTextParticles">
+			<Show/>
+			<Translation time="0.0" y="0"/>
+			<Translation time="1.0" y="-50"/>
+		</Animate>
+
+	</Timeline>
+</Timelines>

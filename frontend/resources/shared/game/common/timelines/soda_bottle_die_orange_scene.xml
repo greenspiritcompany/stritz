@@ -1,0 +1,19 @@
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/soda_bottle_material.xml"/>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="SodaBottle">
+			<Model filename="shared/game/common/models/soda_candy/soda_candy_crushed.ffm">
+				<Animations>
+					<Animation filename="shared/game/common/models/soda_candy/soda_candy_crush.ffa" speed="1.8"
+							   loopCount="0"
+							   name="crush"/>
+				</Animations>
+			</Model>
+			<Materials>
+				<Material parentMaterial="SodaBottleOrangeMaterial"/>
+			</Materials>
+			<Scale x="1.0" y="-1.0" z="1.0"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

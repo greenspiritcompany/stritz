@@ -1,0 +1,142 @@
+<Layout>
+	<Object sceneObject="Group">
+		<Default>
+			<Translation>
+				<Y percentage="-50"/>
+			</Translation>
+		</Default>
+	</Object>
+	<Object sceneObject="LandScapeHeader">
+		<Default>
+			<Translation>
+				<Y percentage="-50"/>
+			</Translation>
+			<Size forceUniform="false">
+				<Width percentage="100"/>
+				<Height percentage="100"/>
+				<OriginalSize width="92" height="1472"/>
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="Landscape">
+		<Landscape visible="true"/>
+		<Portrait visible="false"/>
+		<Default>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="50"/>
+			</Translation>
+		</Default>
+	</Object>
+	<Object sceneObject="LandscapeOfferGrp">
+		<Default>
+			<Translation>
+				<X percentage="-50"/>
+				<Y percentage="-32.100"/>
+			</Translation>
+			<Size>
+				<Height percentage="80"/>
+				<OriginalSize width="0" height="616"/>
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="MoreOffersLandscape">
+		<Landscape visible="true"/>
+		<Portrait visible="false"/>
+	</Object>
+	<Object sceneObject="MoreOffersPortrait">
+		<Landscape visible="false"/>
+		<Portrait visible="true"/>
+	</Object>
+	<Object sceneObject="Portrait">
+		<Landscape visible="false"/>
+		<Portrait visible="true"/>
+	</Object>
+	<Object sceneObject="PortraitHeader">
+		<Default>
+			<Translation>
+				<Y percentage="0"/>
+				<X percentage="50"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="1536" height="240"/>
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="PortraitOfferGrp">
+		<Default>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="760" height="0"/>
+				<Height percentage="993"/>
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="SpecialOfferLandscape">
+		<Landscape visible="true"/>
+		<Portrait visible="false"/>
+	</Object>
+	<Object sceneObject="SpecialOfferPortrait">
+		<Landscape visible="false"/>
+		<Portrait visible="true"/>
+	</Object>
+	<Object sceneObject="StandardOfferLandscape">
+		<Landscape visible="true"/>
+		<Portrait visible="false"/>
+	</Object>
+	<Object sceneObject="StandardOfferPortrait">
+		<Landscape visible="false"/>
+		<Portrait visible="true"/>
+	</Object>
+	<Object sceneObject="close">
+		<Default>
+			<Size>
+				<Height percentage="14"/>
+				<OriginalSize width="0" height="156"/>
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="closeLayout">
+		<Default>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="-50"/>
+			</Translation>
+		</Default>
+	</Object>
+	<Object sceneObject="gold">
+		<Default>
+			<Size>
+				<Height percentage="13"/>
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="korealink_panel_landscape">
+		<Default>
+			<Translation>
+				<Y percentage="9"/>
+			</Translation>
+			<Size>
+				<Height percentage="100"/>
+				<OriginalSize width="0" height="1257"/>
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="text">
+		<Default>
+			<Size>
+				<Height percentage="12"/>
+				<OriginalSize width="0" height="116"/>
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="textLayout">
+		<Default>
+			<Translation>
+				<X percentage="0"/>
+				<Y percentage="-50"/>
+			</Translation>
+		</Default>
+	</Object>
+</Layout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="PreviousKingBar">
+		<Translation z="-2" />
+		<SceneObject __editorVisibility="true" __visibility="0" name="BarPortrait">
+			<Translation x="355" y="65" />
+			<SceneObject __editorVisibility="true" __visibility="0" name="Fill">
+				<Translation x="-207.944" y="-60.91" />
+				<Sprite filename="shared/castle/tex/bar_portrait_fill.png" vertexColors="false">
+					<Size width="575" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject __editorVisibility="true" __visibility="0" name="Background">
+				<Translation x="-337.964" y="-64.7911" />
+				<Panel filename="shared/castle/tex/bar_portrait.png" vertexColors="false">
+					<Insets left="200" right="50" />
+					<Size width="730" />
+				</Panel>
+			</SceneObject>
+			<SceneObject __editorVisibility="true" __visibility="0" name="PrevKingText">
+				<Translation x="-255.276" y="-23.6891" />
+				<Text alignment="center" font="BananaInnerShadow" key="kotc.previous_king_bar.title" maxWidth="120" maxHeight="50" overflowBehaviour="fit" allowWordWrapping="true" canBreakWords="false">
+					<Color r="165" g="62" b="128" a="255" />
+					<Shadow enabled="true">
+						<Color r="255" g="255" b="255" a="255" />
+						<Offset x="0" y="2" z="1" />
+					</Shadow>
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="AvatarAnchorPortrait">
+				<Translation x="-113.02" y="-46.3646" />
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<SceneObject __editorVisibility="true" __visibility="0" name="BarLandscape">
+			<Translation y="30" />
+			<SceneObject __editorVisibility="true" __visibility="0" name="Fill">
+				<Translation x="-6.25653" y="95.9333" />
+				<Sprite filename="shared/castle/tex/bar_landscape_fill.png" vertexColors="false">
+					<Pivot anchor="topRight" />
+					<Size height="580" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject __editorVisibility="true" __visibility="0" name="Background">
+				<Panel filename="shared/castle/tex/bar_landscape.png" vertexColors="false">
+					<Insets bottom="50" top="200" />
+					<Pivot anchor="topRight" />
+					<Size height="700" />
+				</Panel>
+			</SceneObject>
+			<SceneObject name="PrevKingText">
+				<Translation x="-61.2729" y="54.0124" />
+				<Text alignment="center" font="BananaInnerShadow" key="kotc.previous_king_bar.title" maxWidth="120" maxHeight="50" overflowBehaviour="fit" allowWordWrapping="true" canBreakWords="false">
+					<Color r="165" g="62" b="128" a="255" />
+					<Size x="16" y="16" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="AvatarAnchorLandscape">
+				<Translation x="-54.2729" y="169.012" />
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Landscape">
+			<Translation>
+				<X percentage="100" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<OriginalSize height="1024" width="770" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

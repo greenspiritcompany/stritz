@@ -1,0 +1,37 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="6.0">
+
+		<Animate target="Star1" time="0">
+			<Hide/>
+		</Animate>
+		<Animate target="Star2" time="0">
+			<Hide/>
+		</Animate>
+		<Animate target="Star3" time="0">
+			<Hide/>
+		</Animate>
+
+		<Animate target="Star1" time="0">
+			<Show/>
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Star2" time="0.2">
+			<Show/>
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="255"/>
+		</Animate>
+		<Animate target="Star3" time="0.4">
+			<Show/>
+			<Color time="0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.2" r="255" g="255" b="255" a="255"/>
+		</Animate>
+
+		<Triggers>
+			<AnimationTrigger animationName="Land" targetName="Star1" time="0"/>
+			<AnimationTrigger animationName="Land" targetName="Star2" time="0.2"/>
+			<AnimationTrigger animationName="Land" targetName="Star3" time="0.4"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

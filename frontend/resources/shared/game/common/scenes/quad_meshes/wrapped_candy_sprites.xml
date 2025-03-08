@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/candy/candy_material.xml"/>
+
+	<!-- Wrapped Candies -->
+	<!-- ************************************************************************* -->
+	<SceneObject name="BlueWrappedCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/blue_wrapped_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="RedWrappedCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/red_wrapped_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="YellowWrappedCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/yellow_wrapped_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="OrangeWrappedCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/orange_wrapped_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="GreenWrappedCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/green_wrapped_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="CyanWrappedCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/cyan_wrapped_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+
+	<SceneObject name="PurpleWrappedCandy">
+		<Material parentMaterial="CandyMaterial"/>
+		<Sprite filename="shared/game/common/tex/candy/purple_wrapped_c.png">
+			<Pivot anchor="center"/>
+		</Sprite>
+	</SceneObject>
+	<!-- ************************************************************************* -->
+</Scene>

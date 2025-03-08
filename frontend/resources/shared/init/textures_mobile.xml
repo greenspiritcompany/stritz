@@ -1,0 +1,71 @@
+<Textures>
+	<Texture filename="shared/diorama/diorama01/episode03/tex/path_e03.png" premultipliedAlpha="false" convertToRgb4444="false" generateMipMaps="true"/>
+
+	<Texture filename="shared/diorama/common/tex/gui_elements/gui_elements.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/gui_elements2.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/gui_elements3.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/gui_elements4.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/gui_elements5.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/gui_elements6.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/gui_elements7.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/gui_elements8.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/gui_elements_sales.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/gui_elements_common.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/kotc/gui_elements_kotc.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/kotc/speechbubble_middle.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/repeat/timeleft_box_middle.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/quest_gui.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/quest_gui_2.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/diorama/common/tex/episode_common.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/castle/tex/castle_elements.png" premultipliedAlpha="true"/>
+	
+	<Texture filename="shared/game/common/tex/candy/hires_striped.png"/>
+	<Texture filename="shared/game/common/tex/candy/candy_c.png"/>
+	<Texture filename="shared/game/common/tex/candy/candy_c_hi.png"/>
+	<Texture filename="shared/game/common/tex/candy/candy_c_hi_hd.png"/>
+	<Texture filename="shared/game/common/tex/candy/candy_n.png"/>
+	<Texture filename="shared/game/common/tex/candy/candy_c2_temp.png"/>
+
+	<Texture filename="shared/game/common/tex/hud/game_hud.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/game/common/tex/hud/game_hud_char.png" premultipliedAlpha="true"/>	
+	<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" premultipliedAlpha="false"/>
+	<Texture filename="shared/game/common/tex/hud/swipe_repeat.png" premultipliedAlpha="true"/>
+	
+	<Texture filename="shared/game/common/tex/gamegrid/game_1_grid.png"/>
+	
+	<Texture filename="shared/game/common/tex/hud/exclamations.png"/>
+
+	<Texture filename="shared/bootstrap/particles/tex/particles.png" premultipliedAlpha="true"/>
+
+	<Texture filename="shared/liveops/hero_quest/tex/kgf_elements.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/liveops/hero_quest/tex/hq2_elements.png" premultipliedAlpha="false"/>
+	<Texture filename="shared/liveops/hero_quest/tex/hq2_main.png" premultipliedAlpha="false"/>
+	<Texture filename="shared/liveops/hero_quest/tex/hq2_win.png" premultipliedAlpha="false"/>
+	<Texture filename="shared/liveops/hero_quest/tex/hq1_reward.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/liveops/hero_quest/tex/leagues_elements.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/liveops/hero_quest/tex/leagues_shields.png" premultipliedAlpha="false"/>
+
+	<Texture filename="shared/game/common/tex/start_screen/start_screen_c.png"/>
+	<Texture filename="shared/diorama/common/tex/gui_elements/quest_header.png"/>
+
+	<Texture filename="shared/liveops/hero_quest/tex/starman_elements.png" premultipliedAlpha="false"/>
+	<Texture filename="shared/liveops/hero_quest/tex/starman_collection.png" premultipliedAlpha="false"/>
+
+	<Texture filename="shared/game/common/tex/hud/egp_machine.xml" premultipliedAlpha="false"/>
+	<Texture filename="shared/game/common/tex/hud/egp_capsules.xml" premultipliedAlpha="true"/>
+
+	<Texture filename="shared/game/common/tex/hud/egp_extra_moves.xml" />
+
+	<Texture filename="shared/diorama/diorama21/episode62/tex/episode62_material.png"/>
+	<Texture filename="shared/diorama/diorama21/episode61/tex/episode61_material.png"/>
+
+	<!--Spine characters-->
+	<Texture filename="shared/diorama/diorama20/episode58/tex/sadbot_tex.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/features/login_calendar/tex/login_calendar.png" premultipliedAlpha="true"/>
+	<Texture filename="shared/features/memories/tex/memories_main.png" premultipliedAlpha="false"/>
+	<Texture filename="shared/features/memories/tex/memories_2.png" premultipliedAlpha="false"/>
+
+
+
+</Textures>

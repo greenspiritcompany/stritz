@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+
+		<Material name="ChocolateBreakMaterial">
+			<Blend enabled="false"/>
+			<Cull enabled="false" face="back"/>
+			<!-- Set to false since the vertex winding seems messed up between FF and SL -->
+			<Shader program="TextureColor"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/chocolate/choko_cracked_tex.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="ChocolateMaterial">
+			<Blend enabled="false"/>
+			<Cull enabled="false" face="back"/>
+			<!-- Set to false since the vertex winding seems messed up between FF and SL -->
+			<Shader program="TextureColor"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/chocolate_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="GreenCandyMat">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Shader program="TextureColor"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/green_c.png"/>
+			</Textures>
+		</Material>
+
+	</Materials>
+</Scene>

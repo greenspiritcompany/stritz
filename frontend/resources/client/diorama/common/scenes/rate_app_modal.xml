@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="RateAppModal">
+		<Translation z="580" />
+		<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" />
+		<Animation animationData="SlideOutToBelow" loopCount="0" name="OnDisappear" />
+		<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+		<SceneObject name="TitleText">
+			<Translation x="0" y="-299.567" z="0" />
+			<Text alignment="center" font="Banana" key="rate_app_header" maxHeight="0" maxWidth="400" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Color r="255" g="255" b="255" a="255" />
+				<Size x="24" y="24" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="Message">
+			<Translation x="0" y="80" />
+			<Text alignment="center" font="Typewriter" key="rate_app_text" maxHeight="100" maxWidth="540" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Color r="209" g="21" b="48" a="0" />
+				<Size x="22" y="22" />
+			</Text>
+		</SceneObject>
+		<SceneObject __visibility="0" name="shadow">
+			<Translation x="0" y="-134.632" z="0" />
+			<Scale x="4" y="4" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png" vertexColors="false" mode="sprite">
+				<Pivot anchor="center" />
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject class="Button" name="RateButton">
+			<Translation y="256.264" />
+			<Scale x="1.200" y="1.200" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false" mode="panel">
+				<Insets bottom="59" left="54" right="54" top="48" />
+				<Pivot anchor="center" />
+				<Size height="108" width="360" />
+			</Sprite>
+			<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+			<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+			<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+			<SceneObject name="Text">
+				<Translation x="0" y="-6.829" z="0" />
+				<Text alignment="center" font="Banana" key="button_rate" maxHeight="120" maxWidth="280" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Shadow enabled="true">
+						<Color r="0" g="0" b="0" a="25" />
+						<Offset x="0" y="6" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="characters">
+			<Translation x="20" y="-10" z="0" />
+			<Scale x="1.150" y="1.150" />
+			<SceneObject name="Yeti">
+				<Translation x="82.678" y="-58.821" z="0" />
+				<Rotation z="15" />
+				<Scale x="-0.900" y="-0.900" />
+				<Model filename="shared/diorama/common/models/yeti/yeti_tutorial.ffm">
+					<Animation filename="shared/diorama/common/models/yeti/yeti_tutorial.ffa" loopCount="0" name="idle" play="true" />
+				</Model>
+				<Material>
+					<Texture filename="shared/diorama/common/tex/yeti_tutorial.png" />
+					<Blend enabled="true" />
+					<Depth enabled="false" />
+				</Material>
+			</SceneObject>
+			<SceneObject name="Kimmy">
+				<Translation x="-9.822" y="51.437" z="5" />
+				<Scale x="1.500" y="-1.500" />
+				<Model filename="shared/diorama/common/models/kimmy/kimmy_happy.ffm">
+					<Animation filename="shared/diorama/common/models/kimmy/kimmy_happy_idle.ffa" name="idle" play="true" />
+				</Model>
+				<Material>
+					<Texture filename="shared/diorama/common/tex/kimmy/kimmy_happy_tex.png" />
+					<Blend enabled="true" />
+					<Depth enabled="false" />
+				</Material>
+			</SceneObject>
+			<SceneObject name="Ellyphant">
+				<Translation x="-118.872" y="10.311" />
+				<Rotation y="180" z="190" />
+				<Scale x="0.600" y="0.600" />
+				<Model filename="shared/diorama/diorama06/episode16/models/e16_char/ep16_char.ffm">
+					<Animation name="Idle" filename="shared/diorama/diorama06/episode16/models/e16_char/ep16_idle.ffa" />
+				</Model>
+				<Material>
+					<Texture filename="shared/diorama/diorama06/episode16/tex/ep16_char.png" />
+					<Blend enabled="true" />
+					<Depth enabled="false" />
+				</Material>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="stars">
+			<Translation x="9.385" y="121.273" z="10" />
+		</SceneObject>
+		<SceneObject name="ContentText">
+			<Translation x="0" y="149.414" z="0" />
+			<Text alignment="center" font="Typewriter" key="rate_app_text" maxHeight="80" maxWidth="480" overflowBehaviour="fit" verticalAlignment="visualCenter">
+				<Color r="131" g="102" b="51" a="255" />
+				<GradientColor enabled="false" />
+				<Shadow enabled="false" />
+				<Size x="20" y="20" />
+				<TextString>Please tell us what you think</TextString>
+			</Text>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="95" />
+				<OriginalSize width="640" height="706" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

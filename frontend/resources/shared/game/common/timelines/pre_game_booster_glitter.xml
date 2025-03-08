@@ -1,0 +1,11 @@
+<!DOCTYPE Timelines SYSTEM "../../../tools/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="2.0">
+		<Triggers>
+			<EffectTrigger time="0.1" name="PregameBoosterTutorialGlitterEFQ"/>
+		</Triggers>
+		<TimeControls>
+			<TimeJump time="1.95" jumpToTime="0.05"/>
+		</TimeControls>
+	</Timeline>
+</Timelines>

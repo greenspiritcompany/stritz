@@ -1,0 +1,628 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+  <SceneObject name="Episode" layerFlags="2">
+    <SceneObject name="DioramaModel">
+      <Model filename="shared/diorama/diorama01/episode02/models/episode02_base.ffm"/>
+      <Materials>
+        <Material parentMaterial="CommonMaterial"/>
+      </Materials>
+      <Translation x="0"/>
+      <SceneObject name="Particles">
+        <Effects>
+          <Effect name="Wisps" effectData="Wisps" play="true"/>
+        </Effects>
+      </SceneObject>
+      <SceneObject name="Particles200">
+        <Effects>
+          <Effect name="Wisps" effectData="Wisps" play="true"/>
+        </Effects>
+        <Translation z="-200"/>
+      </SceneObject>
+      <SceneObject name="Particles400">
+        <Effects>
+          <Effect name="Wisps" effectData="Wisps" play="true"/>
+        </Effects>
+        <Translation z="-400"/>
+      </SceneObject>
+      <SceneObject name="E02Path">
+        <Model filename="shared/diorama/diorama01/episode02/models/path/e02_path.ffm">
+          <Bound minZ="-700"/>
+        </Model>
+        <Materials>
+          <Material parentMaterial="PathMaterialAlpha"/>
+        </Materials>
+        <Translation x="0" y="0" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </SceneObject>
+      <SceneObject name="Episode02_Bearcoast_Ground">
+        <Model filename="shared/diorama/diorama01/episode02/models/base/episode02_base.ffm"/>
+        <Materials>
+          <Material parentMaterial="Episode2Material"/>
+        </Materials>
+        <Translation x="0" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+      </SceneObject>
+      <SceneObject name="Water_Border">
+        <Model filename="shared/diorama/diorama01/episode02/models/base/border.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="0" y="0" z="0"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1.000" y="1.000" z="1.000"/>
+      </SceneObject>
+      <SceneObject name="Plank_Bridge">
+        <Model filename="shared/diorama/diorama01/episode02/models/base/planks.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2Material"/>
+        </Materials>
+        <Translation x="0" y="0" z="0"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1.000" y="1.000" z="1.000"/>
+      </SceneObject>
+      <SceneObject name="Island_big">
+        <Model filename="shared/diorama/diorama01/episode02/models/base/island.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2Material"/>
+        </Materials>
+        <Translation x="0" y="0" z="0"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1.000" y="1.000" z="1.000"/>
+      </SceneObject>
+      <SceneObject name="Island_small">
+        <Model filename="shared/diorama/diorama01/episode02/models/base/island_small.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2Material"/>
+        </Materials>
+        <Translation x="549.5" y="-2" z="-118"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1" y="1" z="1"/>
+      </SceneObject>
+      <SceneObject name="Island_border01">
+        <Model filename="shared/diorama/diorama01/episode02/models/base/island_border.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="0" y="0" z="0"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1.000" y="1.000" z="1.000"/>
+      </SceneObject>
+      <SceneObject name="Island_border02">
+        <Model filename="shared/diorama/diorama01/episode02/models/base/island_border.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="260" y="3.5" z="-108.4"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="0.5" y="0.5" z="0.5"/>
+      </SceneObject>
+      <SceneObject name="Tree01">
+        <Interactable upEffect="diorama_tree"/>
+        <Model filename="shared/diorama/diorama01/episode02/models/trees/tree_one_candy.ffm">
+          <!--<Animations>
+						<Animation
+								filename="shared/diorama/diorama01/episode02/models/trees/tree_one_idle.ffa"
+								name="Idle" play="true" speed="1" loopCount="-1"/>
+					</Animations>-->
+        </Model>
+        <Animations>
+          <Animation animationData="interactable_v02_up" name="Up" layer="3" play="false" loopCount="0" speed="1.0"/>
+          <Animation animationData="interactable_v03_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.0"/>
+          <Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.0"/>
+          <Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.0"/>
+        </Animations>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="171.77" y="3" z="-252.6"/>
+        <Rotation x="-8.000" y="0.000" z="0.000"/>
+        <Scale x="-1" y="1" z="1"/>
+      </SceneObject>
+      <SceneObject name="Tree02">
+        <Model filename="shared/diorama/diorama01/episode02/models/trees/tree_one.ffm">
+          <!--<Animations>
+						<Animation
+								filename="shared/diorama/diorama01/episode02/models/trees/tree_one_idle.ffa"
+								name="Idle" play="true" speed="0.8" loopCount="-1"/>
+					</Animations>-->
+        </Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha">
+            <Color r="255" g="255" b="255" a="255"/>
+          </Material>
+        </Materials>
+        <Translation x="-110" y="3" z="-250"/>
+        <Rotation x="-8.000" y="0.000" z="0.000"/>
+        <Scale x="1.100" y="1.100" z="1.100"/>
+      </SceneObject>
+      <!-- speech bubble -->
+      <SceneObject name="SpeechBubbleEp02">
+        <Animations>
+          <Animation name="SpeechBubbleAppear" animationData="SpeechBubbleAppear" loopCount="0"/>
+          <Animation name="SpeechBubbleDisappear" animationData="SpeechBubbleDisappear" loopCount="0"/>
+        </Animations>
+        <SpeechBubble>
+          <Speech key="episode02.intro"/>
+          <Speech key="episode02.outro"/>
+        </SpeechBubble>
+        <!-- adjust the speech bubble position here -->
+        <Translation x="30.0" y="160.0" z="-170"/>
+        <Scale x="0.9" y="0.9" z="1.0"/>
+        <Import filename="shared/diorama/common/scenes/speech_bubble.xml"/>
+      </SceneObject>
+      <SceneObject name="Tree03">
+        <Interactable upEffect="diorama_tree"/>
+        <Model filename="shared/diorama/diorama01/episode02/models/trees/tree_two.ffm">
+          <!--<Animations>
+						<Animation
+								filename="shared/diorama/diorama01/episode02/models/trees/tree_two_idle.ffa"
+								name="Idle" play="true" speed="1.1" loopCount="-1"/>
+					</Animations>-->
+        </Model>
+        <Animations>
+          <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1.2"/>
+          <Animation animationData="interactable_v03_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.0"/>
+          <Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.0"/>
+          <Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.0"/>
+        </Animations>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="-242.45" y="1" z="-170"/>
+        <Rotation x="-8.000" y="0.000" z="0.000"/>
+        <Scale x="1.1" y="1.1" z="1.1"/>
+        <!-- episode character object -->
+        <SceneObject name="UnlockLevel7CameraTarget">
+          <Translation x="130" y="-325" z="-11"/>
+        </SceneObject>
+        <SceneObject name="UnlockLevel16CameraTarget">
+          <Translation x="130" y="-325" z="-11"/>
+        </SceneObject>
+        <SceneObject name="CharacterEp02">
+          <!-- position the episode character here -->
+          <Translation x="270" y="-48" z="-14"/>
+          <!-- episode character place holder -->
+          <SceneObject name="Monkeh">
+            <!-- rotate and scale the character place holder here -->
+            <Rotation x="0.0" y="0.0" z="0.0"/>
+            <Scale x="1.0" y="1.0" z="1.0"/>
+            <Model filename="shared/diorama/diorama01/episode02/models/monkey/monkey.ffm">
+              <Animations>
+                <Animation filename="shared/diorama/diorama01/episode02/models/monkey/swing.ffa" name="Swing" play="true" speed="1.0" loopCount="-1"/>
+                <Animation filename="shared/diorama/diorama01/episode02/models/monkey/talk_idle.ffa" name="TalkIdle" play="false" speed="1.0" loopCount="-1"/>
+                <Animation filename="shared/diorama/diorama01/episode02/models/monkey/talk.ffa" name="Talk" play="false" speed="1.0" loopCount="-1"/>
+              </Animations>
+            </Model>
+            <Materials>
+              <Material parentMaterial="Episode2MaterialAlpha"/>
+            </Materials>
+          </SceneObject>
+        </SceneObject>
+        <!-- end of episode character -->
+      </SceneObject>
+      <SceneObject name="Tree04">
+        <Interactable upEffect="diorama_tree"/>
+        <Model filename="shared/diorama/diorama01/episode02/models/trees/tree_one_candy.ffm">
+          <!--<Animations>
+						<Animation
+								filename="shared/diorama/diorama01/episode02/models/trees/tree_one_idle.ffa"
+								name="Idle" play="true" speed="0.7" loopCount="-1"/>
+					</Animations>-->
+        </Model>
+        <Animations>
+          <Animation animationData="interactable_v03_up" name="Up" layer="3" play="false" loopCount="0" speed="1.0"/>
+          <Animation animationData="interactable_v03_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.0"/>
+          <Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.0"/>
+          <Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.0"/>
+        </Animations>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha">
+            <Color r="255" g="255" b="255" a="255"/>
+          </Material>
+        </Materials>
+        <Translation x="-295" y="3" z="-267.9"/>
+        <Rotation x="-8.000" y="0.000" z="0.000"/>
+        <Scale x="1" y="1" z="1"/>
+      </SceneObject>
+      <!--BACKGROUND HILLS FROM RiGHT TO LEFT-->
+      <SceneObject name="Hill01">
+        <Model filename="shared/diorama/diorama01/episode02/models/hill/new_hill_2.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha">
+            <Color r="255" b="255" g="255" a="220"/>
+          </Material>
+        </Materials>
+        <Translation x="452" y="6" z="-348"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="0.45" y="0.55" z="0.835"/>
+      </SceneObject>
+      <SceneObject name="Hill02">
+        <Model filename="shared/diorama/diorama01/episode02/models/hill/new_hill_2.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha">
+            <Color r="255" b="255" g="255" a="255"/>
+          </Material>
+        </Materials>
+        <Translation x="330" y="10" z="-340"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="0.83" y="0.83" z="0.83"/>
+      </SceneObject>
+      <SceneObject name="Hill03">
+        <Model filename="shared/diorama/diorama01/episode02/models/hill/new_hill.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="200" y="47.720" z="-320.762"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1" y="1" z="1"/>
+      </SceneObject>
+      <SceneObject name="Hill04">
+        <Model filename="shared/diorama/diorama01/episode02/models/hill/new_hill.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="-85.855" y="57.847" z="-344.053"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1.215" y="1.215" z="1.215"/>
+      </SceneObject>
+      <SceneObject name="Hill05">
+        <Model filename="shared/diorama/diorama01/episode02/models/hill/new_hill.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="85" y="50.720" z="-339.762"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1.1" y="1.25" z="0.835"/>
+      </SceneObject>
+      <SceneObject name="Hill06">
+        <Model filename="shared/diorama/diorama01/episode02/models/hill/new_hill.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="-234.154" y="45.720" z="-317.762"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="0.835" y="0.835" z="0.835"/>
+      </SceneObject>
+      <SceneObject name="Hill07">
+        <Model filename="shared/diorama/diorama01/episode02/models/hill/new_hill.ffm">
+				</Model>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="-336" y="50" z="-342"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1.1" y="1.1" z="1.1"/>
+      </SceneObject>
+      <SceneObject name="Bush_05_Group">
+        <SceneObject name="Choco01">
+          <Interactable upEffect="diorama_bush"/>
+          <Model filename="shared/diorama/diorama01/episode02/models/bush/candybush01.ffm"/>
+          <Animations>
+            <Animation animationData="interactable_v02_up" name="Up" layer="3" play="false" loopCount="0" speed="1.2"/>
+            <Animation animationData="interactable_v02_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.2"/>
+            <Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.2"/>
+            <Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.2"/>
+          </Animations>
+          <Materials>
+            <Material parentMaterial="Episode2MaterialAlpha"/>
+          </Materials>
+        </SceneObject>
+        <Translation x="-310" y="40" z="-107"/>
+        <Rotation x="-10" y="0" z="1.3"/>
+        <Scale x="0.90" y="0.90" z="0.90"/>
+      </SceneObject>
+      <SceneObject name="Bush_03_Group">
+        <SceneObject name="Choco02">
+          <Interactable upEffect="diorama_bush"/>
+          <Model filename="shared/diorama/diorama01/episode02/models/bush/candybush02.ffm"/>
+          <Animations>
+            <Animation animationData="interactable_v02_up" name="Up" layer="3" play="false" loopCount="0" speed="1.2"/>
+            <Animation animationData="interactable_v02_up" name="Up2" layer="3" play="false" loopCount="0" speed="1.2"/>
+            <Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1.2"/>
+            <Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1.2"/>
+          </Animations>
+          <Materials>
+            <Material parentMaterial="Episode2MaterialAlpha"/>
+          </Materials>
+        </SceneObject>
+        <Translation x="178" y="49.8" z="-116.408"/>
+        <Rotation x="-10" y="0" z="0"/>
+        <Scale x="0.90" y="0.90" z="0.90"/>
+      </SceneObject>
+      <SceneObject name="Bush_01_Group">
+        <SceneObject name="Bush_01">
+          <Interactable upEffect="diorama_lollipop"/>
+          <Model filename="shared/diorama/diorama01/episode02/models/props/lollipop.ffm"/>
+          <Animations>
+            <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1"/>
+            <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1"/>
+            <Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1"/>
+            <Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1"/>
+          </Animations>
+          <Materials>
+            <Material parentMaterial="Episode2MaterialAlpha"/>
+          </Materials>
+        </SceneObject>
+        <Translation x="-202" y="65" z="-30"/>
+        <Rotation x="-10.000" y="0.000" z="0.000"/>
+        <Scale x="0.95" y="0.95" z="0.95"/>
+      </SceneObject>
+      <SceneObject name="lollipopRight">
+        <Interactable upEffect="diorama_lollipop"/>
+        <Model filename="shared/diorama/diorama01/episode02/models/props/lollipop_right.ffm"/>
+        <Animations>
+          <Animation animationData="interactable_v01_up" name="Up" layer="3" play="false" loopCount="0" speed="1"/>
+          <Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false" loopCount="0" speed="1"/>
+          <Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1"/>
+          <Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1"/>
+        </Animations>
+        <Materials>
+          <Material parentMaterial="Episode2MaterialAlpha"/>
+        </Materials>
+        <Translation x="352.986" y="49.584" z="-261"/>
+        <Rotation x="-10.000" y="0.000" z="0.000"/>
+        <Scale x="0.95" y="0.95" z="0.95"/>
+      </SceneObject>
+      <!--<SceneObject name="Bush_01_2_Group">
+												<SceneObject name="Bush_01">
+						<Interactable upEffect="diorama_bush"/>
+																<Model filename="shared/diorama/diorama01/episode02/models/bush/candybush01.ffm"/>
+															<Animations>
+							<Animation animationData="interactable_v02_up" name="Up" layer="3" play="false"
+									   loopCount="0" speed="1"/>
+							<Animation animationData="interactable_v02_up" name="Up2" layer="3" play="false"
+									   loopCount="0" speed="1"/>
+							<Animation animationData="interactable_out" name="Out" layer="2" play="false"
+									   loopCount="0" speed="1"/>
+							<Animation animationData="interactable_down" name="Down" layer="1" play="false"
+									   loopCount="0" speed="1"/>
+						</Animations>
+						<Materials>
+							<Material parentMaterial="Episode2MaterialAlpha"/>
+						</Materials>
+					</SceneObject>
+																			<Translation x="358" y="49" z="-261"/>
+					<Rotation x="-10.000" y="1.4" z="0.000"/>
+	<Scale x="0.90" y="0.90" z="0.90"/>
+										</SceneObject>-->
+      <SceneObject name="Bush_02_Group">
+        <SceneObject name="Bush_02">
+          <Interactable upEffect="diorama_bush"/>
+          <Model filename="shared/diorama/diorama01/episode02/models/bush/candybush01.ffm"/>
+          <Animations>
+            <Animation animationData="interactable_v02_up" name="Up" layer="3" play="false" loopCount="0" speed="1"/>
+            <Animation animationData="interactable_v02_up" name="Up2" layer="3" play="false" loopCount="0" speed="1"/>
+            <Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1"/>
+            <Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1"/>
+          </Animations>
+          <Materials>
+            <Material parentMaterial="Episode2MaterialAlpha"/>
+          </Materials>
+        </SceneObject>
+        <Translation x="-138.013" y="49.881" z="-209.456"/>
+        <Rotation x="-9.005" y="0.000" z="0.000"/>
+        <Scale x="0.90" y="0.90" z="0.90"/>
+      </SceneObject>
+      <SceneObject name="Bush_04_Group">
+        <SceneObject name="Bush_04">
+          <Interactable upEffect="diorama_bush"/>
+          <Model filename="shared/diorama/diorama01/episode02/models/bush/candybush01.ffm"/>
+          <Animations>
+            <Animation animationData="interactable_v02_up" name="Up" layer="3" play="false" loopCount="0" speed="1"/>
+            <Animation animationData="interactable_v02_up" name="Up2" layer="3" play="false" loopCount="0" speed="1"/>
+            <Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0" speed="1"/>
+            <Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0" speed="1"/>
+          </Animations>
+          <Materials>
+            <Material parentMaterial="Episode2MaterialAlpha"/>
+          </Materials>
+        </SceneObject>
+        <Translation x="122" y="49.111" z="-210"/>
+        <Rotation x="-12.255" y="0.000" z="0.000"/>
+        <Scale x="0.90" y="0.90" z="0.90"/>
+      </SceneObject>
+      <!--<SceneObject name="Pipes">
+							  <SceneObject name="Pipe_01">
+				  -->
+      <!--<Interactable upEffect="diorama_bush"/>-->
+      <!--
+                                      <Model filename="shared/diorama/diorama01/episode02/models/props/pipe_big_back.ffm"/>
+                                    -->
+      <!--<Animations>
+                    <Animation animationData="interactable_v02_up" name="Up" layer="3" play="false"
+												   loopCount="0" speed="1"/>
+                    <Animation animationData="interactable_v02_up" name="Up2" layer="3" play="false"
+												   loopCount="0" speed="1"/>
+                    <Animation animationData="interactable_out" name="Out" layer="2" play="false"
+												   loopCount="0" speed="1"/>
+                    <Animation animationData="interactable_down" name="Down" layer="1" play="false"
+												   loopCount="0" speed="1"/>
+                  </Animations>-->
+      <!--
+                  <Materials>
+                    <Material parentMaterial="Episode2MaterialAlpha"/>
+                  </Materials>
+                </SceneObject>
+                                            <Translation x="520" y="220" z="-315"/>
+                <Rotation x="-10.000" y="1.4" z="0.000"/>
+                <Scale x="0.95" y="0.95" z="0.95"/>
+                          </SceneObject>-->
+      <SceneObject name="Levels2">
+        <!-- Generated from Maya -->
+        <SceneObject name="Level6">
+          <Translation x="-347.312" y="60.980" z="21.321"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="61.927" y="5.870" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="61.927" y="5.870" z="1.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level7">
+          <Translation x="-270.545" y="60.980" z="164.761"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="61.928" y="5.870" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="61.928" y="5.870" z="1.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level8">
+          <Translation x="-194.549" y="61.261" z="283.137"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="61.927" y="5.869" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="61.927" y="5.869" z="1.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level9">
+          <Translation x="-118.618" y="61.061" z="166.700"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="61.928" y="5.870" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="61.928" y="5.870" z="1.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level10">
+          <Translation x="-36.766" y="63.197" z="21.261"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="61.928" y="5.869" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="61.928" y="5.869" z="1.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level11">
+          <Translation x="46.901" y="62.914" z="169.343"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="61.928" y="5.869" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="61.928" y="5.869" z="1.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level12">
+          <Translation x="122.760" y="62.745" z="286.634"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="61.928" y="5.869" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="61.928" y="5.869" z="1.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level13">
+          <Translation x="200.621" y="62.802" z="166.602"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="61.928" y="5.869" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="61.928" y="5.869" z="1.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level14">
+          <Translation x="266.577" y="62.795" z="21.226"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="61.928" y="5.870" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="61.928" y="5.870" z="1.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level15">
+          <Translation x="420.008" y="64.792" z="10.762"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="61.928" y="5.869" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="61.928" y="5.869" z="1.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+      </SceneObject>
+    </SceneObject>
+  </SceneObject>
+</Scene>

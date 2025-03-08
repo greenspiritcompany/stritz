@@ -1,0 +1,38 @@
+<Timelines>
+<Timeline startTime="0" endTime="13">
+	<Animate time="0" target="CharacterEp60">
+		<Translation time="2.013" x="383" y="-8" z="-119" />
+		<Translation time="7.830" x="-151" y="-8" z="-119" />
+	</Animate>
+	<Animate time="0" target="Tiffi">
+		<Translation time="0.970" x="-0.500" y="-20" z="-0.600" />
+		<Translation time="2.692" x="-0.500" y="-50" z="-0.600" />
+		<Translation time="3.437" x="-0.500" y="-250" z="-0.600" />
+	</Animate>
+	<Animate time="0" target="Diorama">
+		<Translation time="0.005" />
+		<Translation time="0.486" x="-30" />
+		<Translation time="4.133" x="-30" />
+		<Translation time="7.417" x="650" />
+		<Translation time="11.908" x="650" />
+		<Translation time="12.428" x="60" />
+		<Translation time="12.653" />
+	</Animate>
+	<Animate time="0" target="SpeechBubbleEp60">
+		<Translation time="0.001" x="0" />
+		<Translation time="0.312" x="-150" y="20" z="-200" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="8.210" targetName="SpeechBubbleEp60" animationName="SpeechBubbleAppear" />
+		<AnimationTrigger time="10.730" targetName="SpeechBubbleEp60" animationName="SpeechBubbleDisappear" />
+		<AnimationTrigger time="3.376" targetName="CharacterEp60" animationName="Walk" crossFade="0.600" />
+		<AnimationTrigger time="7.672" targetName="CharacterEp60" animationName="Talk" crossFade="0.500" />
+		<AnimationTrigger time="9.580" targetName="CharacterEp60" animationName="Idle" crossFade="1" />
+		<AnimationTrigger time="0.081" targetName="Tiffi" animationName="Tiffi_Idle" />
+		<AnimationTrigger time="0.808" targetName="Tiffi" animationName="Tiffi_Walk" />
+		<!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+		<EffectTrigger name="character_ep60" time="8.192" />
+		<CustomTrigger time="0" name="SpeechBubbleText" data="SpeechBubbleEp60.1" />
+	</Triggers>
+</Timeline>
+</Timelines>

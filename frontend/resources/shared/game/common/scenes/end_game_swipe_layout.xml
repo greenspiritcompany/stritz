@@ -1,0 +1,118 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../dtd/layout.dtd">
+<Layout>
+
+	<Object sceneObject="SwipeRoot">
+		<Landscape visible="true">
+			<Translation>
+				<X percentage="50.0"/>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="1024" height="256"/>
+			</Size>
+		</Landscape>
+		<Portrait visible="true">
+			<Translation>
+				<X percentage="50.0"/>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="768" height="256"/>
+			</Size>
+		</Portrait>
+	</Object>
+
+	<Object sceneObject="CloseButtonGroupPortrait">
+		<Landscape visible="false"/>
+		<Portrait visible="true">
+			<Translation>
+				<X percentage="50.0"/>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="768" height="256"/>
+			</Size>
+		</Portrait>
+	</Object>
+	<Object sceneObject="CloseButtonGroupLandscape">
+		<Landscape visible="true">
+			<Translation>
+				<X percentage="50.0"/>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="1024" height="256"/>
+			</Size>
+		</Landscape>
+		<Portrait visible="false"/>
+	</Object>
+
+    <Object sceneObject="KimmyOopsPortrait">
+		<Landscape visible="false"/>
+		<Portrait visible="true">
+			<Translation>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="768" height="256"/>
+			</Size>
+		</Portrait>
+	</Object>
+
+	<Object sceneObject="KimmyOopsLandscape">
+		<Landscape visible="true">
+			<Translation>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="1024" height="256"/>
+			</Size>
+		</Landscape>
+		<Portrait visible="false"/>
+	</Object>
+
+	<Object sceneObject="NinjaKimmyOopsPortrait">
+		<Landscape visible="false"/>
+		<Portrait visible="true">
+			<Translation>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="768" height="256"/>
+			</Size>
+		</Portrait>
+	</Object>
+
+	<Object sceneObject="NinjaKimmyOopsLandscape">
+		<Landscape visible="true">
+			<Translation>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Width percentage="100"/>
+				<OriginalSize width="1024" height="256"/>
+			</Size>
+		</Landscape>
+		<Portrait visible="false"/>
+	</Object>
+
+    <Object sceneObject="SpecialOfferLandscape">
+        <Landscape visible="true"/>
+        <Portrait visible="false"/>
+    </Object>
+
+    <Object sceneObject="SpecialOfferPortrait">
+        <Landscape visible="false"/>
+        <Portrait visible="true"/>
+    </Object>
+
+
+</Layout>

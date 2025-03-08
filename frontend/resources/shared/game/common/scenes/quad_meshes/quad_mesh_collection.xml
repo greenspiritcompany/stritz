@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/scenes/quad_meshes/normal_candy_sprites.xml"/>
+	<Import filename="shared/game/common/scenes/quad_meshes/striped_candy_sprites.xml"/>
+	<Import filename="shared/game/common/scenes/quad_meshes/wrapped_candy_sprites.xml"/>
+	<Import filename="shared/game/common/scenes/quad_meshes/fish_candy_sprites.xml"/>
+	<Import filename="shared/game/common/scenes/quad_meshes/coloring_candy_sprites.xml"/>
+	<Import filename="shared/game/common/scenes/quad_meshes/liqswirl_candy_sprites.xml"/>
+</Scene>

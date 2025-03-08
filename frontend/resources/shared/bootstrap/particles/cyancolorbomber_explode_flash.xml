@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE ParticleEffect SYSTEM "../../dtd/particle_effect.dtd">
+<ParticleEffect space="Local" timeToEmit="0.12" maxParticles="3" name="CyanColorbomberExplodeFlash">
+	<Texture filename="shared/bootstrap/particles/tex/strong_light2.png" numFramesX="1" numFramesY="1" blend="Add"/>
+	<DirectionalForce x="0.0" y="0.0"/>
+
+	<Emitter emissionRate="0.0" angle="360" spread="360.0">
+		<SpawnArea width="2.0" height="2.0"/>
+	</Emitter>
+
+	<Velocity min="0.0" max="0.0"/>
+	<Size>
+		<Min x="404.0" y="404.0"/>
+		<Max x="404.0" y="404.0"/>
+	</Size>
+	<TimeToLive min="0.2" max="0.2"/>
+	<Dampening min="0.8" max="0.9"/>
+	<Rotation min="0" max="0"/>
+	<RotationSpeed min="0" max="0"/>
+	<SizeChange>
+		<Min x="00.0" y="00.0"/>
+		<Max x="00.0" y="00.0"/>
+	</SizeChange>
+	<StartColor r="255.0" g="255.0" b="255.0" a="155.0"/>
+	<EndColor r="255.0" g="255.0" b="250.0" a="0.0"/>
+	<TextureFrame startFrame="0" numTextureAnimationFrames="1" textureAnimationSpeed="10"/>
+</ParticleEffect>

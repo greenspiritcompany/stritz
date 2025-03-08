@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<Material name="AddMaterial">
+			<!--<Blend enabled="true" blendFuncDestinationFactor="One"/>-->
+			<!--<Depth enabled="true" writeMask="false"/>-->
+			<!--<Shader program="TextureColor"/>-->
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/electricity.png"/>
+			</Textures>
+		</Material>
+	</Materials>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="CandyConeStopHelper1" layerFlags="512">
+			<Translation y="75"/>
+			<Scale x="0.33"/>
+		</SceneObject>
+		<SceneObject name="CandyConeStopHelper2" layerFlags="512">
+			<Translation y="150"/>
+			<Scale x="0.66"/>
+		</SceneObject>
+		<SceneObject name="CandyConeStopHelper3" layerFlags="512">
+			<Translation y="225"/>
+			<Scale x="1.0"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

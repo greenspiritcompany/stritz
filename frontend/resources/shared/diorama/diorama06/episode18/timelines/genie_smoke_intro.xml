@@ -1,0 +1,23 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+  <Timeline startTime="0.0" endTime="6.0">
+    <Animate target="Episode18Character">
+      <Hide/>
+      <Show time="0.3"/>
+    </Animate>
+
+    <Triggers>
+
+      <EffectTrigger name="GenieSmokeEFQ" targetName="GenieChar" time="0.2">
+        <Offset x="-60" y="90" z="10"/>
+      </EffectTrigger>
+
+      <EffectTrigger name="character_yeti" time="0.8"/>
+      <CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp18.0"/>
+      <AnimationTrigger time="0.7" targetName="SpeechBubbleEp18" animationName="SpeechBubbleAppear"/>
+      <AnimationTrigger time="5.0" targetName="SpeechBubbleEp18" animationName="SpeechBubbleDisappear"/>
+      <AnimationTrigger time="0.3" targetName="GenieChar" animationName="Released" crossFade="0.0"/>
+      <AnimationTrigger time="3.0" targetName="GenieChar" animationName="Idle" crossFade="0.6"/>
+    </Triggers>
+  </Timeline>
+</Timelines>

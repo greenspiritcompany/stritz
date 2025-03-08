@@ -1,0 +1,31 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+
+
+	<Timeline startTime="0.0" endTime="4.0">
+
+
+		<Triggers>
+
+			<EffectTrigger name="CreamSplashEffect_left" targetName="Small_Crab01" time="0.20">
+				<Offset x="-20" z="-10"/>
+			</EffectTrigger>
+
+			<EffectTrigger name="CreamSplashEffect_right" targetName="Small_Crab01" time="0.30">
+				<Offset x="20" z="-10"/>
+			</EffectTrigger>
+
+			<EffectTrigger name="CreamSplashEffect_center" targetName="Small_Crab01" time="0.20">
+				<Offset x="0" z="-10"/>
+			</EffectTrigger>
+
+			<EffectTrigger name="diorama_strawberry" targetName="Small_Crab07" time="0.20">
+				<Offset x="0" z="-10"/>
+			</EffectTrigger>
+
+		</Triggers>
+		<TimeControls>
+			<!--<Loop time="1.49" jumpToTime="0.0"/>-->
+		</TimeControls>
+	</Timeline>
+</Timelines>

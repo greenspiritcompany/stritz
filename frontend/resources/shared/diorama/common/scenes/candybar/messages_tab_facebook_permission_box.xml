@@ -1,0 +1,56 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="MessageBox">
+        <Animation name="OnDisappear" animationData="MessageCenterBoxSlideOut" loopCount="0"/>
+		<SceneObject name="Background">
+			<Translation x="-6"/>
+			<SceneObject name="BackgroundPlate">
+				<Panel filename="shared/diorama/common/tex/gui_elements/message_box.png">
+					<Insets bottom="21" left="21" right="21" top="21"/>
+					<Size height="160" width="510"/>
+					<Pivot anchor="center"/>
+				</Panel>
+			</SceneObject>
+			<SceneObject name="BoxHeader">
+				<Translation y="-30" x="-156"/>
+				<Text canBreakWords="false" font="Typewriter" key="allow_facebook_friends" alignment="left"
+					  maxWidth="390" maxHeight="70" verticalAlignment="center" overflowBehaviour="fit">
+					<Color r="1" g="137" b="65" a="255"/>
+					<Size x="18" y="18"/>
+				</Text>
+			</SceneObject>
+
+            <SceneObject name="FacebookIcon">
+                <Translation x="-205" y="-35"/>
+                <Sprite filename="shared/diorama/common/tex/gui_elements/fb_logo_border.png">
+                    <Pivot anchor="center"/>
+                </Sprite>
+            </SceneObject>
+			
+			<SceneObject name="PermissionButton" class="Button">
+				<Scale xyz="0.8"/>
+				<Translation x="0" y="35"/>
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png">
+					<Pivot anchor="center"/><Insets left="54" top="48" right="54" bottom="59"/>
+					<Size width="256" height="108"/>
+				</Panel>
+                <Animation name="Idle" animationData="Idle" layer="1" play="true"/>
+                <Animation name="OnPress" animationData="OnPress" loopCount="0"/>
+                <Animation name="OnRelease" animationData="OnRelease" loopCount="0"/>
+
+				<SceneObject>
+					<Text canBreakWords="false" font="Banana" key="button.allow"
+						  alignment="center" verticalAlignment="visualCenter" maxWidth="180" maxHeight="40" overflowBehaviour="fit">
+						<Size x="28" y="28"/>
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25"/>
+							<Offset x="0" y="6"/>
+						</Shadow>
+					</Text>
+					<Translation x="-2" y="-6"/>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

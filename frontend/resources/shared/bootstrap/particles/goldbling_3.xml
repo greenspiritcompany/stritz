@@ -1,0 +1,29 @@
+<ParticleEffect maxParticles="3" space="Local" timeToEmit="60" name="GoldBling3PFX">
+<Dampening max="0.800" min="0.800" />
+<DirectionalForce x="0" y="10" />
+<Emitter emissionRate="0" spread="360" angle="0">
+	<SpawnArea width="0" depth="0" height="0" />
+</Emitter>
+<Rotation max="180" min="-180" />
+<RotationSpeed max="-300" min="-200" />
+<Size>
+	<Max x="16" y="128" />
+	<Min x="8" y="128" />
+</Size>
+<SizeChange>
+	<Max x="30" y="600" />
+	<Min x="30" y="30" />
+</SizeChange>
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/light64.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="0.200" min="0.150" />
+<Velocity max="0" min="0" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color b="255" r="255" g="255" a="255" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color b="102" r="255" g="255" a="0" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

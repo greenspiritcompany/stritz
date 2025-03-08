@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Scene" visibility="inherit" layerFlags="128">
+		<SceneObject name="Light" visibility="inherit">
+			<Sprite filename="shared/game/common/tex/gamegrid/direction_tile.png">
+				<Pivot anchor="top"/>
+			</Sprite>
+			<Translation z="400"/>
+			<Materials>
+				<Material>
+					<!--<Cull enabled="true" face="back"/>-->
+					<Blend enabled="true" blendFuncDestinationFactor="One"/>
+					<Depth enabled="true" writeMask="false"/>
+					<!--<AlphaTest functionValue="255" enabled="false"/>-->
+				</Material>
+			</Materials>
+		</SceneObject>
+	</SceneObject>
+</Scene>

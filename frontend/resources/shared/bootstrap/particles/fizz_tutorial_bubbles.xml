@@ -1,0 +1,25 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="12" space="World" timeToEmit="0.500" name="FizzTutorialBubblesPFX" startDelay="0">
+    <Dampening max="0" min="0"/>
+    <DirectionalForce x="0"/>
+    <Emitter emissionRate="0.030" spread="0" angle="0">
+        <SpawnArea width="15" depth="0" height="15"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="50"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="30" y="30"/>
+        <Min x="10" y="10"/>
+    </Size>
+    <SizeChange>
+        <Max x="-30" y="-30"/>
+        <Min x="-20" y="-20"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/fizz_bubble.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.800" min="0.600"/>
+    <CentrifugalForce min="0" max="0"/>
+    <Velocity min="0" max="0"/>
+</ParticleEffect>

@@ -1,0 +1,108 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+
+	<!-- Here we go! -->
+	<Timeline startTime="0.0" endTime="1.75">
+
+		<!-- Init hides -->
+		<Animate target="ExclSoda">
+			<Hide/>
+		</Animate>
+		<Animate target="ExclSodaBlurred">
+			<Hide/>
+		</Animate>
+		<Animate target="ExclCrush">
+			<Hide/>
+		</Animate>
+		<Animate target="ExclCrushBlurred">
+			<Hide/>
+		</Animate>
+
+		<!-- Blurred "Soda" text sprite -->
+		<Animate target="ExclSodaBlurred" time="0.0">
+			<Show/>
+			<Color r="255" g="255" b="255" a="255" time="0"/>
+			<Color r="255" g="255" b="255" a="255" time="0.2"/>
+			<Color r="255" g="255" b="255" a="0" time="0.3"/>
+
+			<Color r="255" g="255" b="255" a="0" time="1.2"/>
+			<Color r="255" g="255" b="255" a="255" time="1.3"/>
+
+			<Scale time="0" y="-2.1" x="2.1"/>
+			<!--<Scale time="0" y="-1" x="1.2"/>-->
+			<!--<Scale time="0.35" y="-2" x="2"/>-->
+
+			<!--<Scale time="1.8" y="-2" x="2"/>-->
+			<!--<Scale time="1.9" y="-2" x="2.1"/>-->
+			<!--<Scale time="2.2" y="0" x="0.5"/>-->
+		</Animate>
+
+		<!-- "Soda" text sprite -->
+		<Animate target="ExclSoda" time="0.0">
+			<Show/>
+			<Color r="255" g="255" b="255" a="0" time="0"/>
+			<Color r="255" g="255" b="255" a="0" time="0.1"/>
+			<Color r="255" g="255" b="255" a="255" time="0.2"/>
+
+			<Color r="255" g="255" b="255" a="255" time="1.3"/>
+			<Color r="255" g="255" b="255" a="0" time="1.4"/>
+
+			<Scale time="0" y="-1" x="1"/>
+			<!--<Scale time="0" y="-0.5" x="0.525"/>-->
+			<!--<Scale time="0.35" y="-1" x="1"/>-->
+
+			<!--<Scale time="1.8" y="-1" x="1"/>-->
+			<!--<Scale time="1.9" y="-1" x="1.05"/>-->
+			<!--<Scale time="2.2" y="0" x="0.25"/>-->
+		</Animate>
+
+		<!-- Blurred "Crush" text sprite -->
+		<Animate target="ExclCrushBlurred" time="0.25">
+			<Show/>
+			<Color r="255" g="255" b="255" a="255" time="0"/>
+			<Color r="255" g="255" b="255" a="255" time="0.2"/>
+			<Color r="255" g="255" b="255" a="0" time="0.3"/>
+
+			<Color r="255" g="255" b="255" a="0" time="1.2"/>
+			<Color r="255" g="255" b="255" a="255" time="1.3"/>
+
+			<Scale time="0" y="-2.1" x="2.1"/>
+			<!--<Scale time="0" y="-1" x="1.2"/>-->
+			<!--<Scale time="0.6" y="-2" x="2"/>-->
+
+			<!--<Scale time="1.9" y="-2" x="2"/>-->
+			<!--<Scale time="1.95" y="-2" x="2.1"/>-->
+			<!--<Scale time="2.3" y="-1" x="1.05"/>-->
+		</Animate>
+
+		<!-- "Crush" text sprite -->
+		<Animate target="ExclCrush" time="0.25">
+			<Show/>
+			<Color r="255" g="255" b="255" a="0" time="0"/>
+			<Color r="255" g="255" b="255" a="0" time="0.1"/>
+			<Color r="255" g="255" b="255" a="255" time="0.2"/>
+
+			<Color r="255" g="255" b="255" a="255" time="1.3"/>
+			<Color r="255" g="255" b="255" a="0" time="1.4"/>
+
+			<Scale time="0" y="-1" x="1"/>
+			<!--<Scale time="0" y="-0.5" x="0.525"/>-->
+			<!--<Scale time="0.6" y="-1" x="1"/>-->
+
+			<!--<Scale time="1.9" y="-1" x="1"/>-->
+			<!--<Scale time="1.95" y="-1" x="1.05"/>-->
+			<!--<Scale time="2.3" y="-0.5" x="0.525"/>-->
+		</Animate>
+
+		<Triggers>
+			<!-- Sound -->
+			<EffectTrigger name="SugarCrushVoiceSFQ" time="0.0"/>
+
+			<!-- Scene animations -->
+			<AnimationTrigger targetName="SugarTextGroup" animationName="SwipeBy" time="0.0"/>
+			<AnimationTrigger targetName="CrushTextGroup" animationName="SwipeBy" time="0.25"/>
+
+		</Triggers>
+
+	</Timeline>
+</Timelines>

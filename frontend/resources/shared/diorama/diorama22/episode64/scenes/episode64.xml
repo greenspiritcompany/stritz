@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="Episode64Material">
+		<Cull enabled="false" face="back" />
+		<Texture filename="shared/diorama/diorama22/episode64/tex/episode64_material.png" />
+	</Material>
+	<Material name="Episode64MaterialAlpha" parentMaterial="Episode64Material">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode64PathMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode64PathMaterialAlpha" parentMaterial="Episode64PathMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<Material name="CloudMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/clouds.png" wrap="repeat" />
+		<Blend enabled="true" />
+		<Depth enabled="true" writeMask="true" />
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="Episode64BackdropMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/diorama22/episode64/tex/episode64_material.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode64BackdropMaterialAlpha" parentMaterial="Episode64BackdropMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<Material name="OceanMaterial">
+		<Texture filename="shared/diorama/common/tex/soda_ocean.png" />
+		<Blend enabled="true" />
+		<Depth enabled="true" />
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<SceneObject name="DioramaModel">
+			<Translation x="-1900" />
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Import filename="shared/diorama/diorama22/episode64/scenes/episode64_levelpins.xml" />
+			<!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<!--ADD PATH SHADOW - ADD YOUR -->
+			<!--ASSET SHADOWS-->
+			<!--	PORTAL BACK	-->
+			<!--
+				SPEECHBUBBLE
+			-->
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<!-- DIORAMA ASSETS -->
+			<!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+
+
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+			<SceneObject name="E64Path">
+				<Model filename="shared/diorama/diorama22/episode64/models/path/episode64_path.ffm">
+					<Bound minZ="-600" />
+				</Model>
+				<Material parentMaterial="Episode64PathMaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E64PathShadow">
+				<Model filename="shared/diorama/diorama22/episode64/models/path/path_shadow.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="Episode64MaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E64EndSign">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm" />
+				<Material parentMaterial="Under_Construction_Icon" />
+				<Translation x="855.171" y="84" z="92.043" />
+				<Rotation y="0" z="0" x="-35" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="AssetShadows">
+				<Model filename="shared/diorama/diorama22/episode64/models/asset_shadow.ffm">
+					<Bound minZ="-1600" />
+				</Model>
+				<Material parentMaterial="Episode64MaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Rotation x="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="PortalBackGroup">
+				<Translation x="-170" y="-40" z="-15" />
+				<SceneObject name="diorama_link_previous">
+					<Model filename="shared/diorama/common/models/portal/portal.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="-840" y="135" z="-70" />
+					<Rotation x="0" y="50" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_portal_shadow">
+					<Model filename="shared/diorama/common/models/portal/portal_shadow.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="-835" y="150" z="-50" />
+					<Rotation x="0" y="50" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_link_previous_pin">
+					<Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+						<Animation filename="shared/diorama/common/models/portal/pin_idle.ffa" loopCount="-1" name="idlePinEmil" play="true" speed="1" />
+					</Model>
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="-806" y="65" z="-20" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Particles">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-200" />
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-400" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1062CameraTarget">
+				<Translation x="-430.160" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1075CameraTarget">
+				<Translation x="-430.160" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="ep64_fish">
+				<Translation x="28.196" y="53.037" z="-374.563" />
+				<Animation name="fish_animation1" animationData="fish_animation1" speed="0.120" play="true" />
+				<Model filename="shared/diorama/diorama22/episode64/models/ep64_fish.ffm" />
+				<Material parentMaterial="OceanMaterial" />
+				<Scale y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="ep64_fish3">
+				<Translation x="28.196" y="53.037" z="-374.563" />
+				<Animation animationData="fish_animation1" speed="0.130" play="true" />
+				<Model filename="shared/diorama/diorama22/episode64/models/ep64_fish.ffm" />
+				<Material parentMaterial="OceanMaterial" />
+				<Scale y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="ep64_fish4">
+				<Translation x="28.196" y="53.037" z="-374.563" />
+				<Animation animationData="fish_animation1" speed="0.130" direction="backwards" play="true" />
+				<Model filename="shared/diorama/diorama22/episode64/models/ep64_fish.ffm" />
+				<Material parentMaterial="OceanMaterial" />
+				<Scale x="-1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="ep64_fish5">
+				<Translation x="28.196" y="53.037" z="-374.563" />
+				<Animation animationData="fish_animation1" speed="0.120" direction="backwards" play="true" />
+				<Model filename="shared/diorama/diorama22/episode64/models/ep64_fish.ffm" />
+				<Material parentMaterial="OceanMaterial" />
+				<Scale x="-1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="episode64_Interactable_Group">
+				<SceneObject name="ep64_asset_small_rock">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.500" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_small_rock.ffm" />
+					<Rotation x="-20" y="0" z="0" />
+					<Translation x="862.053" y="-38.531" z="352.263" />
+					<Scale x="0.911" y="0.939" z="0.924" />
+				</SceneObject>
+				<SceneObject name="ep64_asset_chest">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.500" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_chest.ffm" />
+					<Rotation x="-10" y="0" z="0" />
+					<Translation x="296.505" y="-16.436" z="-321.104" />
+				</SceneObject>
+				<SceneObject name="ep64_asset_medium_rock">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.600" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_medium_rock.ffm" />
+					<Rotation x="-10" y="0" z="0" />
+					<Translation x="-571.369" y="-21.586" z="-305.298" />
+				</SceneObject>
+				<SceneObject name="ep64_asset_tall_rock">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.500" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_tall_rock.ffm" />
+					<Rotation x="-15" y="0" z="0" />
+					<Translation x="-1019.385" y="-53.539" z="-193.244" />
+				</SceneObject>
+				<SceneObject name="ep64_asset_seaweed">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.600" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_seaweed.ffm" />
+					<Rotation x="-20" y="0" z="0" />
+					<Translation z="342.278" y="-22.228" x="-1077.773" />
+				</SceneObject>
+				<SceneObject name="ep64_asset_big_rock" editorEntityId="71">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.600" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_big_rock.ffm" />
+					<Rotation x="-15" y="0" z="0" />
+					<Translation x="671.809" y="-25.426" z="-197.139" />
+					<Scale x="0.982" y="0.992" z="1" />
+				</SceneObject>
+				<SceneObject name="ep64_asset_seaweed2">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.500" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_seaweed.ffm" />
+					<Rotation y="0" z="0" x="-15" />
+					<Translation x="-371.961" y="-22.228" z="-186.446" />
+				</SceneObject>
+				<SceneObject name="ep64_asset_seaweed3">
+					<Animation animationData="Idle" layer="4" loopCount="-1" name="Idle" play="true" speed="0.600" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Interactable upEffect="diorama_donut" />
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/interactable/ep64_asset_seaweed.ffm" />
+					<Rotation x="-20" y="0" z="0" />
+					<Translation x="333.661" y="-22.228" z="342.278" />
+				</SceneObject>
+				<SceneObject name="bg_seaweed_fade">
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/bg_seaweed_fade.ffm" />
+					<Rotation x="-5" y="0" z="0" />
+					<Translation x="-883.356" y="40.444" z="-343.326" />
+				</SceneObject>
+				<SceneObject name="bg_seaweed_fade2">
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/bg_seaweed_fade.ffm" />
+					<Rotation y="0" z="0" x="-5" />
+					<Translation x="496.312" y="25.357" z="-345.413" />
+				</SceneObject>
+				<SceneObject name="bg_seaweed_fade3">
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/bg_seaweed_fade.ffm" />
+					<Rotation y="0" z="0" x="-5" />
+					<Translation x="-229.193" y="25.357" z="-345.413" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Episode64_Backdrop" editorEntityId="181">
+				<Translation x="0" y="0" z="0" />
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<SceneObject name="Episode64_Diorama_Sky" editorEntityId="182">
+					<Model filename="shared/diorama/diorama22/episode64/models/episode64_diorama_sky.ffm" />
+					<Material parentMaterial="Episode64BackdropMaterial" />
+					<Translation x="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="Episode64_Ground" editorEntityId="183">
+					<Model filename="shared/diorama/diorama22/episode64/models/episode64_ground.ffm" />
+					<Material parentMaterial="Episode64Material" />
+					<Translation x="0" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Episode64Character">
+				<SceneObject name="CharacterEp64" editorEntityId="180">
+					<Model filename="shared/diorama/diorama22/episode64/models/character/episode64_character.ffm">
+						<Bound maxZ="16" minX="-140" maxX="140" minY="0" maxY="367" minZ="0" />
+						<Animation filename="shared/diorama/diorama22/episode64/models/character/episode64_character_idle.ffa" name="Idle" speed="2" play="true" />
+						<Animation name="Talk" filename="shared/diorama/diorama22/episode64/models/character/episode64_character_talk.ffa" />
+					</Model>
+					<Translation x="-103.728" y="51.757" z="-40.501" />
+					<Material parentMaterial="Episode64MaterialAlpha" />
+					<Rotation x="-15" y="0" z="0" />
+					<Scale x="0.815" y="0.815" z="0.815" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="SpeechBubbleEp64">
+			<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear" />
+			<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear" />
+			<SpeechBubble>
+				<Speech key="episode64.intro" />
+				<Speech key="episode64.outro" />
+			</SpeechBubble>
+			<Translation x="-2102.815" y="125" z="-136.171" />
+			<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+		</SceneObject>
+		<SceneObject name="episode64_GodRays">
+			<Model filename="shared/diorama/common/models/effects/god_rays.ffm">
+				<Animation loopCount="-1" filename="shared/diorama/common/models/effects/god_rays.ffa" speed="1.450" name="Idle" play="true" />
+			</Model>
+			<Material parentMaterial="CloudMaterial">
+				<Blend enabled="true" />
+				<Depth enabled="true" />
+			</Material>
+			<Translation x="-2023.573" y="1" z="-53.977" />
+			<Rotation x="0" y="0" z="0" />
+			<Scale x="1" y="1.400" z="1" />
+		</SceneObject>
+		<SceneObject name="soda_ocean" editorEntityId="185">
+			<Model filename="shared/diorama/diorama22/episode64/models/soda_ocean.ffm">
+				<Animation filename="shared/diorama/diorama22/episode64/models/soda_ocean.ffa" name="soda_ocean" play="true" speed="0.400" />
+				<Bound maxZ="-1000" />
+			</Model>
+			<Material parentMaterial="OceanMaterial" />
+			<Translation x="-1849.764" y="-85" z="0" />
+			<Rotation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+		</SceneObject>
+		<SceneObject name="ep64Bubbles" editorEntityId="187">
+			<Translation x="-2176.803" y="47.232" z="-336.457" />
+			<Rotation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+			<Effect effectData="ep64Bubbles" play="true" name="ep64Bubbles" />
+		</SceneObject>
+		<SceneObject name="soda_ocean2" editorEntityId="185">
+			<Model filename="shared/diorama/diorama22/episode64/models/soda_ocean.ffm">
+				<Animation filename="shared/diorama/diorama22/episode64/models/soda_ocean.ffa" speed="0.400" name="soda_ocean" play="true" />
+				<Bound maxZ="-1000" />
+			</Model>
+			<Material parentMaterial="OceanMaterial" />
+			<Translation x="600.236" y="-85" z="0" />
+			<Rotation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+		</SceneObject>
+		<SceneObject name="soda_ocean3" editorEntityId="185">
+			<Model filename="shared/diorama/diorama22/episode64/models/soda_ocean.ffm">
+				<Animation filename="shared/diorama/diorama22/episode64/models/soda_ocean.ffa" speed="0.400" name="soda_ocean" play="true" />
+				<Bound maxZ="-1000" />
+			</Model>
+			<Material parentMaterial="OceanMaterial" />
+			<Translation x="3050.236" y="-85" z="0" />
+			<Rotation x="0" y="0" z="0" />
+			<Scale x="1" y="1" z="1" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="sand_stones">
+		<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/sand_stones.ffm" />
+		<Material parentMaterial="Episode64MaterialAlpha" />
+		<Translation x="-1840.350" y="2.950" z="277.892" />
+		<Rotation x="-180" y="1.013" z="-180" />
+	</SceneObject>
+	<SceneObject name="sand_stones2">
+		<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/sand_stones.ffm" />
+		<Material parentMaterial="Episode64MaterialAlpha" />
+		<Translation x="-2187.714" y="2.950" z="60.700" />
+		<Rotation x="0" y="-90" z="0" />
+	</SceneObject>
+	<SceneObject name="sand_stones4">
+		<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/sand_stones.ffm" />
+		<Material parentMaterial="Episode64MaterialAlpha" />
+		<Translation x="-2797.884" y="2.950" z="-68.892" />
+		<Rotation x="180" y="23.780" z="180" />
+	</SceneObject>
+	<SceneObject name="sand_stones5">
+		<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/sand_stones.ffm" />
+		<Material parentMaterial="Episode64MaterialAlpha" />
+		<Translation x="-2894.589" y="2.950" z="273.755" />
+		<Rotation x="180" y="1.556" z="180" />
+	</SceneObject>
+	<SceneObject name="sand_stones6">
+		<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/sand_stones.ffm" />
+		<Material parentMaterial="Episode64MaterialAlpha" />
+		<Translation x="-2450.884" y="2.950" z="247.431" />
+		<Rotation x="-180" y="35.794" z="-180" />
+	</SceneObject>
+	<SceneObject name="sand_stones8">
+		<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/sand_stones.ffm" />
+		<Material parentMaterial="Episode64MaterialAlpha" />
+		<Translation x="-1187.573" y="2.950" z="275.518" />
+		<Rotation x="0" y="-0.483" z="0" />
+	</SceneObject>
+	<SceneObject name="sand_stones9">
+		<Model filename="shared/diorama/diorama22/episode64/models/non_interactable/sand_stones.ffm" />
+		<Material parentMaterial="Episode64MaterialAlpha" />
+		<Translation x="-843.210" y="2.950" z="65.428" />
+		<Rotation x="0" y="-39.554" z="0" />
+	</SceneObject>
+</Scene>

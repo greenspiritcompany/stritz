@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Goldbar">
+		<Translation z="520" />
+		<SceneObject name="GoldbarButton">
+			<Animations>
+				<Animation name="OnAppear" animationData="OnAppearGrow" startTime="0.1" loopCount="0" />
+				<Animation name="OnDisappear" animationData="OnDisappearScale" loopCount="0" />
+				<Animation name="Slim" animationData="GoldbarIconUp" loopCount="0" />
+				<Animation name="UnSlim" animationData="GoldbarIconDown" loopCount="0" />
+			</Animations>
+			<Translation x="120" y="150" />
+			<SceneObject name="Background" class="Button">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/goldbar_tab.png">
+					<Pivot anchor="center" />
+				</Sprite>
+				<SceneObject name="GreenDot">
+					<Translation x="-55" y="-13" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/add_lifes_btn.png">
+						<Pivot anchor="topRight" />
+					</Sprite>
+					<SceneObject>
+						<Translation x="-13" y="12" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/plus.png">
+							<Pivot anchor="topRight" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="SlimBackground">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/ingame_gold_tab.png">
+					<Pivot anchor="center" x="-5" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="NumberOfGoldbars">
+				<Translation x="40" y="-5" />
+				<Text canBreakWords="false" font="Banana" alignment="center" verticalAlignment="visualCenter">
+					<Color r="117" g="55" b="0" a="255" />
+					<Size x="24" y="24" />
+					<TextString>0</TextString>
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="0.0" />
+				<Y percentage="0.0" />
+			</Translation>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Landscape">
+			<Size>
+				<Height percentage="100.0" />
+				<OriginalSize height="768" width="1" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<Height percentage="100.0" />
+				<Width percentage="80.0" />
+				<OriginalSize height="1024" width="570" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

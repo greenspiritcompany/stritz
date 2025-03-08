@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+  <Material name="CastleMaterial">
+    <Cull face="back" enabled="true"/>
+    <Texture filename="shared/castle/tex/castle_material.png"/>
+  </Material>
+  <Material name="CastleMaterialAlpha" parentMaterial="CastleMaterial">
+    <Depth writeMask="false" enabled="true"/>
+    <Blend enabled="true"/>
+  </Material>
+  <Material name="CastleMaterialCaustics">
+    <Cull face="back" enabled="true"/>
+    <Texture filename="shared/castle/tex/underwater_caustics.png"/>
+  </Material>
+  <Material name="CastleMaterialCausticsAlpha" parentMaterial="CastleMaterialCaustics">
+    <Depth writeMask="false" enabled="true"/>
+    <Blend enabled="true"/>
+  </Material>
+  <Material name="CastleMaterialCausticsSeabed">
+    <Cull face="back" enabled="true"/>
+    <Texture filename="shared/castle/tex/underwater_caustics2.png"/>
+  </Material>
+  <Material name="CastleMaterialCausticsSeabedAlpha" parentMaterial="CastleMaterialCausticsSeabed">
+    <Depth writeMask="false" enabled="true"/>
+    <Blend enabled="true"/>
+  </Material>
+  <Material name="PathMaterial">
+    <Cull face="back" enabled="true"/>
+    <Texture wrap="repeat" filename="shared/castle/tex/castle_path.png"/>
+  </Material>
+  <Material name="PathMaterialAlpha" parentMaterial="PathMaterial">
+    <Depth writeMask="false" enabled="true"/>
+    <Blend enabled="true"/>
+  </Material>
+  <SceneObject layerFlags="2" name="CastleRoot">
+    <SceneObject name="ok">
+      <Translation x="-1000"/>
+      <SceneObject name="SkyAtmosphereBackdrop">
+        <Model filename="shared/castle/models/castle_sky.ffm"/>
+        <Material parentMaterial="CastleMaterial"/>
+      </SceneObject>
+      <SceneObject name="GroundSandGradient">
+        <Model filename="shared/castle/models/castle_ground_sand.ffm">
+          <Bound minZ="-1400"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+      </SceneObject>
+      <SceneObject name="BackdropDunes">
+        <Model filename="shared/castle/models/castle_backdrop_dunes.ffm">
+          <Bound minZ="-1800"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+      </SceneObject>
+      <SceneObject name="CastlePath">
+        <Model filename="shared/castle/models/castle_path.ffm">
+          <Bound minZ="-800"/>
+        </Model>
+        <Material parentMaterial="PathMaterialAlpha"/>
+      </SceneObject>
+      <SceneObject name="CastlePath">
+        <Model filename="shared/castle/models/castle_path_shadow.ffm">
+          <Bound minZ="-1200"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+      </SceneObject>
+      <!--CASTLE STUFF SUCH AS PROFILE LOCATION, NAME ETC.-->
+      <SceneObject name="CastleNameTag">
+        <Translation z="-297.15" x="10.25" y="45.9"/>
+        <Scale z="1" x="1" y="-1"/>
+        <Rotation x="-15"/>
+        <Sprite vertexColors="false" filename="shared/castle/tex/castle_nametag.png">
+          <Pivot anchor="center"/>
+        </Sprite>
+      </SceneObject>
+      <SceneObject name="CastleNameTag">
+        <Translation z="-297.15" x="10.25" y="45.9"/>
+        <Scale z="1" x="1" y="-1"/>
+        <Rotation x="-15"/>
+        <Sprite vertexColors="false" filename="shared/castle/tex/castle_nametag.png">
+          <Pivot anchor="center"/>
+        </Sprite>
+      </SceneObject>
+      <SceneObject name="KingName">
+        <Translation z="-297.14" x="10.25" y="53.9"/>
+        <Scale z="1" x="1" y="-1"/>
+        <Rotation x="-15"/>
+        <Text verticalAlignment="visualCenter" maxWidth="110" overflowBehaviour="fit" font="TypewriterBold" alignment="center" maxHeight="20">
+          <Color b="0" g="55" r="117" a="255"/>
+          <Shadow enabled="true">
+            <Color b="255" g="255" r="255" a="255"/>
+            <Offset z="1" x="0" y="1"/>
+          </Shadow>
+          <Size x="12" y="12"/>
+          <TextString>TobiasH</TextString>
+        </Text>
+      </SceneObject>
+      <SceneObject name="Castle_Current_King">
+        <Translation z="-340" x="0" y="98.40"/>
+        <SceneObject name="ProfilePicture">
+          <Translation z="34.58" x="9.74" y="9.63"/>
+          <Rotation z="180" y="180"/>
+          <Scale z="1.50" x="1.50" y="1.50"/>
+          <Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/prof_pic.png">
+            <Pivot anchor="center"/>
+          </Sprite>
+        </SceneObject>
+      </SceneObject>
+      <!--ASSETS/CLICKABLES ETC.-->
+      <SceneObject name="CastelGroup">
+        <Model filename="shared/castle/models/castle_castlegroup.ffm" zSort="backToFront"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="0" x="0" y="0"/>
+        <Rotation z="0" x="0" y="0"/>
+        <Scale z="1" x="1" y="1"/>
+      </SceneObject>
+      <SceneObject name="EntranceStairs">
+        <Model filename="shared/castle/models/castle_entrance.ffm"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="0" x="0" y="0"/>
+        <Rotation z="0" x="0" y="0"/>
+        <Scale z="1" x="1" y="1"/>
+      </SceneObject>
+      <SceneObject name="EntranceStairs">
+        <Model filename="shared/castle/models/castle_stairs.ffm"/>
+        <Material parentMaterial="CastleMaterial"/>
+        <Translation z="0" x="0" y="0"/>
+        <Rotation z="0" x="0" y="0"/>
+        <Scale z="1" x="1" y="1"/>
+      </SceneObject>
+      <SceneObject name="SandDunes">
+        <Model filename="shared/castle/models/sand_dune_left.ffm"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation x="-235.983" y="-145" z="-343.955"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1.000" y="1.000" z="1.000"/>
+      </SceneObject>
+      <SceneObject name="SandDunes">
+        <Model filename="shared/castle/models/sand_dune_right.ffm"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation x="293.224" y="-146" z="-347.783"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1.000" y="1.000" z="1.000"/>
+      </SceneObject>
+      <SceneObject name="Chest">
+        <Model filename="shared/castle/models/castle_chest.ffm"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation x="-203.358" y="-144.086" z="-249.545"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1.194" y="1.194" z="1.194"/>
+      </SceneObject>
+      <SceneObject name="cutoutshadows">
+        <Model filename="shared/castle/models/cutouts_shadow.ffm">
+          <Bound minZ="0"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation x="0.0" y="0.0" z="0.0"/>
+        <Rotation x="0.000" y="0.000" z="0.000"/>
+        <Scale x="1" y="1" z="1"/>
+      </SceneObject>
+      <SceneObject name="SunRays">
+        <Model filename="shared/castle/models/castle_sunrays.ffm">
+          <Bound minZ="0"/>
+          <Animation name="idle" loopCount="-1" filename="shared/castle/models/castle_sunray_idle.ffa" speed="0.50" play="true"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="0" x="0" y="0"/>
+        <Rotation z="0" x="0" y="0"/>
+        <Scale z="1" x="1" y="1"/>
+      </SceneObject>
+      <SceneObject name="CastleGround">
+        <Model filename="shared/castle/models/castle_ground.ffm"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+      </SceneObject>
+      <SceneObject name="CastleGround">
+        <Model filename="shared/castle/models/castle_ground_top.ffm"/>
+        <Material parentMaterial="CastleMaterial"/>
+      </SceneObject>
+      <SceneObject name="SunRaysFront">
+        <Model filename="shared/castle/models/castle_sunray_front.ffm">
+          <Bound minZ="0"/>
+          <Animation name="idle" loopCount="-1" filename="shared/castle/models/castle_sunray_front_idle.ffa" speed="0.50" play="true" startTimeRandomOffset="3.0"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="0" x="0" y="0"/>
+        <Rotation z="0" x="0" y="0"/>
+        <Scale z="1" x="1" y="1"/>
+      </SceneObject>
+      <SceneObject name="CastleGround">
+        <Model filename="shared/castle/models/castle_ground.ffm"/>
+        <Material parentMaterial="CastleMaterial"/>
+      </SceneObject>
+      <SceneObject name="CastleGround">
+        <Model filename="shared/castle/models/castle_ground_caustic.ffm">
+          <Animation name="idle" loopCount="-1" filename="shared/castle/models/castle_ground_caustic_idle.ffa" speed="0.5" play="true"/>
+          <Bound minZ="-1200"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialCausticsAlpha"/>
+      </SceneObject>
+      <SceneObject name="CastleGround">
+        <Model filename="shared/castle/models/castle_seabed_caustic.ffm">
+          <Animation name="idle" loopCount="-1" filename="shared/castle/models/castle_seabed_caustic_idle.ffa" speed="0.5" play="true"/>
+          <Bound minZ="-1500"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialCausticsSeabedAlpha"/>
+      </SceneObject>
+      <!--<SceneObject name="CastleGround">-->
+      <!--<Model filename="shared/castle/models/castle_cutout_hole_gradient.ffm">-->
+      <!--<Bound minZ="-300"/>-->
+      <!--</Model>-->
+      <!--<Material parentMaterial="CastleMaterialAlpha"/>-->
+      <!--</SceneObject>-->
+      <!--<SceneObject name="CastleGround">-->
+      <!--<Model filename="shared/castle/models/castle_cutout_hole_gradient1.ffm">-->
+      <!--<Bound minZ="0"/>-->
+      <!--</Model>-->
+      <!--<Material parentMaterial="CastleMaterialAlpha"/>-->
+      <!--</SceneObject>-->
+      <SceneObject name="CastleGround">
+        <Model filename="shared/castle/models/castle_castlegroup_gradient_shadow.ffm">
+          <Bound minZ="-500"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+      </SceneObject>
+      <SceneObject name="CastleGround">
+        <Model filename="shared/castle/models/castle_ground_caustic_gradient_overlay.ffm">
+          <Bound minZ="-700"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+      </SceneObject>
+      <SceneObject name="CastleGroundSlopes">
+        <Model filename="shared/castle/models/castle_ground_slopes.ffm">
+          <Bound minZ="-1200"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+      </SceneObject>
+      <SceneObject name="CastleGroundShadow">
+        <Model filename="shared/castle/models/castle_ground_shadow.ffm">
+          <Bound minZ="-800"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+      </SceneObject>
+      <SceneObject name="CastleGroundShadow">
+        <Model filename="shared/castle/models/castle_entrance_stair_shadow.ffm">
+          <Bound minZ="-800"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+      </SceneObject>
+      <!--FISHES ALL-->
+      <SceneObject name="Fishie1">
+        <Model filename="shared/castle/models/fish.ffm">
+          <Bound minZ="-1500"/>
+        </Model>
+        <Animation name="FishieBackOne1" loopCount="-1" animationData="FishBack1" speed="0.40" play="true"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="-400" x="1000" y="0"/>
+      </SceneObject>
+      <SceneObject name="Fishie2">
+        <Model filename="shared/castle/models/fish.ffm">
+          <Bound minZ="-1500"/>
+        </Model>
+        <Animation name="FishieBackOne3" loopCount="-1" animationData="FishBack3" speed="0.30" play="true"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="-210" x="500" y="0"/>
+      </SceneObject>
+      <SceneObject name="Fishie3">
+        <Model filename="shared/castle/models/fish.ffm">
+          <Bound minZ="-1500"/>
+        </Model>
+        <Animation name="FishieBackOne1" loopCount="-1" animationData="FishBack1" speed="0.50" play="true"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="-400" x="1000" y="0"/>
+      </SceneObject>
+      <SceneObject name="Fishie4">
+        <Model filename="shared/castle/models/fish_reversed.ffm">
+          <Bound minZ="200"/>
+        </Model>
+        <Animation name="FishieMiddle1" loopCount="-1" animationData="FishMiddle1" speed="0.40" play="true"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="-450" x="0" y="0"/>
+      </SceneObject>
+      <SceneObject name="Fishie5">
+        <Model filename="shared/castle/models/fish_reversed.ffm">
+          <Bound minZ="205"/>
+        </Model>
+        <Animation name="FishieMiddle2" loopCount="-1" animationData="FishMiddle2" speed="0.50" play="true"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="-455" x="0" y="0"/>
+      </SceneObject>
+      <SceneObject name="Fishie6">
+        <Model filename="shared/castle/models/fish.ffm">
+          <Bound minZ="205"/>
+        </Model>
+        <Animation name="FishieFront1" loopCount="-1" animationData="FishFront1" speed="0.35" play="true"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="-350" x="0" y="0"/>
+      </SceneObject>
+      <SceneObject name="Fishie7">
+        <Model filename="shared/castle/models/fish.ffm">
+          <Bound minZ="200"/>
+        </Model>
+        <Animation name="FishieFront2" loopCount="-1" animationData="FishFront2" speed="0.40" play="true"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="-340" x="0" y="0"/>
+      </SceneObject>
+      <SceneObject name="Fishie8">
+        <Model filename="shared/castle/models/fish.ffm">
+          <Bound minZ="195"/>
+        </Model>
+        <Animation name="FishieFront1" loopCount="-1" animationData="FishFront1" speed="0.50" play="true"/>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation z="-335" x="0" y="0"/>
+      </SceneObject>
+      <!--CHARACTER-->
+      <SceneObject name="Bubblegum_troll">
+        <Model filename="shared/castle/models/castle_bubblegum_troll.ffm">
+          <Bound minZ="0"/>
+          <Animation name="idle" loopCount="-1" filename="shared/castle/models/castle_bubblegum_troll_idle.ffa" play="true"/>
+        </Model>
+        <Material parentMaterial="CastleMaterialAlpha"/>
+        <Translation x="199.316" y="-145" z="-257.165"/>
+        <Rotation x="-12.000" y="0.000" z="0.000"/>
+        <Scale x="1.000" y="1.000" z="1.000"/>
+      </SceneObject>
+      <!--SPEECHBUBBLE-->
+      <SceneObject name="SpeechBubble">
+        <Animation name="SpeechBubbleAppear" loopCount="0" animationData="SpeechBubbleAppear"/>
+        <Animation name="SpeechBubbleDisappear" loopCount="0" animationData="SpeechBubbleDisappear"/>
+        <Translation z="-136.17" x="130" y="50"/>
+        <Import filename="shared/diorama/common/scenes/speech_bubble.xml"/>
+        <SpeechBubble>
+          <Speech key="castle.welcome_peasant"/>
+          <Speech key="castle.welcome_regent"/>
+          <Speech key="castle.welcome_pending"/>
+        </SpeechBubble>
+      </SceneObject>
+      <!--PARTICLES-->
+      <SceneObject name="Particles">
+        <Effect name="Wisps" effectData="Wisps" play="true"/>
+      </SceneObject>
+      <SceneObject name="Bubbles">
+        <Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true"/>
+        <Translation z="234" x="-500" y="107.33"/>
+      </SceneObject>
+      <SceneObject name="Bubbles2">
+        <Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true"/>
+        <Translation z="-150" x="-620" y="107.33"/>
+      </SceneObject>
+      <SceneObject name="Bubbles3">
+        <Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true"/>
+        <Translation z="-277" x="-120" y="117.33"/>
+      </SceneObject>
+      <SceneObject name="Bubbles4">
+        <Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true"/>
+        <Translation z="-277" x="280" y="117.33"/>
+      </SceneObject>
+      <SceneObject name="Bubbles5">
+        <Effect name="ep13Bubbles" effectData="ep13Bubbles" play="true"/>
+        <Translation z="234" x="300" y="107.33"/>
+      </SceneObject>
+      <SceneObject name="Levels1">
+        <SceneObject name="Level1">
+          <Translation x="-42.663" y="-91.926" z="141.042"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="65.347" y="-8.604" z="4.263"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="-438.072" y="5.870" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level2">
+          <Translation x="50.314" y="-88.822" z="53.216"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="64.347" y="-8.605" z="4.263"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="-438.072" y="5.869" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level3">
+          <Translation x="51.304" y="-90.720" z="-69.427"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="65.928" y="-9.131" z="3.903"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="-435.654" y="8.395" z="-6.737"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level4">
+          <Translation x="-39.518" y="-89.194" z="-150.565"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="72.928" y="2.870" z="-4.097"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="-435.653" y="8.396" z="-6.737"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+        <SceneObject name="Level5">
+          <Translation x="-3.062" y="-60.702" z="-250.390"/>
+          <Scale x="1.0" y="-1.0" z="1.0"/>
+          <Rotation x="-20"/>
+          <Import filename="shared/diorama/common/scenes/level_button_content.xml"/>
+          <SceneObject name="Player">
+            <Translation x="2.928" y="49.869" z="-45.097"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_player.xml"/>
+          </SceneObject>
+          <SceneObject name="Friends">
+            <Translation x="-435.653" y="8.396" z="-6.737"/>
+            <Scale x="0.8" y="0.8" z="0.8"/>
+            <Import filename="shared/diorama/common/scenes/portrait/portrait_friends.xml"/>
+          </SceneObject>
+        </SceneObject>
+      </SceneObject>
+    </SceneObject>
+  </SceneObject>
+</Scene>

@@ -1,0 +1,19 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<Import filename="shared/game/common/materials/colorbomb_material.xml"/>
+	<Material name="SpriteMaterial">
+		<Blend enabled="true"/>
+		<Depth writeMask="false" enabled="false"/>
+	</Material>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="Colorbomb">
+			<Model filename="shared/game/common/models/colorbomb/colorbomb.ffm">
+				<Animation loopCount="0" name="Spin" speed="2" filename="shared/game/common/models/colorbomb/activate_spin.ffa"/>
+				<Animation loopCount="0" name="Idle" speed="1" filename="shared/game/common/models/colorbomb/colorbomb.ffa"/>
+			</Model>
+			<Material parentMaterial="ColorBombMaterial"/>
+			<Scale y="-14.500" z="14.500" x="14.500"/>
+		</SceneObject>
+		<SceneObject name="ParticleCtrl"/>
+	</SceneObject>
+</Scene>

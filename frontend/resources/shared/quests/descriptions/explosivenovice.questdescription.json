@@ -1,0 +1,26 @@
+{
+  "id": "colour_creator",
+  "nameKey" : "quests.names.explosivenovice",
+  "difficulty" : 0,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.explosivenovice",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_colorbomb.png",
+      "data": {
+         "itemType":"colorBomb",
+         "amount": 20
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    }
+  ]
+}

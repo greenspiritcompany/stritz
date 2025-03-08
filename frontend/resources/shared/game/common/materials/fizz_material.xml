@@ -1,0 +1,50 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="FizzMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Cull enabled="false" face="back"/>
+			<!-- Set to false since the vertex winding seems messed up between FF and SL -->
+			<Shader program="TextureColor"/>
+		</Material>
+
+		<Material name="FizzMaterialBlue" parentMaterial="FizzMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fizz_bubble_blue_c.png"/>
+			</Textures>
+		</Material>
+		<Material name="FizzMaterialCyan" parentMaterial="FizzMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fizz_bubble_blue_c.png"/>
+			</Textures>
+		</Material>
+		<Material name="FizzMaterialRed" parentMaterial="FizzMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fizz_bubble_red_c.png"/>
+			</Textures>
+		</Material>
+		<Material name="FizzMaterialOrange" parentMaterial="FizzMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fizz_bubble_yellow_c.png"/>
+			</Textures>
+		</Material>
+		<Material name="FizzMaterialYellow" parentMaterial="FizzMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fizz_bubble_yellow_c.png"/>
+			</Textures>
+		</Material>
+		<Material name="FizzMaterialGreen" parentMaterial="FizzMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fizz_bubble_green_c.png"/>
+			</Textures>
+		</Material>
+		<Material name="FizzMaterialPurple" parentMaterial="FizzMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/fizz_bubble_purple_c.png"/>
+			</Textures>
+		</Material>
+	</Materials>
+</Scene>

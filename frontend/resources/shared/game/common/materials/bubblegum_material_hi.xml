@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="BubblegumMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="false" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Shader program="NormalMap"/>
+			<Light enabled="true" shininess="90">
+				<Ambient r="180" g="180" b="180" a="255"/>
+				<Diffuse r="140" g="140" b="140" a="255"/>
+				<Specular r="145" g="145" b="145" a="125"/>
+			</Light>
+		</Material>
+		<Material name="BubblegumBgMaterial" parentMaterial="BubblegumMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_1_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_1_n.png"/>
+			</Textures>
+		</Material>
+		<Material name="BubblegumOverMaterial" parentMaterial="BubblegumMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_2_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_2_n.png"/>
+			</Textures>
+		</Material>
+		<Material name="BubblegumStringsHorizontalMaterial" parentMaterial="BubblegumMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_klet_v_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_klet_v_n.png"/>
+			</Textures>
+		</Material>
+		<Material name="BubblegumStringsVerticalMaterial" parentMaterial="BubblegumMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_klet_h_c.png"/>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_klet_h_n.png"/>
+			</Textures>
+		</Material>
+        <Material name="BubblegumBgUnderMaterial">
+            <Textures>
+                <Texture filename="shared/game/common/tex/candy/bubblegum_1_c.png"/>
+            </Textures>
+            <Blend enabled="true"/>
+            <Cull enabled="false" face="back"/>
+            <Depth enabled="true" writeMask="false"/>
+            <Shader program="TextureColor"/>
+        </Material>
+	</Materials>
+</Scene>

@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect space="Local" timeToEmit="0.200" maxParticles="2" name="PregameColorbombSpawnRingPFX">
+    <Dampening min="1" max="1"/>
+    <DirectionalForce y="0" x="0"/>
+    <Emitter emissionRate="0.110" spread="0" angle="0">
+        <SpawnArea depth="0" height="0" width="0"/>
+    </Emitter>
+    <EndColor a="0" b="186" r="75" g="134"/>
+    <Rotation min="0" max="0"/>
+    <RotationSpeed min="0" max="0"/>
+    <Size>
+        <Max y="80" x="80"/>
+        <Min y="80" x="80"/>
+    </Size>
+    <SizeChange>
+        <Max y="500" x="500"/>
+        <Min y="500" x="500"/>
+    </SizeChange>
+    <StartColor a="255" b="255" r="202" g="239"/>
+    <Texture filename="shared/bootstrap/particles/tex/bright_ring64.png" blend="Add" numFramesY="1" numFramesX="1"/>
+    <TextureFrame numTextureAnimationFrames="1" startFrame="0" textureAnimationSpeed="50"/>
+    <TimeToLive min="0.400" max="0.400"/>
+    <Velocity min="0" max="0"/>
+</ParticleEffect>

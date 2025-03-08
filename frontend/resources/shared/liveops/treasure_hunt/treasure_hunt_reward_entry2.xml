@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="Holder">
+		<Panel vertexColors="false">
+			<Insets bottom="15" left="15" right="15" top="10" />
+			<Size height="95" width="60" />
+			<RemoveQuads topLeft="true" top="true" topRight="true" center="true" right="true" left="true" bottomLeft="true" bottom="true" bottomRight="true" />
+		</Panel>
+		<SceneObject name="SmallBox">
+			<Animation name="SlideInFromLeft" animationData="TreasureHuntSlideInFromLeft" loopCount="0" />
+			<Animation name="SlideInFromRight" animationData="TreasureHuntSlideInFromRight" loopCount="0" />
+			<Animation name="SlideOutToLeft" animationData="TreasureHuntSlideOutToLeft" loopCount="0" />
+			<Animation name="SlideOutToRight" animationData="TreasureHuntSlideOutToRight" loopCount="0" />
+			<Panel filename="shared/liveops/hero_quest/tex/kgf_reward_box2.png" vertexColors="false">
+				<Insets bottom="15" left="15" right="15" top="10" />
+				<Size height="95" width="60" />
+			</Panel>
+			<Translation x="0" z="0" />
+			<SceneObject name="Colorbomb">
+				<SceneObject name="BoosterImage">
+					<Scale x="0.690" y="0.690" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false" />
+					<Translation x="2.418" y="0.247" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Coloring">
+				<SceneObject name="BoosterImage">
+					<Scale x="0.650" y="0.650" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" vertexColors="false" />
+					<Translation x="4.165" y="1.891" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Lollipop">
+				<SceneObject name="BoosterImage">
+					<Scale x="0.650" y="0.650" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png" vertexColors="false" />
+					<Translation x="5.213" y="1.132" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="FreeSwitch">
+				<SceneObject name="BoosterImage">
+					<Rotation x="0" y="0" z="-0.121" />
+					<Scale x="0.625" y="0.625" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/free_switch_icon.png" vertexColors="false" />
+					<Translation x="3.405" y="-1.380" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Striped">
+				<SceneObject name="BoosterImage">
+					<Scale x="0.650" y="0.650" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/striped_lollipop_icon.png" vertexColors="false" />
+					<Translation x="5.213" y="1.132" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="DoubleFish">
+				<SceneObject name="BoosterImage">
+					<Rotation x="0" y="0" z="-14.071" />
+					<Scale x="0.308" y="0.308" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/pregame_double_fish_modal_icon.png" vertexColors="false" />
+					<Translation x="-4.161" y="6.896" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Amount">
+				<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color a="255" b="0" g="55" r="117" />
+					<Size x="24" y="24" />
+					<TextString>1</TextString>
+				</Text>
+				<Translation x="28.213" y="72" z="0" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

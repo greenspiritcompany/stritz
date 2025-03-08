@@ -1,0 +1,23 @@
+<ParticleEffect space="World" timeToEmit="2" name="PregameBoosterGlitterSparks1PFX" maxParticles="13">
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0.100" spread="360" angle="0">
+	<SpawnArea width="75" depth="0" height="75" />
+</Emitter>
+<EndColor r="144" g="198" b="255" a="0" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="360" min="360" />
+<Size>
+	<Max x="13" y="13" />
+	<Min x="5" y="5" />
+</Size>
+<SizeChange>
+	<Max x="-5" y="-5" />
+	<Min x="-8" y="-8" />
+</SizeChange>
+<StartColor r="252" g="255" b="219" a="130" />
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png" blend="Add" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="5" min="0.100" />
+<Dampening min="0" max="0" />
+<Velocity min="0" max="0" />
+</ParticleEffect>

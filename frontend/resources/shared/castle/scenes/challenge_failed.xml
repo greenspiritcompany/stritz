@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="ChallengeFailed">
+		<SceneObject name="Landscape">
+			<Translation z="510" y="26.146" x="-40" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" startDelay="0.050" name="OnDisappear" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="Title">
+				<Text font="Banana" verticalAlignment="visualCenter" key="kotc.tooBad" alignment="center">
+					<Color b="128" g="62" r="165" a="255" />
+					<Parameter name="levelsLeft">3</Parameter>
+					<Shadow enabled="true">
+						<Color b="255" g="255" r="255" a="255" />
+						<Offset z="1" y="3" x="0" />
+					</Shadow>
+					<Size y="28" x="28" />
+				</Text>
+				<Translation y="-322" />
+			</SceneObject>
+			<SceneObject name="FailArch">
+				<Scale y="4" x="4" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation z="0" y="-168.864" x="-3.644" />
+			</SceneObject>
+			<SceneObject name="SadBubblegumTroll">
+				<Sprite filename="shared/castle/tex/monster_disappointed.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation z="0" y="-153.864" x="-6.644" />
+			</SceneObject>
+			<SceneObject name="RewardText">
+				<Text font="Typewriter" overflowBehaviour="fit" maxHeight="200" verticalAlignment="visualCenter" key="kotc.didntCaptureCrown" maxWidth="500" alignment="center">
+					<Color b="51" g="102" r="131" a="255" />
+					<Outline enabled="true">
+						<Color b="0" g="0" r="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color b="255" g="255" r="255" a="255" />
+					</Shadow>
+					<Size y="21" x="21" />
+					<TextString>You didn't capture the crown this time!</TextString>
+				</Text>
+				<Translation z="2" y="126.719" x="0" />
+			</SceneObject>
+			<SceneObject name="Path">
+				<Translation z="0" y="141.136" x="-6.644" />
+				<SceneObject name="Fills">
+					<SceneObject visibility="never" name="Fill1">
+						<Rotation z="-21.916" y="0" x="0" />
+						<Sprite filename="shared/castle/tex/path_fill_2.png" vertexColors="false" />
+						<Translation z="0" y="-173.585" x="-159.080" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill2">
+						<Sprite filename="shared/castle/tex/path_fill_2.png" vertexColors="false" />
+						<Translation z="0" y="-214.613" x="-68.618" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill3">
+						<Rotation z="19.258" y="0" x="0" />
+						<Sprite filename="shared/castle/tex/path_fill_2.png" vertexColors="false" />
+						<Translation z="0" y="-219.871" x="35.216" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill4">
+						<Rotation z="41.038" y="0" x="0" />
+						<Sprite filename="shared/castle/tex/path_fill_2.png" vertexColors="false" />
+						<Translation z="0" y="-192.628" x="128.641" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Backing">
+					<SceneObject name="Left">
+						<Sprite filename="shared/castle/tex/path_2.png" vertexColors="false" />
+						<Translation z="0" y="-246.618" x="-222.864" />
+					</SceneObject>
+					<SceneObject name="Right">
+						<Sprite filename="shared/castle/tex/path_2.png" vertexColors="false">
+							<Flip u="true" />
+						</Sprite>
+						<Translation z="0" y="-246.512" x="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Pins">
+					<SceneObject name="Pin1">
+						<Import filename="shared/castle/scenes/play_game_pin1.xml" />
+						<Scale y="0.500" x="0.500" />
+						<Translation z="0" y="-183.537" x="-215.588" />
+					</SceneObject>
+					<SceneObject name="Pin2">
+						<Import filename="shared/castle/scenes/play_game_pin2.xml" />
+						<Scale y="0.500" x="0.500" />
+						<Translation z="0" y="-223.727" x="-130.438" />
+					</SceneObject>
+					<SceneObject name="Pin3">
+						<Import filename="shared/castle/scenes/play_game_pin3.xml" />
+						<Scale y="0.500" x="0.500" />
+						<Translation z="0" y="-241.329" x="-37.616" />
+					</SceneObject>
+					<SceneObject name="Pin4">
+						<Import filename="shared/castle/scenes/play_game_pin4.xml" />
+						<Scale y="0.500" x="0.500" />
+						<Translation z="0" y="-223.727" x="54.205" />
+					</SceneObject>
+					<SceneObject name="Pin5">
+						<Import filename="shared/castle/scenes/play_game_pin5.xml" />
+						<Scale y="0.500" x="0.500" />
+						<Translation z="0" y="-183.537" x="139.739" />
+					</SceneObject>
+					<SceneObject name="Crown">
+						<Scale z="1" y="0.936" x="0.936" />
+						<Sprite filename="shared/castle/tex/crown.png" vertexColors="false" />
+						<Translation z="0" y="-226.172" x="164.520" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="TryAgainButton" class="Button">
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets left="54" top="48" bottom="59" right="54" />
+					<Pivot anchor="center" />
+					<Size width="360" height="108" />
+				</Panel>
+				<Scale z="1.200" y="1.200" x="1.200" />
+				<Translation y="245" />
+				<SceneObject name="TryAgainText">
+					<Text font="Banana" overflowBehaviour="fit" maxHeight="50" verticalAlignment="visualCenter" key="kotc.tryAgain" maxWidth="300" alignment="center">
+						<Color b="255" g="255" r="255" a="225" />
+						<Shadow enabled="true">
+							<Color b="0" g="0" r="0" a="25" />
+							<Offset y="6" x="0" />
+						</Shadow>
+						<Size y="29" x="29" />
+						<TextString>Try again!</TextString>
+					</Text>
+					<Translation y="-7" />
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<SceneObject name="Portrait">
+			<Translation z="400" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" startDelay="0.050" name="OnDisappear" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="Title">
+				<Translation y="-322" />
+				<Text font="Banana" verticalAlignment="visualCenter" key="kotc.tooBad" alignment="center">
+					<Parameter name="levelsLeft">3</Parameter>
+					<Color b="128" g="62" r="165" a="255" />
+					<Shadow enabled="true">
+						<Color b="255" g="255" r="255" a="255" />
+						<Offset z="1" y="3" x="0" />
+					</Shadow>
+					<Size y="28" x="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="FailArch">
+				<Translation z="0" y="-168.864" x="-3.644" />
+				<Scale y="4" x="4" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="SadBubblegumTroll">
+				<Translation z="0" y="-153.864" x="-6.644" />
+				<Sprite filename="shared/castle/tex/monster_disappointed.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="RewardText">
+				<Translation z="2" y="126.719" x="0" />
+				<Text font="Typewriter" overflowBehaviour="fit" maxHeight="200" verticalAlignment="visualCenter" key="kotc.didntCaptureCrown" maxWidth="500" alignment="center">
+					<Color b="51" g="102" r="131" a="255" />
+					<Outline enabled="true">
+						<Color b="0" g="0" r="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color b="255" g="255" r="255" a="255" />
+					</Shadow>
+					<Size y="21" x="21" />
+					<TextString>You didn't capture the crown this time!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject name="Path">
+				<Translation z="0" y="141.136" x="-6.644" />
+				<SceneObject name="Fills">
+					<SceneObject visibility="never" name="Fill1">
+						<Rotation z="-21.916" y="0" x="0" />
+						<Sprite filename="shared/castle/tex/path_fill_2.png" vertexColors="false" />
+						<Translation z="0" y="-173.585" x="-159.080" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill2">
+						<Sprite filename="shared/castle/tex/path_fill_2.png" vertexColors="false" />
+						<Translation z="0" y="-214.613" x="-68.618" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill3">
+						<Rotation z="19.258" y="0" x="0" />
+						<Sprite filename="shared/castle/tex/path_fill_2.png" vertexColors="false" />
+						<Translation z="0" y="-219.871" x="35.216" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill4">
+						<Rotation z="41.038" y="0" x="0" />
+						<Sprite filename="shared/castle/tex/path_fill_2.png" vertexColors="false" />
+						<Translation z="0" y="-192.628" x="128.641" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Backing">
+					<SceneObject name="Left">
+						<Sprite filename="shared/castle/tex/path_2.png" vertexColors="false" />
+						<Translation z="0" y="-246.618" x="-222.864" />
+					</SceneObject>
+					<SceneObject name="Right">
+						<Sprite filename="shared/castle/tex/path_2.png" vertexColors="false">
+							<Flip u="true" />
+						</Sprite>
+						<Translation z="0" y="-246.512" x="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Pins">
+					<SceneObject name="Pin1">
+						<Import filename="shared/castle/scenes/play_game_pin1.xml" />
+						<Scale y="0.500" x="0.500" />
+						<Translation z="0" y="-183.537" x="-215.588" />
+					</SceneObject>
+					<SceneObject name="Pin2">
+						<Import filename="shared/castle/scenes/play_game_pin2.xml" />
+						<Scale y="0.500" x="0.500" />
+						<Translation z="0" y="-223.727" x="-130.438" />
+					</SceneObject>
+					<SceneObject name="Pin3">
+						<Import filename="shared/castle/scenes/play_game_pin3.xml" />
+						<Scale y="0.500" x="0.500" />
+						<Translation z="0" y="-241.329" x="-37.616" />
+					</SceneObject>
+					<SceneObject name="Pin4">
+						<Import filename="shared/castle/scenes/play_game_pin4.xml" />
+						<Scale y="0.500" x="0.500" />
+						<Translation z="0" y="-223.727" x="54.205" />
+					</SceneObject>
+					<SceneObject name="Pin5">
+						<Import filename="shared/castle/scenes/play_game_pin5.xml" />
+						<Scale y="0.500" x="0.500" />
+						<Translation z="0" y="-183.537" x="139.739" />
+					</SceneObject>
+					<SceneObject name="Crown">
+						<Scale z="1" y="0.936" x="0.936" />
+						<Sprite filename="shared/castle/tex/crown.png" vertexColors="false" />
+						<Translation z="0" y="-226.172" x="164.520" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="TryAgainButton" class="Button">
+				<Translation y="245" />
+				<Scale z="1.200" y="1.200" x="1.200" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets left="54" top="48" bottom="59" right="54" />
+					<Pivot anchor="center" />
+					<Size width="360" height="108" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject name="TryAgainText">
+					<Translation y="-7" />
+					<Text font="Banana" overflowBehaviour="fit" maxHeight="50" verticalAlignment="visualCenter" key="kotc.tryAgain" maxWidth="300" alignment="center">
+						<Color b="255" g="255" r="255" a="225" />
+						<Shadow enabled="true">
+							<Color b="0" g="0" r="0" a="25" />
+							<Offset y="6" x="0" />
+						</Shadow>
+						<Size y="29" x="29" />
+						<TextString>Try again!</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize width="1024" height="768" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<OriginalSize width="684" height="1024" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

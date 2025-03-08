@@ -1,0 +1,13 @@
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<Material name="SpriteMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="false" writeMask="false"/>
+		</Material>
+	</Materials>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="ParticleCtrl">
+		</SceneObject>
+	</SceneObject>
+</Scene>

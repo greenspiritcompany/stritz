@@ -1,0 +1,17 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="0.50">
+		<Animate target="Light" time="0.0">
+			<Hide/>
+			<Show time="0.01"/>
+			<Color time="0.0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.15" r="255" g="255" b="255" a="64"/>
+		</Animate>
+
+		<Triggers>
+			<EffectTrigger name="LemonadeBalloonBurstTrail" targetName="Light"/>
+		</Triggers>
+
+
+	</Timeline>
+</Timelines>

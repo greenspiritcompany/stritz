@@ -1,0 +1,9 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../../tools/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0.0" endTime="-1">
+
+        <Triggers>
+            <EffectTrigger name="ProgressTrailEFQ" targetName="ProgressModel" targetBoneIndex="14" followTarget="true" time="1.2"/>
+        </Triggers>
+    </Timeline>
+</Timelines>

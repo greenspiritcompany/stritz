@@ -1,0 +1,79 @@
+{
+  "id": "candy_collector_rainbow_epic",
+  "nameKey" : "quests.names.rainbowstash",
+  "difficulty" : 2,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.likingcyan",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_candy_cyan.png",
+      "data": {
+         "amount": 8000,
+         "color": "cyan"
+      }
+    },
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.likingorange",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_candy_orange.png",
+      "data": {
+         "amount": 8000,
+         "color": "orange"
+      }
+    },
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.likinggreen",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_candy_green.png",
+      "data": {
+         "amount": 8000,
+         "color": "green"
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12003,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12021,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../../../dtd/scene.dtd">
+<Scene>
+
+	<SceneObject name="Scene" layerFlags="512">
+
+        <Import filename="shared/game/common/materials/fizz_material.xml"/>
+
+
+        <SceneObject name="FizzModel">
+            <Model filename="shared/game/common/models/sodafizz/fizz_model.ffm">
+                <Animations>
+                    <Animation name="Fizz1Idle" speed="0.5" filename="shared/game/common/models/sodafizz/fizz_1_idle.ffa" play="true" loopCount="-1"/>
+                    <Animation name="Fizz2Idle" speed="0.75" filename="shared/game/common/models/sodafizz/fizz_2_idle.ffa" play="true" loopCount="-1"/>
+                    <Animation name="Fizz3Idle" speed="1.0" filename="shared/game/common/models/sodafizz/fizz_3_idle.ffa" play="true" loopCount="-1"/>
+                    <Animation name="Fizz4Idle" speed="1.25" filename="shared/game/common/models/sodafizz/fizz_4_idle.ffa" play="true" loopCount="-1"/>
+                    <Animation name="FizzChargedIdle" speed="1.0" filename="shared/game/common/models/sodafizz/fizz_charged.ffa" play="true" loopCount="-1"/>
+                    <Animation name="FizzGrowTo1" speed="1.1" filename="shared/game/common/models/sodafizz/fizz_grow_to_1.ffa" play="true" loopCount="0"/>
+                    <Animation name="FizzGrowTo2" speed="1.1" filename="shared/game/common/models/sodafizz/fizz_grow_to_2.ffa" play="true" loopCount="0"/>
+                    <Animation name="FizzGrowTo3" speed="1.1" filename="shared/game/common/models/sodafizz/fizz_grow_to_3.ffa" play="true" loopCount="0"/>
+                    <Animation name="FizzGrowTo4" speed="1.1" filename="shared/game/common/models/sodafizz/fizz_grow_to_4.ffa" play="true" loopCount="0"/>
+                </Animations>
+            </Model>
+            <Materials>
+                <Material parentMaterial="FizzMaterialPurple"/>
+            </Materials>
+            <Scale x="0.6" y="-0.6" z="0.6"/>
+        </SceneObject>
+        <SceneObject name="ParticleHelper" layerFlags="1"/>
+        <SceneObject name="ParticleHelper2"/>
+	</SceneObject>
+</Scene>

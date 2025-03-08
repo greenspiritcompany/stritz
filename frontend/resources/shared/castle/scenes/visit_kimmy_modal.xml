@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="VisitKimmyModal">
+		<SceneObject name="Landscape">
+			<Translation z="510" x="-40" y="24.532" />
+			<Animation loopCount="0" animationData="SlideInFromLeft" name="OnAppear" />
+			<Animation loopCount="0" animationData="SlideOutToLeft" startDelay="0.050" name="OnDisappear" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="Title">
+				<Text font="Banana" key="kotc.visitKimmy.title" alignment="center" verticalAlignment="visualCenter">
+					<Color r="165" g="62" a="255" b="128" />
+					<Shadow enabled="true">
+						<Color r="255" g="255" a="255" b="255" />
+						<Offset z="1" x="0" y="3" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+				<Translation y="-322" />
+			</SceneObject>
+			<SceneObject name="Arch">
+				<Scale x="4" y="4" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="3" y="-185" />
+			</SceneObject>
+			<SceneObject name="PhotoFrame">
+				<Translation x="-187.208" y="-200.351" />
+				<SceneObject __visibility="0" name="KingPic">
+					<Scale x="1.700" y="1.700" />
+					<Translation x="184" y="63" />
+				</SceneObject>
+				<SceneObject __visibility="0" name="KingFrame">
+					<Scale x="2" y="2" />
+					<Sprite vertexColors="false" filename="shared/castle/tex/king_frame.png">
+						<Scale x="0.500" y="0.500" />
+					</Sprite>
+					<Translation x="14.506" y="-102.708" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardText">
+				<Text font="Typewriter" key="kotc.visitKimmy.description" maxWidth="450" overflowBehaviour="fit" alignment="center" maxHeight="200" verticalAlignment="visualCenter">
+					<Color r="131" g="102" a="255" b="51" />
+					<Outline enabled="true">
+						<Color r="0" g="0" a="255" b="0" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color r="255" g="255" a="255" b="255" />
+					</Shadow>
+					<Size x="18" y="18" />
+				</Text>
+				<Translation z="2" x="0" y="126.719" />
+			</SceneObject>
+			<SceneObject name="Path">
+				<Translation z="0" x="-3.795" y="155.283" />
+				<SceneObject name="Fills">
+					<SceneObject visibility="never" name="Fill1">
+						<Rotation z="-21.916" x="0" y="0" />
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_fill_2.png" />
+						<Translation z="0.000" x="-159.080" y="-173.585" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill2">
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_fill_2.png" />
+						<Translation z="0" x="-68.618" y="-214.613" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill3">
+						<Rotation z="19.258" x="0" y="0" />
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_fill_2.png" />
+						<Translation z="0" x="35.216" y="-219.871" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill4">
+						<Rotation z="41.038" x="0" y="0" />
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_fill_2.png" />
+						<Translation z="0" x="128.641" y="-192.628" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Backing">
+					<SceneObject name="Left">
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_2.png" />
+						<Translation z="0" x="-222.864" y="-246.618" />
+					</SceneObject>
+					<SceneObject name="Right">
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_2.png">
+							<Flip u="true" />
+						</Sprite>
+						<Translation z="0" x="0" y="-246.512" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Pins">
+					<SceneObject name="Pin1">
+						<Import filename="shared/castle/scenes/play_game_pin1.xml" />
+						<Scale x="0.500" y="0.500" />
+						<Translation z="0" x="-215.588" y="-183.537" />
+					</SceneObject>
+					<SceneObject name="Pin2">
+						<Import filename="shared/castle/scenes/play_game_pin2.xml" />
+						<Scale x="0.500" y="0.500" />
+						<Translation z="0" x="-130.438" y="-223.727" />
+					</SceneObject>
+					<SceneObject name="Pin3">
+						<Import filename="shared/castle/scenes/play_game_pin3.xml" />
+						<Scale x="0.500" y="0.500" />
+						<Translation z="0" x="-37.616" y="-241.329" />
+					</SceneObject>
+					<SceneObject name="Pin4">
+						<Import filename="shared/castle/scenes/play_game_pin4.xml" />
+						<Scale x="0.500" y="0.500" />
+						<Translation z="0" x="54.205" y="-223.727" />
+					</SceneObject>
+					<SceneObject name="Pin5">
+						<Import filename="shared/castle/scenes/play_game_pin5.xml" />
+						<Scale x="0.500" y="0.500" />
+						<Translation z="0" x="139.739" y="-183.537" />
+					</SceneObject>
+					<SceneObject name="Crown">
+						<Scale z="1" x="0.936" y="0.936" />
+						<Sprite vertexColors="false" filename="shared/castle/tex/crown.png" />
+						<Translation z="0" x="164.520" y="-226.172" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="VisitKimmyButton">
+				<Animation play="true" animationData="Idle" layer="1" name="Idle" />
+				<Animation loopCount="0" animationData="OnPress" name="OnPress" />
+				<Animation loopCount="0" animationData="OnRelease" name="OnRelease" />
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+					<Insets top="48" right="54" bottom="59" left="54" />
+					<Pivot anchor="center" />
+					<Size height="108" width="360" />
+				</Panel>
+				<Scale z="1.200" x="1.200" y="1.200" />
+				<Translation y="245" />
+				<SceneObject name="VisitKimmyText">
+					<Text font="Banana" key="kotc.visitKimmy.button" maxWidth="300" overflowBehaviour="fit" alignment="center" maxHeight="50" verticalAlignment="visualCenter">
+						<Color r="255" g="255" a="225" b="255" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" a="25" b="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="25" y="25" />
+					</Text>
+					<Translation y="-7" />
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<SceneObject name="Portrait">
+			<Translation z="400" />
+			<Animation loopCount="0" animationData="SlideInFromLeft" name="OnAppear" />
+			<Animation loopCount="0" animationData="SlideOutToLeft" startDelay="0.050" name="OnDisappear" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="Title">
+				<Translation y="-322" />
+				<Text font="Banana" key="kotc.visitKimmy.title" alignment="center" verticalAlignment="visualCenter">
+					<Color r="165" g="62" a="255" b="128" />
+					<Shadow enabled="true">
+						<Color r="255" g="255" a="255" b="255" />
+						<Offset z="1" x="0" y="3" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Arch">
+				<Translation x="3" y="-185" />
+				<Scale x="4" y="4" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="PhotoFrame">
+				<Translation x="-187.208" y="-200.351" />
+				<SceneObject __visibility="0" name="KingPic">
+					<Translation x="184" y="63" />
+					<Scale x="1.700" y="1.700" />
+				</SceneObject>
+				<SceneObject __visibility="0" name="KingFrame">
+					<Translation x="14.506" y="-102.708" />
+					<Scale x="2" y="2" />
+					<Sprite vertexColors="false" filename="shared/castle/tex/king_frame.png">
+						<Scale x="0.500" y="0.500" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardText">
+				<Translation z="2" x="0" y="126.719" />
+				<Text font="Typewriter" key="kotc.visitKimmy.description" maxWidth="450" overflowBehaviour="fit" alignment="center" maxHeight="200" verticalAlignment="visualCenter">
+					<Color r="131" g="102" a="255" b="51" />
+					<Outline enabled="true">
+						<Color r="0" g="0" a="255" b="0" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color r="255" g="255" a="255" b="255" />
+					</Shadow>
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Path">
+				<Translation z="0" x="-3.795" y="155.283" />
+				<SceneObject name="Fills">
+					<SceneObject visibility="never" name="Fill1">
+						<Rotation z="-21.916" x="0" y="0" />
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_fill_2.png" />
+						<Translation z="0.000" x="-159.080" y="-173.585" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill2">
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_fill_2.png" />
+						<Translation z="0" x="-68.618" y="-214.613" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill3">
+						<Rotation z="19.258" x="0" y="0" />
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_fill_2.png" />
+						<Translation z="0" x="35.216" y="-219.871" />
+					</SceneObject>
+					<SceneObject visibility="never" name="Fill4">
+						<Rotation z="41.038" x="0" y="0" />
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_fill_2.png" />
+						<Translation z="0" x="128.641" y="-192.628" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Backing">
+					<SceneObject name="Left">
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_2.png" />
+						<Translation z="0" x="-222.864" y="-246.618" />
+					</SceneObject>
+					<SceneObject name="Right">
+						<Sprite vertexColors="false" filename="shared/castle/tex/path_2.png">
+							<Flip u="true" />
+						</Sprite>
+						<Translation z="0" x="0" y="-246.512" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Pins">
+					<SceneObject name="Pin1">
+						<Import filename="shared/castle/scenes/play_game_pin1.xml" />
+						<Scale x="0.500" y="0.500" />
+						<Translation z="0" x="-215.588" y="-183.537" />
+					</SceneObject>
+					<SceneObject name="Pin2">
+						<Import filename="shared/castle/scenes/play_game_pin2.xml" />
+						<Scale x="0.500" y="0.500" />
+						<Translation z="0" x="-130.438" y="-223.727" />
+					</SceneObject>
+					<SceneObject name="Pin3">
+						<Import filename="shared/castle/scenes/play_game_pin3.xml" />
+						<Scale x="0.500" y="0.500" />
+						<Translation z="0" x="-37.616" y="-241.329" />
+					</SceneObject>
+					<SceneObject name="Pin4">
+						<Import filename="shared/castle/scenes/play_game_pin4.xml" />
+						<Scale x="0.500" y="0.500" />
+						<Translation z="0" x="54.205" y="-223.727" />
+					</SceneObject>
+					<SceneObject name="Pin5">
+						<Import filename="shared/castle/scenes/play_game_pin5.xml" />
+						<Scale x="0.500" y="0.500" />
+						<Translation z="0" x="139.739" y="-183.537" />
+					</SceneObject>
+					<SceneObject name="Crown">
+						<Scale z="1" x="0.936" y="0.936" />
+						<Sprite vertexColors="false" filename="shared/castle/tex/crown.png" />
+						<Translation z="0" x="164.520" y="-226.172" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="VisitKimmyButton">
+				<Translation y="245" />
+				<Scale z="1.200" x="1.200" y="1.200" />
+				<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+					<Insets top="48" right="54" bottom="59" left="54" />
+					<Pivot anchor="center" />
+					<Size height="108" width="360" />
+				</Panel>
+				<Animation play="true" animationData="Idle" layer="1" name="Idle" />
+				<Animation loopCount="0" animationData="OnPress" name="OnPress" />
+				<Animation loopCount="0" animationData="OnRelease" name="OnRelease" />
+				<SceneObject name="VisitKimmyText">
+					<Translation y="-7" />
+					<Text font="Banana" key="kotc.visitKimmy.button" maxWidth="300" overflowBehaviour="fit" alignment="center" maxHeight="50" verticalAlignment="visualCenter">
+						<Color r="255" g="255" a="225" b="255" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" a="25" b="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="25" y="25" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<OriginalSize height="1024" width="684" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,35 @@
+<Timelines>
+<Timeline startTime="0" endTime="3">
+	<Triggers>
+		<AnimationTrigger time="0" animationName="FishSwimLong" targetName="RedFish" />
+		<AnimationTrigger time="1.300" animationName="FishSwimShort" targetName="YellowFish" />
+		<EffectTrigger name="PregameDoubleFishSpawnedSpecialEFQ" time="1.240" followTarget="false" parentName="ParticleCtrl">
+			<Offset x="0" y="0" z="100" />
+		</EffectTrigger>
+		<EffectTrigger name="PregameDoubleFishSpawnSwimSFX" time="0" />
+		<EffectTrigger name="PregameDoubleFishSpawnSwimSFX" time="1.35" />
+		<EffectTrigger time="0.150" name="PregameBoosterDoubleFishGlitterEFQ" parentName="RedFish" followTarget="true">
+			<Offset x="0" y="0" z="-10" />
+		</EffectTrigger>
+		<EffectTrigger time="1.386" name="PregameBoosterDoubleFishGlitterEFQ" parentName="YellowFish" followTarget="true">
+			<Offset x="0" y="0" z="-10" />
+		</EffectTrigger>
+	</Triggers>
+	<Animate target="RedFish">
+		<Show time="0" />
+		<Hide time="2.500" />
+		<Color time="0.002" r="0" g="0" b="0" a="0" />
+		<Color time="0.150" r="255" g="255" b="255" a="255" />
+		<Color time="2.350" r="255" g="255" b="255" a="255" />
+		<Color time="2.500" r="0" g="0" b="0" a="0" />
+	</Animate>
+	<Animate target="YellowFish">
+		<Show time="1.300" />
+		<Hide time="2.500" />
+		<Color time="1.300" r="0" g="0" b="0" a="0" />
+		<Color time="1.399" r="255" g="255" b="255" a="255" />
+		<Color time="2.350" r="255" g="255" b="255" a="255" />
+		<Color time="2.500" r="0" g="0" b="0" a="0" />
+	</Animate>
+</Timeline>
+</Timelines>

@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="1" space="Local" timeToEmit="0.200" name="Jam1WaveDirPFX">
+    <Dampening max="0.500" min="0.500"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="0" angle="90">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="86.680" y="86.120"/>
+        <Min x="86.680" y="86.120"/>
+    </Size>
+    <SizeChange>
+        <Max x="-5" y="-5"/>
+        <Min x="-5" y="-5"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="168"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/jam_wave.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.320" min="0.320"/>
+    <Velocity max="499.730" min="499.730"/>
+</ParticleEffect>

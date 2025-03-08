@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject __visibility="0" name="HighscoreEntry">
+		<SceneObject __visibility="3" name="EntryLandscape">
+			<SceneObject name="DividerLandscape">
+				<Translation x="67" y="14" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/scroll_dot.png" wrap="repeat" vertexColors="false">
+					<Pivot anchor="bottom" />
+					<Rectangle maxX="312" maxY="8" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Picture">
+				<Translation x="-14" y="-29" />
+			</SceneObject>
+			<SceneObject>
+				<Translation x="-15.333" y="-29" z="1" />
+				<Scale x="0.800" y="0.800" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/gold_frame.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Position">
+				<Translation x="-66.667" y="-30.333" z="1" />
+				<Text alignment="center" canBreakWords="false" font="TypewriterBold" maxHeight="35" maxWidth="35" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<TextString>20</TextString>
+					<Color r="33" g="172" b="246" a="255" />
+					<Pivot anchor="center" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Name">
+				<Translation x="20.667" y="-45.500" z="1" />
+				<Text canBreakWords="false" font="Typewriter" maxHeight="30" maxWidth="150" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<TextString>Name</TextString>
+					<Color r="2" g="91" b="139" a="255" />
+					<Size x="20" y="20" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Score">
+				<Translation x="21" y="-17.500" z="1" />
+				<Text canBreakWords="false" font="TypewriterBold" maxHeight="30" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<TextString>12345</TextString>
+					<Color r="33" g="172" b="246" a="255" />
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Leagues">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="0.300" y="0.300" z="1" />
+				<Translation x="-34.998" y="-54.788" z="1" />
+				<SceneObject name="League1" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_1.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League2" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_2.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League3" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_3.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League4" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_4.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League5" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_5.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League6" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_6.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League7" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_7.png" vertexColors="false" />
+					<Translation x="80.533" y="-24.794" z="0" />
+				</SceneObject>
+				<SceneObject name="League8" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_8.png" vertexColors="false" />
+					<Translation x="81.025" y="-24.392" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject __visibility="3" name="EntryPortrait">
+			<Translation x="-53" y="-18" z="1" />
+			<SceneObject __visibility="0" name="DividerPortrait">
+				<Translation x="147" y="25" />
+				<Rotation z="-90" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/scroll_dot.png" rotate="true" wrap="repeat" vertexColors="false">
+					<Pivot anchor="center" />
+					<Rectangle maxX="8" maxY="135" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Picture">
+				<Translation x="2.500" y="-2" />
+			</SceneObject>
+			<SceneObject>
+				<Translation x="2.667" y="-1" z="1" />
+				<Scale x="0.900" y="0.900" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/gold_frame.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Position">
+				<Translation x="-32.170" y="63.670" z="1" />
+				<Text font="TypewriterBold" maxHeight="50" maxWidth="44" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<TextString>20</TextString>
+					<Color r="33" g="172" b="246" a="255" />
+					<GradientColor enabled="false" />
+					<Pivot anchor="left" />
+					<Shadow enabled="false" />
+					<Size x="40" y="40" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Name">
+				<Translation x="22.167" y="48" z="1" />
+				<Text font="Typewriter" maxHeight="30" maxWidth="110" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<TextString>Name</TextString>
+					<Color r="2" g="91" b="139" a="255" />
+					<GradientColor enabled="false" />
+					<Pivot anchor="left" />
+					<Shadow enabled="false" />
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Score">
+				<Translation x="23" y="73.500" z="1" />
+				<Text canBreakWords="false" font="TypewriterBold" maxHeight="30" maxWidth="110" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<TextString>12345</TextString>
+					<Color r="33" g="172" b="246" a="255" />
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Leagues">
+				<Rotation x="0" y="0" z="0" />
+				<Scale x="0.350" y="0.350" z="1" />
+				<Translation x="-17.118" y="-28.537" z="1" />
+				<SceneObject name="League1" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_1.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League2" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_2.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League3" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_3.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League4" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_4.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League5" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_5.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League6" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_6.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League7" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_7.png" vertexColors="false" />
+					<Translation x="80.533" y="-24.794" z="0" />
+				</SceneObject>
+				<SceneObject name="League8" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_8.png" vertexColors="false" />
+					<Translation x="81.025" y="-24.392" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,31 @@
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="Jam_Boss_Claw">
+			<Model filename="shared/game/common/models/jam_boss/boss_claw.ffm">
+				<Animations>
+					<Animation filename="shared/game/common/models/jam_boss/claw_pinch.ffa" loopCount="0"
+							   speed="2"
+							   name="pinch"/>
+				</Animations>
+                <Animations>
+					<Animation filename="shared/game/common/models/jam_boss/claw_release.ffa" loopCount="0"
+							   speed="1"
+							   name="release"/>
+				</Animations>
+			</Model>
+            <Materials>
+                <Material name="BossHandMaterial">
+                    <Blend enabled="true"/>
+                    <Cull enabled="true" face="back"/>
+                    <Depth enabled="true" writeMask="false"/>
+                    <Shader program="TextureColor"/>
+                    <Textures>
+                        <Texture filename="shared/game/common/tex/jam_boss/jam_boss_claw.png"/>
+                    </Textures>
+                </Material>
+            </Materials>
+			<Scale x="0.8" y="-0.8" z="0.8"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

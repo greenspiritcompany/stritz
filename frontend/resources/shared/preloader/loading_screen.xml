@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Content" layerFlags="256">
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="-0.900" />
+			</Translation>
+			<Size>
+				<Width percentage="55" />
+				<OriginalSize width="320" height="0" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Landscape">
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="1.100" />
+			</Translation>
+			<Size>
+				<Height percentage="56.200" />
+				<OriginalSize width="0" height="320" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+	<SceneObject name="LoadingScreen" layerFlags="256">
+		<Translation z="990" />
+		<SceneObject name="Background">
+			<Sprite filename="shared/preloader/tex/orange_gradient_background.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<LayoutConfiguration name="Landscape">
+				<Size>
+					<Width percentage="100" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Size>
+					<Height percentage="100" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject name="LoadingText">
+			<Text alignment="center" font="BananaInnerShadow" key="generic_loader_loading" canBreakWords="false">
+				<Color a="255" b="255" g="255" r="255" />
+				<Size x="20" y="20" />
+				<Pivot anchor="center" />
+			</Text>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<Y percentage="19.200" />
+				</Translation>
+				<Size>
+					<Height percentage="39" />
+					<OriginalSize width="0" height="480" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Size>
+					<Height percentage="42.500" />
+					<OriginalSize width="0" height="320" />
+				</Size>
+				<Translation>
+					<Y percentage="29.800" />
+				</Translation>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject name="KingLogo">
+			<Sprite filename="shared/preloader/tex/loading_logo.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation z="1" />
+			<LayoutConfiguration name="Portrait">
+				<Size>
+					<Height percentage="19.800" />
+				</Size>
+				<Translation>
+					<Y percentage="-2.500" />
+				</Translation>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Size>
+					<Height percentage="26.100" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+	<SceneObject name="tempRef">
+		<Translation x="0" y="0" z="990" />
+		<Scale x="1" y="1" z="1" />
+		<Rotation x="0" y="0" z="0" />
+		<Sprite filename="client/tex/Default.png" vertexColors="false">
+			<Pivot anchor="center" />
+		</Sprite>
+		<LayoutConfiguration>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="JellyCakeMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Shader program="TextureColor"/>
+		</Material>
+	</Materials>
+	<Material name="JellyCakePlateMat" parentMaterial="JellyCakeMaterial">
+		<Texture filename="shared/game/common/tex/candy/2x2_jelly_cake_background_c.png"/>
+	</Material>
+	<Material name="JellyCakeBaseMaterial" parentMaterial="JellyCakeMaterial">
+		<Texture filename="shared/game/common/tex/candy/jellycake_base_c.png"/>
+	</Material>
+	<Material name="JellyCakePartsMaterial" parentMaterial="JellyCakeMaterial">
+		<Texture filename="shared/game/common/tex/candy/jellycake_pieces_c.png"/>
+	</Material>
+</Scene>

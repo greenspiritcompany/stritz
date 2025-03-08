@@ -1,0 +1,29 @@
+<ParticleEffect maxParticles="16" space="Local" timeToEmit="60" name="Ep01FountainSoda">
+<Dampening max="0.920" min="0.920" />
+<DirectionalForce x="0" y="800" />
+<Emitter emissionRate="0.100" spread="0" angle="0">
+	<SpawnArea width="10" depth="0" height="10" />
+</Emitter>
+<Rotation min="-110" max="-110" />
+<RotationSpeed max="160" min="120" />
+<Size>
+	<Max x="35" y="35" />
+	<Min x="15" y="15" />
+</Size>
+<SizeChange>
+	<Max x="-30" y="-30" />
+	<Min x="-15" y="-15" />
+</SizeChange>
+<Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/ep01_fountain_soda.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive max="0.600" min="0.500" />
+<Velocity max="100" min="80" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color b="255" r="255" g="255" a="25" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color b="255" r="255" g="255" a="255" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

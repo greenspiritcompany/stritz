@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="20" space="World" timeToEmit="0.500" name="FizzSpreadDotPFX">
+    <Dampening max="0.900" min="0.900"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.020" spread="360" angle="-90">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="500" min="500"/>
+    <Size>
+        <Max x="64" y="64"/>
+        <Min x="16" y="16"/>
+    </Size>
+    <SizeChange>
+        <Max x="-16" y="-16"/>
+        <Min x="-8" y="-8"/>
+    </SizeChange>
+    <StartColor b="244" r="244" g="150" a="200"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="0.500" min="0.300"/>
+    <Velocity max="150" min="50"/>
+</ParticleEffect>

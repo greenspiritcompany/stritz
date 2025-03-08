@@ -1,0 +1,39 @@
+{
+  "id": "completionist_hard",
+  "nameKey" : "quests.names.completionist",
+  "difficulty" : 1,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "progressLevels",
+      "descriptionKey" : "quests.description.movingforward",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_checkmark.png",
+      "data": {
+         "levels": 6
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

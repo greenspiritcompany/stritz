@@ -1,0 +1,26 @@
+<Layout>
+	<Object sceneObject="LogoutPopup">
+		<Portrait>
+			<Translation>
+				<X percentage="50.0"/>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Width percentage="90" max="520"/>
+				<Height percentage="100" max="290"/>
+				<OriginalSize width="520" height="290"/>
+			</Size>
+		</Portrait>
+		<Landscape>
+			<Translation>
+				<X percentage="50.0"/>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Width percentage="100" max="520"/>
+				<Height percentage="90" max="290"/>
+				<OriginalSize width="520" height="290"/>
+			</Size>
+		</Landscape>
+	</Object>
+</Layout>

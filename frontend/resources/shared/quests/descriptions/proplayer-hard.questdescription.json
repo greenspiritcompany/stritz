@@ -1,0 +1,40 @@
+{
+  "id": "proplayer",
+  "nameKey" : "quests.names.proplayer",
+  "difficulty" : 1,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "progressLevels",
+      "descriptionKey" : "quests.description.greatplayer",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_pass_hard_level.png",
+      "data": {
+		"levels" : 3,
+        "scope": 1
+      }
+    }
+  ],
+    "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<Timelines>
+<Timeline startTime="0" endTime="2.500">
+	<Animate target="ExclQuestBlurred">
+		<Scale time="0" x="2" y="4" />
+		<Scale time="0.200" x="2" y="2" />
+		<Scale time="1.300" x="2" y="2" />
+		<Scale time="1.500" x="2" y="4" />
+		<Color time="0" r="255" g="255" b="255" a="255" />
+		<Color time="0.250" r="255" g="255" b="255" a="255" />
+		<Color time="0.350" r="0" g="0" b="0" a="0" />
+		<Color time="1.300" r="0" g="0" b="0" a="0" />
+		<Color time="1.350" r="255" g="255" b="255" a="255" />
+		<Color time="1.600" r="255" g="255" b="255" a="0" />
+	</Animate>
+	<Animate target="ExclQuest">
+		<Color time="0" r="255" g="255" b="255" a="255" />
+		<Color time="1.350" r="255" g="255" b="255" a="255" />
+		<Color time="1.550" r="255" g="255" b="255" a="0" />
+	</Animate>
+	<Animate target="ExclQuest">
+		<Show time="0.010" />
+		<Hide time="0" />
+	</Animate>
+	<Animate target="ExclQuestBlurred">
+		<Show time="0.010" />
+		<Hide time="0" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger targetName="ExclGroup" animationName="ExclSwipe" time="0.010" />
+		<EffectTrigger name="ExclamationGlitterEFQ" time="0.010" targetName="ExclGroup" followTarget="true">
+			<Offset z="-1" y="50" />
+		</EffectTrigger>
+		<EffectTrigger name="ExclamationGlitterEFQ" time="0.010" targetName="ExclGroup" followTarget="true">
+			<Offset z="-1" y="50" />
+		</EffectTrigger>
+		<EffectTrigger name="quest_completed_EFQ" time="0" />
+	</Triggers>
+</Timeline>
+</Timelines>

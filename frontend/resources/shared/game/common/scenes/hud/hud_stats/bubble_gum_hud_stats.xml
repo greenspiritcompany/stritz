@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<Material name="BubblegumInHudMaterial">
+		<Texture filename="shared/game/common/tex/hud/bubblegum_icon_v2.png" />
+		<Blend blendFuncSourceFactor="One" enabled="true" />
+		<Depth enabled="true" />
+	</Material>
+	<SceneObject __visibility="0" name="LandscapeBubblegumStats">
+		<!--<Sprite filename="shared/game/common/tex/hud/task_box.png">-->
+		<!--<Pivot anchor="center"/>-->
+		<!--</Sprite>-->
+		<SceneObject __visibility="0" name="BubblegumImg">
+			<Translation x="-1.377" y="-32.915" />
+			<Scale x="0.400" y="-0.400" z="0.380" />
+			<Model filename="shared/game/common/models/chocolate/hud/chocolate_in_hud.ffm">
+				<Animation filename="shared/game/common/models/chocolate/hud/chocolate_in_hud_idle.ffa" loopCount="-1" name="idle" play="true" />
+			</Model>
+			<Material parentMaterial="BubblegumInHudMaterial" />
+			<SceneObject name="BubblegumImgParticle">
+				<Scale x="3" y="3" z="3" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="BubblegumText">
+			<Translation x="-7.632" y="34.561" z="20" />
+			<Scale x="0.906" y="0.906" />
+			<Text alignment="center" font="PinkNumbers" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="18" y="18" />
+				<TextString>0/3</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkLandscapeRoot">
+			<SceneObject name="CheckmarkLandscape" visibility="never">
+				<Translation x="-1.774" y="36" z="3" />
+				<Scale x="0.850" y="0.850" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject __visibility="3" name="PortraitBubblegumStats">
+		<!--<Panel filename="shared/game/common/tex/hud/icon_number_frame.png">-->
+		<!--<Insets bottom="26" left="26" right="26" top="26"/>-->
+		<!--<Pivot anchor="center" x="-44"/>-->
+		<!--<Size height="66" width="140"/>-->
+		<!--</Panel>-->
+		<SceneObject name="BubblegumImgPortrait">
+			<Translation x="-11.057" y="-12.722" />
+			<Scale x="0.400" y="-0.400" z="0.350" />
+			<Model filename="shared/game/common/models/chocolate/hud/chocolate_in_hud.ffm">
+				<Animation filename="shared/game/common/models/chocolate/hud/chocolate_in_hud_idle.ffa" loopCount="-1" name="idle" play="true" />
+			</Model>
+			<Material parentMaterial="BubblegumInHudMaterial" />
+			<SceneObject name="BubblegumImgParticlePortrait">
+				<Scale x="3" y="3" z="3" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="BubblegumText">
+			<Translation x="76.844" y="23.128" z="20" />
+			<Text alignment="center" font="PinkNumbers" verticalAlignment="visualCenter">
+				<Shadow enabled="true">
+					<Color r="49" g="97" b="131" a="90" />
+					<Offset x="1" y="1" />
+				</Shadow>
+				<Size x="14" y="14" />
+				<TextString>0/1</TextString>
+			</Text>
+		</SceneObject>
+		<SceneObject name="CheckmarkPortraitRoot">
+			<SceneObject name="CheckmarkPortrait" visibility="never">
+				<Translation x="84.915" y="14" z="0" />
+				<Scale x="1.037" y="1.037" z="0.700" />
+				<Animation animationData="OnAppearGrow" loopCount="0" name="Show" />
+				<Sprite filename="shared/game/common/tex/hud/pink_check.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

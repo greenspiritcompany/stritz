@@ -1,0 +1,39 @@
+{
+  "id": "scorechaser_hard",
+  "nameKey" : "quests.names.scoremaster",
+  "difficulty" : 1,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "beatYourself",
+      "descriptionKey" : "quests.description.scorechaser",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_beat_old_score.png",
+      "data": {
+		"amount" : 6
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<ParticleEffect space="Local" timeToEmit="1.250" name="quest_tab_burst_glow_PFX" maxParticles="8">
+<Dampening min="0.920" max="0.980" />
+<DirectionalForce x="-500" />
+<Emitter emissionRate="0.800" angle="180" spread="0">
+	<SpawnArea depth="0" width="0" height="0" />
+</Emitter>
+<EndColor r="255" g="255" b="255" a="0" />
+<Rotation max="0" min="0" />
+<Size>
+	<Max x="90" y="130" />
+	<Min x="90" y="130" />
+</Size>
+<SizeChange>
+	<Max x="400" y="0" />
+	<Min x="350" y="55" />
+</SizeChange>
+<StartColor r="255" g="255" b="255" a="255" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/light64.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<RotationSpeed min="0" max="0" />
+<TimeToLive min="1" max="1" />
+<Velocity min="0" max="0" />
+</ParticleEffect>

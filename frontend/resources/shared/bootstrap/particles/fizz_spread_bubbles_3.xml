@@ -1,0 +1,22 @@
+<ParticleEffect maxParticles="20" timeToEmit="0.700" name="FizzSpreadBubbles3PFX" startDelay="0">
+    <Dampening max="0.700" min="0.500"/>
+    <Emitter emissionRate="0.010" spread="360" angle="0">
+        <SpawnArea width="100" depth="0" height="100"/>
+    </Emitter>
+    <EndColor b="255" r="0" g="251" a="10"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="500" min="-500"/>
+    <Size>
+        <Max x="26" y="26"/>
+        <Min x="5" y="5"/>
+    </Size>
+    <SizeChange>
+        <Max x="-24" y="-24"/>
+        <Min x="-54" y="-55"/>
+    </SizeChange>
+    <StartColor b="204" r="0" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/soda_fish_bubble.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.700" min="0.350"/>
+    <Velocity max="-100" min="600"/>
+</ParticleEffect>

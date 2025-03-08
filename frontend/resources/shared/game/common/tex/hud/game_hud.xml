@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:4645634ff7b340822859e66418b2b08d:4a340d9374e9405288cae8c8c1f86e58:68b5a8b1fb9f0d0ee067faeff133bfe7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="game_hud.png" width="1024" height="1024">
+    <sprite n="bear_in_bubble_hud_v2.png" x="649" y="428" w="212" h="150" pX="0.5" pY="0.5"/>
+    <sprite n="bottles_in_hud.png" x="110" y="861" w="165" h="141" pX="0.5" pY="0.5"/>
+    <sprite n="btn_green.png" x="126" y="732" w="110" h="110" pX="0.5" pY="0.5"/>
+    <sprite n="btn_quit.png" x="975" y="2" w="47" h="47" pX="0.5" pY="0.5"/>
+    <sprite n="bubble_big.png" x="263" y="286" w="74" h="66" pX="0.5" pY="0.5"/>
+    <sprite n="bubble_small.png" x="660" y="95" w="13" h="13" pX="0.5" pY="0.5"/>
+    <sprite n="bubblegum_icon_v2.png" x="2" y="732" w="120" h="118" pX="0.5" pY="0.5"/>
+    <sprite n="chocolate_in_hud.png" x="873" y="274" w="59" h="59" pX="0.5" pY="0.5"/>
+    <sprite n="colorbomb_turtle_blurred.png" x="245" y="511" w="70" h="48" pX="0.5" pY="0.5"/>
+    <sprite n="cool_down.png" x="263" y="132" w="88" h="88" pX="0.5" pY="0.5"/>
+    <sprite n="digger_bear_icon_v2.png" x="2" y="861" w="104" h="144" pX="0.5" pY="0.5"/>
+    <sprite n="exit_btn_holder.png" x="937" y="219" w="79" h="33" pX="0.5" pY="0.5"/>
+    <sprite n="gamemode_holder.png" x="615" y="582" w="177" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="giant_bear_hud_v2.png" x="680" y="2" w="291" h="150" pX="0.5" pY="0.5"/>
+    <sprite n="hard_egp_swipe_top.png" x="368" y="2" w="308" h="69" pX="0.5" pY="0.5"/>
+    <sprite n="hard_innerswipe_bottom.png" x="2" y="581" w="180" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="hard_instruction_swipe_top.png" x="368" y="75" w="288" h="123" pX="0.5" pY="0.5"/>
+    <sprite n="hud_bg.png" x="2" y="132" w="257" h="344" pX="0.5" pY="0.5"/>
+    <sprite n="icon_illegal_switch.png" x="937" y="256" w="78" h="78" pX="0.5" pY="0.5"/>
+    <sprite n="icon_lollipop.png" x="796" y="582" w="64" h="71" pX="0.5" pY="0.5"/>
+    <sprite n="icon_lollipop_striped.png" x="796" y="657" w="64" h="71" pX="0.5" pY="0.5"/>
+    <sprite n="instruction_swipe_top.png" x="2" y="2" w="362" h="126" pX="0.5" pY="0.5"/>
+    <sprite n="jam_jar_icon_v2.png" x="494" y="631" w="112" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="mission_box.png" x="240" y="732" w="123" h="104" pX="0.5" pY="0.5"/>
+    <sprite n="mission_box_win.png" x="367" y="732" w="123" h="104" pX="0.5" pY="0.5"/>
+    <sprite n="moves_icon.png" x="615" y="202" w="37" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="notification_buy.png" x="975" y="53" w="44" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="notification_stock.png" x="975" y="102" w="44" h="45" pX="0.5" pY="0.5"/>
+    <sprite n="pink_check.png" x="936" y="338" w="69" h="54" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/booster_holder.png" x="548" y="462" w="63" h="156" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/booster_holder_2.png" x="615" y="401" w="30" h="99" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/gamemode_holder_shine.png" x="245" y="563" w="66" h="73" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/sidekickmeter_inside_bg_port.png" x="871" y="400" w="147" h="111" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/sidekickmeter_inside_fill_port.png" x="864" y="613" w="147" h="111" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/sidekickmeter_port.png" x="279" y="861" w="168" h="130" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/starmeter.png" x="263" y="224" w="86" h="58" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/starmeter_bg.png" x="615" y="251" w="37" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/starmeter_shine.png" x="2" y="678" w="171" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/topbar_bg_rounded.png" x="263" y="356" w="70" h="151" pX="0.5" pY="0.5"/>
+    <sprite n="portrait/topbar_ear.png" x="660" y="156" w="273" h="114" pX="0.5" pY="0.5"/>
+    <sprite n="shuffle_mission_box.png" x="451" y="861" w="123" h="104" pX="0.5" pY="0.5"/>
+    <sprite n="sidekick_cyan_turtle.png" x="355" y="202" w="256" h="256" pX="0.5" pY="0.5"/>
+    <sprite n="sidekickmeter.png" x="2" y="480" w="239" h="97" pX="0.5" pY="0.5"/>
+    <sprite n="sidekickmeter_icon.png" x="937" y="156" w="33" h="38" pX="0.5" pY="0.5"/>
+    <sprite n="sidekickmeter_inside_bg.png" x="656" y="274" w="213" h="73" pX="0.5" pY="0.5"/>
+    <sprite n="sidekickmeter_inside_fill.png" x="654" y="351" w="213" h="73" pX="0.5" pY="0.5"/>
+    <sprite n="soda_fizz_icon.png" x="864" y="728" w="146" h="129" pX="0.5" pY="0.5"/>
+    <sprite n="star_active.png" x="615" y="287" w="35" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="star_inactive.png" x="615" y="325" w="35" h="34" pX="0.5" pY="0.5"/>
+    <sprite n="star_stick.png" x="1016" y="151" w="5" h="4" pX="0.5" pY="0.5"/>
+    <sprite n="star_stick_trans.png" x="1016" y="159" w="5" h="4" pX="0.5" pY="0.5"/>
+    <sprite n="starmeter.png" x="337" y="462" w="207" h="165" pX="0.5" pY="0.5"/>
+    <sprite n="starmeter_fill.png" x="615" y="392" w="32" h="5" pX="0.5" pY="0.5"/>
+    <sprite n="starmeter_fill_bottom.png" x="615" y="363" w="32" h="15" pX="0.5" pY="0.5"/>
+    <sprite n="starmeter_fill_top.png" x="937" y="198" w="32" h="17" pX="0.5" pY="0.5"/>
+    <sprite n="starmeter_fill_top2.png" x="615" y="382" w="32" h="6" pX="0.5" pY="0.5"/>
+    <sprite n="starmeter_inside_bg.png" x="975" y="151" w="37" h="56" pX="0.5" pY="0.5"/>
+    <sprite n="swipe_bg.png" x="660" y="75" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="tilde_sign.png" x="615" y="504" w="21" h="10" pX="0.5" pY="0.5"/>
+    <sprite n="tutorial_text_bg_panel.png" x="865" y="515" w="156" h="94" pX="0.5" pY="0.5"/>
+    <sprite n="white_chocolate_in_hud.png" x="873" y="337" w="59" h="59" pX="0.5" pY="0.5"/>
+</TextureAtlas>

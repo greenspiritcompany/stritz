@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="34" timeToEmit="60" name="Eve_BorderHighglightGlitterPFX_particle" space="Local">
+<Dampening max="0" min="1" />
+<Emitter emissionRate="0" spread="0" angle="0">
+	<SpawnArea width="76" depth="12" height="0" />
+</Emitter>
+<EndColor b="221" r="84" g="137" a="255" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="0" min="0" />
+<Size>
+	<Max x="74" y="41" />
+	<Min x="74" y="41" />
+</Size>
+<SizeChange>
+	<Max x="-146" y="-100" />
+	<Min x="-146" y="-100" />
+</SizeChange>
+<StartColor b="255" r="137" g="211" a="0" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0" />
+<TimeToLive max="0.400" min="0.400" />
+<Velocity max="4.530" min="4.530" />
+<CentrifugalForce min="34" max="8" />
+</ParticleEffect>

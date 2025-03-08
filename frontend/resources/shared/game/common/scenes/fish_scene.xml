@@ -1,0 +1,129 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/fish_material.xml"/>
+
+	<SceneObject name="Scene" layerFlags="512">
+		<SceneObject name="FishRoot">
+			<SceneObject name="FishAnimation">
+				<Animations>
+					<Animation name="FishGoAnim" animationData="FishGoAnimData" loopCount="-1"/>
+				</Animations>
+				<SceneObject name="jam_1" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_jam_1_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="Jam1OnFishMaterial">
+                            <Color a="230"/>
+                        </Material>
+					</Materials>
+					<Rotation z="35"/>
+					<Translation x="5" y="-12" z="1000"/>
+				</SceneObject>
+				<SceneObject name="jam_2" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_jam_1_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="Jam1OnFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+                    <Translation x="5" y="-12" z="1000"/>
+				</SceneObject>
+				<SceneObject name="blue" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_blue_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="BlueFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="cyan" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_cyan_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="CyanFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="green" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_green_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="GreenFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+                <SceneObject name="black" visibility="never">
+                    <Sprite normals="true" filename="shared/game/common/tex/candy/fish_black_c.png">
+                        <Pivot anchor="center"/>
+                    </Sprite>
+                    <Materials>
+                        <Material parentMaterial="BlackFishMaterial"/>
+                    </Materials>
+                    <Rotation z="35"/>
+                </SceneObject>
+				<SceneObject name="orange" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_orange_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="OrangeFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="purple" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_purple_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="PurpleFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="red" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_red_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="RedFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+				<SceneObject name="yellow" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_yellow_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="YellowFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+                <SceneObject name="pink" visibility="never">
+					<Sprite normals="true" filename="shared/game/common/tex/candy/fish_pink_c.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Materials>
+						<Material parentMaterial="PinkFishMaterial"/>
+					</Materials>
+					<Rotation z="35"/>
+				</SceneObject>
+                <SceneObject name="light_green" visibility="never">
+                    <Sprite normals="true" filename="shared/game/common/tex/candy/fish_light_green_c.png">
+                        <Pivot anchor="center"/>
+                    </Sprite>
+                    <Materials>
+                        <Material parentMaterial="LightGreenFishMaterial"/>
+                    </Materials>
+                    <Rotation z="35"/>
+                </SceneObject>
+
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

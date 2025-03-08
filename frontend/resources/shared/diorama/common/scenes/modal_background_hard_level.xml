@@ -1,0 +1,119 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<SceneObject name="ModalBackground">
+		<Translation y="0" z="0" x="0"/>
+		<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/hard_inner_modal.png">
+			<Insets top="98" bottom="95" right="102" left="102"/>
+			<Size width="574" height="638"/>
+			<Pivot y="-18" anchor="center"/>
+		</Panel>
+		<SceneObject name="Border">
+			<SceneObject name="TopLeft">
+				<Translation y="-302" z="-1" x="-256"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/hard_frame_corner_upleft.png">
+					<Pivot anchor="right"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="TopRight">
+				<Translation y="-302" z="-1" x="256"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/hard_frame_corner_upright.png">
+					<Pivot anchor="left"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Top">
+				<Translation y="-302" z="-1"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/hard_frame_up.png" wrap="repeat">
+					<Rectangle minY="2" minX="0" maxY="64" maxX="512"/>
+					<Pivot y="-1" anchor="center"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Left">
+				<Translation y="18" z="-1" x="-256"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/hard_frame_left.png" wrap="repeat">
+					<Rectangle minY="0" minX="2" maxY="576" maxX="64"/>
+					<Pivot anchor="right"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Right">
+				<Translation y="18" z="-1" x="256"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/hard_frame_right.png" wrap="repeat">
+					<Rectangle minY="0" minX="0" maxY="576" maxX="62"/>
+					<Pivot anchor="left"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="BottomLeft">
+				<Translation y="338" z="-1" x="-256"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/hard_frame_corner_downleft.png">
+					<Pivot anchor="right"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="BottomRight">
+				<Translation y="338" z="-1" x="256"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/hard_frame_corner_downright.png">
+					<Pivot anchor="left"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Bottom">
+				<Translation y="338" z="-1"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/hard_frame_down.png" wrap="repeat">
+					<Rectangle minY="0" minX="0" maxY="62" maxX="512"/>
+					<Pivot y="1" anchor="center"/>
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Header">
+			<Translation y="-15"/>
+			<SceneObject name="Right">
+				<Translation y="-340"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/hard_header.png">
+					<Flip u="true"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Left">
+				<Translation y="-340" x="-230"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/hard_header.png"/>
+			</SceneObject>
+			<SceneObject name="RightShiny">
+				<Translation y="-335" z="0" x="0"/>
+				<Sprite vertexColors="false">
+					<Flip u="true"/>
+				</Sprite>
+				<Material>
+					<Shader program="TextureColorShiny"/>
+					<Texture filename="shared/diorama/common/tex/gui_elements/hard_header_tex.png"/>
+					<Blend blendFuncSourceFactor="One" blendFuncDestinationFactor="OneMinusSrcColor" enabled="true"/>
+					<Depth enabled="true"/>
+				</Material>
+			</SceneObject>
+			<SceneObject name="LeftShiny">
+				<Translation y="-335" z="0" x="0"/>
+				<Sprite vertexColors="false">
+					<Pivot anchor="topRight"/>
+				</Sprite>
+				<Material>
+					<Shader program="TextureColorShiny"/>
+					<Texture filename="shared/diorama/common/tex/gui_elements/hard_header_tex.png"/>
+					<Blend blendFuncSourceFactor="One" blendFuncDestinationFactor="OneMinusSrcColor" enabled="true"/>
+					<Depth enabled="true"/>
+				</Material>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject class="Button" name="CloseButton">
+			<Translation y="-289" x="278"/>
+			<Scale xyz="0.7"/>
+			<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_pink.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+			<Animation play="true" animationData="Idle" layer="1" name="Idle"/>
+			<Animation animationData="OnPress" name="OnPress" loopCount="0"/>
+			<Animation animationData="OnRelease" name="OnRelease" loopCount="0"/>
+			<SceneObject>
+				<Translation y="-3" x="0"/>
+				<Scale xyz="1.5"/>
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_exit.png">
+					<Pivot anchor="center"/>
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

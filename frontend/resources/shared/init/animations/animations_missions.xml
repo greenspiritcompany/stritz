@@ -1,0 +1,190 @@
+<Animations>
+<Animation name="SlideInFromTop" speed="0.75">
+<Translation time="0.000" y="-1063.067" x="0.000" />
+<Translation time="0.017" y="-801.851" x="0.000" />
+<Translation time="0.033" y="-585.279" x="0.000" />
+<Translation time="0.050" y="-409.312" x="0.000" />
+<Translation time="0.067" y="-269.911" x="0.000" />
+<Translation time="0.083" y="-163.037" x="0.000" />
+<Translation time="0.100" y="-84.651" x="0.000" />
+<Translation time="0.117" y="-30.714" x="0.000" />
+<Translation time="0.133" y="2.811" x="0.000" />
+<Translation time="0.150" y="19.965" x="0.000" />
+<Translation time="0.167" y="24.785" x="0.000" />
+<Translation time="0.183" y="20.925" x="0.000" />
+<Translation time="0.200" y="11.720" x="0.000" />
+<Translation time="0.217" y="0.734" x="0.000" />
+<Translation time="0.233" y="-8.471" x="0.000" />
+<Translation time="0.250" y="-12.331" x="0.000" />
+<Translation time="0.267" y="-11.049" x="0.000" />
+<Translation time="0.283" y="-7.991" x="0.000" />
+<Translation time="0.300" y="-4.341" x="0.000" />
+<Translation time="0.317" y="-1.282" x="0.000" />
+<Translation time="0.333" y="0.000" x="0.000" />
+</Animation>
+
+<Animation name="SlideOutToTop" speed="0.75">
+<Translation time="0.000" y="0.0" x="0.000" />
+<Translation time="0.017" y="8.012" x="0.000" />
+<Translation time="0.033" y="14.838" x="0.000" />
+<Translation time="0.050" y="20.137" x="0.000" />
+<Translation time="0.067" y="23.566" x="0.000" />
+<Translation time="0.083" y="24.785" x="0.000" />
+<Translation time="0.100" y="19.965" x="0.000" />
+<Translation time="0.117" y="2.811" x="0.000" />
+<Translation time="0.133" y="-30.714" x="0.000" />
+<Translation time="0.150" y="-84.651" x="0.000" />
+<Translation time="0.167" y="-163.037" x="0.000" />
+<Translation time="0.183" y="-269.911" x="0.000" />
+<Translation time="0.200" y="-409.312" x="0.000" />
+<Translation time="0.217" y="-585.279" x="0.000" />
+<Translation time="0.233" y="-801.852" x="0.000" />
+<Translation time="0.250" y="-1763.067" x="0.000" />
+</Animation>
+
+<Animation name="PageInFromLeft" speed="0.6">
+<Translation time="0.000" x="-805.000" y="-0.000" z="0.000" />
+<Translation time="0.017" x="-691.383" y="-0.000" z="0.000" />
+<Translation time="0.033" x="-586.037" y="-0.000" z="0.000" />
+<Translation time="0.050" x="-488.986" y="-0.000" z="0.000" />
+<Translation time="0.067" x="-400.254" y="-0.000" z="0.000" />
+<Translation time="0.083" x="-319.862" y="-0.000" z="0.000" />
+<Translation time="0.100" x="-247.835" y="-0.000" z="0.000" />
+<Translation time="0.117" x="-184.195" y="-0.000" z="0.000" />
+<Translation time="0.133" x="-128.966" y="-0.000" z="0.000" />
+<Translation time="0.150" x="-82.169" y="-0.000" z="0.000" />
+<Translation time="0.167" x="-43.830" y="-0.000" z="0.000" />
+<Translation time="0.183" x="-13.970" y="-0.000" z="0.000" />
+<Translation time="0.200" x="7.387" y="-0.000" z="0.000" />
+<Translation time="0.217" x="20.218" y="-0.000" z="0.000" />
+<Translation time="0.233" x="24.500" y="-0.000" z="0.000" />
+<Translation time="0.250" x="21.952" y="-0.000" z="0.000" />
+<Translation time="0.267" x="15.876" y="-0.000" z="0.000" />
+<Translation time="0.283" x="8.624" y="-0.000" z="0.000" />
+<Translation time="0.300" x="2.548" y="-0.000" z="0.000" />
+<Translation time="0.317" x="0.000" y="-0.000" z="0.000" />
+</Animation>
+
+<Animation name="PageOutToLeft" speed="0.6">
+<Translation time="0.000" x="0.000" y="-0.000" z="0.000" />
+<Translation time="0.017" x="-0.383" y="-0.000" z="0.000" />
+<Translation time="0.033" x="-0.037" y="-0.000" z="0.000" />
+<Translation time="0.050" x="-32.986" y="-0.000" z="0.000" />
+<Translation time="0.067" x="-120.254" y="-0.000" z="0.000" />
+<Translation time="0.083" x="-200.862" y="-0.000" z="0.000" />
+<Translation time="0.100" x="-273.835" y="-0.000" z="0.000" />
+<Translation time="0.117" x="-336.195" y="-0.000" z="0.000" />
+<Translation time="0.133" x="-392.966" y="-0.000" z="0.000" />
+<Translation time="0.150" x="-438.169" y="-0.000" z="0.000" />
+<Translation time="0.167" x="-477.830" y="-0.000" z="0.000" />
+<Translation time="0.183" x="-507.970" y="-0.000" z="0.000" />
+<Translation time="0.200" x="-805.000" y="-0.000" z="0.000" />
+</Animation>
+
+<Animation name="PageInFromRight" speed="0.6">
+<Translation time="0.000" x="805.000" y="-0.000" z="0.000" />
+<Translation time="0.017" x="691.383" y="-0.000" z="0.000" />
+<Translation time="0.033" x="586.037" y="-0.000" z="0.000" />
+<Translation time="0.050" x="488.986" y="-0.000" z="0.000" />
+<Translation time="0.067" x="400.254" y="-0.000" z="0.000" />
+<Translation time="0.083" x="319.862" y="-0.000" z="0.000" />
+<Translation time="0.100" x="247.835" y="-0.000" z="0.000" />
+<Translation time="0.117" x="184.195" y="-0.000" z="0.000" />
+<Translation time="0.133" x="128.966" y="-0.000" z="0.000" />
+<Translation time="0.150" x="82.169" y="-0.000" z="0.000" />
+<Translation time="0.167" x="43.830" y="-0.000" z="0.000" />
+<Translation time="0.183" x="13.970" y="-0.000" z="0.000" />
+<Translation time="0.200" x="-7.387" y="-0.000" z="0.000" />
+<Translation time="0.217" x="-20.218" y="-0.000" z="0.000" />
+<Translation time="0.233" x="-24.500" y="-0.000" z="0.000" />
+<Translation time="0.250" x="-21.952" y="-0.000" z="0.000" />
+<Translation time="0.267" x="-15.876" y="-0.000" z="0.000" />
+<Translation time="0.283" x="-8.624" y="-0.000" z="0.000" />
+<Translation time="0.300" x="-2.548" y="-0.000" z="0.000" />
+<Translation time="0.317" x="0.000" y="-0.000" z="0.000" />
+</Animation>
+
+<Animation name="PageOutToRight" speed="0.6">
+<Translation time="0.000" x="0.000" y="-0.000" z="0.000" />
+<Translation time="0.017" x="0.383" y="-0.000" z="0.000" />
+<Translation time="0.033" x="0.037" y="-0.000" z="0.000" />
+<Translation time="0.050" x="32.986" y="-0.000" z="0.000" />
+<Translation time="0.067" x="120.254" y="-0.000" z="0.000" />
+<Translation time="0.083" x="200.862" y="-0.000" z="0.000" />
+<Translation time="0.100" x="273.835" y="-0.000" z="0.000" />
+<Translation time="0.117" x="336.195" y="-0.000" z="0.000" />
+<Translation time="0.133" x="392.966" y="-0.000" z="0.000" />
+<Translation time="0.150" x="438.169" y="-0.000" z="0.000" />
+<Translation time="0.167" x="477.830" y="-0.000" z="0.000" />
+<Translation time="0.183" x="507.970" y="-0.000" z="0.000" />
+<Translation time="0.200" x="805.000" y="-0.000" z="0.000" />
+</Animation>
+
+<Animation name="SwingInFromLeft" speed="1">
+<Rotation time="0.000" z="22.000" easeMode="easeInOut" tween="quad" />
+<Rotation time="0.50" z="-11.500" easeMode="easeInOut" tween="quad" />
+<Rotation time="1.0" z="5.000" easeMode="easeInOut" tween="quad" />
+<Rotation time="1.5" z="-2.500" easeMode="easeInOut" tween="quad" />
+<Rotation time="2.0" z="1.000" easeMode="easeInOut" tween="quad" />
+<Rotation time="2.5" z="-0.500" easeMode="easeInOut" tween="quad" />
+<Rotation time="3.0" z="0.000" />
+</Animation>
+
+<Animation name="SwingOutToLeft" speed="1">
+<Rotation time="0.000" z="0.000" easeMode="easeInOut" tween="quad" />
+<Rotation time="0.05" z="1.0" easeMode="easeInOut" tween="quad" />
+<Rotation time="0.40" z="-22.50" easeMode="easeInOut" tween="quad" />
+<Rotation time="0.41" z="0.000" />
+</Animation>
+
+<Animation name="CalendarRecievedSparcle">
+<Translation time="0" y="-63" x="0" />
+<Translation time="0.051" x="52" y="-63" />
+<Translation time="0.203" x="52" y="57" />
+<Translation time="0.304" y="57" x="-50" />
+<Translation time="0.447" y="-63" x="-50" />
+<Translation time="0.499" y="-63" x="0" />
+</Animation>
+
+<Animation name="RewardScaleIn">
+<Scale time="0.009" x="0.200" y="0.200" z="0.200" tween="quad" easeMode="easeIn" />
+<Scale time="0.241" x="1.120" y="1.120" z="1.120" tween="quad" easeMode="easeOut" />
+<Scale time="0.435" x="0.900" z="0.900" y="0.900" tween="quad" easeMode="easeIn" />
+<Scale time="0.607" x="1.100" y="1.100" z="1.100" tween="quad" easeMode="easeOut" />
+<Scale time="0.753" x="1" y="1" z="1" tween="linear" />
+<Color time="0" a="55" r="255" g="255" b="255" />
+<Color time="0.216" a="255" r="255" g="255" b="255" />
+</Animation>
+
+<Animation name="RewardScaleOut">
+<Scale time="0.266" x="1.200" y="1.200" z="1.200" tween="quad" easeMode="easeOut" />
+<Scale time="0.084" x="0.900" z="0.900" y="0.900" tween="quad" easeMode="easeIn" />
+<Scale time="0.187" x="1.100" y="1.110" z="1.100" tween="quad" easeMode="easeIn" />
+<Scale time="0.395" x="0" y="0" z="0" tween="linear" easeMode="easeOut" />
+<Scale time="0.037" x="1" y="1" z="1" tween="linear" easeMode="easeInOut" />
+<Color time="0.395" a="0" r="255" g="255" b="255" />
+<Color time="0.268" a="255" r="255" g="255" b="255" />
+</Animation>
+
+<Animation name="RewardScaleInSmall">
+<Scale time="0.009" x="0.200" y="0.200" z="0.200" tween="quad" easeMode="easeIn" />
+<Scale time="0.215" x="1.100" y="1.100" z="1.100" tween="quad" easeMode="easeOut" />
+<Scale time="0.444" x="0.900" z="0.900" y="0.900" tween="quad" easeMode="easeIn" />
+<Scale time="0.600" x="1.050" y="1.050" z="1.050" tween="quad" easeMode="easeInOut" />
+<Scale time="0.762" x="1" y="1" z="1" tween="linear" />
+<Scale time="0.281" x="1.100" y="1.100" z="1.100" tween="quad" easeMode="easeInOut" />
+<Color time="0" a="55" r="255" g="255" b="255" />
+<Color time="0.216" a="255" r="255" g="255" b="255" />
+</Animation>
+
+<Animation name="RewardAmount">
+<Scale time="0.009" x="0.200" y="0.200" z="0.200" tween="quad" easeMode="easeIn" />
+<Scale time="0.241" x="1.120" y="1.120" z="1.120" tween="quad" easeMode="easeOut" />
+<Scale time="0.435" x="0.900" z="0.900" y="0.900" tween="quad" easeMode="easeIn" />
+<Scale time="0.607" x="1.100" y="1.100" z="1.100" tween="quad" easeMode="easeIn" />
+<Scale time="0.753" x="1" y="1" z="1" tween="linear" />
+<Color time="0" a="55" r="255" g="255" b="255" />
+<Color time="0.216" a="255" r="255" g="255" b="255" />
+</Animation>
+
+</Animations>

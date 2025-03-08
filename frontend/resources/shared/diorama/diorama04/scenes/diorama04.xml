@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<!--
+		Diorama 03 materials
+	-->
+	<Materials>
+		<!--
+			CommonMaterial & CommonMaterialAlpha
+			TODO: remove this?
+		-->
+		<!--<Material name="CommonMaterialAlpha04" parentMaterial="CommonMaterial03">
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>-->
+
+		<!--BOAT TEXTURE-->
+		<Material name="KimmyBoatMaterialAlpha">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/kimmy_boat.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="KimmyMaterialAlpha">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/kimmy/kimmy_diorama.png"/>
+			</Textures>
+		</Material>
+		<!--CLOUD TEXTURE-->
+		<Material name="CloudMaterial">
+			<Cull enabled="false" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/clouds.png"/>
+			</Textures>
+		</Material>
+		<Material name="CloudMaterialAlpha" parentMaterial="CloudMaterial">
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<!--
+			PORTAL MATERIAL
+		-->
+		<Material name="PortalMaterial">
+			<Cull enabled="true" face="back"/>
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/portal_c.png"/>
+			</Textures>
+		</Material>
+		<!--
+			BoardPieceMaterial & BoardPieceMaterialAlpha
+		-->
+		<Material name="BoardGamePieceMaterial">
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/boardGamePiece.png"/>
+			</Textures>
+		</Material>
+		<Material name="BoardGamePieceMaterialAlpha" parentMaterial="BoardGamePieceMaterial">
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<!--
+			PortalMaterial & PortalDisabledMaterial
+		-->
+		<Material name="PortalMaterial">
+			<Cull enabled="true" face="back"/>
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/portal_c.png"/>
+			</Textures>
+		</Material>
+		<Material name="PortalDisabledMaterial">
+			<Cull enabled="true" face="back"/>
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/lvl_pin_btn_grey.png"/>
+			</Textures>
+		</Material>
+		<!--
+			End of materials
+		-->
+	</Materials>
+	<!--
+		Diorama SceneObjects
+	-->
+	<SceneObject layerFlags="2" name="Diorama">
+		<Import filename="shared/diorama/common/materials/construction_sign_material.xml"/>
+		<Import filename="shared/diorama/diorama04/episode10/scenes/episode10.xml"/>
+		<Import filename="shared/diorama/diorama04/episode11/scenes/episode11.xml"/>
+		<Import filename="shared/diorama/diorama04/episode12/scenes/episode12.xml"/>
+		<!--
+Tiffy group (THIS ONE IS NOT NEEDED IN DIORAMA3 DUE TO BEING ON WATER)
+-->
+		<!--<SceneObject name="Kimmy_group">
+			<Translation x="-1253" y="22" z="68"/>
+			<Rotation x="0" y="10" z="0"/>
+			<Import filename="shared/diorama/common/scenes/kimmy.xml"/>
+		</SceneObject>-->
+	</SceneObject>
+</Scene>

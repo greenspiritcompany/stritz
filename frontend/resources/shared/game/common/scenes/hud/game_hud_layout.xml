@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Layout SYSTEM "../../../../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="Landscape">
+		<Landscape visible="true">
+			<Translation>
+				<X percentage="12" />
+				<Y percentage="1.200" />
+			</Translation>
+			<Size>
+				<Height percentage="61" />
+				<OriginalSize height="500" width="264" />
+				<Width percentage="24" max="264" />
+			</Size>
+		</Landscape>
+		<LandscapeFourThree visible="true">
+			<Translation>
+				<X percentage="10" />
+				<Y percentage="1.200" />
+			</Translation>
+			<Size>
+				<Height percentage="61" />
+				<OriginalSize height="500" width="264" />
+				<Width percentage="22" max="264" />
+			</Size>
+		</LandscapeFourThree>
+		<Portrait visible="false" />
+		<PortraitFourThree visible="false" />
+	</Object>
+	<Object sceneObject="Portrait">
+		<Landscape visible="false" />
+		<Portrait visible="true" />
+	</Object>
+	<Object sceneObject="PortraitTop">
+		<Portrait>
+			<Translation>
+				<X percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="14.900" />
+				<OriginalSize height="116" width="768" />
+				<Width percentage="100" />
+			</Size>
+		</Portrait>
+	</Object>
+	<Object sceneObject="SidekickButtonPortrait">
+		<Landscape visible="false" />
+		<Portrait visible="true">
+			<Translation>
+				<X percentage="90" />
+				<Y percentage="94" />
+			</Translation>
+			<Size>
+				<Height percentage="25" />
+				<OriginalSize height="200" width="200" />
+				<Width percentage="25" />
+			</Size>
+		</Portrait>
+		<PortraitFourThree visible="true">
+			<Translation>
+				<X percentage="90" />
+				<Y percentage="95" />
+			</Translation>
+			<Size>
+				<Height percentage="25" />
+				<OriginalSize height="200" width="200" />
+				<Width percentage="20" />
+			</Size>
+		</PortraitFourThree>
+		<landscapeFourThree visible="false" />
+	</Object>
+</Layout>

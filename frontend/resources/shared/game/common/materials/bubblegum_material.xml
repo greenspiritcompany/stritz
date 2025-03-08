@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="BubblegumMaterial">
+			<Blend enabled="true"/>
+			<Cull enabled="false" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Shader program="TextureColor"/>
+		</Material>
+		<Material name="BubblegumBgMaterial" parentMaterial="BubblegumMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_1_c.png"/>
+			</Textures>
+		</Material>
+		<Material name="BubblegumOverMaterial" parentMaterial="BubblegumMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_2_c.png"/>
+			</Textures>
+		</Material>
+		<Material name="BubblegumStringsHorizontalMaterial" parentMaterial="BubblegumMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_klet_v_c.png"/>
+			</Textures>
+		</Material>
+		<Material name="BubblegumStringsVerticalMaterial" parentMaterial="BubblegumMaterial">
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bubblegum_klet_h_c.png"/>
+			</Textures>
+		</Material>
+        <Material name="BubblegumBgUnderMaterial" parentMaterial="BubblegumMaterial">
+            <Textures>
+                <Texture filename="shared/game/common/tex/candy/bubblegum_1_c.png"/>
+            </Textures>
+        </Material>
+	</Materials>
+</Scene>

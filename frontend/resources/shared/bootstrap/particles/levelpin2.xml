@@ -1,0 +1,25 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="64" space="Local" timeToEmit="60" name="LevelPin2PFX">
+    <Dampening max="1" min="1"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.020" spread="360" angle="0">
+        <SpawnArea width="1" depth="0" height="1"/>
+        <EmissionRadius max="30" min="50"/>
+    </Emitter>
+    <EndColor b="255" r="0" g="76" a="0"/>
+    <Rotation max="-1" min="0"/>
+    <RotationSpeed max="0" min="0"/>
+    <Size>
+        <Max x="10" y="10"/>
+        <Min x="5" y="5"/>
+    </Size>
+    <SizeChange>
+        <Max x="-10" y="-10"/>
+        <Min x="-10" y="-10"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="128"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/light_ball.png"/>
+    <TextureFrame numTextureAnimationFrames="0" textureAnimationSpeed="0" startFrame="0"/>
+    <TimeToLive max="0.200" min="0.200"/>
+    <Velocity max="50" min="50"/>
+</ParticleEffect>

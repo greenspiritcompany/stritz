@@ -1,0 +1,20 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+
+<Timelines>
+	<Timeline startTime="0.0" endTime="0.0">
+    
+    <Animate target="CoverHole1" time="0.0">
+      <Translation time="0.0" x="1500"/>
+    </Animate>
+
+    <Animate target="CoverHole2" time="0.0">
+      <Translation time="0.0" x="3000"/>
+    </Animate>
+    
+		<Triggers>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp10" animationName="SpeechBubbleDisappear"/>
+
+
+    </Triggers>
+	</Timeline>
+</Timelines>

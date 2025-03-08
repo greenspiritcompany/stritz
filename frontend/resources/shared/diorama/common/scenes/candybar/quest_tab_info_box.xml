@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject visibility="inherit" editorEntityId="138" name="QuestInfoBox">
+		<Translation z="0" />
+		<SceneObject name="Background">
+			<Panel filename="shared/diorama/common/tex/gui_elements/quest_box_content_box.png" vertexColors="false">
+				<Insets top="70" left="28" bottom="26" right="28" />
+				<Size width="510" height="175" />
+				<VertexColor r="255" b="255" a="255" g="255" />
+				<Pivot anchor="top" />
+			</Panel>
+			<Translation y="0" z="0" />
+			<SceneObject name="pirate">
+				<Animation animationData="wave02_idle" play="true" name="animation" />
+				<Scale y="0.660" x="0.660" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/pirate.png" vertexColors="false" />
+				<Translation x="113" y="-11" z="0" />
+			</SceneObject>
+			<SceneObject editorEntityId="213" name="waves">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/box_wave.png" vertexColors="false" />
+				<Translation y="109.367" x="-243.527" z="0" />
+				<Scale y="0.997" x="0.997" z="1" />
+			</SceneObject>
+			<SceneObject name="Timer">
+				<Translation x="-85" y="-8.200" z="0" />
+				<SceneObject editorEntityId="466" name="HeaderTxt">
+					<Text alignment="left" overflowBehaviour="fit" allowWordWrapping="true" canBreakWords="false" maxWidth="330" verticalAlignment="visualCenter" font="Banana" maxHeight="43" key="quest.candybar.timer.until">
+						<Color r="199" g="110" b="36" a="255" />
+						<Size y="17" x="17" />
+						<Shadow enabled="true">
+							<Color r="255" g="255" b="255" a="255" />
+							<Offset x="0" y="1" />
+						</Shadow>
+					</Text>
+					<Translation x="-139" y="98.200" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject editorEntityId="466" name="TimerTxt">
+					<Text alignment="left" allowWordWrapping="true" canBreakWords="false" font="Banana" maxHeight="80" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="255" g="126" b="51" a="255" />
+						<Size y="25" x="25" />
+						<TextString>99999999</TextString>
+						<Shadow enabled="true">
+							<Color r="255" g="255" b="255" a="255" />
+							<Offset x="0" />
+						</Shadow>
+					</Text>
+					<Translation x="-143" y="62" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject editorEntityId="466" name="HeaderTxt2">
+				<Text allowWordWrapping="true" canBreakWords="false" font="Banana" maxHeight="70" overflowBehaviour="fit" verticalAlignment="visualCenter" alignment="center" key="quest.candybar.timer.complete" maxWidth="344">
+					<Color r="255" g="126" b="51" a="255" />
+					<Shadow enabled="true">
+						<Color a="255" b="255" g="255" r="255" />
+						<Offset x="0" y="1" />
+					</Shadow>
+					<Size x="19" y="19" />
+				</Text>
+				<Translation x="-61.271" y="76.877" z="0" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

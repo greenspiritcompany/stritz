@@ -1,0 +1,25 @@
+<ParticleEffect timeToEmit="300" name="Eve_SparksLvL1000_particle_001" maxParticles="10" space="Local">
+<Dampening min="0.900" max="0.900" />
+<DirectionalForce x="0" />
+<Emitter emissionRate="0.010" angle="0" spread="360">
+	<SpawnArea depth="0" width="0" height="0" />
+	<EmissionRadius min="30" max="30" />
+</Emitter>
+<EndColor r="202" g="255" b="255" a="255" />
+<Size>
+	<Max x="5" y="5" />
+	<Min x="5" y="5" />
+</Size>
+<SizeChange>
+	<Max x="0" y="0" />
+	<Min x="0" y="0" />
+</SizeChange>
+<StartColor r="255" g="255" b="255" a="127" />
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/strong_light2.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive max="2" min="1" />
+<Velocity min="0" max="0" />
+<Rotation min="0" max="0" />
+<RotationSpeed min="0" max="0" />
+<CentrifugalForce max="0" min="2" />
+</ParticleEffect>

@@ -1,0 +1,24 @@
+
+<ParticleEffect maxParticles="2" name="FizzSpreadTrailConstantPFX" space="Local" timeToEmit="0.97">
+	<Dampening max="1" min="1"/>
+	<DirectionalForce x="0" y="0"/>
+	<Emitter angle="0" emissionRate="0" spread="0">
+		<SpawnArea height="0" width="0"/>
+	</Emitter>
+	<EndColor r="255" g="255" b="255" a="191"/>
+	<Rotation max="0" min="0"/>
+	<RotationSpeed max="0" min="0"/>
+	<Size>
+		<Max x="42.26" y="42.26"/>
+		<Min x="42.26" y="42.26"/>
+	</Size>
+	<SizeChange>
+		<Max x="0" y="0"/>
+		<Min x="0" y="0"/>
+	</SizeChange>
+	<StartColor r="255" g="255" b="255" a="191"/>
+	<Texture blend="Multiply" filename="shared/bootstrap/particles/tex/fizz_grow_particle.png" numFramesX="1" numFramesY="1"/>
+	<TextureFrame numTextureAnimationFrames="1" startFrame="0" textureAnimationSpeed="10"/>
+	<TimeToLive max="1" min="1"/>
+	<Velocity max="0" min="0"/>
+</ParticleEffect>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="GiftBoxContainer">
+		<Scale x="0.914" y="0.914" z="1" />
+		<Translation x="0" y="0" z="14" />
+		<SceneObject name="GiftBox">
+			<Translation x="0" y="23.132" z="49.092" />
+			<Scale x="0.914" y="0.914" z="1" />
+			<Rotation x="14" y="0" z="0" />
+			<SceneObject name="gift_3" visibility="inherit">
+				<Scale x="0.300" y="0.300" />
+				<Translation x="3.565" y="21.819" z="12" />
+				<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+					<Animation name="Idle" spineAnimation="gift_purple_idle" loopCount="0" interpolateFrame="false" />
+					<Animation name="Opening" spineAnimation="gift_purple_opening" loopCount="0" interpolateFrame="false" />
+					<Animation name="IdleOpen" spineAnimation="gift_purple_open_diorama" interpolateFrame="false" />
+					<Animation name="IdleJump" spineAnimation="gift_purple_idle_jump" loopCount="0" interpolateFrame="false" />
+					<Animation name="Close" spineAnimation="gift_purple_closing" loopCount="0" interpolateFrame="false" />
+				</Spine>
+				<Material>
+					<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+					<Depth enabled="true" />
+					<Blend enabled="true" />
+				</Material>
+				<Rotation y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="gift_2" visibility="never">
+				<Material>
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+				</Material>
+				<Rotation y="0" z="0" />
+				<Scale x="0.300" y="0.300" />
+				<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+					<Animation name="Idle" spineAnimation="gift_green_idle" loopCount="0" interpolateFrame="false" />
+					<Animation name="Opening" spineAnimation="gift_green_opening" loopCount="0" interpolateFrame="false" />
+					<Animation name="IdleOpen" spineAnimation="gift_green_open_diorama" interpolateFrame="false" />
+					<Animation name="IdleJump" spineAnimation="gift_green_idle_jump" loopCount="0" interpolateFrame="false" />
+					<Animation name="Close" spineAnimation="gift_green_closing" loopCount="0" interpolateFrame="false" />
+				</Spine>
+				<Translation x="3.565" y="21.819" z="12" />
+			</SceneObject>
+			<SceneObject name="gift_1" visibility="never">
+				<Material>
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+					<Texture filename="shared/liveops/treasure_hunt/tex/th_elements.png" />
+				</Material>
+				<Rotation y="0" z="0" />
+				<Scale x="0.300" y="0.300" />
+				<Spine filename="shared/liveops/treasure_hunt/models/modal_gifts.json">
+					<Animation name="Idle" spineAnimation="gift_pink_idle" loopCount="0" interpolateFrame="false" />
+					<Animation name="Opening" spineAnimation="gift_pink_opening" loopCount="0" interpolateFrame="false" />
+					<Animation name="IdleOpen" spineAnimation="gift_pink_open_diorama" interpolateFrame="false" />
+					<Animation name="IdleJump" spineAnimation="gift_pink_idle_jump" loopCount="0" interpolateFrame="false" />
+					<Animation name="Close" spineAnimation="gift_pink_closing" loopCount="0" interpolateFrame="false" />
+				</Spine>
+				<Translation x="3.565" y="21.819" z="12" />
+			</SceneObject>
+			<SceneObject name="TouchArea" visibility="never">
+				<Scale z="1" />
+				<Sprite vertexColors="false">
+					<Size width="100" height="90" />
+				</Sprite>
+				<Translation x="-48.721" y="-67.602" z="12" />
+				<Rotation y="0" z="0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Timer">
+			<Translation x="0" y="-17.936" z="23.530" />
+			<Rotation x="14" y="0" z="0" />
+			<SceneObject name="TimerBG">
+				<Sprite filename="shared/liveops/treasure_hunt/tex/th_timer_bg.png" vertexColors="false" />
+				<Translation x="-51.552" y="-54.677" z="17.773" />
+			</SceneObject>
+			<SceneObject name="Timer_Text">
+				<Translation x="-0.030" y="-41.923" z="22.102" />
+				<Text alignment="center" verticalAlignment="visualCenter" font="Banana" allowWordWrapping="false" canBreakWords="false" overflowBehaviour="fit">
+					<TextString>888:88:88</TextString>
+					<Shadow enabled="true">
+						<Color r="255" g="255" b="255" a="255" />
+						<Offset x="0" y="1" />
+					</Shadow>
+					<Outline>
+						<Color r="255" g="255" b="255" a="255" />
+					</Outline>
+					<Color r="146" g="3" b="124" a="255" />
+					<Size x="13" y="13" />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Animations SYSTEM "../../../../Core/tools/dtd/animation.dtd">
+
+<Animations>
+	<Animation name="RevealedBearGiftBirth" speed="1.2">
+		<Scale time="0.0" x="1.0" y="1.0" z="1.0"/>
+		<Scale time="0.1" x="2.0" y="2.0" z="2.0"/>
+		<Scale time="0.2" x="1.0" y="1.0" z="1.0"/>
+	</Animation>
+</Animations>

@@ -1,0 +1,23 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="14" space="Local" timeToEmit="0.100" name="FizzBottleCapSparks2PFX">
+    <Dampening max="0.990" min="0.850"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="60" depth="0" height="60"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="100" min="-100"/>
+    <RotationSpeed max="250" min="-250"/>
+    <Size>
+        <Max x="40" y="40"/>
+        <Min x="20" y="20"/>
+    </Size>
+    <SizeChange>
+        <Max x="40" y="40"/>
+        <Min x="20" y="20"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/star64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive max="1.300" min="0.500"/>
+    <Velocity max="340" min="300"/>
+</ParticleEffect>

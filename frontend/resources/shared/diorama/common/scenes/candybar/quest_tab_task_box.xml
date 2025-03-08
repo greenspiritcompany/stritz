@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject visibility="inherit" name="GoalBox" editorEntityId="138">
+		<Translation z="0" />
+		<SceneObject name="animTarget">
+			<Animation animationData="PageOutToRight" loopCount="0" name="QuestBoxViewDisappear" />
+			<Animation name="QuestBoxViewAppear" animationData="PageInFromRight" loopCount="0" />
+			<SceneObject name="exclgrp">
+				<Translation x="-212.680" y="20.184" z="0" />
+			</SceneObject>
+			<SceneObject name="difficultyEpic" visibility="never">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/quest_difficulty_epic_skull.png" vertexColors="false" />
+				<Translation x="186.414" y="-11.659" z="1" />
+			</SceneObject>
+			<SceneObject name="difficultyHard" visibility="never">
+				<Sprite filename="shared/diorama/common/tex/gui_elements/quest_difficulty_hard_skull.png" vertexColors="false" />
+				<Translation x="198.327" y="-5.570" z="1" />
+			</SceneObject>
+			<SceneObject name="Background" editorEntityId="42">
+				<Translation z="0" />
+				<SceneObject name="TaskContainer" editorEntityId="43">
+					<Translation y="308" z="1" />
+				</SceneObject>
+				<SceneObject name="progress_bar" editorEntityId="44">
+					<Translation y="312.041" z="0" x="-3.662" />
+				</SceneObject>
+				<SceneObject name="HeaderTxt" editorEntityId="45">
+					<Text maxHeight="80" alignment="center" canBreakWords="false" key="Quest" verticalAlignment="visualCenter" font="Banana" allowWordWrapping="false" overflowBehaviour="fit" maxWidth="330">
+						<Color r="255" g="126" b="51" a="255" />
+						<Size y="25" x="25" />
+					</Text>
+					<Translation x="-2" y="23" z="1" />
+				</SceneObject>
+				<SceneObject visibility="always" name="Prizes" editorEntityId="46">
+					<Translation y="-147" z="1" x="-255" />
+					<Scale y="0.941" z="1" x="0.941" />
+					<SceneObject visibility="never" name="12020" editorEntityId="47">
+						<Translation y="380" z="0" x="368" />
+						<SceneObject name="AmountBox" editorEntityId="48">
+							<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png">
+								<Insets bottom="20" top="16" left="16" right="16" />
+								<Size width="90" />
+							</Panel>
+							<Translation y="80.309" z="0" x="-319.486" />
+						</SceneObject>
+						<SceneObject name="ColorbombImage" editorEntityId="49">
+							<Scale y="0.900" z="1" x="0.850" />
+							<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png">
+								<Size width="60" height="60" />
+							</Sprite>
+							<Translation y="74.953" z="0" x="-335.758" />
+						</SceneObject>
+						<SceneObject name="AmountTxt" editorEntityId="50">
+							<Text alignment="center" canBreakWords="false" font="Banana" allowWordWrapping="false">
+								<Color b="0" a="255" g="55" r="117" />
+								<Size y="26" x="26" />
+								<TextString>20</TextString>
+							</Text>
+							<Translation y="112.949" z="0" x="-261.513" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject visibility="never" name="12002" editorEntityId="51">
+						<Translation y="380" z="0" x="368" />
+						<SceneObject name="AmountBox" editorEntityId="52">
+							<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png">
+								<Insets bottom="20" top="16" left="16" right="16" />
+								<Size width="90" />
+							</Panel>
+							<Translation y="80.309" z="0" x="-318.902" />
+						</SceneObject>
+						<SceneObject name="LollipopImage" editorEntityId="53">
+							<Scale y="0.626" z="1" x="0.626" />
+							<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/lollipop_icon2.png" />
+							<Translation y="74.768" z="0" x="-327.714" />
+						</SceneObject>
+						<SceneObject visibility="inherit" name="AmountTxt" editorEntityId="54">
+							<Text alignment="center" canBreakWords="false" font="Banana" allowWordWrapping="false">
+								<Color b="0" a="255" g="55" r="117" />
+								<Size y="26" x="26" />
+								<TextString>20</TextString>
+							</Text>
+							<Translation y="112.949" z="0" x="-261.513" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject visibility="never" name="12021" editorEntityId="55">
+						<Translation y="380" z="0" x="368" />
+						<SceneObject name="AmountBox" editorEntityId="56">
+							<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png">
+								<Insets bottom="20" top="16" left="16" right="16" />
+								<Size width="90" />
+							</Panel>
+							<Translation y="80.309" z="0" x="-319.486" />
+						</SceneObject>
+						<SceneObject name="ColoringImage" editorEntityId="57">
+							<Scale y="0.615" z="1" x="0.615" />
+							<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" />
+							<Translation y="74.768" z="0" x="-331.663" />
+						</SceneObject>
+						<SceneObject name="AmountTxt" editorEntityId="58">
+							<Text alignment="center" canBreakWords="false" font="Banana" allowWordWrapping="false">
+								<Color b="0" a="255" g="55" r="117" />
+								<Size y="26" x="26" />
+								<TextString>20</TextString>
+							</Text>
+							<Translation y="112.949" z="0" x="-261.513" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject visibility="never" name="12003" editorEntityId="59">
+						<Translation y="380" z="0" x="368" />
+						<SceneObject name="AmountBox" editorEntityId="60">
+							<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png">
+								<Insets bottom="20" top="16" left="16" right="16" />
+								<Size width="90" />
+							</Panel>
+							<Translation y="80.309" z="0" x="-318.902" />
+						</SceneObject>
+						<SceneObject name="StripedImage" editorEntityId="61">
+							<Scale y="0.626" z="1" x="0.626" />
+							<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/striped_lollipop_icon.png" />
+							<Translation y="74.768" z="0" x="-327.714" />
+						</SceneObject>
+						<SceneObject name="AmountTxt" editorEntityId="62">
+							<Text alignment="center" canBreakWords="false" font="Banana" allowWordWrapping="false">
+								<Color b="0" a="255" g="55" r="117" />
+								<Size y="26" x="26" />
+								<TextString>20</TextString>
+							</Text>
+							<Translation y="112.949" z="0" x="-261.513" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject visibility="never" name="12022" editorEntityId="63">
+						<Translation y="380" z="0" x="368" />
+						<SceneObject name="AmountBox" editorEntityId="64">
+							<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png">
+								<Insets bottom="20" top="16" left="16" right="16" />
+								<Size width="90" />
+							</Panel>
+							<Translation y="80.309" z="0" x="-319.486" />
+						</SceneObject>
+						<SceneObject name="DoubleFishImage" editorEntityId="65">
+							<Rotation y="0" z="-9.454" x="0" />
+							<Scale y="0.337" z="1" x="0.337" />
+							<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/pregame_double_fish_modal_icon.png" />
+							<Translation y="71.578" z="0" x="-342.892" />
+						</SceneObject>
+						<SceneObject name="AmountTxt" editorEntityId="66">
+							<Text alignment="center" canBreakWords="false" font="Banana" allowWordWrapping="false">
+								<Color b="0" a="255" g="55" r="117" />
+								<Size y="26" x="26" />
+								<TextString>20</TextString>
+							</Text>
+							<Translation y="112.949" z="0" x="-261.513" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject visibility="never" name="12005" editorEntityId="67">
+						<Translation y="380" z="0" x="368" />
+						<SceneObject name="AmountBox" editorEntityId="68">
+							<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/shop_amount_box.png">
+								<Insets bottom="20" top="16" left="16" right="16" />
+								<Size width="90" />
+							</Panel>
+							<Translation y="80.309" z="0" x="-318.902" />
+						</SceneObject>
+						<SceneObject name="FreeSwitchImage" editorEntityId="69">
+							<Scale y="0.605" z="1" x="0.605" />
+							<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/free_switch_icon.png" />
+							<Translation y="70.656" z="0" x="-331.974" />
+						</SceneObject>
+						<SceneObject name="AmountTxt" editorEntityId="70">
+							<Text alignment="center" canBreakWords="false" font="Banana" allowWordWrapping="false">
+								<Color b="0" a="255" g="55" r="117" />
+								<Size y="26" x="26" />
+								<TextString>20</TextString>
+							</Text>
+							<Translation y="112.949" z="0" x="-261.513" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="ClaimButtonParent" editorEntityId="71">
+					<Translation x="111.100" y="308.700" />
+					<SceneObject name="ClaimButton" editorEntityId="72">
+						<Scale xyz="0.8" />
+						<Translation x="-1.800" y="-78" z="2" />
+						<Panel vertexColors="false" filename="shared/game/common/tex/hud/btn_green.png">
+							<Pivot anchor="center" />
+							<Insets bottom="59" top="48" left="54" right="54" />
+							<Size width="300" height="108" />
+						</Panel>
+						<Animation animationData="Idle" name="Idle" layer="1" />
+						<Animation loopCount="0" animationData="OnPress" name="OnPress" />
+						<Animation loopCount="0" animationData="OnRelease" name="OnRelease" />
+						<SceneObject name="button_text" editorEntityId="73">
+							<Text maxHeight="50" alignment="center" canBreakWords="false" key="quests.candybar.claim.button" verticalAlignment="visualCenter" font="Banana" overflowBehaviour="fit" maxWidth="235">
+								<Size y="26" x="26" />
+								<Shadow enabled="true">
+									<Color b="0" a="25" g="0" r="0" />
+									<Offset y="6" x="0" />
+								</Shadow>
+							</Text>
+							<Translation y="-6" x="-2" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject editorEntityId="72" name="RejectButton">
+						<Animation animationData="Idle" layer="1" name="Idle" />
+						<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+						<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+						<Panel filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+							<Insets bottom="59" left="54" right="54" top="48" />
+							<Pivot anchor="center" />
+							<Size height="108" width="300" />
+						</Panel>
+						<Scale xyz="0.8" />
+						<Translation z="2" />
+						<SceneObject editorEntityId="73" name="button_text">
+							<Text alignment="center" canBreakWords="false" font="Banana" maxHeight="50" maxWidth="235" overflowBehaviour="fit" verticalAlignment="visualCenter" key="quests.candybar.skip.button">
+								<Shadow enabled="true">
+									<Color a="25" b="0" g="0" r="0" />
+									<Offset x="0" y="6" />
+								</Shadow>
+								<Size x="26" y="26" />
+							</Text>
+							<Translation x="-2" y="-6" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject editorEntityId="72" name="RejectButtonInactive">
+						<Panel filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false">
+							<Insets bottom="59" left="54" right="54" top="48" />
+							<Pivot anchor="center" />
+							<Size height="108" width="300" />
+						</Panel>
+						<Scale xyz="0.8" />
+						<SceneObject editorEntityId="73" name="button_text">
+							<Text alignment="center" canBreakWords="false" font="Banana" key="quests.candybar.skip.button" maxHeight="50" maxWidth="235" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Shadow enabled="true">
+									<Color a="25" b="0" g="0" r="0" />
+									<Offset x="0" y="6" />
+								</Shadow>
+								<Size x="26" y="26" />
+							</Text>
+							<Translation x="-2" y="-6" />
+						</SceneObject>
+						<Translation z="1" />
+					</SceneObject>
+					<SceneObject editorEntityId="72" name="ClaimButtonInactive">
+						<Panel filename="shared/diorama/common/tex/gui_elements/btn_grey.png" vertexColors="false">
+							<Insets bottom="59" left="54" right="54" top="48" />
+							<Pivot anchor="center" />
+							<Size height="108" width="300" />
+						</Panel>
+						<Scale xyz="0.8" />
+						<Translation x="-1.800" y="-78" z="1" />
+						<Rotation x="0" y="0" z="0" />
+						<SceneObject editorEntityId="73" name="button_text">
+							<Text alignment="center" canBreakWords="false" font="Banana" key="quests.candybar.claim.button" maxHeight="50" maxWidth="235" overflowBehaviour="fit" verticalAlignment="visualCenter">
+								<Shadow enabled="true">
+									<Color a="25" b="0" g="0" r="0" />
+									<Offset x="0" y="6" />
+								</Shadow>
+								<Size x="26" y="26" />
+							</Text>
+							<Translation x="-2" y="-6" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="quest_background">
+					<SceneObject name="quest_box_bg_top">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/quest_box_outer_panel_top.png" vertexColors="false" normals="true" />
+						<Translation x="-255" z="0" />
+					</SceneObject>
+					<SceneObject name="quest_box_bg_middle">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/quest_box_outer_panel_middle.png" vertexColors="false" />
+						<Translation x="-255" y="85" z="0" />
+					</SceneObject>
+					<SceneObject name="quest_box_bg_bottom">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/quest_box_outer_panel_bottom.png" vertexColors="false" />
+						<Translation x="-255" y="86" z="0" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

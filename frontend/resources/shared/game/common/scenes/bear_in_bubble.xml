@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/floating_bear_material.xml"/>
+	<SceneObject name="floatingNut">
+		<Model filename="shared/game/common/models/bear_in_bubble/bear_inside_bubble.ffm">
+			<Animations>
+				<Animation filename="shared/game/common/models/bear_in_bubble/bear_inside_bubble_idle.ffa"
+						   name="idle" play="true" loopCount="-1"/>
+			</Animations>
+		</Model>
+		<Materials>
+			<Material parentMaterial="FloatingBearMaterial"/>
+		</Materials>
+		<Scale x="1" y="-1" z="1"/>
+	</SceneObject>
+</Scene>

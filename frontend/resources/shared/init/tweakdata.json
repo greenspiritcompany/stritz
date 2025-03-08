@@ -1,0 +1,128 @@
+{
+    "candybar" : {
+        "footer_height":95,
+        "header_padding":500
+    },
+    "candy_crush_switcher_core_tweak" : {
+        "system" : {
+            "ticks_per_second" : 60
+        },
+
+        "board" : {
+            "tile_width" : 74,
+            "tile_height" : 74,
+            "active_area_rows" : 9,
+            "active_area_columns" : 9,
+            "column_blast_delay_ticks" : 3,
+            "line_blast_delay_ticks" : 3,
+            "striped_wrapped_delay_ticks" : 30,
+            "striped_wrapped_column_start_delay_ticks" : 88,
+            "shuffle_nr_of_tries" : 100,
+            "shuffle_duration_ticks" : 100,
+            "suger_crush_exclamation_length_ticks" : 0,
+            "suger_crush_emergency_brake_after_x_ticks": 600,
+            "win_sequence_length_seconds" : 3.0
+        },
+
+        "physics" : {
+            "tile_speed_slow" : 200.0,
+            "tile_speed_normal" : 1000.0,
+            "tile_speed_fast" : 5000.0,
+            "item_bounce_above_speed" : 200.0,
+            "bounce_velocity_scale" : 0.12,
+            "wrapped_explosion_acceleration" : 8000.0
+        },
+
+        "item" : {
+            "item_default_destruction_process_ticks" : 12,
+            "secondary_wrapped_destruction_process_ticks" : 100,
+            "colorbomb_destruction_process_ticks": 30,
+            "special_candy_creation_process_ticks" : 12
+        },
+
+        "score" : {
+            "four_match_multiplier" : 1.5,
+            "five_or_more_multiplier" : 2.0,
+            "destruction_plan_multiplier" : 3.0
+        },
+
+        "destruction_plan" : {
+            "color_bomb_delay_between_bolts_ticks": 5,
+            "color_bomb_swap_to_lightning_delay_ticks": 0,
+            "color_bomb_lightning_to_item_delay_ticks": 25,
+            "swap_colorbomb_special_merge_to_center_time_ticks": 30,
+            "swap_colorbomb_striped_lightning_to_item_conversion_delay_ticks": 0,
+            "color_bomb_striped_delay_between_explosions_ticks": 9,
+            "color_bomb_striped_delay_before_first_blast_ticks": 30
+        }
+    },
+
+    "game_tweak" : {
+        "board" : {
+            "undo_swap_time" : 0.2,
+            "swap_time" : 0.15,
+            "initial_board_scale_x" : 0.84,
+            "initial_board_scale_y" : 0.84,
+            "initial_board_pos_x" : 130,
+            "initial_board_pos_y" : 25,
+            "board_direction_flow_speed" : 0.1,
+            "board_move_hint_seconds_beginner" : 3.0,
+            "board_move_hint_seconds_expert" : 5.0
+        },
+
+        "item" : {
+            "item_width" : 74,
+            "item_height" : 74,
+
+            "fish_duration_to_target" : 1.5,
+
+            "item_animation_default_weight" : 1.0,
+            "candy_cone_spawn_match_sequnce_length": 4,
+            "candy_cone_ticks_per_line": 30,
+            "candy_cone_max_distance": 3,
+            "candy_cone_start_delay": 0
+        },
+
+        "score" : {
+            "single_item" : 20,
+            "single_blocker" : 20,
+            "jelly_cake" : 3000
+        },
+
+       "digger" : {
+            "number_of_seconds_to_update_bear_score" : 0.5,
+            "camera_movement_duration_in_seconds" : 2.0
+       },
+
+       "marchingBears" : {
+           "number_of_seconds_to_update_bear_score" : 0.5
+       },
+
+        "lemonadeSea": {
+            "speed_beneath_lemonade": 700
+        },
+
+        "powerUps" : {
+            "collect_cyan_duration" : 60
+        },
+
+        "destructionPlan" : {
+            "coloring_candy_color_splash_to_item_delay_ticks" : 60,
+            "jelly_cake_blast_ticks" : 60,
+            "jelly_cake_charge_ticks" : 180
+        },
+
+        "hud" : {
+          "sidekick_meter_charge_delay_seconds" : 0.9,
+          "sidekick_meter_charge_time_seconds" : 0.3,
+          "sidekick_tutorial_cyan_turtle_part2_delay" : 2
+        },
+
+        "sodaFizz" : {
+          "spread_ticks" : 80,
+          "spread_projectile_ticks" : 50,
+          "spread_delay_ticks" : 20,
+          "candy_die_ticks" : 80
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../../tools/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.0">
+		<Triggers>
+
+      <AnimationTrigger targetName="jam_icon_smear" animationName="jam_icon_smear_animation"/>
+
+      <AnimationTrigger targetName="jam_icon_hud" animationName="jam_icon_hud_animation_shake" crossFade="0.2"/>
+      <AnimationTrigger time="0.6" targetName="jam_icon_hud" animationName="jam_icon_hud_animation" crossFade="0.4"/>
+
+    </Triggers>
+	</Timeline>
+</Timelines>

@@ -1,0 +1,74 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<Material name="CommonMaterial">
+		<Cull enabled="true" face="back"/>
+		<Texture filename="shared/diorama/diorama01/episode03/tex/d01e03_base_v01.png"/>
+	</Material>
+	<Material name="CommonMaterialAlpha" parentMaterial="CommonMaterial">
+		<Depth enabled="true" writeMask="false"/>
+		<Blend enabled="true"/>
+	</Material>
+	<Material name="Episode1Material">
+		<Cull enabled="true" face="back"/>
+		<Texture filename="shared/diorama/diorama01/episode01/text/d01e01_bearvillage_v01.png"/>
+	</Material>
+	<Material name="Episode1MaterialAlpha" parentMaterial="Episode1Material">
+		<Depth enabled="true" writeMask="false"/>
+		<Blend enabled="true"/>
+	</Material>
+	<Material name="Episode2Material">
+		<Cull enabled="false" face="back"/>
+		<Texture filename="shared/diorama/diorama01/episode02/tex/d01e02_bearcoast_v01.png"/>
+	</Material>
+	<Material name="Episode2MaterialAlpha" parentMaterial="Episode2Material">
+		<Depth enabled="true" writeMask="false"/>
+		<Blend enabled="true"/>
+	</Material>
+	<Material name="Episode3Material">
+		<Cull enabled="true" face="back"/>
+		<Texture filename="shared/diorama/diorama01/episode03/tex/d01e03_donutmonster_v01.png"/>
+	</Material>
+	<Material name="Episode3MaterialAlpha" parentMaterial="Episode3Material">
+		<Depth enabled="true" writeMask="false"/>
+		<Blend enabled="true"/>
+	</Material>
+	<Material name="BoardGamePieceMaterial">
+		<Cull enabled="true" face="back"/>
+		<Texture filename="shared/diorama/common/tex/boardGamePiece.png"/>
+	</Material>
+	<Material name="BoardGamePieceMaterialAlpha" parentMaterial="BoardGamePieceMaterial">
+		<Depth enabled="true" writeMask="false"/>
+		<Blend enabled="true"/>
+	</Material>
+	<Material name="PortalMaterial">
+		<Cull enabled="true" face="back"/>
+		<Blend enabled="true"/>
+		<Depth enabled="true" writeMask="false"/>
+		<Texture filename="shared/diorama/common/tex/portal_c.png"/>
+	</Material>
+	<Material name="PortalDisabledMaterial">
+		<Cull enabled="true" face="back"/>
+		<Blend enabled="true"/>
+		<Depth enabled="true" writeMask="false"/>
+		<Texture filename="shared/diorama/common/tex/lvl_pin_btn_grey.png"/>
+	</Material>
+	<Material name="PathMaterial">
+		<Cull enabled="true" face="back"/>
+		<Texture minFilter="linearMipmapNearest" filename="shared/diorama/diorama01/episode03/tex/path_e03.png" wrap="repeat"/>
+	</Material>
+	<Material name="PathMaterialAlpha" parentMaterial="PathMaterial">
+		<Depth enabled="true" writeMask="false"/>
+		<Blend enabled="true"/>
+	</Material>
+	<SceneObject name="Diorama" layerFlags="2">
+		<Import filename="shared/diorama/common/scenes/kimmy_material.xml"/>
+		<Import filename="shared/diorama/diorama01/episode01/scenes/episode01.xml"/>
+		<Import filename="shared/diorama/diorama01/episode02/scenes/episode02.xml"/>
+		<Import filename="shared/diorama/diorama01/episode03/scenes/episode03_donutmonster.xml"/>
+		<SceneObject name="Kimmy_group">
+			<Translation z="50" x="-1265" y="22"/>
+			<Rotation z="0" x="0" y="10"/>
+			<Import filename="shared/diorama/common/scenes/kimmy.xml"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

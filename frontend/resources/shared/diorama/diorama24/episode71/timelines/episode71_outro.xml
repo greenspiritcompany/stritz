@@ -1,0 +1,22 @@
+<Timelines>
+<Timeline endTime="5" startTime="0">
+	<!--COMMENT/REMOVE THIS FOR THE 3RD EPISODE IN THE DIORAMA! SHE IS ONLY MOVED ON FIRST AND SECOND EPISODE-->
+	<Animate time="0" target="Kimmy_group">
+		<Show time="0" />
+		<Scale time="0" x="0.950" y="0.950" z="0.950" />
+		<Translation time="0" x="960" y="40" z="270" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="0" animationName="SpeechBubbleAppear" targetName="SpeechBubbleEp71" />
+		<AnimationTrigger time="1" animationName="Talk" crossFade="0.100" targetName="CharacterEp71" />
+		<AnimationTrigger time="3" animationName="Idle" crossFade="0.600" targetName="CharacterEp71" />
+		<AnimationTrigger time="4" animationName="SpeechBubbleDisappear" targetName="SpeechBubbleEp71" />
+		<!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+		<EffectTrigger time="0" name="character_ep71" />
+		<EffectTrigger time="0.419" name="Ep71SoundNotes" targetName="Episode71Character">
+			<Offset x="-30" y="200" z="20" />
+		</EffectTrigger>
+		<CustomTrigger time="0" name="SpeechBubbleText" data="SpeechBubbleEp71.1" />
+	</Triggers>
+</Timeline>
+</Timelines>

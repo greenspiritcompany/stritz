@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<Material name="SidekickMat">
+		<Blend blendFuncSourceFactor="One" enabled="true" />
+		<Depth writeMask="false" enabled="true" />
+	</Material>
+	<SceneObject name="Scene">
+		<SceneObject name="GameHud" __visibility="0">
+			<Translation x="0" z="50" />
+			<SceneObject name="AttachToMe">
+				<Animation name="OnAppear" animationData="SlideInFromRight" loopCount="0" />
+				<Animation name="Disappear" animationData="SlideOutToRight" loopCount="0" />
+				<SceneObject name="HUDContent" __visibility="0">
+					<SceneObject name="Landscape" __visibility="0">
+						<Translation y="10.980" x="14.640" />
+						<SceneObject name="Body">
+							<Translation y="5" x="4.480" />
+							<SceneObject name="BackgroundSidekick" __visibility="0">
+								<Panel filename="shared/game/common/tex/hud/hud_bg.png" vertexColors="false">
+									<Insets right="1" top="180" bottom="160" left="1" />
+									<Pivot anchor="top" />
+									<RemoveQuads bottomRight="true" topLeft="true" topRight="true" right="true" bottomLeft="true" left="true" />
+									<Size height="680" width="257" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="BackgroundRegular" __visibility="3">
+								<Panel filename="shared/game/common/tex/hud/hud_bg.png" vertexColors="false">
+									<Insets right="1" top="180" bottom="160" left="1" />
+									<Pivot anchor="top" />
+									<RemoveQuads bottomRight="true" topLeft="true" topRight="true" right="true" bottomLeft="true" left="true" />
+									<Size height="600" width="257" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="LevelGrp">
+								<Translation y="114" />
+								<SceneObject name="LevelTildeLeft">
+									<Translation y="-5" />
+									<Sprite filename="shared/game/common/tex/hud/tilde_sign.png" vertexColors="false">
+										<Pivot anchor="right" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="LevelTildeRight">
+									<Translation y="-5" />
+									<Sprite filename="shared/game/common/tex/hud/tilde_sign.png" vertexColors="false">
+										<Pivot anchor="left" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="LevelNumber" __visibility="0">
+									<Translation y="5" z="100" />
+									<Text alignment="center" font="Banana">
+										<Color g="140" r="25" b="182" a="255" />
+										<GradientColor g="150" r="40" b="197" a="255" enabled="true" />
+										<Outline enabled="false">
+											<Color g="189" r="57" b="227" a="255" />
+										</Outline>
+										<Shadow enabled="true">
+											<Color g="216" r="101" b="255" a="255" />
+											<Offset x="1" />
+										</Shadow>
+										<Size y="24" x="24" />
+										<TextString>1</TextString>
+									</Text>
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="Stats1" __visibility="0">
+								<Translation y="214.260" x="-0.800" z="1" />
+							</SceneObject>
+							<SceneObject name="MovesGrp">
+								<Translation y="53.680" x="0" />
+								<SceneObject name="MovesImg">
+									<Translation y="0" x="-38" z="0" />
+									<Sprite filename="shared/game/common/tex/hud/moves_icon.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="MovesText">
+									<Translation y="-3.220" x="10" z="20" />
+									<Text alignment="center" font="PinkNumbers" verticalAlignment="visualCenter">
+										<Shadow enabled="true">
+											<Color g="113" r="58" b="152" a="64" />
+											<Offset y="1" x="1" />
+										</Shadow>
+										<Size y="25" x="25" />
+										<TextString>99</TextString>
+									</Text>
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="GamemodeHolder">
+								<Translation y="194.730" x="0" />
+								<Sprite filename="shared/game/common/tex/hud/gamemode_holder.png" vertexColors="false">
+									<Pivot anchor="center" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="SidekickButtonLandscape" __visibility="0">
+							<Translation y="637.310" x="4.260" />
+							<Import filename="shared/game/common/scenes/hud/sidekicks/sidekick_button_landscape.xml" />
+						</SceneObject>
+						<SceneObject name="ScoreMeterLandscape">
+							<Translation y="520" x="4" z="1" />
+							<SceneObject name="FillGRP">
+								<Translation y="-110" x="-2" />
+								<SceneObject name="FillFull" __visibility="3">
+									<Translation y="-118" />
+									<Sprite filename="shared/game/common/tex/hud/starmeter_fill_top.png" vertexColors="false">
+										<Pivot anchor="top" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="FillTop">
+									<Translation y="-0.500" />
+									<Sprite filename="shared/game/common/tex/hud/starmeter_fill_top2.png" vertexColors="false">
+										<Pivot anchor="bottom" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="Fill">
+									<Translation y="0" x="0" />
+									<Scale y="0.100" />
+									<Sprite filename="shared/game/common/tex/hud/starmeter_fill.png" vertexColors="false">
+										<Pivot anchor="bottom" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="FillBottom">
+									<Sprite filename="shared/game/common/tex/hud/starmeter_fill_bottom.png" vertexColors="false">
+										<Pivot anchor="top" />
+									</Sprite>
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="FillBg" __visibility="0">
+								<Translation y="-92" x="-2" z="-1" />
+								<Panel filename="shared/game/common/tex/hud/starmeter_inside_bg.png" vertexColors="false">
+									<Insets right="7" top="22" bottom="18" left="9" />
+									<Pivot anchor="bottom" />
+									<Size height="142" width="36.500" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="Background">
+								<Translation y="0" x="0" />
+								<Panel filename="shared/game/common/tex/hud/starmeter.png" vertexColors="false">
+									<Insets right="16" top="46" bottom="118" left="16" />
+									<Pivot anchor="bottom" />
+									<Size height="250" width="207" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="ScoreGrp" __visibility="0">
+								<Translation y="-50" x="0" />
+								<SceneObject name="Score">
+									<Translation y="6" z="20" />
+									<Text maxHeight="30" alignment="center" font="PinkNumbers" canBreakWords="false" overflowBehaviour="fit">
+										<Shadow enabled="true">
+											<Color g="113" r="58" b="152" a="90" />
+											<Offset y="1" x="1" />
+										</Shadow>
+										<Size y="18" x="18" />
+										<TextString>1234567</TextString>
+									</Text>
+								</SceneObject>
+								<SceneObject name="Header">
+									<Translation y="-25" z="100" />
+									<Text alignment="center" font="Banana" key="common.score">
+										<GradientColor enabled="false" />
+										<Outline enabled="false">
+											<Color g="0" r="0" b="0" a="0" />
+										</Outline>
+										<Shadow enabled="true">
+											<Color g="165" r="0" b="241" a="255" />
+											<Offset x="0" />
+										</Shadow>
+										<Size y="16" x="16" />
+										<TextString>Score</TextString>
+									</Text>
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="Star1">
+								<Translation y="-114" x="-54" />
+								<SceneObject name="StarHolder" __visibility="0">
+									<Translation y="2" x="54" />
+									<SceneObject name="left" __visibility="1">
+										<Translation x="-30" />
+										<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+											<Pivot anchor="right" />
+											<Size width="18" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="middle" __visibility="1">
+										<Translation x="-19" />
+										<Scale x="4" />
+										<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+											<Pivot anchor="right" />
+											<Rectangle maxX="6" maxY="4" minX="4" minY="0" />
+											<Size height="4" width="2.750" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="right" __visibility="1">
+										<Translation x="-19" />
+										<Scale x="-1" />
+										<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+											<Pivot anchor="right" />
+											<Size width="5" />
+										</Sprite>
+									</SceneObject>
+								</SceneObject>
+								<SceneObject name="StarInactive">
+									<Sprite filename="shared/game/common/tex/hud/star_inactive.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="StarActive">
+									<Sprite filename="shared/game/common/tex/hud/star_active.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="Star2">
+								<Translation y="-150" x="-54" />
+								<SceneObject name="StarHolder" __visibility="0">
+									<Translation y="2" x="54" />
+									<SceneObject name="left" __visibility="1">
+										<Translation x="-30" />
+										<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+											<Pivot anchor="right" />
+											<Size width="18" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="middle" __visibility="1">
+										<Translation x="-19" />
+										<Scale x="4" />
+										<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+											<Pivot anchor="right" />
+											<Rectangle maxX="6" maxY="4" minX="4" minY="0" />
+											<Size height="4" width="2.750" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="right" __visibility="1">
+										<Translation x="-19" />
+										<Scale x="-1" />
+										<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+											<Pivot anchor="right" />
+											<Size width="5" />
+										</Sprite>
+									</SceneObject>
+								</SceneObject>
+								<SceneObject name="StarInactive">
+									<Sprite filename="shared/game/common/tex/hud/star_inactive.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="StarActive">
+									<Sprite filename="shared/game/common/tex/hud/star_active.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="Star3">
+								<Translation y="-218" x="-54" />
+								<SceneObject name="StarHolder" __visibility="0">
+									<Translation y="2" x="54" />
+									<SceneObject name="left" __visibility="1">
+										<Translation x="-30" />
+										<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+											<Pivot anchor="right" />
+											<Size width="18" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="middle" __visibility="1">
+										<Translation x="-19" />
+										<Scale x="4" />
+										<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+											<Pivot anchor="right" />
+											<Rectangle maxX="6" maxY="4" minX="4" minY="0" />
+											<Size height="4" width="2.750" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="right" __visibility="1">
+										<Translation x="-19" />
+										<Scale x="-1" />
+										<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+											<Pivot anchor="right" />
+											<Size width="5" />
+										</Sprite>
+									</SceneObject>
+								</SceneObject>
+								<SceneObject name="StarInactive">
+									<Sprite filename="shared/game/common/tex/hud/star_inactive.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="StarActive">
+									<Sprite filename="shared/game/common/tex/hud/star_active.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+							</SceneObject>
+						</SceneObject>
+						<LayoutConfiguration visible="true" name="Landscape">
+							<Translation>
+								<X percentage="12" />
+								<Y percentage="1.200" />
+							</Translation>
+							<Size>
+								<Height percentage="61" />
+								<OriginalSize height="500" width="264" />
+								<Width percentage="24" max="264" />
+							</Size>
+						</LayoutConfiguration>
+						<LayoutConfiguration visible="true" name="LandscapeFourThree">
+							<Translation>
+								<X percentage="10" />
+								<Y percentage="1.200" />
+							</Translation>
+							<Size>
+								<Height percentage="61" />
+								<OriginalSize height="500" width="264" />
+								<Width percentage="22" max="264" />
+							</Size>
+						</LayoutConfiguration>
+						<LayoutConfiguration visible="false" name="Portrait" />
+						<LayoutConfiguration visible="false" name="PortraitFourThree" />
+					</SceneObject>
+					<SceneObject name="Portrait" __visibility="3">
+						<SceneObject name="PortraitTop">
+							<SceneObject name="Topbar_bg">
+								<Translation z="-1" />
+								<Panel filename="shared/game/common/tex/hud/portrait/topbar_bg_rounded.png" vertexColors="false">
+									<Insets right="35" top="0" bottom="0" left="35" />
+									<Pivot anchor="top" />
+									<RemoveQuads bottomRight="true" topLeft="true" topRight="true" top="true" bottom="true" bottomLeft="true" />
+									<Size height="151" width="770" />
+								</Panel>
+							</SceneObject>
+							<SceneObject name="GameModeHolder">
+								<Translation y="20" x="218.560" z="-1" />
+								<Sprite filename="shared/game/common/tex/hud/gamemode_holder.png" vertexColors="false">
+									<Pivot anchor="top" />
+									<Size height="92" width="177" />
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="GameModeHolderShine">
+								<Translation y="11" x="155" z="-1" />
+								<Sprite filename="shared/game/common/tex/hud/portrait/gamemode_holder_shine.png" vertexColors="false">
+									<Pivot anchor="top" />
+									<Size height="66" width="73" />
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Stats1" __visibility="0">
+								<Translation y="77.250" x="224.420" z="1" />
+							</SceneObject>
+							<SceneObject name="MovesGRP">
+								<Translation y="25" />
+								<SceneObject name="Middle">
+									<Panel filename="shared/game/common/tex/hud/portrait/topbar_ear.png" vertexColors="false">
+										<Insets right="130" top="0" bottom="0" left="130" />
+										<Pivot anchor="top" />
+										<RemoveQuads bottomRight="true" topLeft="true" topRight="true" top="true" bottom="true" bottomLeft="true" />
+										<Size height="114" width="300" />
+									</Panel>
+								</SceneObject>
+								<SceneObject name="MovesImg">
+									<Translation y="60" x="-45" />
+									<Sprite filename="shared/game/common/tex/hud/moves_icon.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="MovesText">
+									<Translation y="60" x="5" z="20" />
+									<Text alignment="center" font="PinkNumbers" verticalAlignment="visualCenter">
+										<GradientColor enabled="false" />
+										<Shadow enabled="true">
+											<Color g="113" r="58" b="152" a="64" />
+										</Shadow>
+										<Size y="27" x="27" />
+										<TextString>99</TextString>
+									</Text>
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="LevelGrp">
+								<Translation y="30" x="0" />
+								<SceneObject name="LevelTildeLeft">
+									<Translation y="-5" />
+									<Sprite filename="shared/game/common/tex/hud/tilde_sign.png" vertexColors="false">
+										<Pivot anchor="right" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="LevelTildeRight">
+									<Translation y="-5" />
+									<Sprite filename="shared/game/common/tex/hud/tilde_sign.png" vertexColors="false">
+										<Pivot anchor="left" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="LevelNumber" __visibility="0">
+									<Translation y="5" z="100" />
+									<Text alignment="center" font="Banana">
+										<Color g="140" r="25" b="182" a="255" />
+										<GradientColor g="150" r="40" b="197" a="255" enabled="true" />
+										<Outline enabled="false">
+											<Color g="189" r="57" b="227" a="255" />
+										</Outline>
+										<Shadow enabled="true">
+											<Color g="216" r="101" b="255" a="255" />
+											<Offset x="1" />
+										</Shadow>
+										<Size y="24" x="24" />
+										<TextString>1</TextString>
+									</Text>
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="ScoreMeterPortrait">
+								<Translation y="66" x="-330" />
+								<SceneObject name="Background">
+									<Translation y="-6.500" x="-23" />
+									<Panel filename="shared/game/common/tex/hud/portrait/starmeter.png" vertexColors="false">
+										<Insets right="40" top="15" bottom="15" left="40" />
+										<Pivot anchor="left" />
+										<Size height="58" width="228" />
+									</Panel>
+								</SceneObject>
+								<SceneObject name="FillBg" __visibility="0">
+									<Panel filename="shared/game/common/tex/hud/portrait/starmeter_bg.png" vertexColors="false">
+										<Insets right="16" top="15" bottom="15" left="16" />
+										<Pivot anchor="left" />
+										<Size height="31.500" width="180" />
+									</Panel>
+								</SceneObject>
+								<SceneObject name="FillGRP">
+									<Translation x="15" />
+									<Rotation z="90" />
+									<SceneObject name="FillFull" __visibility="3">
+										<Translation y="-164" />
+										<Sprite filename="shared/game/common/tex/hud/starmeter_fill_top.png" vertexColors="false">
+											<Pivot anchor="top" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="FillTop">
+										<Translation y="-0.500" />
+										<Sprite filename="shared/game/common/tex/hud/starmeter_fill_top2.png" vertexColors="false">
+											<Pivot anchor="bottom" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="Fill">
+										<Translation y="0" x="0" />
+										<Scale y="0.100" />
+										<Sprite filename="shared/game/common/tex/hud/starmeter_fill.png" vertexColors="false">
+											<Pivot anchor="bottom" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="FillBottom">
+										<Sprite filename="shared/game/common/tex/hud/starmeter_fill_bottom.png" vertexColors="false">
+											<Pivot anchor="top" />
+										</Sprite>
+									</SceneObject>
+								</SceneObject>
+								<SceneObject name="StarMeterShine">
+									<Translation y="-5" x="3.080" />
+									<Sprite filename="shared/game/common/tex/hud/portrait/starmeter_shine.png" vertexColors="false">
+										<Pivot anchor="left" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject name="Header">
+									<Translation x="26.880" y="47.469" z="100" />
+									<Text font="Banana" alignment="center" maxWidth="117" maxHeight="29" overflowBehaviour="fit" key="common.score">
+										<GradientColor enabled="false" />
+										<Outline enabled="false" />
+										<Shadow enabled="true">
+											<Color g="0" r="0" b="0" a="80" />
+											<Offset x="0" />
+										</Shadow>
+									</Text>
+								</SceneObject>
+								<SceneObject name="Score">
+									<Translation x="154.320" y="47.156" z="20" />
+									<Text alignment="center" font="PinkNumbers" canBreakWords="false" overflowBehaviour="fit" maxWidth="134" maxHeight="27" allowWordWrapping="true">
+										<Shadow enabled="true">
+											<Color g="97" r="49" b="131" a="90" />
+											<Offset y="1" x="1" />
+										</Shadow>
+										<Size y="14" x="14" />
+										<TextString>123 456</TextString>
+									</Text>
+								</SceneObject>
+								<SceneObject name="Star1">
+									<Translation y="-44" x="18" />
+									<SceneObject name="StarHolder">
+										<Translation x="-1" />
+										<SceneObject name="top" __visibility="1">
+											<Translation y="16" />
+											<Rotation z="-90" />
+											<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+												<Flip u="true" />
+												<Pivot anchor="left" />
+												<Size width="6" />
+											</Sprite>
+										</SceneObject>
+										<SceneObject name="middle" __visibility="1">
+											<Translation y="16" />
+											<Rotation z="-90" />
+											<Scale x="4" />
+											<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+												<Pivot anchor="right" />
+												<Rectangle maxX="6" maxY="4" minX="4" minY="0" />
+												<Size height="4" width="3" />
+											</Sprite>
+										</SceneObject>
+										<SceneObject name="btm" __visibility="1">
+											<Translation y="28" />
+											<Rotation z="-90" />
+											<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+												<Pivot anchor="right" />
+												<Size width="5" />
+											</Sprite>
+										</SceneObject>
+									</SceneObject>
+									<SceneObject name="StarInactive">
+										<Translation y="3" />
+										<Sprite filename="shared/game/common/tex/hud/star_inactive.png" vertexColors="false">
+											<Pivot anchor="center" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="StarActive">
+										<Translation y="3" />
+										<Sprite filename="shared/game/common/tex/hud/star_active.png" vertexColors="false">
+											<Pivot anchor="center" />
+										</Sprite>
+									</SceneObject>
+								</SceneObject>
+								<SceneObject name="Star2">
+									<Translation y="-44" x="90" />
+									<SceneObject name="StarHolder">
+										<Translation x="-1" />
+										<SceneObject name="top" __visibility="1">
+											<Translation y="16" />
+											<Rotation z="-90" />
+											<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+												<Flip u="true" />
+												<Pivot anchor="left" />
+												<Size width="6" />
+											</Sprite>
+										</SceneObject>
+										<SceneObject name="middle" __visibility="1">
+											<Translation y="16" />
+											<Rotation z="-90" />
+											<Scale x="4" />
+											<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+												<Pivot anchor="right" />
+												<Rectangle maxX="6" maxY="4" minX="4" minY="0" />
+												<Size height="4" width="3" />
+											</Sprite>
+										</SceneObject>
+										<SceneObject name="btm" __visibility="1">
+											<Translation y="28" />
+											<Rotation z="-90" />
+											<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+												<Pivot anchor="right" />
+												<Size width="5" />
+											</Sprite>
+										</SceneObject>
+									</SceneObject>
+									<SceneObject name="StarInactive">
+										<Translation y="3" />
+										<Sprite filename="shared/game/common/tex/hud/star_inactive.png" vertexColors="false">
+											<Pivot anchor="center" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="StarActive">
+										<Translation y="3" />
+										<Sprite filename="shared/game/common/tex/hud/star_active.png" vertexColors="false">
+											<Pivot anchor="center" />
+										</Sprite>
+									</SceneObject>
+								</SceneObject>
+								<SceneObject name="Star3">
+									<Translation y="-44" x="168" />
+									<SceneObject name="StarHolder">
+										<Translation x="-1" />
+										<SceneObject name="top" __visibility="1">
+											<Translation y="16" />
+											<Rotation z="-90" />
+											<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+												<Flip u="true" />
+												<Pivot anchor="left" />
+												<Size width="6" />
+											</Sprite>
+										</SceneObject>
+										<SceneObject name="middle" __visibility="1">
+											<Translation y="16" />
+											<Rotation z="-90" />
+											<Scale x="4" />
+											<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+												<Pivot anchor="right" />
+												<Rectangle maxX="6" maxY="4" minX="4" minY="0" />
+												<Size height="4" width="3" />
+											</Sprite>
+										</SceneObject>
+										<SceneObject name="btm" __visibility="1">
+											<Translation y="28" />
+											<Rotation z="-90" />
+											<Sprite filename="shared/game/common/tex/hud/star_stick.png" vertexColors="false">
+												<Pivot anchor="right" />
+												<Size width="5" />
+											</Sprite>
+										</SceneObject>
+									</SceneObject>
+									<SceneObject name="StarInactive">
+										<Translation y="3" />
+										<Sprite filename="shared/game/common/tex/hud/star_inactive.png" vertexColors="false">
+											<Pivot anchor="center" />
+										</Sprite>
+									</SceneObject>
+									<SceneObject name="StarActive">
+										<Translation y="3" />
+										<Sprite filename="shared/game/common/tex/hud/star_active.png" vertexColors="false">
+											<Pivot anchor="center" />
+										</Sprite>
+									</SceneObject>
+								</SceneObject>
+							</SceneObject>
+							<LayoutConfiguration name="Portrait">
+								<Translation>
+									<X percentage="50" />
+								</Translation>
+								<Size>
+									<Height percentage="14.900" />
+									<OriginalSize height="116" width="768" />
+									<Width percentage="100" />
+								</Size>
+							</LayoutConfiguration>
+						</SceneObject>
+						<SceneObject visibility="inherit" name="SidekickButtonPortrait" __visibility="0">
+							<Translation y="247.620" x="318.740" />
+							<Import filename="shared/game/common/scenes/hud/sidekicks/sidekick_button_portrait.xml" />
+							<LayoutConfiguration visible="false" name="Landscape" />
+							<LayoutConfiguration visible="true" name="Portrait">
+								<Translation>
+									<X percentage="90" />
+									<Y percentage="94" />
+								</Translation>
+								<Size>
+									<Height percentage="25" />
+									<OriginalSize height="200" width="200" />
+									<Width percentage="25" />
+								</Size>
+							</LayoutConfiguration>
+							<LayoutConfiguration visible="true" name="PortraitFourThree">
+								<Translation>
+									<X percentage="90" />
+									<Y percentage="95" />
+								</Translation>
+								<Size>
+									<Height percentage="25" />
+									<OriginalSize height="200" width="200" />
+									<Width percentage="20" />
+								</Size>
+							</LayoutConfiguration>
+							<LayoutConfiguration visible="false" name="landscapeFourThree" />
+						</SceneObject>
+						<LayoutConfiguration visible="false" name="Landscape" />
+						<LayoutConfiguration visible="true" name="Portrait" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

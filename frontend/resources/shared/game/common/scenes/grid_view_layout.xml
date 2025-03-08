@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="BoardObject">
+		<Portrait>
+			<Size>
+				<Width percentage="100"/>
+				<Height percentage="72"/>
+				<OriginalSize width="700" height="700"/>
+			</Size>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="50"/>
+			</Translation>
+		</Portrait>
+
+		<Landscape>
+			<Size>
+				<Height percentage="96"/>
+				<Width percentage="72"/>
+				<OriginalSize width="700" height="700"/>
+			</Size>
+			<Translation>
+				<X percentage="62"/>
+				<Y percentage="50"/>
+			</Translation>
+		</Landscape>
+
+	</Object>
+</Layout>

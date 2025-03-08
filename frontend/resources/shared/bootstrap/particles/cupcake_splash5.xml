@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="6" space="Local" timeToEmit="0.100" name="CupCakeSplash5PFX">
+    <Dampening max="0.900" min="0.900"/>
+    <DirectionalForce x="0" y="271.740"/>
+    <Emitter emissionRate="0" spread="279.460" angle="0">
+        <SpawnArea width="15.350" depth="0" height="15.920"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="255"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="360" min="-230"/>
+    <Size>
+        <Max x="45.360" y="45.360"/>
+        <Min x="28.940" y="28.940"/>
+    </Size>
+    <SizeChange>
+        <Max x="-50.540" y="-50.540"/>
+        <Min x="-50.540" y="-50.540"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/cherry_particle.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.500" min="0.360"/>
+    <Velocity max="200" min="200"/>
+</ParticleEffect>

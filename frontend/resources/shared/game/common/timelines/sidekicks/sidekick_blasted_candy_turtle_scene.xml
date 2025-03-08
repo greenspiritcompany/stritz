@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+
+<Scene>
+    <SceneObject name="Scene" layerFlags="512">
+        <SceneObject name="BlurredTurtle" layerFlags="512">
+            <!--            <Sprite filename="shared/game/common/tex/candy/selected_candy.png">
+                <Pivot anchor="center"/>
+              </Sprite>
+            -->
+            <Sprite filename="shared/game/common/tex/hud/colorbomb_turtle_blurred.png">
+                <Pivot anchor="center"/>
+            </Sprite>
+            <Material>
+                <Blend enabled="true" blendFuncSourceFactor="One"/>
+            </Material>
+            <Scale xyz="2.0"/>
+        </SceneObject>
+
+    </SceneObject>
+</Scene>

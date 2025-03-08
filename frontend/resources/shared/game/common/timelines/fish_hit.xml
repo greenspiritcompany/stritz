@@ -1,0 +1,10 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="2.0">
+		<Triggers>
+			<EffectTrigger name="FishHitEFQ" time="0.0">
+				<Offset z="350"/>
+			</EffectTrigger>
+		</Triggers>
+	</Timeline>
+</Timelines>

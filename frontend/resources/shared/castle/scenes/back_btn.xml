@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="BottomRight">
+		<SceneObject name="KimmyBackBtn" __editorLocked="false" class="Button">
+			<Translation x="-220" y="-180" />
+			<SceneObject name="Arch">
+				<Sprite filename="shared/castle/tex/kimmy_arch.png" />
+			</SceneObject>
+			<SceneObject name="Lollipops">
+				<Sprite filename="shared/castle/tex/lollipops.png" />
+				<Translation x="128.25" y="36.25" />
+			</SceneObject>
+			<SceneObject name="Bush">
+				<Sprite filename="shared/castle/tex/bush.png" />
+				<Translation x="0.75" y="35.50" />
+			</SceneObject>
+			<SceneObject name="Kimmy">
+				<Sprite filename="shared/castle/tex/kimmy_happy.png" />
+				<Translation x="44.75" y="-9.25" />
+			</SceneObject>
+			<SceneObject name="Glow">
+				<Sprite filename="shared/castle/tex/glow.png" />
+				<Translation x="21.25" y="2" />
+			</SceneObject>
+			<SceneObject name="TextBox">
+				<Translation x="-5.75" y="3.50" />
+				<SceneObject name="TextBox">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/countdown_box.png" />
+					<Translation x="105.47" y="84.43" />
+				</SceneObject>
+				<SceneObject name="TextBox">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/kotc/countdown_box.png">
+						<Scale x="-1" />
+					</Sprite>
+					<Translation x="105.47" y="84.43" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="KimmyArms">
+				<Translation x="0" y="-5" />
+				<SceneObject name="Arm">
+					<Sprite vertexColors="false" filename="shared/castle/tex/kimmy_arm.png">
+						<Scale x="-1" />
+					</Sprite>
+					<Translation x="140.50" y="81.50" />
+				</SceneObject>
+				<SceneObject name="Arm">
+					<Sprite filename="shared/castle/tex/kimmy_arm.png" />
+					<Translation x="55.50" y="81.50" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="GoBackTxt">
+				<Text alignment="center" key="kotc.exit" font="Banana">
+					<Shadow enabled="true">
+						<Color g="91" a="255" r="196" b="157" />
+						<Offset x="0" y="1" />
+					</Shadow>
+					<Size x="14" y="14" />
+				</Text>
+				<Translation x="98.25" y="117.85" z="0" />
+			</SceneObject>
+			<SceneObject name="RemainingTime">
+				<Text alignment="center" maxHeight="45" overflowBehaviour="fit" verticalAlignment="visualCenter" font="Banana" maxWidth="160" canBreakWords="false" allowWordWrapping="false">
+					<Color g="62" a="255" r="165" b="128" />
+					<Shadow enabled="true">
+						<Color g="255" a="255" r="255" b="255" />
+						<Offset x="0" z="1" />
+					</Shadow>
+					<TextString>0</TextString>
+				</Text>
+				<Translation x="98.53" y="143.92" z="1" />
+			</SceneObject>
+			<LayoutConfiguration name="Default" />
+			<LayoutConfiguration name="Landscape">
+				<Size>
+					<Height percentage="100" />
+					<Width percentage="80" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Size>
+					<Height percentage="100" />
+					<Width percentage="80" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="100" />
+				<Y percentage="100" />
+			</Translation>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="100" />
+				<Y percentage="100" />
+			</Translation>
+			<Size>
+				<Width percentage="80" />
+				<OriginalSize height="1024" width="570" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<Material name="KimmyHappy">
+		<Texture filename="shared/diorama/common/tex/kimmy/kimmy_happy_tex.png" />
+		<Blend enabled="true" />
+		<Cull face="back" enabled="false" />
+		<Depth writeMask="false" enabled="true" />
+	</Material>
+	<SceneObject __visibility="0" visibility="inherit" name="SpecialOffer">
+		<Translation x="0" y="0" z="499" />
+		<Animation loopCount="0" animationData="SlideInFromBelow" name="OnAppear" />
+		<Animation loopCount="0" animationData="SlideOutToBelow" name="OnDisappear" />
+		<SceneObject __visibility="3" visibility="never" name="Portrait">
+			<Translation y="-504" />
+			<SceneObject name="Decoration">
+				<Translation x="-241.990" y="-2.340" z="1" />
+				<SceneObject name="RightHalloween">
+					<Translation x="389.290" y="363.990" z="3" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/lowerPart2.png" />
+					<Scale x="0.750" y="0.750" z="1" />
+				</SceneObject>
+				<SceneObject name="LeftHalloween">
+					<Translation x="-198.330" y="356.060" z="3" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/lowerPart1.png" />
+					<Scale x="0.720" y="0.720" z="1" />
+				</SceneObject>
+				<SceneObject name="SmallHearts">
+					<Translation x="103.670" y="-246.590" z="0" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart1.png" />
+					<Scale x="-1" />
+					<SceneObject name="LonelyHeart">
+						<Translation x="120.260" y="76.460" z="0" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart2.png" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="KimmyHappy">
+					<Translation x="246.577" y="-3.981" z="-1" />
+					<Scale x="2.500" y="-2.500" z="0" />
+					<Model filename="shared/diorama/common/models/kimmy/kimmy_halloween.ffm" zSort="backToFront">
+						<Animation filename="shared/diorama/common/models/kimmy/kimmy_halloween_idle.ffa" play="true" interpolateFrame="false" />
+					</Model>
+					<Material>
+						<Texture filename="shared/diorama/common/tex/gui_elements/halloween_kimmy.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+				</SceneObject>
+				<SceneObject name="Shadow">
+					<Translation x="-61.840" y="87.580" z="2" />
+					<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/desk_shadow.png">
+						<Insets left="3" right="3" bottom="0" top="0" />
+						<Scale x="0.500" y="0.500" />
+						<Size width="1240" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="Glow">
+					<Translation x="-66.500" y="430" z="2" />
+					<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/desk_glow.png">
+						<Insets left="3" right="3" bottom="0" top="0" />
+						<Scale x="0.500" y="0.500" />
+						<Size width="1240" />
+					</Panel>
+				</SceneObject>
+				<SceneObject editorEntityId="7" name="Bat">
+					<Translation x="-142.960" y="-412.920" z="0" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/bat.png" />
+				</SceneObject>
+				<SceneObject name="Cat">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/cat.png" />
+					<Translation x="316.730" y="-639.650" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject visibility="inherit" name="DeskText">
+				<Translation x="-0.330" y="36.070" z="2" />
+				<Text alignment="center" canBreakWords="true" font="Typewriter" allowWordWrapping="true" overflowBehaviour="fit" verticalAlignment="visualCenter" maxWidth="600" key="popup_sale_text">
+					<Color r="92" g="31" b="1" a="255" />
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Desk">
+				<Translation x="-235.100" y="-2.340" />
+				<SceneObject name="left">
+					<Translation x="-107" y="17.110" z="1" />
+					<Sprite wrap="repeat" vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/128_desk_left.png">
+						<Rectangle maxX="126" minX="2" maxY="1000" />
+						<Scale x="0.500" y="0.500" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="right">
+					<Translation x="531.500" y="17.610" z="1" />
+					<Sprite wrap="repeat" vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/128_desk_right.png">
+						<Rectangle maxX="127" minX="1" maxY="1000" />
+						<Scale x="0.500" y="0.500" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="topright">
+					<Translation x="531" y="-46" z="1" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/128_desk_rightcorner.png" />
+				</SceneObject>
+				<SceneObject name="topleft">
+					<Translation x="-108" y="-46" z="1" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/128_desk_leftcorner.png" />
+				</SceneObject>
+				<SceneObject name="sprite">
+					<Translation x="-44.870" y="-46" z="1" />
+					<Sprite wrap="repeat" vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/128_desk_top.png">
+						<Rectangle maxX="1152" maxY="128" />
+						<Scale x="0.500" y="0.500" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject visibility="inherit" name="middle">
+					<Translation x="-45.790" y="17.800" z="0" />
+					<Sprite wrap="repeat" vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/128_desk_middle.png">
+						<Rectangle maxX="1156" maxY="1000" />
+						<Scale x="0.500" y="0.500" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="OfferBox">
+				<Translation x="-8.660" y="298.910" />
+				<Scale z="3" />
+				<SceneObject name="Background">
+					<Translation x="9.330" y="15" z="1" />
+					<SceneObject name="Top">
+						<Translation x="2.670" y="-219" />
+						<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ornament_top.png">
+							<Insets left="50" right="50" bottom="0" top="50" />
+							<Pivot anchor="top" />
+							<Size height="324" width="578" />
+						</Panel>
+					</SceneObject>
+					<SceneObject name="Bottom">
+						<Translation x="8.840" y="84" />
+						<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ornament_bottom.png">
+							<Insets left="50" right="50" bottom="50" top="0" />
+							<Pivot anchor="top" />
+							<Size height="34" width="578" />
+						</Panel>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Heart">
+					<Translation x="-75" y="-166.910" z="2" />
+					<Scale x="0.800" y="0.800" />
+					<SceneObject name="Heart">
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/icon_lives.png" />
+					</SceneObject>
+					<SceneObject name="InfinitySign">
+						<Translation x="12" y="10" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/infinity_sign.png">
+							<Scale x="1.150" y="1.150" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Text">
+						<SceneObject name="Duration">
+							<Translation x="43" y="98" />
+							<Scale x="1.200" y="1.200" />
+							<Text alignment="center" font="Banana" overflowBehaviour="fit" maxWidth="180" maxHeight="27" key="unlimited_life_duration">
+								<Color r="117" g="55" b="0" a="255" />
+								<Pivot anchor="center" />
+							</Text>
+						</SceneObject>
+						<SceneObject name="Description">
+							<Translation x="42" y="130.740" />
+							<Scale x="1.200" y="1.200" />
+							<Text alignment="center" font="Banana" overflowBehaviour="fit" maxWidth="240" maxHeight="20" key="unlimited_life_text">
+								<Color r="225" g="110" b="110" a="255" />
+								<Size x="15" y="15" />
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Gold">
+					<Translation x="-243.090" y="-176.130" z="2" />
+					<Scale x="0.750" y="0.750" />
+					<SceneObject name="Goldbars">
+						<Translation x="-3.540" y="9" z="0" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gold_5.png">
+							<Scale x="0.850" y="0.850" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation x="61.120" y="147" z="0" />
+						<Text alignment="center" font="Banana" key="20">
+							<Color r="117" g="55" b="0" a="255" />
+							<Size x="44" y="44" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Lollipop">
+					<Translation x="114.800" y="-35.220" z="2" />
+					<Scale z="3" />
+					<SceneObject name="Lollipop">
+						<Translation x="-42.160" y="-140.370" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/icon_lollipop.png">
+							<Scale x="0.900" y="0.900" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation x="-10.030" y="-25.660" z="0" />
+						<Text alignment="center" font="Banana" key="3x">
+							<Color r="117" g="55" b="0" a="255" />
+							<Size x="30" y="30" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Plusses">
+					<Translation x="-4.090" y="9.870" />
+					<SceneObject name="+">
+						<Translation x="-118.430" y="-113" z="5" />
+						<Text font="Typewriter">
+							<Color r="203" g="191" b="158" a="255" />
+							<Size x="40" y="40" />
+							<TextString>+</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="+">
+						<Translation x="162.150" y="-113" z="5" />
+						<Text font="Typewriter">
+							<Color r="203" g="191" b="158" a="255" />
+							<Size x="40" y="40" />
+							<TextString>+</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="+">
+						<Translation x="23.450" y="-113" z="5" />
+						<Text font="Typewriter">
+							<Color r="203" g="191" b="158" a="255" />
+							<Size x="40" y="40" />
+							<TextString>+</TextString>
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Striped">
+					<Translation x="180.070" y="-35.220" z="2" />
+					<Scale z="3" />
+					<SceneObject name="Striped">
+						<Translation x="22.490" y="-142.370" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/icon_lollipop_striped.png">
+							<Scale x="0.900" y="0.900" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation x="53.800" y="-25.660" />
+						<Text alignment="center" font="Banana" key="3x">
+							<Color r="117" g="55" b="0" a="255" />
+							<Size x="30" y="30" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Umbrella">
+				<Translation x="-532.100" y="-455.470" z="-2" />
+				<SceneObject visibility="dynamic" name="sprite 2">
+					<Translation x="191" y="-93" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/umbrellaWithSign.png">
+						<Scale x="0.900" y="0.900" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject visibility="dynamic" name="sprite 2">
+					<Translation x="539" y="-93" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/umbrellaWithSign.png">
+						<Flip u="true" />
+						<Scale x="0.900" y="0.900" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PurchaseButton">
+				<Translation x="-77.940" y="-167.690" z="3" />
+				<SceneObject name="BuyButton" class="Button">
+					<Translation x="91.940" y="500.050" />
+					<Scale x="1.200" y="1.200" z="1.200" />
+					<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+						<Insets left="52" right="60" bottom="60" top="46" />
+						<Pivot anchor="center" />
+						<Size height="108" width="320" />
+					</Panel>
+					<Animation startTime="0.800" layer="1" animationData="Idle" play="true" name="Idle" />
+					<Animation loopCount="0" animationData="OnPress" name="OnPress" />
+					<Animation loopCount="0" animationData="OnRelease" name="OnRelease" />
+					<SceneObject name="Text">
+						<Translation y="2" />
+						<Text alignment="center" font="Typewriter" verticalAlignment="center" key="store_contacting">
+							<Shadow enabled="true">
+								<Color r="127" g="31" b="15" a="64" />
+								<Offset x="0" y="4" />
+							</Shadow>
+							<Size x="25" y="25" />
+							<TextString>0</TextString>
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RemainingTime">
+				<Translation x="17.200" y="405.070" z="10" />
+				<Text alignment="center" font="Banana" key="Ends in: 6 days">
+					<Color r="117" g="55" b="0" a="255" />
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="TitleText">
+				<Translation x="5.700" y="-433.580" />
+				<Text alignment="center" font="Banana" verticalAlignment="visualCenter" key="popup_sale_title">
+					<Size x="30" y="30" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="CloseButton" class="Button">
+				<Translation x="313.480" y="-448.300" />
+				<Scale x="0.700" y="0.700" z="0.700" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_pink.png">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Animation layer="1" animationData="Idle" play="true" name="Idle" />
+				<Animation loopCount="0" animationData="OnPress" name="OnPress" />
+				<Animation loopCount="0" animationData="OnRelease" name="OnRelease" />
+				<SceneObject>
+					<Translation x="0" y="-3" />
+					<Scale x="1.500" y="1.500" z="1.500" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_exit.png">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Owl">
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/owl.png" />
+				<Translation x="165.560" y="-172.950" z="0" />
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<SceneObject __visibility="2" visibility="always" name="Landscape">
+			<Translation x="0" y="-470.150" />
+			<SceneObject name="Decoration">
+				<Translation x="-241.990" y="-2.340" z="1" />
+				<SceneObject name="Shadow">
+					<Translation x="-68.550" y="113.060" z="8" />
+					<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/desk_shadow.png">
+						<Insets left="3" right="3" bottom="0" top="0" />
+						<Scale x="0.500" y="0.500" />
+						<Size width="1280" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="Glow">
+					<Translation x="-66.500" y="433.400" z="2" />
+					<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/desk_glow.png">
+						<Insets left="3" right="3" bottom="0" top="0" />
+						<Scale x="0.500" y="0.500" />
+						<Size width="1240" />
+					</Panel>
+				</SceneObject>
+				<SceneObject name="RightHalloween">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/lowerPart2.png" />
+					<Translation x="474.070" y="331.180" z="3" />
+					<Scale x="0.770" y="0.770" z="1" />
+				</SceneObject>
+				<SceneObject name="LeftHalloween">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/lowerPart1.png" />
+					<Translation x="-281.160" y="329.240" z="3" />
+					<Scale x="0.700" y="0.700" z="1" />
+				</SceneObject>
+				<SceneObject name="SmallHearts">
+					<Scale x="-0.700" y="0.700" z="1" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart1.png" />
+					<Translation x="72.660" y="-170.200" z="0" />
+					<SceneObject name="LonelyHeart">
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/heart2.png" />
+						<Translation x="120.260" y="76.460" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject editorEntityId="7" name="Bat">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/bat.png" />
+					<Translation x="-149.740" y="-290.220" z="0" />
+					<Scale x="0.780" y="0.780" z="1" />
+				</SceneObject>
+				<SceneObject name="Owl">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/owl.png" />
+					<Translation x="421.910" y="-143.370" z="0" />
+				</SceneObject>
+				<SceneObject name="KimmyHappy 2">
+					<Translation x="244.356" y="22.676" z="-1" />
+					<Scale x="2.500" y="-2.500" z="0" />
+					<Model filename="shared/diorama/common/models/kimmy/kimmy_halloween.ffm" zSort="backToFront">
+						<Animation filename="shared/diorama/common/models/kimmy/kimmy_halloween_idle.ffa" interpolateFrame="false" play="true" />
+					</Model>
+					<Material>
+						<Texture filename="shared/diorama/common/tex/gui_elements/halloween_kimmy.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject visibility="inherit" name="DeskText">
+				<Translation x="-0.330" y="61.070" z="2" />
+				<Text alignment="center" canBreakWords="true" font="Typewriter" allowWordWrapping="true" overflowBehaviour="fit" verticalAlignment="visualCenter" maxWidth="600" key="popup_sale_text">
+					<Color r="92" g="31" b="1" a="255" />
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Desk">
+				<Translation x="-235.100" y="22.660" />
+				<SceneObject visibility="inherit" name="left">
+					<Translation x="-140" y="15.860" z="1" />
+					<Sprite wrap="repeat" vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/128_desk_left.png">
+						<Rectangle maxX="126" maxY="1000" />
+						<Scale x="0.500" y="0.500" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="right">
+					<Translation x="562" y="16.360" z="1" />
+					<Sprite wrap="repeat" vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/128_desk_right.png">
+						<Rectangle maxX="126" maxY="1000" />
+						<Scale x="0.500" y="0.500" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="topright">
+					<Translation x="562" y="-46" z="1" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/128_desk_rightcorner.png" />
+				</SceneObject>
+				<SceneObject name="topleft">
+					<Translation x="-140" y="-46" z="1" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/128_desk_leftcorner.png" />
+				</SceneObject>
+				<SceneObject name="top">
+					<Translation x="-77.080" y="-46" z="1" />
+					<Sprite wrap="repeat" vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/128_desk_top.png">
+						<Rectangle maxX="1280" maxY="128" />
+						<Scale x="0.500" y="0.500" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject visibility="inherit" name="middle">
+					<Translation x="-77.070" y="17.360" />
+					<Sprite wrap="repeat" vertexColors="false" filename="shared/diorama/common/tex/gui_elements/repeat/128_desk_middle.png">
+						<Rectangle maxX="1280" maxY="1000" />
+						<Scale x="0.500" y="0.500" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="OfferBox">
+				<Translation x="-8.660" y="323.910" />
+				<Scale z="3" />
+				<SceneObject name="Background">
+					<Translation x="12.040" y="15" z="1" />
+					<SceneObject name="Top">
+						<Translation x="5.920" y="-219" />
+						<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ornament_top.png">
+							<Insets left="50" right="50" bottom="0" top="50" />
+							<Pivot anchor="top" />
+							<Size height="280" width="672" />
+						</Panel>
+					</SceneObject>
+					<SceneObject name="Bottom">
+						<Translation x="5.730" y="60.390" />
+						<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/ornament_bottom.png">
+							<Insets left="50" right="50" bottom="50" top="0" />
+							<Pivot anchor="top" />
+							<Size height="34" width="672" />
+						</Panel>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Heart">
+					<Translation x="-291.420" y="-100" z="2" />
+					<Scale x="0.800" y="0.800" />
+					<SceneObject name="Heart">
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/icon_lives.png">
+							<Scale x="0.900" y="0.900" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="InfinitySign">
+						<Translation x="10.650" y="10" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/infinity_sign.png" />
+					</SceneObject>
+					<SceneObject name="Text">
+						<Translation x="127.550" y="-63.920" />
+						<SceneObject name="Duration">
+							<Translation x="-39" y="92" />
+							<Scale x="1.200" y="1.200" />
+							<Text alignment="left" font="Banana" overflowBehaviour="fit" maxWidth="230" maxHeight="27" key="unlimited_life_duration">
+								<Color r="117" g="55" b="0" a="255" />
+								<Pivot anchor="center" />
+							</Text>
+						</SceneObject>
+						<SceneObject name="Description">
+							<Translation x="-39" y="121" />
+							<Scale x="1.200" y="1.200" />
+							<Text alignment="left" font="Banana" maxWidth="230" maxHeight="20" key="unlimited_life_text">
+								<Color r="225" g="110" b="110" a="255" />
+								<Size x="15" y="15" />
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Gold">
+					<Translation x="-262.120" y="-187.720" z="2" />
+					<Scale x="0.850" y="0.850" />
+					<SceneObject name="Goldbars">
+						<Translation x="56.250" y="17.540" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/gold_5.png">
+							<Scale x="0.750" y="0.750" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation x="-21.080" y="64.340" />
+						<Text font="Banana" key="20">
+							<Color r="117" g="55" b="0" a="255" />
+							<Size x="30" y="30" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Lollipop">
+					<Translation x="90" y="-5" z="2" />
+					<Scale x="0.850" y="0.850" z="3" />
+					<SceneObject name="Lollipop">
+						<Translation x="-353" y="-38.870" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/icon_lollipop.png">
+							<Scale x="0.800" y="0.800" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation x="-409.720" y="6.080" />
+						<Text alignment="center" font="Banana" key="3x">
+							<Color r="117" g="55" b="0" a="255" />
+							<Size x="30" y="30" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Brackets">
+					<Translation x="22.780" y="-1.930" />
+					<SceneObject name="sprite 3">
+						<Translation x="-27.540" y="-168.820" z="3" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/curly_bracket.png">
+							<Scale x="1.100" y="1.100" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="sprite 4">
+						<Translation x="-26.550" y="-56.960" z="4" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/curly_bracket.png">
+							<Flip v="true" />
+							<Scale x="1.100" y="1.200" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Striped">
+					<Translation x="90" y="60" z="2" />
+					<Scale x="0.850" y="0.850" z="3" />
+					<SceneObject name="Striped">
+						<Translation x="-353" y="-40.870" />
+						<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/icon_lollipop_striped.png">
+							<Scale x="0.800" y="0.800" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation x="-409.720" y="6.080" />
+						<Text alignment="center" font="Banana" key="3x">
+							<Color r="117" g="55" b="0" a="255" />
+							<Size x="30" y="30" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="PurchaseButton">
+				<Translation x="101.660" y="-225.810" z="3" />
+				<SceneObject name="BuyButton" class="Button">
+					<Translation x="81.970" y="500.760" />
+					<Scale x="1.200" y="1.200" z="1.200" />
+					<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+						<Insets left="52" right="60" bottom="60" top="46" />
+						<Pivot anchor="center" />
+						<Size height="108" width="260" />
+					</Panel>
+					<Animation startTime="0.800" layer="1" animationData="Idle" play="true" name="Idle" />
+					<Animation loopCount="0" animationData="OnPress" name="OnPress" />
+					<Animation loopCount="0" animationData="OnRelease" name="OnRelease" />
+					<SceneObject name="Text">
+						<Translation y="2" />
+						<Text alignment="center" font="Typewriter" verticalAlignment="center" key="store_contacting">
+							<Shadow enabled="true">
+								<Color r="127" g="31" b="15" a="64" />
+								<Offset x="0" y="4" />
+							</Shadow>
+							<Size x="22" y="22" />
+							<TextString>0</TextString>
+						</Text>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RemainingTime">
+				<Translation x="181.870" y="360.830" z="10" />
+				<Text alignment="center" font="Banana" key="Ends in: 6 days">
+					<Color r="117" g="55" b="0" a="255" />
+					<Size x="18" y="18" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="TitleText">
+				<Translation x="5.700" y="-346.290" />
+				<Text alignment="center" font="Banana" verticalAlignment="visualCenter" key="popup_sale_title">
+					<Size x="30" y="30" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="CloseButton" class="Button">
+				<Translation x="317.040" y="-364.210" />
+				<Scale x="0.700" y="0.700" z="0.700" />
+				<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_pink.png">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Animation layer="1" animationData="Idle" play="true" name="Idle" />
+				<Animation loopCount="0" animationData="OnPress" name="OnPress" />
+				<Animation loopCount="0" animationData="OnRelease" name="OnRelease" />
+				<SceneObject>
+					<Translation x="0" y="-3" />
+					<Scale x="1.500" y="1.500" z="1.500" />
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_exit.png">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject visibility="always" name="Umbrella">
+				<Translation x="-532.100" y="-369.460" z="-2" />
+				<SceneObject visibility="always" name="sprite 2">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/umbrellaWithSign.png">
+						<Scale x="0.900" y="0.900" />
+					</Sprite>
+					<Translation x="191" y="-93" />
+				</SceneObject>
+				<SceneObject visibility="always" name="sprite 2">
+					<Sprite vertexColors="false" filename="shared/diorama/common/tex/gui_elements/umbrellaWithSign.png">
+						<Flip u="true" />
+						<Scale x="0.900" y="0.900" />
+					</Sprite>
+					<Translation x="539" y="-93" />
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Landscape">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="100" />
+			</Translation>
+			<Size>
+				<Height percentage="92.500" max="740" />
+				<OriginalSize height="800" width="1056" />
+				<Width percentage="90" max="906" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="49" />
+				<Y percentage="100" />
+			</Translation>
+			<Size>
+				<Height percentage="100" max="906" />
+				<OriginalSize height="1056" width="800" />
+				<Width percentage="112" max="760" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

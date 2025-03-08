@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:f3a779bb9d3baabd28455bed6e2f5c13:cde02432cfc2335e24f3ea359722e351:4451f28fc5e81fa8b9ec75d0740e8467$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="game_hud_char.png" width="1024" height="1024">
+    <sprite n="blackberry_jam_crab.png" x="337" y="364" w="318" h="266" pX="0.5" pY="0.5"/>
+    <sprite n="bubble_gum_troll.png" x="2" y="2" w="448" h="281" pX="0.5" pY="0.5"/>
+    <sprite n="bubble_squid.png" x="331" y="664" w="331" h="335" pX="0.5" pY="0.5"/>
+    <sprite n="chocolate_centipede.png" x="2" y="287" w="331" h="373" pX="0.5" pY="0.5"/>
+    <sprite n="fizz_shrimp.png" x="2" y="664" w="325" h="342" pX="0.5" pY="0.5"/>
+    <sprite n="honey_dragon.png" x="454" y="2" w="371" h="358" pX="0.5" pY="0.5"/>
+    <sprite n="ice_mammoth.png" x="666" y="364" w="313" h="379" pX="0.5" pY="0.5"/>
+    <sprite n="kimmy_extrahappy_uv.png" x="829" y="2" w="182" h="252" pX="0.5" pY="0.5"/>
+</TextureAtlas>

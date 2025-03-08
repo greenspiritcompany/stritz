@@ -1,0 +1,85 @@
+
+<Scene>
+	<SceneObject name="Scene">
+		<SceneObject layerFlags="256" name="GameInstructionSwipe" visibility="always">
+			<SceneObject name="SwipeRoot" visibility="always">
+				<Translation x="6.06238" y="60" z="500"/>
+				<Animation animationData="SlideInFromBelow" loopCount="0" name="SlideInFromTop"/>
+				<Animation animationData="SlideOutToTop" loopCount="0" name="SlideOutToTop"/>
+				<SceneObject __editorVisibility="true" __visibility="0" name="FloatingBears">
+					<SceneObject name="MovingBg">
+						<Animation animationData="SlideToRightData" loopCount="-1" name="SlideToRight" play="true"/>
+						<SceneObject name="BgBottom">
+							<Translation y="290"/>
+							<Sprite filename="shared/game/common/tex/hud/honey_swipe_bottom.png" wrap="repeat">
+								<Pivot anchor="bottom" y="190"/>
+								<Rectangle maxX="2048" maxY="128"/>
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="BgTop">
+							<Translation x="0" y="40" z="0"/>
+							<Sprite filename="shared/game/common/tex/hud/honey_swipe_top.png" wrap="repeat">
+								<Pivot anchor="top" y="190"/>
+								<Rectangle maxX="2048" maxY="64"/>
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject __editorVisibility="true" __visibility="0" name="BgCenter">
+						<Translation y="67.41" z="1"/>
+						<Sprite filename="shared/game/common/tex/hud/instruction_swipe_top.png">
+							<Flip u="true"/>
+							<Pivot anchor="bottom" y="150"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject __editorVisibility="true" __visibility="0" name="Text">
+						<Translation y="-50.6739" z="2"/>
+						<Text alignment="center" font="Banana" key="gamemode.honey.instructions" maxHeight="55" maxWidth="360" verticalAlignment="visualCenter">
+							<Color r="235" g="125" b="6" a="255"/>
+							<GradientColor enabled="false"/>
+							<Shadow enabled="true">
+								<Color r="255" g="255" b="255" a="255"/>
+								<Offset x="1" y="4"/>
+							</Shadow>
+							<Size x="22" y="22"/>
+						</Text>
+					</SceneObject>
+					<SceneObject __editorVisibility="true" __visibility="0" name="Character">
+						<Translation x="-1.05011" y="-225.425" z="2"/>
+						<Rotation z="3.5"/>
+						<Scale x="-0.76" y="0.764463"/>
+						<Sprite filename="shared/game/common/tex/hud/honey_dragon.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject __editorVisibility="true" __visibility="0" name="BgMiddle">
+						<Translation x="18.5544" y="519.612"/>
+						<Scale x="124.503" y="4.04408"/>
+						<Sprite filename="shared/game/common/tex/hud/swipe_bg.png">
+							<Pivot anchor="top" y="150"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<LayoutConfiguration name="Portrait">
+					<Translation>
+						<X percentage="50.0"/>
+						<Y percentage="55.0"/>
+					</Translation>
+					<Size>
+						<Height percentage="25"/>
+						<OriginalSize width="1024" height="256"/>
+					</Size>
+				</LayoutConfiguration>
+				<LayoutConfiguration name="Landscape">
+					<Translation>
+						<X percentage="50.0"/>
+						<Y percentage="56.0"/>
+					</Translation>
+					<Size>
+						<Height percentage="31"/>
+						<OriginalSize width="1024" height="256"/>
+					</Size>
+				</LayoutConfiguration>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

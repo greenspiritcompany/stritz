@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="4.0">
+		<Triggers>
+			<!--<EffectTrigger name="castle_bubblegum_bubbles" time="0.0">
+				<Offset x="-805" y="-24" z="-257"/>
+			</EffectTrigger>-->
+			<EffectTrigger name="character_bubblegum_monster" time="0.0"/>
+			<CustomTrigger time="0.15" name="SpeechBubbleText" data="SpeechBubble.2"/>
+			<AnimationTrigger time="0.15" targetName="SpeechBubble" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubble" animationName="SpeechBubbleDisappear"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

@@ -1,0 +1,40 @@
+{
+  "id": "colour_creator_hard",
+  "nameKey" : "quests.names.explosiveexpert",
+  "difficulty" : 1,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.explosivenovice",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_colorbomb.png",
+      "data": {
+         "itemType":"colorBomb",
+         "amount": 35
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+  <SceneObject name="Scene">
+  <SceneObject name="WinStars">
+    
+    <SceneObject name="StarLeft" visibility="never">
+      <Translation x="0" y="0" z="0"/>
+      <Sprite filename="shared/diorama/common/tex/gui_elements/star.png">
+        <Pivot anchor="center"/>
+      </Sprite>
+    </SceneObject>
+
+    <SceneObject name="StarCenter" visibility="never">
+      <Translation x="0" y="0" z="0"/>
+      <Sprite filename="shared/diorama/common/tex/gui_elements/star.png">
+        <Pivot anchor="center"/>
+      </Sprite>
+    </SceneObject>
+
+    <SceneObject name="StarRight" visibility="never">
+      <Translation x="0" y="0" z="0"/>
+      <Sprite filename="shared/diorama/common/tex/gui_elements/star.png">
+        <Pivot anchor="center"/>
+      </Sprite>
+    </SceneObject>
+
+    <SceneObject name="StarBright" visibility="never">
+      <Translation x="0" y="0" z="2"/>
+      <Sprite filename="shared/diorama/common/tex/gui_elements/star_bright.png">
+        <Pivot anchor="center"/>
+      </Sprite>
+    </SceneObject>
+    
+  </SceneObject>
+  </SceneObject>
+</Scene>

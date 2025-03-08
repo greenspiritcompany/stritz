@@ -1,0 +1,18 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="2.251">
+		<Triggers>
+			<EffectTrigger time="0.0" name="CandyConeEFQ"/>
+			<EffectTrigger time="0.0" name="CandyConeStopEFQ" parentName="CandyConeStopHelper1"/>
+			<EffectTrigger time="0.5" name="CandyConeStopEFQ" parentName="CandyConeStopHelper2"/>
+			<EffectTrigger time="1.0" name="CandyConeStopEFQ" parentName="CandyConeStopHelper3"/>
+
+			<EffectTrigger time="0.0" name="BombExplodeSFX"/>
+			<EffectTrigger time="0.5" name="BombExplodeSFX"/>
+			<EffectTrigger time="1.0" name="BombExplodeSFX"/>
+		</Triggers>
+		<TimeControls>
+			<!--<Loop time="1.49" jumpToTime="0.0"/>-->
+		</TimeControls>
+	</Timeline>
+</Timelines>

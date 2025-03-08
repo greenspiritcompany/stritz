@@ -1,0 +1,8 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.8">
+		<Triggers>
+			<EffectTrigger name="LineBlastHitLiqEFQ" parentName="ParticleHelper"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

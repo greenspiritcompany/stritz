@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="BoosterView">
+		<Translation x="0.0" y="0.0" z="10.0" />
+		<SceneObject name="BoosterBodyBackground">
+			<SceneObject name="TopBackgroundPiece">
+				<!--								<Panel filename="client/tex/menu/booster_box.png">
+						<Pivot anchor="bottom"/>
+						<Rectangle minX="0" maxX="72" minY="0" maxY="30"/>
+						<Insets left="35" top="1" right="35" bottom="29"/>
+						<Size width="690" height="30"/>
+					</Panel>
+				-->
+				<Animations>
+					<Animation name="OnOpen" animationData="BoosterDetailGrowTop" loopCount="0" />
+					<Animation name="OnClose" animationData="BoosterDetailShrinkTop" loopCount="0" />
+				</Animations>
+				<Translation y="40.0" z="1.0" />
+			</SceneObject>
+			<SceneObject name="MidBackgroundPiece">
+				<!--								<Panel filename="client/tex/menu/booster_box.png">
+						<Pivot anchor="bottom"/>
+						<Rectangle minX="0" maxX="72" minY="30" maxY="50"/>
+						<Insets left="35" top="2" right="35" bottom="2"/>
+						<Size width="690" height="140"/>
+					</Panel>
+				-->
+				<Animations>
+					<Animation name="OnOpen" animationData="BoosterDetailGrowMiddle" loopCount="0" />
+					<Animation name="OnClose" animationData="BoosterDetailShrinkMiddle" loopCount="0" />
+				</Animations>
+				<Translation y="180.0" z="1.0" />
+			</SceneObject>
+			<SceneObject name="BottomBackgroundPiece">
+				<!--								<Panel filename="client/tex/menu/booster_box.png">
+						<Pivot anchor="bottom"/>
+						<Rectangle minX="0" maxX="72" minY="55" maxY="85"/>
+						<Insets left="35" top="30" right="35" bottom="4"/>
+						<Size width="690" height="35"/>
+					</Panel>
+				-->
+				<Translation y="215.0" z="2.0" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="BoosterDetailsContainer">
+			<Animations>
+				<Animation name="OnOpen" animationData="BoosterDetailGrowBox" loopCount="0" />
+				<Animation name="OnClose" animationData="BoosterDetailShrinkBox" loopCount="0" />
+			</Animations>
+			<Translation y="-133.0" z="3.0" />
+		</SceneObject>
+		<SceneObject name="BoosterExtraCards">
+			<SceneObject name="ButtonHolder">
+				<Sprite filename="client/tex/menu/btn_holder.png">
+					<Scale x="0.9" y="0.9" />
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="-240.0" y="125.0" z="3.0" />
+				<SceneObject name="Button">
+					<Sprite filename="client/tex/menu/blue_btn.png">
+						<Scale x="0.8" y="0.8" />
+						<Pivot anchor="center" />
+					</Sprite>
+					<Animations>
+						<Animation name="Idle" animationData="Idle" layer="1" />
+						<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+						<Animation name="OnBoosterAdded" animationData="OnRelease" loopCount="0" />
+					</Animations>
+					<Translation x="-3.0" y="-38.0" />
+					<SceneObject>
+						<Text canBreakWords="false" alignment="center" font="Banana">
+							<Size x="30" y="30" />
+							<TextString>+5</TextString>
+						</Text>
+						<Translation x="14.0" y="-25.0" z="0.0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="BoosterCount">
+					<Text canBreakWords="false" alignment="center" font="Banana">
+						<Size x="30" y="30" />
+						<TextString>{BoosterCount}</TextString>
+						<Parameter name="BoosterCount">0</Parameter>
+					</Text>
+					<LayoutConfiguration name="Portrait">
+						<Translation>
+							<X percentage="42.0" />
+							<Y percentage="50.0" />
+						</Translation>
+					</LayoutConfiguration>
+					<LayoutConfiguration name="Landscape">
+						<Translation>
+							<X percentage="42.0" />
+							<Y percentage="50.0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="BoosterCheckBox">
+					<Sprite filename="client/tex/menu/check_box.png">
+						<Scale x="0.7" y="0.7" />
+						<Pivot anchor="center" />
+					</Sprite>
+					<Translation z="4.0" />
+					<SceneObject name="BoosterCheckMark">
+						<Sprite filename="client/tex/menu/btn_inactive_symbol.png">
+							<Scale x="0.7" y="0.7" />
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation z="5.0" />
+						<LayoutConfiguration name="Portrait">
+							<Translation>
+								<Y percentage="-15.0" />
+								<X percentage="8.0" />
+							</Translation>
+						</LayoutConfiguration>
+						<LayoutConfiguration name="Landscape">
+							<Translation>
+								<Y percentage="-15.0" />
+								<X percentage="8.0" />
+							</Translation>
+						</LayoutConfiguration>
+					</SceneObject>
+					<LayoutConfiguration name="Portrait">
+						<Translation>
+							<Y percentage="35.0" />
+						</Translation>
+					</LayoutConfiguration>
+					<LayoutConfiguration name="Landscape">
+						<Translation>
+							<Y percentage="35.0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="SelectionMark">
+					<Sprite filename="client/tex/menu/booster_box2_2.png">
+						<Pivot anchor="top" />
+					</Sprite>
+					<Animations>
+						<Animation name="OnOpen" animationData="BoosterDetailGrowMark" loopCount="0" />
+						<Animation name="OnClose" animationData="BoosterDetailShrinkMark" loopCount="0" />
+					</Animations>
+					<Translation y="-124.0" z="1.0" />
+				</SceneObject>
+				<SceneObject name="Effects">
+					<Translation z="10.0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Locked">
+				<!--<Sprite filename="client/tex/menu/5xtracard_booster_icon_locked.png"><Pivot anchor="center"/><Scale x="1.2" y="1.2"/></Sprite>-->
+				<Translation x="-240.0" y="90.0" z="3.0" />
+				<SceneObject>
+					<Sprite filename="client/tex/menu/lock.png">
+						<Pivot anchor="center" />
+						<Scale x="1.15" y="1.15" />
+					</Sprite>
+					<Translation x="-5.0" y="5.0" z="3.0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="BoosterExtraJoker">
+			<SceneObject name="ButtonHolder">
+				<Sprite filename="client/tex/menu/btn_holder.png">
+					<Scale x="0.9" y="0.9" />
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="-80.0" y="125.0" z="3.0" />
+				<SceneObject name="Button">
+					<Sprite filename="client/tex/menu/blue_btn.png">
+						<Scale x="0.75" y="0.75" />
+						<Pivot anchor="center" />
+					</Sprite>
+					<Animations>
+						<Animation name="Idle" animationData="Idle" layer="1" />
+						<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+						<Animation name="OnBoosterAdded" animationData="OnRelease" loopCount="0" />
+					</Animations>
+					<Translation y="-43.0" />
+				</SceneObject>
+				<SceneObject name="BoosterCount">
+					<Text canBreakWords="false" alignment="center" font="Banana">
+						<Size x="30" y="30" />
+						<TextString>{BoosterCount}</TextString>
+						<Parameter name="BoosterCount">0</Parameter>
+					</Text>
+					<LayoutConfiguration name="Portrait">
+						<Translation>
+							<X percentage="42.0" />
+							<Y percentage="50.0" />
+						</Translation>
+					</LayoutConfiguration>
+					<LayoutConfiguration name="Landscape">
+						<Translation>
+							<X percentage="42.0" />
+							<Y percentage="50.0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="BoosterCheckBox">
+					<Sprite filename="client/tex/menu/check_box.png">
+						<Scale x="0.7" y="0.7" />
+						<Pivot anchor="center" />
+					</Sprite>
+					<Translation z="4.0" />
+					<SceneObject name="BoosterCheckMark">
+						<Sprite filename="client/tex/menu/btn_inactive_symbol.png">
+							<Scale x="0.7" y="0.7" />
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation z="5.0" />
+						<LayoutConfiguration name="Portrait">
+							<Translation>
+								<Y percentage="-15.0" />
+								<X percentage="8.0" />
+							</Translation>
+						</LayoutConfiguration>
+						<LayoutConfiguration name="Landscape">
+							<Translation>
+								<Y percentage="-15.0" />
+								<X percentage="8.0" />
+							</Translation>
+						</LayoutConfiguration>
+					</SceneObject>
+					<LayoutConfiguration name="Portrait">
+						<Translation>
+							<Y percentage="35.0" />
+						</Translation>
+					</LayoutConfiguration>
+					<LayoutConfiguration name="Landscape">
+						<Translation>
+							<Y percentage="35.0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="SelectionMark">
+					<Sprite filename="client/tex/menu/booster_box2_2.png">
+						<Pivot anchor="top" />
+					</Sprite>
+					<Animations>
+						<Animation name="OnOpen" animationData="BoosterDetailGrowMark" loopCount="0" />
+						<Animation name="OnClose" animationData="BoosterDetailShrinkMark" loopCount="0" />
+					</Animations>
+					<Translation y="-124.0" z="1.0" />
+				</SceneObject>
+				<SceneObject name="Effects">
+					<Translation z="10.0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Locked">
+				<!--<Sprite filename="client/tex/menu/joker_booster_icon_locked.png"><Pivot anchor="center"/><Scale x="1.2" y="1.2"/></Sprite>-->
+				<Translation x="-80.0" y="90.0" z="3.0" />
+				<SceneObject>
+					<Sprite filename="client/tex/menu/lock.png">
+						<Pivot anchor="center" />
+						<Scale x="1.15" y="1.15" />
+					</Sprite>
+					<Translation x="-5.0" y="5.0" z="3.0" />
+				</SceneObject>
+				<SceneObject name="LevelText">
+					<Text canBreakWords="false" alignment="center" maxWidth="150" font="Banana" key="popup_bazaar_level_m">
+						<Color r="46" g="45" b="45" a="255" />
+						<Size x="23" y="23" />
+					</Text>
+					<Translation y="85.0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="BoosterExtraTime">
+			<SceneObject name="ButtonHolder">
+				<Sprite filename="client/tex/menu/btn_holder.png">
+					<Scale x="0.9" y="0.9" />
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="80.0" y="125.0" z="3.0" />
+				<SceneObject name="Button">
+					<Sprite filename="client/tex/menu/blue_btn.png">
+						<Scale x="0.75" y="0.75" />
+						<Pivot anchor="center" />
+					</Sprite>
+					<Animations>
+						<Animation name="Idle" animationData="Idle" layer="1" />
+						<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+						<Animation name="OnBoosterAdded" animationData="OnRelease" loopCount="0" />
+					</Animations>
+					<Translation y="-43.0" />
+				</SceneObject>
+				<SceneObject name="BoosterCount">
+					<Text canBreakWords="false" alignment="center" font="Banana">
+						<Size x="30" y="30" />
+						<TextString>{BoosterCount}</TextString>
+						<Parameter name="BoosterCount">0</Parameter>
+					</Text>
+					<LayoutConfiguration name="Portrait">
+						<Translation>
+							<X percentage="42.0" />
+							<Y percentage="50.0" />
+						</Translation>
+					</LayoutConfiguration>
+					<LayoutConfiguration name="Landscape">
+						<Translation>
+							<X percentage="42.0" />
+							<Y percentage="50.0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="BoosterCheckBox">
+					<Sprite filename="client/tex/menu/check_box.png">
+						<Scale x="0.7" y="0.7" />
+						<Pivot anchor="center" />
+					</Sprite>
+					<Translation z="4.0" />
+					<SceneObject name="BoosterCheckMark">
+						<Sprite filename="client/tex/menu/btn_inactive_symbol.png">
+							<Scale x="0.7" y="0.7" />
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation z="5.0" />
+						<LayoutConfiguration name="Portrait">
+							<Translation>
+								<Y percentage="-15.0" />
+								<X percentage="8.0" />
+							</Translation>
+						</LayoutConfiguration>
+						<LayoutConfiguration name="Landscape">
+							<Translation>
+								<Y percentage="-15.0" />
+								<X percentage="8.0" />
+							</Translation>
+						</LayoutConfiguration>
+					</SceneObject>
+					<LayoutConfiguration name="Portrait">
+						<Translation>
+							<Y percentage="35.0" />
+						</Translation>
+					</LayoutConfiguration>
+					<LayoutConfiguration name="Landscape">
+						<Translation>
+							<Y percentage="35.0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="SelectionMark">
+					<Sprite filename="client/tex/menu/booster_box2_2.png">
+						<Pivot anchor="top" />
+					</Sprite>
+					<Animations>
+						<Animation name="OnOpen" animationData="BoosterDetailGrowMark" loopCount="0" />
+						<Animation name="OnClose" animationData="BoosterDetailShrinkMark" loopCount="0" />
+					</Animations>
+					<Translation y="-124.0" z="1.0" />
+				</SceneObject>
+				<SceneObject name="Effects">
+					<Translation z="10.0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Locked">
+				<!--<Sprite filename="client/tex/menu/time_booster_icon_locked.png"><Pivot anchor="center"/><Scale x="1.2" y="1.2"/></Sprite>-->
+				<Translation x="80.0" y="90.0" z="3.0" />
+				<SceneObject>
+					<Sprite filename="client/tex/menu/lock.png">
+						<Pivot anchor="center" />
+						<Scale x="1.15" y="1.15" />
+					</Sprite>
+					<Translation x="-5.0" y="5.0" z="3.0" />
+				</SceneObject>
+				<SceneObject name="LevelText">
+					<Text canBreakWords="false" alignment="center" maxWidth="150" font="Banana" key="popup_bazaar_level_m">
+						<Color r="46" g="45" b="45" a="255" />
+						<Size x="23" y="23" />
+					</Text>
+					<Translation y="85.0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="BoosterMultiplier">
+			<SceneObject name="ButtonHolder">
+				<Sprite filename="client/tex/menu/btn_holder.png">
+					<Scale x="0.9" y="0.9" />
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="240.0" y="125.0" z="3.0" />
+				<SceneObject name="Button">
+					<Sprite filename="client/tex/menu/blue_btn.png">
+						<Scale x="0.9" y="0.9" />
+						<Pivot anchor="center" />
+					</Sprite>
+					<Animations>
+						<Animation name="Idle" animationData="Idle" layer="1" />
+						<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+						<Animation name="OnBoosterAdded" animationData="OnRelease" loopCount="0" />
+					</Animations>
+					<Translation y="-40.0" />
+				</SceneObject>
+				<SceneObject name="BoosterCount">
+					<Text canBreakWords="false" alignment="center" font="Banana">
+						<Size x="30" y="30" />
+						<TextString>{BoosterCount}</TextString>
+						<Parameter name="BoosterCount">0</Parameter>
+					</Text>
+					<LayoutConfiguration name="Portrait">
+						<Translation>
+							<X percentage="42.0" />
+							<Y percentage="50.0" />
+						</Translation>
+					</LayoutConfiguration>
+					<LayoutConfiguration name="Landscape">
+						<Translation>
+							<X percentage="42.0" />
+							<Y percentage="50.0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="BoosterCheckBox">
+					<Sprite filename="client/tex/menu/check_box.png">
+						<Scale x="0.7" y="0.7" />
+						<Pivot anchor="center" />
+					</Sprite>
+					<Translation z="4.0" />
+					<SceneObject name="BoosterCheckMark">
+						<Sprite filename="client/tex/menu/btn_inactive_symbol.png">
+							<Scale x="0.7" y="0.7" />
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation z="5.0" />
+						<LayoutConfiguration name="Portrait">
+							<Translation>
+								<Y percentage="-15.0" />
+								<X percentage="8.0" />
+							</Translation>
+						</LayoutConfiguration>
+						<LayoutConfiguration name="Landscape">
+							<Translation>
+								<Y percentage="-15.0" />
+								<X percentage="8.0" />
+							</Translation>
+						</LayoutConfiguration>
+					</SceneObject>
+					<LayoutConfiguration name="Portrait">
+						<Translation>
+							<Y percentage="35.0" />
+						</Translation>
+					</LayoutConfiguration>
+					<LayoutConfiguration name="Landscape">
+						<Translation>
+							<Y percentage="35.0" />
+						</Translation>
+					</LayoutConfiguration>
+				</SceneObject>
+				<SceneObject name="SelectionMark">
+					<Sprite filename="client/tex/menu/booster_box2_2.png">
+						<Pivot anchor="top" />
+					</Sprite>
+					<Animations>
+						<Animation name="OnOpen" animationData="BoosterDetailGrowMark" loopCount="0" />
+						<Animation name="OnClose" animationData="BoosterDetailShrinkMark" loopCount="0" />
+					</Animations>
+					<Translation y="-124.0" z="1.0" />
+				</SceneObject>
+				<SceneObject name="Effects">
+					<Translation z="10.0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Locked">
+				<!--<Sprite filename="client/tex/menu/multiplier_booster_icon_locked.png"><Pivot anchor="center"/><Scale x="1.2" y="1.2"/></Sprite>-->
+				<Translation x="240.0" y="90.0" z="3.0" />
+				<SceneObject>
+					<Sprite filename="client/tex/menu/lock.png">
+						<Pivot anchor="center" />
+						<Scale x="1.15" y="1.15" />
+					</Sprite>
+					<Translation x="-5.0" y="5.0" z="3.0" />
+				</SceneObject>
+				<SceneObject name="LevelText">
+					<Text canBreakWords="false" alignment="center" maxWidth="150" font="Banana" key="popup_bazaar_level_m">
+						<Color r="46" g="45" b="45" a="255" />
+						<Size x="23" y="23" />
+					</Text>
+					<Translation y="85.0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

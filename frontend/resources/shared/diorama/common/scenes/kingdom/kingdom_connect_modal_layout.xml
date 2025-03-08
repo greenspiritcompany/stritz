@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="KingdomConnectModal">
+		<Default>
+			<Translation>
+				<X percentage="50"/>
+				<Y percentage="0"/>
+			</Translation>
+			<Size>
+				<Height max="706" percentage="95"/>
+				<OriginalSize height="706" width="640"/>
+				<Width max="640" percentage="100"/>
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="OptedOutText"/>
+	<Object sceneObject="Landscape"/>
+</Layout>

@@ -1,0 +1,29 @@
+<ParticleEffect maxParticles="8" space="Local" timeToEmit="60" name="GoldBling1PFX">
+<Dampening max="0.900" min="0.600" />
+<DirectionalForce x="0" y="50" />
+<Emitter emissionRate="0" spread="360" angle="360">
+	<SpawnArea width="60" depth="0" height="60" />
+</Emitter>
+<Rotation max="0" min="0" />
+<RotationSpeed max="500" min="-500" />
+<Size>
+	<Max x="49" y="49" />
+	<Min x="24" y="24" />
+</Size>
+<SizeChange>
+	<Max x="-24" y="-24" />
+	<Min x="-60" y="-60" />
+</SizeChange>
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive max="0.300" min="0.300" />
+<Velocity max="250" min="200" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color b="255" r="255" g="255" a="255" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color b="255" r="255" g="255" a="0" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Scene" visibility="always">
+
+		<SceneObject name="GiantBearAppearRoot">
+			<SceneObject name="GiantBearAppearScale">
+				<SceneObject name="GiantBearAppearModel">
+					<!-- 3d model in 2d space... -->
+					<Scale x="0.34" y="-0.34" z="1.0"/>
+					<Model filename="shared/game/common/models/giant_bear/giant_bear.ffm">
+						<Animations>
+							<Animation name="Appear"
+									   filename="shared/game/common/models/giant_bear/appear.ffa"
+									   play="true" loopCount="0"/>
+						</Animations>
+					</Model>
+					<Materials>
+						<Material>
+							<Textures>
+								<Texture filename="shared/game/common/tex/candy/giant_bear.png"/>
+							</Textures>
+							<Depth enabled="false" writeMask="false"/>
+							<Blend enabled="true"/>
+						</Material>
+					</Materials>
+
+
+				</SceneObject>
+
+			</SceneObject>
+
+		</SceneObject>
+
+	</SceneObject>
+</Scene>

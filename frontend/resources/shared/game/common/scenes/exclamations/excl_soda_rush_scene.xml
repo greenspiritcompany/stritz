@@ -1,0 +1,40 @@
+<!DOCTYPE Scene SYSTEM '../../../../dtd/scene.dtd'>
+<Scene>
+    <SceneObject name="Scene" visibility="always" layerFlags="256">
+        <SceneObject name="ScaleHelper">
+            <Translation y="-20" z="400" x="0"/>
+            <Scale y="0.80" z="0.80" x="0.80"/>
+            <SceneObject name="ExclGroupBubble">
+                <Animation animationData="ExclGeneralData" name="ExclSwipe" loopCount="0" play="false" speed="1"/>
+                <SceneObject name="ExclBubble">
+                    <Translation y="-70" x="-50"/>
+                    <Sprite vertexColors="false" filename="shared/game/common/tex/hud/bubble.png">
+                        <Pivot anchor="center"/>
+                    </Sprite>
+                </SceneObject>
+                <SceneObject __visibility="3" name="ExclBubbleBlurred">
+                    <Translation y="-70" x="-50"/>
+                    <Scale y="2" z="2" x="2.10"/>
+                    <Sprite vertexColors="false" filename="shared/game/common/tex/hud/bubble_blur.png">
+                        <Pivot anchor="center"/>
+                    </Sprite>
+                </SceneObject>
+            </SceneObject>
+            <SceneObject name="ExclGroupRush">
+                <Animation animationData="ExclGeneralData" name="ExclSwipe" loopCount="0" play="false" speed="1"/>
+                <SceneObject name="ExclRush">
+                    <Translation y="70" x="50"/>
+                    <Sprite vertexColors="false" filename="shared/game/common/tex/hud/rush.png">
+                        <Pivot anchor="center"/>
+                    </Sprite>
+                </SceneObject>
+                <SceneObject __visibility="3" name="ExclRushBlurred">
+                    <Translation y="70" x="50"/>
+                    <Sprite vertexColors="false" filename="shared/game/common/tex/hud/rush_blur.png">
+                        <Pivot anchor="center"/>
+                    </Sprite>
+                </SceneObject>
+            </SceneObject>
+        </SceneObject>
+    </SceneObject>
+</Scene>

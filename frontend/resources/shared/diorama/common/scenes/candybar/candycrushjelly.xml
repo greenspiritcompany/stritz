@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="CandyCrushJellyLink">
+		<Translation z="-1" />
+		<SceneObject name="Header">
+			<Translation y="-100" z="30" />
+			<SceneObject name="HeaderBackground">
+				<Panel filename="shared/diorama/common/tex/gui_elements/ccjs_portal_header_shadow.png" vertexColors="false">
+					<Insets top="5" bottom="5" right="5" left="5" />
+					<Size width="586" />
+				</Panel>
+				<Translation y="185.531" x="0.056" z="0" />
+			</SceneObject>
+			<SceneObject name="HeaderPanel">
+				<Translation y="150" x="286" z="1" />
+				<Scale y="1.500" x="1.500" z="1.500" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/ccjs_portal_header.png" vertexColors="false">
+					<Insets top="0" bottom="0" right="55" left="55" />
+					<Pivot anchor="center" />
+					<Size height="55" width="300" />
+				</Panel>
+				<SceneObject name="text">
+					<Translation y="-5.118" x="1.882" z="0" />
+					<Scale y="0.667" x="0.667" z="0.667" />
+					<Text maxWidth="370" overflowBehaviour="fit" font="Banana" verticalAlignment="visualCenter" maxHeight="45" alignment="center" key="tab.newgame.candycrushjelly">
+						<Color r="255" a="255" g="255" b="255" />
+						<Size y="24" x="24" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Background">
+			<SceneObject name="BackgroundFill">
+				<Translation x="2.082" y="-5" z="0" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/ccjs_portal_bg.png" vertexColors="false" wrap="repeat">
+					<Rectangle minX="0" minY="0" maxY="2048" maxX="1024" />
+					<Size height="1400" width="586" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="1">
+				<Translation x="287.600" y="212.300" />
+			</SceneObject>
+			<SceneObject name="2">
+				<Translation x="287.600" y="424.700" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Candy" visibility="never">
+			<Translation z="0" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/ccs_ccjs_portal_ccs.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<SceneObject class="Button" name="LinkButton_ccs">
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="300" />
+				</Panel>
+				<Scale x="0.660" y="0.660" z="0.660" />
+				<Translation x="137.622" y="52.629" z="0" />
+				<SceneObject name="PlayButtonText">
+					<Scale x="1.200" y="1.200" z="1.200" />
+					<Text alignment="center" canBreakWords="false" font="Banana" key="candy_crush_synergy.modal.button" maxHeight="40" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="225" b="255" g="255" r="255" />
+						<Shadow enabled="true">
+							<Color a="25" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="24" y="24" />
+					</Text>
+					<Translation x="0" y="-6.207" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Jelly" visibility="never">
+			<Sprite filename="shared/diorama/common/tex/gui_elements/ccs_ccjs_portal_ccjs.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation z="0" />
+			<SceneObject class="Button" name="LinkButton_ccjs">
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="300" />
+				</Panel>
+				<Scale x="0.660" y="0.660" z="0.800" />
+				<Translation x="137.042" y="51.271" z="0" />
+				<SceneObject name="PlayButtonText">
+					<Scale x="1.200" y="1.200" z="1.200" />
+					<Text alignment="center" font="Banana" key="go_to_candy_crush_button" maxHeight="40" maxWidth="180" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color a="225" b="255" g="255" r="255" />
+						<Shadow enabled="true">
+							<Color a="25" b="0" g="0" r="0" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="24" y="24" />
+					</Text>
+					<Translation y="-4" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

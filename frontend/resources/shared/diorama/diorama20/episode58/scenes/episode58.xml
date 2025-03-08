@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="Episode58Material">
+		<Cull enabled="false" face="back" />
+		<Texture filename="shared/diorama/diorama20/episode58/tex/episode58_material.png" />
+	</Material>
+	<Material name="Episode58MaterialAlpha" parentMaterial="Episode58Material">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode58PathMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/path_blue_tex.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode58PathMaterialAlpha" parentMaterial="Episode58PathMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="Episode58BackdropMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/diorama20/episode58/tex/episode58_material.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode58BackdropMaterialAlpha" parentMaterial="Episode58BackdropMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<Translation x="0" y="-1.695" z="0" />
+		<SceneObject name="DioramaModel" editorEntityId="35">
+			<Model filename="shared/diorama/diorama20/episode58/models/episode58_diorama_base.ffm" skinNormals="false" />
+			<Material parentMaterial="Episode58BackdropMaterial" />
+			<Translation x="-1900" />
+			<Import filename="shared/diorama/diorama20/episode58/scenes/episode58_levelpins.xml" />
+			<SceneObject name="Episode58_Backdrop" editorEntityId="37" />
+			<SceneObject name="E58Path" editorEntityId="42">
+				<Model filename="shared/diorama/diorama20/episode58/models/path/episode58_path.ffm">
+					<Bound minZ="-600" />
+				</Model>
+				<Material parentMaterial="Episode58PathMaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="E58EndSign" editorEntityId="44">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm" />
+				<Material parentMaterial="Under_Construction_Icon" />
+				<Translation x="850" y="84" z="180" />
+				<Rotation x="-35" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="PortalBackGroup" editorEntityId="46">
+				<Translation x="-170" y="-40" z="-15" />
+				<SceneObject name="diorama_link_previous" editorEntityId="47">
+					<Model filename="shared/diorama/common/models/portal/portal.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="-840" y="135" z="-70" />
+					<Rotation x="0" y="50" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_portal_shadow" editorEntityId="48">
+					<Model filename="shared/diorama/common/models/portal/portal_shadow.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="-840.236" y="150" z="-68.423" />
+					<Rotation x="0" y="50" z="0" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_link_previous_pin" editorEntityId="49">
+					<Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+						<Animation filename="shared/diorama/common/models/portal/pin_idle.ffa" loopCount="-1" name="idlePinEmil" play="true" speed="1" />
+					</Model>
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="-806" y="65" z="-20" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="SpeechBubbleEp58" editorEntityId="57">
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear" />
+				<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear" />
+				<SpeechBubble>
+					<Speech key="episode58.intro" />
+					<Speech key="episode58.outro" />
+				</SpeechBubble>
+				<Translation x="-205.755" y="125" z="-136.171" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+			</SceneObject>
+			<SceneObject name="Particles" editorEntityId="58">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles200" editorEntityId="59">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-200" />
+			</SceneObject>
+			<SceneObject name="Particles400" editorEntityId="60">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-400" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel947CameraTarget" editorEntityId="61">
+				<Translation x="-380" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel965CameraTarget" editorEntityId="62">
+				<Translation x="-380" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="episode58_Interactable_Group" editorEntityId="50">
+				<SceneObject name="candies_front">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/candies_front.ffm" />
+					<Interactable upEffect="diorama_squishy" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-572.233" y="-16.004" z="452.142" />
+				</SceneObject>
+				<SceneObject name="soda_pipeb">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/soda_pipeb.ffm" />
+					<Interactable upEffect="diorama_lollipop" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="628.389" y="-28.211" z="-215.819" />
+				</SceneObject>
+				<SceneObject name="candies">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/candies.ffm" />
+					<Interactable upEffect="diorama_squishy" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="771.474" y="-21.075" z="-281.398" />
+				</SceneObject>
+				<SceneObject name="fish_jump1">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/episode58_fish.ffm" skinNormals="true">
+						<Animation name="fishjump_idle" filename="shared/diorama/diorama20/episode58/models/interactable/episode58_fishjump_idle.ffa" play="true" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="245.493" y="8.776" z="-181.929" />
+					<Scale x="0.700" y="0.700" />
+				</SceneObject>
+				<SceneObject name="fish_jump2">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/episode58_fish.ffm" skinNormals="true">
+						<Animation name="fishjump_idle" filename="shared/diorama/diorama20/episode58/models/interactable/episode58_fishjump_idle.ffa" startDelay="2" play="true" />
+						<Bound maxZ="500" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-741.467" y="8.776" z="-194.899" />
+					<Scale x="0.600" y="0.600" />
+				</SceneObject>
+				<SceneObject name="cactus">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/cactus.ffm" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="415.979" y="-14.702" z="-344.801" />
+				</SceneObject>
+				<SceneObject name="pipe_potion">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/pipe_potion.ffm" />
+					<Interactable upEffect="diorama_lollipop" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="196.523" y="-21.954" z="-348.513" />
+					<SceneObject name="pipe_liquorice">
+						<Material parentMaterial="Episode58MaterialAlpha" />
+						<Model filename="shared/diorama/diorama20/episode58/models/interactable/pipe_liquorice.ffm" />
+						<Rotation x="0" y="0" z="0" />
+						<Translation x="-60.654" y="-14.007" z="-1.396" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="soda_pipea">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/soda_pipea.ffm" />
+					<Interactable upEffect="diorama_donut" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-423.019" y="-34.403" z="-175.181" />
+				</SceneObject>
+				<SceneObject name="soda_waterslide">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/soda_waterslide.ffm">
+						<Bound maxZ="400" />
+					</Model>
+					<Interactable upEffect="diorama_house" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-753.999" y="-43.933" z="-399.324" />
+					<SceneObject name="soda_waterslide_end">
+						<Material parentMaterial="Episode58MaterialAlpha" />
+						<Model filename="shared/diorama/diorama20/episode58/models/interactable/soda_waterslide_end.ffm" />
+						<Rotation x="0" y="0" z="0" />
+						<Translation x="-200.324" y="497.078" z="92.388" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="cactus_a">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/cactus_a.ffm">
+						<Bound maxZ="10000000000.000" />
+					</Model>
+					<Interactable upEffect="diorama_tree" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-881.420" y="5.394" z="-258.094" />
+				</SceneObject>
+				<SceneObject name="bubble_a">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/bubble_a.ffm">
+						<Bound maxZ="500" />
+					</Model>
+					<Interactable upEffect="diorama_donut" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-727.441" y="-28.742" z="-183.985" />
+				</SceneObject>
+				<SceneObject name="slide_bubble">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/slide_bubble.ffm">
+						<Bound maxZ="400" minZ="-100" />
+					</Model>
+					<Interactable upEffect="diorama_donut" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-647.298" y="-43.356" z="-277.722" />
+				</SceneObject>
+				<SceneObject name="bubble_b">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/bubble_b.ffm" />
+					<Interactable upEffect="diorama_donut" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-416.348" y="-10.607" z="-124.335" />
+				</SceneObject>
+				<SceneObject name="cactusfront" editorEntityId="19">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/cactusfront.ffm" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="781.269" y="-24.346" z="431.101" />
+				</SceneObject>
+				<SceneObject name="bubble_d">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/interactable/bubble_d.ffm" skinNormals="false" />
+					<Interactable upEffect="diorama_donut" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="244.755" y="-24.514" z="-175.415" />
+					<Scale x="0.800" y="0.800" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="episode58_Non_Interactable_Group" editorEntityId="50">
+				<SceneObject name="yellowfloor" editorEntityId="135">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/yellowfloor.ffm">
+						<Bound minZ="-1000" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-5.948" y="1.186" z="-2.277" />
+				</SceneObject>
+				<SceneObject name="yellowbrickroad" editorEntityId="132">
+					<Material parentMaterial="Episode58Material" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/yellowbrickroad.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-19.961" y="0" z="13.661" />
+				</SceneObject>
+				<SceneObject name="clouds">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/clouds.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation y="-11.312" z="-3.793" />
+				</SceneObject>
+				<SceneObject name="shadow_orange">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/shadow_orange.ffm">
+						<Bound maxZ="10000000" minZ="-1000000000" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="0" y="-3.053" z="11.172" />
+				</SceneObject>
+				<SceneObject name="ground_b">
+					<Material parentMaterial="Episode58Material" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/ground_b.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="soda_white_transparent">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/soda_white_transparent.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="0" y="2.281" z="0" />
+				</SceneObject>
+				<SceneObject name="glow">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/glow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-1180.104" y="4.362" z="-132.792" />
+					<Scale x="0.976" y="0.818" z="1" />
+				</SceneObject>
+				<SceneObject name="glow2">
+					<Material parentMaterial="Episode58MaterialAlpha" />
+					<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/glow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="631.035" y="4.362" z="-132.792" />
+					<Scale x="0.560" y="0.818" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="E58PathShadow" editorEntityId="43">
+				<Model filename="shared/diorama/diorama20/episode58/models/path/path_shadow.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="Episode58MaterialAlpha" />
+				<Translation x="0" y="4.169" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="backdrop_sky">
+				<Material parentMaterial="Episode58Material" />
+				<Model filename="shared/diorama/diorama20/episode58/models/non_interactable/backdrop_sky.ffm" />
+				<Rotation x="0" y="0" z="0" />
+				<Translation x="-71.997" y="-9.960" z="1.943" />
+			</SceneObject>
+			<SceneObject name="Episode58Character">
+				<Translation x="-169.850" y="3.662" z="-228.684" />
+				<SceneObject name="CharacterEp58" editorEntityId="66">
+					<Material>
+						<Texture filename="shared/diorama/diorama20/episode58/tex/sadbot_tex.png" />
+						<Blend enabled="true" />
+						<Depth enabled="true" />
+					</Material>
+					<Spine filename="shared/diorama/diorama20/episode58/models/character/sad_bot.json">
+						<Animation spineAnimation="sadbot_armswing" interpolateFrame="false" name="Talk" loopCount="0" play="true" />
+						<Animation spineAnimation="sadbot_crying" name="sadbot_crying" interpolateFrame="false" play="true" layer="3" />
+						<Animation spineAnimation="sadbot_stomach" name="sadbot_stomach" layer="1" interpolateFrame="false" play="true" />
+						<Animation spineAnimation="idle" interpolateFrame="false" name="Idle" layer="2" play="true" weight="0.100" />
+					</Spine>
+					<Rotation z="-180" />
+					<Scale x="-0.480" y="0.480" />
+					<Translation x="-32.301" y="-2.532" z="-8.340" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="waterparticles">
+		<Effect effectData="WaterRipplesEFQ" play="true" name="waterparticles" />
+		<Translation x="-2068.777" y="8.485" z="-139.705" />
+		<Rotation x="-90.112" y="0" z="-86.614" />
+		<Scale x="2.879" y="1.889" z="-101.092" />
+	</SceneObject>
+	<SceneObject name="waterparticles2">
+		<Effect effectData="WaterRipplesEFQ" play="true" name="waterparticles" />
+		<Translation x="-1749.434" y="8.308" z="-229.876" />
+		<Rotation x="-90.112" y="0" z="-86.614" />
+		<Scale x="2.879" y="1.889" z="-101.092" />
+	</SceneObject>
+	<SceneObject name="waterparticles3">
+		<Effect effectData="WaterRipplesEFQ" play="true" name="waterparticles" />
+		<Translation x="-2497.942" y="8.256" z="-256.587" />
+		<Rotation x="-90.112" y="0" z="-86.614" />
+		<Scale x="2.879" y="1.889" z="-101.092" />
+	</SceneObject>
+</Scene>

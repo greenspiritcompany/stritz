@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../dtd/layout.dtd">
+<Layout>
+    <Object sceneObject="Arch"/>
+    <Object sceneObject="ArmLeft"/>
+    <Object sceneObject="ArmRight"/>
+    <Object sceneObject="BubblegumMonster"/>
+    <Object sceneObject="CountdownBoxLeft"/>
+    <Object sceneObject="CountdownBoxRight"/>
+    <Object sceneObject="GoldBars"/>
+    <Object sceneObject="KocMapView">
+        <Default>
+            <Translation>
+                <X percentage="0"/>
+                <Y percentage="0"/>
+            </Translation>
+        </Default>
+        <Landscape>
+            <Size>
+                <Height percentage="100"/>
+                <OriginalSize width="1" height="768"/>
+            </Size>
+        </Landscape>
+        <Portrait>
+            <Size>
+                <Height percentage="100"/>
+                <OriginalSize width="570" height="1024"/>
+                <Width percentage="80"/>
+            </Size>
+        </Portrait>
+    </Object>
+    <Object sceneObject="RemainingTime"/>
+</Layout>

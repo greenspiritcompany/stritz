@@ -1,0 +1,26 @@
+<TimelineFiles>
+	<!-- timelines -->
+    <Timeline name="SquidBubbles01" timeline="shared/diorama/diorama03/episode09/timelines/squid_bubbles01.xml" numInstances="0"/>
+    <Timeline name="SquidBubbles02" timeline="shared/diorama/diorama03/episode09/timelines/squid_bubbles02.xml" numInstances="0"/>
+    <Timeline name="SquidBubbles03" timeline="shared/diorama/diorama03/episode09/timelines/squid_bubbles03.xml" numInstances="0"/>
+    <Timeline name="SquidBubbles04" timeline="shared/diorama/diorama03/episode09/timelines/squid_bubbles04.xml" numInstances="0"/>
+    <Timeline name="SquidBubbles05" timeline="shared/diorama/diorama03/episode09/timelines/squid_bubbles05.xml" numInstances="0"/>
+    <Timeline name="SquidBubbles06" timeline="shared/diorama/diorama03/episode09/timelines/squid_bubbles06.xml" numInstances="0"/>
+    <Timeline name="KimmyBoatBubbles" timeline="shared/diorama/diorama03/episode09/timelines/kimmyboatbubbles.xml" numInstances="0"/>
+	<!-- cutscenes -->
+    <Timeline name="Episode07Start" timeline="shared/diorama/diorama03/episode07/timelines/episode07_start.xml"/>
+    <Timeline name="Episode07StartPortal" timeline="shared/diorama/diorama03/episode07/timelines/episode07_start_portal.xml"/>
+    <Timeline name="Episode07Intro" timeline="shared/diorama/diorama03/episode07/timelines/episode07_intro.xml"/>
+    <Timeline name="Episode07Outro" timeline="shared/diorama/diorama03/episode07/timelines/episode07_outro.xml"/>
+    <Timeline name="Episode07OutroPortal" timeline="shared/diorama/diorama03/episode07/timelines/episode07_outro_portal.xml"/>
+    <Timeline name="Episode08Start" timeline="shared/diorama/diorama03/episode08/timelines/episode08_start.xml"/>
+    <Timeline name="Episode08StartPortal" timeline="shared/diorama/diorama03/episode08/timelines/episode08_start_portal.xml"/>
+    <Timeline name="Episode08Intro" timeline="shared/diorama/diorama03/episode08/timelines/episode08_intro.xml"/>
+    <Timeline name="Episode08Outro" timeline="shared/diorama/diorama03/episode08/timelines/episode08_outro.xml"/>
+    <Timeline name="Episode08OutroPortal" timeline="shared/diorama/diorama03/episode08/timelines/episode08_outro_portal.xml"/>
+    <Timeline name="Episode09Start" timeline="shared/diorama/diorama03/episode09/timelines/episode09_start.xml"/>
+    <Timeline name="Episode09StartPortal" timeline="shared/diorama/diorama03/episode09/timelines/episode09_start_portal.xml"/>
+    <Timeline name="Episode09Intro" timeline="shared/diorama/diorama03/episode09/timelines/episode09_intro.xml"/>
+    <Timeline name="Episode09Outro" timeline="shared/diorama/diorama03/episode09/timelines/episode09_outro.xml"/>
+    <Timeline name="Episode09OutroPortal" timeline="shared/diorama/diorama03/episode09/timelines/episode09_outro_portal.xml"/>
+</TimelineFiles>

@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Import filename="shared/game/common/materials/liqlock_material.xml"/>
+	<SceneObject name="Scene">
+		<SceneObject name="LicoriceLock" layerFlags="128">
+			<Model filename="shared/game/common/models/liqlock/liqlock_nojoints.ffm"/>
+			<Material parentMaterial="LiqLockMaterial"/>
+			<Translation z="300.0"/>
+		</SceneObject>
+	</SceneObject>
+</Scene>

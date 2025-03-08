@@ -1,0 +1,25 @@
+<TimelineFiles>
+	<!-- timelines -->
+    <Timeline name="FishBubbles01" timeline="shared/diorama/diorama08/episode24/timelines/fish_bubbles01.xml" numInstances="0"/>
+    <Timeline name="FishBubbles02" timeline="shared/diorama/diorama08/episode24/timelines/fish_bubbles02.xml" numInstances="0"/>
+    <Timeline name="FishBubbles03" timeline="shared/diorama/diorama08/episode24/timelines/fish_bubbles03.xml" numInstances="0"/>
+    <Timeline name="FishBubbles04" timeline="shared/diorama/diorama08/episode24/timelines/fish_bubbles04.xml" numInstances="0"/>
+	<!-- cutscenes -->
+    <Timeline name="Episode22Start" timeline="shared/diorama/diorama08/episode22/timelines/episode22_start.xml"/>
+    <Timeline name="Episode22StartPortal" timeline="shared/diorama/diorama08/episode22/timelines/episode22_start_portal.xml"/>
+    <Timeline name="Episode22Intro" timeline="shared/diorama/diorama08/episode22/timelines/episode22_intro.xml"/>
+    <Timeline name="Episode22Outro" timeline="shared/diorama/diorama08/episode22/timelines/episode22_outro.xml"/>
+    <Timeline name="Episode22LollipopBack" timeline="shared/diorama/diorama08/episode22/timelines/episode22_lollipop_back.xml"/>
+    <Timeline name="Episode22LollipopFront" timeline="shared/diorama/diorama08/episode22/timelines/episode22_lollipop_front.xml"/>
+    <Timeline name="Episode22OutroPortal" timeline="shared/diorama/diorama08/episode22/timelines/episode22_outro_portal.xml"/>
+    <Timeline name="Episode23Start" timeline="shared/diorama/diorama08/episode23/timelines/episode23_start.xml"/>
+    <Timeline name="Episode23StartPortal" timeline="shared/diorama/diorama08/episode23/timelines/episode23_start_portal.xml"/>
+    <Timeline name="Episode23Intro" timeline="shared/diorama/diorama08/episode23/timelines/episode23_intro.xml"/>
+    <Timeline name="Episode23Outro" timeline="shared/diorama/diorama08/episode23/timelines/episode23_outro.xml"/>
+    <Timeline name="Episode23OutroPortal" timeline="shared/diorama/diorama08/episode23/timelines/episode23_outro_portal.xml"/>
+    <Timeline name="Episode24Start" timeline="shared/diorama/diorama08/episode24/timelines/episode24_start.xml"/>
+    <Timeline name="Episode24StartPortal" timeline="shared/diorama/diorama08/episode24/timelines/episode24_start_portal.xml"/>
+    <Timeline name="Episode24Intro" timeline="shared/diorama/diorama08/episode24/timelines/episode24_intro.xml"/>
+    <Timeline name="Episode24Outro" timeline="shared/diorama/diorama08/episode24/timelines/episode24_outro.xml"/>
+    <Timeline name="Episode24OutroPortal" timeline="shared/diorama/diorama08/episode24/timelines/episode24_outro_portal.xml"/>
+</TimelineFiles>

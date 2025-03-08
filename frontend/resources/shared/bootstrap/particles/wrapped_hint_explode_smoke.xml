@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="8" space="Local" timeToEmit="60" name="WrappedHintExplodeSmoke">
+    <Dampening max="0.800" min="0.900"/>
+    <DirectionalForce x="0" y="-200"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="50" depth="0" height="50"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="4" min="2"/>
+    <RotationSpeed max="200" min="100"/>
+    <Size>
+        <Max x="10" y="10"/>
+        <Min x="6" y="6"/>
+    </Size>
+    <SizeChange>
+        <Max x="120" y="120"/>
+        <Min x="80" y="80"/>
+    </SizeChange>
+    <StartColor b="240" r="210" g="250" a="50"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/strong_light.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0"/>
+    <TimeToLive max="0.900" min="0.400"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

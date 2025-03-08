@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="KingLogo">
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<Height percentage="19.800" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Landscape">
+			<Size>
+				<Height percentage="26.100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+	<SceneObject name="LoadingScreen">
+		<Translation z="990" />
+		<SceneObject name="Background">
+			<Sprite filename="shared/preloader/tex/pink_gradient_background.png" vertexColors="false" mode="sprite">
+				<Pivot anchor="center" />
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+			<LayoutConfiguration name="Landscape">
+				<Size>
+					<Width percentage="100" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Size>
+					<Height percentage="100" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject name="LoadingText">
+			<Text key="generic_loader_loading" alignment="center" canBreakWords="false" font="BananaInnerShadow">
+				<Color g="255" r="255" a="255" b="255" />
+				<Size x="20" y="20" />
+				<Pivot anchor="center" />
+			</Text>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<Y percentage="19.200" />
+				</Translation>
+				<Size>
+					<Height percentage="39" />
+					<OriginalSize width="0" height="480" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Size>
+					<Height percentage="42.500" />
+					<OriginalSize width="0" height="320" />
+				</Size>
+				<Translation>
+					<Y percentage="29.800" />
+				</Translation>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject name="Content">
+			<SceneObject name="Image">
+				<Sprite filename="shared/preloader/tex/monster_loading_screen.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+				<Translation x="4.529" y="-36.510" z="1" />
+				<Scale x="0.564" y="0.564" z="1" />
+			</SceneObject>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="0" />
+					<Y percentage="-0.900" />
+				</Translation>
+				<Size>
+					<Width percentage="55" />
+					<OriginalSize width="320" height="0" />
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="0" />
+					<Y percentage="1.100" />
+				</Translation>
+				<Size>
+					<Height percentage="56.200" />
+					<OriginalSize width="0" height="320" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

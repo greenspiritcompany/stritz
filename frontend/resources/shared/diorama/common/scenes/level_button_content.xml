@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="LevelPinContent">
+		<SceneObject visibility="never" name="Stars">
+			<Translation y="-54" z="1" />
+			<SceneObject name="Star1">
+				<Animation name="OnAppearStar" animationData="OnAppearGrow" loopCount="0" />
+				<Translation y="1.034" x="-22" z="0" />
+				<Rotation z="-20" />
+				<Scale xyz="0.75" />
+				<Sprite filename="shared/diorama/common/tex/lvl_pin_star.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Star2">
+				<Animation name="OnAppearStar" animationData="OnAppearGrow" loopCount="0" />
+				<Translation y="1.034" x="22" z="0" />
+				<Rotation z="20" />
+				<Scale xyz="0.75" />
+				<Sprite filename="shared/diorama/common/tex/lvl_pin_star.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Star3">
+				<Animation name="OnAppearStar" animationData="OnAppearGrow" loopCount="0" />
+				<Translation y="-6.966" x="0" z="0" />
+				<Sprite filename="shared/diorama/common/tex/lvl_pin_star.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Crown">
+				<Translation y="-9.034" x="0" z="4" />
+				<Sprite filename="shared/diorama/common/tex/lvl_pin_crown.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject visibility="never" name="Check">
+			<Animation name="OnAppear" animationData="OnAppearGrow" startDelay="0.050" loopCount="0" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/check_blue.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation y="16.650" x="23.160" z="11" />
+			<Scale y="0.500" x="0.500" />
+		</SceneObject>
+		<SceneObject name="ButtonText">
+			<Translation y="-15" x="-5" z="7" />
+			<Text overflowBehaviour="fit" maxWidth="54" maxHeight="60" font="LevelPinNumbers" verticalAlignment="visualCenter" alignment="center" canBreakWords="false">
+				<TextString>9</TextString>
+				<Color r="255" a="255" g="255" b="255" />
+				<Size y="15" x="15" />
+			</Text>
+		</SceneObject>
+		<SceneObject visibility="inherit" name="NormalPin">
+			<Sprite filename="shared/diorama/common/tex/standard_pin_frame.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<SceneObject visibility="never" name="NormalActiveButton">
+				<Translation y="-11" z="5" />
+				<Sprite filename="shared/diorama/common/tex/standard_lvl_pin.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject visibility="inherit" name="NormalInactiveButton">
+				<Translation y="-11" z="5" />
+				<Sprite filename="shared/diorama/common/tex/inactive_lvl_pin.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject visibility="never" name="BGHActiveButton">
+				<Translation y="-11" z="5" />
+				<Sprite filename="shared/diorama/common/tex/bgh_lvl_pin.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject visibility="never" name="HardPin">
+			<PortraitPositions>
+				<Friends y="71.366" x="-1209.034" z="198.029" />
+				<Player y="68.366" x="-1212.034" z="209.029" />
+			</PortraitPositions>
+			<Scale x="1" z="1" />
+			<Sprite filename="shared/diorama/common/tex/hard_pin_frame.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<SceneObject visibility="inherit" name="HardSkull">
+				<Animation name="OnAppear" animationData="OnAppearGrow" startDelay="0.050" loopCount="0" />
+				<Sprite filename="shared/diorama/common/tex/hard_pin_skull.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation y="28.036" x="0" z="6" />
+			</SceneObject>
+			<SceneObject visibility="never" name="HardActiveButton">
+				<Sprite filename="shared/diorama/common/tex/hard_lvl_pin.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation y="-11" x="0" z="5" />
+			</SceneObject>
+			<SceneObject name="HardInactiveButton">
+				<Sprite filename="shared/diorama/common/tex/inactive_lvl_pin.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation y="-11" x="0" z="5" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject visibility="never" name="NormalPinCurrent">
+			<Sprite filename="shared/diorama/common/tex/standard_pin_frame.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Animation name="Idle" animationData="Idle" play="true" speed="0.500" />
+			<SceneObject visibility="inherit" name="NormalActiveButton">
+				<Translation y="-11" z="5" />
+				<Sprite filename="shared/diorama/common/tex/standard_lvl_pin.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject visibility="never" name="BGHActiveButton">
+				<Translation y="-11" z="5" />
+				<Sprite filename="shared/diorama/common/tex/bgh_lvl_pin.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject visibility="inherit" name="CurrentEffect">
+				<Effect effectData="CurrentLevelEFQ" name="CurrentLevelEffect" play="false" />
+				<Translation x="0" y="24.168" z="-19.700" />
+				<Rotation x="90" />
+			</SceneObject>
+		</SceneObject>
+		<SceneObject visibility="never" name="HardPinCurrent">
+			<PortraitPositions>
+				<Friends y="71.366" x="-1209.034" z="198.029" />
+				<Player y="68.366" x="-1212.034" z="209.029" />
+			</PortraitPositions>
+			<Scale x="1" z="1" />
+			<Sprite filename="shared/diorama/common/tex/hard_pin_frame.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Animation name="Idle" animationData="Idle" play="true" speed="0.500" />
+			<SceneObject visibility="inherit" name="HardSkull">
+				<Animation name="OnAppear" animationData="OnAppearGrow" startDelay="0.050" loopCount="0" />
+				<Sprite filename="shared/diorama/common/tex/hard_pin_skull.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation y="28.036" x="0" z="6" />
+			</SceneObject>
+			<SceneObject visibility="inherit" name="HardActiveButton">
+				<Sprite filename="shared/diorama/common/tex/hard_lvl_pin.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation y="-11" x="0" z="5" />
+			</SceneObject>
+			<SceneObject visibility="inherit" name="CurrentEffect">
+				<Effect effectData="CurrentLevelEFQ" name="CurrentLevelEffect" play="false" />
+				<Translation y="24.168" z="-19.700" />
+				<Rotation x="90" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

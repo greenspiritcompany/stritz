@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../../../dtd/layout.dtd">
+<Layout>
+
+	<Object sceneObject="SwipeRoot">
+		<Default>
+			<Size>
+				<Width percentage="100.0"/>
+				<OriginalSize width="64" height="256"/>
+			</Size>
+		</Default>
+		<Landscape>
+			<Translation>
+				<X percentage="50.0"/>
+				<Y percentage="48.0"/>
+			</Translation>
+			<Size>
+				<Height percentage="33.33"/>
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Translation>
+				<X percentage="50.0"/>
+				<Y percentage="50.0"/>
+			</Translation>
+			<Size>
+				<Height percentage="25"/>
+			</Size>
+		</Portrait>
+	</Object>
+
+	<Object sceneObject="TitleText">
+		<Landscape>
+			<Size>
+				<Width percentage="100.0"/>
+				<Height percentage="100.0"/>
+				<OriginalSize height="50" width="50"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="0.0"/>
+			</Translation>
+		</Landscape>
+		<Portrait>
+			<Size>
+				<Width percentage="100.0"/>
+				<Height percentage="100.0"/>
+				<OriginalSize height="50" width="50"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="0.0"/>
+			</Translation>
+		</Portrait>
+	</Object>
+
+	<Object sceneObject="ContentText">
+		<Landscape>
+			<Size>
+				<Width percentage="100.0"/>
+				<Height percentage="100.0"/>
+				<OriginalSize height="50" width="50"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="0.0"/>
+			</Translation>
+		</Landscape>
+		<Portrait>
+			<Size>
+				<Width percentage="100.0"/>
+				<Height percentage="100.0"/>
+				<OriginalSize height="50" width="50"/>
+			</Size>
+			<Translation>
+				<X percentage="0.0"/>
+				<Y percentage="0.0"/>
+			</Translation>
+		</Portrait>
+	</Object>
+</Layout>

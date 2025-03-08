@@ -1,0 +1,104 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<SceneObject name="Scene">
+		<SceneObject visibility="always" layerFlags="256" name="GameInstructionSwipe">
+			<SceneObject visibility="always" name="SwipeRoot">
+				<Translation x="6.062" z="500" y="60"/>
+				<Animation loopCount="0" animationData="SlideInFromBelow" name="SlideInFromTop"/>
+				<Animation loopCount="0" animationData="SlideOutToTop" name="SlideOutToTop"/>
+				<SceneObject __visibility="0" name="Chocolate">
+					<SceneObject name="MovingBg">
+						<Animation play="true" loopCount="-1" animationData="SlideToRightData" name="SlideToRight"/>
+						<SceneObject name="BgBottom">
+							<Translation y="290"/>
+							<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hardlevel_swipe_bottom.png" wrap="repeat">
+								<Flip u="true"/>
+								<Pivot anchor="bottom" y="190"/>
+								<Rectangle maxY="128" maxX="2048"/>
+							</Sprite>
+						</SceneObject>
+						<SceneObject name="BgTop">
+							<Translation x="0" z="0" y="40"/>
+							<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hardlevel_swipe_top.png" wrap="repeat">
+								<Flip u="true"/>
+								<Pivot anchor="top" y="190"/>
+								<Rectangle maxY="64" maxX="2048"/>
+							</Sprite>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="BgTop2">
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_instruction_swipe_top.png">
+							<Flip u="true"/>
+							<Pivot anchor="bottom" y="150"/>
+						</Sprite>
+						<Translation x="139.469" z="1" y="64"/>
+						<SceneObject name="BgTop2">
+							<Scale x="-1"/>
+							<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_instruction_swipe_top.png">
+								<Flip u="true"/>
+								<Pivot anchor="bottom" y="150"/>
+							</Sprite>
+							<Translation x="-287.560" z="1" y="-0.188"/>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="BgBottom2">
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_innerswipe_bottom.png"/>
+						<Translation x="-184.275" z="1" y="-28.200"/>
+						<SceneObject name="BgBottom2">
+							<Scale x="-1"/>
+							<Sprite vertexColors="false" filename="shared/game/common/tex/hud/hard_innerswipe_bottom.png"/>
+							<Translation x="359.867" z="1" y="-0.032"/>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject __visibility="0" name="Text">
+						<Translation z="2" y="-50.674"/>
+						<Text font="Banana" maxWidth="360" maxHeight="55" verticalAlignment="visualCenter" alignment="center" key="gamemode.bubblegum.instructions">
+							<Color r="149" a="255" g="3" b="161"/>
+							<GradientColor enabled="false"/>
+							<Shadow enabled="true">
+								<Color r="255" a="255" g="255" b="255"/>
+								<Offset x="1" y="4"/>
+							</Shadow>
+							<Size x="22" y="22"/>
+						</Text>
+					</SceneObject>
+					<SceneObject __visibility="0" name="Character">
+						<Translation x="-3.518" z="2" y="-199.459"/>
+						<Rotation z="-0.500"/>
+						<Scale x="0.743" y="0.743"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/bubble_gum_troll.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject __visibility="0" name="BgMiddle">
+						<Translation x="18.554" y="519.612"/>
+						<Scale x="124.503" y="4.044"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/swipe_bg.png">
+							<Pivot anchor="top" y="150"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<LayoutConfiguration name="Portrait">
+					<Translation>
+						<X percentage="50.0"/>
+						<Y percentage="55.0"/>
+					</Translation>
+					<Size>
+						<Height percentage="25"/>
+						<OriginalSize width="1024" height="256"/>
+					</Size>
+				</LayoutConfiguration>
+				<LayoutConfiguration name="Landscape">
+					<Translation>
+						<X percentage="50.0"/>
+						<Y percentage="56.0"/>
+					</Translation>
+					<Size>
+						<Height percentage="31"/>
+						<OriginalSize width="1024" height="256"/>
+					</Size>
+				</LayoutConfiguration>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,12 @@
+<Timelines>
+<Timeline startTime="0" endTime="5">
+	<Triggers>
+		<AnimationTrigger time="0" targetName="SpeechBubbleEp58" animationName="SpeechBubbleAppear" />
+		<AnimationTrigger time="4" targetName="SpeechBubbleEp58" animationName="SpeechBubbleDisappear" />
+		<AnimationTrigger time="0.113" targetName="CharacterEp58" animationName="Talk" crossFade="0" />
+		<!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+		<EffectTrigger name="character_ep58" time="0" />
+		<CustomTrigger time="0" name="SpeechBubbleText" data="SpeechBubbleEp58.0" />
+	</Triggers>
+</Timeline>
+</Timelines>

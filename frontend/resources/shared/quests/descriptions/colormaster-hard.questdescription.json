@@ -1,0 +1,40 @@
+{
+  "id": "colormaster",
+  "nameKey" : "quests.names.colormaster",
+  "difficulty" : 1,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.colourcreator",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_coloring.png",
+      "data": {
+        "itemType":"coloring_candy",
+		"amount" : 5
+      }
+    }
+  ],
+    "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12003,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    },
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12005,
+        "amount": 1
+      }
+    }
+  ]
+}

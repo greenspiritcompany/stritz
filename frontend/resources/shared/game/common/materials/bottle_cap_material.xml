@@ -1,0 +1,15 @@
+<!DOCTYPE Scene SYSTEM '../../../dtd/scene.dtd'>
+<Scene>
+	<Material name="BottleCapMaterial">
+		<Light shininess="86" enabled="true">
+			<Specular a="255" b="71" g="71" r="71"/>
+			<Ambient a="255" b="168" g="168" r="199"/>
+			<Diffuse a="255" b="77" g="77" r="77"/>
+		</Light>
+		<Texture filename="shared/game/common/tex/candy/bottle_cap_texture.png"/>
+		<Shader program="Smooth"/>
+		<Blend enabled="false"/>
+		<Depth enabled="true" writeMask="true"/>
+		<Cull enabled="true" face="back"/>
+	</Material>
+</Scene>

@@ -1,0 +1,160 @@
+<Scene>
+	<Materials>
+		<Material name="Material">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="false" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama25/episode74/tex/"/>
+			</Textures>
+		</Material>
+		<Material name="MaterialAlpha" parentMaterial="Material">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<Material name="PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/path_tex.png"/>
+			</Textures>
+		</Material>
+		<Material name="PathMaterialAlpha" parentMaterial="PathMaterial">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+		<Material name="BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Cull enabled="true" face="back"/>
+			<Textures>
+				<Texture filename="shared/diorama/diorama25/episode74/tex/"/>
+			</Textures>
+		</Material>
+		<Material name="BackdropMaterialAlpha" parentMaterial="BackdropMaterial">
+			<Cull enabled="true" face="back"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Blend enabled="true"/>
+		</Material>
+	</Materials>
+	<SceneObject name="ep74_green_tea_bush">
+		<Model filename="shared/diorama/diorama25/episode74/models/interactable/ep74_green_tea_bush.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="340.556175745" y="0.0" z="-455.173946175"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep74_green_tea_roll">
+		<Model filename="shared/diorama/diorama25/episode74/models/interactable/ep74_green_tea_roll.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="538.377664147" y="-10.8514869536" z="-448.566354947"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep74_cherrytree">
+		<Model filename="shared/diorama/diorama25/episode74/models/interactable/ep74_cherrytree.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="-509.771809776" y="236.69851823" z="-450.283887305"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep74_lantern">
+		<Model filename="shared/diorama/diorama25/episode74/models/interactable/ep74_lantern.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="-246.527172155" y="604.371949495" z="-463.458889669"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep74_pillow">
+		<Model filename="shared/diorama/diorama25/episode74/models/interactable/ep74_pillow.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="395.369763143" y="-29.6520079584" z="-276.594687838"/>
+		<Rotation x="-21.4439401063" y="0.0" z="-7.05693352149"/>
+	</SceneObject>
+	<SceneObject name="ep74_table">
+		<Model filename="shared/diorama/diorama25/episode74/models/interactable/ep74_table.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="61.3818888379" y="-44.1743572573" z="-246.486984266"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep74_teapot_cake">
+		<Model filename="shared/diorama/diorama25/episode74/models/interactable/ep74_teapot_cake.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="-763.853100217" y="-37.8835226165" z="-276.672355873"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep74_doors">
+		<Model filename="shared/diorama/diorama25/episode74/models/non_interactable/ep74_doors.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="-303.53647496"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep74_roof">
+		<Model filename="shared/diorama/diorama25/episode74/models/non_interactable/ep74_roof.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="639.162237247" z="-448.017081739"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="ep74_garden_benind">
+		<Model filename="shared/diorama/diorama25/episode74/models/non_interactable/ep74_garden_benind.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="episode74_diorama_base">
+		<Model filename="shared/diorama/diorama25/episode74/models/episode74_diorama_base.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="0.0"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="episode74_diorama_sky">
+		<Model filename="shared/diorama/diorama25/episode74/models/episode74_diorama_sky.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="-64.6561756257"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="episode74_diorama_sky">
+		<Model filename="shared/diorama/diorama25/episode74/models/episode74_diorama_sky.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="0.0" y="0.0" z="-64.6561756257"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="episode74_ground">
+		<Model filename="shared/diorama/diorama25/episode74/models/episode74_ground.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="-0.303192138672" y="-9.0631275177" z="-266.55809021"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+	<SceneObject name="asset_shadow">
+		<Model filename="shared/diorama/diorama25/episode74/models/asset_shadow.ffm"/>
+		<Materials>
+			<Material parentMaterial="MaterialAlpha"/>
+		</Materials>
+		<Translation x="-126.817184448" y="-4.46094989777" z="-190.388458252"/>
+		<Rotation x="0.0" y="0.0" z="0.0"/>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:57ebad602ba8021e0378eccd374e4db2:102697c036ca782b7cf3ad0be192fcb9:a64c1fa8a26763da6a71a6c76c88897e$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="th_elements.png" width="512" height="1024">
+    <sprite n="imagesBig/bow.png" x="2" y="573" w="129" h="88" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/dust.png" x="416" y="162" w="10" h="9" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/formBack.png" x="430" y="112" w="72" h="172" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="imagesBig/green_base_behind.png" x="208" y="221" w="178" h="89" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/green_base_front.png" x="2" y="291" w="178" h="54" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/green_body.png" x="2" y="445" w="165" h="124" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/green_lid.png" x="176" y="369" w="169" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/green_ribbon.png" x="433" y="2" w="73" h="106" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="imagesBig/green_shadow.png" x="2" y="102" w="188" h="88" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/purple_base_behind.png" x="2" y="194" w="181" h="93" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/purple_base_front.png" x="231" y="162" w="181" h="55" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/purple_body.png" x="390" y="288" w="117" h="165" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="imagesBig/purple_lid.png" x="2" y="349" w="170" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/purple_ribbon.png" x="171" y="562" w="137" h="85" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/purple_shadow.png" x="237" y="2" w="192" h="81" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/roundBox.png" x="349" y="457" w="155" h="121" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/roundCakeForm.png" x="184" y="314" w="172" h="51" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/roundCakeForm_shadow.png" x="237" y="87" w="189" h="71" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/roundLid.png" x="171" y="469" w="164" h="89" pX="0.5" pY="0.5"/>
+    <sprite n="imagesBig/shineRound.png" x="2" y="2" w="231" h="96" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="imagesBig/smoothDust.png" x="187" y="211" w="17" h="17" pX="0.5" pY="0.5"/>
+    <sprite n="th_check.png" x="312" y="582" w="93" h="93" pX="0.5" pY="0.5"/>
+    <sprite n="th_timer_bg.png" x="194" y="102" w="33" h="105" pX="0.5" pY="0.5" r="y"/>
+</TextureAtlas>

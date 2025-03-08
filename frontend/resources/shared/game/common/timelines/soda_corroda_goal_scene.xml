@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+
+<Scene>
+	<SceneObject name="Scene" layerFlags="128">
+		<SceneObject name="Tile1">
+			<Sprite filename="shared/game/common/tex/candy/soda_corroda_goal.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+		</SceneObject>
+
+		<!--SceneObject name="Tile2">
+			<Sprite filename="shared/game/common/tex/candy/soda_goal.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="Tile3">
+			<Sprite filename="shared/game/common/tex/candy/soda_goal.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+		</SceneObject-->
+
+	</SceneObject>
+</Scene>

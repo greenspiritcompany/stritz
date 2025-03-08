@@ -1,0 +1,127 @@
+<?php
+$allrequests = array();
+
+$getUserMetrics = array();
+$getUserCurrency = 'USD';
+//$getAllProductPackages = getAllProductPackages();
+$getAllProductPackages = array();
+$getServerTime = time();
+
+$allrequests = array();
+$requests = json_decode(file_get_contents('php://input'), true);
+
+$sessionKey = $_GET['_session'];
+
+foreach ($requests as $req) {
+    $determinedResult = null;
+
+    switch ($req['method']) {
+        case "GuiTracking.CustomFunnel":
+            $determinedResult = array();
+            break;
+
+        case "StritzApi.getUserData":
+			// equvalent to getCandyProperties in CCS
+            $determinedResult = array("values" => [0,0,0,0,0,0,0,0,0,0]);
+            break;
+
+        case "StritzApi.isPaymentConversionUser":
+            $determinedResult = false;
+            break;
+
+        case "ProductApi.getUserCurrency":
+            $determinedResult = $getUserCurrency;
+            break;
+
+        case "ProductApi.getAllProductPackages":
+            $determinedResult = $getAllProductPackages;
+            break;
+
+        case "ProductApi.purchase":
+            /*$purchaseParams = $req['params'][0];
+            $orderItems = $purchaseParams['orderItems'];
+            $currency = $purchaseParams['currency'];
+            
+            try {
+                $pdo->beginTransaction();
+                
+                $purchaseResult = null;
+                
+                foreach ($orderItems as $orderItem) {
+                    $productPackageType = $orderItem['productPackageType'];
+                    
+                    $purchaseResult = processPurchase($pdo, $sessionKey, $productPackageType);
+                    
+                    if ($purchaseResult['status'] === 'error') {
+                        throw new Exception($purchaseResult['error']);
+                    }
+                }
+                
+                $pdo->commit();
+                
+                $determinedResult = $purchaseResult;
+            } catch (Exception $e) {
+                $pdo->rollBack();
+                
+                $determinedResult = [
+                    'status' => 'error',
+                    'error' => $e->getMessage(),
+                    'isPurchaseForAnotherUser' => false
+                ];
+            }*/
+        break;
+
+        case "LifeApi.addLives":
+            $determinedResult = array("lives" => 42, "timeToNextRegeneration" => time() + 60 * 60 * 24, "immortal" => false);
+			break;
+
+        case "LifeApi.removeLives":
+            $determinedResult = array("lives" => 42, "timeToNextRegeneration" => time() + 60 * 60 * 24, "immortal" => false);
+			break;
+
+        case "LifeApi.getLife":
+            $determinedResult = array("lives" => 42, "timeToNextRegeneration" => time() + 60 * 60 * 24, "immortal" => false);
+			break;
+
+        case "LifeApi.getMaxLives":
+            $determinedResult = 69;
+			break;
+
+        case "LifeApi.getLifeRegenerationTimeInSeconds":
+            $determinedResult = 9999999;
+            break;
+
+        case "ProfileCardApi.isProfileCardEnabled":
+            $determinedResult = true;
+            break;
+
+        case "ProfileCardApi.getActiveKingAppIds":
+            $determinedResult = ["33"];
+            break;
+
+        case "SocialUserApi.getCurrentUser":
+            $determinedResult = array('userId' => '1', 'langCode' => 'en');
+            break;
+
+        case "TimeApi.getServerTime":
+            $determinedResult = $getServerTime;
+            break;
+
+        default:
+            //$determinedResult = array("error" => "Method not supported: " . $req['method']);
+            $determinedResult = array();
+            break;
+    }
+
+    $response = array(
+        'jsonrpc' => '2.0',
+        'id' => $req['id'],
+        'result' => $determinedResult
+    );
+
+    $allrequests[] = $response;
+}
+
+header('Content-Type: application/json');
+echo json_encode($allrequests);
+?>

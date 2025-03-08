@@ -1,0 +1,468 @@
+
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="Episode22Material">
+		<Texture filename="shared/diorama/diorama08/episode22/tex/episode22_material.png"/>
+		<Cull enabled="false" face="back"/>
+	</Material>
+	<Material name="Episode22MaterialAlpha" parentMaterial="Episode22Material">
+		<Blend enabled="true"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode22PathMaterial">
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat"/>
+		<Cull enabled="true" face="back"/>
+	</Material>
+	<Material name="Episode22PathMaterialAlpha" parentMaterial="Episode22PathMaterial">
+		<Blend enabled="true"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="Episode22BackdropMaterial">
+		<Texture filename="shared/diorama/diorama08/episode22/tex/episode22_material.png" wrap="repeat"/>
+		<Cull enabled="true" face="back"/>
+	</Material>
+	<Material name="Episode22BackdropMaterialAlpha" parentMaterial="Episode22BackdropMaterial">
+		<Blend enabled="true"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<SceneObject name="DioramaModel">
+			<!--
+				BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+        FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+      -->
+			<!--<Model filename="shared/diorama/diorama08/episode22/models/episode22_diorama_base.ffm"/>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="Episode22BackdropMaterial"/>-->
+			<!--</Materials>-->
+			<Translation x="-1500"/>
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Import filename="shared/diorama/diorama08/episode22/scenes/episode22_levelpins.xml"/>
+			<SceneObject name="Episode22_Backdrop">
+				<SceneObject name="Episode22_Diorama_Sky">
+					<Translation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/episode22_diorama_sky.ffm"/>
+					<Material parentMaterial="Episode22Material"/>
+				</SceneObject>
+				<!--
+        EPISODE GROUND GEOMETRY ETC.
+        -->
+				<SceneObject name="Episode22_Ground">
+					<Translation x="0.0" y="0.0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/episode22_ground.ffm"/>
+					<Material parentMaterial="Episode22Material"/>
+				</SceneObject>
+				<SceneObject name="Episode22_Ground_Extension">
+					<Translation x="0" y="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/episode22_ground_extend.ffm"/>
+					<Material parentMaterial="Episode22Material"/>
+				</SceneObject>
+			</SceneObject>
+			<!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<SceneObject name="E22Path">
+				<Translation x="0" y="0" z="0"/>
+				<Scale x="1" y="1" z="1"/>
+				<Model filename="shared/diorama/diorama08/episode22/models/path/episode22_path.ffm">
+					<Bound minZ="-700"/>
+				</Model>
+				<Material parentMaterial="Episode22PathMaterialAlpha"/>
+			</SceneObject>
+			<!--ADD PATH SHADOW - ADD YOUR -->
+			<SceneObject name="E22PathShadow">
+				<Translation x="0" y="0" z="0"/>
+				<Scale x="1" y="1" z="1"/>
+				<Model filename="shared/diorama/diorama08/episode22/models/path/path_shadow.ffm">
+					<Bound minZ="-800"/>
+				</Model>
+				<Material parentMaterial="Episode22MaterialAlpha"/>
+			</SceneObject>
+			<SceneObject name="E22EndSign">
+				<Translation x="758" y="84" z="40"/>
+				<Rotation x="-35" y="0" z="0"/>
+				<Scale x="1" y="1" z="1"/>
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm"/>
+				<Material parentMaterial="Under_Construction_Icon"/>
+			</SceneObject>
+
+			<SceneObject name="portalbackall">
+				<Translation x="50" y="15" z="40"/>
+				<SceneObject name="diorama_link_previous">
+					<Model filename="shared/diorama/common/models/portal/portal.ffm"/>
+					<Materials>
+						<Material parentMaterial="PortalMaterial">
+						</Material>
+					</Materials>
+					<!-- Generated from Maya -->
+					<Translation x="-835" y="135" z="-50"/>
+					<Rotation x="0" y="50" z="0"/>
+					<Scale x="1.000" y="1.000" z="1.000"/>
+				</SceneObject>
+
+				<SceneObject name="diorama_portal_shadow">
+					<Model filename="shared/diorama/common/models/portal/portal_shadow.ffm"/>
+					<Materials>
+						<Material parentMaterial="PortalMaterial">
+						</Material>
+					</Materials>
+					<!-- Generated from Maya -->
+					<Translation x="-835" y="135" z="-50"/>
+					<Rotation x="0" y="50" z="0"/>
+					<Scale x="1.000" y="1.000" z="1.000"/>
+				</SceneObject>
+
+				<!--
+                    PORTAL
+                -->
+
+				<SceneObject name="diorama_link_previous_pin">
+					<Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+						<Animations>
+							<Animation filename="shared/diorama/common/models/portal/pin_idle.ffa"
+									   name="idlePinEmil" play="true" loopCount="-1" speed="1.0"/>
+						</Animations>
+					</Model>
+					<Materials>
+						<Material parentMaterial="PortalMaterial">
+						</Material>
+					</Materials>
+					<Translation x="-806" y="65" z="-20"/>
+					<Rotation x="4.970" y="34.889" z="1.863"/>
+					<Scale x="1" y="1" z="1"/>
+				</SceneObject>
+			</SceneObject>
+			<!--ASSET SHADOWS-->
+			<SceneObject name="AssetShadows">
+				<Translation x="0" y="0" z="0"/>
+				<Rotation x="0"/>
+				<Scale x="1" y="1" z="1"/>
+				<Model filename="shared/diorama/diorama08/episode22/models/asset_shadow.ffm">
+					<Bound minZ="-1000"/>
+				</Model>
+				<Material parentMaterial="Episode22MaterialAlpha"/>
+			</SceneObject>
+			<!-- DIORAMA ASSETS -->
+			<!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+			-->
+			<SceneObject name="episode22_Non_Interactable_Group">
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/wall.ffm"/>
+					<Material parentMaterial="Episode22Material"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/wall_extend.ffm"/>
+					<Material parentMaterial="Episode22Material"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/balcony_rail.ffm"/>
+					<Material parentMaterial="Episode22Material"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/portal_stand.ffm"/>
+					<Material parentMaterial="Episode22Material"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/portal_stand_rail.ffm">
+						<Bound minZ="-700"/>
+					</Model>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="LollipopBack">
+					<Translation x="802.126" y="-7.192" z="-326.277"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/entrance_spiral_back.ffm">
+						<Animation filename="shared/diorama/diorama08/episode22/models/entrance_spiral_back_click.ffa" loopCount="0" name="LollipopBackClick" play="false" speed="1"/>
+					</Model>
+					<Material parentMaterial="Episode22Material"/>
+				</SceneObject>
+				<SceneObject name="LollipopFront">
+					<Translation x="783.993" y="-2.947" z="307.979"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/entrance_spiral_front.ffm">
+						<Animation filename="shared/diorama/diorama08/episode22/models/entrance_spiral_front_click.ffa" loopCount="0" name="LollipopFrontClick" play="false" speed="1"/>
+					</Model>
+					<Material parentMaterial="Episode22Material"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="4" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/entrance_spirals_shadow_top.ffm">
+						<Bound minZ="-1000"/>
+					</Model>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/entrance_spirals_shadow_bottom.ffm">
+						<Bound minZ="-1000"/>
+					</Model>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="5" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/stairs_shadow.ffm">
+						<Bound minZ="-1000"/>
+					</Model>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="5"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/wall_border_shadow.ffm">
+						<Bound minZ="-500"/>
+					</Model>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/asset_hole_shadow.ffm">
+						<!--<Bound minZ="-500"/>-->
+					</Model>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/asset_hole_shadow_right.ffm">
+						<!--<Bound minZ="-500"/>-->
+					</Model>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/asset_hole_shadow_left.ffm">
+						<!--<Bound minZ="-500"/>-->
+					</Model>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="-22.594" y="251.731" z="-366.134"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/non_interactable/curtains.ffm">
+						<Animation filename="shared/diorama/diorama08/episode22/models/non_interactable/curtains_idle.ffa" loopCount="-1" name="CurtainsIdle" play="true" speed="1"/>
+					</Model>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/non_interactable/floor_lights_stands.ffm"/>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/non_interactable/back_floor_lights.ffm"/>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Non_Interactable_01">
+					<Translation x="0" y="0" z="0"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/foreground.ffm"/>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+			</SceneObject>
+			<!--
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+			<SceneObject name="episode22_Interactable_Group">
+				<SceneObject name="episode22_Interactable_01">
+					<BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+					<Interactable upEffect="diorama_house"/>
+					<Translation x="-509.411" y="8.577" z="-224.146"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/interactable/left_bookshelf.ffm"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Interactable_01">
+					<BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+					<Interactable upEffect="diorama_house"/>
+					<Translation x="360.766" y="0" z="-270.41"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/interactable/right_bookshelf.ffm"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Interactable_01">
+					<BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+					<Interactable upEffect="diorama_tree"/>
+					<Translation x="585.447" y="105" z="-208.296"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/interactable/palm_plant.ffm">
+						<Animation filename="shared/diorama/diorama08/episode22/models/interactable/palm_plant_idle.ffa" loopCount="-1" name="PalmPlantIdle" play="true" speed="0.5"/>
+					</Model>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Interactable_01">
+					<BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+					<Interactable upEffect="diorama_house"/>
+					<Translation x="-380" y="23.767" z="-317.266"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/interactable/column_back.ffm"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Interactable_01">
+					<BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+					<Interactable upEffect="diorama_house"/>
+					<Translation x="320.653" y="23.767" z="-357.072"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/interactable/column_back.ffm"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="spotlight_ceiling">
+					<BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+					<Interactable upEffect="diorama_house"/>
+					<Translation x="-362.686" y="408" z="149.764"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/interactable/ceiling_spot_light_left.ffm">
+						<Animation filename="shared/diorama/diorama08/episode22/models/interactable/ceiling_spot_light_left_idle.ffa" loopCount="-1" name="IdleSpotlight" play="true" speed="1"/>
+					</Model>
+					<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear"/>
+					<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear"/>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+				<SceneObject name="episode22_Interactable_01">
+					<BoundingBox maxX="80" maxY="290" minX="-80" minY="0"/>
+					<Interactable upEffect="diorama_squishy"/>
+					<Translation x="-873.528" y="21.458" z="197.848"/>
+					<Rotation x="0" y="0" z="0"/>
+					<Scale x="1" y="1" z="1"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/interactable/candy_pile_left.ffm"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.3"/>
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.3"/>
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.3"/>
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.3"/>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+			</SceneObject>
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+			<SceneObject name="Episode22Character">
+				<Translation x="123.416" y="34.008" z="-159.371"/>
+				<SceneObject name="CharacterEp22">
+					<Rotation x="-8" y="0" z="0"/>
+					<Scale x="0.7" y="0.7" z="0.7"/>
+					<Model filename="shared/diorama/diorama08/episode22/models/character/episode22_character.ffm">
+						<Animation filename="shared/diorama/diorama08/episode22/models/character/episode22_character_idle.ffa" loopCount="-1" name="Idle" play="true" speed="1"/>
+						<Animation filename="shared/diorama/diorama08/episode22/models/character/episode22_character_talk.ffa" loopCount="-1" name="Talk" play="false" speed="1"/>
+					</Model>
+					<Material parentMaterial="Episode22MaterialAlpha"/>
+				</SceneObject>
+			</SceneObject>
+			<!--
+				SPEECHBUBBLE
+			-->
+			<SceneObject name="SpeechBubbleEp22">
+				<SpeechBubble>
+					<Speech key="episode22.intro"/>
+					<Speech key="episode22.outro"/>
+				</SpeechBubble>
+				<Translation x="0" y="125" z="-136.171"/>
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear"/>
+				<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear"/>
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml"/>
+			</SceneObject>
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<SceneObject name="Particles">
+				<Effect effectData="Wisps" name="Wisps" play="true"/>
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Translation z="-200"/>
+				<Effect effectData="Wisps" name="Wisps" play="true"/>
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Translation z="-400"/>
+				<Effect effectData="Wisps" name="Wisps" play="true"/>
+			</SceneObject>
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<SceneObject name="UnlockLevel302CameraTarget">
+				<Translation x="-180" y="19" z="-20"/>
+			</SceneObject>
+			<SceneObject name="UnlockLevel315CameraTarget">
+				<Translation x="-180" y="19" z="-20"/>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

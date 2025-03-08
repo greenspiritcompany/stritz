@@ -1,0 +1,35 @@
+<Timelines>
+<Timeline startTime="0" endTime="7">
+	<Triggers>
+		<EffectTrigger time="5.941" name="StampDustPinkEFQ" parentName="StampPinkP" />
+		<EffectTrigger time="5.941" name="StampDustPinkEFQ" parentName="StampPinkL" />
+		<EffectTrigger time="5.910" name="lc_stamp_pink" />
+	</Triggers>
+	<TimeControls />
+	<Animate time="0" target="StampPinkP">
+		<Show time="5.749" />
+		<Hide time="0.042" />
+		<Scale time="5.746" x="3" y="3" z="3" />
+		<Scale time="5.913" x="1" y="1" z="1" />
+		<Color time="5.741" r="255" g="255" b="255" a="0" />
+		<Color time="5.913" r="255" g="255" b="255" a="255" />
+	</Animate>
+	<Animate time="0" target="StampPinkL">
+		<Show time="5.749" />
+		<Hide time="0.042" />
+		<Scale time="5.746" x="3" y="3" z="3" />
+		<Scale time="5.913" x="1" y="1" z="1" />
+		<Color time="5.741" r="255" g="255" b="255" a="0" />
+		<Color time="5.913" r="255" g="255" b="255" a="255" />
+	</Animate>
+	<Animate time="0" target="StampPinkTextP">
+		<VertexColor time="5.741" r="241" g="57" b="183" a="0" />
+		<VertexColor time="5.916" r="241" g="57" b="183" a="255" />
+	</Animate>
+	<Animate time="0" target="StampPinkTextL">
+		<VertexColor time="5.741" r="241" g="57" b="183" a="0" />
+		<VertexColor time="5.916" r="241" g="57" b="183" a="255" />
+	</Animate>
+
+</Timeline>
+</Timelines>

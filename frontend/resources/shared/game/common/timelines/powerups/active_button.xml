@@ -1,0 +1,13 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.1">
+		<Triggers>
+			<EffectTrigger time="0.001" name="BoosterSelectedEFQ" targetName=""/>
+		</Triggers>
+		<TimeControls>
+			<!-- loop -->
+			<TimeJump time="0.25" jumpToTime="0.0"/>
+		</TimeControls>
+
+	</Timeline>
+</Timelines>

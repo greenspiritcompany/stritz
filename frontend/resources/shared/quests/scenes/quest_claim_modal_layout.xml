@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout>
+	<Object sceneObject="QuestIntroModal">
+		<Default>
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="70" />
+				<OriginalSize width="640" height="550" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</Default>
+	</Object>
+</Layout>

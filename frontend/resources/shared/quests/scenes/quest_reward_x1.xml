@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="RewardPop">
+		<Translation x="0.943" y="0" z="750" />
+		<LayoutConfiguration>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="70" />
+				<OriginalSize width="640" height="550" />
+			</Size>
+		</LayoutConfiguration>
+		<Animation animationData="RewardScaleIn" name="OnAppear" loopCount="0" />
+		<Animation animationData="RewardScaleOut" loopCount="0" name="OnDisappear" />
+		<SceneObject name="Group">
+			<Translation y="50" />
+			<Scale x="1.200" y="1.200" z="1.200" />
+			<SceneObject name="Background">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject name="shineBG" visibility="inherit">
+					<Rotation x="0" y="0" z="0" />
+					<Scale y="0.900" z="0.900" x="0.900" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/quest_reward_shine_bg.png" vertexColors="false" mode="sprite">
+						<Pivot anchor="center" />
+						<VertexColor r="255" g="255" b="255" a="255" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Sprite>
+					<Translation y="-48" z="1" />
+					<Animation animationData="Rotating" play="true" />
+				</SceneObject>
+				<SceneObject editorEntityId="3" name="shineRays">
+					<Translation y="-52" z="2" />
+					<Rotation x="0" y="0" z="0" />
+					<Effect effectData="QuestRewardGlowEFQ" name="QuestRewardGlowEFQ" play="true" />
+				</SceneObject>
+				<SceneObject name="TextBox">
+					<Animation animationData="RewardScaleInSmall" loopCount="0" play="true" speed="1.400" />
+					<Animation play="true" speed="0.500" animationData="Idle" startDelay="1" />
+					<SceneObject name="text plate">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/mc_notification_box.png" vertexColors="false" mode="panel">
+							<Insets bottom="25" left="30" right="30" top="25" />
+							<Size width="380" />
+							<VertexColor r="255" g="255" b="255" a="255" />
+							<Pivot anchor="center" />
+						</Sprite>
+						<Translation y="84" z="3" />
+						<Scale z="-10" x="0.800" y="0.800" />
+						<Rotation x="0" y="0" z="0" />
+						<Animation play="true" speed="0.700" animationData="Idle" />
+					</SceneObject>
+					<SceneObject name="textReward">
+						<Text alignment="center" font="Banana" overflowBehaviour="fit" canBreakWords="false" verticalAlignment="visualCenter" maxWidth="280" maxHeight="40" key="quest.reward.collected">
+							<Color r="255" g="255" b="255" a="255" />
+							<Size x="17" y="17" />
+						</Text>
+						<Translation x="0.400" y="79" z="20" />
+						<Scale x="1" y="1" z="1" />
+						<Rotation x="0" y="0" z="0" />
+					</SceneObject>
+					<SceneObject name="shine">
+						<Animation animationData="Idle" play="true" speed="0.700" />
+						<Rotation x="0" y="0" z="0" />
+						<Translation x="2.331" y="80.117" z="3" />
+						<Sprite vertexColors="false" mode="sprite">
+							<Insets bottom="0" left="0" right="0" top="0" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Rewards">
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject name="Boosters" />
+				<SceneObject name="Amount" />
+			</SceneObject>
+			<SceneObject name="Effects">
+				<SceneObject name="glitterPFX">
+					<Translation x="0" y="-20" z="20" />
+					<Scale x="2" y="2" />
+					<Rotation x="0" y="-20" z="0" />
+					<Effect effectData="QuestRewardGlittersEFQ" name="QuestRewardGlittersEFQ" play="true" />
+				</SceneObject>
+				<SceneObject name="glitterPFX3">
+					<Rotation x="0" y="-20" z="0" />
+					<Translation x="-3" y="60" z="20" />
+					<Effect effectData="QuestRewardGlittersEFQ" name="QuestRewardGlittersEFQ" play="true" />
+				</SceneObject>
+				<SceneObject name="glitterPFX2">
+					<Translation x="0" y="-20" z="20" />
+					<Rotation x="0" y="-20" z="0" />
+					<Scale x="1.900" y="2" />
+					<Effect play="true" effectData="QuestRewardGlittersEFQ" name="QuestRewardGlittersEFQ" />
+				</SceneObject>
+				<SceneObject name="frontShinePFX4" editorEntityId="111">
+					<Rotation x="0" y="-20" z="0" />
+					<Scale x="0.900" y="0.900" z="0.900" />
+					<Translation z="2" y="-52" />
+					<Effect effectData="QuestRewardGlowEFQ" name="QuestRewardGlowEFQ" play="true" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="1" space="Local" timeToEmit="0.010" name="CardFallPFX">
+    <Dampening max="1.050" min="0.950"/>
+    <DirectionalForce x="0" y="1000"/>
+    <Emitter emissionRate="0" spread="0" angle="-90">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="255"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="50" min="-50"/>
+    <Size>
+        <Max x="70" y="70"/>
+        <Min x="70" y="70"/>
+    </Size>
+    <SizeChange>
+        <Max x="0" y="0"/>
+        <Min x="0" y="0"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/bubble64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="2" min="2"/>
+    <Velocity max="30" min="300"/>
+</ParticleEffect>

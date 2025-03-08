@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="CheatHaxxorTrainer">
+		<Animation animationData="SlideInFromTop" loopCount="0" name="OnAppear" play="false" />
+		<Animation animationData="SlideOutToTop" loopCount="0" name="OnDisappear" play="false" />
+		<Translation z="500" />
+		<SceneObject name="Popup_Base">
+			<Panel filename="shared/diorama/common/tex/gui_elements/quest_box_outer_panel.png" vertexColors="false">
+				<Insets bottom="20" left="20" right="20" top="65" />
+				<Pivot anchor="top" />
+				<Size height="822" width="514" />
+			</Panel>
+			<Translation x="327.635" y="36.435" z="100" />
+			<SceneObject class="Button" name="CloseButton">
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<Scale x="0.700" y="0.700" z="0.700" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation x="240.424" y="18.494" z="2" />
+				<SceneObject visibility="inherit">
+					<Scale x="1.500" y="1.500" z="1.500" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/btn_exit.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+					<Translation x="0" y="-3" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="InfoButton" editorEntityId="60" class="Button">
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+					<Insets bottom="10" top="10" left="55" right="55" />
+					<Size width="434" height="126" />
+				</Panel>
+				<Translation x="-213.547" y="61.947" z="0" />
+				<Scale x="0.458" y="0.458" z="1" />
+				<SceneObject name="Info_Text">
+					<Text font="Typewriter" verticalAlignment="center" alignment="center">
+						<TextString>Info</TextString>
+						<Size x="40" y="40" />
+					</Text>
+					<Translation x="216.140" y="80.595" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="GameButton" editorEntityId="60" class="Button">
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+					<Insets bottom="10" top="10" left="55" right="55" />
+					<Size width="434" height="126" />
+				</Panel>
+				<Translation x="5.925" y="61.947" z="0" />
+				<Scale x="0.458" y="0.458" z="1" />
+				<SceneObject name="Game_Text">
+					<Text font="Typewriter" verticalAlignment="center" alignment="center">
+						<TextString>Game</TextString>
+						<Size x="40" y="40" />
+					</Text>
+					<Translation x="216.140" y="80.595" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Page_Info">
+				<SceneObject name="BuildPolicies">
+					<Panel filename="shared/diorama/common/tex/gui_elements/white_box.png" vertexColors="false">
+						<Insets bottom="20" left="20" right="20" top="20" />
+						<Size height="230" width="257" />
+					</Panel>
+					<Scale z="1" />
+					<Translation x="-22.924" y="570.964" z="0" />
+					<SceneObject name="BuildPolicy_BuildArchetype">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Archetype:</TextString>
+						</Text>
+						<Translation x="15" y="50" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_Title">
+						<Scale x="0.500" y="0.500" />
+						<Text font="Typewriter">
+							<Color a="255" b="177" g="125" r="42" />
+							<Shadow>
+								<Color a="255" b="255" g="255" r="255" />
+								<Offset x="0" />
+							</Shadow>
+							<TextString>Build Policies</TextString>
+						</Text>
+						<Translation x="10" y="20" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_BuildPlatform">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Platform:</TextString>
+						</Text>
+						<Translation x="15" y="80" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_BuildVariation">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Variation:</TextString>
+						</Text>
+						<Translation x="15" y="110" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_Market">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Market:</TextString>
+						</Text>
+						<Translation x="15" y="140" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_Store">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Store:</TextString>
+						</Text>
+						<Translation x="15" y="170" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_SocialNetwork">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Social:</TextString>
+						</Text>
+						<Translation x="15" y="200" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_BuildArchetype_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="92.609" y="50" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_BuildPlatform_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="79.527" y="80" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_BuildVariation_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="84.760" y="110" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_Market_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="71.678" y="140" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_Store_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="57.287" y="170" z="0" />
+					</SceneObject>
+					<SceneObject name="BuildPolicy_SocialNetwork_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="65.136" y="200" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Versions">
+					<Panel filename="shared/diorama/common/tex/gui_elements/white_box.png" vertexColors="false">
+						<Insets bottom="20" left="20" right="20" top="20" />
+						<Size height="230" width="207" />
+					</Panel>
+					<Translation x="-232.864" y="569.572" z="0" />
+					<SceneObject name="Version_Game">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Game:</TextString>
+						</Text>
+						<Translation x="15" y="50" z="0" />
+					</SceneObject>
+					<SceneObject name="Version_Title">
+						<Scale x="0.500" y="0.500" />
+						<Text font="Typewriter">
+							<Color a="255" b="177" g="125" r="42" />
+							<Shadow>
+								<Color a="255" b="255" g="255" r="255" />
+								<Offset x="0" />
+							</Shadow>
+							<TextString>Versions</TextString>
+						</Text>
+						<Translation x="10" y="20" z="0" />
+					</SceneObject>
+					<SceneObject name="Version_Game_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="300" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="63.689" y="50" z="0" />
+					</SceneObject>
+					<SceneObject name="Version_GPL_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="300" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="49.298" y="80" z="0" />
+					</SceneObject>
+					<SceneObject name="Version_GPL">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>GPL:</TextString>
+						</Text>
+						<Translation x="15" y="80" z="0" />
+					</SceneObject>
+					<SceneObject name="Version_CPL_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="300" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="47.990" y="110" z="0" />
+					</SceneObject>
+					<SceneObject name="Version_CPL">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>CPL:</TextString>
+						</Text>
+						<Translation x="15" y="110" z="0" />
+					</SceneObject>
+					<SceneObject name="Version_FF_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="288" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="37.524" y="140" z="0" />
+					</SceneObject>
+					<SceneObject name="Version_FF">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>FF:</TextString>
+						</Text>
+						<Translation x="15" y="140" z="0" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="General">
+					<Panel filename="shared/diorama/common/tex/gui_elements/white_box.png" vertexColors="false">
+						<Insets bottom="20" left="20" right="20" top="20" />
+						<Size height="443" width="472" />
+					</Panel>
+					<Scale z="1" />
+					<Translation x="-235.523" y="122.920" z="0" />
+					<SceneObject name="General_Game_Server">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Server:</TextString>
+						</Text>
+						<Translation x="15" y="110" z="0" />
+					</SceneObject>
+					<SceneObject name="General_Title">
+						<Scale x="0.500" y="0.500" />
+						<Text font="Typewriter">
+							<Color a="255" b="177" g="125" r="42" />
+							<Shadow>
+								<Color a="255" b="255" g="255" r="255" />
+								<Offset x="0" />
+							</Shadow>
+							<TextString>General</TextString>
+						</Text>
+						<Translation x="10" y="20" z="0" />
+					</SceneObject>
+					<SceneObject name="General_Game_UsesSSL">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>UsesSSL:</TextString>
+						</Text>
+						<Translation x="15" y="140" z="0" />
+					</SceneObject>
+					<SceneObject name="General_CoreUserId">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" overflowBehaviour="fit">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>CoreUserId:</TextString>
+						</Text>
+						<Translation x="15" y="50" z="0" />
+					</SceneObject>
+					<SceneObject name="General_InstallId">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>InstallId:</TextString>
+						</Text>
+						<Translation x="15" y="80" z="0" />
+					</SceneObject>
+					<SceneObject name="General_SignInSource">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxHeight="34" overflowBehaviour="fit">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>SignInSource:</TextString>
+						</Text>
+						<Translation x="15" y="200" z="0" />
+					</SceneObject>
+					<SceneObject name="General_Time">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Time:</TextString>
+						</Text>
+						<Translation x="15" y="320" z="0" />
+					</SceneObject>
+					<SceneObject name="General_Game_Server_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="766" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>valuevaluevaluevaluevaluevaluevaluevaluevaluevaluevaluevalue</TextString>
+						</Text>
+						<Translation x="69.085" y="110" z="0" />
+					</SceneObject>
+					<SceneObject name="General_Game_UsesSSL_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="80.318" y="140" z="0" />
+					</SceneObject>
+					<SceneObject name="General_CoreUserId_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="425" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>valuevaluevalue</TextString>
+						</Text>
+						<Translation x="96.040" y="50" z="0" />
+					</SceneObject>
+					<SceneObject name="General_InstallId_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="783" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>valuevaluevaluevaluevaluevaluevaluevaluevaluevaluevaluevalue</TextString>
+							<Size x="50" y="50" />
+						</Text>
+						<Translation x="75.266" y="80" z="0" />
+					</SceneObject>
+					<SceneObject name="General_SignInSource_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="111.528" y="200" z="0" />
+					</SceneObject>
+					<SceneObject name="General_Time_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="57.333" y="320" z="0" />
+					</SceneObject>
+					<SceneObject name="General_Language_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>vaVA</TextString>
+						</Text>
+						<Translation x="170.484" y="230" z="0" />
+					</SceneObject>
+					<SceneObject name="General_Language">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Country/Language:</TextString>
+						</Text>
+						<Translation x="15" y="230" z="0" />
+					</SceneObject>
+					<SceneObject name="General_Country_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>va</TextString>
+						</Text>
+						<Translation x="149.695" y="230" z="0" />
+					</SceneObject>
+					<SceneObject name="General_slash1">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>/</TextString>
+						</Text>
+						<Translation x="164.295" y="230" z="0" />
+					</SceneObject>
+					<SceneObject name="General_NetworkReachability">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxHeight="34" overflowBehaviour="fit">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Network:</TextString>
+						</Text>
+						<Translation x="15" y="350" z="0" />
+					</SceneObject>
+					<SceneObject name="General_NetworkReachability_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="80.643" y="350" z="0" />
+					</SceneObject>
+					<SceneObject name="General_ScreenResolution">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxHeight="34" overflowBehaviour="fit">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Screen Resolution:</TextString>
+						</Text>
+						<Translation x="15" y="260" z="0" />
+					</SceneObject>
+					<SceneObject name="General_ScreenResolution_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="143.390" y="260" z="0" />
+					</SceneObject>
+					<SceneObject name="General_GameResolution">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxHeight="34" overflowBehaviour="fit">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Game Resolution:</TextString>
+						</Text>
+						<Translation x="15" y="290" z="0" />
+					</SceneObject>
+					<SceneObject name="General_GameResolution_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="138.799" y="290" z="0" />
+					</SceneObject>
+					<SceneObject name="General_ChannelId_Value" class="Button">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxWidth="350" overflowBehaviour="fit" allowWordWrapping="false" maxHeight="30">
+							<Color a="255" b="255" g="85" r="170" />
+							<TextString>value</TextString>
+						</Text>
+						<Translation x="80.643" y="170" z="0" />
+					</SceneObject>
+					<SceneObject name="General_ChannelId">
+						<Scale x="0.500" y="0.500" />
+						<Text alignment="left" font="Typewriter" maxHeight="34" overflowBehaviour="fit">
+							<Color a="255" b="127" g="127" r="127" />
+							<TextString>Channel:</TextString>
+						</Text>
+						<Translation x="15" y="170" z="0" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Title">
+				<Text alignment="center" font="Banana">
+					<Color a="255" b="177" g="125" r="42" />
+					<Shadow>
+						<Color a="255" b="255" g="255" r="255" />
+						<Offset x="0" />
+					</Shadow>
+					<TextString>Cheat Haxxor Trainer</TextString>
+				</Text>
+				<Translation x="6.144" y="41.080" z="0" />
+			</SceneObject>
+			<SceneObject name="Page_Game" visibility="never">
+				<SceneObject name="Game_Background">
+					<Panel filename="shared/diorama/common/tex/gui_elements/white_box.png" vertexColors="false">
+						<Insets bottom="20" left="20" right="20" top="20" />
+						<Size height="678" width="468" />
+					</Panel>
+					<Scale z="1" />
+					<Translation x="-233.269" y="121.371" z="0" />
+					<SceneObject name="InGame">
+						<Translation x="11.138" y="0" z="0" />
+						<SceneObject name="EndGame">
+							<Translation x="-6.882" y="167.648" z="0" />
+							<SceneObject class="Button" editorEntityId="60" name="WinButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="49.969" y="60.933" z="0" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<SceneObject name="Win_Text">
+									<Text alignment="center" font="Typewriter" verticalAlignment="center">
+										<Size x="35" y="35" />
+										<TextString>Win</TextString>
+									</Text>
+									<Translation x="-0.845" y="13.147" z="0" />
+									<Scale x="0.859" y="0.859" z="1" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="LoseButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<VertexColor r="255" g="255" b="255" a="255" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="116.452" y="62.169" z="0" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<SceneObject name="Lose_Text">
+									<Text alignment="center" font="Typewriter" verticalAlignment="center">
+										<Size x="35" y="35" />
+										<TextString>Lose</TextString>
+									</Text>
+									<Translation x="2.287" y="10.075" z="0" />
+									<Scale x="0.881" y="0.881" z="1" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="EndGame_Title" editorEntityId="82">
+								<Scale x="0.500" y="0.500" />
+								<Text font="Typewriter">
+									<Color a="255" b="177" g="125" r="42" />
+									<Shadow>
+										<Color a="255" b="255" g="255" r="255" />
+										<Offset x="0" />
+									</Shadow>
+									<TextString>End Game</TextString>
+									<Size x="30" y="30" />
+								</Text>
+								<Translation x="32.714" y="24.624" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="Moves" visibility="dynamic">
+							<Translation x="-20.367" y="161.244" z="0" />
+							<SceneObject name="Moves_Title" visibility="dynamic">
+								<Scale x="0.500" y="0.500" />
+								<Text font="Typewriter">
+									<Color a="255" b="177" g="125" r="42" />
+									<Shadow>
+										<Color a="255" b="255" g="255" r="255" />
+										<Offset x="0" />
+									</Shadow>
+									<TextString>Moves</TextString>
+									<Size x="30" y="30" />
+								</Text>
+								<Translation x="199.171" y="32.053" z="0" />
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Moves_AddButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="213.491" y="70.111" z="0" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<SceneObject name="Moves_Add_Text">
+									<Text alignment="center" font="Typewriter" verticalAlignment="center">
+										<Size x="40" y="40" />
+										<TextString>+</TextString>
+									</Text>
+									<Translation x="-0.845" y="12.832" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Moves_RemoveButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<VertexColor r="255" g="255" b="255" a="255" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="280.003" y="69.941" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="Moves_Remove_Text">
+									<Text alignment="center" font="Typewriter" verticalAlignment="center">
+										<Size x="40" y="40" />
+										<TextString>-</TextString>
+									</Text>
+									<Translation x="-0.785" y="12.893" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="Moves_Value">
+								<Scale x="0.500" y="0.500" />
+								<Text font="Typewriter" alignment="left">
+									<Color a="255" b="177" g="125" r="42" />
+									<Shadow>
+										<Color a="255" b="255" g="255" r="255" />
+										<Offset x="0" />
+									</Shadow>
+									<TextString>(XX)</TextString>
+									<Size x="25" y="25" />
+								</Text>
+								<Translation x="266.883" y="32.054" z="0" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="InvalidMoves">
+							<Translation x="-417.867" y="-95.057" z="0" />
+							<SceneObject name="" editorEntityId="82">
+								<Scale x="0.500" y="0.500" />
+								<Text font="Typewriter" overflowBehaviour="fit" maxWidth="466" maxHeight="39">
+									<Color a="255" b="177" g="125" r="42" />
+									<Shadow>
+										<Color a="255" b="255" g="255" r="255" />
+										<Offset x="0" />
+									</Shadow>
+									<TextString>Allow invalid moves</TextString>
+									<Size x="30" y="30" />
+								</Text>
+								<Translation x="710.366" y="288.206" z="0" />
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Invalid_MovesButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="200" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="797.547" y="324.436" z="0" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<SceneObject name="">
+									<Text alignment="center" font="Typewriter" verticalAlignment="center">
+										<Size x="35" y="35" />
+										<TextString>Toggle</TextString>
+									</Text>
+									<Translation x="-1.006" y="10.722" z="0" />
+									<Scale x="0.859" y="0.859" z="1" />
+								</SceneObject>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="InGame_Spawn">
+							<Translation x="8.456" y="281.808" z="0" />
+							<SceneObject name="Boosters_Title">
+								<Scale x="0.500" y="0.500" />
+								<Text font="Typewriter">
+									<Color a="255" b="177" g="125" r="42" />
+									<Shadow>
+										<Color a="255" b="255" g="255" r="255" />
+										<Offset x="0" />
+									</Shadow>
+									<TextString>Spawn booster</TextString>
+									<Size x="30" y="30" />
+								</Text>
+								<Translation x="147.352" y="170.760" z="0" />
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_ColorBomb_SpawnButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="48.412" y="219.324" z="0" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-1.580" z="0" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Colorbomb</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="0.000" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_ColoringCandy_SpawnButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="164.350" y="219.324" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-1.580" z="0" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Coloring Candy</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_Wrapped_SpawnButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="275.409" y="219.324" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-8.130" z="0" />
+									<Sprite filename="shared/game/common/tex/candy/blue_wrapped_c.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Wrapped</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_StripedHorizontal_SpawnButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="397.153" y="219.324" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-8.130" z="0" />
+									<Sprite filename="shared/game/common/tex/candy/purple_striped_h_c.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Striped H</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_StripedVertical_SpawnButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="347.290" y="305.771" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-8.130" z="0" />
+									<Sprite filename="shared/game/common/tex/candy/red_striped_v_c.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Striped V</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_Fish_SpawnButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="100.315" y="309.027" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-5.674" z="0" />
+									<Sprite filename="shared/game/common/tex/candy/fish_yellow_c.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Fish</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_SodaBottle_SpawnButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="222.039" y="306.619" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-5.674" z="0" />
+									<Sprite filename="shared/game/common/tex/candy/bottle_cyan_c.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Soda Bottle</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="InGame_Add">
+							<Translation x="118.742" y="-10.027" z="0" />
+							<SceneObject name="Boosters_Title2">
+								<Scale x="0.500" y="0.500" />
+								<Text font="Typewriter">
+									<Color a="255" b="177" g="125" r="42" />
+									<Shadow>
+										<Color a="255" b="255" g="255" r="255" />
+										<Offset x="0" />
+									</Shadow>
+									<TextString>Add booster</TextString>
+									<Size x="30" y="30" />
+								</Text>
+								<Translation x="46.889" y="315.013" z="0" />
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="164" name="Booster_Lollipop_AddButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="-19.842" y="353.277" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="" editorEntityId="166">
+									<Translation x="0.131" y="-5.674" z="0" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/icon_lollipop.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+									<Scale x="0.890" y="0.890" z="1" />
+								</SceneObject>
+								<SceneObject editorEntityId="167">
+									<Text font="Typewriter" alignment="center">
+										<TextString>Lollipop</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_StripedLollipop_AddButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="103.856" y="354.648" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-5.674" z="0" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/icon_lollipop_striped.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+									<Scale x="0.890" y="0.890" z="1" />
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Striped Lollipop</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_FreeSwitch_AddButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="233.635" y="355.469" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-5.674" z="0" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/free_switch_icon.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+									<Scale x="0.890" y="0.890" z="1" />
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Free Switch</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Text font="Typewriter">
+								<TextString>IN-GAME</TextString>
+								<Color r="74" g="74" b="74" a="255" />
+								<Shadow enabled="false">
+									<Color r="74" g="74" b="74" a="255" />
+								</Shadow>
+							</Text>
+							<Rotation z="-90" />
+							<Translation x="19.262" y="440.796" z="0" />
+							<Scale x="0.812" y="0.812" z="1" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="Diorama">
+						<Translation x="11.945" y="7.164" z="0" />
+						<SceneObject name="PreGame">
+							<Translation x="156.068" y="-143.650" z="0" />
+							<SceneObject name="Boosters_Title">
+								<Scale x="0.500" y="0.500" />
+								<Text font="Typewriter">
+									<Color a="255" b="177" g="125" r="42" />
+									<Shadow>
+										<Color a="255" b="255" g="255" r="255" />
+										<Offset x="0" />
+									</Shadow>
+									<TextString>Add pre-game Booster:</TextString>
+									<Size x="30" y="30" />
+								</Text>
+								<Translation x="34.871" y="175.116" z="0" />
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_ColorBomb_AddButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="63.896" y="219.324" z="0" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-1.580" z="0" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/colorbomb_icon2.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Colorbomb</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="0.000" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_ColoringCandy_AddButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="163.588" y="219.324" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-1.580" z="0" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/coloring_icon2.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Coloring Candy</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Booster_Fish_AddButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="150" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="258.379" y="219.840" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="">
+									<Translation x="0.131" y="-5.674" z="0" />
+									<Sprite filename="shared/diorama/common/tex/gui_elements/pregame_double_fish_modal_icon.png" vertexColors="false">
+										<Pivot anchor="center" />
+									</Sprite>
+									<Scale x="0.530" y="0.530" z="1" />
+								</SceneObject>
+								<SceneObject>
+									<Text font="Typewriter" alignment="center">
+										<TextString>Fish</TextString>
+										<Color r="20" g="20" b="20" a="255" />
+									</Text>
+									<Translation x="3.275" y="91.702" z="0" />
+								</SceneObject>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject name="Progress">
+							<Translation x="-152.355" y="0.606" z="0" />
+							<SceneObject name="Progress_Title">
+								<Scale x="0.500" y="0.500" />
+								<Text font="Typewriter">
+									<Color a="255" b="177" g="125" r="42" />
+									<Shadow>
+										<Color a="255" b="255" g="255" r="255" />
+										<Offset x="0" />
+									</Shadow>
+									<TextString>Progress</TextString>
+									<Size x="30" y="30" />
+								</Text>
+								<Translation x="190.565" y="32.053" z="0" />
+							</SceneObject>
+							<SceneObject class="Button" editorEntityId="60" name="Progress_IncreaseButton">
+								<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+									<Insets bottom="10" left="55" right="55" top="10" />
+									<Size height="150" width="182" />
+									<Pivot anchor="center" />
+								</Panel>
+								<Scale x="0.458" y="0.458" z="1" />
+								<Translation x="245.879" y="69.734" z="0" />
+								<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+								<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+								<SceneObject name="Progress_Increase_Text">
+									<Text alignment="center" font="Typewriter" verticalAlignment="center">
+										<Size x="40" y="40" />
+										<TextString>+</TextString>
+									</Text>
+									<Translation x="0.912" y="10.875" z="0" />
+								</SceneObject>
+							</SceneObject>
+							<SceneObject name="Progress_Value">
+								<Scale x="0.500" y="0.500" />
+								<Text font="Typewriter" alignment="left">
+									<Color a="255" b="177" g="125" r="42" />
+									<Shadow>
+										<Color a="255" b="255" g="255" r="255" />
+										<Offset x="0" />
+									</Shadow>
+									<TextString>(XXX)</TextString>
+									<Size x="25" y="25" />
+								</Text>
+								<Translation x="278.128" y="32.054" z="0" />
+							</SceneObject>
+							<SceneObject>
+								<Text font="Typewriter" alignment="center" maxWidth="359">
+									<TextString>Go to main menu then to diorama to see the effect</TextString>
+									<Color r="20" g="20" b="20" a="255" />
+								</Text>
+								<Translation x="252.142" y="110.588" z="0" />
+								<Scale x="0.407" y="0.407" z="1" />
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Text font="Typewriter">
+								<TextString>DIORAMA</TextString>
+								<Color r="74" g="74" b="74" a="255" />
+							</Text>
+							<Rotation z="-90" />
+							<Translation x="19.262" y="123.375" z="0" />
+							<Scale x="0.812" y="0.812" z="1" />
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="Separator" editorEntityId="204">
+						<Translation x="6.882" y="150.244" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/128_desk_left.png" vertexColors="false">
+							<Rectangle minX="49" maxX="45" minY="94" maxY="38" />
+						</Sprite>
+						<Rotation z="90" />
+						<Scale y="8" x="0.500" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="50" />
+					<Y percentage="3" />
+				</Translation>
+				<Size>
+					<Height percentage="95" />
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,27 @@
+{
+  "id": "gofish",
+  "nameKey" : "quests.names.gofish",
+  "difficulty" : 0,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "matchXWithY",
+      "descriptionKey" : "quests.description.gofish",
+		"icon": "shared/diorama/common/tex/gui_elements/quest_candy_fishes.png",
+      "data": {
+        "itemType1" : "fish",
+        "itemType2" : "fish",
+		"times" : 15
+      }
+    }
+  ],
+     "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12022,
+        "amount": 1
+      }
+    }
+  ]
+}

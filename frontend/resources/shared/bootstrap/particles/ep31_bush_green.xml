@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="3" space="Local" timeToEmit="60" name="Ep31GreenBush">
+    <Dampening max="0.550" min="0.800"/>
+    <DirectionalForce x="0" y="-600"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="20" depth="0" height="20"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="100" min="-100"/>
+    <Size>
+        <Max x="40" y="15"/>
+        <Min x="10" y="10"/>
+    </Size>
+    <SizeChange>
+        <Max x="-40" y="-20"/>
+        <Min x="0" y="0"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/green_piece.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="1.600" min="0.650"/>
+    <Velocity max="500" min="100"/>
+</ParticleEffect>

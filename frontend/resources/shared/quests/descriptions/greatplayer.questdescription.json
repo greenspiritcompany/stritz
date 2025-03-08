@@ -1,0 +1,26 @@
+{
+  "id": "greatplayer",
+  "nameKey" : "quests.names.greatplayer",
+  "difficulty" : 0,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "progressLevels",
+      "descriptionKey" : "quests.description.greatplayer",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_pass_hard_level.png",
+      "data": {
+        "levels": 1,
+        "scope": 1
+      }
+    }
+  ],
+  "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12020,
+        "amount": 1
+      }
+    }
+  ]
+}

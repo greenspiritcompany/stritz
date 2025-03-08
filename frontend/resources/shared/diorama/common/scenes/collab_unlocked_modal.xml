@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="CollabUnlocked">
+		<Translation z="500" />
+		<Animation name="OnAppear" animationData="SlideInFromTop" loopCount="0" />
+		<Animation name="OnDisappear" animationData="SlideOutToBelow" loopCount="0" />
+		<Import filename="shared/diorama/common/scenes/modal_background_medium.xml" />
+		<SceneObject name="Title">
+			<Translation x="0" y="-302.277" z="0" />
+			<Text canBreakWords="false" font="Banana" alignment="center" verticalAlignment="visualCenter" maxWidth="370" maxHeight="45" overflowBehaviour="fit" key="collab_unlocked_modal_title">
+				<Color r="255" g="255" b="255" a="255" />
+				<Size x="24" y="24" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="BackgroundArc">
+			<Translation x="0" y="-140" />
+			<Scale xyz="4.5" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="Bottles">
+			<Translation x="0" y="-110" />
+			<Scale xyz="0.95" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bottles_icon.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="FriendBoxes">
+			<Translation x="0" y="-40" />
+			<SceneObject name="Box1">
+				<Translation x="-110" />
+				<Scale xyz="1.3" />
+				<SceneObject name="Background">
+					<Scale xyz="1.2" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/monkey.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Frame">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_pink.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Box2">
+				<Scale xyz="1.3" />
+				<SceneObject name="Background">
+					<Scale xyz="1.2" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/yeti.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Frame">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_pink.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Box3">
+				<Translation x="110" />
+				<Scale xyz="1.3" />
+				<SceneObject name="Background">
+					<Scale xyz="1.2" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/donut_monster.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="Frame">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_pink.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="InfoText">
+			<Translation y="90" />
+			<Text canBreakWords="false" font="Typewriter" alignment="center" verticalAlignment="visualCenter" maxWidth="460" maxHeight="200" overflowBehaviour="fit" key="collab_unlocked_modal_info">
+				<Color r="116" g="58" b="11" a="255" />
+				<Size x="20" y="20" />
+			</Text>
+		</SceneObject>
+		<SceneObject name="OkButton" class="Button">
+			<Translation y="250" />
+			<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+				<Insets bottom="0" left="128" right="128" top="0" />
+				<Size width="320" height="115" />
+				<Pivot anchor="center" />
+			</Panel>
+			<Animation name="Idle" animationData="Idle" layer="1" play="true" />
+			<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+			<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+			<SceneObject>
+				<Text canBreakWords="false" font="Banana" key="button.ok" alignment="center" verticalAlignment="visualCenter" maxWidth="180" maxHeight="30" overflowBehaviour="fit">
+					<Color r="255" g="255" b="255" a="225" />
+					<Size x="30" y="30" />
+					<Shadow enabled="true">
+						<Color r="0" g="0" b="0" a="25" />
+						<Offset x="0" y="6" />
+					</Shadow>
+				</Text>
+				<Translation x="0" y="-7" />
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" />
+				<Height percentage="95" />
+				<OriginalSize width="640" height="706" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

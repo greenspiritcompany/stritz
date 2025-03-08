@@ -1,0 +1,30 @@
+<ParticleEffect name="RevealDayPFX" maxParticles="2" timeToEmit="0.100" space="Local">
+<Texture filename="shared/bootstrap/particles/tex/strong_light2.png" blend="Add" numFramesX="1" numFramesY="1" />
+<Emitter emissionRate="0" angle="0" spread="0">
+	<SpawnArea width="0" height="0" depth="0" />
+</Emitter>
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="255" g="255" b="255" a="255" />
+	</Keyframe>
+	<Keyframe lifeTime="0.197">
+		<Color r="255" g="255" b="255" a="255" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="255" g="255" b="255" a="0" />
+	</Keyframe>
+</ColorAnimation>
+<Size>
+	<Min y="200" x="100" />
+	<Max y="200" x="100" />
+</Size>
+<SizeChange>
+	<Min y="100" x="100" />
+	<Max y="200" x="200" />
+</SizeChange>
+<TimeToLive min="0.500" max="1" />
+<Velocity min="0" max="0" />
+<Dampening min="1" max="1" />
+<Rotation min="0" max="0" />
+<RotationSpeed min="0" max="0" />
+</ParticleEffect>

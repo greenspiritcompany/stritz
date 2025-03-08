@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="LiqLockMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/liqlock_c.png"/>
+			</Textures>
+		</Material>
+	</Materials>
+</Scene>

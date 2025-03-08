@@ -1,0 +1,13 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+		<Triggers>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp04" animationName="SpeechBubbleDisappear"/>
+		</Triggers>
+
+		<Animate target="Kimmy_group" time="0">
+			<Show/>
+		</Animate>
+	</Timeline>
+</Timelines>

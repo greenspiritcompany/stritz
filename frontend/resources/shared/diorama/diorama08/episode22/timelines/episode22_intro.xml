@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="6.0">
+		<Triggers>
+
+      <!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+      <EffectTrigger name="character_bubblegum_monster" time="0.0"/>
+      
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp22.0"/>
+			<AnimationTrigger time="0.5" targetName="SpeechBubbleEp22" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp22" animationName="SpeechBubbleDisappear"/>
+			<AnimationTrigger time="0.0" targetName="CharacterEp22" animationName="Talk" crossFade="0.5"/>
+			<AnimationTrigger time="3.0" targetName="CharacterEp22" animationName="Idle" crossFade="0.6"/>
+
+            <AnimationTrigger time="4.5" targetName="spotlight_ceiling" animationName="SpeechBubbleAppear"/>
+            <AnimationTrigger time="0.0" targetName="spotlight_ceiling" animationName="SpeechBubbleDisappear"/>
+
+            <AnimationTrigger time="5.4" targetName="spotlight_ceiling" animationName="IdleSpotlight" crossFade="0.6"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

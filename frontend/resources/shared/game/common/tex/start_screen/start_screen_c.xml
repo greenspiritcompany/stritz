@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:be1ab95e48bde71cb6d092facd08e649:28a3be37bedb28d302a3b2ed93f73eda:7899dbaa6206a0b08fc86ca6fc15211e$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="start_screen_c.png" width="1024" height="1024">
+    <sprite n="background_gradient.png" x="1" y="858" w="5" h="165" pX="0.5" pY="0.5"/>
+    <sprite n="background_mountain.png" x="269" y="753" w="72" h="99" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="boat.png" x="269" y="442" w="118" h="309" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="candy_pile.png" x="389" y="709" w="173" h="305" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="cherry_mountain.png" x="1" y="442" w="266" h="414" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="choco_left.png" x="538" y="286" w="234" h="251" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="choco_right.png" x="833" y="1" w="190" h="273" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="cloud_left.png" x="784" y="276" w="237" h="164" pX="0.5" pY="0.5"/>
+    <sprite n="cloud_right.png" x="1" y="286" w="230" h="154" pX="0.5" pY="0.5"/>
+    <sprite n="cloud_top_right.png" x="389" y="432" w="141" h="275" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="cyan_bottle.png" x="180" y="858" w="168" h="156" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="factory.png" x="564" y="696" w="178" h="187" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="green_bottle.png" x="8" y="858" w="170" h="156" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="hill_01.png" x="1" y="1" w="830" h="126" pX="0.5" pY="0.5"/>
+    <sprite n="hill_02.png" x="1" y="129" w="781" h="155" pX="0.5" pY="0.5"/>
+    <sprite n="kimmy.png" x="350" y="286" w="186" h="144" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="kimmy_arm_left.png" x="350" y="753" w="36" h="41" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="kimmy_right_arm.png" x="350" y="796" w="36" h="41" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="orange_bottle.png" x="233" y="286" w="115" h="148" pX="0.5" pY="0.5"/>
+    <sprite n="pin.png" x="350" y="941" w="18" h="18" pX="0.5" pY="0.5"/>
+    <sprite n="tifi.png" x="774" y="442" w="213" h="194" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="tifi_blink_eye_right.png" x="350" y="839" w="34" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="tifi_blink_eyes_left.png" x="350" y="869" w="34" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="tifi_eye_l.png" x="784" y="249" w="40" h="20" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="tifi_eye_r.png" x="350" y="899" w="20" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="tifi_l_arm.png" x="784" y="129" w="43" h="61" pX="0.5" pY="0.5"/>
+    <sprite n="tifi_mouth.png" x="784" y="192" w="42" h="55" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="tifi_r_arm.png" x="664" y="539" w="48" h="42" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="wave.png" x="564" y="885" w="173" h="121" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_bottle.png" x="532" y="539" w="130" h="155" pX="0.5" pY="0.5"/>
+</TextureAtlas>

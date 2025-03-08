@@ -1,0 +1,24 @@
+<ParticleEffect maxParticles="8" space="Local" timeToEmit="0.100" name="FizzSplashBubblesPFX">
+    <CentrifugalForce min="0" max="0"/>
+    <Dampening min="0.900" max="0.900"/>
+    <Emitter emissionRate="0.010" spread="360" angle="0">
+        <EmissionRadius min="20" max="20"/>
+        <SpawnArea width="40" depth="0" height="40"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="150"/>
+    <Rotation min="0" max="0"/>
+    <RotationSpeed min="0" max="0"/>
+    <Size>
+        <Max x="10" y="10"/>
+        <Min x="4" y="4"/>
+    </Size>
+    <SizeChange>
+        <Max x="-10" y="-10"/>
+        <Min x="-10" y="-10"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/fizz_bg_particle.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive min="0.200" max="0.400"/>
+    <Velocity min="100" max="160"/>
+</ParticleEffect>

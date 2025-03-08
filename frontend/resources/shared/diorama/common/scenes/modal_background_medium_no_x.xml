@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="ModalBackground">
+		<Translation x="0" y="0" z="0" />
+		<Panel filename="shared/diorama/common/tex/gui_elements/inner_modal_no_x.png" vertexColors="false">
+			<Insets bottom="95" left="102" right="102" top="98" />
+			<Size width="574" height="672" />
+			<Pivot anchor="center" />
+		</Panel>
+		<SceneObject name="Border">
+			<SceneObject name="TopLeft">
+				<Translation x="-256" y="-302" z="-1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/frame_corner_upleft.png" vertexColors="false">
+					<Pivot anchor="right" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="TopRight">
+				<Translation x="256" y="-302" z="-1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/frame_corner_upright.png" vertexColors="false">
+					<Pivot anchor="left" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Top">
+				<Translation y="-302" z="-1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/frame_up.png" wrap="repeat" vertexColors="false">
+					<Rectangle maxX="512" maxY="64" minX="0" minY="2" />
+					<Pivot anchor="center" y="-1" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Left">
+				<Translation x="-256" y="18" z="-1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/frame_left.png" wrap="repeat" vertexColors="false">
+					<Rectangle maxX="64" maxY="576" minX="2" minY="0" />
+					<Pivot anchor="right" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Right">
+				<Translation x="256" y="18" z="-1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/frame_right.png" wrap="repeat" vertexColors="false">
+					<Rectangle maxX="62" maxY="576" minX="0" minY="0" />
+					<Pivot anchor="left" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="BottomLeft">
+				<Translation x="-256" y="338" z="-1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/frame_corner_downleft.png" vertexColors="false">
+					<Pivot anchor="right" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="BottomRight">
+				<Translation x="256" y="338" z="-1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/frame_corner_downright.png" vertexColors="false">
+					<Pivot anchor="left" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="Bottom">
+				<Translation y="338" z="-1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/frame_down.png" wrap="repeat" vertexColors="false">
+					<Rectangle maxX="512" maxY="62" minX="0" minY="0" />
+					<Pivot anchor="center" y="1" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Size>
+				<Width percentage="100" max="640" />
+				<Height percentage="95" max="706" />
+				<OriginalSize width="640" height="706" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

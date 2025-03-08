@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="4" space="Local" timeToEmit="2" name="GreenCandyEaten">
+    <Dampening max="0.900" min="0.900"/>
+    <DirectionalForce x="0" y="1000"/>
+    <Emitter emissionRate="0.030" spread="200" angle="90">
+        <SpawnArea width="55" depth="0" height="2"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="1000" min="-1000"/>
+    <Size>
+        <Max x="40" y="40"/>
+        <Min x="10" y="10"/>
+    </Size>
+    <SizeChange>
+        <Max x="-40" y="-40"/>
+        <Min x="32" y="32"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/green_piece.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.300" min="0.300"/>
+    <Velocity max="300" min="200"/>
+</ParticleEffect>

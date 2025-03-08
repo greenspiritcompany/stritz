@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../../../tools/dtd/scene.dtd">
+<Scene>
+	<SceneObject name="IconHolder" class="Button">
+		<Animation name="OnAppear" animationData="OnAppearGrow" loopCount="0" />
+		<Animation name="OnDisappear" animationData="OnDisappearScale" loopCount="0" />
+		<Animation name="Idle" animationData="Idle" />
+	</SceneObject>
+</Scene>

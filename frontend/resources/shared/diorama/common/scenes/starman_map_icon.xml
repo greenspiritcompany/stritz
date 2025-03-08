@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="HQMapView">
+		<Translation z="520" />
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="0" />
+			</Translation>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Landscape">
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="1024" width="570" />
+				<Width percentage="80" />
+			</Size>
+		</LayoutConfiguration>
+		<SceneObject class="Button" name="HeroQuestButton">
+			<Translation x="92.804" y="278.731" z="0" />
+			<Animation startTime="0.100" loopCount="0" animationData="OnAppearGrow" name="OnAppear" />
+			<Animation loopCount="0" animationData="OnDisappearScale" name="OnDisappear" />
+			<Scale x="1" y="1" z="1" />
+			<Rotation x="0" y="0" z="0" />
+			<SceneObject name="Active">
+				<Panel filename="shared/liveops/hero_quest/tex/kgf_icon_orange_fill.png" vertexColors="false">
+					<Pivot anchor="center" />
+					<Insets left="30" right="30" bottom="0" top="0" />
+					<Size width="210" />
+				</Panel>
+				<Translation x="29.099" y="67.715" z="0" />
+				<Scale x="1.025" y="1.025" z="1" />
+				<SceneObject name="RemainingTime">
+					<Translation x="0.185" y="31.865" z="1" />
+					<Text maxHeight="30" alignment="center" font="Banana" verticalAlignment="visualCenter" overflowBehaviour="fit" maxWidth="160" canBreakWords="false" allowWordWrapping="false">
+						<Color r="104" g="85" b="69" a="255" />
+						<Shadow enabled="true">
+							<Color a="255" r="255" b="255" g="255" />
+							<Offset x="0" z="1" />
+						</Shadow>
+						<TextString>0</TextString>
+						<Size x="16" y="16" />
+					</Text>
+				</SceneObject>
+				<SceneObject name="HighscoreText">
+					<Text alignment="center" font="Banana" key="event.heroquest.starman.mapicon.highscore">
+						<Shadow enabled="true">
+							<Offset x="0" />
+							<Color r="218" g="123" b="22" a="255" />
+						</Shadow>
+						<Size x="16" y="16" />
+					</Text>
+					<Translation x="-1.091" y="6.055" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Loading" editorEntityId="26">
+				<Panel filename="shared/liveops/hero_quest/tex/starman_icon_purple_fill.png" vertexColors="false">
+					<Pivot anchor="center" />
+					<Insets left="30" right="30" bottom="0" top="0" />
+					<Size width="206" />
+				</Panel>
+				<Translation x="29.481" y="67.925" z="0" />
+				<Scale x="1.018" y="1.018" z="1" />
+				<SceneObject name="PinkFill">
+					<Translation x="-103" y="-18.136" z="0" />
+					<Panel vertexColors="false">
+						<RemoveQuads topLeft="true" top="true" topRight="true" center="true" left="true" bottomLeft="true" bottom="true" bottomRight="true" right="true" />
+						<VertexColor r="255" g="255" b="255" a="255" />
+						<Size width="160" height="36" />
+						<Insets bottom="0" left="0" right="0" top="0" />
+					</Panel>
+					<Scissor useObjectBoundingBox="true" />
+					<SceneObject name="PinkFillCounterScale">
+						<Translation z="0" />
+						<Scale z="1" />
+						<Rotation x="0" y="0" z="0" />
+						<SceneObject name="PinkFill">
+							<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/starman_icon_striped_fill.png" vertexColors="false" wrap="repeat">
+								<Rectangle minX="16" maxX="160" minY="32" maxY="64" />
+							</Sprite>
+							<Translation x="0" y="0" z="0" />
+							<Scale x="1.110" y="1.120" z="1" />
+							<Rotation x="0" y="0" z="0" />
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject editorEntityId="27" name="Glow">
+					<Panel filename="shared/liveops/hero_quest/tex/kgf_icon_frame_shine.png" vertexColors="false">
+						<Pivot anchor="center" />
+						<Insets left="10" right="10" bottom="0" top="0" />
+						<Size width="176" />
+					</Panel>
+					<Translation x="-0.001" y="-8.262" z="0" />
+				</SceneObject>
+				<SceneObject name="FishIcon">
+					<Sprite filename="shared/diorama/common/tex/gui_elements/star.png" vertexColors="false" />
+					<Translation x="-67" y="17" z="1" />
+					<Rotation x="0" y="0" />
+					<Scale x="0.270" y="0.270" z="1" />
+				</SceneObject>
+				<SceneObject name="CollectedFish">
+					<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" maxHeight="30" maxWidth="160" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="90" g="31" b="140" a="255" />
+						<Shadow enabled="true">
+							<Color a="255" b="255" g="255" r="255" />
+							<Offset x="0" z="1" />
+						</Shadow>
+						<TextString>15/30</TextString>
+						<Size x="16" y="16" />
+					</Text>
+					<Translation x="0.185" y="31.865" z="1" />
+				</SceneObject>
+				<SceneObject name="GiftBox">
+					<Sprite filename="shared/liveops/hero_quest/tex/kgf_icon_giftbox.png" vertexColors="false">
+						<Pivot anchor="center" />
+					</Sprite>
+					<Translation x="75.982" y="3.855" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="KimmyImage">
+				<Translation x="-72.012" y="-67.798" z="0" />
+				<SceneObject name="icon">
+					<Sprite filename="shared/liveops/hero_quest/tex/starman_diorama_icon.png" vertexColors="false" />
+					<Translation y="10" />
+				</SceneObject>
+				<SceneObject name="LoaderFrame">
+					<Panel filename="shared/liveops/hero_quest/tex/kgf_icon_frame.png" vertexColors="false">
+						<Pivot anchor="center" />
+						<Insets left="46" right="46" bottom="0" top="0" />
+						<Size width="234" />
+					</Panel>
+					<Translation x="101.592" y="153.452" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="Leagues">
+				<Scale x="0.600" y="0.600" z="1" />
+				<Translation x="33" y="-17" z="0" />
+				<Rotation x="0" y="0" z="0" />
+				<SceneObject name="League0" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_0.png" vertexColors="false" />
+					<Translation x="76.495" y="-21.833" z="0" />
+				</SceneObject>
+				<SceneObject name="League1" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_1.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League2" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_2.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League3" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_3.png" vertexColors="false" />
+					<Translation x="80.982" y="-19.590" z="0" />
+				</SceneObject>
+				<SceneObject name="League4" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_4.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League5" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_5.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League6" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_6.png" vertexColors="false" />
+					<Translation x="80.982" y="-23.897" z="0" />
+				</SceneObject>
+				<SceneObject name="League7" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_7.png" vertexColors="false" />
+					<Translation x="80.533" y="-24.794" z="0" />
+				</SceneObject>
+				<SceneObject name="League8" visibility="never">
+					<Scale z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/small_shield_8.png" vertexColors="false" />
+					<Translation x="81.025" y="-24.392" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

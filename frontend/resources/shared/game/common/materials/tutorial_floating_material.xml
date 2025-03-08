@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+
+		<Material name="BottleMat">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Shader program="TextureColor"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bottle_red_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="RedCandyMat">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Shader program="TextureColor"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/red_c.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="YellowCandyMat">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Shader program="TextureColor"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/yellow_c.png"/>
+			</Textures>
+		</Material>
+
+	</Materials>
+</Scene>

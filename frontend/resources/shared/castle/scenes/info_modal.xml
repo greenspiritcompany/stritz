@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<SceneObject __visibility="0" name="InfoModal">
+		<SceneObject __visibility="0" name="Portrait">
+			<Translation y="-40" z="400" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" startDelay="0.050" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject __visibility="0" name="CrownIsYours">
+				<Translation x="-7" y="-323" />
+				<Text alignment="center" font="Banana" key="kotc.title" verticalAlignment="visualCenter">
+					<Color r="165" g="62" b="128" a="255" />
+					<Shadow enabled="true">
+						<Color r="255" g="255" b="255" a="255" />
+						<Offset x="0" y="3" z="1" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject __visibility="0" class="Button" name="OkButton">
+				<Translation y="240" />
+				<Scale x="1.200" y="1.200" z="1.200" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="390" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject __visibility="0" name="EarnCrownText">
+					<Translation x="2.981" y="-7" />
+					<Text alignment="center" font="Banana" key="kotc.info.button" maxHeight="50" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="255" g="255" b="255" a="225" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="26" y="26" />
+						<TextString>Collect reward</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject __visibility="0" name="InfoText">
+				<Translation x="-1.326" y="83.452" z="2" />
+				<Text alignment="center" font="Typewriter" key="kotc.info.description" maxHeight="170" maxWidth="500" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color r="131" g="102" b="51" a="255" />
+					<Outline enabled="true">
+						<Color r="0" g="0" b="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color r="255" g="255" b="255" a="255" />
+					</Shadow>
+					<Size x="18" y="18" />
+					<TextString>This is your reward!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject __visibility="0" name="Chest">
+				<Translation x="-65.847" y="-253" />
+				<Sprite filename="shared/castle/tex/reward_chest.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="BubblegumTrollHappy">
+				<Translation x="-212.853" y="-272.971" />
+				<Sprite filename="shared/castle/tex/happy_monster.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="TimeGroup">
+				<Translation x="1.043" y="-55.645" />
+				<SceneObject __visibility="0" name="TimeBox">
+					<Translation y="-31" />
+					<SceneObject __visibility="0">
+						<Translation x="-254.956" y="10.437" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/timeleft_box_left.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject __visibility="0">
+						<Translation x="-190.956" y="10.437" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/timeleft_box_middle.png" wrap="repeat" vertexColors="false">
+							<Rectangle maxX="384" maxY="64" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject __visibility="0">
+						<Translation x="193.044" y="10.437" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/timeleft_box_right.png" vertexColors="false" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="RemainingTime">
+					<Translation y="21" z="1" />
+					<Text alignment="center" font="Banana">
+						<Color r="143" g="20" b="135" a="255" />
+						<Size x="24" y="24" />
+						<TextString>Ends in: 2 days</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<SceneObject __visibility="0" name="Landscape">
+			<Translation y="40" z="510" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" startDelay="0.050" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject __visibility="0" name="CrownIsYours">
+				<Translation x="-7" y="-323" />
+				<Text alignment="center" font="Banana" key="kotc.title" verticalAlignment="visualCenter">
+					<Color r="165" g="62" b="128" a="255" />
+					<Shadow enabled="true">
+						<Color r="255" g="255" b="255" a="255" />
+						<Offset x="0" y="3" z="1" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject __visibility="0" class="Button" name="OkButton">
+				<Translation y="240" />
+				<Scale x="1.200" y="1.200" z="1.200" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="390" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject __visibility="0" name="EarnCrownText">
+					<Translation x="2.981" y="-7" />
+					<Text alignment="center" font="Banana" key="kotc.info.button" maxHeight="50" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="255" g="255" b="255" a="225" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="26" y="26" />
+						<TextString>Collect reward</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject __visibility="0" name="InfoText">
+				<Translation x="0.607" y="83.452" z="2" />
+				<Text alignment="center" font="Typewriter" key="kotc.info.description" maxHeight="170" maxWidth="500" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Color r="131" g="102" b="51" a="255" />
+					<Outline enabled="true">
+						<Color r="0" g="0" b="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color r="255" g="255" b="255" a="255" />
+					</Shadow>
+					<Size x="18" y="18" />
+					<TextString>This is your reward!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject __visibility="0" name="Chest">
+				<Translation x="-65.847" y="-253" />
+				<Sprite filename="shared/castle/tex/reward_chest.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="BubblegumTrollHappy">
+				<Translation x="-212.853" y="-272.971" />
+				<Sprite filename="shared/castle/tex/happy_monster.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject __visibility="0" name="TimeGroup">
+				<Translation x="1.043" y="-55.645" />
+				<SceneObject __visibility="0" name="TimeBox">
+					<Translation y="-31" />
+					<SceneObject __visibility="0">
+						<Translation x="-254.956" y="10.437" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/timeleft_box_left.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject __visibility="0">
+						<Translation x="-190.956" y="10.437" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/repeat/timeleft_box_middle.png" wrap="repeat" vertexColors="false">
+							<Rectangle maxX="384" maxY="64" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject __visibility="0">
+						<Translation x="193.044" y="10.437" z="0" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/timeleft_box_right.png" vertexColors="false" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="RemainingTime">
+					<Translation y="21" z="1" />
+					<Text alignment="center" font="Banana" key="Ends in: 2 days">
+						<Color r="143" g="20" b="135" a="255" />
+						<Size x="24" y="24" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<OriginalSize height="1024" width="684" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

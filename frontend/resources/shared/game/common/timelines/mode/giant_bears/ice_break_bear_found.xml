@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="1.5">
+		<Animate target="BreakingIce">
+			<Show/>
+			<Hide time="0.5"/>
+		</Animate>
+		<Triggers>
+			<EffectTrigger name="IceTileBreak" time="0.0">
+				<Offset z="60"/>
+			</EffectTrigger>
+			<EffectTrigger name="BearFoundEFQ" followTarget="" time="0.0">
+				<Offset z="60"/>
+			</EffectTrigger>
+			<AnimationTrigger targetName="BreakingIce" animationName="Break" time="0.0"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

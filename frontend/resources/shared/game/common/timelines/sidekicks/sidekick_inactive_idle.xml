@@ -1,0 +1,23 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../../tools/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="2.0">
+
+        <Animate target="Active" time="0.0">
+            <Hide/>
+        </Animate>
+
+        <Animate target="ThoughtBubble" time="0.0">
+            <Hide/>
+        </Animate>
+
+		<Animate target="Inactive" time="0.0">
+            <Show/>
+        </Animate>
+
+
+		<Triggers>
+            <AnimationTrigger time="0.0" targetName="Inactive" animationName="idle"/>
+			<!--<EffectTrigger name="ProgressTrailEFQ" targetName="ProgressModel" targetBoneIndex="9"/>-->
+		</Triggers>
+	</Timeline>
+</Timelines>

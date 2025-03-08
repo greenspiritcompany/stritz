@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout>
+	<Object sceneObject="ABTestGroup">
+		<Default>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="1024" width="768" />
+			</Size>
+		</Default>
+		<Landscape>
+			<Translation>
+				<X percentage="-35" />
+				<Y percentage="-45" />
+			</Translation>
+		</Landscape>
+		<Portrait>
+			<Translation>
+				<X percentage="-28" />
+				<Y percentage="-45" />
+			</Translation>
+		</Portrait>
+	</Object>
+	<Object sceneObject="ConnectButton">
+		<Default>
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="21" />
+			</Translation>
+		</Default>
+		<Landscape>
+			<Translation>
+				<X percentage="18" />
+				<Y percentage="14" />
+			</Translation>
+			<Size>
+				<Height max="105" percentage="18" />
+			</Size>
+		</Landscape>
+	</Object>
+	<Object sceneObject="DebugButtons">
+		<Default>
+			<Translation>
+				<X percentage="40" />
+				<Y percentage="-43" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="1024" width="768" />
+			</Size>
+		</Default>
+	</Object>
+	<Object sceneObject="Group">
+		<Landscape visible="false" />
+	</Object>
+	<Object sceneObject="KingLogo">
+		<Landscape>
+			<Translation>
+				<X percentage="40" />
+				<Y percentage="49" />
+			</Translation>
+			<Size>
+				<Height percentage="16" />
+				<Width percentage="17" />
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Translation>
+				<X percentage="40" />
+				<Y percentage="49.200" />
+			</Translation>
+			<Size>
+				<Height percentage="8" />
+				<Width percentage="26" />
+			</Size>
+		</Portrait>
+	</Object>
+	<Object sceneObject="Logo">
+		<Landscape>
+			<Translation>
+				<X percentage="-24" />
+				<Y percentage="-16" />
+			</Translation>
+			<Size>
+				<Width percentage="44" />
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Translation>
+				<Y percentage="-28" />
+			</Translation>
+			<Size>
+				<Height percentage="55" />
+			</Size>
+		</Portrait>
+	</Object>
+	<Object sceneObject="LogoutButton">
+		<Default>
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="21" />
+			</Translation>
+		</Default>
+		<Landscape>
+			<Translation>
+				<X percentage="18" />
+				<Y percentage="14" />
+			</Translation>
+			<Size>
+				<Height max="100" percentage="16" />
+			</Size>
+		</Landscape>
+	</Object>
+	<Object sceneObject="MainMenu">
+		<Default>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</Default>
+	</Object>
+	<Object sceneObject="MainMenuContent">
+		<Landscape>
+			<Size>
+				<Height max="1024" percentage="100" />
+				<OriginalSize height="640" width="960" />
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Size>
+				<Height max="960" percentage="100" />
+				<OriginalSize height="960" width="640" />
+			</Size>
+		</Portrait>
+	</Object>
+	<Object sceneObject="PlayButton">
+		<Default>
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="8.200" />
+			</Translation>
+		</Default>
+		<Landscape>
+			<Translation>
+				<X percentage="18" />
+				<Y percentage="-6" />
+			</Translation>
+			<Size>
+				<Height max="130" percentage="22" />
+			</Size>
+		</Landscape>
+	</Object>
+	<Object sceneObject="PushNotifications">
+		<Default>
+			<Translation>
+				<X percentage="-35" />
+				<Y percentage="43.500" />
+			</Translation>
+		</Default>
+		<Portrait>
+			<Translation>
+				<Y percentage="45" />
+				<X percentage="-27" />
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Translation>
+				<X percentage="-35" />
+				<Y percentage="43.500" />
+			</Translation>
+		</Landscape>
+	</Object>
+	<Object sceneObject="VersionText">
+		<Default>
+			<Translation>
+				<X percentage="-49" />
+				<Y percentage="47" />
+			</Translation>
+		</Default>
+	</Object>
+	<Object sceneObject="cloud_right">
+		<Landscape visible="false" />
+		<Portrait visible="true" />
+	</Object>
+	<Object sceneObject="cloud_top_right_layout">
+		<Landscape>
+			<Translation>
+				<Y percentage="65" />
+			</Translation>
+		</Landscape>
+		<Portrait>
+			<Translation>
+				<Y percentage="0" />
+			</Translation>
+		</Portrait>
+		<Default>
+			<Translation>
+				<X percentage="0" />
+			</Translation>
+		</Default>
+	</Object>
+	<Object sceneObject="everything_group">
+		<Default>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="100" />
+			</Translation>
+		</Default>
+		<Landscape>
+			<Size>
+				<Width percentage="100" />
+				<OriginalSize width="974" height="532" />
+				<Height percentage="100" />
+			</Size>
+		</Landscape>
+		<Portrait>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="947" width="595" />
+				<Width percentage="100" />
+			</Size>
+		</Portrait>
+	</Object>
+</Layout>

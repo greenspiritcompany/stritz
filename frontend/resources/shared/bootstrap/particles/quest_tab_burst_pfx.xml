@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="20" space="Local" timeToEmit="1.400" name="quest_tab_burst_PFX">
+<Dampening min="0.920" max="1" />
+<DirectionalForce x="0" y="50" />
+<Emitter emissionRate="0.025" angle="180" spread="25">
+	<SpawnArea width="5" depth="0" height="25" />
+</Emitter>
+<EndColor b="255" r="255" g="255" a="0" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="360" min="-360" />
+<Size>
+	<Max x="35" y="35" />
+	<Min x="15" y="15" />
+</Size>
+<SizeChange>
+	<Max x="0" y="0" />
+	<Min x="0" y="0" />
+</SizeChange>
+<StartColor b="255" r="255" g="255" a="255" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/glowing_star.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive min="0.450" max="0.950" />
+<Velocity max="500" min="500" />
+</ParticleEffect>

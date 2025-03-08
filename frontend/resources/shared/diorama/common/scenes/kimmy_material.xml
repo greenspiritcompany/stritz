@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+    <Materials>
+        <Material name="KimmyMaterialAlpha">
+            <Cull enabled="true" face="back"/>
+            <Depth writeMask="false" enabled="true"/>
+            <Blend enabled="true"/>
+            <Textures>
+                <Texture filename="shared/diorama/common/tex/kimmy/kimmy_diorama.png"/>
+            </Textures>
+        </Material>
+    </Materials>
+</Scene>

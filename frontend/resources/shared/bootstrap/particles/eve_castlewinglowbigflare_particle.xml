@@ -1,0 +1,24 @@
+<ParticleEffect maxParticles="1" timeToEmit="60" name="Eve_CastleWinGlowBigFlare_particle" space="Local">
+<Dampening max="0.800" min="0.800" />
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0.100" angle="0" spread="0">
+	<SpawnArea width="0" height="0" depth="0" />
+</Emitter>
+<EndColor r="88" g="239" b="255" a="200" />
+<Rotation min="-180" max="-180" />
+<Size>
+	<Max x="270" y="270" />
+	<Min x="270" y="270" />
+</Size>
+<SizeChange>
+	<Max x="0" y="0" />
+	<Min x="0" y="0" />
+</SizeChange>
+<StartColor r="88" g="239" b="255" a="200" />
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/eve_pfx.png" blend="Add" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<CentrifugalForce max="0" min="0" />
+<Velocity min="0" max="0" />
+<TimeToLive min="1" max="1" />
+<RotationSpeed min="0" max="0" />
+</ParticleEffect>

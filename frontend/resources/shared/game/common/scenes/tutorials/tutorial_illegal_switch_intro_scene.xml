@@ -1,0 +1,371 @@
+<Scene>
+	<Import filename="shared/game/common/materials/illegal_switch_hand_material.xml"/>
+	<Import filename="shared/game/common/materials/tutorial_match_three_material.xml"/>
+	<Material name="Episode1MaterialAlpha">
+		<Texture filename="shared/diorama/common/tex/yeti_tutorial.png"/>
+		<Blend enabled="true"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+	<Material name="GlowyMat">
+		<Texture filename="shared/game/common/tex/gamegrid/glowy_tile.png"/>
+		<Blend enabled="true" blendFuncDestinationFactor="One"/>
+		<Depth enabled="true" writeMask="false"/>
+	</Material>
+	<SceneObject name="Scene">
+		<SceneObject __visibility="3" name="TutorialCharacterLayout">
+			<SceneObject name="TutorialCharacterTransition">
+				<Animation animationData="SlideInFromLeft" name="OnAppear" loopCount="0"/>
+				<Animation animationData="SlideOutToLeft" name="OnDisappear" loopCount="0"/>
+				<SceneObject layerFlags="256" name="TutorialCharacter">
+					<Translation y="-85" z="500"/>
+					<Scale y="-1"/>
+					<Model filename="shared/diorama/common/models/yeti/yeti_tutorial.ffm">
+						<Animation filename="shared/diorama/common/models/yeti/yeti_tutorial.ffa" play="false" speed="1" name="idle" loopCount="0"/>
+					</Model>
+					<Material parentMaterial="Episode1MaterialAlpha"/>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="8"/>
+					<Y percentage="103"/>
+				</Translation>
+				<Size>
+					<Height percentage="30"/>
+					<OriginalSize height="200" width="300"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="7"/>
+					<Y percentage="103"/>
+				</Translation>
+				<Size>
+					<Height percentage="50"/>
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+		<SceneObject layerFlags="256" name="Tutorial" visibility="always">
+			<Animation animationData="SlideInFromRight" play="true" name="OnAppear" loopCount="0"/>
+			<Animation animationData="SlideOutToRight" name="OnDisappear" loopCount="0"/>
+			<SceneObject name="Offset">
+				<Translation y="-130" z="500"/>
+				<SceneObject name="PlayButton" class="Button">
+					<Translation x="0" y="340" z="2"/>
+					<Scale x="0.800" y="0.800" z="0.800"/>
+					<Animation animationData="Idle" play="true" layer="1" name="Idle"/>
+					<Animation animationData="OnPress" name="OnPress" loopCount="0"/>
+					<Animation animationData="OnRelease" name="OnRelease" loopCount="0"/>
+					<Panel vertexColors="false" filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+						<Insets bottom="0" left="128" right="128" top="0"/>
+						<Pivot anchor="center"/>
+						<Size width="280" height="127"/>
+					</Panel>
+					<SceneObject name="PlayButtonText">
+						<Translation x="0" y="5"/>
+						<Text key="common.play" alignment="center" font="Banana">
+							<Color b="255" a="225" g="255" r="255"/>
+							<Shadow enabled="true">
+								<Color b="0" a="25" g="0" r="0"/>
+								<Offset x="0" y="9"/>
+							</Shadow>
+							<Size x="30" y="30"/>
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="BgPanels">
+					<SceneObject name="Upper">
+						<Panel vertexColors="false" filename="shared/game/common/tex/hud/tutorial_text_bg_panel.png">
+							<Insets bottom="36" left="36" right="36" top="36"/>
+							<Pivot y="-3" anchor="center"/>
+							<Size width="320" height="300"/>
+						</Panel>
+					</SceneObject>
+					<SceneObject name="Lower">
+						<Translation y="238"/>
+						<Panel vertexColors="false" filename="shared/game/common/tex/hud/tutorial_text_bg_panel.png">
+							<Insets bottom="36" left="36" right="36" top="36"/>
+							<Pivot y="-50" anchor="center"/>
+							<Size width="320" height="230"/>
+						</Panel>
+						<SceneObject name="TutorialText">
+							<Translation z="1"/>
+							<Text key="stritz.product.description.33003" alignment="center" maxWidth="280" font="Typewriter" verticalAlignment="center">
+								<Color b="28" a="255" g="82" r="124"/>
+								<Size x="16" y="16"/>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject __visibility="3" name="Hand">
+					<Translation x="0" y="62" z="200"/>
+					<Scale y="-1"/>
+					<Rotation x="109" y="1" z="180"/>
+					<Model filename="shared/game/common/models/boosters/illegal_switch_hand/illegal_switch_hand.ffm" skinNormals="true">
+						<Animation filename="shared/game/common/models/boosters/illegal_switch_hand/illegal_switch_anim.ffa" speed="1" name="Grab" loopCount="0"/>
+						<Animation filename="shared/game/common/models/boosters/illegal_switch_hand/illegal_switch_idle.ffa" play="true" speed="1" name="Idle" loopCount="-1"/>
+					</Model>
+					<Material parentMaterial="IllegalSwitchHandMaterial"/>
+				</SceneObject>
+				<SceneObject name="HandIcon">
+					<Translation x="-1" y="-3" z="1"/>
+					<Scale x="1.367" y="1.367"/>
+					<Animation animationData="Idle" play="true" layer="1" name="Idle"/>
+					<Animation animationData="OnPress" name="OnPress" loopCount="0"/>
+					<Animation animationData="OnRelease" name="OnRelease" loopCount="0"/>
+					<Sprite vertexColors="false" filename="shared/game/common/tex/hud/btn_green.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<SceneObject name="HandIcon2">
+						<Translation x="0" y="-4.069"/>
+						<Scale x="0.844" y="0.844"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/icon_illegal_switch.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="ParticleHelper">
+					<!--<Translation x="-7" y="8" z="0"/>-->
+					<Scale x="1.070" y="1.070"/>
+				</SceneObject>
+				<SceneObject name="CandyGlow">
+					<SceneObject __visibility="0">
+						<Translation z="3"/>
+						<SceneObject name="Glow1">
+							<Translation y="-76" z="150"/>
+							<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/glowy_tile.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Material parentMaterial="GlowyMat"/>
+						</SceneObject>
+						<SceneObject name="Glow2">
+							<Translation x="0" z="150"/>
+							<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/glowy_tile.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Material parentMaterial="GlowyMat"/>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject __visibility="3" name="GameGrid">
+					<SceneObject>
+						<SceneObject name="Candy1">
+							<Translation x="-76.710" y="-75" z="90"/>
+							<Sprite vertexColors="false" normals="true" filename="shared/game/common/tex/candy/green_c.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Material parentMaterial="OrangeCandyMat"/>
+						</SceneObject>
+						<SceneObject name="Candy2">
+							<Sprite vertexColors="false" normals="true" filename="shared/game/common/tex/candy/green_c.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Material parentMaterial="OrangeCandyMat"/>
+							<Translation x="74.984" y="-75" z="90"/>
+						</SceneObject>
+						<SceneObject name="Candy3">
+							<Translation y="75" z="90"/>
+							<Sprite vertexColors="false" normals="true" filename="shared/game/common/tex/candy/green_wrapped_c.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Material parentMaterial="OrangeCandyMat"/>
+						</SceneObject>
+						<SceneObject>
+							<SceneObject name="Candy4">
+								<Translation x="-75" z="90"/>
+								<Sprite vertexColors="false" normals="true" filename="shared/game/common/tex/candy/orange_c.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+							<SceneObject name="Candy5">
+								<Sprite vertexColors="false" normals="true" filename="shared/game/common/tex/candy/cyan_c.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+								<Translation x="-74" y="73" z="90"/>
+							</SceneObject>
+							<SceneObject name="Candy6">
+								<Translation x="74" y="-3" z="90"/>
+								<Sprite vertexColors="false" normals="true" filename="shared/game/common/tex/candy/cyan_c.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<SceneObject name="Candy7">
+								<Translation x="75" y="75" z="90"/>
+								<Sprite vertexColors="false" normals="true" filename="shared/game/common/tex/candy/orange_c.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+							<SceneObject name="Candy8">
+								<Sprite vertexColors="false" normals="true" filename="shared/game/common/tex/candy/red_c.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+								<Translation x="3" y="2.587" z="90"/>
+							</SceneObject>
+							<SceneObject name="Candy9">
+								<Translation y="-76" z="90"/>
+								<Sprite vertexColors="false" normals="true" filename="shared/game/common/tex/candy/cyan_striped_h_c.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Material parentMaterial="OrangeCandyMat"/>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="GridGFX">
+						<SceneObject>
+							<Translation y="-111"/>
+							<SceneObject name="Grid1">
+								<Translation x="-111"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_small_000.png">
+									<Pivot anchor="bottomRight"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid2">
+								<Translation x="0"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_small_004.png">
+									<Pivot anchor="bottom"/>
+									<Size width="222" height="37"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid3">
+								<Translation x="111"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_small_001.png">
+									<Pivot anchor="bottomLeft"/>
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="-74"/>
+							<SceneObject name="Grid4">
+								<Translation x="-74"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid5">
+								<Translation x="0"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_big_001.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid6">
+								<Translation x="74"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="0"/>
+							<SceneObject name="Grid7">
+								<Translation x="-111"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_small_021.png">
+									<Pivot anchor="right"/>
+									<Size width="37" height="222"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid8">
+								<Translation x="-74"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_big_001.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid9">
+								<Translation x="0" y="0" z="0"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid10">
+								<Translation x="74"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_big_001.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid11">
+								<Translation x="111"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_small_005.png">
+									<Pivot anchor="left"/>
+									<Size width="37" height="222"/>
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="74"/>
+							<SceneObject name="Grid12">
+								<Translation x="-74"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid13">
+								<Translation x="0"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_big_001.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid14">
+								<Translation x="74"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="111"/>
+							<SceneObject name="Grid15">
+								<Translation x="-111"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_small_016.png">
+									<Pivot anchor="topRight"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid16">
+								<Translation x="0"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_small_020.png">
+									<Pivot anchor="top"/>
+									<Size width="222" height="37"/>
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="Grid17">
+								<Translation x="111"/>
+								<Sprite vertexColors="false" filename="shared/game/common/tex/gamegrid/gb_small_017.png">
+									<Pivot anchor="topLeft"/>
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Size>
+					<OriginalSize height="550" width="300"/>
+					<Width percentage="60"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="60"/>
+					<Y percentage="50"/>
+				</Translation>
+				<Size>
+					<Height percentage="90"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="50"/>
+					<Y percentage="40"/>
+				</Translation>
+				<Size>
+					<Width percentage="50"/>
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+	</SceneObject>
+</Scene>

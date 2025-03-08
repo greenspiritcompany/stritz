@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Layout SYSTEM "../dtd/layout.dtd">
+<Layout>
+	<Object sceneObject="BoosterCount">
+		<Portrait>
+			<Translation>
+				<X percentage="42.0"/>
+				<Y percentage="50.0"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Translation>
+				<X percentage="42.0"/>
+				<Y percentage="50.0"/>
+			</Translation>
+		</Landscape>
+	</Object>
+
+	<Object sceneObject="BoosterCheckBox">
+		<Portrait>
+			<Translation>
+				<Y percentage="35.0"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Translation>
+				<Y percentage="35.0"/>
+			</Translation>
+		</Landscape>
+	</Object>
+
+	<Object sceneObject="BoosterCheckMark">
+		<Portrait>
+			<Translation>
+				<Y percentage="-15.0"/>
+				<X percentage="8.0"/>
+			</Translation>
+		</Portrait>
+		<Landscape>
+			<Translation>
+				<Y percentage="-15.0"/>
+				<X percentage="8.0"/>
+			</Translation>
+		</Landscape>
+	</Object>
+</Layout>

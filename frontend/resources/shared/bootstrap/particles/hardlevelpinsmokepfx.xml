@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="10" space="Local" timeToEmit="60" name="HardLevelPinSmokePFX">
+    <Dampening max="0.200" min="0.200"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0.200" spread="360" angle="0">
+        <SpawnArea width="0" depth="0" height="0"/>
+    </Emitter>
+    <EndColor b="239" r="255" g="181" a="255"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="50" min="-50"/>
+    <Size>
+        <Max x="100" y="100"/>
+        <Min x="100" y="100"/>
+    </Size>
+    <SizeChange>
+        <Max x="-40" y="-40"/>
+        <Min x="-40" y="-40"/>
+    </SizeChange>
+    <StartColor b="249" r="249" g="249" a="10"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/smoke64.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="10" startFrame="0"/>
+    <TimeToLive max="2" min="2"/>
+    <Velocity max="0" min="0"/>
+</ParticleEffect>

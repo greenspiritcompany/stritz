@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../../dtd/scene.dtd">
+<Scene>
+	<Materials>
+		<Material name="floatingNutWinMaterial">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+
+
+			<Textures>
+				<Texture filename="shared/game/common/tex/candy/bear_in_bubble_c.png"/>
+			</Textures>
+		</Material>
+	</Materials>
+
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+
+
+		<SceneObject name="Bear" visibility="always">
+			<Model filename="shared/game/common/models/bear_in_bubble/bear_win.ffm">
+				<Animations>
+					<Animation name="BearJump"
+							   filename="shared/game/common/models/bear_in_bubble/bear_win_jump.ffa"
+							   play="true" loopCount="0"/>
+				</Animations>
+			</Model>
+
+			<Materials>
+				<Material parentMaterial="floatingNutWinMaterial"/>
+			</Materials>
+
+			<Translation x="0" y="0" z="350"/>
+			<Rotation x="0" y="0" z="0"/>
+			<Scale x="2" y="-2" z="2"/>
+		</SceneObject>
+
+
+	</SceneObject>
+</Scene>

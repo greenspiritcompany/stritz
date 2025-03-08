@@ -1,0 +1,18 @@
+
+<Scene>
+	<SceneObject name="Scene" visibility="always">
+		<SceneObject layerFlags="512" name="BreakingIce">
+			<Model filename="shared/game/common/models/giant_bear_ice_tile/ice_break.ffm">
+				<Animation filename="shared/game/common/models/giant_bear_ice_tile/ice_break_anim.ffa" loopCount="0" name="Break"/>
+			</Model>
+			<Material>
+				<Texture filename="shared/game/common/tex/candy/icecube_1_c.png"/>
+				<Blend enabled="true"/>
+				<Light>
+					<Ambient r="13" g="13" b="13" a="255"/>
+					<Diffuse r="77" g="77" b="77" a="255"/>
+				</Light>
+			</Material>
+		</SceneObject>
+	</SceneObject>
+</Scene>

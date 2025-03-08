@@ -1,0 +1,13 @@
+<Layout>
+	<Object sceneObject="FizzySoda">
+		<Default>
+			<Translation>
+				<X percentage="50"/>
+			</Translation>
+			<Size>
+				<OriginalSize width="1024" height="1024"/>
+				<Width percentage="100"/>
+			</Size>
+		</Default>
+	</Object>
+</Layout>

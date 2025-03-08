@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:23597b1021aa0ef1ba5b33a22bc086d5:32926c91fa532af7bb06ed20a3b32061:cb130c491fc38598ac248ee663eaa2c4$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="mobile_client.png" width="256" height="512">
+    <sprite n="frame_corner_downleft_pink.png" x="159" y="176" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_downright_pink.png" x="89" y="201" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_upleft_pink.png" x="2" y="213" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="frame_corner_upright_pink.png" x="157" y="244" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="icon_no.png" x="171" y="2" w="83" h="83" pX="0.5" pY="0.5"/>
+    <sprite n="icon_yes.png" x="171" y="89" w="83" h="83" pX="0.5" pY="0.5"/>
+    <sprite n="phone_happy.png" x="89" y="136" w="66" h="61" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="phone_sad.png" x="2" y="2" w="165" h="130" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="transfer_arrows.png" x="2" y="136" w="83" h="73" pX="0.5" pY="0.5"/>
+</TextureAtlas>

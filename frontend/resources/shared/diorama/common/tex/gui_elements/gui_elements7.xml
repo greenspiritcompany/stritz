@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:c61e1dafa5f27374c2ff15804cbdf4d7:7b33a5699438d8c3b2249ca340bef3ff:7139124c092acc50ba4b9d23edc9851d$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="gui_elements7.png" width="1024" height="1024">
+    <sprite n="5_moves_modal.png" x="740" y="629" w="96" h="69" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="5_moves_pers.png" x="634" y="501" w="114" h="105" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="15_moves_pers.png" x="498" y="602" w="110" h="114" pX="0.5" pY="0.5"/>
+    <sprite n="50_moves_pers.png" x="865" y="185" w="126" h="114" pX="0.5" pY="0.5"/>
+    <sprite n="bonus_15_moves_big.png" x="865" y="418" w="100" h="95" pX="0.5" pY="0.5"/>
+    <sprite n="bonus_50_moves_big.png" x="840" y="517" w="100" h="95" pX="0.5" pY="0.5"/>
+    <sprite n="bonus_colour_bomb.png" x="840" y="616" w="98" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="bonus_colouring_candy.png" x="309" y="794" w="92" h="98" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="bonus_fish.png" x="309" y="896" w="98" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="bonus_fish_x2.png" x="409" y="727" w="98" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="bonus_fish_x3.png" x="511" y="720" w="92" h="98" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="bonus_lollipop_hammer.png" x="411" y="890" w="98" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="bonus_striped.png" x="517" y="822" w="98" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="bonus_striped_wrapped.png" x="612" y="698" w="98" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="bonus_wrapped.png" x="619" y="794" w="92" h="98" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ccs_ccjs_portal_ccjs.png" x="2" y="2" w="504" h="197" pX="0.5" pY="0.5"/>
+    <sprite n="ccs_ccjs_portal_ccs.png" x="2" y="203" w="504" h="197" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_arrow.png" x="113" y="992" w="28" h="17" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_box_bg.png" x="715" y="793" w="94" h="94" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_box_bridge_down.png" x="921" y="949" w="45" h="38" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_box_bridge_left.png" x="984" y="407" w="38" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_box_bridge_right.png" x="247" y="968" w="46" h="38" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="dlc_box_bridge_up.png" x="970" y="949" w="45" h="38" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_box_innersha.png" x="1003" y="517" w="6" h="52" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_day_box.png" x="849" y="303" w="131" h="111" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="dlc_day_box_locked.png" x="501" y="489" w="129" h="109" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="dlc_day_shadow_landsc.png" x="2" y="992" w="107" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_day_shadow_port.png" x="142" y="617" w="26" h="93" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="dlc_header_green.png" x="665" y="433" w="128" h="64" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="dlc_header_pink.png" x="1004" y="2" w="6" h="188" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_header_pink_landsc.png" x="994" y="2" w="6" h="172" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_header_shadow.png" x="865" y="175" w="18" h="6" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="dlc_header_yellow_landsc.png" x="1014" y="2" w="6" h="63" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_header_yellow_port.png" x="157" y="968" w="86" h="6" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="dlc_path.png" x="797" y="433" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_path_dot.png" x="920" y="991" w="16" h="18" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_path_dot_locked.png" x="940" y="991" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_path_locked.png" x="876" y="969" w="40" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="dlc_path_start.png" x="885" y="886" w="32" h="64" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="dlc_stamp_green.png" x="889" y="2" w="101" h="179" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="dlc_stamp_pink.png" x="682" y="175" w="179" h="101" pX="0.5" pY="0.5"/>
+    <sprite n="egp_arrow.png" x="966" y="753" w="43" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="egp_box_1.png" x="142" y="726" w="151" h="82" pX="0.5" pY="0.5"/>
+    <sprite n="egp_box_2.png" x="510" y="390" w="151" h="95" pX="0.5" pY="0.5"/>
+    <sprite n="egp_special_offer_box.png" x="807" y="969" w="65" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="et_bank_bottom_shadow_landsc.png" x="969" y="418" w="6" h="33" pX="0.5" pY="0.5"/>
+    <sprite n="et_bank_box.png" x="944" y="517" w="55" h="95" pX="0.5" pY="0.5"/>
+    <sprite n="et_bank_topleft_landsc.png" x="921" y="881" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="et_box_blue.png" x="612" y="610" w="124" h="84" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="et_box_pink.png" x="752" y="501" w="84" h="124" pX="0.5" pY="0.5"/>
+    <sprite n="et_frame_blue.png" x="625" y="896" w="87" h="87" pX="0.5" pY="0.5"/>
+    <sprite n="et_frame_bronze.png" x="714" y="702" w="92" h="87" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="et_frame_gold.png" x="716" y="891" w="87" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="et_frame_pink.png" x="904" y="790" w="87" h="87" pX="0.5" pY="0.5"/>
+    <sprite n="et_frame_silver.png" x="813" y="790" w="87" h="92" pX="0.5" pY="0.5"/>
+    <sprite n="et_scorebox_blue.png" x="966" y="700" w="56" h="49" pX="0.5" pY="0.5"/>
+    <sprite n="et_scorebox_bronze.png" x="297" y="727" w="108" h="63" pX="0.5" pY="0.5"/>
+    <sprite n="et_scorebox_gold.png" x="405" y="823" w="108" h="63" pX="0.5" pY="0.5"/>
+    <sprite n="et_scorebox_pink.png" x="969" y="457" w="49" h="56" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="et_scorebox_silver.png" x="513" y="918" w="108" h="63" pX="0.5" pY="0.5"/>
+    <sprite n="et_tilde_sign.png" x="665" y="390" w="8" h="18" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="free_switch_selection.png" x="942" y="616" w="80" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="gumball_machine_icon.png" x="2" y="617" w="136" h="193" pX="0.5" pY="0.5"/>
+    <sprite n="illegal_hand_big.png" x="174" y="404" w="163" h="165" pX="0.5" pY="0.5"/>
+    <sprite n="lollipop_big.png" x="510" y="2" w="168" h="211" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep6.png" x="157" y="812" w="148" h="152" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep47.png" x="340" y="574" w="154" h="149" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep55.png" x="510" y="217" w="163" h="169" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep56.png" x="682" y="2" w="203" h="169" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep57.png" x="174" y="573" w="162" h="149" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep58.png" x="341" y="404" w="156" h="166" pX="0.5" pY="0.5"/>
+    <sprite n="ov_icon_ep59.png" x="677" y="280" w="168" h="149" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="ov_icon_ep60.png" x="2" y="814" w="151" h="174" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="polka_bottom_piece.png" x="810" y="712" w="74" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="polka_middle_piece.png" x="888" y="712" w="74" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="polka_stripe_1.png" x="984" y="356" w="38" h="47" pX="0.5" pY="0.5"/>
+    <sprite n="polka_stripe_2.png" x="157" y="978" w="71" h="43" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="polka_stripe_3.png" x="984" y="303" w="38" h="49" pX="0.5" pY="0.5"/>
+    <sprite n="polka_top_piece.png" x="807" y="891" w="74" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="striped_lollipop_big.png" x="2" y="404" w="168" h="209" pX="0.5" pY="0.5"/>
+</TextureAtlas>

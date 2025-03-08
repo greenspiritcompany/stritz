@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="26" space="Local" timeToEmit="0.100" name="CollabUnlockFX">
+    <Dampening max="0.860" min="0.730"/>
+    <DirectionalForce x="0" y="-520.830"/>
+    <Emitter emissionRate="0" spread="360" angle="0">
+        <SpawnArea width="29.510" depth="0" height="26.110"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="0"/>
+    <Rotation max="0" min="0"/>
+    <RotationSpeed max="360" min="-840"/>
+    <Size>
+        <Max x="23.850" y="23.850"/>
+        <Min x="17.620" y="17.620"/>
+    </Size>
+    <SizeChange>
+        <Max x="0" y="0"/>
+        <Min x="0" y="0"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/bubble.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="1" min="0.320"/>
+    <Velocity max="570" min="517.800"/>
+</ParticleEffect>

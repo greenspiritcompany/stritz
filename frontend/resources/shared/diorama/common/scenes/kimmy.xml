@@ -1,0 +1,66 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+  
+	<SceneObject name="KimmyDiorama">
+		<Interactable upEffect="character_kimmy"/>
+		<Model filename="shared/diorama/common/models/kimmy/kimmy_diorama/kimmy.ffm">
+			<Animations>
+				<Animation filename="shared/diorama/common/models/kimmy/kimmy_diorama/kimmy_idle.ffa" name="idle"
+						   play="true" speed="1.0" loopCount="-1"/>
+			</Animations>
+		</Model>
+		<Animations>
+			<Animation animationData="interactable_v03_up" name="Up" layer="3" play="false" loopCount="0"
+					   speed="1.7"/>
+			<Animation animationData="interactable_v03_up" name="Up2" layer="3" play="false" loopCount="0"
+					   speed="1.7"/>
+			<Animation animationData="interactable_out" name="Out" layer="2" play="false" loopCount="0"
+					   speed="1.7"/>
+			<Animation animationData="interactable_down" name="Down" layer="1" play="false" loopCount="0"
+					   speed="1.7"/>
+		</Animations>
+		<Materials>
+			<Material parentMaterial="KimmyMaterialAlpha"/>
+		</Materials>
+		<Translation x="5" y="17" z="2"/>
+		<Rotation x="-15" y="0" z="0"/>
+		<Scale x="1.1" y="1.1" z="1.1"/>
+	</SceneObject>
+
+	<SceneObject name="Board_game_piece">
+		<Model filename="shared/diorama/common/models/kimmy/kimmy_diorama/boardgamepiece.ffm"/>
+		<Materials>
+			<Material parentMaterial="BoardGamePieceMaterial">
+				<Color r="255" g="255" b="255" a="255"/>
+			</Material>
+		</Materials>
+		<Translation x="2" y="4" z="0"/>
+		<Rotation x="0" y="0" z="0"/>
+		<Scale x="1.5" y="1.5" z="1.5"/>
+	</SceneObject>
+
+	<SceneObject name="Board_game_piece_Shadow">
+		<Model filename="shared/diorama/common/models/kimmy/kimmy_diorama/boardgamepieceshadow.ffm"/>
+		<Materials>
+			<Material parentMaterial="BoardGamePieceMaterialAlpha">
+				<Color r="255" g="255" b="255" a="170"/>
+			</Material>
+		</Materials>
+		<Translation x="2" y="3" z="0"/>
+		<Rotation x="0" y="0" z="0"/>
+		<Scale x="1.5" y="1.5" z="1.5"/>
+	</SceneObject>
+
+	<SceneObject name="Kimmy_shadow">
+		<Model filename="shared/diorama/common/models/kimmy/kimmy_diorama/kimmy_shadow.ffm"/>
+		<Materials>
+			<Material parentMaterial="KimmyMaterialAlpha">
+				<Color r="255" g="255" b="255" a="190"/>
+			</Material>
+		</Materials>
+		<Translation x="0" y="4" z="3"/>
+		<Rotation x="10" y="0" z="0"/>
+		<Scale x="1.1" y="1.1" z="1.7"/>
+	</SceneObject>
+</Scene>

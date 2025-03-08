@@ -1,0 +1,23 @@
+<ParticleEffect name="WrappedExplodeFlash_001" timeToEmit="0.140" maxParticles="3" space="Local">
+<Dampening max="0.900" min="0.800" />
+<DirectionalForce y="0" x="0" />
+<Emitter spread="360" emissionRate="0" angle="360">
+	<SpawnArea width="2" height="2" depth="0" />
+</Emitter>
+<EndColor a="0" r="255" b="249" g="255" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="0" min="0" />
+<Size>
+	<Max y="250" x="250" />
+	<Min y="250" x="250" />
+</Size>
+<SizeChange>
+	<Max y="0" x="0" />
+	<Min y="0" x="0" />
+</SizeChange>
+<StartColor a="112" r="255" b="255" g="255" />
+<Texture blend="Add" numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/strong_light2.png" />
+<TextureFrame numTextureAnimationFrames="1" startFrame="0" textureAnimationSpeed="10" />
+<TimeToLive max="0.200" min="0.200" />
+<Velocity max="0" min="0" />
+</ParticleEffect>

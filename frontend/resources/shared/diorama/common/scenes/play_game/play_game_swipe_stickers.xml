@@ -1,0 +1,59 @@
+<!DOCTYPE Scene SYSTEM '../../../../dtd/scene.dtd'>
+<Scene>
+	<SceneObject name="giantBear">
+		<Sprite filename="shared/diorama/common/tex/gui_elements/giant_bear_2.png" vertexColors="false">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation y="-0.268" x="-5.592" z="0"/>
+		<Scale y="0.509" x="0.509" z="1"/>
+	</SceneObject>
+	<SceneObject name="floatingBear">
+		<Sprite filename="shared/diorama/common/tex/gui_elements/bubble_bear_2.png" vertexColors="false">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation y="-0.268" x="-5.592" z="0"/>
+		<Scale y="0.509" x="0.509" z="1"/>
+	</SceneObject>
+	<SceneObject name="chocolate">
+		<Translation y="1.769" x="-4.573" z="0"/>
+		<Sprite filename="shared/diorama/common/tex/gui_elements/chocolate_2.png" vertexColors="false">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Scale y="0.509" x="0.509" z="1"/>
+	</SceneObject>
+	<SceneObject name="soda">
+		<Sprite filename="shared/diorama/common/tex/gui_elements/soda_2.png" vertexColors="false">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation y="-0.268" x="-5.592" z="0"/>
+		<Scale y="0.509" x="0.509" z="1"/>
+	</SceneObject>
+	<SceneObject name="honey">
+		<Sprite filename="shared/diorama/common/tex/gui_elements/honey_2.png" vertexColors="false">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation y="-0.268" x="-5.592" z="0"/>
+		<Scale y="0.509" x="0.509" z="1"/>
+	</SceneObject>
+	<SceneObject name="bubble">
+		<Sprite filename="shared/diorama/common/tex/gui_elements/bubblegum_2.png" vertexColors="false">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation y="-0.268" x="-5.592" z="0"/>
+		<Scale y="0.509" x="0.509" z="1"/>
+	</SceneObject>
+	<SceneObject name="paintBattle">
+		<Sprite filename="shared/diorama/common/tex/gui_elements/jam_2.png" vertexColors="false">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation y="-0.268" x="-5.592" z="0"/>
+		<Scale y="0.509" x="0.509" z="1"/>
+	</SceneObject>
+	<SceneObject name="sodaFizz">
+		<Sprite filename="shared/diorama/common/tex/gui_elements/soda_fizz_2.png" vertexColors="false">
+			<Pivot anchor="center"/>
+		</Sprite>
+		<Translation y="-0.268" x="0.520" z="0"/>
+		<Scale y="0.509" x="0.509" z="1"/>
+	</SceneObject>
+</Scene>

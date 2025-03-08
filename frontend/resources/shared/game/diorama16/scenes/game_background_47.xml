@@ -1,0 +1,27 @@
+<Scene>
+	<SceneObject name="GameBackground">
+		<Sprite filename="shared/game/diorama16/tex/w47_bg.png">
+			<Pivot anchor="bottom"/>
+		</Sprite>
+		<LayoutConfiguration name="Landscape">
+			<Size>
+				<Width percentage="100" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="100" />
+			</Translation>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<Height percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="100" />
+			</Translation>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

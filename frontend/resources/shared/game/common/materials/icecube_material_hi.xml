@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="IcecubeMaterial">
+			<Blend enabled="true"/>
+            <Depth enabled="false" writeMask="false"/>
+			<Cull enabled="false" face="back"/>
+			<!-- Set to false since the vertex winding seems messed up between FF and SL -->
+			<Shader program="NormalMap"/>
+			<Light enabled="true" shininess="150">
+                <Ambient r="240" g="240" b="240" a="255"/>
+                <Diffuse r="25" g="25" b="25" a="255"/>
+                <Specular r="60" g="60" b="60" a="255"/>
+			</Light>
+		</Material>
+	</Materials>
+</Scene>

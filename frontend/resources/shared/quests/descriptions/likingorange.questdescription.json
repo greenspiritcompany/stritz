@@ -1,0 +1,26 @@
+{
+  "id": "likingorange",
+  "nameKey" : "quests.names.likingorange",
+  "difficulty" : 0,
+  "reoccuring": true,
+  "tasks": [
+    {
+      "type": "createNOfType",
+      "descriptionKey" : "quests.description.likingorange",
+      "icon": "shared/diorama/common/tex/gui_elements/quest_candy_orange.png",
+      "data": {
+		"amount" : 1500,
+        "color": "orange"
+      }
+    }
+  ],
+   "rewards": [
+    {
+      "type": "boosters",
+      "data": {
+        "boosterType": 12002,
+        "amount": 1
+      }
+    }
+  ]
+}

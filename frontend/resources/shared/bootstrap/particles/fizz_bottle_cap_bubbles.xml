@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="22" space="Local" timeToEmit="0.200" name="FizzBottleCapBubblesPFX" startDelay="0">
+    <Dampening min="0.670" max="0.700"/>
+    <DirectionalForce x="0" y="0"/>
+    <Emitter emissionRate="0" spread="360" angle="-100.800">
+        <SpawnArea width="1" depth="0" height="1"/>
+    </Emitter>
+    <EndColor b="255" r="255" g="255" a="100"/>
+    <Rotation min="0" max="0"/>
+    <RotationSpeed min="360" max="360"/>
+    <Size>
+        <Max x="20" y="20"/>
+        <Min x="10" y="10"/>
+    </Size>
+    <SizeChange>
+        <Max x="-15" y="-15"/>
+        <Min x="-30" y="-30"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Multiply" numFramesX="1" filename="shared/bootstrap/particles/tex/fizz_bubble.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0"/>
+    <TimeToLive min="0.320" max="0.380"/>
+    <Velocity min="450" max="600"/>
+</ParticleEffect>

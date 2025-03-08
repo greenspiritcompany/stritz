@@ -1,0 +1,109 @@
+
+<!DOCTYPE Scene SYSTEM "../../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="SidekickPortrait">
+		<SceneObject class="Button" name="Sidekick_CyanTurtle">
+			<Translation x="-11.9462" y="-3.93631"/>
+			<Scale x="-1" y="-1"/>
+			<SceneObject __editorVisibility="false" __visibility="3" name="Active">
+				<Model filename="shared/game/common/models/sidekicks/sidekick_turtle_active.ffm">
+					<Animation filename="shared/game/common/models/sidekicks/sidekick_turtle_active_idle.ffa" name="idle" play="false"/>
+					<Animation filename="shared/game/common/models/sidekicks/sidekick_turtle_active_selected.ffa" interpolateFrame="false" name="selected" play="false" speed="2"/>
+					<Animation filename="shared/game/common/models/sidekicks/sidekick_turtle_become_active.ffa" loopCount="0" name="become_active" play="false"/>
+					<Animation filename="shared/game/common/models/sidekicks/sidekick_turtle_active_chew.ffa" interpolateFrame="false" loopCount="0" name="chew" play="false"/>
+                    <Animation filename="shared/game/common/models/sidekicks/sidekick_turtle_active_become_inactive.ffa" interpolateFrame="false" loopCount="0" name="active_become_inactive"/>
+				</Model>
+				<Material name="SidekickTurtleMaterial" parentMaterial="SidekickMat">
+					<Texture filename="shared/game/common/tex/hud/sidekick_cyan_turtle.png"/>
+				</Material>
+			</SceneObject>
+			<SceneObject name="Inactive">
+				<Model filename="shared/game/common/models/sidekicks/sidekick_turtle_inactive.ffm">
+					<Animation filename="shared/game/common/models/sidekicks/sidekick_turtle_inactive_idle.ffa" name="idle" play="false"/>
+					<Animation filename="shared/game/common/models/sidekicks/sidekick_turtle_inactive_cyan_collect.ffa" loopCount="0" name="cyan_collect" play="false" speed="1"/>
+					<Animation filename="shared/game/common/models/sidekicks/sidekick_turtle_become_inactive.ffa" loopCount="0" name="become_inactive" play="false"/>
+				</Model>
+				<Material name="SidekickTurtleMaterial" parentMaterial="SidekickMat">
+					<Texture filename="shared/game/common/tex/hud/sidekick_cyan_turtle.png"/>
+				</Material>
+				<SceneObject name="CollectTarget">
+					<Translation x="30" y="70" z="1"/>
+				</SceneObject>
+                <SceneObject name="ThoughtBubble">
+                    <Animation name="BubbleIdle" animationData="SidekickThoughtBubbleIdle" speed="0.2"/>
+                    <Scale y="-1"/>
+                    <Translation x="15" y="30"/>
+                    <SceneObject name="BubbleBig">
+                        <Translation x="68" y="-115" z="3"/>
+                        <Rotation z="5"/>
+                        <Scale x="1.3" y="1.3"/>
+                        <Sprite filename="shared/game/common/tex/hud/bubble_big.png" vertexColors="false">
+                            <Pivot anchor="center"/>
+                        </Sprite>
+                    </SceneObject>
+                    <SceneObject name="CyanCandy">
+                        <Translation x="68" y="-118" z="4"/>
+                        <Rotation z="6"/>
+                        <Scale x="-0.9" y="0.9"/>
+                        <Sprite filename="shared/game/common/tex/candy/cyan_c.png" vertexColors="false">
+                            <Pivot anchor="center"/>
+                        </Sprite>
+                    </SceneObject>
+                    <SceneObject name="BubbleSmall1">
+                        <Translation x="49" y="-65" z="3"/>
+                        <Scale x="1.7" y="1.7"/>
+                        <Sprite filename="shared/game/common/tex/hud/bubble_small.png" vertexColors="false">
+                            <Pivot anchor="center"/>
+                        </Sprite>
+                    </SceneObject>
+                    <SceneObject name="BubbleSmall2">
+                        <Translation x="32.1" y="-54.39" z="3"/>
+                        <Scale x="1.19" y="1.19"/>
+                        <Sprite filename="shared/game/common/tex/hud/bubble_small.png" vertexColors="false">
+                            <Pivot anchor="center"/>
+                        </Sprite>
+                    </SceneObject>
+                </SceneObject>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="ChewEffectTarget">
+			<Translation x="-52" y="-80" z="3"/>
+		</SceneObject>
+		<SceneObject name="ProgressBar">
+			<Translation x="0.749261" y="3.79773" z="3"/>
+			<Sprite filename="shared/game/common/tex/hud/portrait/sidekickmeter_port.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+			<SceneObject __editorVisibility="true" __visibility="0" name="Bg">
+				<Translation y="-6" z="-2"/>
+				<Sprite filename="shared/game/common/tex/hud/portrait/sidekickmeter_inside_bg_port.png">
+					<Pivot anchor="center"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject __editorVisibility="true" __visibility="0" name="Icon">
+				<Translation x="-45.0991" y="20.2429"/>
+				<Rotation z="-3.27656"/>
+				<Sprite filename="shared/game/common/tex/hud/sidekickmeter_icon.png">
+					<Pivot anchor="center"/>
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="ProgressModel">
+				<Translation x="60.8845" y="-55.6136" z="-1"/>
+				<Scale y="-1"/>
+				<Model filename="shared/game/common/models/hud/sidekick_meter/sidekick_meter_p.ffm">
+					<Animation filename="shared/game/common/models/hud/sidekick_meter/progress_p.ffa" interpolateFrame="false" name="progress" play="true"/>
+				</Model>
+				<Material parentMaterial="SidekickMat">
+					<Texture filename="shared/game/common/tex/hud/portrait/sidekickmeter_inside_fill_port.png"/>
+				</Material>
+			</SceneObject>
+			<SceneObject name="ParticleHelper">
+				<Translation x="-44" y="20"/>
+			</SceneObject>
+            <SceneObject name="ParticleHelperSelected">
+                <Translation x="-15" y="-70" z="-2"/>
+                <Scale x="-1"/>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

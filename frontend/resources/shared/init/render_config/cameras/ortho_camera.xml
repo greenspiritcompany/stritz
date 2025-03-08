@@ -1,0 +1,3 @@
+<Camera name="OrthoCamera">
+    <Projection type="ortho" near="-1000.0" far="1000.0" />
+</Camera>

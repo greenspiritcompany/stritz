@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="NewKingModal">
+		<SceneObject __editorVisibility="true" __visibility="0" name="Portrait">
+			<Translation z="400" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" startDelay="0.05" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="Title">
+				<Translation y="-322" />
+				<Text alignment="center" font="Banana" key="kotc.newKing" verticalAlignment="visualCenter">
+					<Color r="165" g="62" b="128" a="255" />
+					<Shadow enabled="true">
+						<Color r="255" g="255" b="255" a="255" />
+						<Offset x="0" y="3" z="1" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Arch">
+				<Translation y="-175" />
+				<Scale x="4" y="4" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="RewardText">
+				<Translation y="80" z="2" />
+				<Text alignment="center" font="Typewriter" key="kotc.newKing.desc" maxHeight="200" maxWidth="500" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Parameter name="name">Kakan</Parameter>
+					<Color r="131" g="102" b="51" a="255" />
+					<Outline enabled="true">
+						<Color r="0" g="0" b="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color r="255" g="255" b="255" a="255" />
+					</Shadow>
+					<Size x="21" y="21" />
+					<TextString>You didn't capture the crown this time!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject class="Button" name="PlayButton">
+				<Translation y="245" />
+				<Scale x="1.2" y="1.2" z="1.2" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="380" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject name="PlayButtonText">
+					<Translation y="-7" />
+					<Text alignment="center" font="Banana" key="kotc.recapture" maxHeight="60" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="255" g="255" b="255" a="225" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="30" y="30" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="ProfilePics">
+				<SceneObject name="YouFrame">
+					<Translation x="140.31" y="-156.031" />
+					<Scale x="1.8" y="1.8" />
+					<SceneObject name="YouPic">
+						<Translation x="29.4882" y="40.4419" />
+						<Rotation z="31" />
+						<Scale x="0.78" y="0.78" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="PhotoFrame">
+					<Translation x="-187.208" y="-200.351" />
+					<SceneObject __editorVisibility="true" __visibility="0" name="KingPic">
+						<Translation x="184" y="63" />
+						<Scale x="1.7" y="1.7" />
+					</SceneObject>
+					<SceneObject __editorVisibility="true" __visibility="0" name="KingFrame">
+						<Translation x="14.5058" y="-102.708" />
+						<Scale x="2" y="2" />
+						<Sprite filename="shared/castle/tex/king_frame.png" vertexColors="false">
+							<Scale x="0.5" y="0.5" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="FramePocket">
+					<Translation x="155.29" y="-57.5735" />
+					<Sprite filename="shared/castle/tex/frame_overlay.png" />
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<SceneObject __editorVisibility="true" __visibility="0" name="Landscape">
+			<Translation x="-40" y="40" z="510" />
+			<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear" />
+			<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear" startDelay="0.05" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="Title">
+				<Translation y="-322" />
+				<Text alignment="center" font="Banana" key="kotc.newKing" verticalAlignment="visualCenter">
+					<Color r="165" g="62" b="128" a="255" />
+					<Shadow enabled="true">
+						<Color r="255" g="255" b="255" a="255" />
+						<Offset x="0" y="3" z="1" />
+					</Shadow>
+					<Size x="28" y="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="Arch">
+				<Translation y="-175" />
+				<Scale x="4" y="4" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/arch_shadow_25percent.png">
+					<Pivot anchor="center" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="RewardText">
+				<Translation y="80" z="2" />
+				<Text alignment="center" font="Typewriter" key="kotc.newKing.desc" maxHeight="200" maxWidth="500" overflowBehaviour="fit" verticalAlignment="visualCenter">
+					<Parameter name="name">Kakan</Parameter>
+					<Color r="131" g="102" b="51" a="255" />
+					<Outline enabled="true">
+						<Color r="0" g="0" b="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color r="255" g="255" b="255" a="255" />
+					</Shadow>
+					<Size x="21" y="21" />
+					<TextString>You didn't capture the crown this time!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject class="Button" name="PlayButton">
+				<Translation y="245" />
+				<Scale x="1.2" y="1.2" z="1.2" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets bottom="59" left="54" right="54" top="48" />
+					<Pivot anchor="center" />
+					<Size height="108" width="380" />
+				</Panel>
+				<Animation animationData="Idle" layer="1" name="Idle" play="true" />
+				<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+				<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+				<SceneObject name="PlayButtonText">
+					<Translation y="-7" />
+					<Text alignment="center" font="Banana" key="kotc.recapture" maxHeight="60" maxWidth="300" overflowBehaviour="fit" verticalAlignment="visualCenter">
+						<Color r="255" g="255" b="255" a="225" />
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25" />
+							<Offset x="0" y="6" />
+						</Shadow>
+						<Size x="30" y="30" />
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="ProfilePics">
+				<SceneObject name="YouFrame">
+					<Translation x="140.31" y="-156.031" />
+					<Scale x="1.8" y="1.8" />
+					<SceneObject name="YouPic">
+						<Translation x="29.4882" y="40.4419" />
+						<Rotation z="31" />
+						<Scale x="0.78" y="0.78" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="PhotoFrame">
+					<Translation x="-187.208" y="-200.351" />
+					<SceneObject __editorVisibility="true" __visibility="0" name="KingPic">
+						<Translation x="184" y="63" />
+						<Scale x="1.7" y="1.7" />
+					</SceneObject>
+					<SceneObject __editorVisibility="true" __visibility="0" name="KingFrame">
+						<Translation x="14.5058" y="-102.708" />
+						<Scale x="2" y="2" />
+						<Sprite filename="shared/castle/tex/king_frame.png" vertexColors="false">
+							<Scale x="0.5" y="0.5" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="FramePocket">
+					<Translation x="154.334" y="-57.1103" />
+					<Sprite filename="shared/castle/tex/frame_overlay.png" />
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<OriginalSize height="1024" width="684" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

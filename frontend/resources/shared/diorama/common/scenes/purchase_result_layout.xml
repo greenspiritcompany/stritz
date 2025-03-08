@@ -1,0 +1,23 @@
+<!DOCTYPE Layout SYSTEM '../../../dtd/layout.dtd'>
+<Layout>
+    <Object sceneObject="AmountAdded"/>
+    <Object sceneObject="BoosterHolderTextBox"/>
+    <Object sceneObject="Message"/>
+    <Object sceneObject="MessageArea"/>
+    <Object sceneObject="ProductIcon"/>
+    <Object sceneObject="PurchaseResult">
+        <Default>
+            <Size>
+                <Width max="640" percentage="100"/>
+                <Height max="706" percentage="95"/>
+                <OriginalSize height="706" width="640"/>
+            </Size>
+            <Translation>
+                <X percentage="50"/>
+                <Y percentage="50"/>
+            </Translation>
+        </Default>
+    </Object>
+    <Object sceneObject="Text"/>
+    <Object sceneObject="TitleText"/>
+</Layout>

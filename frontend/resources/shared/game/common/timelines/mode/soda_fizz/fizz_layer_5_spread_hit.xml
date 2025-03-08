@@ -1,0 +1,22 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0.0" endTime="1.2">
+
+        <Animate target="FizzModel" time="0.0">
+            <Scale time="0.0" x="0.6" y="-0.6"/>
+            <Scale time="0.1" x="0.8" y="-0.8"/>
+            <Scale time="0.4" x="0.8" y="-0.8"/>
+            <Scale time="0.5" x="0.4" y="-0.4"/>
+            <Scale time="0.6" x="0.6" y="-0.6"/>
+        </Animate>
+
+        <Triggers>
+            <AnimationTrigger animationName="FizzChargedIdle" targetName="FizzModel" time="0.0"/>
+            <EffectTrigger name="FizzFgActiveRingsEFQ" time="0.0"/>
+        </Triggers>
+
+        <TimeControls>
+            <TimeJump time="1.1" jumpToTime="0.7"/>
+        </TimeControls>
+    </Timeline>
+</Timelines>

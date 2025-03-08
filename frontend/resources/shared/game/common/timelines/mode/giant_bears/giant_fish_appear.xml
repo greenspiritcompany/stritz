@@ -1,0 +1,49 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="6.0">
+		<Animate target="GiantFishAppearScale">
+			<Translation time="0.0" z="0.0"/>
+			<Rotation time="0.0" z="0.0"/>
+			<Scale time="0.0" xyz="1.0"/>
+
+			<Translation time="2.0" z="0.0"/>
+			<Rotation time="2.0" z="0.0"/>
+			<Scale time="2.0" xyz="1.0"/>
+
+			<Translation time="2.5" z="5.0"/>
+			<Scale time="2.5" xyz="1.5"/>
+
+			<Rotation time="3.0" z="30.0"/>
+			<Scale time="3.0" xyz="0.0"/>
+			<Translation time="3.0" z="0.0"/>
+
+		</Animate>
+        <Animate target="GiantBagAppearModel">
+            <Color time="0.0" a="255"/>
+            <Color time="0.65" a="255"/>
+            <Color time="0.75" a="0"/>
+
+        </Animate>
+        <Animate target="GiantFishAppearModel">
+            <Color time="0.0" a="0"/>
+            <Color time="0.3" a="255"/>
+        </Animate>
+
+
+		<Triggers>
+			<AnimationTrigger animationName="Appear" targetName="GiantFishAppearModel" time="0.0"/>
+			<AnimationTrigger animationName="Break" targetName="GiantBagAppearModel" time="0.0"/>
+			<CustomTrigger name="ChangeLayerToInFrontOfCandies" time="0.4"/>
+			<CustomTrigger name="FlyToHud" time="2.0"/>
+
+
+			<EffectTrigger time="0.3" name="GiantFishConfettiEFQ"/>
+			<EffectTrigger time="0.0" name="GiantBearRevealedEffect"/>
+			<EffectTrigger time="2.0" name="GiantBearDisappear"/>
+			<EffectTrigger time="3.0" name="GiantBearHitCollectionMeter"/>
+		</Triggers>
+        <TimeControls>
+            <Pause time="2.0" timeout="10"/>
+        </TimeControls>
+	</Timeline>
+</Timelines>

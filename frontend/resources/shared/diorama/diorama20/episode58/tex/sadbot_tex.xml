@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:65624c66bd877f4cb3d6f1e66f6595eb:fccee7d95fce08dcf5c6fef489f6ca97:0d797ffb6823db0d14974b47e0e93cc7$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="sadbot_tex.png" width="1024" height="1024">
+    <sprite n="images/sadBot/Eye.png" x="982" y="101" w="22" h="9" pX="0.5" pY="0.5" oX="1" oY="1" oW="11" oH="24" r="y"/>
+    <sprite n="images/sadBot/EyeL.png" x="1009" y="78" w="12" h="23" pX="0.5" pY="0.5" oX="1" oY="0" oW="14" oH="24"/>
+    <sprite n="images/sadBot/backArm.png" x="214" y="649" w="80" h="204" pX="0.5" pY="0.5" oX="1" oY="1" oW="206" oH="82" r="y"/>
+    <sprite n="images/sadBot/backArmB.png" x="100" y="649" w="112" h="237" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="images/sadBot/backArmFront.png" x="447" y="649" w="93" h="120" pX="0.5" pY="0.5" oX="1" oY="1" oW="122" oH="95" r="y"/>
+    <sprite n="images/sadBot/backArmFrontB.png" x="1" y="905" w="145" h="118" pX="0.5" pY="0.5" oX="1" oY="1" oW="147" oH="120"/>
+    <sprite n="images/sadBot/eyeBrow.png" x="982" y="78" w="25" h="21" pX="0.5" pY="0.5" oX="1" oY="1" oW="23" oH="27" r="y"/>
+    <sprite n="images/sadBot/eyeBrowL.png" x="982" y="1" w="34" h="28" pX="0.5" pY="0.5" oX="1" oY="1" oW="36" oH="30"/>
+    <sprite n="images/sadBot/fluid.png" x="1" y="570" w="144" h="74" pX="0.5" pY="0.5" oX="1" oY="1" oW="146" oH="76"/>
+    <sprite n="images/sadBot/frontArm.png" x="1" y="649" w="97" h="254" pX="0.5" pY="0.5" oX="1" oY="1" oW="99" oH="256"/>
+    <sprite n="images/sadBot/frontArmB.png" x="894" y="361" w="129" h="286" pX="0.5" pY="0.5"/>
+    <sprite n="images/sadBot/handerchief.png" x="519" y="771" w="86" h="103" pX="0.5" pY="0.5" oX="1" oY="1" oW="88" oH="106"/>
+    <sprite n="images/sadBot/handerkerchiefBack.png" x="1" y="420" w="118" h="134" pX="0.5" pY="0.5" oX="0" oY="1" oW="118" oH="135"/>
+    <sprite n="images/sadBot/hat.png" x="148" y="888" w="124" h="125" pX="0.5" pY="0.5" oX="1" oY="0" oW="126" oH="126"/>
+    <sprite n="images/sadBot/hatB.png" x="363" y="816" w="154" h="156" pX="0.5" pY="0.5"/>
+    <sprite n="images/sadBot/head.png" x="322" y="420" w="193" h="189" pX="0.5" pY="0.5" oX="1" oY="1" oW="195" oH="191"/>
+    <sprite n="images/sadBot/innerStomach.png" x="296" y="649" w="149" h="165" pX="0.5" pY="0.5" oX="1" oY="1" oW="151" oH="167"/>
+    <sprite n="images/sadBot/leftTear.png" x="363" y="974" w="116" h="49" pX="0.5" pY="0.5" oX="1" oY="1" oW="118" oH="51"/>
+    <sprite n="images/sadBot/leftTearB.png" x="147" y="570" w="129" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="images/sadBot/legs.png" x="521" y="361" w="371" h="207" pX="0.5" pY="0.5"/>
+    <sprite n="images/sadBot/lowerHeart.png" x="982" y="31" w="32" h="45" pX="0.5" pY="0.5" oX="1" oY="1" oW="34" oH="48"/>
+    <sprite n="images/sadBot/mainBody.png" x="553" y="1" w="427" h="358" pX="0.5" pY="0.5" oX="1" oY="1" oW="430" oH="360"/>
+    <sprite n="images/sadBot/tearFront.png" x="274" y="855" w="87" h="166" pX="0.5" pY="0.5" oX="1" oY="1" oW="168" oH="89" r="y"/>
+    <sprite n="images/sadBot/tearFrontB.png" x="121" y="420" w="199" h="120" pX="0.5" pY="0.5"/>
+    <sprite n="images/sadBot/upperHeart.png" x="481" y="974" w="60" h="44" pX="0.5" pY="0.5" oX="1" oY="1" oW="46" oH="62" r="y"/>
+    <sprite n="images/sadBot/wrench.png" x="1" y="227" w="518" h="191" pX="0.5" pY="0.5" oX="1" oY="1" oW="520" oH="193"/>
+    <sprite n="images/sadBot/wrench2.png" x="1" y="1" w="550" h="224" pX="0.5" pY="0.5"/>
+</TextureAtlas>

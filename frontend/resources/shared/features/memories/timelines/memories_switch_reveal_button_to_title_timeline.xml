@@ -1,0 +1,16 @@
+<Timelines>
+<Timeline startTime="0" endTime="4.100">
+	<Animate time="0" target="ButtonGrp">
+		<Hide time="0" />
+	</Animate>
+	<Animate time="0" target="StoryTitleTab">
+		<Hide time="0" />
+		<Show time="1.5" />
+	</Animate>
+
+	<Triggers>
+		<AnimationTrigger time="1.5" animationName="appearanimation" crossFade="0" targetName="StoryTitleTab" />
+	</Triggers>
+
+</Timeline>
+</Timelines>

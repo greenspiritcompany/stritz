@@ -1,0 +1,539 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+
+<Scene>
+	<Materials>
+		<Material name="IceMat">
+			<Blend enabled="true"/>
+			<Depth enabled="false" writeMask="false"/>
+			<Cull enabled="false" face="back"/>
+			<!-- Set to false since the vertex winding seems messed up between FF and SL -->
+			<Textures>
+				<Texture filename="shared/game/common/tex/gamegrid/ice_tile_01_000.png"/>
+			</Textures>
+		</Material>
+		<Material name="GlowyMat">
+			<Blend enabled="true" blendFuncDestinationFactor="One"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Textures>
+				<Texture filename="shared/game/common/tex/gamegrid/glowy_tile.png"/>
+			</Textures>
+		</Material>
+
+		<Material name="Episode1MaterialAlpha">
+			<Blend enabled="true"/>
+			<Depth enabled="true" writeMask="false"/>
+			<Textures>
+				<Texture filename="shared/diorama/common/tex/yeti_tutorial.png"/>
+			</Textures>
+		</Material>
+
+
+	</Materials>
+	<Import filename="shared/game/common/materials/tutorial_hidden_material.xml"/>
+	<SceneObject name="Scene">
+
+		<SceneObject name="TutorialCharacterLayout">
+			<SceneObject name="TutorialCharacterTransition">
+				<Animation animationData="SlideInFromLeft" loopCount="0" name="OnAppear"/>
+				<Animation animationData="SlideOutToLeft" loopCount="0" name="OnDisappear"/>
+				<SceneObject layerFlags="256" name="TutorialCharacter">
+					<Translation y="-85" z="500"/>
+					<Scale y="-1"/>
+					<Model filename="shared/diorama/common/models/yeti/yeti_tutorial.ffm">
+						<Animation filename="shared/diorama/common/models/yeti/yeti_tutorial.ffa" loopCount="0" name="idle" play="false" speed="1"/>
+					</Model>
+					<Material parentMaterial="Episode1MaterialAlpha"/>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Translation>
+					<X percentage="8"/>
+					<Y percentage="103"/>
+				</Translation>
+				<Size>
+					<Height percentage="30"/>
+					<OriginalSize height="200" width="300"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="7"/>
+					<Y percentage="103"/>
+				</Translation>
+				<Size>
+					<Height percentage="50"/>
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+
+
+		<SceneObject name="Tutorial" visibility="always" layerFlags="256">
+			<Animations>
+				<Animation name="OnAppear" animationData="SlideInFromRight" play="true" loopCount="0"/>
+				<Animation name="OnDisappear" animationData="SlideOutToRight" loopCount="0"/>
+			</Animations>
+			<SceneObject name="Offset">
+				<Translation y="-130" z="500"/>
+				<SceneObject name="PlayButton" class="Button">
+					<Animations>
+						<Animation name="Idle" animationData="Idle" layer="1" play="true"/>
+						<Animation name="OnPress" animationData="OnPress" loopCount="0"/>
+						<Animation name="OnRelease" animationData="OnRelease" loopCount="0"/>
+					</Animations>
+					<Translation x="0" y="340" z="2"/>
+					<Scale xyz="0.8"/>
+					<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+						<Pivot anchor="center"/>
+						<Insets bottom="0" left="128" right="128" top="0"/>
+						<Size height="127" width="280"/>
+					</Panel>
+
+					<SceneObject name="PlayButtonText">
+						<Text canBreakWords="false" font="Banana" key="common.play" alignment="center">
+							<Size x="30" y="30"/>
+							<Color r="255" g="255" b="255" a="225"/>
+							<Shadow>
+								<Color r="0" g="0" b="0" a="25"/>
+								<Offset x="0" y="9"/>
+							</Shadow>
+						</Text>
+						<Translation x="0" y="5"/>
+					</SceneObject>
+				</SceneObject>
+
+
+				<SceneObject name="BgPanels">
+					<SceneObject name="Upper">
+						<Panel filename="shared/game/common/tex/hud/tutorial_text_bg_panel.png">
+							<Size width="320" height="300"/>
+							<Pivot anchor="center" y="-8"/>
+							<Insets
+									bottom="36" left="36" right="36" top="36"/>
+						</Panel>
+					</SceneObject>
+					<SceneObject name="Lower">
+						<Panel filename="shared/game/common/tex/hud/tutorial_text_bg_panel.png">
+							<Size width="320" height="230"/>
+							<Pivot anchor="center" y="-50"/>
+							<Insets
+									bottom="36" left="36" right="36" top="36"/>
+						</Panel>
+						<Translation y="238"/>
+						<SceneObject name="TutorialText">
+							<Text canBreakWords="false" font="Typewriter" alignment="center" verticalAlignment="center"
+								  maxWidth="280" key="ingame.tutorial.ice_crush">
+								<Color r="124" g="82" b="28" a="255"/>
+								<Size y="16" x="16"/>
+							</Text>
+							<Translation z="1"/>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="GameGrid">
+					<SceneObject name="Candies">
+						<Translation z="1"/>
+						<SceneObject>
+							<Translation y="-74"/>
+							<SceneObject name="Candy3">
+								<Sprite filename="shared/game/common/tex/candy/orange_c.png" normals="true">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Materials>
+									<Material parentMaterial="OrangeCandyMat"/>
+								</Materials>
+								<Translation x="-74"/>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="0"/>
+							<SceneObject name="Candy1">
+								<Sprite filename="shared/game/common/tex/candy/orange_c.png" normals="true">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Materials>
+									<Material parentMaterial="OrangeCandyMat"/>
+								</Materials>
+								<Translation x="0"/>
+							</SceneObject>
+							<SceneObject name="Candy2">
+								<Sprite filename="shared/game/common/tex/candy/orange_c.png" normals="true">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Materials>
+									<Material parentMaterial="OrangeCandyMat"/>
+								</Materials>
+								<Translation x="74"/>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="CandyGlow">
+						<Translation z="0.5"/>
+
+
+						<SceneObject>
+							<Translation y="0"/>
+							<SceneObject name="Glow1">
+								<Sprite filename="shared/game/common/tex/gamegrid/glowy_tile.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="-74" z="1.7"/>
+								<Materials>
+									<Material parentMaterial="GlowyMat"/>
+								</Materials>
+							</SceneObject>
+							<SceneObject name="Glow2">
+								<Sprite filename="shared/game/common/tex/gamegrid/glowy_tile.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="0" z="0.7"/>
+								<Materials>
+									<Material parentMaterial="GlowyMat"/>
+								</Materials>
+							</SceneObject>
+							<SceneObject name="Glow3">
+								<Sprite filename="shared/game/common/tex/gamegrid/glowy_tile.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="74" z="0.7"/>
+								<Materials>
+									<Material parentMaterial="GlowyMat"/>
+								</Materials>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+
+					<SceneObject name="GiantBearAppearModel">
+						<Scale x="0.34" y="-0.34" z="1.0"/>
+						<Translation x="-37" z="5"/>
+						<Rotation z="-90"/>
+						<Model filename="shared/game/common/models/giant_bear/giant_bear.ffm">
+							<Animations>
+								<Animation name="Appear"
+										   filename="shared/game/common/models/giant_bear/appear.ffa"
+										   play="false" loopCount="0"/>
+							</Animations>
+						</Model>
+						<Materials>
+							<Material>
+								<Textures>
+									<Texture filename="shared/game/common/tex/candy/giant_bear.png"/>
+								</Textures>
+								<Depth enabled="false" writeMask="false"/>
+								<Blend enabled="true"/>
+							</Material>
+						</Materials>
+
+
+					</SceneObject>
+
+					<SceneObject name="IceCrack1">
+						<Model filename="shared/game/common/models/giant_bear_ice_tile/ice_break.ffm">
+							<Animations>
+								<Animation name="Crack"
+										   filename="shared/game/common/models/giant_bear_ice_tile/ice_break_anim.ffa"
+										   play="false" loopCount="0"/>
+							</Animations>
+						</Model>
+						<Translation x="-74" z="2"/>
+						<Rotation z="90"/>
+						<Scale y="-1.0"/>
+						<Materials>
+							<Material parentMaterial="IceMat"/>
+						</Materials>
+					</SceneObject>
+
+					<SceneObject name="IceCrack2">
+						<Model filename="shared/game/common/models/giant_bear_ice_tile/ice_break.ffm">
+							<Animations>
+								<Animation name="Crack"
+										   filename="shared/game/common/models/giant_bear_ice_tile/ice_break_anim.ffa"
+										   play="false" loopCount="0"/>
+							</Animations>
+						</Model>
+						<Translation x="0" z="2"/>
+						<Scale y="-1.0"/>
+						<Materials>
+							<Material parentMaterial="IceMat"/>
+						</Materials>
+					</SceneObject>
+
+					<SceneObject name="IceCrack3">
+						<Model filename="shared/game/common/models/giant_bear_ice_tile/ice_break.ffm">
+							<Animations>
+								<Animation name="Crack"
+										   filename="shared/game/common/models/giant_bear_ice_tile/ice_break_anim.ffa"
+										   play="false" loopCount="0"/>
+							</Animations>
+						</Model>
+						<Translation x="74" z="2"/>
+						<Rotation z="-90"/>
+						<Scale y="-1.0"/>
+						<Materials>
+							<Material parentMaterial="IceMat"/>
+						</Materials>
+					</SceneObject>
+
+					<SceneObject name="Ice">
+						<Translation y="74"/>
+						<SceneObject name="IceBottom1">
+							<Sprite filename="shared/game/common/tex/gamegrid/ice_tile_01_000.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Translation x="-74" z="1"/>
+							<Materials>
+								<Material parentMaterial="IceMat"/>
+							</Materials>
+						</SceneObject>
+
+						<SceneObject name="IceBottom2">
+							<Sprite filename="shared/game/common/tex/gamegrid/ice_tile_01_000.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Translation x="0" z="1"/>
+							<Materials>
+								<Material parentMaterial="IceMat"/>
+							</Materials>
+						</SceneObject>
+
+						<SceneObject name="IceBottom3">
+							<Sprite filename="shared/game/common/tex/gamegrid/ice_tile_01_000.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Translation x="74" z="1"/>
+							<Materials>
+								<Material parentMaterial="IceMat"/>
+							</Materials>
+						</SceneObject>
+
+						<SceneObject name="IceMid1">
+							<Sprite filename="shared/game/common/tex/gamegrid/ice_tile_bear_000.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Translation x="-74" y="-74" z="0.5"/>
+							<Materials>
+								<Material parentMaterial="IceMat"/>
+							</Materials>
+						</SceneObject>
+
+						<SceneObject name="IceMid2">
+							<Sprite filename="shared/game/common/tex/gamegrid/ice_tile_bear_000.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Translation x="0" y="-74" z="0.5"/>
+							<Materials>
+								<Material parentMaterial="IceMat"/>
+							</Materials>
+						</SceneObject>
+
+						<SceneObject name="IceMid3">
+							<Sprite filename="shared/game/common/tex/gamegrid/ice_tile_00_000.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Translation x="74" y="-74" z="0.5"/>
+							<Materials>
+								<Material parentMaterial="IceMat"/>
+							</Materials>
+						</SceneObject>
+
+						<SceneObject name="IceTop1">
+							<Sprite filename="shared/game/common/tex/gamegrid/ice_tile_01_000.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Translation x="-74" y="-148" z="1"/>
+							<Materials>
+								<Material parentMaterial="IceMat"/>
+							</Materials>
+						</SceneObject>
+
+						<SceneObject name="IceTop2">
+							<Sprite filename="shared/game/common/tex/gamegrid/ice_tile_01_000.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Translation x="0" y="-148" z="1"/>
+							<Materials>
+								<Material parentMaterial="IceMat"/>
+							</Materials>
+						</SceneObject>
+
+						<SceneObject name="IceTop3">
+							<Sprite filename="shared/game/common/tex/gamegrid/ice_tile_01_000.png">
+								<Pivot anchor="center"/>
+							</Sprite>
+							<Translation x="74" y="-148" z="1"/>
+							<Materials>
+								<Material parentMaterial="IceMat"/>
+							</Materials>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="GridGFX">
+						<SceneObject>
+							<Translation y="-111"/>
+							<SceneObject name="Grid1">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_000.png">
+									<Pivot anchor="bottomRight"/>
+								</Sprite>
+								<Translation x="-111"/>
+							</SceneObject>
+							<SceneObject name="Grid2">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_004.png">
+									<Size width="222" height="37"/>
+									<Pivot anchor="bottom"/>
+								</Sprite>
+								<Translation x="0"/>
+							</SceneObject>
+							<SceneObject name="Grid3">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_001.png">
+									<Pivot anchor="bottomLeft"/>
+								</Sprite>
+								<Translation x="111"/>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="-74"/>
+							<SceneObject name="Grid4">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="-74"/>
+							</SceneObject>
+							<SceneObject name="Grid5">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_001.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="0"/>
+							</SceneObject>
+							<SceneObject name="Grid6">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="74"/>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="0"/>
+							<SceneObject name="Grid7">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_021.png">
+									<Size width="37" height="222"/>
+									<Pivot anchor="right"/>
+								</Sprite>
+								<Translation x="-111"/>
+							</SceneObject>
+
+							<SceneObject name="Grid8">
+								<Sprite filename="shared/game/common/tex/gamegrid/bear_tile_1x2_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="-74"/>
+								<Rotation z="-90"/>
+							</SceneObject>
+							<SceneObject name="Grid9">
+								<Sprite filename="shared/game/common/tex/gamegrid/bear_tile_1x2_001.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="0"/>
+								<Rotation z="-90"/>
+							</SceneObject>
+							<!--Grid w/o bear-->
+							<SceneObject name="Grid8_b">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="-74"/>
+								<Rotation z="-90"/>
+							</SceneObject>
+							<SceneObject name="Grid9_b">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="0"/>
+								<Rotation z="-90"/>
+							</SceneObject>
+
+							<SceneObject name="Grid10">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_001.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="74"/>
+							</SceneObject>
+							<SceneObject name="Grid11">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_005.png">
+									<Size width="37" height="222"/>
+									<Pivot anchor="left"/>
+								</Sprite>
+								<Translation x="111"/>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="74"/>
+							<SceneObject name="Grid12">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="-74"/>
+							</SceneObject>
+							<SceneObject name="Grid13">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_001.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="0"/>
+							</SceneObject>
+							<SceneObject name="Grid14">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_big_000.png">
+									<Pivot anchor="center"/>
+								</Sprite>
+								<Translation x="74"/>
+							</SceneObject>
+						</SceneObject>
+						<SceneObject>
+							<Translation y="111"/>
+							<SceneObject name="Grid15">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_016.png">
+									<Pivot anchor="topRight"/>
+								</Sprite>
+								<Translation x="-111"/>
+							</SceneObject>
+							<SceneObject name="Grid16">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_020.png">
+									<Size width="222" height="37"/>
+									<Pivot anchor="top"/>
+								</Sprite>
+								<Translation x="0"/>
+							</SceneObject>
+							<SceneObject name="Grid17">
+								<Sprite filename="shared/game/common/tex/gamegrid/gb_small_017.png">
+									<Pivot anchor="topLeft"/>
+								</Sprite>
+								<Translation x="111"/>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration name="Default">
+				<Size>
+					<OriginalSize height="550" width="300"/>
+					<Width percentage="60"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Landscape">
+				<Translation>
+					<X percentage="60"/>
+					<Y percentage="50"/>
+				</Translation>
+				<Size>
+					<Height percentage="90"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="50"/>
+					<Y percentage="40"/>
+				</Translation>
+				<Size>
+					<Width percentage="50"/>
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+	</SceneObject>
+</Scene>

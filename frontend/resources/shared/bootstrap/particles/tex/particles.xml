@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:3223fbe891613c20ae8c4f1c8147c934:7875a2e3bdb182b92e00ce90eb807bc5:5857d3eb5d29c9b0888f071ac863383f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="particles.png" width="1024" height="1024">
+    <sprite n="arc64.png" x="474" y="88" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="big_star.png" x="814" y="103" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="black_stripe.png" x="814" y="139" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="blinking_eyes.png" x="405" y="88" w="65" h="29" pX="0.5" pY="0.5"/>
+    <sprite n="blue_candy.png" x="462" y="360" w="53" h="51" pX="0.5" pY="0.5"/>
+    <sprite n="blue_piece.png" x="2" y="570" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="blue_shockwave.png" x="762" y="2" w="100" h="97" pX="0.5" pY="0.5"/>
+    <sprite n="blue_stripe.png" x="76" y="309" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="bright_ring64.png" x="405" y="121" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="bubble.png" x="264" y="476" w="28" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="bubble64.png" x="336" y="159" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="bubblegum_bubble_64.png" x="258" y="166" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="cake_particle.png" x="960" y="2" w="60" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="cartoon_smoke64.png" x="120" y="234" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="chain_string1.png" x="841" y="385" w="59" h="21" pX="0.5" pY="0.5"/>
+    <sprite n="chain_string2.png" x="56" y="525" w="32" h="21" pX="0.5" pY="0.5"/>
+    <sprite n="cherry_particle.png" x="960" y="66" w="60" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="chocolate_piece.png" x="447" y="415" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="circle_filled64.png" x="542" y="88" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="color_blob64.png" x="610" y="88" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_black_blob64.png" x="678" y="88" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_blue_blob64.png" x="746" y="103" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_black_01.png" x="473" y="156" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_black_02.png" x="404" y="189" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_blue_01.png" x="326" y="227" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_blue_02.png" x="258" y="234" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_cyan_01.png" x="188" y="269" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_cyan_02.png" x="120" y="302" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_green_01.png" x="2" y="312" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_green_02.png" x="2" y="380" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_orange_01.png" x="541" y="156" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_orange_02.png" x="609" y="156" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_purple_01.png" x="677" y="156" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_purple_02.png" x="745" y="171" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_red_01.png" x="849" y="188" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_red_02.png" x="953" y="199" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_splatter_black.png" x="70" y="345" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_splatter_blue.png" x="813" y="175" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_splatter_cyan.png" x="813" y="211" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_splatter_green.png" x="917" y="188" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_splatter_orange.png" x="917" y="224" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_splatter_purple.png" x="70" y="381" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_splatter_red.png" x="70" y="417" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_splatter_yellow.png" x="812" y="247" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_yellow_01.png" x="472" y="224" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_candy_impact_yellow_02.png" x="394" y="257" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_cyan_blob64.png" x="326" y="295" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_green_blob64.png" x="256" y="302" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_orange_blob64.png" x="188" y="337" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_purple_blob64.png" x="106" y="370" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_red_blob64.png" x="2" y="448" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="coloring_yellow_blob64.png" x="540" y="224" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="cream_particle.png" x="530" y="292" w="60" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_glow.png" x="958" y="130" w="64" h="65" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_piece.png" x="478" y="415" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="cyan_stripe.png" x="812" y="283" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="elec_64.png" x="134" y="2" w="128" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="ep01_fountain_soda.png" x="941" y="396" w="57" h="62" pX="0.5" pY="0.5"/>
+    <sprite n="ep72_blinking_eyes.png" x="106" y="438" w="64" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="eve_pfx.png" x="2" y="2" w="128" h="128" pX="0.5" pY="0.5"/>
+    <sprite n="eve_twinkle_pfx.png" x="608" y="224" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="fish_ripple.png" x="2" y="535" w="31" h="31" pX="0.5" pY="0.5"/>
+    <sprite n="fizz_bg_particle.png" x="722" y="292" w="15" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="fizz_bubble.png" x="676" y="224" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="fizz_counter_glow.png" x="266" y="2" w="120" h="82" pX="0.5" pY="0.5"/>
+    <sprite n="fizz_grow_particle.png" x="530" y="356" w="54" h="59" pX="0.5" pY="0.5"/>
+    <sprite n="frosting_particle.png" x="594" y="292" w="60" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="fx_shine1.png" x="866" y="2" w="90" h="90" pX="0.5" pY="0.5"/>
+    <sprite n="fx_shine2.png" x="392" y="393" w="51" h="55" pX="0.5" pY="0.5"/>
+    <sprite n="giant_fish_confetti.png" x="658" y="292" w="60" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="glow_particle.png" x="866" y="96" w="88" h="88" pX="0.5" pY="0.5"/>
+    <sprite n="glowing_star.png" x="106" y="493" w="32" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="green_piece.png" x="588" y="356" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="green_stripe.png" x="916" y="260" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="honey_comb.png" x="649" y="385" w="22" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="honey_crush.png" x="675" y="385" w="22" h="20" pX="0.5" pY="0.5"/>
+    <sprite n="ice_piece.png" x="619" y="356" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="jam1_bubble.png" x="916" y="296" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="jam_splash.png" x="258" y="88" w="74" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="jam_wave.png" x="126" y="156" w="74" h="74" pX="0.5" pY="0.5"/>
+    <sprite n="jelly.png" x="296" y="473" w="23" h="23" pX="0.5" pY="0.5"/>
+    <sprite n="jelly_cake_ceris.png" x="650" y="356" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="jelly_cake_pink.png" x="681" y="356" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="light64.png" x="744" y="239" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="light_ball.png" x="92" y="527" w="30" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="light_flare64.png" x="848" y="256" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="liqlock.png" x="738" y="371" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="lollipop_piece.png" x="769" y="371" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="mint_particle.png" x="841" y="324" w="60" h="57" pX="0.5" pY="0.5"/>
+    <sprite n="nice_spark.png" x="619" y="385" w="26" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="no_switch_glow.png" x="70" y="453" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="orange_piece.png" x="800" y="391" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="orange_stripe.png" x="805" y="319" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="paper_particle.png" x="741" y="307" w="60" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="pink_petal.png" x="204" y="156" w="50" h="55" pX="0.5" pY="0.5"/>
+    <sprite n="projectile.png" x="359" y="450" w="29" h="13" pX="0.5" pY="0.5"/>
+    <sprite n="purple_piece.png" x="831" y="410" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="purple_stripe.png" x="805" y="355" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="rainbow_trail.png" x="336" y="88" w="65" h="67" pX="0.5" pY="0.5"/>
+    <sprite n="red_piece.png" x="862" y="410" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="red_stripe.png" x="905" y="332" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="selection_highlight64.png" x="952" y="267" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="sidekick_cyan_turtle_glow_outline.png" x="2" y="220" w="70" h="88" pX="0.5" pY="0.5"/>
+    <sprite n="small_glowy_circle.png" x="905" y="368" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="small_shockwave.png" x="904" y="404" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="small_star.png" x="588" y="414" w="26" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="smoke64.png" x="462" y="292" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="smudgy_spark.png" x="712" y="356" w="22" h="31" pX="0.5" pY="0.5"/>
+    <sprite n="soda_corroda_bubble.png" x="76" y="265" w="40" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="soda_corroda_particle.png" x="196" y="492" w="28" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="soda_fish_bubble.png" x="76" y="220" w="40" h="41" pX="0.5" pY="0.5"/>
+    <sprite n="soda_fish_particle.png" x="126" y="527" w="30" h="30" pX="0.5" pY="0.5"/>
+    <sprite n="soundnote.png" x="204" y="215" w="50" h="50" pX="0.5" pY="0.5"/>
+    <sprite n="sparkle2_64.png" x="394" y="325" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="sparkle64.png" x="324" y="363" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="sprinkle_hardlevel_01.png" x="324" y="431" w="50" h="15" pX="0.5" pY="0.5"/>
+    <sprite n="sprinkle_hardlevel_02.png" x="242" y="438" w="50" h="15" pX="0.5" pY="0.5"/>
+    <sprite n="sprinkle_hardlevel_03.png" x="242" y="457" w="50" h="15" pX="0.5" pY="0.5"/>
+    <sprite n="sprinklesprinkle_blue.png" x="174" y="473" w="50" h="15" pX="0.5" pY="0.5"/>
+    <sprite n="sprinklesprinkle_red.png" x="106" y="474" w="50" h="15" pX="0.5" pY="0.5"/>
+    <sprite n="sprinklesprinkle_yellow.png" x="2" y="516" w="50" h="15" pX="0.5" pY="0.5"/>
+    <sprite n="square_glow.png" x="70" y="489" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="star64.png" x="256" y="370" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="strong_light.png" x="323" y="450" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="strong_light2.png" x="37" y="550" w="28" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="switch_glow.png" x="228" y="476" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="thin_glow.png" x="296" y="438" w="23" h="31" pX="0.5" pY="0.5"/>
+    <sprite n="vanilla_drop64.png" x="174" y="405" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="white_choco_particle.png" x="941" y="335" w="60" h="57" pX="0.5" pY="0.5"/>
+    <sprite n="x2.png" x="134" y="70" w="120" h="82" pX="0.5" pY="0.5"/>
+    <sprite n="x3.png" x="2" y="134" w="120" h="82" pX="0.5" pY="0.5"/>
+    <sprite n="x4.png" x="390" y="2" w="120" h="82" pX="0.5" pY="0.5"/>
+    <sprite n="x5.png" x="514" y="2" w="120" h="82" pX="0.5" pY="0.5"/>
+    <sprite n="x6.png" x="638" y="2" w="120" h="82" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_piece.png" x="588" y="385" w="27" h="25" pX="0.5" pY="0.5"/>
+    <sprite n="yellow_stripe.png" x="160" y="492" w="32" h="32" pX="0.5" pY="0.5"/>
+</TextureAtlas>

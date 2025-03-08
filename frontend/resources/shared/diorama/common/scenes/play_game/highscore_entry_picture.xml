@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="Avatar">
+		<SceneObject name="Profile">
+			<Translation y="-1"/>
+			<Scale x="1" y="1"/>
+			<Sprite filename="shared/diorama/common/tex/gui_elements/prof_pic.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="Crown" visibility="never">
+			<Translation y="-42" z="3"/>
+			<Sprite filename="shared/diorama/common/tex/lvl_pin_crown.png">
+				<Pivot anchor="center"/>
+			</Sprite>
+		</SceneObject>
+		<SceneObject name="Spinner">
+			<Translation y="-1" z="1"/>
+			<Animations>
+				<Animation name="rotate" animationData="Rotate360" loopCount="-1" play="true"/>
+			</Animations>
+			<Sprite filename="shared/preloader/tex/spinner.png">
+				<Pivot anchor="center"/>
+				<Size height="50" width="50"/>
+			</Sprite>
+		</SceneObject>
+	</SceneObject>
+</Scene>

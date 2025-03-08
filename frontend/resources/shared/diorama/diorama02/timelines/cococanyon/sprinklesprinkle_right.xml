@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+
+
+	<Timeline startTime="0.0" endTime="4.0">
+
+
+		<Triggers>
+
+			<EffectTrigger name="SprinkleSprinkleLeft" targetName="ClickableJuicy" time="0.20">
+				<Offset x="-20" z="-10"/>
+			</EffectTrigger>
+
+			<EffectTrigger name="SprinkleSprinkleRight" targetName="ClickableJuicy" time="0.30">
+				<Offset x="20" z="-10"/>
+			</EffectTrigger>
+
+			<EffectTrigger name="SprinkleSprinkleCenter" targetName="ClickableJuicy" time="0.20">
+				<Offset x="0" z="-10"/>
+			</EffectTrigger>
+
+			<EffectTrigger name="diorama_house"/>
+
+			<!--<EffectTrigger name="diorama_marsh_mallow_sfx" targetName="Small_Crab07" time="0.20">
+				<Offset x="0" z="-10"/>
+			</EffectTrigger>-->
+
+		</Triggers>
+		<TimeControls>
+			<!--<Loop time="1.49" jumpToTime="0.0"/>-->
+		</TimeControls>
+	</Timeline>
+</Timelines>

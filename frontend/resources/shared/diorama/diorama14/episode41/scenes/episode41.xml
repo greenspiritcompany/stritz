@@ -1,0 +1,636 @@
+<!DOCTYPE Scene SYSTEM '../../../../dtd/scene.dtd'>
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="episode41Material">
+		<Cull enabled="false" face="back"/>
+		<Texture filename="shared/diorama/diorama14/episode41/tex/episode41_material.png"/>
+	</Material>
+	<Material name="episode41MaterialAlpha" parentMaterial="episode41Material">
+		<Depth enabled="true" writeMask="false"/>
+		<Blend enabled="true"/>
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="episode41PathMaterial">
+		<Cull enabled="true" face="back"/>
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat"/>
+	</Material>
+	<Material name="episode41PathMaterialAlpha" parentMaterial="episode41PathMaterial">
+		<Depth enabled="true" writeMask="false"/>
+		<Blend enabled="true"/>
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="episode41BackdropMaterial">
+		<Cull enabled="true" face="back"/>
+		<Texture filename="shared/diorama/diorama14/episode41/tex/episode41_material.png" wrap="repeat"/>
+	</Material>
+	<Material name="episode41BackdropMaterialAlpha" parentMaterial="episode41BackdropMaterial">
+		<Depth enabled="true" writeMask="false"/>
+		<Blend enabled="true"/>
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject name="Episode" layerFlags="2">
+		<SceneObject name="DioramaModel">
+			<!--
+				BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+		FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+	  -->
+			<Translation x="0"/>
+			<SceneObject name="episode41_Backdrop"/>
+			<SceneObject name="E41EndSign">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm"/>
+				<Material parentMaterial="Under_Construction_Icon"/>
+				<Translation z="36" y="94" x="1270"/>
+				<Rotation z="0" y="0" x="-35"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<!--
+		THIS BELOW IS THE EPISODE GROUND GEOMETRY ETC.
+		-->
+			<SceneObject name="episode41_Ground">
+				<Model filename="shared/diorama/diorama14/episode41/models/episode41_ground.ffm"/>
+				<Material parentMaterial="episode41Material"/>
+				<Translation z="0" y="0" x="0"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<!--<SceneObject name="episode41_Ground_bush">-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/marzipan_bush.ffm"/>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="486" y="111.7" z="-336"/>-->
+			<!--<Rotation x="-5" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Ground_bush2">-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/marzipan_bush.ffm"/>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="342.8" y="103.3" z="-338.3"/>-->
+			<!--<Rotation x="-5" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Ground_bush3">-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/marzipan_bush.ffm"/>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="-655.8" y="97.5" z="-342.398"/>-->
+			<!--<Rotation x="-5" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Ground_WallPiece">-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/wall_pieces.ffm"/>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="0.0" y="0.0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<SceneObject name="episode41_Ground_bush2">
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/shroom_pile1.ffm"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-322.300" y="119.300" x="-606.800"/>
+				<Rotation z="35" y="0" x="-5"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Ground_bush2">
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/shroom_pile1.ffm"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-314.300" y="113.300" x="775.800"/>
+				<Rotation z="0.500" y="0" x="-5"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<!--<SceneObject name="episode41_Ground_bush2">-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/wall_jelly.ffm"/>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="0.0" y="0.0" z="-0.0/>-->
+			<!--<Rotation x="0" y="0" z="0.0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<SceneObject name="episode41_Ground_bush2">
+				<Model filename="shared/diorama/diorama14/episode41/models/wall_jelly.ffm"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="0" y="0" x="0"/>
+				<Rotation z="0" y="0" x="0"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+		</SceneObject>
+		<!--
+		PATH (DON'T CHANGE NAME)
+		-->
+		<SceneObject name="E08Path">
+			<Model filename="shared/diorama/diorama14/episode41/models/path/episode41_path.ffm">
+				<Bound minZ="-700"/>
+			</Model>
+			<Material parentMaterial="episode41PathMaterialAlpha"/>
+			<Translation z="0" y="0" x="0"/>
+			<Scale z="1" y="1" x="1"/>
+		</SceneObject>
+		<!--PATH SHADOW-->
+		<SceneObject name="PathShadow">
+			<Model filename="shared/diorama/diorama14/episode41/models/path/path_shadow.ffm">
+				<Bound minZ="-1000"/>
+			</Model>
+			<Material parentMaterial="episode41MaterialAlpha"/>
+			<Translation z="0" y="0" x="0"/>
+			<Scale z="1" y="1" x="1"/>
+		</SceneObject>
+		<!--
+				DIORAMA ASSETS
+			-->
+		<!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+			-->
+		<SceneObject name="episode41_Non_Interactable_Group"/>
+		<!--
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+		<SceneObject name="episode41_Interactable_Group">
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Import filename="shared/diorama/diorama14/episode41/scenes/episode41_levelpins.xml"/>
+			<!--<SceneObject name="episode41_Interactable_01">-->
+			<!--<Interactable upEffect="diorama_lollipop"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/interactable/princess_cake.ffm"/>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="-666.7" y="24.02" z="-244.8"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Interactable_02">-->
+			<!--<Interactable upEffect="diorama_lollipop"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/interactable/donuts_big.ffm"/>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="-748.98" y="28.5" z="-205.37"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Interactable_03">-->
+			<!--<Interactable upEffect="diorama_lollipop"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/interactable/donuts_big.ffm"/>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="189.6" y="28.5" z="318.7"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Interactable_04">-->
+			<!--<Interactable upEffect="diorama_lollipop"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/interactable/donuts_big.ffm"/>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="768.73" y="28.52" z="-274.24"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Interactable_05">-->
+			<!--<Interactable upEffect="diorama_lollipop"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/interactable/princess_cake.ffm"/>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="341.24" y="24.36" z="-241.37"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Interactable_06">-->
+			<!--<Interactable upEffect="diorama_house"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/interactable/donut_machine.ffm"/>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="-163.37" y="24.54" z="-232.7"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Interactable_07">-->
+			<!--<Interactable upEffect="diorama_lollipop"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/interactable/muffins.ffm"/>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="672.97" y="32.41" z="-304.335"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Interactable_08">-->
+			<!--<Interactable upEffect="diorama_lollipop"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/interactable/muffins2.ffm"/>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="-158.989" y="34.771" z="-213.602"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--<SceneObject name="episode41_Interactable_07">-->
+			<!--<Interactable upEffect="diorama_lollipop"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/interactable/lamp.ffm">-->
+			<!--<Animations>-->
+			<!--<Animation-->
+			<!--filename="shared/diorama/diorama14/episode41/models/interactable/lamp_idle.ffa"-->
+			<!--name="Idle" play="true" speed="1.0" loopCount="-1"/>-->
+			<!--</Animations>-->
+			<!--</Model>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="-476.87" y="428.55" z="-126"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.1" y="1.1" z="1.1"/>-->
+			<!--</SceneObject>-->
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_squishy"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/shroom_pile1.ffm"/>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-207.602" y="41.771" x="-743.120"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_squishy"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/shroom_pile2.ffm"/>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-245.602" y="45.771" x="-602.120"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_squishy"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/berries_1.ffm"/>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-143.602" y="47.771" x="-416.120"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<!--<SceneObject name="episode41_Interactable_08">-->
+			<!--<Interactable upEffect="diorama_lollipop"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/interactable/lamp.ffm"/>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="-350.12" y="450.771" z="-22.602"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<SceneObject name="episode41_Interactable_07">
+				<Interactable upEffect="diorama_lollipop"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/lamp.ffm">
+					<Animation loopCount="-1" filename="shared/diorama/diorama14/episode41/models/interactable/lamp_idle.ffa" play="true" name="Idle" speed="1"/>
+				</Model>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-22" y="478.550" x="-507.870"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_lollipop"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/basket.ffm"/>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="338.602" y="42" x="-346.120"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1.010" y="1.010" x="1.010"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_squishy"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/shroom_pile3.ffm"/>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="315.400" y="33.771" x="214.700"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_lollipop"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/sprinkles_pile.ffm">
+					<Bound minZ="-100"/>
+				</Model>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="312.400" y="29.771" x="71.700"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_squishy"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/shroom_pile4.ffm"/>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="314.400" y="31.771" x="728.700"/>
+				<Rotation z="-1.250" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_squishy"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/berries_2.ffm"/>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-143.602" y="45.771" x="201.120"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_squishy"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/shroom_pile1.ffm"/>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-209.400" y="41.771" x="352.700"/>
+				<Rotation z="1" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_squishy"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/shroom_pile2.ffm"/>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-248.602" y="42.771" x="851.120"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1.240" y="1.240" x="1.240"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_squishy"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/shroom_pile1.ffm"/>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-277.602" y="41.771" x="1255.120"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_lollipop"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/sprinkles_pile.ffm">
+					<Bound minZ="-500"/>
+				</Model>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-300.400" y="38.771" x="1108.700"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_Interactable_08">
+				<Interactable upEffect="diorama_lollipop"/>
+				<Model filename="shared/diorama/diorama14/episode41/models/interactable/cauldron.ffm">
+					<Bound minZ="-55.250"/>
+				</Model>
+				<Animation loopCount="0" play="false" name="Up" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Up2" speed="1.300" layer="3" animationData="interactable_v01_up"/>
+				<Animation loopCount="0" play="false" name="Out" speed="1.300" layer="2" animationData="interactable_out"/>
+				<Animation loopCount="0" play="false" name="Down" speed="1.300" layer="1" animationData="interactable_down"/>
+				<Material parentMaterial="episode41MaterialAlpha"/>
+				<Translation z="-135.400" y="45.771" x="-218.700"/>
+				<Rotation z="0" y="0" x="-15"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<!--<SceneObject name="episode41_Interactable_08">-->
+			<!--<Interactable upEffect="diorama_lollipop"/>-->
+			<!--<Model filename="shared/diorama/diorama14/episode41/models/character/episode41_character_placeholder.ffm"/>-->
+			<!--<Animations>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_v01_up" name="Up2" layer="3" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_out" name="Out" layer="2" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--<Animation animationData="interactable_down" name="Down" layer="1" play="false"-->
+			<!--loopCount="0" speed="1.3"/>-->
+			<!--</Animations>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="episode41MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="-96.3" y="0.0" z="-147.4"/>-->
+			<!--<Rotation x="-15" y="0" z="0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<!--ASSET SHADOWS-->
+			<SceneObject name="AssetShadows">
+				<Model filename="shared/diorama/diorama14/episode41/models/asset_shadows.ffm">
+					<Bound minZ="-1000"/>
+				</Model>
+				<Material parentMaterial="AssetShadowMaterialAlpha"/>
+				<Translation z="0" y="0" x="0"/>
+				<Rotation x="0"/>
+				<Scale z="1" y="1" x="1"/>
+			</SceneObject>
+			<SceneObject name="episode41_GodRays">
+				<Model filename="shared/diorama/common/models/effects/god_rays.ffm">
+					<Animation loopCount="-1" filename="shared/diorama/common/models/effects/god_rays.ffa" play="true" name="Idle" speed="1.250"/>
+				</Model>
+				<Material parentMaterial="CloudMaterialAlpha"/>
+				<Translation z="15" y="1" x="1"/>
+				<Rotation z="0" y="0" x="0"/>
+				<Scale z="1" y="1.400" x="1"/>
+			</SceneObject>
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+			<SceneObject name="episode41Character">
+				<Translation z="-147" y="0" x="-96"/>
+				<SceneObject name="ToadGuy">
+					<Rotation z="0" y="0" x="-15"/>
+					<Scale z="1.100" y="1.100" x="1.100"/>
+					<Model filename="shared/diorama/diorama14/episode41/models/character/episode41_character.ffm">
+						<Animation loopCount="-1" filename="shared/diorama/diorama14/episode41/models/character/episode41_character_idle.ffa" play="true" name="Idle" speed="1"/>
+					</Model>
+					<Material parentMaterial="episode41MaterialAlpha"/>
+				</SceneObject>
+			</SceneObject>
+			<!--
+				SPEECHBUBBLE
+			-->
+			<SceneObject name="SpeechBubbleEp41">
+				<Animation loopCount="0" name="SpeechBubbleAppear" animationData="SpeechBubbleAppear"/>
+				<Animation loopCount="0" name="SpeechBubbleDisappear" animationData="SpeechBubbleDisappear"/>
+				<SpeechBubble>
+					<Speech key="episode41.intro"/>
+					<Speech key="episode41.outro"/>
+				</SpeechBubble>
+				<!-- ADJUST THE SPEECH BUBBLE POSITION HERE -->
+				<Translation z="-220.171" y="120" x="-60"/>
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml"/>
+			</SceneObject>
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<SceneObject name="Particles">
+				<Effect play="true" effectData="Wisps" name="Wisps"/>
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effect play="true" effectData="Wisps" name="Wisps"/>
+				<Translation z="-200"/>
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effect play="true" effectData="Wisps" name="Wisps"/>
+				<Translation z="-400"/>
+			</SceneObject>
+			<!-- EPISODE CHARACTER OBJECT BEGIN TODO: CAMERA TARGET LEVEL ID -->
+			<SceneObject name="UnlockLevel607CameraTarget">
+				<Translation z="-20" y="19" x="-200"/>
+			</SceneObject>
+			<SceneObject name="UnlockLevel625CameraTarget">
+				<Translation z="-20" y="19" x="-200"/>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

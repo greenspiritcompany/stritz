@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="KingLogo" />
+	<SceneObject name="LoadingScreen">
+		<SceneObject name="Content">
+			<Translation z="990" />
+			<SceneObject name="TipColoring">
+				<Translation x="70.391" y="-0.716" z="1" />
+				<Scale x="0.521" y="0.521" z="1" />
+				<Sprite filename="shared/preloader/tex/loading_tip_cc.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="TipColoringGrid">
+				<Translation x="-39.056" y="-43.826" z="1" />
+				<Rotation z="-3.500" />
+				<Scale x="0.563" y="0.563" z="1" />
+				<Sprite filename="shared/preloader/tex/loading_tip_cc_grid.png" vertexColors="false" mode="sprite">
+					<Pivot anchor="center" />
+					<Insets bottom="0" left="0" right="0" top="0" />
+				</Sprite>
+			</SceneObject>
+		</SceneObject>
+		<SceneObject name="Background">
+			<Translation x="1" y="-3" />
+			<Sprite filename="shared/preloader/tex/soda_gradient_background.png" vertexColors="false" mode="sprite">
+				<Pivot anchor="center" />
+				<Insets bottom="0" left="0" right="0" top="0" />
+			</Sprite>
+		</SceneObject>
+		<SceneObject editorEntityId="64" name="LoadingText">
+			<Text key="generic_loader_loading" alignment="center" canBreakWords="false" font="BananaInnerShadow">
+				<Color g="255" r="255" a="255" b="255" />
+				<Pivot anchor="center" />
+				<Size x="20" y="20" />
+			</Text>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../../dtd/scene.dtd">
+<Scene>
+
+	<Import filename="shared/game/common/materials/candy/candy_material.xml"/>
+
+	<SceneObject name="Scene" visibility="always" layerFlags="512">
+		<SceneObject name="Candy">
+			<Material parentMaterial="CandyMaterial">
+				<Textures>
+					<Texture filename="shared/game/common/tex/candy/cyan_c.png"/>
+					<Texture filename="shared/game/common/tex/candy/cyan_n.png"/>
+				</Textures>
+			</Material>
+			<Sprite normals="true">
+				<Pivot anchor="center"/>
+			</Sprite>
+		</SceneObject>
+	</SceneObject>
+</Scene>

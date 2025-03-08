@@ -1,0 +1,18 @@
+<!DOCTYPE Timelines SYSTEM "../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="2.0">
+		<Animate target="Tile1">
+
+			<Color time="0.0" r="255" g="255" b="255" a="0"/>
+			<Color time="0.1" r="255" g="255" b="255" a="255"/>
+			<Color time="0.2" r="255" g="255" b="255" a="0"/>
+			<Translation time="0.0" y="0"/>
+			<Translation time="0.2" y="-148"/>
+
+		</Animate>
+
+		<Triggers>
+			<EffectTrigger name="SodaGoalBurstEFQ"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

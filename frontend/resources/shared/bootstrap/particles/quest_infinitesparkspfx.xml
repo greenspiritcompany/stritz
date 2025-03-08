@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="64" space="World" timeToEmit="60" name="Quest_InfiniteSparksPFX">
+<Dampening min="0.850" max="0.880" />
+<DirectionalForce x="0" y="100" />
+<Emitter emissionRate="0.015" spread="360" angle="0">
+	<SpawnArea width="12" depth="0" height="12" />
+</Emitter>
+<EndColor b="100" r="100" g="100" a="0" />
+<Rotation max="450" min="-100" />
+<RotationSpeed max="800" min="400" />
+<Size>
+	<Max x="57" y="57" />
+	<Min x="8" y="8" />
+</Size>
+<SizeChange>
+	<Max x="-36" y="-36" />
+	<Min x="0" y="0" />
+</SizeChange>
+<StartColor b="255" r="255" g="255" a="255" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive max="0.600" min="0.500" />
+<Velocity max="-300" min="300" />
+</ParticleEffect>

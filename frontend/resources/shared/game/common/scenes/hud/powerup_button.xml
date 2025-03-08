@@ -1,0 +1,405 @@
+<Scene>
+	<SceneObject name="buttonRoot" __visibility="0">
+		<Translation z="-100"/>
+		<SceneObject name="PowerUpButtonsLandscape" __visibility="0">
+			<Translation y="186" x="107"/>
+			<Scale y="0.900" z="0.900" x="0.900"/>
+			<SceneObject name="Lollipop">
+				<SceneObject class="Button" name="LollipopButton">
+					<Animation layer="1" animationData="Idle" name="Idle" play="true"/>
+					<Animation animationData="OnPress" name="OnPress" loopCount="0"/>
+					<Animation animationData="OnRelease" name="OnRelease" loopCount="0"/>
+					<SceneObject name="ButtonBackground">
+						<Translation y="6"/>
+						<Scale y="1.200" x="1.200"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/btn_green.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Icon">
+						<Translation y="2" z="0" x="0"/>
+						<Scale y="1.097" x="1.097"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/icon_lollipop.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="cool_down" visibility="never">
+						<Translation y="0" x="0"/>
+						<Scale y="1.151" x="1.151"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/cool_down.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="notification_stock">
+						<Translation y="40" x="35"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/notification_stock.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<SceneObject name="AmountText">
+							<Translation y="-4" z="150" x="-1"/>
+							<Text verticalAlignment="visualCenter" font="Banana" alignment="center">
+								<Size y="20" x="20"/>
+								<TextString>1</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="PurchaseIcon" visibility="never">
+						<Translation y="40" z="16" x="35"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/notification_buy.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<SceneObject>
+							<Translation y="-4" z="50" x="-1"/>
+							<Text verticalAlignment="visualCenter" font="Banana" alignment="center">
+								<Size y="20" x="20"/>
+								<TextString>+</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="LollipopStriped" __visibility="0">
+				<Translation y="107.556" x="0"/>
+				<SceneObject class="Button" name="LollipopStripedButton">
+					<Animation layer="1" animationData="Idle" name="Idle" play="true"/>
+					<Animation animationData="OnPress" name="OnPress" loopCount="0"/>
+					<Animation animationData="OnRelease" name="OnRelease" loopCount="0"/>
+					<SceneObject name="ButtonBackground">
+						<Translation y="6"/>
+						<Scale y="1.200" x="1.200"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/btn_green.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Icon">
+						<Translation y="2" z="0" x="0"/>
+						<Scale y="1.097" x="1.097"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/icon_lollipop_striped.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="cool_down" visibility="never">
+						<Translation y="1.111" x="0"/>
+						<Scale y="1.151" x="1.151"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/cool_down.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="notification_stock">
+						<Translation y="40" x="35"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/notification_stock.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<SceneObject name="AmountText">
+							<Translation y="-4" z="150" x="-1"/>
+							<Text verticalAlignment="visualCenter" font="Banana" alignment="center">
+								<Size y="20" x="20"/>
+								<TextString>1</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="PurchaseIcon" visibility="never">
+						<Translation y="40" z="16" x="35"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/notification_buy.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<SceneObject>
+							<Translation y="-4" z="50" x="-1"/>
+							<Text verticalAlignment="visualCenter" font="Banana" alignment="center">
+								<Size y="20" x="20"/>
+								<TextString>+</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="IllegalSwitch" __visibility="0">
+				<Translation y="215" x="0"/>
+				<SceneObject class="Button" name="IllegalSwitchButton">
+					<Animation layer="1" animationData="Idle" name="Idle" play="true"/>
+					<Animation animationData="OnPress" name="OnPress" loopCount="0"/>
+					<Animation animationData="OnRelease" name="OnRelease" loopCount="0"/>
+					<SceneObject name="ButtonBackground">
+						<Translation y="6"/>
+						<Scale y="1.200" x="1.200"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/btn_green.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Icon">
+						<Translation y="2" z="0" x="0"/>
+						<Scale y="1.097" x="1.097"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/icon_illegal_switch.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="cool_down" visibility="never">
+						<Translation y="1.111" x="0"/>
+						<Scale y="1.151" x="1.151"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/cool_down.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="notification_stock">
+						<Translation y="40" x="35"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/notification_stock.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<SceneObject name="AmountText">
+							<Translation y="-4" z="150" x="-1"/>
+							<Text verticalAlignment="visualCenter" font="Banana" alignment="center">
+								<Size y="20" x="20"/>
+								<TextString>1</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="PurchaseIcon" visibility="never">
+						<Translation y="40" z="16" x="35"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/notification_buy.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<SceneObject>
+							<Translation y="-4" z="50" x="-1"/>
+							<Text verticalAlignment="visualCenter" font="Banana" alignment="center">
+								<Size y="20" x="20"/>
+								<TextString>+</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<SceneObject name="PowerUpButtonsPortrait" __visibility="0">
+			<SceneObject name="Lollipop">
+				<Translation x="-4"/>
+				<SceneObject name="backgroundGRP">
+					<SceneObject name="backgroundEnd">
+						<Translation x="-121"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/portrait/booster_holder_2.png">
+							<Pivot anchor="right"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="background2">
+						<Translation x="-58"/>
+						<Scale x="-1"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/portrait/booster_holder.png">
+							<Pivot anchor="right"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="background1">
+						<Translation x="-58"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/portrait/booster_holder.png">
+							<Pivot anchor="right"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject class="Button" name="LollipopButton">
+					<Translation y="-9" x="-58"/>
+					<Animation layer="1" animationData="Idle" name="Idle" play="true"/>
+					<Animation animationData="OnPress" name="OnPress" loopCount="0"/>
+					<Animation animationData="OnRelease" name="OnRelease" loopCount="0"/>
+					<SceneObject name="ButtonBackground">
+						<Translation y="6" x="0"/>
+						<Scale y="1.250" x="1.250"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/btn_green.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Icon">
+						<Translation y="1" x="0"/>
+						<Scale y="1.159" x="1.159"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/icon_lollipop.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="cool_down" __visibility="3" visibility="never">
+						<Translation y="1" x="0"/>
+						<Scale y="1.180" x="1.180"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/cool_down.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="notification_stock">
+						<Translation y="-41" x="35"/>
+						<Scale y="1.200" x="1.200"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/notification_stock.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<SceneObject name="AmountText">
+							<Translation y="-4" z="150" x="-1"/>
+							<Text verticalAlignment="visualCenter" font="Banana" alignment="center">
+								<Size y="20" x="20"/>
+								<TextString>1</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="LollipopButtonBackgroundEnd" __visibility="3" visibility="never">
+					<Translation y="0" x="5"/>
+					<Scale x="-1"/>
+					<Sprite vertexColors="false" filename="shared/game/common/tex/hud/portrait/booster_holder_2.png">
+						<Pivot anchor="right"/>
+					</Sprite>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="LollipopStriped" __visibility="0">
+				<Translation x="122"/>
+				<SceneObject name="backgroundGRP">
+					<SceneObject name="background1">
+						<Translation x="-58"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/portrait/booster_holder.png">
+							<Pivot anchor="right"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="background2">
+						<Translation x="-58"/>
+						<Scale x="-1"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/portrait/booster_holder.png">
+							<Pivot anchor="right"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="backgroundEnd" visibility="never">
+						<Translation x="5"/>
+						<Scale x="-1"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/portrait/booster_holder_2.png">
+							<Pivot anchor="right"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject class="Button" name="LollipopStripedButton">
+					<Translation y="-9" x="-58"/>
+					<Animation layer="1" animationData="Idle" name="Idle" play="true"/>
+					<Animation animationData="OnPress" name="OnPress" loopCount="0"/>
+					<Animation animationData="OnRelease" name="OnRelease" loopCount="0"/>
+					<SceneObject name="ButtonBackground">
+						<Translation y="6" x="0"/>
+						<Scale y="1.250" x="1.250"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/btn_green.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Icon">
+						<Translation y="1" x="0"/>
+						<Scale y="1.137" x="1.137"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/icon_lollipop_striped.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="cool_down" __visibility="3" visibility="never">
+						<Translation y="1" x="0"/>
+						<Scale y="1.180" x="1.180"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/cool_down.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="notification_stock">
+						<Translation y="-41" x="35"/>
+						<Scale y="1.200" x="1.200"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/notification_stock.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<SceneObject name="AmountText">
+							<Translation y="-4" z="150" x="-1"/>
+							<Text verticalAlignment="visualCenter" font="Banana" alignment="center">
+								<Size y="20" x="20"/>
+								<TextString>1</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="IllegalSwitch" __visibility="0">
+				<Translation x="248"/>
+				<SceneObject name="backgroundGRP">
+					<SceneObject name="background1">
+						<Translation x="-58"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/portrait/booster_holder.png">
+							<Pivot anchor="right"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="background2">
+						<Translation x="-58"/>
+						<Scale x="-1"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/portrait/booster_holder.png">
+							<Pivot anchor="right"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="backgroundEnd">
+						<Translation x="5"/>
+						<Scale x="-1"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/portrait/booster_holder_2.png">
+							<Pivot anchor="right"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject class="Button" name="IllegalSwitchButton">
+					<Translation y="-9" x="-58"/>
+					<Animation layer="1" animationData="Idle" name="Idle" play="true"/>
+					<Animation animationData="OnPress" name="OnPress" loopCount="0"/>
+					<Animation animationData="OnRelease" name="OnRelease" loopCount="0"/>
+					<SceneObject name="ButtonBackground">
+						<Translation y="6" x="0"/>
+						<Scale y="1.250" x="1.250"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/btn_green.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Icon">
+						<Translation y="1" x="0"/>
+						<Scale y="1.137" x="1.137"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/icon_illegal_switch.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="cool_down" __visibility="3" visibility="never">
+						<Translation y="1" x="0"/>
+						<Scale y="1.180" x="1.180"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/cool_down.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="notification_stock">
+						<Translation y="-41" x="35"/>
+						<Scale y="1.200" x="1.200"/>
+						<Sprite vertexColors="false" filename="shared/game/common/tex/hud/notification_stock.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+						<SceneObject name="AmountText">
+							<Translation y="-4" z="150" x="-1"/>
+							<Text verticalAlignment="visualCenter" font="Banana" alignment="center">
+								<Size y="20" x="20"/>
+								<TextString>1</TextString>
+							</Text>
+						</SceneObject>
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+			<LayoutConfiguration name="Portrait">
+				<Translation>
+					<X percentage="41"/>
+					<Y percentage="92"/>
+				</Translation>
+				<Size>
+					<Height percentage="100"/>
+					<OriginalSize height="1024" width="768"/>
+					<Width percentage="100"/>
+				</Size>
+			</LayoutConfiguration>
+			<LayoutConfiguration name="PortraitFourThree">
+				<Translation>
+					<X percentage="45"/>
+					<Y percentage="94"/>
+				</Translation>
+				<Size>
+					<Height percentage="100"/>
+					<OriginalSize height="1024" width="768"/>
+					<Width percentage="84"/>
+				</Size>
+			</LayoutConfiguration>
+		</SceneObject>
+	</SceneObject>
+</Scene>

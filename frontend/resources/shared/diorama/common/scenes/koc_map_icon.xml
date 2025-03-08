@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="KocMapView">
+		<Translation z="520" />
+		<SceneObject class="Button" name="BubblegumButton">
+			<Translation x="120" y="290" />
+			<Animation startTime="0.10" loopCount="0" animationData="OnAppearGrow" name="OnAppear" />
+			<Animation loopCount="0" animationData="OnDisappearScale" name="OnDisappear" />
+			<SceneObject name="Arch">
+				<Translation x="-99.18" y="-87.16" z="0" />
+				<Scale x="1" y="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/arch.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject name="GoldBars">
+				<Translation x="28.99" y="-28.99" />
+				<Scale x="1" y="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/3goldbars.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject name="ArmRight">
+				<Translation x="43.25" y="-63.63" z="0" />
+				<Scale x="1" y="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/right_arm.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject name="GoldBars">
+				<Translation x="-105.98" y="-23.32" />
+				<Scale x="1" y="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/3goldbars.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject name="BubblegumMonster">
+				<Translation x="-63.16" y="-90.94" z="0" />
+				<Scale x="1" y="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/bubblegum_monster.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject name="CountdownBoxRight">
+				<Translation x="1.20" y="8.90" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/countdown_box.png" vertexColors="false">
+					<Scale x="1" y="1" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="CountdownBoxLeft">
+				<Translation x="1.20" y="8.90" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/countdown_box.png" vertexColors="false">
+					<Scale x="-1" y="1" />
+				</Sprite>
+			</SceneObject>
+			<SceneObject name="RemainingTime">
+				<Translation x="1.28" y="64.42" z="1" />
+				<Text maxHeight="30" alignment="center" font="Banana" verticalAlignment="visualCenter" overflowBehaviour="fit" maxWidth="160" canBreakWords="false" allowWordWrapping="false">
+					<Color a="255" r="165" b="128" g="62" />
+					<Shadow enabled="true">
+						<Color a="255" r="255" b="255" g="255" />
+						<Offset x="0" z="1" />
+					</Shadow>
+					<TextString>0</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject name="ArmLeft">
+				<Translation x="-95.11" y="-68.63" z="0" />
+				<Scale x="1" y="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/kotc/left_arm.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject>
+				<Translation x="0" y="38.85" z="0" />
+				<Text alignment="center" font="Banana" key="kotc.title">
+					<Shadow enabled="true">
+						<Color a="255" r="196" b="157" g="91" />
+						<Offset x="0" y="1" />
+					</Shadow>
+					<Size x="14" y="14" />
+				</Text>
+			</SceneObject>
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="0" />
+				<Y percentage="0" />
+			</Translation>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Landscape">
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="1024" width="570" />
+				<Width percentage="80" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

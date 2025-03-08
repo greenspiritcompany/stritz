@@ -1,0 +1,15 @@
+<!DOCTYPE Scene SYSTEM '../../../../../dtd/scene.dtd'>
+<Scene>
+	<Import filename="shared/game/common/materials/bottle_cap_material.xml"/>
+	<SceneObject layerFlags="512" visibility="always" name="Scene">
+		<SceneObject name="Bottle">
+			<SceneObject name="BottleCap">
+				<Model filename="shared/game/common/models/fizz_cap/fizz_bottle_cap.ffm">
+					<Animation loopCount="-1" play="true" filename="shared/game/common/models/soda_candy/soda_candy_collected.ffa" name="CollectWiggle"/>
+				</Model>
+				<Material parentMaterial="BottleCapMaterial"/>
+				<Scale z="0.56" x="0.56" y="0.56"/>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

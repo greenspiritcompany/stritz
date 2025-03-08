@@ -1,0 +1,160 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="MessageBox">
+        <Animation name="OnDisappear" animationData="MessageCenterBoxSlideOut" loopCount="0"/>
+		<SceneObject name="Background">
+			<Translation x="-6"/>
+			<SceneObject name="BackgroundPlate">
+				<Panel filename="shared/diorama/common/tex/gui_elements/message_box.png">
+					<Insets bottom="21" left="21" right="21" top="21"/>
+					<Size height="160" width="510"/>
+					<Pivot anchor="center"/>
+				</Panel>
+			</SceneObject>
+			<SceneObject name="BoxHeader">
+				<Translation y="-30" x="-166"/>
+				<Text canBreakWords="false" font="Typewriter" key="message_center.give_life.single.title" alignment="left"
+					  maxWidth="400" maxHeight="70" verticalAlignment="center" overflowBehaviour="fit">
+					<Color r="1" g="137" b="65" a="255"/>
+					<Size x="18" y="18"/>
+				</Text>
+			</SceneObject>
+
+			<SceneObject>
+				<Translation x="-254" y="38"/>
+				<SceneObject name="BoxShadow">
+					<Panel filename="shared/diorama/common/tex/gui_elements/message_box_shadow.png">
+						<Insets bottom="0" left="20" right="24" top="0"/>
+						<Size height="66" width="310"/>
+						<Pivot anchor="left"/>
+					</Panel>
+				</SceneObject>
+
+			</SceneObject>
+			<SceneObject name="PortaitsContainer">
+				<Translation x="52" y="32"/>
+				<SceneObject name="FriendPortrait_1">
+					<Translation y="10" x="-264"/>
+
+					<SceneObject name="Picture">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/default.png"/>
+					</SceneObject>
+					<SceneObject name="Frame">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_friends.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+
+				<SceneObject name="FriendPortrait_2">
+					<Translation y="10" x="-210"/>
+					<SceneObject name="Picture">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/default.png"/>
+					</SceneObject>
+					<SceneObject name="Frame">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_friends.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+
+				<SceneObject name="FriendPortrait_3">
+					<Translation y="10" x="-156"/>
+					<SceneObject name="Picture">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/default.png"/>
+					</SceneObject>
+					<SceneObject name="Frame">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_friends.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+
+				<SceneObject name="FriendPortrait_4">
+					<Translation y="10" x="-102"/>
+					<SceneObject name="Picture">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/default.png"/>
+					</SceneObject>
+					<SceneObject name="Frame">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_friends.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+
+				<SceneObject name="FriendPortrait_5">
+					<Translation y="10" x="-48"/>
+					<SceneObject name="Picture">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/default.png"/>
+					</SceneObject>
+					<SceneObject name="Frame">
+						<Sprite filename="shared/diorama/common/tex/gui_elements/photo_frame_friends.png">
+							<Pivot anchor="center"/>
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+
+
+			</SceneObject>
+			<SceneObject name="HeartSymbol" visibility="never">
+				<Translation x="-220" y="-50"/>
+				<Sprite filename="shared/diorama/common/tex/gui_elements/symbol_lives.png">
+					<Pivot anchor="center"/>
+				</Sprite>
+			</SceneObject>
+            <SceneObject name="CollabSymbol" visibility="never">
+                <Translation x="-220" y="-50"/>
+                <Sprite filename="shared/diorama/common/tex/gui_elements/symbol_collab_lock.png">
+                    <Pivot anchor="center"/>
+                </Sprite>
+            </SceneObject>
+			<SceneObject name="AcceptButton" class="Button" visibility="never">
+				<Translation x="154" y="39"/>
+				<Scale xyz="0.7"/>
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png">
+					<Pivot anchor="center"/><Insets left="54" top="48" right="54" bottom="59"/>
+					<Size width="256" height="108"/>
+				</Panel>
+                <Animation name="Idle" animationData="Idle" layer="1" play="true"/>
+                <Animation name="OnPress" animationData="OnPress" loopCount="0"/>
+                <Animation name="OnRelease" animationData="OnRelease" loopCount="0"/>
+
+				<SceneObject>
+					<Text canBreakWords="false" font="Banana" key="message_center.button.give_life"
+						  alignment="center" verticalAlignment="visualCenter" maxWidth="190" maxHeight="40" overflowBehaviour="fit">
+						<Size x="28" y="28"/>
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25"/>
+							<Offset x="0" y="6"/>
+						</Shadow>
+					</Text>
+					<Translation x="-2" y="-6"/>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="SendButton" class="Button" visibility="never">
+				<Translation x="154" y="39"/>
+				<Scale xyz="0.7"/>
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_blue.png">
+					<Pivot anchor="center"/><Insets left="54" top="48" right="54" bottom="59"/>
+					<Size width="256" height="108"/>
+				</Panel>
+                <Animation name="Idle" animationData="Idle" layer="1" play="true"/>
+                <Animation name="OnPress" animationData="OnPress" loopCount="0"/>
+                <Animation name="OnRelease" animationData="OnRelease" loopCount="0"/>
+
+				<SceneObject>
+					<Text canBreakWords="false" font="Banana" key="message_center.button.send_life"
+						  alignment="center" verticalAlignment="visualCenter" maxWidth="190" maxHeight="40" overflowBehaviour="fit">
+						<Size x="28" y="28"/>
+						<Shadow enabled="true">
+							<Color r="0" g="0" b="0" a="25"/>
+							<Offset x="0" y="6"/>
+						</Shadow>
+					</Text>
+					<Translation x="-2" y="-6"/>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

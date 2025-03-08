@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+
+<Scene>
+	<SceneObject name="Scene" visibility="always" layerFlags="256">
+		<SceneObject name="ScaleHelper">
+			<Translation x="0" y="-20" z="400"/>
+			<Scale xyz="0.8"/>
+			<SceneObject name="ExclGroup">
+				<Animations>
+					<Animation name="ExclSwipe" animationData="ExclGeneralData" play="false" loopCount="0" speed="1.0"/>
+				</Animations>
+				<SceneObject name="ExclTasty">
+					<Sprite filename="shared/game/common/tex/hud/tasty.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+				</SceneObject>
+				<SceneObject name="ExclTastyBlurred">
+					<Sprite filename="shared/game/common/tex/hud/tasty_blur.png">
+						<Pivot anchor="center"/>
+					</Sprite>
+					<Scale xyz="2.00"/>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

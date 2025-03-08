@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="BoosterRoot">
+		<LayoutConfiguration>
+			<Size>
+				<Height percentage="70" />
+				<OriginalSize height="550" width="640" />
+				<Width percentage="100" />
+			</Size>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+		</LayoutConfiguration>
+		<SceneObject name="OnAppear">
+			<Animation animationData="RewardScaleInSmall" loopCount="0" name="OnAppear" play="true" />
+			<SceneObject name="coloringCandy">
+				<Scale z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/pregame_coloring_modal_icon.png" vertexColors="false">
+					<Pivot anchor="center" />
+				</Sprite>
+				<Translation y="-17" z="3" />
+				<Animation animationData="IdleBackButton" name="idle" play="true" />
+				<Animation animationData="IdleBackButton" name="idle" play="true" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

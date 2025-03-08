@@ -1,0 +1,90 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../../dtd/scene.dtd">
+<Scene>
+	<Import filename="shared/game/common/materials/jelly_cake_material.xml"/>
+	<SceneObject name="Scene" layerFlags="512">
+		<SceneObject name="JellyCake">
+			<Scale x="0.85" y="-0.85" z="0.85"/>
+			<SceneObject name="ParticleHelperPart0">
+				<Rotation z="0"/>
+			</SceneObject>
+			<SceneObject name="ParticleHelperPart1">
+				<Rotation z="-45"/>
+			</SceneObject>
+			<SceneObject name="ParticleHelperPart2">
+				<Rotation z="-90"/>
+			</SceneObject>
+			<SceneObject name="ParticleHelperPart3">
+				<Rotation z="-135"/>
+			</SceneObject>
+			<SceneObject name="ParticleHelperPart4">
+				<Rotation z="180"/>
+			</SceneObject>
+			<SceneObject name="ParticleHelperPart5">
+				<Rotation z="135"/>
+			</SceneObject>
+			<SceneObject name="ParticleHelperPart6">
+				<Rotation z="90"/>
+			</SceneObject>
+			<SceneObject name="ParticleHelperPart7">
+				<Rotation z="45"/>
+			</SceneObject>
+			<SceneObject __editorVisibility="false" visibility="never" name="Part0">
+				<Model filename="shared/game/common/models/jelly_cake/part0.ffm">
+					<Animation filename="shared/game/common/models/jelly_cake/jiggle.ffa" loopCount="0" name="Jiggle"
+							   play="true"/>
+				</Model>
+				<Material parentMaterial="JellyCakePartsMaterial"/>
+			</SceneObject>
+			<SceneObject __editorVisibility="false" visibility="never" name="Part1">
+				<Model filename="shared/game/common/models/jelly_cake/part1.ffm">
+					<Animation filename="shared/game/common/models/jelly_cake/jiggle.ffa" loopCount="0" name="Jiggle"
+							   play="true"/>
+				</Model>
+				<Material parentMaterial="JellyCakePartsMaterial"/>
+			</SceneObject>
+			<SceneObject __editorVisibility="false" visibility="never" name="Part2">
+				<Model filename="shared/game/common/models/jelly_cake/part2.ffm">
+					<Animation filename="shared/game/common/models/jelly_cake/jiggle.ffa" loopCount="0" name="Jiggle"
+							   play="true"/>
+				</Model>
+				<Material parentMaterial="JellyCakePartsMaterial"/>
+			</SceneObject>
+			<SceneObject __editorVisibility="false" visibility="never" name="Part3">
+				<Model filename="shared/game/common/models/jelly_cake/part3.ffm">
+					<Animation filename="shared/game/common/models/jelly_cake/jiggle.ffa" loopCount="0" name="Jiggle"
+							   play="true"/>
+				</Model>
+				<Material parentMaterial="JellyCakePartsMaterial"/>
+			</SceneObject>
+			<SceneObject __editorVisibility="false" visibility="never" name="Part4">
+				<Model filename="shared/game/common/models/jelly_cake/part4.ffm">
+					<Animation filename="shared/game/common/models/jelly_cake/jiggle.ffa" loopCount="0" name="Jiggle"
+							   play="true"/>
+				</Model>
+				<Material parentMaterial="JellyCakePartsMaterial"/>
+			</SceneObject>
+			<SceneObject __editorVisibility="false" visibility="never" name="Part5">
+				<Model filename="shared/game/common/models/jelly_cake/part5.ffm">
+					<Animation filename="shared/game/common/models/jelly_cake/jiggle.ffa" loopCount="0" name="Jiggle"
+							   play="true"/>
+				</Model>
+				<Material parentMaterial="JellyCakePartsMaterial"/>
+			</SceneObject>
+			<SceneObject __editorVisibility="false" visibility="never" name="Part6">
+				<Model filename="shared/game/common/models/jelly_cake/part6.ffm">
+					<Animation filename="shared/game/common/models/jelly_cake/jiggle.ffa" loopCount="0" name="Jiggle"
+							   play="true"/>
+				</Model>
+				<Material parentMaterial="JellyCakePartsMaterial"/>
+			</SceneObject>
+			<SceneObject __editorVisibility="false" visibility="never" name="Part7">
+				<Model filename="shared/game/common/models/jelly_cake/part7.ffm">
+					<Animation filename="shared/game/common/models/jelly_cake/jiggle.ffa" loopCount="0" name="Jiggle"
+							   play="true"/>
+				</Model>
+				<Material parentMaterial="JellyCakePartsMaterial"/>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

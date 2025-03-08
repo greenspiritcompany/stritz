@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="Episode51Material">
+		<Cull enabled="false" face="back" />
+		<Texture filename="shared/diorama/diorama17/episode51/tex/episode51_material.png" />
+	</Material>
+	<Material name="Episode51MaterialAlpha" parentMaterial="Episode51Material">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<Material name="Episode49Material">
+		<Cull enabled="false" face="back" />
+		<Texture filename="shared/diorama/diorama17/episode49/tex/episode49_material.png" />
+	</Material>
+	<Material name="Episode49MaterialAlpha" parentMaterial="Episode49Material">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode51PathMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode51PathMaterialAlpha" parentMaterial="Episode51PathMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="Episode51BackdropMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/diorama17/episode51/tex/episode51_material.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode51BackdropMaterialAlpha" parentMaterial="Episode51BackdropMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<SceneObject name="DioramaModel">
+			<!--
+				BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+        FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+      -->
+			<Model filename="shared/diorama/diorama17/episode51/models/episode51_diorama_base.ffm" />
+			<Material parentMaterial="Episode51BackdropMaterial" />
+			<Translation x="1900" />
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Import filename="shared/diorama/diorama17/episode51/scenes/episode51_levelpins.xml" />
+			<!--
+        EXTEND AND DUPLICATE BASE/WATER
+        -->
+			<!--<SceneObject name="Episode51_Diorama_ExtendBase">-->
+			<!--<Model filename="shared/diorama/diorama17/episode51/models/episode51_diorama_base.ffm"/>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="Episode51BackdropMaterial"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="1900" y="0.0"/>-->
+			<!--<Scale x="1.0" y="1.0" z="1.0"/>-->
+			<!--</SceneObject>-->
+			<SceneObject name="Episode51_Backdrop">
+				<SceneObject name="ep51_base1">
+					<Material parentMaterial="Episode51Material" />
+					<Model filename="shared/diorama/diorama17/episode51/models/ep51_base1.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="ep51_shoreline">
+					<Material parentMaterial="Episode49MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/ep51_shoreline.ffm">
+						<Bound minZ="-1000" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="0" y="0" z="0" />
+				</SceneObject>
+			</SceneObject>
+			<!--
+      PATH (DON'T CHANGE NAME)
+      -->
+			<SceneObject name="E51Path">
+				<Model filename="shared/diorama/diorama17/episode51/models/path/episode51_path.ffm">
+					<Bound minZ="-600" />
+				</Model>
+				<Material parentMaterial="Episode51PathMaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<!--ADD PATH SHADOW - ADD YOUR -->
+			<SceneObject name="E51PathShadow">
+				<Model filename="shared/diorama/diorama17/episode51/models/path/path_shadow.ffm">
+					<Bound minZ="-700" />
+				</Model>
+				<Material parentMaterial="Episode51MaterialAlpha" />
+				<Translation x="0" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<!--ASSET SHADOWS-->
+			<!--<SceneObject name="AssetShadows">-->
+			<!--<Model filename="shared/diorama/diorama17/episode51/models/asset_shadow.ffm">-->
+			<!--<Bound minZ="-1600"/>-->
+			<!--</Model>-->
+			<!--<Materials>-->
+			<!--<Material parentMaterial="Episode51MaterialAlpha"/>-->
+			<!--</Materials>-->
+			<!--<Translation x="0" y="0" z="0"/>-->
+			<!--<Rotation x="0"/>-->
+			<!--<Scale x="1" y="1" z="1"/>-->
+			<!--</SceneObject>-->
+			<SceneObject name="E51EndSign">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm" />
+				<Material parentMaterial="Under_Construction_Icon" />
+				<Translation x="758" y="84" z="40" />
+				<Rotation x="-35" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<!--PORTAL FORWARD-->
+			<SceneObject name="PortalForwardGroup">
+				<Translation x="-380" y="15" z="170" />
+				<SceneObject name="diorama_link_next">
+					<Model filename="shared/diorama/common/models/portal/portal.ffm" />
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="1147" y="115" z="-215" />
+					<Rotation x="0" y="-40" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<SceneObject name="diorama_portal_shadow">
+						<Model filename="shared/diorama/common/models/portal/portal_shadow.ffm" />
+						<Material parentMaterial="PortalMaterial" />
+						<Translation x="0" y="0" z="0" />
+						<Rotation x="0" y="0" z="0" />
+						<Scale x="1" y="1" z="1" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="diorama_link_next_pin_enabled" visibility="never">
+					<Model filename="shared/diorama/common/models/portal/portal_pin.ffm">
+						<Animation filename="shared/diorama/common/models/portal/pin_idle.ffa" loopCount="-1" name="idlePinEmil" play="true" speed="1" />
+					</Model>
+					<Material parentMaterial="PortalMaterial" />
+					<Translation x="1120" y="42" z="-165" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="diorama_link_next_pin_disabled">
+					<Model filename="shared/diorama/common/models/portal/portal_pin_inactive.ffm" />
+					<Material parentMaterial="PortalDisabledMaterial" />
+					<Translation x="1120" y="42" z="-165" />
+					<Rotation x="4.970" y="34.889" z="1.863" />
+					<Scale x="1" y="1" z="1" />
+				</SceneObject>
+			</SceneObject>
+			<!-- DIORAMA ASSETS -->
+			<!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+			-->
+			<SceneObject name="episode51_Non_Interactable_Group" />
+			<SceneObject name="Episode36_foreground">
+				<Model filename="shared/diorama/diorama17/episode51/models/character/character_shadow.ffm">
+					<Bound minZ="-800" />
+					<Animation filename="shared/diorama/diorama17/episode51/models/character/character_shadow_idle.ffa" loopCount="-1" name="Idle" play="true" speed="0.900" />
+				</Model>
+				<Material parentMaterial="Episode51MaterialAlpha" />
+				<Translation x="206.915" y="-0.586" z="-122.244" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="backdrop">
+				<Material parentMaterial="Episode51MaterialAlpha" />
+				<Model filename="shared/diorama/diorama17/episode51/models/non_interactable/backdrop.ffm" />
+				<Rotation x="0" y="0" z="0" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+			<SceneObject name="heartsinthesky6">
+				<Material parentMaterial="Episode51MaterialAlpha" />
+				<Model filename="shared/diorama/diorama17/episode51/models/cast_shadows.ffm">
+					<Bound minZ="-1000" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Translation x="0" y="0" z="0" />
+			</SceneObject>
+			<!--
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+			<SceneObject name="episode51_Interactable_Group">
+				<SceneObject name="cakeslice2">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/cakeslice2.ffm" />
+					<Interactable upEffect="diorama_lollipop" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="5" y="0" z="0" />
+					<Translation x="509.620" y="-14.461" z="-119.343" />
+				</SceneObject>
+				<SceneObject name="heartsonground6">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/heartsonground6.ffm" />
+					<Interactable upEffect="diorama_squishy" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="5" y="0" z="0" />
+					<Translation x="-993.589" y="52.557" z="-168.106" />
+				</SceneObject>
+				<SceneObject name="cake3">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/cake3.ffm" />
+					<Interactable upEffect="diorama_house" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="5" y="0" z="0" />
+					<Translation x="833.613" y="-0.472" z="-220.205" />
+				</SceneObject>
+				<SceneObject name="rose3">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/rose3.ffm" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="5" y="0" z="-20" />
+					<Translation x="-96.428" y="14.869" z="-256.305" />
+					<Scale z="1.100" x="1.100" y="1.100" />
+				</SceneObject>
+				<SceneObject name="heartsonground1">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/heartsonground1.ffm" />
+					<Interactable upEffect="diorama_squishy" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="10" z="0" />
+					<Translation x="-1046.147" y="-26.001" z="314.699" />
+				</SceneObject>
+				<SceneObject name="heartsonground4">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/heartsonground2.ffm" />
+					<Interactable upEffect="diorama_squishy" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="10" z="0" />
+					<Translation x="-475.818" y="-16.902" z="309.356" />
+				</SceneObject>
+				<SceneObject name="heartsonground5">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/heartsonground3.ffm" />
+					<Interactable upEffect="diorama_squishy" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="10" y="0" z="0" />
+					<Translation x="19.352" y="-9.987" z="307.038" />
+				</SceneObject>
+				<SceneObject name="heartsonground10">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/heartsonground4.ffm" />
+					<Interactable upEffect="diorama_squishy" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation y="0" z="0" x="5" />
+					<Translation x="381.348" y="-2.385" z="304.393" />
+				</SceneObject>
+				<SceneObject name="heartsonground11">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/heartsonground5.ffm" />
+					<Interactable upEffect="diorama_squishy" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="15" y="0" z="0" />
+					<Translation x="881.979" y="-18.463" z="299.047" />
+				</SceneObject>
+				<SceneObject name="cake1">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/cake1.ffm" />
+					<Interactable upEffect="diorama_house" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="5" y="0" z="0" />
+					<Translation x="-914.431" y="-0.300" z="-202.891" />
+				</SceneObject>
+				<SceneObject name="cake6">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/cake2.ffm" />
+					<Interactable upEffect="diorama_house" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="5" y="0" z="0" />
+					<Translation x="-238.363" y="0.075" z="-204.240" />
+				</SceneObject>
+				<SceneObject name="cakeslice1">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/cakeslice1.ffm" />
+					<Interactable upEffect="diorama_lollipop" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-560.457" y="106.377" z="-106.870" />
+				</SceneObject>
+				<SceneObject name="rose2">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/rose2.ffm" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-388.795" y="0" z="-218.239" />
+				</SceneObject>
+				<SceneObject name="rose1">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/rose1.ffm" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-775.569" y="-21.414" z="-160.464" />
+				</SceneObject>
+				<SceneObject name="rose4" editorEntityId="1223">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/rose4.ffm" />
+					<Interactable upEffect="diorama_tree" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="583.045" y="0" z="-150.417" />
+				</SceneObject>
+				<SceneObject name="rose4" editorEntityId="1223">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/hearts_hanging.ffm" />
+					<Interactable upEffect="diorama_cloud" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Translation x="-1189.511" y="704.190" z="-272.815"/>
+					<Rotation x="0.000" y="0.000" z="0.000"/>
+					<Scale x="1.000" y="1.000" z="1.000"/>
+				</SceneObject>
+				<SceneObject name="rose4" editorEntityId="1223">
+					<Material parentMaterial="Episode51MaterialAlpha" />
+					<Model filename="shared/diorama/diorama17/episode51/models/interactable/hearts_hanging.ffm" />
+					<Interactable upEffect="diorama_cloud" />
+					<Animation layer="4" play="true" speed="0.500" animationData="Idle" loopCount="-1" name="Idle" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up" />
+					<Animation layer="3" play="false" speed="1.300" animationData="interactable_v01_up" loopCount="0" name="Up2" />
+					<Animation layer="2" play="false" speed="1.300" animationData="interactable_out" loopCount="0" name="Out" />
+					<Animation layer="1" play="false" speed="1.300" animationData="interactable_down" loopCount="0" name="Down" />
+					<Translation x="980.177" y="775.199" z="6.847"/>
+					<Rotation x="0.000" y="0.000" z="0.000"/>
+					<Scale x="1.000" y="1.000" z="1.000"/>
+				</SceneObject>
+			</SceneObject>
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+			<SceneObject name="Episode51Character">
+				<Translation x="180" y="0" z="-150.910" />
+				<SceneObject name="CharacterEp51">
+					<Rotation x="-7" y="0" z="0" />
+					<Scale x="1" y="1" z="1" />
+					<Model filename="shared/diorama/diorama17/episode51/models/character/episode51_character.ffm">
+						<Animation filename="shared/diorama/diorama17/episode51/models/character/episode51_character_idle.ffa" loopCount="-1" name="Idle" play="true" speed="1" />
+						<Animation filename="shared/diorama/diorama17/episode51/models/character/episode51_character_talk.ffa" loopCount="-1" name="Talk" play="false" speed="1" />
+					</Model>
+					<Material parentMaterial="Episode51MaterialAlpha" />
+				</SceneObject>
+			</SceneObject>
+			<!--
+				SPEECHBUBBLE
+			-->
+			<SceneObject name="SpeechBubbleEp51">
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear" />
+				<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear" />
+				<SpeechBubble>
+					<Speech key="episode51.intro" />
+					<Speech key="episode51.outro" />
+				</SpeechBubble>
+				<Translation x="150" y="125" z="-136.171" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+			</SceneObject>
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<SceneObject name="Particles">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-200" />
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-400" />
+			</SceneObject>
+			<!--
+
+			-->
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<SceneObject name="UnlockLevel807CameraTarget">
+				<Translation x="-90" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel825CameraTarget">
+				<Translation x="-90" y="19" z="-20" />
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

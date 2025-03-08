@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+	<!--
+			EPISODEMATERIAL & EPISODEMATERIALALPHA
+		-->
+	<Material name="Episode62Material">
+		<Cull enabled="false" face="back" />
+		<Texture filename="shared/diorama/diorama21/episode62/tex/episode62_material.png" />
+	</Material>
+	<Material name="Episode62MaterialAlpha" parentMaterial="Episode62Material">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			PATHMATERIAL & PATHMATERIALALPHA
+		-->
+	<Material name="Episode62PathMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/common/tex/path_tex.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode62PathMaterialAlpha" parentMaterial="Episode62PathMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+			BACKDROPMATERIAL & BACKDROPMATERIALALPHA
+		-->
+	<Material name="Episode62BackdropMaterial">
+		<Cull enabled="true" face="back" />
+		<Texture filename="shared/diorama/diorama21/episode62/tex/episode62_material.png" wrap="repeat" />
+	</Material>
+	<Material name="Episode62BackdropMaterialAlpha" parentMaterial="Episode62BackdropMaterial">
+		<Depth enabled="true" writeMask="false" />
+		<Blend enabled="true" />
+	</Material>
+	<!--
+		EPISODE SCENE OBJECTS
+	-->
+	<SceneObject layerFlags="2" name="Episode">
+		<SceneObject name="DioramaModel">
+			<!--
+				BACKDROP SKY AND THE DIORAMA BASE ARE KEPT SEPARATE SO YOU CAN EXTEND EACH INDIVIDUALLY,
+        FOR INSTANCE WHEN YOU WANT A LONGER SKY BACKDROP BUT KEEP A SHORTER "BASE" OF THE DIORAMA OR VISE VERSA
+      -->
+			<Model filename="shared/diorama/diorama21/episode62/models/episode62_diorama_base.ffm" />
+			<Material parentMaterial="Episode62BackdropMaterial" />
+			<Translation x="0" />
+			<!--
+				IMPORT LEVEL PINS
+			-->
+			<Import filename="shared/diorama/diorama21/episode62/scenes/episode62_levelpins.xml" />
+			<SceneObject name="Episode62_Backdrop">
+				<SceneObject name="episode62_ground" editorEntityId="6">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/episode62_ground.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-121.755" y="-16.844" z="45.430" />
+					<Scale x="0.956" y="1" z="1.592" />
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="E62EndSign">
+				<Model filename="shared/diorama/common/models/under_construction_icon/under_construction_icon.ffm" />
+				<Material parentMaterial="Under_Construction_Icon" />
+				<Translation x="966.878" y="141.010" z="322.171" />
+				<Rotation x="-35" y="0" z="0" />
+				<Scale x="1" y="1" z="1" />
+			</SceneObject>
+			<SceneObject name="Episode62_NonInteractable_Group">
+				<SceneObject name="boatbase">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/boatbase.ffm" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="ladder">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0022_woodfloor.png" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/ladder.ffm" />
+					<Rotation x="0" y="-3.170" z="0" />
+					<Translation x="9.658" y="0" z="-24.347" />
+				</SceneObject>
+				<SceneObject name="boatfloor">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0022_woodfloor.png" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/boatfloor.ffm" />
+					<Rotation x="0" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="small_ladder">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0022_woodfloor.png" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_ladder.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-3.151" y="-2.123" z="0" />
+				</SceneObject>
+				<SceneObject name="small_ladderrope">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_ladderrope.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-4.889" y="-2.123" z="4.519" />
+				</SceneObject>
+				<SceneObject name="small_shadow">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-2.688" y="-1.048" z="-9.497" />
+				</SceneObject>
+				<SceneObject name="asset_shadow">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-486.528" y="0" z="-92.746" />
+				</SceneObject>
+				<SceneObject name="asset_shadow2">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-22.615" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="asset_shadow3">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-531.901" y="0" z="22.710" />
+				</SceneObject>
+				<SceneObject name="asset_shadow4">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-291.105" y="2.921" z="355.446" />
+					<Scale x="0.814" y="1" z="0.792" />
+				</SceneObject>
+				<SceneObject name="asset_shadow5">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-28.281" y="0" z="462.177" />
+					<Scale x="0.959" y="1" z="0.950" />
+				</SceneObject>
+				<SceneObject name="asset_shadow6">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="148.016" y="0" z="234.501" />
+					<Scale x="1" y="1" z="0.849" />
+				</SceneObject>
+				<SceneObject name="asset_shadow7">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="133.091" y="0" z="122.696" />
+				</SceneObject>
+				<SceneObject name="asset_shadow8">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-792.705" y="83.250" z="539.541" />
+					<Scale x="0.796" y="1" z="0.910" />
+				</SceneObject>
+				<SceneObject name="asset_shadow9">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-855.859" y="70.619" z="354.515" />
+					<Scale x="0.675" y="1" z="0.858" />
+				</SceneObject>
+				<SceneObject name="asset_shadow10">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-825.948" y="83.250" z="-19.177" />
+					<Scale x="1.020" y="1" z="1" />
+				</SceneObject>
+				<SceneObject name="small_shadow2">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-33.819" y="-1.048" z="-189.345" />
+				</SceneObject>
+				<SceneObject name="small_shadow3">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-92.656" y="-1.048" z="-319.712" />
+				</SceneObject>
+				<SceneObject name="small_shadow4">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-494.716" y="-1.048" z="-486.784" />
+				</SceneObject>
+				<SceneObject name="small_shadow5">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-1400.293" y="-41.986" z="-486.784" />
+				</SceneObject>
+				<SceneObject name="small_shadow6">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-1781.608" y="-41.527" z="-325.082" />
+				</SceneObject>
+				<SceneObject name="small_shadow7">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-1875.862" y="-40.839" z="-195.762" />
+				</SceneObject>
+				<SceneObject name="small_shadow8">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-1903.220" y="-41.222" z="-50.741" />
+				</SceneObject>
+				<SceneObject name="asset_shadow11">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="447.566" y="104.376" z="-30.677" />
+				</SceneObject>
+				<SceneObject name="asset_shadow12">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="-241.825" y="0" z="126.330" />
+					<Scale x="1" y="1" z="0.849" />
+				</SceneObject>
+				<SceneObject name="asset_shadow13">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/asset_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="177.452" y="0" z="511.639" />
+					<Scale x="0.608" y="1" z="0.950" />
+				</SceneObject>
+				<SceneObject name="small_shadow9">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_shadow.ffm">
+						<Bound minZ="-1500" />
+					</Model>
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="239.234" y="35.192" z="192.702" />
+					<Scale x="0.695" y="0.695" z="0.695" />
+				</SceneObject>
+				<SceneObject name="small_shadow10">
+					<Material>
+						<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+						<Depth enabled="true" />
+						<Blend enabled="true" />
+					</Material>
+					<Model filename="shared/diorama/diorama21/episode62/models/non_interactable/small_shadow.ffm" />
+					<Rotation x="0" y="0" z="0" />
+					<Translation x="195.275" y="34.365" z="254.440" />
+					<Scale x="0.695" y="0.695" z="0.695" />
+				</SceneObject>
+			</SceneObject>
+			<!-- DIORAMA ASSETS -->
+			<!--
+				NON INTERACTABLE GROUP (NON-CLICKABLE STUFF)
+
+      <SceneObject name="episode62_Non_Interactable_Group">
+        <SceneObject name="episode62_Non_Interactable_01">
+          <Model filename="shared/diorama/diorama21/episode62/models/non_interactable/episode62_non_interactable_01.ffm"/>
+          <Materials>
+            <Material parentMaterial="Episode62MaterialAlpha"/>
+          </Materials>
+          <Translation x="-413.886" y="40.955" z="-150.066"/>
+          <Rotation x="0" y="0" z="0"/>
+          <Scale x="1" y="1" z="1"/>
+        </SceneObject>
+      </SceneObject>
+
+
+				INTERACTABLE GROUP (CLICKABLE STUFF)
+			-->
+			<SceneObject name="episode62_Interactable_Group">
+				<Translation x="-4.479" y="93.546" z="35.812" />
+				<SceneObject name="barrels">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0032_barrels.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_lollipop" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="-653.253" y="-59.415" z="-274.783" />
+					<Scale x="0.637" y="0.680" z="1.432" />
+				</SceneObject>
+				<SceneObject name="barrels2">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0032_barrels.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_lollipop" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="675.252" y="-31.467" z="-287.200" />
+					<Scale x="0.648" y="0.756" z="0.755" />
+				</SceneObject>
+				<SceneObject name="caramelchocolate">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0030_caramelandchoc.png" vertexColors="false">
+						<Flip v="true" />
+						<Pivot anchor="top" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="-695.449" y="-82.248" z="-220.653" />
+					<Scale x="0.826" y="0.815" z="0.815" />
+				</SceneObject>
+				<SceneObject name="caramelchocolate2">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0030_caramelandchoc.png" vertexColors="false">
+						<Flip v="true" />
+						<Pivot anchor="top" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="346.189" y="-118.468" z="13.913" />
+					<Scale x="0.716" y="0.612" z="0.692" />
+				</SceneObject>
+				<SceneObject name="caramels">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0031_caramels.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="-633.929" y="-70.304" z="303.615" />
+					<Rotation x="-10" y="0" z="0" />
+					<Scale x="0.632" y="0.647" z="0.648" />
+				</SceneObject>
+				<SceneObject name="caramels2">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0031_caramels.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" u="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="156.635" y="-149.483" z="222.776" />
+					<Scale x="0.716" y="0.716" z="0.798" />
+					<Rotation x="-5" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="caramels3">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0031_caramels.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="284.483" y="-132.252" z="266.596" />
+					<Scale x="0.684" y="0.639" z="0.707" />
+					<Rotation x="-10" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="caramels4">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0031_caramels.png" vertexColors="false">
+						<Pivot anchor="bottom" />
+						<Flip v="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" speed="1.300" />
+					<Translation x="679.209" y="123.698" z="-249.363" />
+					<Scale x="0.682" y="0.602" z="0.729" />
+				</SceneObject>
+				<SceneObject name="caramels5">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0031_caramels.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="759.216" y="-27.678" z="-202.502" />
+					<Scale x="-0.682" y="0.602" z="0.729" />
+				</SceneObject>
+				<SceneObject name="caramels6">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0031_caramels.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="-319.994" y="-136.921" z="-239.549" />
+					<Scale x="0.774" y="0.667" z="0.824" />
+				</SceneObject>
+				<SceneObject name="caramels7">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0031_caramels.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" u="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="244.272" y="-139.191" z="-405.043" />
+					<Scale x="0.747" y="0.678" z="0.799" />
+				</SceneObject>
+				<SceneObject name="caramels8">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0031_caramels.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="198.775" y="-135.987" z="-257.403" />
+					<Scale x="0.833" y="0.741" z="0.868" />
+				</SceneObject>
+				<SceneObject name="caramels9">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0031_caramels.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="-100.262" y="-122.267" z="-403.954" />
+					<Scale x="0.694" y="0.582" z="0.742" />
+				</SceneObject>
+				<SceneObject name="chestlollipop">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0027_chest2.png" vertexColors="false">
+						<Pivot anchor="top" />
+						<Flip v="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_lollipop" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="-283.883" y="-125.124" z="-347.524" />
+					<Scale x="0.601" y="0.537" z="0.598" />
+				</SceneObject>
+				<SceneObject name="rodder">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0025_rodder.png" vertexColors="false">
+						<Flip v="true" />
+						<Pivot anchor="top" />
+					</Sprite>
+					<Interactable upEffect="diorama_sun" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="-711.448" y="-62.222" z="130.852" />
+					<Scale x="0.538" y="0.513" z="0.560" />
+				</SceneObject>
+				<SceneObject name="caramelstar">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0029_caramelandstar.png" vertexColors="false">
+						<Flip v="true" />
+						<Pivot anchor="top" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="-136.622" y="-153.060" z="161.528" />
+					<Scale x="0.552" y="0.639" z="0.639" />
+					<Rotation x="-10" y="0" z="0" />
+				</SceneObject>
+				<SceneObject name="caramelstar2">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0029_caramelandstar.png" vertexColors="false">
+						<Flip v="true" />
+						<Pivot anchor="top" />
+					</Sprite>
+					<Interactable upEffect="diorama_pile" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="623.745" y="-28.197" z="-358.611" />
+					<Scale x="0.533" y="0.611" z="0.617" />
+				</SceneObject>
+				<SceneObject name="chestcandycane">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0028_chest1.png" vertexColors="false">
+						<Flip v="true" />
+						<Pivot anchor="top" />
+						<Size width="460" height="391" />
+					</Sprite>
+					<Interactable upEffect="diorama_lollipop" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="351.707" y="-144.880" z="-126.967" />
+					<Scale x="0.702" y="0.654" z="0.688" />
+					<Rotation x="-10" y="0" z="0" />
+				</SceneObject>
+				<!--
+				<SceneObject name="mermaid">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0024_mermaid.png" vertexColors="false">
+						<Pivot anchor="left" />
+						<Flip v="true" u="true" />
+					</Sprite>
+					<Interactable upEffect="diorama_lollipop" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="940.038" y="35.478" z="-16.770" />
+					<Scale x="0.379" y="0.346" z="0.501" />
+					<Rotation x="-18.637" y="-0.684" z="2.027" />
+				</SceneObject>
+				-->
+				<SceneObject name="coockiesticks">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0023_cookiesticks.png" vertexColors="false">
+						<Flip v="true" />
+						<Pivot anchor="top" />
+					</Sprite>
+					<Interactable upEffect="diorama_frozen" />
+					<Animation animationData="Idle" name="Idle" play="true" speed="0.400" layer="4" loopCount="-1" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up" play="false" speed="1.300" />
+					<Animation animationData="interactable_v01_up" layer="3" loopCount="0" name="Up2" play="false" speed="1.300" />
+					<Animation animationData="interactable_out" layer="2" loopCount="0" name="Out" play="false" speed="1.300" />
+					<Animation animationData="interactable_down" layer="1" loopCount="0" name="Down" play="false" speed="1.300" />
+					<Translation x="764.683" y="29.173" z="-300.059" />
+					<Scale x="0.755" y="0.755" z="0.755" />
+				</SceneObject>
+			</SceneObject>
+			<!--
+				SPEECHBUBBLE
+			-->
+			<SceneObject name="SpeechBubbleEp62">
+				<Animation animationData="SpeechBubbleAppear" loopCount="0" name="SpeechBubbleAppear" />
+				<Animation animationData="SpeechBubbleDisappear" loopCount="0" name="SpeechBubbleDisappear" />
+				<SpeechBubble>
+					<Speech key="episode62.intro" />
+					<Speech key="episode62.outro" />
+				</SpeechBubble>
+				<Translation x="-117.721" y="125" z="-119.336" />
+				<Import filename="shared/diorama/common/scenes/speech_bubble.xml" />
+			</SceneObject>
+			<!--
+				PARTICLE EFFECTS
+			-->
+			<SceneObject name="Particles">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+			</SceneObject>
+			<SceneObject name="Particles200">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-200" />
+			</SceneObject>
+			<SceneObject name="Particles400">
+				<Effect effectData="Wisps" name="Wisps" play="true" />
+				<Translation z="-400" />
+			</SceneObject>
+			<!-- EPISODE CHARACTER FOCUS - ONCE A CUTSCENE (INTRO AND OUTRO) GETS TRIGGERED THIS IS THE CAMERA POSITION -->
+			<SceneObject name="UnlockLevel1027CameraTarget">
+				<Translation x="-342.532" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="UnlockLevel1045CameraTarget">
+				<Translation x="-342.532" y="19" z="-20" />
+			</SceneObject>
+			<SceneObject name="episode62_path">
+				<Material parentMaterial="Episode62PathMaterialAlpha" />
+				<Model filename="shared/diorama/diorama21/episode62/models/path/episode62_path.ffm">
+					<Bound minZ="-800" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Translation x="0" z="0" />
+			</SceneObject>
+			<SceneObject name="path_shadow">
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0033_path_shadow.png" />
+					<Blend enabled="true" />
+					<Depth enabled="true" />
+				</Material>
+				<Model filename="shared/diorama/diorama21/episode62/models/path/path_shadow.ffm">
+					<Bound minZ="-1000" />
+				</Model>
+				<Rotation x="0" y="0" z="0" />
+				<Translation x="0" y="5.236" z="0" />
+			</SceneObject>
+			<SceneObject name="episode62_diorama_base">
+				<Material>
+					<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+				</Material>
+				<Model filename="shared/diorama/diorama21/episode62/models/episode62_diorama_base.ffm" />
+				<Rotation y="0" z="0" />
+				<Translation x="28.743" y="120.963" z="33.768" />
+				<Scale x="1.016" y="1.016" z="1.016" />
+			</SceneObject>
+			<SceneObject name="cloudsmall">
+				<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_cloudsmall.png" vertexColors="false">
+					<VertexColor r="255" g="255" b="255" a="255" />
+				</Sprite>
+				<Translation x="-365.651" y="168.383" z="-487.515" />
+				<Material>
+					<Color r="255" g="255" b="255" a="150" />
+				</Material>
+				<Scale x="1.235" y="1.235" z="1.235" />
+			</SceneObject>
+			<SceneObject name="cloudsmall2">
+				<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_cloudsmall.png" vertexColors="false">
+					<VertexColor r="255" g="255" b="255" a="255" />
+				</Sprite>
+				<Translation x="72.972" y="103.929" z="-487.515" />
+				<Material>
+					<Color r="255" g="255" b="255" a="150" />
+				</Material>
+				<Scale x="1.877" y="1.877" z="1.877" />
+			</SceneObject>
+			<!--
+				EPISODE CHARACTER (DON'T CHANGE NAME)
+			-->
+			<SceneObject name="Episode62Character">
+				<Translation x="20.496" y="120.808" z="-149.237" />
+				<Scale x="0.697" y="0.697" z="0.697" />
+				<SceneObject name="mast">
+					<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0026_mast.png" vertexColors="false">
+						<Flip v="true" />
+						<Pivot anchor="top" />
+					</Sprite>
+					<Translation x="-51.583" y="-301.627" z="118.856" />
+					<Scale x="1.336" y="1.337" z="1.340" />
+					<SceneObject name="sail" editorEntityId="30">
+						<Material>
+							<Texture filename="shared/diorama/diorama21/episode62/tex/ep62_0034_gradients.png" />
+							<Blend enabled="true" />
+							<Depth enabled="true" />
+						</Material>
+						<Model filename="shared/diorama/diorama21/episode62/models/interactable/sail.ffm" />
+						<Rotation x="0" y="0" z="0" />
+						<Translation x="24.336" y="118.696" z="-21.311" />
+						<Scale x="0.635" y="0.544" z="0.598" />
+					</SceneObject>
+					<SceneObject name="topmast">
+						<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0037_topmast.png" vertexColors="false">
+							<Flip v="true" />
+							<Pivot anchor="top" />
+						</Sprite>
+						<Translation x="14.683" y="337.525" z="-24.920" />
+						<Scale x="0.810" y="0.810" z="0.810" />
+						<Rotation x="0" y="0" z="-2.101" />
+					</SceneObject>
+					<SceneObject name="rope">
+						<Sprite filename="shared/diorama/diorama21/episode62/tex/ep62_0036_rope.png" vertexColors="false">
+							<Flip v="true" />
+							<Pivot anchor="top" />
+						</Sprite>
+						<Translation x="29.243" y="440.807" z="-31.940" />
+						<Scale x="0.700" y="0.700" z="0.700" />
+					</SceneObject>
+					<SceneObject name="CharacterEp62">
+						<Spine filename="shared/diorama/diorama21/episode62/models/character/cha_saildude.json">
+							<Animation spineAnimation="cha_saildude_idle" name="Idle" play="true" />
+							<Animation spineAnimation="cha_saildude_talk" name="Talk" />
+						</Spine>
+						<Material>
+							<Texture filename="shared/diorama/diorama21/episode62/tex/episode62_material.png" />
+							<Depth enabled="true" />
+							<Blend enabled="true" />
+						</Material>
+						<Translation x="6.982" y="369.245" z="15.356" />
+						<Scale x="-0.283" y="0.283" z="0.783" />
+						<Rotation x="0" y="0" z="180" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

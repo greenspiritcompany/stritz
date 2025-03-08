@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+
+		<Animate target="Kimmy_group" time="0.0">
+			<Translation time="0.0" x="-620" y="25" z="280"/>
+			<Scale time="0.0" x="0.95" y="0.95" z="0.95"/>
+			<Show/>
+		</Animate>
+
+		<Triggers>
+			<EffectTrigger name="character_ice_mammoth" time="0.0"/>
+			<CustomTrigger time="0.0" name="SpeechBubbleText" data="SpeechBubbleEp16.1"/>
+			<AnimationTrigger time="0.0" targetName="SpeechBubbleEp16" animationName="SpeechBubbleAppear"/>
+			<AnimationTrigger time="4.0" targetName="SpeechBubbleEp16" animationName="SpeechBubbleDisappear"/>
+			<AnimationTrigger time="1.0" targetName="IceMammoth" animationName="Talk" crossFade="0.1"/>
+			<AnimationTrigger time="3.0" targetName="IceMammoth" animationName="Idle" crossFade="0.6"/>
+		</Triggers>
+	</Timeline>
+</Timelines>

@@ -1,0 +1,17 @@
+<!DOCTYPE Timelines SYSTEM "../../../../../dtd/timeline.dtd">
+<Timelines>
+	<Timeline startTime="0.0" endTime="5.0">
+
+		<!--<Animate target="Bear">
+		  <Show/>
+		  <Hide time="1.8"/>
+		</Animate>-->
+
+		<Triggers>
+			<AnimationTrigger animationName="HudBearSaved" targetName="BearImg" time="0.0"/>
+			<AnimationTrigger animationName="idle" targetName="BearImg" time="4.9"/>
+		</Triggers>
+
+
+	</Timeline>
+</Timelines>

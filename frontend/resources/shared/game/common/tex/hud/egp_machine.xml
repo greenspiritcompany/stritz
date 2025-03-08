@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:3d2adecdcf9503376bbdaffe258f850c:adad3b9b236717a352dc5f71b647859e:d55612ee55d688b887a15f0c09c6a245$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="egp_machine.png" width="1024" height="1024">
+    <sprite n="images/capsule_blue.png" x="668" y="821" w="108" h="111" pX="0.5" pY="0.5"/>
+    <sprite n="images/capsule_blue_bottom.png" x="510" y="692" w="156" h="238" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="images/capsule_blue_top.png" x="0" y="720" w="168" h="239" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="images/capsule_gold.png" x="778" y="821" w="108" h="111" pX="0.5" pY="0.5"/>
+    <sprite n="images/capsule_gold_bottom.png" x="752" y="505" w="238" h="156" pX="0.5" pY="0.5"/>
+    <sprite n="images/capsule_gold_top.png" x="170" y="720" w="168" h="239" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="images/capsule_pink.png" x="888" y="821" w="111" h="108" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="images/capsule_pink_bottom.png" x="752" y="663" w="238" h="156" pX="0.5" pY="0.5"/>
+    <sprite n="images/capsule_pink_top.png" x="340" y="720" w="168" h="239" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="images/fx_sun_center.png" x="458" y="505" w="185" h="185" pX="0.5" pY="0.5"/>
+    <sprite n="images/fx_sun_ray.png" x="510" y="404" w="451" h="99" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="images/machine_base.png" x="0" y="0" w="456" h="718" pX="0.5" pY="0.5"/>
+    <sprite n="images/machine_glass.png" x="510" y="0" w="456" h="402" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="images/machine_metalbase.png" x="645" y="505" w="105" h="167" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="images/machine_piece.png" x="0" y="961" w="63" h="63" pX="0.5" pY="0.5"/>
+</TextureAtlas>

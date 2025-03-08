@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+
+<Scene>
+	<Material name="CaramelTargetTileMaterial">
+		<Blend enabled="true"/>
+		<Depth enabled="true" writeMask="false"/>
+		<Cull enabled="false" face="back"/>
+		<Shader program="TextureColor"/>
+		<Textures>
+			<Texture filename="shared/game/common/tex/candy/selected_candy.png"/>
+		</Textures>
+	</Material>
+</Scene>

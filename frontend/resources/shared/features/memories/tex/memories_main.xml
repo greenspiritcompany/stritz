@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:9fb5de163fac42fbf963c063242dbd7c:60fdfe270f49ec006e4e157c0127b02d:ad01dc806de1674aacf8321f38c0ecb3$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="memories_main.png" width="1024" height="1024">
+    <sprite n="btn_blue_postgamemodal.png" x="912" y="489" w="100" h="100" pX="0.5" pY="0.5"/>
+    <sprite n="memories_attempts_x1.png" x="555" y="414" w="115" h="98" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="memories_attempts_x2.png" x="674" y="414" w="115" h="98" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="memories_attempts_x3.png" x="793" y="473" w="115" h="98" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="memories_beige_panel.png" x="940" y="405" w="80" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="memories_bg.png" x="4" y="4" w="287" h="254" pX="0.5" pY="0.5"/>
+    <sprite n="memories_circle.png" x="264" y="349" w="26" h="33" pX="0.5" pY="0.5"/>
+    <sprite n="memories_header_box.png" x="815" y="405" w="121" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="memories_pink_panel.png" x="108" y="447" w="80" h="80" pX="0.5" pY="0.5"/>
+    <sprite n="memories_ring_back.png" x="1006" y="343" w="14" h="46" pX="0.5" pY="0.5"/>
+    <sprite n="memories_ring_front.png" x="264" y="262" w="27" h="83" pX="0.5" pY="0.5"/>
+    <sprite n="memory_attempt_no_tap.png" x="192" y="507" w="60" h="60" pX="0.5" pY="0.5"/>
+    <sprite n="memory_attempt_tap.png" x="815" y="343" w="187" h="58" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="memory_base_four_empty.png" x="295" y="4" w="256" h="229" pX="0.5" pY="0.5"/>
+    <sprite n="memory_base_nine_empty.png" x="555" y="4" w="256" h="229" pX="0.5" pY="0.5"/>
+    <sprite n="memory_base_two_empty.png" x="295" y="237" w="256" h="229" pX="0.5" pY="0.5"/>
+    <sprite n="memory_corner_smoothing_outlines.png" x="4" y="531" w="40" h="40" pX="0.5" pY="0.5"/>
+    <sprite n="memory_curl_empty.png" x="4" y="262" w="256" h="105" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="memory_curl_shadow_empty.png" x="815" y="187" w="200" h="152" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="memory_piece_reveal.png" x="4" y="371" w="100" h="88" pX="0.5" pY="0.5"/>
+    <sprite n="memory_shadow.png" x="815" y="4" w="200" h="179" pX="0.5" pY="0.5"/>
+    <sprite n="memory_white_overlay.png" x="212" y="371" w="48" h="64" pX="0.5" pY="0.5" r="y"/>
+    <sprite n="story_title_box_left.png" x="212" y="439" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="story_title_box_right.png" x="4" y="463" w="64" h="64" pX="0.5" pY="0.5"/>
+    <sprite n="win_memory_piece.png" x="555" y="237" w="256" h="173" pX="0.5" pY="0.5"/>
+    <sprite n="win_memory_piece_question.png" x="108" y="371" w="100" h="72" pX="0.5" pY="0.5"/>
+    <sprite n="win_memory_piece_shadow.png" x="280" y="470" w="64" h="59" pX="0.5" pY="0.5"/>
+</TextureAtlas>

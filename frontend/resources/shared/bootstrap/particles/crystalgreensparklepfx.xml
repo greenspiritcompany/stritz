@@ -1,0 +1,23 @@
+<ParticleEffect maxParticles="3" space="Local" timeToEmit="300" name="CrystalGreenSparklePFX">
+<Dampening min="0.900" max="0.900" />
+<DirectionalForce x="0" y="-100" />
+<Emitter spread="40" angle="-90" emissionRate="1">
+	<SpawnArea width="60" depth="0" height="40" />
+</Emitter>
+<EndColor r="26" g="187" b="255" a="0" />
+<Rotation max="100" min="100" />
+<Size>
+	<Max x="20" y="20" />
+	<Min x="12" y="12" />
+</Size>
+<SizeChange>
+	<Max x="0" y="0" />
+	<Min x="0" y="0" />
+</SizeChange>
+<StartColor r="182" g="255" b="181" a="60" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/small_star.png" />
+<TextureFrame numTextureAnimationFrames="1" startFrame="0" textureAnimationSpeed="0" />
+<TimeToLive max="3" min="0.500" />
+<Velocity min="20" max="20" />
+<RotationSpeed min="300" max="100" />
+</ParticleEffect>

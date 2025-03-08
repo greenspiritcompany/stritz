@@ -1,0 +1,24 @@
+<Timelines>
+<Timeline startTime="0" endTime="5">
+	<Animate time="0" target="SpeechBubbleEp60">
+		<Translation time="0" x="310" y="125" z="-136.600" />
+		<Translation time="5.022" x="310" y="125" z="-136.600" />
+		<Translation time="5.219" x="-150" y="125" z="-136.600" />
+	</Animate>
+	<Animate time="0" target="cyan_candy3">
+		<Translation time="0" x="57.750" y="229" z="23" />
+		<Translation time="0.240" x="57.750" y="229" z="-100" />
+		<Translation time="4.419" x="57.750" y="229" z="-100" />
+		<Translation time="4.714" x="57.750" y="229" z="23" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="0" targetName="SpeechBubbleEp60" animationName="SpeechBubbleAppear" />
+		<AnimationTrigger time="4" targetName="SpeechBubbleEp60" animationName="SpeechBubbleDisappear" />
+		<AnimationTrigger time="1" targetName="CharacterEp60" animationName="Talk" crossFade="0.100" />
+		<AnimationTrigger time="3" targetName="CharacterEp60" animationName="Idle" crossFade="0.600" />
+		<!--CHARACTER SOUND (ADD TEMPORARY SOUND IF NECESSARY)-->
+		<EffectTrigger name="character_ep60" time="0" />
+		<CustomTrigger time="0" name="SpeechBubbleText" data="SpeechBubbleEp60.0" />
+	</Triggers>
+</Timeline>
+</Timelines>

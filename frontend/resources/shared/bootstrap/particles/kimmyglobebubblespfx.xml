@@ -1,0 +1,23 @@
+<ParticleEffect space="World" timeToEmit="60" name="KimmyGlobeBubblesPFX" maxParticles="10">
+<DirectionalForce x="0" y="-10" />
+<Emitter spread="0" angle="-90" emissionRate="0.001">
+	<SpawnArea width="450" depth="0" height="2" />
+</Emitter>
+<EndColor b="255" r="255" g="255" a="0" />
+<Rotation max="0" min="0" />
+<RotationSpeed max="0" min="0" />
+<Size>
+	<Max x="10" y="10" />
+	<Min x="2" y="2" />
+</Size>
+<StartColor r="255" g="255" b="255" a="150" />
+<Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/fizz_bg_particle.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0" />
+<TimeToLive min="0.600" max="1.400" />
+<Velocity max="50" min="25" />
+<SizeChange>
+	<Min x="0" y="0" />
+	<Max x="0" y="0" />
+</SizeChange>
+<Dampening min="1" max="1" />
+</ParticleEffect>

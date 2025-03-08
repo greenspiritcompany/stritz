@@ -1,0 +1,45 @@
+<Timelines>
+	<Timeline startTime="0" endTime="1.0">
+		<Triggers>
+			<EffectTrigger name="PregameColorbombSpawnHitEFQ" time="0.275" />
+			<EffectTrigger name="PregameColoringcandySpawnSFX" time="0.026" />
+			<EffectTrigger name="ColoringCandyPurpleDieEFQ" time="0.255" parentName="ParticleCtrl">
+				<Offset z="0" />
+			</EffectTrigger>
+			<EffectTrigger name="PregameColorbombSpawnedSpecialEFQ" time="0.48" parentName="ParticleCtrl">
+				<Offset z="110" />
+			</EffectTrigger>
+		</Triggers>
+		<Animate target="ColoringCandySpawnPurple">
+			<Show time="0" />
+			<Scale time="0" x="8" y="8" z="8" />
+			<Scale time="0.285" x="0.950" y="0.950" z="0.950" />
+			<Scale time="0.312" x="0.950" y="0.950" z="0.950" />
+			<Scale time="0.350" x="1.100" y="1.100" z="1.100" />
+			<Scale time="0.378" x="1" y="1" z="1" />
+			<Color time="0" a="0" b="0" r="0" g="0" />
+			<Color time="0.100" a="255" b="255" r="255" g="255" />
+			<Color time="0.400" a="255" b="255" r="255" g="255" />
+			<Color time="0.500" a="0" b="0" r="0" g="0" />
+			<Hide time="0.500" />
+		</Animate>
+		<Animate target="ColoringCandySpawnCyan" time="0">
+			<Hide />
+		</Animate>
+		<Animate target="ColoringCandySpawnBlue" time="0">
+			<Hide />
+		</Animate>
+		<Animate target="ColoringCandySpawnOrange" time="0">
+			<Hide />
+		</Animate>
+		<Animate target="ColoringCandySpawnYellow" time="0">
+			<Hide />
+		</Animate>
+		<Animate target="ColoringCandySpawnGreen" time="0">
+			<Hide />
+		</Animate>
+		<Animate target="ColoringCandySpawnRed" time="0">
+			<Hide />
+		</Animate>
+	</Timeline>
+</Timelines>

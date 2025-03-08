@@ -1,0 +1,95 @@
+<!DOCTYPE Timelines SYSTEM "../../../../dtd/timeline.dtd">
+<Timelines>
+    <Timeline startTime="0.0" endTime="5.1">
+
+         <!--ALWAYS HIDE-->
+
+        <Animate target="TutorialText1">
+            <Hide/>
+        </Animate>
+
+        <Animate target="CyanCollectGRP">
+            <Hide/>
+        </Animate>
+
+        <!-- Text -->
+        <Animate target="TutorialText2">
+            <Show/>
+        </Animate>
+
+        <Animate target="PlayButton">
+            <Hide/>
+        </Animate>
+
+        <Animate target="SidekickInactive">
+            <Show/>
+            <Show time="0.1"/>
+            <Color time="0.1" a="0" r="0" g="0" b="0"/>
+            <Color time="0.15" a="255" r="255" g="255" b="255"/>
+            <Hide time="1.0"/>
+        </Animate>
+
+        <Animate target="SidekickActive">
+            <Hide/>
+            <Hide time="0.1"/>
+            <Show time="1.0"/>
+            <Color time="2.9" a="255" r="255" g="255" b="255"/>
+            <Color time="2.95" a="210" r="255" g="255" b="255"/>
+            <Color time="3.25" a="210" r="255" g="255" b="255"/>
+            <Color time="3.3" a="255" r="255" g="255" b="255"/>
+        </Animate>
+
+        <Animate target="ProgressBar">
+            <Show/>
+            <Show time="0.1"/>
+        </Animate>
+
+        <Animate target="ChargeMeter">
+            <Hide/>
+            <Hide time="0.1"/>
+            <Show time="0.5"/>
+            <Color time="5.3" a="255" r="255" g="255" b="255"/>
+            <Color time="5.4" a="0" r="0" g="0" b="0"/>
+            <Hide time="5.4"/>
+        </Animate>
+
+        <Animate target="SidekickChargeMeterFullEFQ">
+            <Hide/>
+            <Show time="1.4"/>
+            <Hide time="3.45"/>
+        </Animate>
+
+        <Animate target="GameGrid">
+            <Hide/>
+        </Animate>
+
+
+
+
+        <Triggers>
+            <AnimationTrigger animationName="idle" targetName="TutorialCharacter" time="0.0"/>
+
+            <AnimationTrigger animationName="become_active" targetName="SidekickActive" time="0.8"/>
+            <AnimationTrigger animationName="idle" targetName="SidekickActive" time="1.5" crossFade="0.2"/>
+            <AnimationTrigger animationName="progress" targetName="ChargeMeter" time="0.5"/>
+            <AnimationTrigger animationName="selected" targetName="SidekickActive" time="2.99"/>
+            <AnimationTrigger animationName="idle" targetName="SidekickActive" time="4.99"/>
+
+            <EffectTrigger name="character_yeti" time="0.0"/>
+            <EffectTrigger name="SmokepuffEFQ" time="1.0" targetName="SidekickActive" targetBoneIndex="4"/>
+            <!--<EffectTrigger name="SprinkleshellChargedSFX" time="1.0"/>-->
+            <!--<EffectTrigger name="SprinkleshellSelectSFX" time="3.0"/>-->
+            <EffectTrigger name="SidekickSelectedEFQ" time="3.0" parentName="ParticleHelper">
+            </EffectTrigger>
+            <EffectTrigger name="SidekickChargeMeterFullEFQ" parentName="ChargeMeter" parentBoneIndex="15" followTarget="true" time="0.0">
+                <Offset x="183" y="-30" z="100"/>
+            </EffectTrigger>
+        </Triggers>
+
+        <TimeControls>
+            <TimeJump time="5.0" jumpToTime="2.0"/>
+        </TimeControls>
+
+
+    </Timeline>
+</Timelines>

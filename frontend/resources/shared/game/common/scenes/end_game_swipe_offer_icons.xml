@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="MoveBoosters" visibility="never">
+		<Animation name="Idle" animationData="Idle" layer="1" interpolateFrame="true" play="true" weight="0.500" />
+		<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+		<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+		<Translation x="0" />
+	</SceneObject>
+	<SceneObject name="DiscountBoosters" visibility="never">
+		<Animation name="Idle" animationData="Idle" layer="1" interpolateFrame="true" play="true" weight="0.500" />
+		<Animation name="OnPress" animationData="OnPress" loopCount="0" />
+		<Animation name="OnRelease" animationData="OnRelease" loopCount="0" />
+		<Translation x="0" />
+	</SceneObject>
+	<SceneObject name="Package1Boosters" visibility="never">
+		<Translation x="0" />
+		<SceneObject name="booster1">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_striped.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation y="0" z="0" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="Package2Boosters" visibility="never">
+		<Translation x="0" />
+		<SceneObject name="booster2">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_wrapped.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="-40.982" y="0" z="0" />
+		</SceneObject>
+		<SceneObject name="booster1">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_lollipop_hammer.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="37.315" y="0" z="0" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="Package3Boosters" visibility="never">
+		<Translation x="0" />
+		<SceneObject name="booster2">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_colouring_candy.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="-35.944" y="0" z="0" />
+		</SceneObject>
+		<SceneObject name="booster1">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_striped.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="37.296" y="0" z="0" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="Package4Boosters" visibility="never">
+		<Translation x="0" />
+		<SceneObject name="booster2">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_colour_bomb.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="-35.944" y="0" z="0" />
+		</SceneObject>
+		<SceneObject name="booster1">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_fish.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="37.296" y="-3.023" z="0" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="Package5Boosters" visibility="never">
+		<Translation x="0" />
+		<SceneObject name="booster2">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_colouring_candy.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="-48.016" y="0" z="0" />
+		</SceneObject>
+		<SceneObject name="booster1">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_striped_wrapped.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="28.224" y="0" z="0" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="Package6Boosters" visibility="never">
+		<Translation x="0" />
+		<SceneObject name="booster2">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_striped.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="-35.944" y="0" z="0" />
+		</SceneObject>
+		<SceneObject name="booster1">
+			<Scale x="1.464" y="1.464" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_fish_x2.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="32.238" y="-4.079" z="0" />
+		</SceneObject>
+	</SceneObject>
+	<SceneObject name="Package7Boosters" visibility="never">
+		<Translation x="-76.752" y="0" z="0" />
+		<SceneObject name="booster2">
+			<Scale x="1.062" y="1.062" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_fish_x3.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="4.893" y="-1.300" z="0" />
+		</SceneObject>
+		<SceneObject name="booster1">
+			<Scale x="1.164" y="1.164" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_colour_bomb.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="63.089" y="1.558" z="0" />
+		</SceneObject>
+		<SceneObject name="booster3">
+			<Scale x="1.164" y="1.164" z="1" />
+			<Sprite filename="shared/diorama/common/tex/gui_elements/bonus_striped_wrapped.png" vertexColors="false">
+				<Pivot anchor="center" />
+			</Sprite>
+			<Translation x="114.971" y="1.558" z="0" />
+			<Rotation x="0" y="0" />
+		</SceneObject>
+	</SceneObject>
+</Scene>

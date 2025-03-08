@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout>
+	<Object sceneObject="Popup_Base">
+		<Default>
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="3" />
+			</Translation>
+			<Size>
+				<Height percentage="95" />
+			</Size>
+		</Default>
+	</Object>
+</Layout>

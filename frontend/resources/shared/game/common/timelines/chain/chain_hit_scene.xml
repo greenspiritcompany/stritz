@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE Scene SYSTEM "../../../../dtd/scene.dtd">
+<Scene>
+<SceneObject name="Scene" layerFlags="512">
+    <SceneObject name="ParticleHelper">
+        <Translation z="100"/>
+    </SceneObject>
+    <SceneObject name="BreakingChain">
+        <Model filename="shared/game/common/models/chain_blocker/chain_break.ffm">
+            <Animation filename="shared/game/common/models/chain_blocker/chain_break_anim.ffa" loopCount="0" name="Break"/>
+        </Model>
+        <Material>
+            <Texture filename="shared/game/common/tex/chain_blocker/chain_cracked_tex.png"/>
+            <Blend enabled="true"/>
+        </Material>
+        <Scale x="0.20" y="-0.20" z="0.20"/>
+    </SceneObject>
+
+    <SceneObject name="StringHit2">
+        <Model filename="shared/game/common/models/chain_blocker/chain_string_layer2.ffm">
+            <Animation filename="shared/game/common/models/chain_blocker/chain_string_layer2_anim.ffa" loopCount="0" name="StringHit2Anim" speed="1"/>
+        </Model>
+        <Material>
+            <Texture filename="shared/game/common/tex/candy/chain_layer2_c.png"/>
+            <Blend enabled="false"/>
+        </Material>
+        <Translation z="100"/>
+        <Scale x="0.5" y="-0.5" z="0.5"/>
+    </SceneObject>
+
+    <SceneObject name="StringHit3">
+        <Model filename="shared/game/common/models/chain_blocker/chain_string_layer3.ffm">
+            <Animation filename="shared/game/common/models/chain_blocker/chain_string_layer3_anim.ffa" loopCount="0" name="StringHit3Anim" speed="1"/>
+        </Model>
+        <Material>
+            <Texture filename="shared/game/common/tex/candy/chain_layer3_c.png"/>
+            <Blend enabled="false"/>
+        </Material>
+        <Translation z="100"/>
+        <Scale x="0.5" y="-0.5" z="0.5"/>
+    </SceneObject>
+
+    <SceneObject name="StringHit4">
+        <Model filename="shared/game/common/models/chain_blocker/chain_string_layer4.ffm">
+            <Animation filename="shared/game/common/models/chain_blocker/chain_string_layer4_anim.ffa" loopCount="0" name="StringHit4Anim" speed="1"/>
+        </Model>
+        <Material>
+            <Texture filename="shared/game/common/tex/candy/chain_layer4_c.png"/>
+            <Blend enabled="false"/>
+        </Material>
+        <Translation z="100"/>
+        <Scale x="0.5" y="-0.5" z="0.5"/>
+    </SceneObject>
+</SceneObject>
+</Scene>

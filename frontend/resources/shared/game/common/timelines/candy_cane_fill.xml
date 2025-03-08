@@ -1,0 +1,19 @@
+<Timelines>
+<Timeline startTime="0" endTime="4">
+	<Animate target="first">
+		<!-- Show must be delayed one frame due to animation not being triggered the same frame as this timeline. -->
+		<Hide time="0" />
+		<Show time="0.01" />
+	</Animate>
+	<Animate target="second">
+		<Hide time="0" />
+		<Show time="0.3" />
+	</Animate>
+	<Triggers>
+		<AnimationTrigger time="0" animationName="stripe_middle_spine_intro" targetName="stripe_first" />
+		<AnimationTrigger time="0.30" animationName="stripe_middle_spine_intro" targetName="stripe_second" />
+		<CustomTrigger time="0.25" name="FillSecond" />
+		<CustomTrigger time="0.4" name="AllFilledComplete" />
+	</Triggers>
+</Timeline>
+</Timelines>

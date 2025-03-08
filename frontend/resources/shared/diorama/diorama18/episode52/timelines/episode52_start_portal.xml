@@ -1,0 +1,13 @@
+<Timelines>
+<Timeline startTime="0" endTime="5">
+	<Triggers>
+		<EffectTrigger name="Eve_EnergyBall_effect" targetBoneIndex="9" time="0.013" followTarget="true" targetName="CharacterEp52">
+			<Offset x="0" y="0" z="10" />
+		</EffectTrigger>
+		<EffectTrigger name="PortalHintSparkle" parentName="PortalParticleRef_next" time="0.010" />
+	</Triggers>
+	<TimeControls>
+		<TimeJump time="0.976" jumpToTime="0" />
+	</TimeControls>
+</Timeline>
+</Timelines>

@@ -1,0 +1,29 @@
+<ParticleEffect maxParticles="12" space="Local" timeToEmit="60" name="polkapigburstmodepfx1">
+<DirectionalForce x="0" y="0" />
+<Emitter emissionRate="0.025" spread="360" angle="0">
+	<SpawnArea width="45" depth="0" height="66" />
+</Emitter>
+<Rotation max="0" min="0" />
+<RotationSpeed max="360" min="360" />
+<Size>
+	<Max x="18" y="18" />
+	<Min x="9" y="9" />
+</Size>
+<SizeChange>
+	<Max x="5" y="5" />
+	<Min x="-5" y="-5" />
+</SizeChange>
+<Texture numFramesY="1" numFramesX="1" filename="shared/bootstrap/particles/tex/star64.png" />
+<TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="60" startFrame="0" />
+<TimeToLive min="0.200" max="0.800" />
+<Dampening min="0" max="0" />
+<Velocity min="0" max="0" />
+<ColorAnimation>
+	<Keyframe lifeTime="0">
+		<Color r="252" g="255" b="219" a="255" />
+	</Keyframe>
+	<Keyframe lifeTime="1">
+		<Color r="144" g="198" b="255" a="0" />
+	</Keyframe>
+</ColorAnimation>
+</ParticleEffect>

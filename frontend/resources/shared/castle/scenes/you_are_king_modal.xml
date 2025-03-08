@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Scene SYSTEM "../../dtd/scene.dtd">
+<Scene>
+	<SceneObject name="YouAreKingModal">
+		<SceneObject name="Portrait" visibility="inherit">
+			<Translation z="300" />
+			<Animation loopCount="0" name="OnAppear" animationData="SlideInFromLeft" />
+			<Animation startDelay="0.05" loopCount="0" name="OnDisappear" animationData="SlideOutToLeft" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="CrownIsYours">
+				<Translation y="-322" x="-7" />
+				<Text verticalAlignment="visualCenter" font="Banana" alignment="center" key="kotc.crownIsYours">
+					<Color b="128" g="62" r="165" a="255" />
+					<Shadow enabled="true">
+						<Color b="255" g="255" r="255" a="255" />
+						<Offset y="3" z="1" x="0" />
+					</Shadow>
+					<Size y="28" x="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="RewardContainer1" visibility="inherit">
+				<SceneObject name="Group">
+					<SceneObject name="Middle">
+						<Translation y="100" />
+						<Sprite wrap="repeat" filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" vertexColors="false">
+							<Pivot anchor="center" />
+							<Rectangle maxY="128" maxX="256" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Left">
+						<Translation y="100" x="-128" />
+						<Sprite filename="shared/castle/tex/reward_box_left.png" vertexColors="false">
+							<Pivot anchor="right" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Right" __visibility="0">
+						<Translation y="100" x="128" />
+						<Sprite filename="shared/castle/tex/reward_box_right.png" vertexColors="false">
+							<Pivot anchor="left" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot1">
+					<Translation y="43" z="2" x="-70" />
+					<SceneObject name="Icon">
+						<Translation y="6" x="26.79" />
+						<Sprite filename="shared/castle/tex/gold_bar.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation y="84" x="91" />
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit">
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="Description">
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+						<Translation y="99.52" z="0" x="61.89" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardContainer2" visibility="inherit">
+				<SceneObject name="Group">
+					<SceneObject name="Middle">
+						<Sprite wrap="repeat" filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" vertexColors="false">
+							<Pivot anchor="center" />
+							<Rectangle maxY="128" maxX="256" />
+						</Sprite>
+						<Translation y="100" />
+					</SceneObject>
+					<SceneObject name="Left">
+						<Sprite filename="shared/castle/tex/reward_box_left.png" vertexColors="false">
+							<Pivot anchor="right" />
+						</Sprite>
+						<Translation y="100" x="-128" />
+					</SceneObject>
+					<SceneObject name="Right" __visibility="0">
+						<Sprite filename="shared/castle/tex/reward_box_right.png" vertexColors="false">
+							<Pivot anchor="left" />
+						</Sprite>
+						<Translation y="100" x="128" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Plusses">
+					<Translation x="49.10" />
+					<SceneObject name="+">
+						<Text font="Typewriter">
+							<Shadow enabled="true">
+								<Color b="0" g="0" r="0" a="48" />
+								<Offset x="0" />
+							</Shadow>
+							<Size y="50" x="50" />
+							<TextString>+</TextString>
+						</Text>
+						<Translation y="113" z="5" x="-80" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot1">
+					<Translation y="43" z="2" x="-140.90" />
+					<SceneObject name="Icon">
+						<Sprite filename="shared/castle/tex/gold_bar.png" vertexColors="false" />
+						<Translation y="6" x="26.79" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit">
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1</TextString>
+						</Text>
+						<Translation y="84" x="91" />
+					</SceneObject>
+					<SceneObject name="Description">
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+						<Translation y="99.52" z="0" x="61.89" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot2">
+					<Translation x="49.10" />
+					<SceneObject name="Icon">
+						<Sprite filename="shared/castle/tex/unlimited_lives.png" vertexColors="false" />
+						<Translation y="52.59" z="0" x="-26.41" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit">
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1h</TextString>
+						</Text>
+						<Translation y="126" x="51" />
+					</SceneObject>
+					<SceneObject name="Description">
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+						<Translation y="143" x="8" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardContainer3" visibility="never">
+				<SceneObject name="Group">
+					<SceneObject name="Middle">
+						<Translation y="100" x="-187" />
+						<Sprite wrap="repeat" filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" vertexColors="false">
+							<Pivot anchor="left" />
+							<Rectangle maxY="128" maxX="384" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Left">
+						<Translation y="100" x="-187" />
+						<Sprite filename="shared/castle/tex/reward_box_left.png" vertexColors="false">
+							<Pivot anchor="right" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Right" __visibility="0">
+						<Translation y="100" x="197.04" />
+						<Sprite filename="shared/castle/tex/reward_box_right.png" vertexColors="false">
+							<Pivot anchor="left" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Plusses">
+					<Translation y="0" x="-5.78" />
+					<SceneObject name="+">
+						<Translation y="113" z="5" x="-80" />
+						<Text font="Typewriter">
+							<Shadow enabled="true">
+								<Color b="0" g="0" r="0" a="48" />
+								<Offset x="0" />
+							</Shadow>
+							<Size y="50" x="50" />
+							<TextString>+</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="+">
+						<Translation y="113" z="5" x="71" />
+						<Text font="Typewriter">
+							<Shadow enabled="true">
+								<Color b="0" g="0" r="0" a="48" />
+								<Offset x="0" />
+							</Shadow>
+							<Size y="50" x="50" />
+							<TextString>+</TextString>
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot1">
+					<Translation y="43" z="2" x="-195.78" />
+					<SceneObject name="Icon">
+						<Translation y="6" x="26.79" />
+						<Sprite filename="shared/castle/tex/gold_bar.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation y="84" x="91" />
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit">
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="Description">
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+						<Translation y="99.52" z="0" x="66.61" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot2">
+					<Translation y="0" x="-5.78" />
+					<SceneObject name="Icon">
+						<Translation y="51.63" z="0" x="-30.23" />
+						<Sprite filename="shared/castle/tex/unlimited_lives.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation y="126" x="51" />
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit" key="kotc.hours.short">
+							<Parameter name="hours">1</Parameter>
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1h</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="Description">
+						<Translation y="143" x="8" />
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot3">
+					<Translation y="194.14" z="2" x="153.45" />
+					<SceneObject name="Icon">
+						<Translation y="-142.28" z="0" x="-45.02" />
+						<Scale y="0.80" x="0.80" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/icon_lollipop.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation y="-69.17" x="15.85" />
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit">
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="Description">
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+						<Translation y="-50.79" z="0" x="-9.97" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ContinueButton">
+				<Translation y="240" />
+				<Scale y="1.20" z="1.20" x="1.20" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets left="54" right="54" top="48" bottom="59" />
+					<Pivot anchor="center" />
+					<Size height="108" width="390" />
+				</Panel>
+				<Animation layer="1" name="Idle" play="true" animationData="Idle" />
+				<Animation loopCount="0" name="OnPress" animationData="OnPress" />
+				<Animation loopCount="0" name="OnRelease" animationData="OnRelease" />
+				<SceneObject name="RewardButtonText">
+					<Translation y="-7" x="-7" />
+					<Text verticalAlignment="visualCenter" maxHeight="50" font="Banana" maxWidth="300" alignment="center" overflowBehaviour="fit" key="kotc.collectReward">
+						<Color b="255" g="255" r="255" a="225" />
+						<Shadow enabled="true">
+							<Color b="0" g="0" r="0" a="25" />
+							<Offset y="6" x="0" />
+						</Shadow>
+						<Size y="26" x="26" />
+						<TextString>Collect reward</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardText">
+				<Translation y="-4" z="2" x="0" />
+				<Text verticalAlignment="visualCenter" maxHeight="200" font="Typewriter" maxWidth="420" alignment="center" overflowBehaviour="fit" key="kotc.yourReward">
+					<Color b="51" g="102" r="131" a="255" />
+					<Outline enabled="true">
+						<Color b="0" g="0" r="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color b="255" g="255" r="255" a="255" />
+					</Shadow>
+					<Size y="21" x="21" />
+					<TextString>This is your reward!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject name="Chest">
+				<Translation y="-247" x="-210" />
+				<Sprite filename="shared/castle/tex/reward_chest.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject name="BubblegumTroll">
+				<Translation y="-284" x="-35" />
+				<Sprite filename="shared/castle/tex/extra_happy_monster.png" vertexColors="false" />
+			</SceneObject>
+			<LayoutConfiguration visible="false" name="Landscape" />
+			<LayoutConfiguration visible="true" name="Portrait" />
+		</SceneObject>
+		<SceneObject name="Landscape">
+			<Translation y="40" z="410" x="-40" />
+			<Animation loopCount="0" name="OnAppear" animationData="SlideInFromLeft" />
+			<Animation startDelay="0.05" loopCount="0" name="OnDisappear" animationData="SlideOutToLeft" />
+			<Import filename="shared/castle/scenes/kotc_modal_background_medium.xml" />
+			<SceneObject name="CrownIsYours">
+				<Translation y="-322" x="-7" />
+				<Text verticalAlignment="visualCenter" font="Banana" alignment="center" key="kotc.crownIsYours">
+					<Color b="128" g="62" r="165" a="255" />
+					<Shadow enabled="true">
+						<Color b="255" g="255" r="255" a="255" />
+						<Offset y="3" z="1" x="0" />
+					</Shadow>
+					<Size y="28" x="28" />
+				</Text>
+			</SceneObject>
+			<SceneObject name="RewardContainer1" visibility="inherit">
+				<SceneObject name="Group">
+					<SceneObject name="Middle">
+						<Translation y="100" />
+						<Sprite wrap="repeat" filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" vertexColors="false">
+							<Pivot anchor="center" />
+							<Rectangle maxY="128" maxX="256" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Left">
+						<Translation y="100" x="-128" />
+						<Sprite filename="shared/castle/tex/reward_box_left.png" vertexColors="false">
+							<Pivot anchor="right" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Right" __visibility="0">
+						<Translation y="100" x="128" />
+						<Sprite filename="shared/castle/tex/reward_box_right.png" vertexColors="false">
+							<Pivot anchor="left" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot1">
+					<Translation y="43" z="2" x="-70" />
+					<SceneObject name="Icon">
+						<Translation y="6" x="26.79" />
+						<Sprite filename="shared/castle/tex/gold_bar.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation y="84" x="91" />
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit">
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="Description">
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+						<Translation y="99.48" z="0" x="58.95" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardContainer2" visibility="inherit">
+				<SceneObject name="Group">
+					<SceneObject name="Middle">
+						<Sprite wrap="repeat" filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" vertexColors="false">
+							<Pivot anchor="center" />
+							<Rectangle maxY="128" maxX="256" />
+						</Sprite>
+						<Translation y="100" />
+					</SceneObject>
+					<SceneObject name="Left">
+						<Sprite filename="shared/castle/tex/reward_box_left.png" vertexColors="false">
+							<Pivot anchor="right" />
+						</Sprite>
+						<Translation y="100" x="-128" />
+					</SceneObject>
+					<SceneObject name="Right" __visibility="0">
+						<Sprite filename="shared/castle/tex/reward_box_right.png" vertexColors="false">
+							<Pivot anchor="left" />
+						</Sprite>
+						<Translation y="100" x="128" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Plusses">
+					<Translation x="49.10" />
+					<SceneObject name="+">
+						<Text font="Typewriter">
+							<Shadow enabled="true">
+								<Color b="0" g="0" r="0" a="48" />
+								<Offset x="0" />
+							</Shadow>
+							<Size y="50" x="50" />
+							<TextString>+</TextString>
+						</Text>
+						<Translation y="113" z="5" x="-80" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot1">
+					<Translation y="43" z="2" x="-140.90" />
+					<SceneObject name="Icon">
+						<Sprite filename="shared/castle/tex/gold_bar.png" vertexColors="false" />
+						<Translation y="6" x="26.79" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit">
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1</TextString>
+						</Text>
+						<Translation y="84" x="91" />
+					</SceneObject>
+					<SceneObject name="Description">
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+						<Translation y="99.48" z="0" x="58.95" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot2">
+					<Translation x="49.10" />
+					<SceneObject name="Icon">
+						<Sprite filename="shared/castle/tex/unlimited_lives.png" vertexColors="false" />
+						<Translation y="51.70" z="0" x="-32.66" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit">
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1h</TextString>
+						</Text>
+						<Translation y="126" x="51" />
+					</SceneObject>
+					<SceneObject name="Description">
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+						<Translation y="143" x="8" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardContainer3" visibility="never">
+				<SceneObject name="Group">
+					<SceneObject name="Middle">
+						<Translation y="100" x="-187" />
+						<Sprite wrap="repeat" filename="shared/diorama/common/tex/gui_elements/kotc/reward_box_middle.png" vertexColors="false">
+							<Pivot anchor="left" />
+							<Rectangle maxY="128" maxX="384" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Left">
+						<Translation y="100" x="-187" />
+						<Sprite filename="shared/castle/tex/reward_box_left.png" vertexColors="false">
+							<Pivot anchor="right" />
+						</Sprite>
+					</SceneObject>
+					<SceneObject name="Right" __visibility="0">
+						<Translation y="100" x="197.04" />
+						<Sprite filename="shared/castle/tex/reward_box_right.png" vertexColors="false">
+							<Pivot anchor="left" />
+						</Sprite>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Plusses">
+					<Translation y="0" x="-5.78" />
+					<SceneObject name="+">
+						<Translation y="113" z="5" x="-80" />
+						<Text font="Typewriter">
+							<Shadow enabled="true">
+								<Color b="0" g="0" r="0" a="48" />
+								<Offset x="0" />
+							</Shadow>
+							<Size y="50" x="50" />
+							<TextString>+</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="+">
+						<Translation y="113" z="5" x="71" />
+						<Text font="Typewriter">
+							<Shadow enabled="true">
+								<Color b="0" g="0" r="0" a="48" />
+								<Offset x="0" />
+							</Shadow>
+							<Size y="50" x="50" />
+							<TextString>+</TextString>
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot1">
+					<Translation y="43" z="2" x="-195.78" />
+					<SceneObject name="Icon">
+						<Translation y="6" x="26.79" />
+						<Sprite filename="shared/castle/tex/gold_bar.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation y="84" x="91" />
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit">
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="Description">
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+						<Translation y="99.48" z="0" x="64.26" />
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot2">
+					<Translation y="0" x="-5.78" />
+					<SceneObject name="Icon">
+						<Translation y="52.77" z="0" x="-33.73" />
+						<Sprite filename="shared/castle/tex/unlimited_lives.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation y="126" x="51" />
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit" key="kotc.hours.short">
+							<Parameter name="hours">1</Parameter>
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1h</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="Description">
+						<Translation y="143" x="8" />
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+					</SceneObject>
+				</SceneObject>
+				<SceneObject name="Slot3">
+					<Translation y="194.14" z="2" x="153.45" />
+					<SceneObject name="Icon">
+						<Translation y="-140.37" x="-42.16" />
+						<Scale y="0.80" x="0.80" />
+						<Sprite filename="shared/diorama/common/tex/gui_elements/icon_lollipop.png" vertexColors="false" />
+					</SceneObject>
+					<SceneObject name="Amount">
+						<Translation y="-69.17" x="15.85" />
+						<Text maxHeight="50" font="Banana" maxWidth="60" alignment="center" overflowBehaviour="fit">
+							<Color b="0" g="69" r="124" a="255" />
+							<Pivot anchor="center" />
+							<Size y="24" x="24" />
+							<TextString>1</TextString>
+						</Text>
+					</SceneObject>
+					<SceneObject name="Description">
+						<Scale y="1.20" x="1.20" />
+						<Text maxHeight="20" font="TypewriterBold" maxWidth="200" alignment="center" overflowBehaviour="fit" key="kotc.unlimitedLives">
+							<Color b="0" g="69" r="124" a="255" />
+							<Size y="8" x="8" />
+						</Text>
+						<Translation y="-50.18" z="0" x="-5.80" />
+					</SceneObject>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject class="Button" name="ContinueButton">
+				<Translation y="240" />
+				<Scale y="1.20" z="1.20" x="1.20" />
+				<Panel filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="false">
+					<Insets left="54" right="54" top="48" bottom="59" />
+					<Pivot anchor="center" />
+					<Size height="108" width="390" />
+				</Panel>
+				<Animation layer="1" name="Idle" play="true" animationData="Idle" />
+				<Animation loopCount="0" name="OnPress" animationData="OnPress" />
+				<Animation loopCount="0" name="OnRelease" animationData="OnRelease" />
+				<SceneObject name="RewardButtonText">
+					<Translation y="-7" x="-7" />
+					<Text verticalAlignment="visualCenter" maxHeight="50" font="Banana" maxWidth="300" alignment="center" overflowBehaviour="fit" key="kotc.collectReward">
+						<Color b="255" g="255" r="255" a="225" />
+						<Shadow enabled="true">
+							<Color b="0" g="0" r="0" a="25" />
+							<Offset y="6" x="0" />
+						</Shadow>
+						<Size y="26" x="26" />
+						<TextString>Collect reward</TextString>
+					</Text>
+				</SceneObject>
+			</SceneObject>
+			<SceneObject name="RewardText">
+				<Translation y="-4" z="2" x="0" />
+				<Text verticalAlignment="visualCenter" maxHeight="200" font="Typewriter" maxWidth="420" alignment="center" overflowBehaviour="fit" key="kotc.yourReward">
+					<Color b="51" g="102" r="131" a="255" />
+					<Outline enabled="true">
+						<Color b="0" g="0" r="0" a="255" />
+					</Outline>
+					<Pivot anchor="center" />
+					<Shadow enabled="false">
+						<Color b="255" g="255" r="255" a="255" />
+					</Shadow>
+					<Size y="21" x="21" />
+					<TextString>This is your reward!</TextString>
+				</Text>
+			</SceneObject>
+			<SceneObject name="Chest">
+				<Translation y="-247" x="-210" />
+				<Sprite filename="shared/castle/tex/reward_chest.png" vertexColors="false" />
+			</SceneObject>
+			<SceneObject name="BubblegumTroll">
+				<Translation y="-284" x="-35" />
+				<Sprite filename="shared/castle/tex/extra_happy_monster.png" vertexColors="false" />
+			</SceneObject>
+			<LayoutConfiguration visible="true" name="Landscape" />
+			<LayoutConfiguration visible="false" name="Portrait" />
+		</SceneObject>
+		<LayoutConfiguration name="Default">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<Height percentage="100" />
+				<OriginalSize height="768" width="1024" />
+			</Size>
+		</LayoutConfiguration>
+		<LayoutConfiguration name="Portrait">
+			<Translation>
+				<X percentage="50" />
+				<Y percentage="50" />
+			</Translation>
+			<Size>
+				<OriginalSize height="1024" width="684" />
+				<Width percentage="100" />
+			</Size>
+		</LayoutConfiguration>
+	</SceneObject>
+</Scene>

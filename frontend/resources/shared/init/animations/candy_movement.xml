@@ -1,0 +1,3163 @@
+<!DOCTYPE Animations SYSTEM "../../dtd/animation.dtd">
+<Animations>
+	<Animation name="CandyBounceDown1" speed="1.0">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="0.000" y="-2.144"/>
+		<Translation time="0.033" x="0.000" y="-3.109"/>
+		<Translation time="0.050" x="0.000" y="-3.690"/>
+		<Translation time="0.067" x="0.000" y="-4.036"/>
+		<Translation time="0.083" x="0.000" y="-4.217"/>
+		<Translation time="0.100" x="0.000" y="-4.271"/>
+		<Translation time="0.117" x="0.000" y="-4.217"/>
+		<Translation time="0.133" x="0.000" y="-4.036"/>
+		<Translation time="0.150" x="0.000" y="-3.689"/>
+		<Translation time="0.167" x="0.000" y="-3.108"/>
+		<Translation time="0.183" x="0.000" y="-2.142"/>
+		<Translation time="0.200" x="0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.200" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceDown2" speed="1.0">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="0.000" y="-3.199"/>
+		<Translation time="0.033" x="0.000" y="-5.075"/>
+		<Translation time="0.050" x="0.000" y="-6.297"/>
+		<Translation time="0.067" x="0.000" y="-7.126"/>
+		<Translation time="0.083" x="0.000" y="-7.684"/>
+		<Translation time="0.100" x="0.000" y="-8.037"/>
+		<Translation time="0.117" x="0.000" y="-8.228"/>
+		<Translation time="0.133" x="0.000" y="-8.287"/>
+		<Translation time="0.150" x="0.000" y="-8.229"/>
+		<Translation time="0.167" x="0.000" y="-8.038"/>
+		<Translation time="0.183" x="0.000" y="-7.687"/>
+		<Translation time="0.200" x="0.000" y="-7.131"/>
+		<Translation time="0.217" x="0.000" y="-6.304"/>
+		<Translation time="0.233" x="0.000" y="-5.083"/>
+		<Translation time="0.250" x="0.000" y="-3.201"/>
+		<Translation time="0.267" x="0.000" y="-0.000"/>
+		<Translation time="0.283" x="0.000" y="-2.154"/>
+		<Translation time="0.300" x="0.000" y="-3.208"/>
+		<Translation time="0.317" x="0.000" y="-3.809"/>
+		<Translation time="0.333" x="0.000" y="-4.117"/>
+		<Translation time="0.350" x="0.000" y="-4.208"/>
+		<Translation time="0.367" x="0.000" y="-4.116"/>
+		<Translation time="0.383" x="0.000" y="-3.805"/>
+		<Translation time="0.400" x="0.000" y="-3.193"/>
+		<Translation time="0.417" x="0.000" y="-2.109"/>
+		<Translation time="0.433" x="0.000" y="-0.000"/>
+		<Translation time="0.450" x="0.000" y="-0.983"/>
+		<Translation time="0.467" x="0.000" y="-1.361"/>
+		<Translation time="0.483" x="0.000" y="-1.457"/>
+		<Translation time="0.500" x="0.000" y="-1.357"/>
+		<Translation time="0.517" x="0.000" y="-0.948"/>
+		<Translation time="0.533" x="0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.533" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceDown3" speed="1.0">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="0.000" y="-14.350"/>
+		<Translation time="0.033" x="0.000" y="-22.637"/>
+		<Translation time="0.050" x="0.000" y="-28.208"/>
+		<Translation time="0.067" x="0.000" y="-32.202"/>
+		<Translation time="0.083" x="0.000" y="-35.119"/>
+		<Translation time="0.100" x="0.000" y="-37.233"/>
+		<Translation time="0.117" x="0.000" y="-38.716"/>
+		<Translation time="0.133" x="0.000" y="-39.685"/>
+		<Translation time="0.150" x="0.000" y="-40.222"/>
+		<Translation time="0.167" x="0.000" y="-40.390"/>
+		<Translation time="0.183" x="0.000" y="-40.222"/>
+		<Translation time="0.200" x="0.000" y="-39.683"/>
+		<Translation time="0.217" x="0.000" y="-38.707"/>
+		<Translation time="0.233" x="0.000" y="-37.204"/>
+		<Translation time="0.250" x="0.000" y="-35.049"/>
+		<Translation time="0.267" x="0.000" y="-32.054"/>
+		<Translation time="0.283" x="0.000" y="-27.911"/>
+		<Translation time="0.300" x="0.000" y="-22.053"/>
+		<Translation time="0.317" x="0.000" y="-13.184"/>
+		<Translation time="0.333" x="0.000" y="-0.000"/>
+		<Translation time="0.350" x="0.000" y="-5.823"/>
+		<Translation time="0.367" x="0.000" y="-11.467"/>
+		<Translation time="0.383" x="0.000" y="-15.472"/>
+		<Translation time="0.400" x="0.000" y="-18.280"/>
+		<Translation time="0.417" x="0.000" y="-20.198"/>
+		<Translation time="0.433" x="0.000" y="-21.425"/>
+		<Translation time="0.450" x="0.000" y="-22.094"/>
+		<Translation time="0.467" x="0.000" y="-22.300"/>
+		<Translation time="0.483" x="0.000" y="-22.094"/>
+		<Translation time="0.500" x="0.000" y="-21.432"/>
+		<Translation time="0.517" x="0.000" y="-20.224"/>
+		<Translation time="0.533" x="0.000" y="-18.350"/>
+		<Translation time="0.550" x="0.000" y="-15.630"/>
+		<Translation time="0.567" x="0.000" y="-11.786"/>
+		<Translation time="0.583" x="0.000" y="-6.361"/>
+		<Translation time="0.600" x="0.000" y="-0.000"/>
+		<Translation time="0.617" x="0.000" y="-4.224"/>
+		<Translation time="0.633" x="0.000" y="-7.395"/>
+		<Translation time="0.650" x="0.000" y="-9.392"/>
+		<Translation time="0.667" x="0.000" y="-10.471"/>
+		<Translation time="0.683" x="0.000" y="-10.802"/>
+		<Translation time="0.700" x="0.000" y="-10.469"/>
+		<Translation time="0.717" x="0.000" y="-9.376"/>
+		<Translation time="0.733" x="0.000" y="-7.336"/>
+		<Translation time="0.750" x="0.000" y="-4.082"/>
+		<Translation time="0.767" x="0.000" y="-0.000"/>
+		<Translation time="0.783" x="0.000" y="-2.963"/>
+		<Translation time="0.800" x="0.000" y="-4.010"/>
+		<Translation time="0.817" x="0.000" y="-4.239"/>
+		<Translation time="0.833" x="0.000" y="-4.010"/>
+		<Translation time="0.850" x="0.000" y="-2.982"/>
+		<Translation time="0.867" x="0.000" y="-0.000"/>
+
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.867" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceUp1" speed="1.0">
+		<Translation time="0.000" x="0.000" y="0.000"/>
+		<Translation time="0.017" x="0.000" y="2.144"/>
+		<Translation time="0.033" x="0.000" y="3.109"/>
+		<Translation time="0.050" x="0.000" y="3.690"/>
+		<Translation time="0.067" x="0.000" y="4.036"/>
+		<Translation time="0.083" x="0.000" y="4.217"/>
+		<Translation time="0.100" x="0.000" y="4.271"/>
+		<Translation time="0.117" x="0.000" y="4.217"/>
+		<Translation time="0.133" x="0.000" y="4.036"/>
+		<Translation time="0.150" x="0.000" y="3.689"/>
+		<Translation time="0.167" x="0.000" y="3.108"/>
+		<Translation time="0.183" x="0.000" y="2.142"/>
+		<Translation time="0.200" x="0.000" y="0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.200" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceUp2" speed="1.0">
+		<Translation time="0.000" x="0.000" y="0.000"/>
+		<Translation time="0.017" x="0.000" y="3.199"/>
+		<Translation time="0.033" x="0.000" y="5.075"/>
+		<Translation time="0.050" x="0.000" y="6.297"/>
+		<Translation time="0.067" x="0.000" y="7.126"/>
+		<Translation time="0.083" x="0.000" y="7.684"/>
+		<Translation time="0.100" x="0.000" y="8.037"/>
+		<Translation time="0.117" x="0.000" y="8.228"/>
+		<Translation time="0.133" x="0.000" y="8.287"/>
+		<Translation time="0.150" x="0.000" y="8.229"/>
+		<Translation time="0.167" x="0.000" y="8.038"/>
+		<Translation time="0.183" x="0.000" y="7.687"/>
+		<Translation time="0.200" x="0.000" y="7.131"/>
+		<Translation time="0.217" x="0.000" y="6.304"/>
+		<Translation time="0.233" x="0.000" y="5.083"/>
+		<Translation time="0.250" x="0.000" y="3.201"/>
+		<Translation time="0.267" x="0.000" y="0.000"/>
+		<Translation time="0.283" x="0.000" y="2.154"/>
+		<Translation time="0.300" x="0.000" y="3.208"/>
+		<Translation time="0.317" x="0.000" y="3.809"/>
+		<Translation time="0.333" x="0.000" y="4.117"/>
+		<Translation time="0.350" x="0.000" y="4.208"/>
+		<Translation time="0.367" x="0.000" y="4.116"/>
+		<Translation time="0.383" x="0.000" y="3.805"/>
+		<Translation time="0.400" x="0.000" y="3.193"/>
+		<Translation time="0.417" x="0.000" y="2.109"/>
+		<Translation time="0.433" x="0.000" y="0.000"/>
+		<Translation time="0.450" x="0.000" y="0.983"/>
+		<Translation time="0.467" x="0.000" y="1.361"/>
+		<Translation time="0.483" x="0.000" y="1.457"/>
+		<Translation time="0.500" x="0.000" y="1.357"/>
+		<Translation time="0.517" x="0.000" y="0.948"/>
+		<Translation time="0.533" x="0.000" y="0.000"/>
+
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.533" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceUp3" speed="1.0">
+		<Translation time="0.000" x="0.000" y="0.000"/>
+		<Translation time="0.017" x="0.000" y="14.350"/>
+		<Translation time="0.033" x="0.000" y="22.637"/>
+		<Translation time="0.050" x="0.000" y="28.208"/>
+		<Translation time="0.067" x="0.000" y="32.202"/>
+		<Translation time="0.083" x="0.000" y="35.119"/>
+		<Translation time="0.100" x="0.000" y="37.233"/>
+		<Translation time="0.117" x="0.000" y="38.716"/>
+		<Translation time="0.133" x="0.000" y="39.685"/>
+		<Translation time="0.150" x="0.000" y="40.222"/>
+		<Translation time="0.167" x="0.000" y="40.390"/>
+		<Translation time="0.183" x="0.000" y="40.222"/>
+		<Translation time="0.200" x="0.000" y="39.683"/>
+		<Translation time="0.217" x="0.000" y="38.707"/>
+		<Translation time="0.233" x="0.000" y="37.204"/>
+		<Translation time="0.250" x="0.000" y="35.049"/>
+		<Translation time="0.267" x="0.000" y="32.054"/>
+		<Translation time="0.283" x="0.000" y="27.911"/>
+		<Translation time="0.300" x="0.000" y="22.053"/>
+		<Translation time="0.317" x="0.000" y="13.184"/>
+		<Translation time="0.333" x="0.000" y="0.000"/>
+		<Translation time="0.350" x="0.000" y="5.823"/>
+		<Translation time="0.367" x="0.000" y="11.467"/>
+		<Translation time="0.383" x="0.000" y="15.472"/>
+		<Translation time="0.400" x="0.000" y="18.280"/>
+		<Translation time="0.417" x="0.000" y="20.198"/>
+		<Translation time="0.433" x="0.000" y="21.425"/>
+		<Translation time="0.450" x="0.000" y="22.094"/>
+		<Translation time="0.467" x="0.000" y="22.300"/>
+		<Translation time="0.483" x="0.000" y="22.094"/>
+		<Translation time="0.500" x="0.000" y="21.432"/>
+		<Translation time="0.517" x="0.000" y="20.224"/>
+		<Translation time="0.533" x="0.000" y="18.350"/>
+		<Translation time="0.550" x="0.000" y="15.630"/>
+		<Translation time="0.567" x="0.000" y="11.786"/>
+		<Translation time="0.583" x="0.000" y="6.361"/>
+		<Translation time="0.600" x="0.000" y="0.000"/>
+		<Translation time="0.617" x="0.000" y="4.224"/>
+		<Translation time="0.633" x="0.000" y="7.395"/>
+		<Translation time="0.650" x="0.000" y="9.392"/>
+		<Translation time="0.667" x="0.000" y="10.471"/>
+		<Translation time="0.683" x="0.000" y="10.802"/>
+		<Translation time="0.700" x="0.000" y="10.469"/>
+		<Translation time="0.717" x="0.000" y="9.376"/>
+		<Translation time="0.733" x="0.000" y="7.336"/>
+		<Translation time="0.750" x="0.000" y="4.082"/>
+		<Translation time="0.767" x="0.000" y="0.000"/>
+		<Translation time="0.783" x="0.000" y="2.963"/>
+		<Translation time="0.800" x="0.000" y="4.010"/>
+		<Translation time="0.817" x="0.000" y="4.239"/>
+		<Translation time="0.833" x="0.000" y="4.010"/>
+		<Translation time="0.850" x="0.000" y="2.982"/>
+		<Translation time="0.867" x="0.000" y="0.000"/>
+
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.867" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceRight1" speed="1.0">
+		<Translation time="0.000" x="-0.000" y="-0.000"/>
+		<Translation time="0.017" x="-2.144" y="-0.000"/>
+		<Translation time="0.033" x="-3.109" y="-0.000"/>
+		<Translation time="0.050" x="-3.690" y="-0.000"/>
+		<Translation time="0.067" x="-4.036" y="-0.000"/>
+		<Translation time="0.083" x="-4.217" y="-0.000"/>
+		<Translation time="0.100" x="-4.271" y="-0.000"/>
+		<Translation time="0.117" x="-4.217" y="-0.000"/>
+		<Translation time="0.133" x="-4.036" y="-0.000"/>
+		<Translation time="0.150" x="-3.689" y="-0.000"/>
+		<Translation time="0.167" x="-3.108" y="-0.000"/>
+		<Translation time="0.183" x="-2.142" y="-0.000"/>
+		<Translation time="0.200" x="-0.000" y="-0.000"/>
+
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.200" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceRight2" speed="1.0">
+		<Translation time="0.000" x="-0.000" y="-0.000"/>
+		<Translation time="0.017" x="-3.199" y="-0.000"/>
+		<Translation time="0.033" x="-5.075" y="-0.000"/>
+		<Translation time="0.050" x="-6.297" y="-0.000"/>
+		<Translation time="0.067" x="-7.126" y="-0.000"/>
+		<Translation time="0.083" x="-7.684" y="-0.000"/>
+		<Translation time="0.100" x="-8.037" y="-0.000"/>
+		<Translation time="0.117" x="-8.228" y="-0.000"/>
+		<Translation time="0.133" x="-8.287" y="-0.000"/>
+		<Translation time="0.150" x="-8.229" y="-0.000"/>
+		<Translation time="0.167" x="-8.038" y="-0.000"/>
+		<Translation time="0.183" x="-7.687" y="-0.000"/>
+		<Translation time="0.200" x="-7.131" y="-0.000"/>
+		<Translation time="0.217" x="-6.304" y="-0.000"/>
+		<Translation time="0.233" x="-5.083" y="-0.000"/>
+		<Translation time="0.250" x="-3.201" y="-0.000"/>
+		<Translation time="0.267" x="-0.000" y="-0.000"/>
+		<Translation time="0.283" x="-2.154" y="-0.000"/>
+		<Translation time="0.300" x="-3.208" y="-0.000"/>
+		<Translation time="0.317" x="-3.809" y="-0.000"/>
+		<Translation time="0.333" x="-4.117" y="-0.000"/>
+		<Translation time="0.350" x="-4.208" y="-0.000"/>
+		<Translation time="0.367" x="-4.116" y="-0.000"/>
+		<Translation time="0.383" x="-3.805" y="-0.000"/>
+		<Translation time="0.400" x="-3.193" y="-0.000"/>
+		<Translation time="0.417" x="-2.109" y="-0.000"/>
+		<Translation time="0.433" x="-0.000" y="-0.000"/>
+		<Translation time="0.450" x="-0.983" y="-0.000"/>
+		<Translation time="0.467" x="-1.361" y="-0.000"/>
+		<Translation time="0.483" x="-1.457" y="-0.000"/>
+		<Translation time="0.500" x="-1.357" y="-0.000"/>
+		<Translation time="0.517" x="-0.948" y="-0.000"/>
+		<Translation time="0.533" x="-0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.533" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceRight3" speed="1.0">
+		<Translation time="0.000" x="-0.000" y="-0.000"/>
+		<Translation time="0.017" x="-14.350" y="-0.000"/>
+		<Translation time="0.033" x="-22.637" y="-0.000"/>
+		<Translation time="0.050" x="-28.208" y="-0.000"/>
+		<Translation time="0.067" x="-32.202" y="-0.000"/>
+		<Translation time="0.083" x="-35.119" y="-0.000"/>
+		<Translation time="0.100" x="-37.233" y="-0.000"/>
+		<Translation time="0.117" x="-38.716" y="-0.000"/>
+		<Translation time="0.133" x="-39.685" y="-0.000"/>
+		<Translation time="0.150" x="-40.222" y="-0.000"/>
+		<Translation time="0.167" x="-40.390" y="-0.000"/>
+		<Translation time="0.183" x="-40.222" y="-0.000"/>
+		<Translation time="0.200" x="-39.683" y="-0.000"/>
+		<Translation time="0.217" x="-38.707" y="-0.000"/>
+		<Translation time="0.233" x="-37.204" y="-0.000"/>
+		<Translation time="0.250" x="-35.049" y="-0.000"/>
+		<Translation time="0.267" x="-32.054" y="-0.000"/>
+		<Translation time="0.283" x="-27.911" y="-0.000"/>
+		<Translation time="0.300" x="-22.053" y="-0.000"/>
+		<Translation time="0.317" x="-13.184" y="-0.000"/>
+		<Translation time="0.333" x="-0.000" y="-0.000"/>
+		<Translation time="0.350" x="-5.823" y="-0.000"/>
+		<Translation time="0.367" x="-11.467" y="-0.000"/>
+		<Translation time="0.383" x="-15.472" y="-0.000"/>
+		<Translation time="0.400" x="-18.280" y="-0.000"/>
+		<Translation time="0.417" x="-20.198" y="-0.000"/>
+		<Translation time="0.433" x="-21.425" y="-0.000"/>
+		<Translation time="0.450" x="-22.094" y="-0.000"/>
+		<Translation time="0.467" x="-22.300" y="-0.000"/>
+		<Translation time="0.483" x="-22.094" y="-0.000"/>
+		<Translation time="0.500" x="-21.432" y="-0.000"/>
+		<Translation time="0.517" x="-20.224" y="-0.000"/>
+		<Translation time="0.533" x="-18.350" y="-0.000"/>
+		<Translation time="0.550" x="-15.630" y="-0.000"/>
+		<Translation time="0.567" x="-11.786" y="-0.000"/>
+		<Translation time="0.583" x="-6.361" y="-0.000"/>
+		<Translation time="0.600" x="-0.000" y="-0.000"/>
+		<Translation time="0.617" x="-4.224" y="-0.000"/>
+		<Translation time="0.633" x="-7.395" y="-0.000"/>
+		<Translation time="0.650" x="-9.392" y="-0.000"/>
+		<Translation time="0.667" x="-10.471" y="-0.000"/>
+		<Translation time="0.683" x="-10.802" y="-0.000"/>
+		<Translation time="0.700" x="-10.469" y="-0.000"/>
+		<Translation time="0.717" x="-9.376" y="-0.000"/>
+		<Translation time="0.733" x="-7.336" y="-0.000"/>
+		<Translation time="0.750" x="-4.082" y="-0.000"/>
+		<Translation time="0.767" x="-0.000" y="-0.000"/>
+		<Translation time="0.783" x="-2.963" y="-0.000"/>
+		<Translation time="0.800" x="-4.010" y="-0.000"/>
+		<Translation time="0.817" x="-4.239" y="-0.000"/>
+		<Translation time="0.833" x="-4.010" y="-0.000"/>
+		<Translation time="0.850" x="-2.982" y="-0.000"/>
+		<Translation time="0.867" x="-0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.867" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceLeft1" speed="1.0">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="2.144" y="-0.000"/>
+		<Translation time="0.033" x="3.109" y="-0.000"/>
+		<Translation time="0.050" x="3.690" y="-0.000"/>
+		<Translation time="0.067" x="4.036" y="-0.000"/>
+		<Translation time="0.083" x="4.217" y="-0.000"/>
+		<Translation time="0.100" x="4.271" y="-0.000"/>
+		<Translation time="0.117" x="4.217" y="-0.000"/>
+		<Translation time="0.133" x="4.036" y="-0.000"/>
+		<Translation time="0.150" x="3.689" y="-0.000"/>
+		<Translation time="0.167" x="3.108" y="-0.000"/>
+		<Translation time="0.183" x="2.142" y="-0.000"/>
+		<Translation time="0.200" x="0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.200" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceLeft2" speed="1.0">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="3.199" y="-0.000"/>
+		<Translation time="0.033" x="5.075" y="-0.000"/>
+		<Translation time="0.050" x="6.297" y="-0.000"/>
+		<Translation time="0.067" x="7.126" y="-0.000"/>
+		<Translation time="0.083" x="7.684" y="-0.000"/>
+		<Translation time="0.100" x="8.037" y="-0.000"/>
+		<Translation time="0.117" x="8.228" y="-0.000"/>
+		<Translation time="0.133" x="8.287" y="-0.000"/>
+		<Translation time="0.150" x="8.229" y="-0.000"/>
+		<Translation time="0.167" x="8.038" y="-0.000"/>
+		<Translation time="0.183" x="7.687" y="-0.000"/>
+		<Translation time="0.200" x="7.131" y="-0.000"/>
+		<Translation time="0.217" x="6.304" y="-0.000"/>
+		<Translation time="0.233" x="5.083" y="-0.000"/>
+		<Translation time="0.250" x="3.201" y="-0.000"/>
+		<Translation time="0.267" x="0.000" y="-0.000"/>
+		<Translation time="0.283" x="2.154" y="-0.000"/>
+		<Translation time="0.300" x="3.208" y="-0.000"/>
+		<Translation time="0.317" x="3.809" y="-0.000"/>
+		<Translation time="0.333" x="4.117" y="-0.000"/>
+		<Translation time="0.350" x="4.208" y="-0.000"/>
+		<Translation time="0.367" x="4.116" y="-0.000"/>
+		<Translation time="0.383" x="3.805" y="-0.000"/>
+		<Translation time="0.400" x="3.193" y="-0.000"/>
+		<Translation time="0.417" x="2.109" y="-0.000"/>
+		<Translation time="0.433" x="0.000" y="-0.000"/>
+		<Translation time="0.450" x="0.983" y="-0.000"/>
+		<Translation time="0.467" x="1.361" y="-0.000"/>
+		<Translation time="0.483" x="1.457" y="-0.000"/>
+		<Translation time="0.500" x="1.357" y="-0.000"/>
+		<Translation time="0.517" x="0.948" y="-0.000"/>
+		<Translation time="0.533" x="0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.533" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="CandyBounceLeft3" speed="1.0">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="14.350" y="-0.000"/>
+		<Translation time="0.033" x="22.637" y="-0.000"/>
+		<Translation time="0.050" x="28.208" y="-0.000"/>
+		<Translation time="0.067" x="32.202" y="-0.000"/>
+		<Translation time="0.083" x="35.119" y="-0.000"/>
+		<Translation time="0.100" x="37.233" y="-0.000"/>
+		<Translation time="0.117" x="38.716" y="-0.000"/>
+		<Translation time="0.133" x="39.685" y="-0.000"/>
+		<Translation time="0.150" x="40.222" y="-0.000"/>
+		<Translation time="0.167" x="40.390" y="-0.000"/>
+		<Translation time="0.183" x="40.222" y="-0.000"/>
+		<Translation time="0.200" x="39.683" y="-0.000"/>
+		<Translation time="0.217" x="38.707" y="-0.000"/>
+		<Translation time="0.233" x="37.204" y="-0.000"/>
+		<Translation time="0.250" x="35.049" y="-0.000"/>
+		<Translation time="0.267" x="32.054" y="-0.000"/>
+		<Translation time="0.283" x="27.911" y="-0.000"/>
+		<Translation time="0.300" x="22.053" y="-0.000"/>
+		<Translation time="0.317" x="13.184" y="-0.000"/>
+		<Translation time="0.333" x="0.000" y="-0.000"/>
+		<Translation time="0.350" x="5.823" y="-0.000"/>
+		<Translation time="0.367" x="11.467" y="-0.000"/>
+		<Translation time="0.383" x="15.472" y="-0.000"/>
+		<Translation time="0.400" x="18.280" y="-0.000"/>
+		<Translation time="0.417" x="20.198" y="-0.000"/>
+		<Translation time="0.433" x="21.425" y="-0.000"/>
+		<Translation time="0.450" x="22.094" y="-0.000"/>
+		<Translation time="0.467" x="22.300" y="-0.000"/>
+		<Translation time="0.483" x="22.094" y="-0.000"/>
+		<Translation time="0.500" x="21.432" y="-0.000"/>
+		<Translation time="0.517" x="20.224" y="-0.000"/>
+		<Translation time="0.533" x="18.350" y="-0.000"/>
+		<Translation time="0.550" x="15.630" y="-0.000"/>
+		<Translation time="0.567" x="11.786" y="-0.000"/>
+		<Translation time="0.583" x="6.361" y="-0.000"/>
+		<Translation time="0.600" x="0.000" y="-0.000"/>
+		<Translation time="0.617" x="4.224" y="-0.000"/>
+		<Translation time="0.633" x="7.395" y="-0.000"/>
+		<Translation time="0.650" x="9.392" y="-0.000"/>
+		<Translation time="0.667" x="10.471" y="-0.000"/>
+		<Translation time="0.683" x="10.802" y="-0.000"/>
+		<Translation time="0.700" x="10.469" y="-0.000"/>
+		<Translation time="0.717" x="9.376" y="-0.000"/>
+		<Translation time="0.733" x="7.336" y="-0.000"/>
+		<Translation time="0.750" x="4.082" y="-0.000"/>
+		<Translation time="0.767" x="0.000" y="-0.000"/>
+		<Translation time="0.783" x="2.963" y="-0.000"/>
+		<Translation time="0.800" x="4.010" y="-0.000"/>
+		<Translation time="0.817" x="4.239" y="-0.000"/>
+		<Translation time="0.833" x="4.010" y="-0.000"/>
+		<Translation time="0.850" x="2.982" y="-0.000"/>
+		<Translation time="0.867" x="0.000" y="-0.000"/>
+
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.867" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<Animation name="Wrapped_secondary_animation" speed="0.8">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="-0.118" y="0.116"/>
+		<Translation time="0.033" x="-0.236" y="0.232"/>
+		<Translation time="0.050" x="-0.353" y="0.348"/>
+		<Translation time="0.067" x="-0.155" y="0.464"/>
+		<Translation time="0.083" x="0.043" y="0.093"/>
+		<Translation time="0.100" x="0.241" y="-0.278"/>
+		<Translation time="0.117" x="0.439" y="-0.650"/>
+		<Translation time="0.133" x="0.637" y="-0.228"/>
+		<Translation time="0.150" x="0.401" y="0.194"/>
+		<Translation time="0.167" x="0.164" y="0.616"/>
+		<Translation time="0.183" x="-0.072" y="0.298"/>
+		<Translation time="0.200" x="-0.309" y="-0.020"/>
+		<Translation time="0.217" x="-0.546" y="-0.339"/>
+		<Translation time="0.233" x="-0.276" y="-0.657"/>
+		<Translation time="0.250" x="-0.006" y="-0.272"/>
+		<Translation time="0.267" x="0.263" y="0.113"/>
+		<Translation time="0.283" x="0.533" y="0.499"/>
+		<Translation time="0.300" x="0.355" y="0.332"/>
+		<Translation time="0.317" x="0.178" y="0.166"/>
+		<Translation time="0.333" x="0.000" y="-0.000"/>
+
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.017" x="0.000" y="0.000" z="0.336"/>
+		<Rotation time="0.033" x="0.000" y="0.000" z="0.671"/>
+		<Rotation time="0.050" x="0.000" y="0.000" z="0.824"/>
+		<Rotation time="0.067" x="0.000" y="0.000" z="0.625"/>
+		<Rotation time="0.083" x="0.000" y="0.000" z="0.189"/>
+		<Rotation time="0.100" x="0.000" y="0.000" z="-0.247"/>
+		<Rotation time="0.117" x="0.000" y="0.000" z="-0.445"/>
+		<Rotation time="0.133" x="0.000" y="0.000" z="-0.312"/>
+		<Rotation time="0.150" x="0.000" y="0.000" z="0.007"/>
+		<Rotation time="0.167" x="0.000" y="0.000" z="0.387"/>
+		<Rotation time="0.183" x="0.000" y="0.000" z="0.705"/>
+		<Rotation time="0.200" x="0.000" y="0.000" z="0.839"/>
+		<Rotation time="0.217" x="0.000" y="0.000" z="0.699"/>
+		<Rotation time="0.233" x="0.000" y="0.000" z="0.365"/>
+		<Rotation time="0.250" x="0.000" y="0.000" z="-0.033"/>
+		<Rotation time="0.267" x="0.000" y="0.000" z="-0.366"/>
+		<Rotation time="0.283" x="0.000" y="0.000" z="-0.506"/>
+		<Rotation time="0.300" x="0.000" y="0.000" z="-0.412"/>
+		<Rotation time="0.317" x="0.000" y="0.000" z="-0.206"/>
+		<Rotation time="0.333" x="0.000" y="0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.033" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.050" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.067" x="1.021" y="1.021" z="1.021"/>
+		<Scale time="0.083" x="1.029" y="1.029" z="1.029"/>
+		<Scale time="0.100" x="1.038" y="1.038" z="1.038"/>
+		<Scale time="0.117" x="1.046" y="1.046" z="1.046"/>
+		<Scale time="0.133" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.150" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.167" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.183" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.200" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.217" x="1.046" y="1.046" z="1.046"/>
+		<Scale time="0.233" x="1.038" y="1.038" z="1.038"/>
+		<Scale time="0.250" x="1.029" y="1.029" z="1.029"/>
+		<Scale time="0.267" x="1.021" y="1.021" z="1.021"/>
+		<Scale time="0.283" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.300" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.317" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.333" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+
+	<Animation name="SpecialCandyCharging" speed="0.8">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="-0.118" y="0.116"/>
+		<Translation time="0.033" x="-0.236" y="0.232"/>
+		<Translation time="0.050" x="-0.353" y="0.348"/>
+		<Translation time="0.067" x="-0.155" y="0.464"/>
+		<Translation time="0.083" x="0.043" y="0.093"/>
+		<Translation time="0.100" x="0.241" y="-0.278"/>
+		<Translation time="0.117" x="0.439" y="-0.650"/>
+		<Translation time="0.133" x="0.637" y="-0.228"/>
+		<Translation time="0.150" x="0.401" y="0.194"/>
+		<Translation time="0.167" x="0.164" y="0.616"/>
+		<Translation time="0.183" x="-0.072" y="0.298"/>
+		<Translation time="0.200" x="-0.309" y="-0.020"/>
+		<Translation time="0.217" x="-0.546" y="-0.339"/>
+		<Translation time="0.233" x="-0.276" y="-0.657"/>
+		<Translation time="0.250" x="-0.006" y="-0.272"/>
+		<Translation time="0.267" x="0.263" y="0.113"/>
+		<Translation time="0.283" x="0.533" y="0.499"/>
+		<Translation time="0.300" x="0.355" y="0.332"/>
+		<Translation time="0.317" x="0.178" y="0.166"/>
+		<Translation time="0.333" x="0.000" y="-0.000"/>
+
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.017" x="0.000" y="0.000" z="0.336"/>
+		<Rotation time="0.033" x="0.000" y="0.000" z="0.671"/>
+		<Rotation time="0.050" x="0.000" y="0.000" z="0.824"/>
+		<Rotation time="0.067" x="0.000" y="0.000" z="0.625"/>
+		<Rotation time="0.083" x="0.000" y="0.000" z="0.189"/>
+		<Rotation time="0.100" x="0.000" y="0.000" z="-0.247"/>
+		<Rotation time="0.117" x="0.000" y="0.000" z="-0.445"/>
+		<Rotation time="0.133" x="0.000" y="0.000" z="-0.312"/>
+		<Rotation time="0.150" x="0.000" y="0.000" z="0.007"/>
+		<Rotation time="0.167" x="0.000" y="0.000" z="0.387"/>
+		<Rotation time="0.183" x="0.000" y="0.000" z="0.705"/>
+		<Rotation time="0.200" x="0.000" y="0.000" z="0.839"/>
+		<Rotation time="0.217" x="0.000" y="0.000" z="0.699"/>
+		<Rotation time="0.233" x="0.000" y="0.000" z="0.365"/>
+		<Rotation time="0.250" x="0.000" y="0.000" z="-0.033"/>
+		<Rotation time="0.267" x="0.000" y="0.000" z="-0.366"/>
+		<Rotation time="0.283" x="0.000" y="0.000" z="-0.506"/>
+		<Rotation time="0.300" x="0.000" y="0.000" z="-0.412"/>
+		<Rotation time="0.317" x="0.000" y="0.000" z="-0.206"/>
+		<Rotation time="0.333" x="0.000" y="0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.033" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.050" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.067" x="1.021" y="1.021" z="1.021"/>
+		<Scale time="0.083" x="1.029" y="1.029" z="1.029"/>
+		<Scale time="0.100" x="1.038" y="1.038" z="1.038"/>
+		<Scale time="0.117" x="1.046" y="1.046" z="1.046"/>
+		<Scale time="0.133" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.150" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.167" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.183" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.200" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.217" x="1.046" y="1.046" z="1.046"/>
+		<Scale time="0.233" x="1.038" y="1.038" z="1.038"/>
+		<Scale time="0.250" x="1.029" y="1.029" z="1.029"/>
+		<Scale time="0.267" x="1.021" y="1.021" z="1.021"/>
+		<Scale time="0.283" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.300" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.317" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.333" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<Animation name="Ballon_init_animation" speed="0.5">
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="0.997" y="1.000" z="1.000"/>
+		<Scale time="0.033" x="0.994" y="1.000" z="1.000"/>
+		<Scale time="0.050" x="0.990" y="1.001" z="1.000"/>
+		<Scale time="0.067" x="0.987" y="1.001" z="1.000"/>
+		<Scale time="0.083" x="0.983" y="1.001" z="1.000"/>
+		<Scale time="0.100" x="0.980" y="1.001" z="1.000"/>
+		<Scale time="0.117" x="0.976" y="1.001" z="1.000"/>
+		<Scale time="0.133" x="0.974" y="1.001" z="1.000"/>
+		<Scale time="0.150" x="0.972" y="1.001" z="1.000"/>
+		<Scale time="0.167" x="0.970" y="1.001" z="1.000"/>
+		<Scale time="0.183" x="0.970" y="1.000" z="1.000"/>
+		<Scale time="0.200" x="0.970" y="0.999" z="1.000"/>
+		<Scale time="0.217" x="0.972" y="0.998" z="1.000"/>
+		<Scale time="0.233" x="0.974" y="0.997" z="1.000"/>
+		<Scale time="0.250" x="0.977" y="0.995" z="1.000"/>
+		<Scale time="0.267" x="0.980" y="0.994" z="1.000"/>
+		<Scale time="0.283" x="0.983" y="0.992" z="1.000"/>
+		<Scale time="0.300" x="0.987" y="0.991" z="1.000"/>
+		<Scale time="0.317" x="0.990" y="0.989" z="1.000"/>
+		<Scale time="0.333" x="0.993" y="0.988" z="1.000"/>
+		<Scale time="0.350" x="0.996" y="0.986" z="1.000"/>
+		<Scale time="0.367" x="0.998" y="0.984" z="1.000"/>
+		<Scale time="0.383" x="1.000" y="0.983" z="1.000"/>
+		<Scale time="0.400" x="1.001" y="0.981" z="1.000"/>
+		<Scale time="0.417" x="1.002" y="0.979" z="1.000"/>
+		<Scale time="0.433" x="1.002" y="0.978" z="1.000"/>
+		<Scale time="0.450" x="1.002" y="0.977" z="1.000"/>
+		<Scale time="0.467" x="1.002" y="0.975" z="1.000"/>
+		<Scale time="0.483" x="1.002" y="0.974" z="1.000"/>
+		<Scale time="0.500" x="1.002" y="0.973" z="1.000"/>
+		<Scale time="0.517" x="1.001" y="0.972" z="1.000"/>
+		<Scale time="0.533" x="1.001" y="0.971" z="1.000"/>
+		<Scale time="0.550" x="1.000" y="0.971" z="1.000"/>
+		<Scale time="0.567" x="1.000" y="0.970" z="1.000"/>
+		<Scale time="0.583" x="1.000" y="0.970" z="1.000"/>
+		<Scale time="0.600" x="1.000" y="0.971" z="1.000"/>
+		<Scale time="0.617" x="1.000" y="0.972" z="1.000"/>
+		<Scale time="0.633" x="1.000" y="0.974" z="1.000"/>
+		<Scale time="0.650" x="1.000" y="0.976" z="1.000"/>
+		<Scale time="0.667" x="1.000" y="0.978" z="1.000"/>
+		<Scale time="0.683" x="1.000" y="0.981" z="1.000"/>
+		<Scale time="0.700" x="1.000" y="0.985" z="1.000"/>
+		<Scale time="0.717" x="1.000" y="0.988" z="1.000"/>
+		<Scale time="0.733" x="1.000" y="0.991" z="1.000"/>
+		<Scale time="0.750" x="1.000" y="0.994" z="1.000"/>
+		<Scale time="0.767" x="1.000" y="0.997" z="1.000"/>
+		<Scale time="0.783" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<!--
+	<Animation name="Wrapped_secondary_animation" speed="0.8">
+	  <Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+	  <Scale time="0.017" x="0.997" y="0.997" z="0.997"/>
+	  <Scale time="0.033" x="0.987" y="0.987" z="0.987"/>
+	  <Scale time="0.050" x="0.974" y="0.974" z="0.974"/>
+	  <Scale time="0.067" x="0.958" y="0.958" z="0.958"/>
+	  <Scale time="0.083" x="0.942" y="0.942" z="0.942"/>
+	  <Scale time="0.100" x="0.926" y="0.926" z="0.926"/>
+	  <Scale time="0.117" x="0.913" y="0.913" z="0.913"/>
+	  <Scale time="0.133" x="0.903" y="0.903" z="0.903"/>
+	  <Scale time="0.150" x="0.900" y="0.900" z="0.900"/>
+	  <Scale time="0.167" x="0.903" y="0.903" z="0.903"/>
+	  <Scale time="0.183" x="0.910" y="0.910" z="0.910"/>
+	  <Scale time="0.200" x="0.922" y="0.922" z="0.922"/>
+	  <Scale time="0.217" x="0.935" y="0.935" z="0.935"/>
+	  <Scale time="0.233" x="0.950" y="0.950" z="0.950"/>
+	  <Scale time="0.250" x="0.965" y="0.965" z="0.965"/>
+	  <Scale time="0.267" x="0.978" y="0.978" z="0.978"/>
+	  <Scale time="0.283" x="0.990" y="0.990" z="0.990"/>
+	  <Scale time="0.300" x="0.997" y="0.997" z="0.997"/>
+	  <Scale time="0.317" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+	-->
+
+	<Animation name="Show_grid_direction" speed="0.8">
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="0.998" y="0.998" z="0.998"/>
+		<Scale time="0.033" x="0.994" y="0.994" z="0.994"/>
+		<Scale time="0.050" x="0.990" y="0.990" z="0.990"/>
+		<Scale time="0.067" x="0.986" y="0.986" z="0.986"/>
+		<Scale time="0.083" x="0.984" y="0.984" z="0.984"/>
+		<Scale time="0.100" x="0.992" y="0.992" z="0.992"/>
+		<Scale time="0.117" x="1.017" y="1.017" z="1.017"/>
+		<Scale time="0.133" x="1.047" y="1.047" z="1.047"/>
+		<Scale time="0.150" x="1.069" y="1.069" z="1.069"/>
+		<Scale time="0.167" x="1.082" y="1.082" z="1.082"/>
+		<Scale time="0.183" x="1.088" y="1.088" z="1.088"/>
+		<Scale time="0.200" x="1.090" y="1.090" z="1.090"/>
+		<Scale time="0.217" x="1.090" y="1.090" z="1.090"/>
+		<Scale time="0.233" x="1.090" y="1.090" z="1.090"/>
+		<Scale time="0.250" x="1.089" y="1.089" z="1.089"/>
+		<Scale time="0.267" x="1.088" y="1.088" z="1.088"/>
+		<Scale time="0.283" x="1.085" y="1.085" z="1.085"/>
+		<Scale time="0.300" x="1.081" y="1.081" z="1.081"/>
+		<Scale time="0.317" x="1.076" y="1.076" z="1.076"/>
+		<Scale time="0.333" x="1.071" y="1.071" z="1.071"/>
+		<Scale time="0.350" x="1.066" y="1.066" z="1.066"/>
+		<Scale time="0.367" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.383" x="1.054" y="1.054" z="1.054"/>
+		<Scale time="0.400" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.417" x="1.044" y="1.044" z="1.044"/>
+		<Scale time="0.433" x="1.039" y="1.039" z="1.039"/>
+		<Scale time="0.450" x="1.035" y="1.035" z="1.035"/>
+		<Scale time="0.467" x="1.030" y="1.030" z="1.030"/>
+		<Scale time="0.483" x="1.025" y="1.025" z="1.025"/>
+		<Scale time="0.500" x="1.021" y="1.021" z="1.021"/>
+		<Scale time="0.517" x="1.016" y="1.016" z="1.016"/>
+		<Scale time="0.533" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.550" x="1.009" y="1.009" z="1.009"/>
+		<Scale time="0.567" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.583" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.600" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.617" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.633" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.650" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<Animation name="ScalingCandiesBeingMadeToSpecial" speed="1.0">
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.010" x="1.500" y="1.500" z="1.500"/>
+		<Scale time="0.160" x="0.800" y="0.800" z="0.800"/>
+	</Animation>
+
+	<Animation name="CreatingSpecialCandyAnimation" speed="1.0">
+		<Scale time="0.000" x="1.200" y="1.200" z="1.200"/>
+		<Scale time="0.100" x="0.900" y="0.900" z="0.900"/>
+		<Scale time="0.200" x="1.100" y="1.100" z="1.100"/>
+		<Scale time="0.300" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<Animation name="2x2_shake" speed="1.0">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="-0.148" y="0.202"/>
+		<Translation time="0.033" x="-0.296" y="0.403"/>
+		<Translation time="0.050" x="-0.444" y="0.605"/>
+		<Translation time="0.067" x="-0.196" y="0.806"/>
+		<Translation time="0.083" x="0.052" y="0.268"/>
+		<Translation time="0.100" x="0.300" y="-0.271"/>
+		<Translation time="0.117" x="0.549" y="-0.809"/>
+		<Translation time="0.133" x="0.797" y="-0.281"/>
+		<Translation time="0.150" x="0.496" y="0.247"/>
+		<Translation time="0.167" x="0.196" y="0.776"/>
+		<Translation time="0.183" x="-0.104" y="0.366"/>
+		<Translation time="0.200" x="-0.405" y="-0.043"/>
+		<Translation time="0.217" x="-0.705" y="-0.453"/>
+		<Translation time="0.233" x="-0.344" y="-0.862"/>
+		<Translation time="0.250" x="0.016" y="-0.249"/>
+		<Translation time="0.267" x="0.377" y="0.364"/>
+		<Translation time="0.283" x="0.738" y="0.977"/>
+		<Translation time="0.300" x="0.492" y="0.652"/>
+		<Translation time="0.317" x="0.246" y="0.326"/>
+		<Translation time="0.333" x="0.000" y="-0.000"/>
+
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.017" x="0.000" y="0.000" z="0.698"/>
+		<Rotation time="0.033" x="0.000" y="0.000" z="1.395"/>
+		<Rotation time="0.050" x="0.000" y="0.000" z="1.713"/>
+		<Rotation time="0.067" x="0.000" y="0.000" z="1.375"/>
+		<Rotation time="0.083" x="0.000" y="0.000" z="0.634"/>
+		<Rotation time="0.100" x="0.000" y="0.000" z="-0.108"/>
+		<Rotation time="0.117" x="0.000" y="0.000" z="-0.445"/>
+		<Rotation time="0.133" x="0.000" y="0.000" z="-0.219"/>
+		<Rotation time="0.150" x="0.000" y="0.000" z="0.320"/>
+		<Rotation time="0.167" x="0.000" y="0.000" z="0.963"/>
+		<Rotation time="0.183" x="0.000" y="0.000" z="1.502"/>
+		<Rotation time="0.200" x="0.000" y="0.000" z="1.728"/>
+		<Rotation time="0.217" x="0.000" y="0.000" z="1.495"/>
+		<Rotation time="0.233" x="0.000" y="0.000" z="0.941"/>
+		<Rotation time="0.250" x="0.000" y="0.000" z="0.280"/>
+		<Rotation time="0.267" x="0.000" y="0.000" z="-0.274"/>
+		<Rotation time="0.283" x="0.000" y="0.000" z="-0.506"/>
+		<Rotation time="0.300" x="0.000" y="0.000" z="-0.412"/>
+		<Rotation time="0.317" x="0.000" y="0.000" z="-0.206"/>
+		<Rotation time="0.333" x="0.000" y="0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.033" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.050" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.067" x="1.009" y="1.009" z="1.009"/>
+		<Scale time="0.083" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.100" x="1.017" y="1.017" z="1.017"/>
+		<Scale time="0.117" x="1.021" y="1.021" z="1.021"/>
+		<Scale time="0.133" x="1.024" y="1.024" z="1.024"/>
+		<Scale time="0.150" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.167" x="1.027" y="1.027" z="1.027"/>
+		<Scale time="0.183" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.200" x="1.024" y="1.024" z="1.024"/>
+		<Scale time="0.217" x="1.021" y="1.021" z="1.021"/>
+		<Scale time="0.233" x="1.017" y="1.017" z="1.017"/>
+		<Scale time="0.250" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.267" x="1.009" y="1.009" z="1.009"/>
+		<Scale time="0.283" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.300" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.317" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.333" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<!--UP animation!-->
+	<Animation name="move_hint_main_item_up" speed="0.8">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="0.000" y="-0.023"/>
+		<Translation time="0.033" x="0.000" y="-0.091"/>
+		<Translation time="0.050" x="0.000" y="-0.203"/>
+		<Translation time="0.067" x="0.000" y="-0.356"/>
+		<Translation time="0.083" x="0.000" y="-0.548"/>
+		<Translation time="0.100" x="0.000" y="-0.778"/>
+		<Translation time="0.117" x="0.000" y="-1.043"/>
+		<Translation time="0.133" x="0.000" y="-1.342"/>
+		<Translation time="0.150" x="0.000" y="-1.673"/>
+		<Translation time="0.167" x="0.000" y="-2.034"/>
+		<Translation time="0.183" x="0.000" y="-2.423"/>
+		<Translation time="0.200" x="0.000" y="-2.837"/>
+		<Translation time="0.217" x="0.000" y="-3.276"/>
+		<Translation time="0.233" x="0.000" y="-3.738"/>
+		<Translation time="0.250" x="0.000" y="-4.220"/>
+		<Translation time="0.267" x="0.000" y="-4.720"/>
+		<Translation time="0.283" x="0.000" y="-5.237"/>
+		<Translation time="0.300" x="0.000" y="-5.768"/>
+		<Translation time="0.317" x="0.000" y="-6.313"/>
+		<Translation time="0.333" x="0.000" y="-6.868"/>
+		<Translation time="0.350" x="0.000" y="-7.432"/>
+		<Translation time="0.367" x="0.000" y="-8.004"/>
+		<Translation time="0.383" x="0.000" y="-8.580"/>
+		<Translation time="0.400" x="0.000" y="-9.160"/>
+		<Translation time="0.417" x="0.000" y="-9.742"/>
+		<Translation time="0.433" x="0.000" y="-10.322"/>
+		<Translation time="0.450" x="0.000" y="-10.901"/>
+		<Translation time="0.467" x="0.000" y="-11.475"/>
+		<Translation time="0.483" x="0.000" y="-12.043"/>
+		<Translation time="0.500" x="0.000" y="-12.602"/>
+		<Translation time="0.517" x="0.000" y="-13.042"/>
+		<Translation time="0.533" x="0.000" y="-12.503"/>
+		<Translation time="0.550" x="0.000" y="-12.010"/>
+		<Translation time="0.567" x="0.000" y="-11.573"/>
+		<Translation time="0.583" x="0.000" y="-11.203"/>
+		<Translation time="0.600" x="0.000" y="-10.908"/>
+		<Translation time="0.617" x="0.000" y="-10.698"/>
+		<Translation time="0.633" x="0.000" y="-10.585"/>
+		<Translation time="0.650" x="0.000" y="-10.577"/>
+		<Translation time="0.667" x="0.000" y="-10.684"/>
+		<Translation time="0.683" x="0.000" y="-10.916"/>
+		<Translation time="0.700" x="0.000" y="-11.284"/>
+		<Translation time="0.717" x="0.000" y="-11.797"/>
+		<Translation time="0.733" x="0.000" y="-12.464"/>
+		<Translation time="0.750" x="0.000" y="-13.297"/>
+		<Translation time="0.767" x="0.000" y="-13.055"/>
+		<Translation time="0.783" x="0.000" y="-12.247"/>
+		<Translation time="0.800" x="0.000" y="-11.435"/>
+		<Translation time="0.817" x="0.000" y="-10.622"/>
+		<Translation time="0.833" x="0.000" y="-9.812"/>
+		<Translation time="0.850" x="0.000" y="-9.009"/>
+		<Translation time="0.867" x="0.000" y="-8.217"/>
+		<Translation time="0.883" x="0.000" y="-7.438"/>
+		<Translation time="0.900" x="0.000" y="-6.678"/>
+		<Translation time="0.917" x="0.000" y="-5.940"/>
+		<Translation time="0.933" x="0.000" y="-5.228"/>
+		<Translation time="0.950" x="0.000" y="-4.544"/>
+		<Translation time="0.967" x="0.000" y="-3.894"/>
+		<Translation time="0.983" x="0.000" y="-3.281"/>
+		<Translation time="1.000" x="0.000" y="-2.708"/>
+		<Translation time="1.017" x="0.000" y="-2.180"/>
+		<Translation time="1.033" x="0.000" y="-1.700"/>
+		<Translation time="1.050" x="0.000" y="-1.271"/>
+		<Translation time="1.067" x="0.000" y="-0.898"/>
+		<Translation time="1.083" x="0.000" y="-0.585"/>
+		<Translation time="1.100" x="0.000" y="-0.335"/>
+		<Translation time="1.117" x="0.000" y="-0.151"/>
+		<Translation time="1.133" x="0.000" y="-0.038"/>
+		<Translation time="1.150" x="0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.033" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.050" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.067" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.083" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.100" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.117" x="1.008" y="1.008" z="1.008"/>
+		<Scale time="0.133" x="1.010" y="1.010" z="1.010"/>
+		<Scale time="0.150" x="1.012" y="1.012" z="1.012"/>
+		<Scale time="0.167" x="1.015" y="1.015" z="1.015"/>
+		<Scale time="0.183" x="1.017" y="1.017" z="1.017"/>
+		<Scale time="0.200" x="1.020" y="1.020" z="1.020"/>
+		<Scale time="0.217" x="1.023" y="1.023" z="1.023"/>
+		<Scale time="0.233" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.250" x="1.029" y="1.029" z="1.029"/>
+		<Scale time="0.267" x="1.031" y="1.031" z="1.031"/>
+		<Scale time="0.283" x="1.034" y="1.034" z="1.034"/>
+		<Scale time="0.300" x="1.037" y="1.037" z="1.037"/>
+		<Scale time="0.317" x="1.040" y="1.040" z="1.040"/>
+		<Scale time="0.333" x="1.043" y="1.043" z="1.043"/>
+		<Scale time="0.350" x="1.045" y="1.045" z="1.045"/>
+		<Scale time="0.367" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.383" x="1.050" y="1.050" z="1.050"/>
+		<Scale time="0.400" x="1.052" y="1.052" z="1.052"/>
+		<Scale time="0.417" x="1.054" y="1.054" z="1.054"/>
+		<Scale time="0.433" x="1.056" y="1.056" z="1.056"/>
+		<Scale time="0.450" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.467" x="1.058" y="1.058" z="1.058"/>
+		<Scale time="0.483" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.500" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.517" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.767" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.783" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.800" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.817" x="1.056" y="1.056" z="1.056"/>
+		<Scale time="0.833" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.850" x="1.051" y="1.051" z="1.051"/>
+		<Scale time="0.867" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.883" x="1.044" y="1.044" z="1.044"/>
+		<Scale time="0.900" x="1.041" y="1.041" z="1.041"/>
+		<Scale time="0.917" x="1.037" y="1.037" z="1.037"/>
+		<Scale time="0.933" x="1.034" y="1.034" z="1.034"/>
+		<Scale time="0.950" x="1.030" y="1.030" z="1.030"/>
+		<Scale time="0.967" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.983" x="1.023" y="1.023" z="1.023"/>
+		<Scale time="1.000" x="1.019" y="1.019" z="1.019"/>
+		<Scale time="1.017" x="1.016" y="1.016" z="1.016"/>
+		<Scale time="1.033" x="1.012" y="1.012" z="1.012"/>
+		<Scale time="1.050" x="1.009" y="1.009" z="1.009"/>
+		<Scale time="1.067" x="1.007" y="1.007" z="1.007"/>
+		<Scale time="1.083" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="1.100" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="1.117" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="1.133" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="1.150" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<!-- Down -->
+	<Animation name="move_hint_main_item_down" speed="0.8">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="0.000" y="0.024"/>
+		<Translation time="0.033" x="0.000" y="0.096"/>
+		<Translation time="0.050" x="0.000" y="0.213"/>
+		<Translation time="0.067" x="0.000" y="0.373"/>
+		<Translation time="0.083" x="0.000" y="0.574"/>
+		<Translation time="0.100" x="0.000" y="0.815"/>
+		<Translation time="0.117" x="0.000" y="1.092"/>
+		<Translation time="0.133" x="0.000" y="1.405"/>
+		<Translation time="0.150" x="0.000" y="1.751"/>
+		<Translation time="0.167" x="0.000" y="2.128"/>
+		<Translation time="0.183" x="0.000" y="2.534"/>
+		<Translation time="0.200" x="0.000" y="2.967"/>
+		<Translation time="0.217" x="0.000" y="3.425"/>
+		<Translation time="0.233" x="0.000" y="3.906"/>
+		<Translation time="0.250" x="0.000" y="4.407"/>
+		<Translation time="0.267" x="0.000" y="4.928"/>
+		<Translation time="0.283" x="0.000" y="5.466"/>
+		<Translation time="0.300" x="0.000" y="6.018"/>
+		<Translation time="0.317" x="0.000" y="6.584"/>
+		<Translation time="0.333" x="0.000" y="7.160"/>
+		<Translation time="0.350" x="0.000" y="7.745"/>
+		<Translation time="0.367" x="0.000" y="8.337"/>
+		<Translation time="0.383" x="0.000" y="8.933"/>
+		<Translation time="0.400" x="0.000" y="9.532"/>
+		<Translation time="0.417" x="0.000" y="10.132"/>
+		<Translation time="0.433" x="0.000" y="10.730"/>
+		<Translation time="0.450" x="0.000" y="11.325"/>
+		<Translation time="0.467" x="0.000" y="11.915"/>
+		<Translation time="0.483" x="0.000" y="12.497"/>
+		<Translation time="0.500" x="0.000" y="13.070"/>
+		<Translation time="0.517" x="0.000" y="13.519"/>
+		<Translation time="0.533" x="0.000" y="12.969"/>
+		<Translation time="0.550" x="0.000" y="12.466"/>
+		<Translation time="0.567" x="0.000" y="12.021"/>
+		<Translation time="0.583" x="0.000" y="11.643"/>
+		<Translation time="0.600" x="0.000" y="11.342"/>
+		<Translation time="0.617" x="0.000" y="11.129"/>
+		<Translation time="0.633" x="0.000" y="11.013"/>
+		<Translation time="0.650" x="0.000" y="11.004"/>
+		<Translation time="0.667" x="0.000" y="11.114"/>
+		<Translation time="0.683" x="0.000" y="11.351"/>
+		<Translation time="0.700" x="0.000" y="11.726"/>
+		<Translation time="0.717" x="0.000" y="12.249"/>
+		<Translation time="0.733" x="0.000" y="12.930"/>
+		<Translation time="0.750" x="0.000" y="13.779"/>
+		<Translation time="0.767" x="0.000" y="13.531"/>
+		<Translation time="0.783" x="0.000" y="12.705"/>
+		<Translation time="0.800" x="0.000" y="11.872"/>
+		<Translation time="0.817" x="0.000" y="11.036"/>
+		<Translation time="0.833" x="0.000" y="10.202"/>
+		<Translation time="0.850" x="0.000" y="9.374"/>
+		<Translation time="0.867" x="0.000" y="8.555"/>
+		<Translation time="0.883" x="0.000" y="7.750"/>
+		<Translation time="0.900" x="0.000" y="6.962"/>
+		<Translation time="0.917" x="0.000" y="6.196"/>
+		<Translation time="0.933" x="0.000" y="5.456"/>
+		<Translation time="0.950" x="0.000" y="4.746"/>
+		<Translation time="0.967" x="0.000" y="4.069"/>
+		<Translation time="0.983" x="0.000" y="3.430"/>
+		<Translation time="1.000" x="0.000" y="2.832"/>
+		<Translation time="1.017" x="0.000" y="2.281"/>
+		<Translation time="1.033" x="0.000" y="1.779"/>
+		<Translation time="1.050" x="0.000" y="1.331"/>
+		<Translation time="1.067" x="0.000" y="0.941"/>
+		<Translation time="1.083" x="0.000" y="0.613"/>
+		<Translation time="1.100" x="0.000" y="0.351"/>
+		<Translation time="1.117" x="0.000" y="0.159"/>
+		<Translation time="1.133" x="0.000" y="0.040"/>
+		<Translation time="1.150" x="0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.033" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.050" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.067" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.083" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.100" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.117" x="1.008" y="1.008" z="1.008"/>
+		<Scale time="0.133" x="1.010" y="1.010" z="1.010"/>
+		<Scale time="0.150" x="1.012" y="1.012" z="1.012"/>
+		<Scale time="0.167" x="1.015" y="1.015" z="1.015"/>
+		<Scale time="0.183" x="1.017" y="1.017" z="1.017"/>
+		<Scale time="0.200" x="1.020" y="1.020" z="1.020"/>
+		<Scale time="0.217" x="1.023" y="1.023" z="1.023"/>
+		<Scale time="0.233" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.250" x="1.029" y="1.029" z="1.029"/>
+		<Scale time="0.267" x="1.031" y="1.031" z="1.031"/>
+		<Scale time="0.283" x="1.034" y="1.034" z="1.034"/>
+		<Scale time="0.300" x="1.037" y="1.037" z="1.037"/>
+		<Scale time="0.317" x="1.040" y="1.040" z="1.040"/>
+		<Scale time="0.333" x="1.043" y="1.043" z="1.043"/>
+		<Scale time="0.350" x="1.045" y="1.045" z="1.045"/>
+		<Scale time="0.367" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.383" x="1.050" y="1.050" z="1.050"/>
+		<Scale time="0.400" x="1.052" y="1.052" z="1.052"/>
+		<Scale time="0.417" x="1.054" y="1.054" z="1.054"/>
+		<Scale time="0.433" x="1.056" y="1.056" z="1.056"/>
+		<Scale time="0.450" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.467" x="1.058" y="1.058" z="1.058"/>
+		<Scale time="0.483" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.500" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.517" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.767" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.783" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.800" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.817" x="1.056" y="1.056" z="1.056"/>
+		<Scale time="0.833" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.850" x="1.051" y="1.051" z="1.051"/>
+		<Scale time="0.867" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.883" x="1.044" y="1.044" z="1.044"/>
+		<Scale time="0.900" x="1.041" y="1.041" z="1.041"/>
+		<Scale time="0.917" x="1.037" y="1.037" z="1.037"/>
+		<Scale time="0.933" x="1.034" y="1.034" z="1.034"/>
+		<Scale time="0.950" x="1.030" y="1.030" z="1.030"/>
+		<Scale time="0.967" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.983" x="1.023" y="1.023" z="1.023"/>
+		<Scale time="1.000" x="1.019" y="1.019" z="1.019"/>
+		<Scale time="1.017" x="1.016" y="1.016" z="1.016"/>
+		<Scale time="1.033" x="1.012" y="1.012" z="1.012"/>
+		<Scale time="1.050" x="1.009" y="1.009" z="1.009"/>
+		<Scale time="1.067" x="1.007" y="1.007" z="1.007"/>
+		<Scale time="1.083" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="1.100" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="1.117" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="1.133" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="1.150" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<!-- Left -->
+	<Animation name="move_hint_main_item_left" speed="0.8">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="-0.021" y="-0.000"/>
+		<Translation time="0.033" x="-0.084" y="-0.000"/>
+		<Translation time="0.050" x="-0.187" y="-0.000"/>
+		<Translation time="0.067" x="-0.327" y="-0.000"/>
+		<Translation time="0.083" x="-0.504" y="-0.000"/>
+		<Translation time="0.100" x="-0.716" y="-0.000"/>
+		<Translation time="0.117" x="-0.960" y="-0.000"/>
+		<Translation time="0.133" x="-1.235" y="-0.000"/>
+		<Translation time="0.150" x="-1.539" y="-0.000"/>
+		<Translation time="0.167" x="-1.871" y="-0.000"/>
+		<Translation time="0.183" x="-2.229" y="-0.000"/>
+		<Translation time="0.200" x="-2.610" y="-0.000"/>
+		<Translation time="0.217" x="-3.014" y="-0.000"/>
+		<Translation time="0.233" x="-3.439" y="-0.000"/>
+		<Translation time="0.250" x="-3.882" y="-0.000"/>
+		<Translation time="0.267" x="-4.342" y="-0.000"/>
+		<Translation time="0.283" x="-4.818" y="-0.000"/>
+		<Translation time="0.300" x="-5.307" y="-0.000"/>
+		<Translation time="0.317" x="-5.808" y="-0.000"/>
+		<Translation time="0.333" x="-6.319" y="-0.000"/>
+		<Translation time="0.350" x="-6.838" y="-0.000"/>
+		<Translation time="0.367" x="-7.363" y="-0.000"/>
+		<Translation time="0.383" x="-7.894" y="-0.000"/>
+		<Translation time="0.400" x="-8.427" y="-0.000"/>
+		<Translation time="0.417" x="-8.962" y="-0.000"/>
+		<Translation time="0.433" x="-9.497" y="-0.000"/>
+		<Translation time="0.450" x="-10.029" y="-0.000"/>
+		<Translation time="0.467" x="-10.557" y="-0.000"/>
+		<Translation time="0.483" x="-11.079" y="-0.000"/>
+		<Translation time="0.500" x="-11.594" y="-0.000"/>
+		<Translation time="0.517" x="-11.998" y="-0.000"/>
+		<Translation time="0.533" x="-11.503" y="-0.000"/>
+		<Translation time="0.550" x="-11.049" y="-0.000"/>
+		<Translation time="0.567" x="-10.647" y="-0.000"/>
+		<Translation time="0.583" x="-10.306" y="-0.000"/>
+		<Translation time="0.600" x="-10.035" y="-0.000"/>
+		<Translation time="0.617" x="-9.843" y="-0.000"/>
+		<Translation time="0.633" x="-9.738" y="-0.000"/>
+		<Translation time="0.650" x="-9.731" y="-0.000"/>
+		<Translation time="0.667" x="-9.829" y="-0.000"/>
+		<Translation time="0.683" x="-10.043" y="-0.000"/>
+		<Translation time="0.700" x="-10.381" y="-0.000"/>
+		<Translation time="0.717" x="-10.853" y="-0.000"/>
+		<Translation time="0.733" x="-11.467" y="-0.000"/>
+		<Translation time="0.750" x="-12.233" y="-0.000"/>
+		<Translation time="0.767" x="-12.010" y="-0.000"/>
+		<Translation time="0.783" x="-11.267" y="-0.000"/>
+		<Translation time="0.800" x="-10.520" y="-0.000"/>
+		<Translation time="0.817" x="-9.772" y="-0.000"/>
+		<Translation time="0.833" x="-9.027" y="-0.000"/>
+		<Translation time="0.850" x="-8.288" y="-0.000"/>
+		<Translation time="0.867" x="-7.559" y="-0.000"/>
+		<Translation time="0.883" x="-6.843" y="-0.000"/>
+		<Translation time="0.900" x="-6.144" y="-0.000"/>
+		<Translation time="0.917" x="-5.465" y="-0.000"/>
+		<Translation time="0.933" x="-4.809" y="-0.000"/>
+		<Translation time="0.950" x="-4.181" y="-0.000"/>
+		<Translation time="0.967" x="-3.583" y="-0.000"/>
+		<Translation time="0.983" x="-3.018" y="-0.000"/>
+		<Translation time="1.000" x="-2.492" y="-0.000"/>
+		<Translation time="1.017" x="-2.005" y="-0.000"/>
+		<Translation time="1.033" x="-1.564" y="-0.000"/>
+		<Translation time="1.050" x="-1.170" y="-0.000"/>
+		<Translation time="1.067" x="-0.827" y="-0.000"/>
+		<Translation time="1.083" x="-0.538" y="-0.000"/>
+		<Translation time="1.100" x="-0.308" y="-0.000"/>
+		<Translation time="1.117" x="-0.139" y="-0.000"/>
+		<Translation time="1.133" x="-0.035" y="-0.000"/>
+		<Translation time="1.150" x="0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.033" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.050" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.067" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.083" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.100" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.117" x="1.008" y="1.008" z="1.008"/>
+		<Scale time="0.133" x="1.010" y="1.010" z="1.010"/>
+		<Scale time="0.150" x="1.012" y="1.012" z="1.012"/>
+		<Scale time="0.167" x="1.015" y="1.015" z="1.015"/>
+		<Scale time="0.183" x="1.017" y="1.017" z="1.017"/>
+		<Scale time="0.200" x="1.020" y="1.020" z="1.020"/>
+		<Scale time="0.217" x="1.023" y="1.023" z="1.023"/>
+		<Scale time="0.233" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.250" x="1.029" y="1.029" z="1.029"/>
+		<Scale time="0.267" x="1.031" y="1.031" z="1.031"/>
+		<Scale time="0.283" x="1.034" y="1.034" z="1.034"/>
+		<Scale time="0.300" x="1.037" y="1.037" z="1.037"/>
+		<Scale time="0.317" x="1.040" y="1.040" z="1.040"/>
+		<Scale time="0.333" x="1.043" y="1.043" z="1.043"/>
+		<Scale time="0.350" x="1.045" y="1.045" z="1.045"/>
+		<Scale time="0.367" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.383" x="1.050" y="1.050" z="1.050"/>
+		<Scale time="0.400" x="1.052" y="1.052" z="1.052"/>
+		<Scale time="0.417" x="1.054" y="1.054" z="1.054"/>
+		<Scale time="0.433" x="1.056" y="1.056" z="1.056"/>
+		<Scale time="0.450" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.467" x="1.058" y="1.058" z="1.058"/>
+		<Scale time="0.483" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.500" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.517" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.767" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.783" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.800" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.817" x="1.056" y="1.056" z="1.056"/>
+		<Scale time="0.833" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.850" x="1.051" y="1.051" z="1.051"/>
+		<Scale time="0.867" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.883" x="1.044" y="1.044" z="1.044"/>
+		<Scale time="0.900" x="1.041" y="1.041" z="1.041"/>
+		<Scale time="0.917" x="1.037" y="1.037" z="1.037"/>
+		<Scale time="0.933" x="1.034" y="1.034" z="1.034"/>
+		<Scale time="0.950" x="1.030" y="1.030" z="1.030"/>
+		<Scale time="0.967" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.983" x="1.023" y="1.023" z="1.023"/>
+		<Scale time="1.000" x="1.019" y="1.019" z="1.019"/>
+		<Scale time="1.017" x="1.016" y="1.016" z="1.016"/>
+		<Scale time="1.033" x="1.012" y="1.012" z="1.012"/>
+		<Scale time="1.050" x="1.009" y="1.009" z="1.009"/>
+		<Scale time="1.067" x="1.007" y="1.007" z="1.007"/>
+		<Scale time="1.083" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="1.100" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="1.117" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="1.133" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="1.150" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<!-- Right -->
+	<Animation name="move_hint_main_item_right" speed="0.8">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="0.023" y="-0.000"/>
+		<Translation time="0.033" x="0.091" y="-0.000"/>
+		<Translation time="0.050" x="0.203" y="-0.000"/>
+		<Translation time="0.067" x="0.356" y="-0.000"/>
+		<Translation time="0.083" x="0.548" y="-0.000"/>
+		<Translation time="0.100" x="0.778" y="-0.000"/>
+		<Translation time="0.117" x="1.043" y="-0.000"/>
+		<Translation time="0.133" x="1.342" y="-0.000"/>
+		<Translation time="0.150" x="1.673" y="-0.000"/>
+		<Translation time="0.167" x="2.034" y="-0.000"/>
+		<Translation time="0.183" x="2.423" y="-0.000"/>
+		<Translation time="0.200" x="2.837" y="-0.000"/>
+		<Translation time="0.217" x="3.276" y="-0.000"/>
+		<Translation time="0.233" x="3.738" y="-0.000"/>
+		<Translation time="0.250" x="4.220" y="-0.000"/>
+		<Translation time="0.267" x="4.720" y="-0.000"/>
+		<Translation time="0.283" x="5.237" y="-0.000"/>
+		<Translation time="0.300" x="5.768" y="-0.000"/>
+		<Translation time="0.317" x="6.313" y="-0.000"/>
+		<Translation time="0.333" x="6.868" y="-0.000"/>
+		<Translation time="0.350" x="7.432" y="-0.000"/>
+		<Translation time="0.367" x="8.004" y="-0.000"/>
+		<Translation time="0.383" x="8.580" y="-0.000"/>
+		<Translation time="0.400" x="9.160" y="-0.000"/>
+		<Translation time="0.417" x="9.742" y="-0.000"/>
+		<Translation time="0.433" x="10.322" y="-0.000"/>
+		<Translation time="0.450" x="10.901" y="-0.000"/>
+		<Translation time="0.467" x="11.475" y="-0.000"/>
+		<Translation time="0.483" x="12.043" y="-0.000"/>
+		<Translation time="0.500" x="12.602" y="-0.000"/>
+		<Translation time="0.517" x="13.042" y="-0.000"/>
+		<Translation time="0.533" x="12.503" y="-0.000"/>
+		<Translation time="0.550" x="12.010" y="-0.000"/>
+		<Translation time="0.567" x="11.573" y="-0.000"/>
+		<Translation time="0.583" x="11.203" y="-0.000"/>
+		<Translation time="0.600" x="10.908" y="-0.000"/>
+		<Translation time="0.617" x="10.698" y="-0.000"/>
+		<Translation time="0.633" x="10.585" y="-0.000"/>
+		<Translation time="0.650" x="10.577" y="-0.000"/>
+		<Translation time="0.667" x="10.684" y="-0.000"/>
+		<Translation time="0.683" x="10.916" y="-0.000"/>
+		<Translation time="0.700" x="11.284" y="-0.000"/>
+		<Translation time="0.717" x="11.797" y="-0.000"/>
+		<Translation time="0.733" x="12.464" y="-0.000"/>
+		<Translation time="0.750" x="13.297" y="-0.000"/>
+		<Translation time="0.767" x="13.055" y="-0.000"/>
+		<Translation time="0.783" x="12.247" y="-0.000"/>
+		<Translation time="0.800" x="11.435" y="-0.000"/>
+		<Translation time="0.817" x="10.622" y="-0.000"/>
+		<Translation time="0.833" x="9.812" y="-0.000"/>
+		<Translation time="0.850" x="9.009" y="-0.000"/>
+		<Translation time="0.867" x="8.217" y="-0.000"/>
+		<Translation time="0.883" x="7.438" y="-0.000"/>
+		<Translation time="0.900" x="6.678" y="-0.000"/>
+		<Translation time="0.917" x="5.940" y="-0.000"/>
+		<Translation time="0.933" x="5.228" y="-0.000"/>
+		<Translation time="0.950" x="4.544" y="-0.000"/>
+		<Translation time="0.967" x="3.894" y="-0.000"/>
+		<Translation time="0.983" x="3.281" y="-0.000"/>
+		<Translation time="1.000" x="2.708" y="-0.000"/>
+		<Translation time="1.017" x="2.180" y="-0.000"/>
+		<Translation time="1.033" x="1.700" y="-0.000"/>
+		<Translation time="1.050" x="1.271" y="-0.000"/>
+		<Translation time="1.067" x="0.898" y="-0.000"/>
+		<Translation time="1.083" x="0.585" y="-0.000"/>
+		<Translation time="1.100" x="0.335" y="-0.000"/>
+		<Translation time="1.117" x="0.151" y="-0.000"/>
+		<Translation time="1.133" x="0.038" y="-0.000"/>
+		<Translation time="1.150" x="0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.033" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.050" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.067" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.083" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.100" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.117" x="1.008" y="1.008" z="1.008"/>
+		<Scale time="0.133" x="1.010" y="1.010" z="1.010"/>
+		<Scale time="0.150" x="1.012" y="1.012" z="1.012"/>
+		<Scale time="0.167" x="1.015" y="1.015" z="1.015"/>
+		<Scale time="0.183" x="1.017" y="1.017" z="1.017"/>
+		<Scale time="0.200" x="1.020" y="1.020" z="1.020"/>
+		<Scale time="0.217" x="1.023" y="1.023" z="1.023"/>
+		<Scale time="0.233" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.250" x="1.029" y="1.029" z="1.029"/>
+		<Scale time="0.267" x="1.031" y="1.031" z="1.031"/>
+		<Scale time="0.283" x="1.034" y="1.034" z="1.034"/>
+		<Scale time="0.300" x="1.037" y="1.037" z="1.037"/>
+		<Scale time="0.317" x="1.040" y="1.040" z="1.040"/>
+		<Scale time="0.333" x="1.043" y="1.043" z="1.043"/>
+		<Scale time="0.350" x="1.045" y="1.045" z="1.045"/>
+		<Scale time="0.367" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.383" x="1.050" y="1.050" z="1.050"/>
+		<Scale time="0.400" x="1.052" y="1.052" z="1.052"/>
+		<Scale time="0.417" x="1.054" y="1.054" z="1.054"/>
+		<Scale time="0.433" x="1.056" y="1.056" z="1.056"/>
+		<Scale time="0.450" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.467" x="1.058" y="1.058" z="1.058"/>
+		<Scale time="0.483" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.500" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.517" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.767" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.783" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.800" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.817" x="1.056" y="1.056" z="1.056"/>
+		<Scale time="0.833" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.850" x="1.051" y="1.051" z="1.051"/>
+		<Scale time="0.867" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.883" x="1.044" y="1.044" z="1.044"/>
+		<Scale time="0.900" x="1.041" y="1.041" z="1.041"/>
+		<Scale time="0.917" x="1.037" y="1.037" z="1.037"/>
+		<Scale time="0.933" x="1.034" y="1.034" z="1.034"/>
+		<Scale time="0.950" x="1.030" y="1.030" z="1.030"/>
+		<Scale time="0.967" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.983" x="1.023" y="1.023" z="1.023"/>
+		<Scale time="1.000" x="1.019" y="1.019" z="1.019"/>
+		<Scale time="1.017" x="1.016" y="1.016" z="1.016"/>
+		<Scale time="1.033" x="1.012" y="1.012" z="1.012"/>
+		<Scale time="1.050" x="1.009" y="1.009" z="1.009"/>
+		<Scale time="1.067" x="1.007" y="1.007" z="1.007"/>
+		<Scale time="1.083" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="1.100" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="1.117" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="1.133" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="1.150" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+
+	<!--DOWN animation!-->
+	<Animation name="move_hint_item_to_swap_with" speed="0.8">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="0.000" y="-0.002"/>
+		<Translation time="0.033" x="0.000" y="-0.006"/>
+		<Translation time="0.050" x="0.000" y="-0.011"/>
+		<Translation time="0.067" x="0.000" y="-0.016"/>
+		<Translation time="0.083" x="0.000" y="-0.019"/>
+		<Translation time="0.100" x="0.000" y="-0.020"/>
+		<Translation time="0.117" x="0.000" y="-0.015"/>
+		<Translation time="0.133" x="0.000" y="-0.005"/>
+		<Translation time="0.150" x="0.000" y="0.012"/>
+		<Translation time="0.167" x="0.000" y="0.038"/>
+		<Translation time="0.183" x="0.000" y="0.075"/>
+		<Translation time="0.200" x="0.000" y="0.122"/>
+		<Translation time="0.217" x="0.000" y="0.183"/>
+		<Translation time="0.233" x="0.000" y="0.257"/>
+		<Translation time="0.250" x="0.000" y="0.348"/>
+		<Translation time="0.267" x="0.000" y="0.455"/>
+		<Translation time="0.283" x="0.000" y="0.581"/>
+		<Translation time="0.300" x="0.000" y="0.726"/>
+		<Translation time="0.317" x="0.000" y="0.893"/>
+		<Translation time="0.333" x="0.000" y="1.082"/>
+		<Translation time="0.350" x="0.000" y="1.296"/>
+		<Translation time="0.367" x="0.000" y="1.534"/>
+		<Translation time="0.383" x="0.000" y="1.800"/>
+		<Translation time="0.400" x="0.000" y="2.094"/>
+		<Translation time="0.417" x="0.000" y="2.417"/>
+		<Translation time="0.433" x="0.000" y="2.771"/>
+		<Translation time="0.450" x="0.000" y="3.157"/>
+		<Translation time="0.467" x="0.000" y="3.578"/>
+		<Translation time="0.483" x="0.000" y="4.033"/>
+		<Translation time="0.500" x="0.000" y="4.525"/>
+		<Translation time="0.517" x="0.000" y="4.958"/>
+		<Translation time="0.533" x="0.000" y="4.551"/>
+		<Translation time="0.550" x="0.000" y="4.176"/>
+		<Translation time="0.567" x="0.000" y="3.839"/>
+		<Translation time="0.583" x="0.000" y="3.551"/>
+		<Translation time="0.600" x="0.000" y="3.321"/>
+		<Translation time="0.617" x="0.000" y="3.155"/>
+		<Translation time="0.633" x="0.000" y="3.065"/>
+		<Translation time="0.650" x="0.000" y="3.058"/>
+		<Translation time="0.667" x="0.000" y="3.142"/>
+		<Translation time="0.683" x="0.000" y="3.328"/>
+		<Translation time="0.700" x="0.000" y="3.624"/>
+		<Translation time="0.717" x="0.000" y="4.037"/>
+		<Translation time="0.733" x="0.000" y="4.578"/>
+		<Translation time="0.750" x="0.000" y="5.255"/>
+		<Translation time="0.767" x="0.000" y="4.977"/>
+		<Translation time="0.783" x="0.000" y="4.266"/>
+		<Translation time="0.800" x="0.000" y="3.625"/>
+		<Translation time="0.817" x="0.000" y="3.050"/>
+		<Translation time="0.833" x="0.000" y="2.538"/>
+		<Translation time="0.850" x="0.000" y="2.085"/>
+		<Translation time="0.867" x="0.000" y="1.688"/>
+		<Translation time="0.883" x="0.000" y="1.344"/>
+		<Translation time="0.900" x="0.000" y="1.047"/>
+		<Translation time="0.917" x="0.000" y="0.796"/>
+		<Translation time="0.933" x="0.000" y="0.586"/>
+		<Translation time="0.950" x="0.000" y="0.413"/>
+		<Translation time="0.967" x="0.000" y="0.276"/>
+		<Translation time="0.983" x="0.000" y="0.168"/>
+		<Translation time="1.000" x="0.000" y="0.088"/>
+		<Translation time="1.017" x="0.000" y="0.032"/>
+		<Translation time="1.033" x="0.000" y="-0.005"/>
+		<Translation time="1.050" x="0.000" y="-0.025"/>
+		<Translation time="1.067" x="0.000" y="-0.032"/>
+		<Translation time="1.083" x="0.000" y="-0.030"/>
+		<Translation time="1.100" x="0.000" y="-0.022"/>
+		<Translation time="1.117" x="0.000" y="-0.012"/>
+		<Translation time="1.133" x="0.000" y="-0.004"/>
+		<Translation time="1.150" x="0.000" y="-0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.033" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.050" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.067" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.083" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.100" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.117" x="1.008" y="1.008" z="1.008"/>
+		<Scale time="0.133" x="1.010" y="1.010" z="1.010"/>
+		<Scale time="0.150" x="1.012" y="1.012" z="1.012"/>
+		<Scale time="0.167" x="1.015" y="1.015" z="1.015"/>
+		<Scale time="0.183" x="1.017" y="1.017" z="1.017"/>
+		<Scale time="0.200" x="1.020" y="1.020" z="1.020"/>
+		<Scale time="0.217" x="1.023" y="1.023" z="1.023"/>
+		<Scale time="0.233" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.250" x="1.029" y="1.029" z="1.029"/>
+		<Scale time="0.267" x="1.031" y="1.031" z="1.031"/>
+		<Scale time="0.283" x="1.034" y="1.034" z="1.034"/>
+		<Scale time="0.300" x="1.037" y="1.037" z="1.037"/>
+		<Scale time="0.317" x="1.040" y="1.040" z="1.040"/>
+		<Scale time="0.333" x="1.043" y="1.043" z="1.043"/>
+		<Scale time="0.350" x="1.045" y="1.045" z="1.045"/>
+		<Scale time="0.367" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.383" x="1.050" y="1.050" z="1.050"/>
+		<Scale time="0.400" x="1.052" y="1.052" z="1.052"/>
+		<Scale time="0.417" x="1.054" y="1.054" z="1.054"/>
+		<Scale time="0.433" x="1.056" y="1.056" z="1.056"/>
+		<Scale time="0.450" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.467" x="1.058" y="1.058" z="1.058"/>
+		<Scale time="0.483" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.500" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.517" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.767" x="1.060" y="1.060" z="1.060"/>
+		<Scale time="0.783" x="1.059" y="1.059" z="1.059"/>
+		<Scale time="0.800" x="1.057" y="1.057" z="1.057"/>
+		<Scale time="0.817" x="1.056" y="1.056" z="1.056"/>
+		<Scale time="0.833" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.850" x="1.051" y="1.051" z="1.051"/>
+		<Scale time="0.867" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.883" x="1.044" y="1.044" z="1.044"/>
+		<Scale time="0.900" x="1.041" y="1.041" z="1.041"/>
+		<Scale time="0.917" x="1.037" y="1.037" z="1.037"/>
+		<Scale time="0.933" x="1.034" y="1.034" z="1.034"/>
+		<Scale time="0.950" x="1.030" y="1.030" z="1.030"/>
+		<Scale time="0.967" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.983" x="1.023" y="1.023" z="1.023"/>
+		<Scale time="1.000" x="1.019" y="1.019" z="1.019"/>
+		<Scale time="1.017" x="1.016" y="1.016" z="1.016"/>
+		<Scale time="1.033" x="1.012" y="1.012" z="1.012"/>
+		<Scale time="1.050" x="1.009" y="1.009" z="1.009"/>
+		<Scale time="1.067" x="1.007" y="1.007" z="1.007"/>
+		<Scale time="1.083" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="1.100" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="1.117" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="1.133" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="1.150" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+
+	<Animation name="move_hint_items_in_match" speed="0.8">
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.183" x="0.000" y="0.000" z="0.007"/>
+		<Rotation time="0.200" x="0.000" y="0.000" z="0.060"/>
+		<Rotation time="0.217" x="0.000" y="0.000" z="0.182"/>
+		<Rotation time="0.233" x="0.000" y="0.000" z="0.364"/>
+		<Rotation time="0.250" x="0.000" y="0.000" z="0.592"/>
+		<Rotation time="0.267" x="0.000" y="0.000" z="0.855"/>
+		<Rotation time="0.283" x="0.000" y="0.000" z="1.141"/>
+		<Rotation time="0.300" x="0.000" y="0.000" z="1.438"/>
+		<Rotation time="0.317" x="0.000" y="0.000" z="1.734"/>
+		<Rotation time="0.333" x="0.000" y="0.000" z="2.018"/>
+		<Rotation time="0.350" x="0.000" y="0.000" z="2.276"/>
+		<Rotation time="0.367" x="0.000" y="0.000" z="2.498"/>
+		<Rotation time="0.383" x="0.000" y="0.000" z="2.672"/>
+		<Rotation time="0.400" x="0.000" y="0.000" z="2.784"/>
+		<Rotation time="0.417" x="0.000" y="0.000" z="2.824"/>
+		<Rotation time="0.433" x="0.000" y="0.000" z="2.632"/>
+		<Rotation time="0.450" x="0.000" y="0.000" z="2.115"/>
+		<Rotation time="0.467" x="0.000" y="0.000" z="1.368"/>
+		<Rotation time="0.483" x="0.000" y="0.000" z="0.481"/>
+		<Rotation time="0.500" x="0.000" y="0.000" z="-0.451"/>
+		<Rotation time="0.517" x="0.000" y="0.000" z="-1.338"/>
+		<Rotation time="0.533" x="0.000" y="0.000" z="-2.085"/>
+		<Rotation time="0.550" x="0.000" y="0.000" z="-2.602"/>
+		<Rotation time="0.567" x="0.000" y="0.000" z="-2.794"/>
+		<Rotation time="0.583" x="0.000" y="0.000" z="-2.569"/>
+		<Rotation time="0.600" x="0.000" y="0.000" z="-1.989"/>
+		<Rotation time="0.617" x="0.000" y="0.000" z="-1.195"/>
+		<Rotation time="0.633" x="0.000" y="0.000" z="-0.330"/>
+		<Rotation time="0.650" x="0.000" y="0.000" z="0.464"/>
+		<Rotation time="0.667" x="0.000" y="0.000" z="1.045"/>
+		<Rotation time="0.683" x="0.000" y="0.000" z="1.270"/>
+		<Rotation time="0.700" x="0.000" y="0.000" z="0.784"/>
+		<Rotation time="0.717" x="0.000" y="0.000" z="-0.430"/>
+		<Rotation time="0.733" x="0.000" y="0.000" z="-2.008"/>
+		<Rotation time="0.750" x="0.000" y="0.000" z="-3.587"/>
+		<Rotation time="0.767" x="0.000" y="0.000" z="-4.801"/>
+		<Rotation time="0.783" x="0.000" y="0.000" z="-5.287"/>
+		<Rotation time="0.800" x="0.000" y="0.000" z="-5.122"/>
+		<Rotation time="0.817" x="0.000" y="0.000" z="-4.681"/>
+		<Rotation time="0.833" x="0.000" y="0.000" z="-4.038"/>
+		<Rotation time="0.850" x="0.000" y="0.000" z="-3.273"/>
+		<Rotation time="0.867" x="0.000" y="0.000" z="-2.462"/>
+		<Rotation time="0.883" x="0.000" y="0.000" z="-1.681"/>
+		<Rotation time="0.900" x="0.000" y="0.000" z="-1.009"/>
+		<Rotation time="0.917" x="0.000" y="0.000" z="-0.521"/>
+		<Rotation time="0.933" x="0.000" y="0.000" z="-0.296"/>
+		<Rotation time="0.950" x="0.000" y="0.000" z="-0.233"/>
+		<Rotation time="0.967" x="0.000" y="0.000" z="-0.179"/>
+		<Rotation time="0.983" x="0.000" y="0.000" z="-0.135"/>
+		<Rotation time="1.000" x="0.000" y="0.000" z="-0.098"/>
+		<Rotation time="1.017" x="0.000" y="0.000" z="-0.069"/>
+		<Rotation time="1.033" x="0.000" y="0.000" z="-0.046"/>
+		<Rotation time="1.050" x="0.000" y="0.000" z="-0.029"/>
+		<Rotation time="1.067" x="0.000" y="0.000" z="-0.017"/>
+		<Rotation time="1.083" x="0.000" y="0.000" z="-0.009"/>
+		<Rotation time="1.100" x="0.000" y="0.000" z="-0.004"/>
+		<Rotation time="1.117" x="0.000" y="0.000" z="-0.001"/>
+		<Rotation time="1.133" x="0.000" y="0.000" z="-0.000"/>
+		<Rotation time="1.150" x="0.000" y="0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.217" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.233" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.250" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.267" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.283" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.300" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.317" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.333" x="1.007" y="1.007" z="1.007"/>
+		<Scale time="0.350" x="1.009" y="1.009" z="1.009"/>
+		<Scale time="0.367" x="1.011" y="1.011" z="1.011"/>
+		<Scale time="0.383" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.400" x="1.015" y="1.015" z="1.015"/>
+		<Scale time="0.417" x="1.017" y="1.017" z="1.017"/>
+		<Scale time="0.433" x="1.019" y="1.019" z="1.019"/>
+		<Scale time="0.450" x="1.022" y="1.022" z="1.022"/>
+		<Scale time="0.467" x="1.024" y="1.024" z="1.024"/>
+		<Scale time="0.483" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.500" x="1.029" y="1.029" z="1.029"/>
+		<Scale time="0.517" x="1.031" y="1.031" z="1.031"/>
+		<Scale time="0.533" x="1.033" y="1.033" z="1.033"/>
+		<Scale time="0.550" x="1.036" y="1.036" z="1.036"/>
+		<Scale time="0.567" x="1.038" y="1.038" z="1.038"/>
+		<Scale time="0.583" x="1.040" y="1.040" z="1.040"/>
+		<Scale time="0.600" x="1.042" y="1.042" z="1.042"/>
+		<Scale time="0.617" x="1.044" y="1.044" z="1.044"/>
+		<Scale time="0.633" x="1.046" y="1.046" z="1.046"/>
+		<Scale time="0.650" x="1.048" y="1.048" z="1.048"/>
+		<Scale time="0.667" x="1.049" y="1.049" z="1.049"/>
+		<Scale time="0.683" x="1.051" y="1.051" z="1.051"/>
+		<Scale time="0.700" x="1.052" y="1.052" z="1.052"/>
+		<Scale time="0.717" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.733" x="1.054" y="1.054" z="1.054"/>
+		<Scale time="0.750" x="1.054" y="1.054" z="1.054"/>
+		<Scale time="0.767" x="1.055" y="1.055" z="1.055"/>
+		<Scale time="0.783" x="1.055" y="1.055" z="1.055"/>
+		<Scale time="0.800" x="1.053" y="1.053" z="1.053"/>
+		<Scale time="0.817" x="1.049" y="1.049" z="1.049"/>
+		<Scale time="0.833" x="1.042" y="1.042" z="1.042"/>
+		<Scale time="0.850" x="1.035" y="1.035" z="1.035"/>
+		<Scale time="0.867" x="1.026" y="1.026" z="1.026"/>
+		<Scale time="0.883" x="1.018" y="1.018" z="1.018"/>
+		<Scale time="0.900" x="1.010" y="1.010" z="1.010"/>
+		<Scale time="0.917" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.933" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.950" x="0.998" y="0.998" z="0.998"/>
+		<Scale time="0.967" x="0.996" y="0.996" z="0.996"/>
+		<Scale time="0.983" x="0.996" y="0.996" z="0.996"/>
+		<Scale time="1.000" x="0.995" y="0.995" z="0.995"/>
+		<Scale time="1.017" x="0.995" y="0.995" z="0.995"/>
+		<Scale time="1.033" x="0.996" y="0.996" z="0.996"/>
+		<Scale time="1.050" x="0.996" y="0.996" z="0.996"/>
+		<Scale time="1.067" x="0.997" y="0.997" z="0.997"/>
+		<Scale time="1.083" x="0.998" y="0.998" z="0.998"/>
+		<Scale time="1.100" x="0.999" y="0.999" z="0.999"/>
+		<Scale time="1.117" x="0.999" y="0.999" z="0.999"/>
+		<Scale time="1.133" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="1.150" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<!--
+	<Animation name="CandyLand2" speed="1.0">
+
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="0.000" y="-2.299"/>
+		<Translation time="0.033" x="0.000" y="-4.456"/>
+		<Translation time="0.050" x="0.000" y="-6.264"/>
+		<Translation time="0.067" x="0.000" y="-7.521"/>
+		<Translation time="0.083" x="0.000" y="-7.999"/>
+		<Translation time="0.100" x="0.000" y="-7.532"/>
+		<Translation time="0.117" x="0.000" y="-6.298"/>
+		<Translation time="0.133" x="0.000" y="-4.509"/>
+		<Translation time="0.150" x="0.000" y="-2.349"/>
+		<Translation time="0.167" x="0.000" y="-0.000"/>
+		<Translation time="0.733" x="0.000" y="-0.000"/>
+
+		<Rotation time="0.000" x="9.155" y="0.000"/>
+		<Rotation time="0.017" x="16.658" y="0.000"/>
+		<Rotation time="0.033" x="19.930" y="0.000"/>
+		<Rotation time="0.050" x="15.606" y="0.000"/>
+		<Rotation time="0.067" x="6.093" y="0.000"/>
+		<Rotation time="0.083" x="-3.419" y="0.000"/>
+		<Rotation time="0.100" x="-7.743" y="0.000"/>
+		<Rotation time="0.117" x="-6.533" y="0.000"/>
+		<Rotation time="0.133" x="-3.871" y="0.000"/>
+		<Rotation time="0.150" x="-1.210" y="0.000"/>
+		<Rotation time="0.167" x="0.000" y="0.000"/>
+		<Rotation time="0.733" x="0.000" y="0.000"/>
+	</Animation>
+
+	<Animation name="CandyLand3" speed="1.0">
+		<Translation time="0.000" x="0.000" y="0.038"/>
+		<Translation time="0.017" x="0.000" y="-2.746"/>
+		<Translation time="0.033" x="0.000" y="-5.279"/>
+		<Translation time="0.050" x="0.000" y="-7.522"/>
+		<Translation time="0.067" x="0.000" y="-9.428"/>
+		<Translation time="0.083" x="0.000" y="-10.932"/>
+		<Translation time="0.100" x="0.000" y="-11.943"/>
+		<Translation time="0.117" x="0.000" y="-12.322"/>
+		<Translation time="0.133" x="0.000" y="-11.928"/>
+		<Translation time="0.150" x="0.000" y="-10.876"/>
+		<Translation time="0.167" x="0.000" y="-9.316"/>
+		<Translation time="0.183" x="0.000" y="-7.356"/>
+		<Translation time="0.200" x="0.000" y="-5.088"/>
+		<Translation time="0.217" x="0.000" y="-2.592"/>
+		<Translation time="0.233" x="0.000" y="0.038"/>
+		<Translation time="0.250" x="0.000" y="-1.388"/>
+		<Translation time="0.267" x="0.000" y="-2.725"/>
+		<Translation time="0.283" x="0.000" y="-3.846"/>
+		<Translation time="0.300" x="0.000" y="-4.626"/>
+		<Translation time="0.317" x="0.000" y="-4.922"/>
+		<Translation time="0.333" x="0.000" y="-4.632"/>
+		<Translation time="0.350" x="0.000" y="-3.867"/>
+		<Translation time="0.367" x="0.000" y="-2.758"/>
+		<Translation time="0.383" x="0.000" y="-1.419"/>
+		<Translation time="0.400" x="0.000" y="0.038"/>
+		<Translation time="0.733" x="0.000" y="0.038"/>
+
+		<Rotation time="0.000" x="-2.024" y="0.000"/>
+		<Rotation time="0.017" x="3.912" y="0.000"/>
+		<Rotation time="0.033" x="9.090" y="0.000"/>
+		<Rotation time="0.050" x="12.753" y="0.000"/>
+		<Rotation time="0.067" x="14.142" y="0.000"/>
+		<Rotation time="0.083" x="12.892" y="0.000"/>
+		<Rotation time="0.100" x="9.669" y="0.000"/>
+		<Rotation time="0.117" x="5.262" y="0.000"/>
+		<Rotation time="0.133" x="0.460" y="0.000"/>
+		<Rotation time="0.150" x="-3.948" y="0.000"/>
+		<Rotation time="0.167" x="-7.171" y="0.000"/>
+		<Rotation time="0.183" x="-8.421" y="0.000"/>
+		<Rotation time="0.200" x="-6.934" y="0.000"/>
+		<Rotation time="0.217" x="-3.388" y="0.000"/>
+		<Rotation time="0.233" x="0.844" y="0.000"/>
+		<Rotation time="0.250" x="4.389" y="0.000"/>
+		<Rotation time="0.267" x="5.876" y="0.000"/>
+		<Rotation time="0.283" x="5.290" y="0.000"/>
+		<Rotation time="0.300" x="3.825" y="0.000"/>
+		<Rotation time="0.317" x="1.921" y="0.000"/>
+		<Rotation time="0.333" x="0.017" y="0.000"/>
+		<Rotation time="0.350" x="-1.448" y="0.000"/>
+		<Rotation time="0.367" x="-2.034" y="0.000"/>
+		<Rotation time="0.383" x="-1.395" y="0.000"/>
+		<Rotation time="0.400" x="0.000" y="0.000"/>
+		<Rotation time="0.733" x="0.000" y="0.000"/>
+	</Animation>
+
+	<Animation name="CandyLand4" speed="1.0">
+		<Translation time="0.000" x="0.000" y="0.038"/>
+		<Translation time="0.017" x="0.000" y="-5.013"/>
+		<Translation time="0.033" x="0.000" y="-9.722"/>
+		<Translation time="0.050" x="0.000" y="-13.971"/>
+		<Translation time="0.067" x="0.000" y="-17.646"/>
+		<Translation time="0.083" x="0.000" y="-20.604"/>
+		<Translation time="0.100" x="0.000" y="-22.638"/>
+		<Translation time="0.117" x="0.000" y="-23.423"/>
+		<Translation time="0.133" x="0.000" y="-22.823"/>
+		<Translation time="0.150" x="0.000" y="-21.239"/>
+		<Translation time="0.167" x="0.000" y="-18.901"/>
+		<Translation time="0.183" x="0.000" y="-15.960"/>
+		<Translation time="0.200" x="0.000" y="-12.522"/>
+		<Translation time="0.217" x="0.000" y="-8.666"/>
+		<Translation time="0.233" x="0.000" y="-4.457"/>
+		<Translation time="0.250" x="0.000" y="0.038"/>
+		<Translation time="0.267" x="0.000" y="-2.746"/>
+		<Translation time="0.283" x="0.000" y="-5.279"/>
+		<Translation time="0.300" x="0.000" y="-7.522"/>
+		<Translation time="0.317" x="0.000" y="-9.428"/>
+		<Translation time="0.333" x="0.000" y="-10.932"/>
+		<Translation time="0.350" x="0.000" y="-11.943"/>
+		<Translation time="0.367" x="0.000" y="-12.322"/>
+		<Translation time="0.383" x="0.000" y="-11.928"/>
+		<Translation time="0.400" x="0.000" y="-10.876"/>
+		<Translation time="0.417" x="0.000" y="-9.316"/>
+		<Translation time="0.433" x="0.000" y="-7.356"/>
+		<Translation time="0.450" x="0.000" y="-5.088"/>
+		<Translation time="0.467" x="0.000" y="-2.592"/>
+		<Translation time="0.483" x="0.000" y="0.038"/>
+		<Translation time="0.500" x="0.000" y="-1.388"/>
+		<Translation time="0.517" x="0.000" y="-2.725"/>
+		<Translation time="0.533" x="0.000" y="-3.846"/>
+		<Translation time="0.550" x="0.000" y="-4.626"/>
+		<Translation time="0.567" x="0.000" y="-4.922"/>
+		<Translation time="0.583" x="0.000" y="-4.632"/>
+		<Translation time="0.600" x="0.000" y="-3.867"/>
+		<Translation time="0.617" x="0.000" y="-2.758"/>
+		<Translation time="0.633" x="0.000" y="-1.419"/>
+		<Translation time="0.650" x="0.000" y="0.038"/>
+		<Translation time="0.733" x="0.000" y="0.038"/>
+
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.017" x="10.018" y="0.000"/>
+		<Rotation time="0.033" x="19.405" y="0.000"/>
+		<Rotation time="0.050" x="26.812" y="0.000"/>
+		<Rotation time="0.067" x="30.299" y="0.000"/>
+		<Rotation time="0.083" x="27.613" y="0.000"/>
+		<Rotation time="0.100" x="20.686" y="0.000"/>
+		<Rotation time="0.117" x="11.214" y="0.000"/>
+		<Rotation time="0.133" x="0.894" y="0.000"/>
+		<Rotation time="0.150" x="-8.577" y="0.000"/>
+		<Rotation time="0.167" x="-15.504" y="0.000"/>
+		<Rotation time="0.183" x="-18.190" y="0.000"/>
+		<Rotation time="0.200" x="-16.801" y="0.000"/>
+		<Rotation time="0.217" x="-13.138" y="0.000"/>
+		<Rotation time="0.233" x="-7.960" y="0.000"/>
+		<Rotation time="0.250" x="-2.024" y="0.000"/>
+		<Rotation time="0.267" x="3.912" y="0.000"/>
+		<Rotation time="0.283" x="9.090" y="0.000"/>
+		<Rotation time="0.300" x="12.753" y="0.000"/>
+		<Rotation time="0.317" x="14.142" y="0.000"/>
+		<Rotation time="0.333" x="12.892" y="0.000"/>
+		<Rotation time="0.350" x="9.669" y="0.000"/>
+		<Rotation time="0.367" x="5.262" y="0.000"/>
+		<Rotation time="0.383" x="0.460" y="0.000"/>
+		<Rotation time="0.400" x="-3.948" y="0.000"/>
+		<Rotation time="0.417" x="-7.171" y="0.000"/>
+		<Rotation time="0.433" x="-8.421" y="0.000"/>
+		<Rotation time="0.450" x="-6.934" y="0.000"/>
+		<Rotation time="0.467" x="-3.388" y="0.000"/>
+		<Rotation time="0.483" x="0.844" y="0.000"/>
+		<Rotation time="0.500" x="4.389" y="0.000"/>
+		<Rotation time="0.517" x="5.876" y="0.000"/>
+		<Rotation time="0.533" x="5.290" y="0.000"/>
+		<Rotation time="0.550" x="3.825" y="0.000"/>
+		<Rotation time="0.567" x="1.921" y="0.000"/>
+		<Rotation time="0.583" x="0.017" y="0.000"/>
+		<Rotation time="0.600" x="-1.448" y="0.000"/>
+		<Rotation time="0.617" x="-2.034" y="0.000"/>
+		<Rotation time="0.633" x="-1.395" y="0.000"/>
+		<Rotation time="0.650" x="0.000" y="0.000"/>
+		<Rotation time="0.733" x="0.000" y="0.000"/>
+	</Animation>
+-->
+	<Animation name="StopUp" speed="1.0">
+		<Translation time="0.000" x="0.000" y="-0.000"/>
+		<Translation time="0.017" x="0.000" y="-0.331"/>
+		<Translation time="0.033" x="0.000" y="-0.527"/>
+		<Translation time="0.050" x="0.000" y="-0.685"/>
+		<Translation time="0.067" x="0.000" y="-0.811"/>
+		<Translation time="0.083" x="0.000" y="-0.899"/>
+		<Translation time="0.100" x="0.000" y="-0.923"/>
+		<Translation time="0.117" x="0.000" y="-0.841"/>
+		<Translation time="0.133" x="0.000" y="-0.683"/>
+		<Translation time="0.150" x="0.000" y="-0.482"/>
+		<Translation time="0.167" x="0.000" y="-0.258"/>
+		<Translation time="0.183" x="0.000" y="-0.034"/>
+		<Translation time="0.200" x="0.000" y="0.172"/>
+		<Translation time="0.217" x="0.000" y="0.334"/>
+		<Translation time="0.233" x="0.000" y="0.412"/>
+		<Translation time="0.250" x="0.000" y="0.420"/>
+		<Translation time="0.267" x="0.000" y="0.411"/>
+		<Translation time="0.283" x="0.000" y="0.389"/>
+		<Translation time="0.300" x="0.000" y="0.356"/>
+		<Translation time="0.317" x="0.000" y="0.313"/>
+		<Translation time="0.333" x="0.000" y="0.264"/>
+		<Translation time="0.350" x="0.000" y="0.212"/>
+		<Translation time="0.367" x="0.000" y="0.159"/>
+		<Translation time="0.383" x="0.000" y="0.110"/>
+		<Translation time="0.400" x="0.000" y="0.066"/>
+		<Translation time="0.417" x="0.000" y="0.031"/>
+		<Translation time="0.433" x="0.000" y="0.008"/>
+		<Translation time="0.450" x="0.000" y="-0.000"/>
+		<Translation time="0.983" x="0.000" y="-0.000"/>
+
+		<Rotation time="0.000" x="-0.000" y="0.000"/>
+		<Rotation time="0.017" x="-3.131" y="0.000"/>
+		<Rotation time="0.033" x="-5.261" y="0.000"/>
+		<Rotation time="0.050" x="-6.961" y="0.000"/>
+		<Rotation time="0.067" x="-8.374" y="0.000"/>
+		<Rotation time="0.083" x="-9.556" y="0.000"/>
+		<Rotation time="0.100" x="-10.525" y="0.000"/>
+		<Rotation time="0.117" x="-11.276" y="0.000"/>
+		<Rotation time="0.133" x="-11.782" y="0.000"/>
+		<Rotation time="0.150" x="-11.976" y="0.000"/>
+		<Rotation time="0.167" x="-11.803" y="0.000"/>
+		<Rotation time="0.183" x="-11.310" y="0.000"/>
+		<Rotation time="0.200" x="-10.541" y="0.000"/>
+		<Rotation time="0.217" x="-9.538" y="0.000"/>
+		<Rotation time="0.233" x="-8.344" y="0.000"/>
+		<Rotation time="0.250" x="-7.001" y="0.000"/>
+		<Rotation time="0.267" x="-5.551" y="0.000"/>
+		<Rotation time="0.283" x="-4.038" y="0.000"/>
+		<Rotation time="0.300" x="-2.503" y="0.000"/>
+		<Rotation time="0.317" x="-0.990" y="0.000"/>
+		<Rotation time="0.333" x="0.460" y="0.000"/>
+		<Rotation time="0.350" x="1.803" y="0.000"/>
+		<Rotation time="0.367" x="2.997" y="0.000"/>
+		<Rotation time="0.383" x="4.000" y="0.000"/>
+		<Rotation time="0.400" x="4.769" y="0.000"/>
+		<Rotation time="0.417" x="5.262" y="0.000"/>
+		<Rotation time="0.433" x="5.436" y="0.000"/>
+		<Rotation time="0.450" x="5.346" y="0.000"/>
+		<Rotation time="0.467" x="5.094" y="0.000"/>
+		<Rotation time="0.483" x="4.702" y="0.000"/>
+		<Rotation time="0.500" x="4.193" y="0.000"/>
+		<Rotation time="0.517" x="3.591" y="0.000"/>
+		<Rotation time="0.533" x="2.919" y="0.000"/>
+		<Rotation time="0.550" x="2.200" y="0.000"/>
+		<Rotation time="0.567" x="1.459" y="0.000"/>
+		<Rotation time="0.583" x="0.717" y="0.000"/>
+		<Rotation time="0.600" x="-0.002" y="0.000"/>
+		<Rotation time="0.617" x="-0.674" y="0.000"/>
+		<Rotation time="0.633" x="-1.276" y="0.000"/>
+		<Rotation time="0.650" x="-1.784" y="0.000"/>
+		<Rotation time="0.667" x="-2.177" y="0.000"/>
+		<Rotation time="0.683" x="-2.429" y="0.000"/>
+		<Rotation time="0.700" x="-2.518" y="0.000"/>
+		<Rotation time="0.717" x="-2.493" y="0.000"/>
+		<Rotation time="0.733" x="-2.422" y="0.000"/>
+		<Rotation time="0.750" x="-2.311" y="0.000"/>
+		<Rotation time="0.767" x="-2.166" y="0.000"/>
+		<Rotation time="0.783" x="-1.993" y="0.000"/>
+		<Rotation time="0.800" x="-1.799" y="0.000"/>
+		<Rotation time="0.817" x="-1.589" y="0.000"/>
+		<Rotation time="0.833" x="-1.370" y="0.000"/>
+		<Rotation time="0.850" x="-1.148" y="0.000"/>
+		<Rotation time="0.867" x="-0.929" y="0.000"/>
+		<Rotation time="0.883" x="-0.720" y="0.000"/>
+		<Rotation time="0.900" x="-0.525" y="0.000"/>
+		<Rotation time="0.917" x="-0.353" y="0.000"/>
+		<Rotation time="0.933" x="-0.208" y="0.000"/>
+		<Rotation time="0.950" x="-0.096" y="0.000"/>
+		<Rotation time="0.967" x="-0.025" y="0.000"/>
+		<Rotation time="0.983" x="-0.000" y="0.000"/>
+	</Animation>
+
+	<Animation name="StopDown" speed="1.0">
+		<Translation time="0.000" x="0.000" y="0.000"/>
+		<Translation time="0.017" x="0.000" y="0.331"/>
+		<Translation time="0.033" x="0.000" y="0.527"/>
+		<Translation time="0.050" x="0.000" y="0.685"/>
+		<Translation time="0.067" x="0.000" y="0.811"/>
+		<Translation time="0.083" x="0.000" y="0.899"/>
+		<Translation time="0.100" x="0.000" y="0.923"/>
+		<Translation time="0.117" x="0.000" y="0.841"/>
+		<Translation time="0.133" x="0.000" y="0.683"/>
+		<Translation time="0.150" x="0.000" y="0.482"/>
+		<Translation time="0.167" x="0.000" y="0.258"/>
+		<Translation time="0.183" x="0.000" y="0.034"/>
+		<Translation time="0.200" x="0.000" y="-0.172"/>
+		<Translation time="0.217" x="0.000" y="-0.334"/>
+		<Translation time="0.233" x="0.000" y="-0.412"/>
+		<Translation time="0.250" x="0.000" y="-0.420"/>
+		<Translation time="0.267" x="0.000" y="-0.411"/>
+		<Translation time="0.283" x="0.000" y="-0.389"/>
+		<Translation time="0.300" x="0.000" y="-0.356"/>
+		<Translation time="0.317" x="0.000" y="-0.313"/>
+		<Translation time="0.333" x="0.000" y="-0.264"/>
+		<Translation time="0.350" x="0.000" y="-0.212"/>
+		<Translation time="0.367" x="0.000" y="-0.159"/>
+		<Translation time="0.383" x="0.000" y="-0.110"/>
+		<Translation time="0.400" x="0.000" y="-0.066"/>
+		<Translation time="0.417" x="0.000" y="-0.031"/>
+		<Translation time="0.433" x="0.000" y="-0.008"/>
+		<Translation time="0.450" x="0.000" y="0.000"/>
+		<Translation time="0.983" x="0.000" y="0.000"/>
+
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.017" x="3.131" y="0.000"/>
+		<Rotation time="0.033" x="5.261" y="0.000"/>
+		<Rotation time="0.050" x="6.961" y="0.000"/>
+		<Rotation time="0.067" x="8.374" y="0.000"/>
+		<Rotation time="0.083" x="9.556" y="0.000"/>
+		<Rotation time="0.100" x="10.525" y="0.000"/>
+		<Rotation time="0.117" x="11.276" y="0.000"/>
+		<Rotation time="0.133" x="11.782" y="0.000"/>
+		<Rotation time="0.150" x="11.976" y="0.000"/>
+		<Rotation time="0.167" x="11.803" y="0.000"/>
+		<Rotation time="0.183" x="11.310" y="0.000"/>
+		<Rotation time="0.200" x="10.541" y="0.000"/>
+		<Rotation time="0.217" x="9.538" y="0.000"/>
+		<Rotation time="0.233" x="8.344" y="0.000"/>
+		<Rotation time="0.250" x="7.001" y="0.000"/>
+		<Rotation time="0.267" x="5.551" y="0.000"/>
+		<Rotation time="0.283" x="4.038" y="0.000"/>
+		<Rotation time="0.300" x="2.503" y="0.000"/>
+		<Rotation time="0.317" x="0.990" y="0.000"/>
+		<Rotation time="0.333" x="-0.460" y="0.000"/>
+		<Rotation time="0.350" x="-1.803" y="0.000"/>
+		<Rotation time="0.367" x="-2.997" y="0.000"/>
+		<Rotation time="0.383" x="-4.000" y="0.000"/>
+		<Rotation time="0.400" x="-4.769" y="0.000"/>
+		<Rotation time="0.417" x="-5.262" y="0.000"/>
+		<Rotation time="0.433" x="-5.436" y="0.000"/>
+		<Rotation time="0.450" x="-5.346" y="0.000"/>
+		<Rotation time="0.467" x="-5.094" y="0.000"/>
+		<Rotation time="0.483" x="-4.702" y="0.000"/>
+		<Rotation time="0.500" x="-4.193" y="0.000"/>
+		<Rotation time="0.517" x="-3.591" y="0.000"/>
+		<Rotation time="0.533" x="-2.919" y="0.000"/>
+		<Rotation time="0.550" x="-2.200" y="0.000"/>
+		<Rotation time="0.567" x="-1.459" y="0.000"/>
+		<Rotation time="0.583" x="-0.717" y="0.000"/>
+		<Rotation time="0.600" x="0.002" y="0.000"/>
+		<Rotation time="0.617" x="0.674" y="0.000"/>
+		<Rotation time="0.633" x="1.276" y="0.000"/>
+		<Rotation time="0.650" x="1.784" y="0.000"/>
+		<Rotation time="0.667" x="2.177" y="0.000"/>
+		<Rotation time="0.683" x="2.429" y="0.000"/>
+		<Rotation time="0.700" x="2.518" y="0.000"/>
+		<Rotation time="0.717" x="2.493" y="0.000"/>
+		<Rotation time="0.733" x="2.422" y="0.000"/>
+		<Rotation time="0.750" x="2.311" y="0.000"/>
+		<Rotation time="0.767" x="2.166" y="0.000"/>
+		<Rotation time="0.783" x="1.993" y="0.000"/>
+		<Rotation time="0.800" x="1.799" y="0.000"/>
+		<Rotation time="0.817" x="1.589" y="0.000"/>
+		<Rotation time="0.833" x="1.370" y="0.000"/>
+		<Rotation time="0.850" x="1.148" y="0.000"/>
+		<Rotation time="0.867" x="0.929" y="0.000"/>
+		<Rotation time="0.883" x="0.720" y="0.000"/>
+		<Rotation time="0.900" x="0.525" y="0.000"/>
+		<Rotation time="0.917" x="0.353" y="0.000"/>
+		<Rotation time="0.933" x="0.208" y="0.000"/>
+		<Rotation time="0.950" x="0.096" y="0.000"/>
+		<Rotation time="0.967" x="0.025" y="0.000"/>
+		<Rotation time="0.983" x="0.000" y="0.000"/>
+
+	</Animation>
+
+	<Animation name="StopLeft" speed="1.0">
+		<Translation time="0.000" x="-0.561" y="0.000"/>
+		<Translation time="0.017" x="-0.982" y="0.000"/>
+		<Translation time="0.033" x="-1.347" y="0.000"/>
+		<Translation time="0.050" x="-1.654" y="0.000"/>
+		<Translation time="0.067" x="-1.885" y="0.000"/>
+		<Translation time="0.083" x="-1.989" y="0.000"/>
+		<Translation time="0.100" x="-1.862" y="0.000"/>
+		<Translation time="0.117" x="-1.527" y="0.000"/>
+		<Translation time="0.133" x="-1.053" y="0.000"/>
+		<Translation time="0.150" x="-0.510" y="0.000"/>
+		<Translation time="0.167" x="0.032" y="0.000"/>
+		<Translation time="0.183" x="0.506" y="0.000"/>
+		<Translation time="0.200" x="0.841" y="0.000"/>
+		<Translation time="0.217" x="0.968" y="0.000"/>
+		<Translation time="0.233" x="0.953" y="0.000"/>
+		<Translation time="0.250" x="0.912" y="0.000"/>
+		<Translation time="0.267" x="0.848" y="0.000"/>
+		<Translation time="0.283" x="0.765" y="0.000"/>
+		<Translation time="0.300" x="0.667" y="0.000"/>
+		<Translation time="0.317" x="0.557" y="0.000"/>
+		<Translation time="0.333" x="0.440" y="0.000"/>
+		<Translation time="0.350" x="0.319" y="0.000"/>
+		<Translation time="0.367" x="0.198" y="0.000"/>
+		<Translation time="0.383" x="0.080" y="0.000"/>
+		<Translation time="0.400" x="-0.029" y="0.000"/>
+		<Translation time="0.417" x="-0.128" y="0.000"/>
+		<Translation time="0.433" x="-0.211" y="0.000"/>
+		<Translation time="0.450" x="-0.275" y="0.000"/>
+		<Translation time="0.467" x="-0.316" y="0.000"/>
+		<Translation time="0.483" x="-0.331" y="0.000"/>
+		<Translation time="0.500" x="-0.329" y="0.000"/>
+		<Translation time="0.517" x="-0.323" y="0.000"/>
+		<Translation time="0.533" x="-0.315" y="0.000"/>
+		<Translation time="0.550" x="-0.304" y="0.000"/>
+		<Translation time="0.567" x="-0.290" y="0.000"/>
+		<Translation time="0.583" x="-0.275" y="0.000"/>
+		<Translation time="0.600" x="-0.257" y="0.000"/>
+		<Translation time="0.617" x="-0.238" y="0.000"/>
+		<Translation time="0.633" x="-0.218" y="0.000"/>
+		<Translation time="0.650" x="-0.197" y="0.000"/>
+		<Translation time="0.667" x="-0.176" y="0.000"/>
+		<Translation time="0.683" x="-0.154" y="0.000"/>
+		<Translation time="0.700" x="-0.133" y="0.000"/>
+		<Translation time="0.717" x="-0.112" y="0.000"/>
+		<Translation time="0.733" x="-0.092" y="0.000"/>
+		<Translation time="0.750" x="-0.073" y="0.000"/>
+		<Translation time="0.767" x="-0.056" y="0.000"/>
+		<Translation time="0.783" x="-0.040" y="0.000"/>
+		<Translation time="0.800" x="-0.027" y="0.000"/>
+		<Translation time="0.817" x="-0.015" y="0.000"/>
+		<Translation time="0.833" x="-0.007" y="0.000"/>
+		<Translation time="0.850" x="-0.002" y="0.000"/>
+		<Translation time="0.867" x="-0.000" y="0.000"/>
+		<Translation time="0.967" x="-0.000" y="0.000"/>
+
+		<Rotation time="0.000" x="0.000" y="3.461" z="-0.000"/>
+		<Rotation time="0.017" x="0.000" y="6.137" z="-0.000"/>
+		<Rotation time="0.033" x="0.000" y="8.431" z="-0.000"/>
+		<Rotation time="0.050" x="0.000" y="10.437" z="-0.000"/>
+		<Rotation time="0.067" x="0.000" y="12.181" z="-0.000"/>
+		<Rotation time="0.083" x="0.000" y="13.657" z="-0.000"/>
+		<Rotation time="0.100" x="0.000" y="14.835" z="-0.000"/>
+		<Rotation time="0.117" x="0.000" y="15.647" z="-0.000"/>
+		<Rotation time="0.133" x="0.000" y="15.966" z="-0.000"/>
+		<Rotation time="0.150" x="0.000" y="15.729" z="-0.000"/>
+		<Rotation time="0.167" x="0.000" y="15.055" z="-0.000"/>
+		<Rotation time="0.183" x="0.000" y="14.004" z="-0.000"/>
+		<Rotation time="0.200" x="0.000" y="12.634" z="-0.000"/>
+		<Rotation time="0.217" x="0.000" y="11.002" z="-0.000"/>
+		<Rotation time="0.233" x="0.000" y="9.166" z="-0.000"/>
+		<Rotation time="0.250" x="0.000" y="7.185" z="-0.000"/>
+		<Rotation time="0.267" x="0.000" y="5.117" z="-0.000"/>
+		<Rotation time="0.283" x="0.000" y="3.020" z="-0.000"/>
+		<Rotation time="0.300" x="0.000" y="0.952" z="-0.000"/>
+		<Rotation time="0.317" x="0.000" y="-1.029" z="-0.000"/>
+		<Rotation time="0.333" x="0.000" y="-2.865" z="-0.000"/>
+		<Rotation time="0.350" x="0.000" y="-4.497" z="-0.000"/>
+		<Rotation time="0.367" x="0.000" y="-5.868" z="-0.000"/>
+		<Rotation time="0.383" x="0.000" y="-6.919" z="-0.000"/>
+		<Rotation time="0.400" x="0.000" y="-7.592" z="-0.000"/>
+		<Rotation time="0.417" x="0.000" y="-7.829" z="-0.000"/>
+		<Rotation time="0.433" x="0.000" y="-7.702" z="-0.000"/>
+		<Rotation time="0.450" x="0.000" y="-7.341" z="-0.000"/>
+		<Rotation time="0.467" x="0.000" y="-6.780" z="-0.000"/>
+		<Rotation time="0.483" x="0.000" y="-6.052" z="-0.000"/>
+		<Rotation time="0.500" x="0.000" y="-5.191" z="-0.000"/>
+		<Rotation time="0.517" x="0.000" y="-4.231" z="-0.000"/>
+		<Rotation time="0.533" x="0.000" y="-3.203" z="-0.000"/>
+		<Rotation time="0.550" x="0.000" y="-2.142" z="-0.000"/>
+		<Rotation time="0.567" x="0.000" y="-1.082" z="-0.000"/>
+		<Rotation time="0.583" x="0.000" y="-0.054" z="-0.000"/>
+		<Rotation time="0.600" x="0.000" y="0.906" z="-0.000"/>
+		<Rotation time="0.617" x="0.000" y="1.767" z="-0.000"/>
+		<Rotation time="0.633" x="0.000" y="2.495" z="-0.000"/>
+		<Rotation time="0.650" x="0.000" y="3.056" z="-0.000"/>
+		<Rotation time="0.667" x="0.000" y="3.417" z="-0.000"/>
+		<Rotation time="0.683" x="0.000" y="3.544" z="-0.000"/>
+		<Rotation time="0.700" x="0.000" y="3.509" z="-0.000"/>
+		<Rotation time="0.717" x="0.000" y="3.409" z="-0.000"/>
+		<Rotation time="0.733" x="0.000" y="3.252" z="-0.000"/>
+		<Rotation time="0.750" x="0.000" y="3.048" z="-0.000"/>
+		<Rotation time="0.767" x="0.000" y="2.805" z="-0.000"/>
+		<Rotation time="0.783" x="0.000" y="2.531" z="-0.000"/>
+		<Rotation time="0.800" x="0.000" y="2.236" z="-0.000"/>
+		<Rotation time="0.817" x="0.000" y="1.928" z="-0.000"/>
+		<Rotation time="0.833" x="0.000" y="1.616" z="-0.000"/>
+		<Rotation time="0.850" x="0.000" y="1.308" z="-0.000"/>
+		<Rotation time="0.867" x="0.000" y="1.013" z="-0.000"/>
+		<Rotation time="0.883" x="0.000" y="0.739" z="-0.000"/>
+		<Rotation time="0.900" x="0.000" y="0.496" z="-0.000"/>
+		<Rotation time="0.917" x="0.000" y="0.292" z="-0.000"/>
+		<Rotation time="0.933" x="0.000" y="0.136" z="-0.000"/>
+		<Rotation time="0.950" x="0.000" y="0.035" z="-0.000"/>
+		<Rotation time="0.967" x="0.000" y="0.000" z="-0.000"/>
+	</Animation>
+
+	<Animation name="StopRight" speed="1.0">
+		<Translation time="0.000" x="0.561" y="0.000"/>
+		<Translation time="0.017" x="0.982" y="0.000"/>
+		<Translation time="0.033" x="1.347" y="0.000"/>
+		<Translation time="0.050" x="1.654" y="0.000"/>
+		<Translation time="0.067" x="1.885" y="0.000"/>
+		<Translation time="0.083" x="1.989" y="0.000"/>
+		<Translation time="0.100" x="1.862" y="0.000"/>
+		<Translation time="0.117" x="1.527" y="0.000"/>
+		<Translation time="0.133" x="1.053" y="0.000"/>
+		<Translation time="0.150" x="0.510" y="0.000"/>
+		<Translation time="0.167" x="-0.032" y="0.000"/>
+		<Translation time="0.183" x="-0.506" y="0.000"/>
+		<Translation time="0.200" x="-0.841" y="0.000"/>
+		<Translation time="0.217" x="-0.968" y="0.000"/>
+		<Translation time="0.233" x="-0.953" y="0.000"/>
+		<Translation time="0.250" x="-0.912" y="0.000"/>
+		<Translation time="0.267" x="-0.848" y="0.000"/>
+		<Translation time="0.283" x="-0.765" y="0.000"/>
+		<Translation time="0.300" x="-0.667" y="0.000"/>
+		<Translation time="0.317" x="-0.557" y="0.000"/>
+		<Translation time="0.333" x="-0.440" y="0.000"/>
+		<Translation time="0.350" x="-0.319" y="0.000"/>
+		<Translation time="0.367" x="-0.198" y="0.000"/>
+		<Translation time="0.383" x="-0.080" y="0.000"/>
+		<Translation time="0.400" x="0.029" y="0.000"/>
+		<Translation time="0.417" x="0.128" y="0.000"/>
+		<Translation time="0.433" x="0.211" y="0.000"/>
+		<Translation time="0.450" x="0.275" y="0.000"/>
+		<Translation time="0.467" x="0.316" y="0.000"/>
+		<Translation time="0.483" x="0.331" y="0.000"/>
+		<Translation time="0.500" x="0.329" y="0.000"/>
+		<Translation time="0.517" x="0.323" y="0.000"/>
+		<Translation time="0.533" x="0.315" y="0.000"/>
+		<Translation time="0.550" x="0.304" y="0.000"/>
+		<Translation time="0.567" x="0.290" y="0.000"/>
+		<Translation time="0.583" x="0.275" y="0.000"/>
+		<Translation time="0.600" x="0.257" y="0.000"/>
+		<Translation time="0.617" x="0.238" y="0.000"/>
+		<Translation time="0.633" x="0.218" y="0.000"/>
+		<Translation time="0.650" x="0.197" y="0.000"/>
+		<Translation time="0.667" x="0.176" y="0.000"/>
+		<Translation time="0.683" x="0.154" y="0.000"/>
+		<Translation time="0.700" x="0.133" y="0.000"/>
+		<Translation time="0.717" x="0.112" y="0.000"/>
+		<Translation time="0.733" x="0.092" y="0.000"/>
+		<Translation time="0.750" x="0.073" y="0.000"/>
+		<Translation time="0.767" x="0.056" y="0.000"/>
+		<Translation time="0.783" x="0.040" y="0.000"/>
+		<Translation time="0.800" x="0.027" y="0.000"/>
+		<Translation time="0.817" x="0.015" y="0.000"/>
+		<Translation time="0.833" x="0.007" y="0.000"/>
+		<Translation time="0.850" x="0.002" y="0.000"/>
+		<Translation time="0.867" x="0.000" y="0.000"/>
+		<Translation time="0.967" x="0.000" y="0.000"/>
+
+		<Rotation time="0.000" x="0.000" y="-3.461"/>
+		<Rotation time="0.017" x="0.000" y="-6.137"/>
+		<Rotation time="0.033" x="0.000" y="-8.431"/>
+		<Rotation time="0.050" x="0.000" y="-10.437"/>
+		<Rotation time="0.067" x="0.000" y="-12.181"/>
+		<Rotation time="0.083" x="0.000" y="-13.657"/>
+		<Rotation time="0.100" x="0.000" y="-14.835"/>
+		<Rotation time="0.117" x="0.000" y="-15.647"/>
+		<Rotation time="0.133" x="0.000" y="-15.966"/>
+		<Rotation time="0.150" x="0.000" y="-15.729"/>
+		<Rotation time="0.167" x="0.000" y="-15.055"/>
+		<Rotation time="0.183" x="0.000" y="-14.004"/>
+		<Rotation time="0.200" x="0.000" y="-12.634"/>
+		<Rotation time="0.217" x="0.000" y="-11.002"/>
+		<Rotation time="0.233" x="0.000" y="-9.166"/>
+		<Rotation time="0.250" x="0.000" y="-7.185"/>
+		<Rotation time="0.267" x="0.000" y="-5.117"/>
+		<Rotation time="0.283" x="0.000" y="-3.020"/>
+		<Rotation time="0.300" x="0.000" y="-0.952"/>
+		<Rotation time="0.317" x="0.000" y="1.029"/>
+		<Rotation time="0.333" x="0.000" y="2.865"/>
+		<Rotation time="0.350" x="0.000" y="4.497"/>
+		<Rotation time="0.367" x="0.000" y="5.868"/>
+		<Rotation time="0.383" x="0.000" y="6.919"/>
+		<Rotation time="0.400" x="0.000" y="7.592"/>
+		<Rotation time="0.417" x="0.000" y="7.829"/>
+		<Rotation time="0.433" x="0.000" y="7.702"/>
+		<Rotation time="0.450" x="0.000" y="7.341"/>
+		<Rotation time="0.467" x="0.000" y="6.780"/>
+		<Rotation time="0.483" x="0.000" y="6.052"/>
+		<Rotation time="0.500" x="0.000" y="5.191"/>
+		<Rotation time="0.517" x="0.000" y="4.231"/>
+		<Rotation time="0.533" x="0.000" y="3.203"/>
+		<Rotation time="0.550" x="0.000" y="2.142"/>
+		<Rotation time="0.567" x="0.000" y="1.082"/>
+		<Rotation time="0.583" x="0.000" y="0.054"/>
+		<Rotation time="0.600" x="0.000" y="-0.906"/>
+		<Rotation time="0.617" x="0.000" y="-1.767"/>
+		<Rotation time="0.633" x="0.000" y="-2.495"/>
+		<Rotation time="0.650" x="0.000" y="-3.056"/>
+		<Rotation time="0.667" x="0.000" y="-3.417"/>
+		<Rotation time="0.683" x="0.000" y="-3.544"/>
+		<Rotation time="0.700" x="0.000" y="-3.509"/>
+		<Rotation time="0.717" x="0.000" y="-3.409"/>
+		<Rotation time="0.733" x="0.000" y="-3.252"/>
+		<Rotation time="0.750" x="0.000" y="-3.048"/>
+		<Rotation time="0.767" x="0.000" y="-2.805"/>
+		<Rotation time="0.783" x="0.000" y="-2.531"/>
+		<Rotation time="0.800" x="0.000" y="-2.236"/>
+		<Rotation time="0.817" x="0.000" y="-1.928"/>
+		<Rotation time="0.833" x="0.000" y="-1.616"/>
+		<Rotation time="0.850" x="0.000" y="-1.308"/>
+		<Rotation time="0.867" x="0.000" y="-1.013"/>
+		<Rotation time="0.883" x="0.000" y="-0.739"/>
+		<Rotation time="0.900" x="0.000" y="-0.496"/>
+		<Rotation time="0.917" x="0.000" y="-0.292"/>
+		<Rotation time="0.933" x="0.000" y="-0.136"/>
+		<Rotation time="0.950" x="0.000" y="-0.035"/>
+		<Rotation time="0.967" x="0.000" y="-0.000"/>
+	</Animation>
+
+	<Animation name="MoveUp" speed="1.0">
+
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.017" x="15.395" y="0.000"/>
+		<Rotation time="0.033" x="26.779" y="0.000"/>
+		<Rotation time="0.050" x="35.302" y="0.000"/>
+		<Rotation time="0.067" x="39.240" y="0.000"/>
+		<Rotation time="0.083" x="37.878" y="0.000"/>
+		<Rotation time="0.100" x="34.087" y="0.000"/>
+		<Rotation time="0.117" x="28.308" y="0.000"/>
+		<Rotation time="0.133" x="20.983" y="0.000"/>
+		<Rotation time="0.150" x="12.553" y="0.000"/>
+		<Rotation time="0.167" x="3.461" y="0.000"/>
+		<Rotation time="0.183" x="-5.851" y="0.000"/>
+		<Rotation time="0.200" x="-14.943" y="0.000"/>
+		<Rotation time="0.217" x="-23.373" y="0.000"/>
+		<Rotation time="0.233" x="-30.698" y="0.000"/>
+		<Rotation time="0.250" x="-36.477" y="0.000"/>
+		<Rotation time="0.267" x="-40.268" y="0.000"/>
+		<Rotation time="0.283" x="-41.630" y="0.000"/>
+		<Rotation time="0.300" x="-40.509" y="0.000"/>
+		<Rotation time="0.317" x="-37.636" y="0.000"/>
+		<Rotation time="0.333" x="-33.482" y="0.000"/>
+		<Rotation time="0.350" x="-28.321" y="0.000"/>
+		<Rotation time="0.367" x="-22.323" y="0.000"/>
+		<Rotation time="0.383" x="-15.590" y="0.000"/>
+		<Rotation time="0.400" x="-8.165" y="0.000"/>
+		<Rotation time="0.417" x="0.000" y="0.000"/>
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.117" x="1.500" y="1.500" z="1.500"/>
+		<Scale time="0.250" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<Animation name="MoveDown" speed="1.0">
+		<Rotation time="0.000" x="-0.000" y="0.000"/>
+		<Rotation time="0.017" x="-15.395" y="0.000"/>
+		<Rotation time="0.033" x="-26.779" y="0.000"/>
+		<Rotation time="0.050" x="-35.302" y="0.000"/>
+		<Rotation time="0.067" x="-39.240" y="0.000"/>
+		<Rotation time="0.083" x="-37.878" y="0.000"/>
+		<Rotation time="0.100" x="-34.087" y="0.000"/>
+		<Rotation time="0.117" x="-28.308" y="0.000"/>
+		<Rotation time="0.133" x="-20.983" y="0.000"/>
+		<Rotation time="0.150" x="-12.553" y="0.000"/>
+		<Rotation time="0.167" x="-3.461" y="0.000"/>
+		<Rotation time="0.183" x="5.851" y="0.000"/>
+		<Rotation time="0.200" x="14.943" y="0.000"/>
+		<Rotation time="0.217" x="23.373" y="0.000"/>
+		<Rotation time="0.233" x="30.698" y="0.000"/>
+		<Rotation time="0.250" x="36.477" y="0.000"/>
+		<Rotation time="0.267" x="40.268" y="0.000"/>
+		<Rotation time="0.283" x="41.630" y="0.000"/>
+		<Rotation time="0.300" x="40.509" y="0.000"/>
+		<Rotation time="0.317" x="37.636" y="0.000"/>
+		<Rotation time="0.333" x="33.482" y="0.000"/>
+		<Rotation time="0.350" x="28.321" y="0.000"/>
+		<Rotation time="0.367" x="22.323" y="0.000"/>
+		<Rotation time="0.383" x="15.590" y="0.000"/>
+		<Rotation time="0.400" x="8.165" y="0.000"/>
+		<Rotation time="0.417" x="-0.000" y="0.000"/>
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.117" x="1.500" y="1.500" z="1.500"/>
+		<Scale time="0.250" x="1.000" y="1.000" z="1.000"/>
+	</Animation>
+
+	<Animation name="MoveLeft" speed="1.2">
+		<Translation time="0.000" x="0.000" y="0.000"/>
+		<Translation time="0.250" x="0.000" y="0.000"/>
+		<!--
+				<Rotation time="0.000" x="0.000" y="-0.000"/>
+				<Rotation time="0.017" x="0.000" y="-0.000" z="0.371"/>
+				<Rotation time="0.033" x="0.000" y="-0.000" z="1.279"/>
+				<Rotation time="0.050" x="0.000" y="-0.000" z="2.661"/>
+				<Rotation time="0.067" x="0.000" y="-0.000" z="4.441"/>
+				<Rotation time="0.083" x="0.000" y="-0.000" z="6.523"/>
+				<Rotation time="0.100" x="0.000" y="-0.000" z="8.752"/>
+				<Rotation time="0.117" x="0.000" y="-0.000" z="10.812"/>
+				<Rotation time="0.133" x="0.000" y="-0.000" z="12.605"/>
+				<Rotation time="0.150" x="0.000" y="-0.000" z="14.042"/>
+				<Rotation time="0.167" x="0.000" y="-0.000" z="14.799"/>
+				<Rotation time="0.183" x="0.000" y="-0.000" z="15.422"/>
+				<Rotation time="0.200" x="0.000" y="-0.000" z="14.962"/>
+				<Rotation time="0.217" x="0.000" y="-0.000" z="11.338"/>
+				<Rotation time="0.233" x="0.000" y="-0.000" z="3.799"/>
+				<Rotation time="0.250" x="0.000" y="-0.000"/>
+		-->
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.117" x="1.500" y="1.500" z="1.500"/>
+		<Scale time="0.250" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="MoveRight" speed="1.2">
+		<Translation time="0.000" x="0.000" y="0.000"/>
+		<Translation time="0.250" x="0.000" y="0.000"/>
+		<!--
+				<Rotation time="0.000" x="0.000" y="-0.000"/>
+				<Rotation time="0.017" x="0.000" y="-0.000" z="-0.371"/>
+				<Rotation time="0.033" x="0.000" y="-0.000" z="-1.279"/>
+				<Rotation time="0.050" x="0.000" y="-0.000" z="-2.661"/>
+				<Rotation time="0.067" x="0.000" y="-0.000" z="-4.441"/>
+				<Rotation time="0.083" x="0.000" y="-0.000" z="-6.523"/>
+				<Rotation time="0.100" x="0.000" y="-0.000" z="-8.752"/>
+				<Rotation time="0.117" x="0.000" y="-0.000" z="-10.812"/>
+				<Rotation time="0.133" x="0.000" y="-0.000" z="-12.605"/>
+				<Rotation time="0.150" x="0.000" y="-0.000" z="-14.042"/>
+				<Rotation time="0.167" x="0.000" y="-0.000" z="-14.799"/>
+				<Rotation time="0.183" x="0.000" y="-0.000" z="-15.422"/>
+				<Rotation time="0.200" x="0.000" y="-0.000" z="-14.962"/>
+				<Rotation time="0.217" x="0.000" y="-0.000" z="-11.338"/>
+				<Rotation time="0.233" x="0.000" y="-0.000" z="-3.799"/>
+				<Rotation time="0.250" x="0.000" y="-0.000"/>
+		-->
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.117" x="1.500" y="1.500" z="1.500"/>
+		<Scale time="0.250" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+	<Animation name="ColorbombIdle" speed="1.0">
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.017" x="-0.717" y="-1.315" z="0.708"/>
+		<Rotation time="0.033" x="-1.457" y="-2.616" z="1.425"/>
+		<Rotation time="0.050" x="-2.217" y="-3.882" z="2.148"/>
+		<Rotation time="0.067" x="-2.991" y="-5.095" z="2.874"/>
+		<Rotation time="0.083" x="-3.773" y="-6.236" z="3.599"/>
+		<Rotation time="0.100" x="-4.560" y="-7.286" z="4.321"/>
+		<Rotation time="0.117" x="-5.347" y="-8.224" z="5.037"/>
+		<Rotation time="0.133" x="-6.127" y="-9.033" z="5.742"/>
+		<Rotation time="0.150" x="-6.898" y="-9.693" z="6.435"/>
+		<Rotation time="0.167" x="-7.652" y="-10.184" z="7.112"/>
+		<Rotation time="0.183" x="-8.387" y="-10.488" z="7.770"/>
+		<Rotation time="0.200" x="-9.096" y="-10.585" z="8.405"/>
+		<Rotation time="0.217" x="-9.775" y="-10.439" z="9.015"/>
+		<Rotation time="0.233" x="-10.418" y="-10.041" z="9.597"/>
+		<Rotation time="0.250" x="-11.022" y="-9.416" z="10.146"/>
+		<Rotation time="0.267" x="-11.581" y="-8.588" z="10.661"/>
+		<Rotation time="0.283" x="-12.090" y="-7.581" z="11.138"/>
+		<Rotation time="0.300" x="-12.544" y="-6.418" z="11.574"/>
+		<Rotation time="0.317" x="-12.938" y="-5.125" z="11.966"/>
+		<Rotation time="0.333" x="-13.268" y="-3.725" z="12.310"/>
+		<Rotation time="0.350" x="-13.528" y="-2.243" z="12.604"/>
+		<Rotation time="0.367" x="-13.714" y="-0.703" z="12.844"/>
+		<Rotation time="0.383" x="-13.820" y="0.871" z="13.027"/>
+		<Rotation time="0.400" x="-13.842" y="2.456" z="13.150"/>
+		<Rotation time="0.417" x="-13.775" y="4.026" z="13.210"/>
+		<Rotation time="0.433" x="-13.614" y="5.557" z="13.204"/>
+		<Rotation time="0.450" x="-13.334" y="7.026" z="13.077"/>
+		<Rotation time="0.467" x="-12.921" y="8.409" z="12.786"/>
+		<Rotation time="0.483" x="-12.390" y="9.680" z="12.347"/>
+		<Rotation time="0.500" x="-11.752" y="10.816" z="11.775"/>
+		<Rotation time="0.517" x="-11.022" y="11.793" z="11.086"/>
+		<Rotation time="0.533" x="-10.212" y="12.637" z="10.296"/>
+		<Rotation time="0.550" x="-9.336" y="13.389" z="9.419"/>
+		<Rotation time="0.567" x="-8.407" y="14.052" z="8.472"/>
+		<Rotation time="0.583" x="-7.438" y="14.627" z="7.469"/>
+		<Rotation time="0.600" x="-6.442" y="15.114" z="6.427"/>
+		<Rotation time="0.617" x="-5.432" y="15.515" z="5.361"/>
+		<Rotation time="0.633" x="-4.422" y="15.832" z="4.287"/>
+		<Rotation time="0.650" x="-3.424" y="16.065" z="3.220"/>
+		<Rotation time="0.667" x="-2.452" y="16.216" z="2.175"/>
+		<Rotation time="0.683" x="-1.519" y="16.287" z="1.168"/>
+		<Rotation time="0.700" x="-0.638" y="16.278" z="0.215"/>
+		<Rotation time="0.717" x="0.178" y="16.191" z="-0.669"/>
+		<Rotation time="0.733" x="0.915" y="16.027" z="-1.469"/>
+		<Rotation time="0.750" x="1.561" y="15.787" z="-2.168"/>
+		<Rotation time="0.767" x="2.102" y="15.473" z="-2.752"/>
+		<Rotation time="0.783" x="2.525" y="15.086" z="-3.204"/>
+		<Rotation time="0.800" x="2.840" y="14.627" z="-3.533"/>
+		<Rotation time="0.817" x="3.071" y="14.097" z="-3.760"/>
+		<Rotation time="0.833" x="3.222" y="13.499" z="-3.892"/>
+		<Rotation time="0.850" x="3.297" y="12.832" z="-3.936"/>
+		<Rotation time="0.867" x="3.301" y="12.099" z="-3.898"/>
+		<Rotation time="0.883" x="3.239" y="11.300" z="-3.786"/>
+		<Rotation time="0.900" x="3.115" y="10.438" z="-3.605"/>
+		<Rotation time="0.917" x="2.935" y="9.512" z="-3.362"/>
+		<Rotation time="0.933" x="2.702" y="8.525" z="-3.065"/>
+		<Rotation time="0.950" x="2.421" y="7.478" z="-2.719"/>
+		<Rotation time="0.967" x="2.098" y="6.371" z="-2.331"/>
+		<Rotation time="0.983" x="1.736" y="5.207" z="-1.909"/>
+		<Rotation time="1.000" x="1.341" y="3.987" z="-1.457"/>
+		<Rotation time="1.017" x="0.917" y="2.711" z="-0.985"/>
+		<Rotation time="1.033" x="0.468" y="1.382" z="-0.496"/>
+		<Rotation time="1.050" x="0.000" y="0.000"/>
+	</Animation>
+
+    <Animation name="ColoringCandyIdle" speed="0.8">
+        <Rotation time="0.000" x="0.000" y="0.000"/>
+        <Rotation time="0.017" x="-0.175" y="0.048" z="0.074"/>
+        <Rotation time="0.033" x="-0.348" y="0.096" z="0.150"/>
+        <Rotation time="0.050" x="-0.519" y="0.143" z="0.227"/>
+        <Rotation time="0.067" x="-0.684" y="0.188" z="0.303"/>
+        <Rotation time="0.083" x="-0.843" y="0.231" z="0.380"/>
+        <Rotation time="0.100" x="-0.994" y="0.272" z="0.455"/>
+        <Rotation time="0.117" x="-1.136" y="0.310" z="0.528"/>
+        <Rotation time="0.133" x="-1.266" y="0.346" z="0.598"/>
+        <Rotation time="0.150" x="-1.385" y="0.378" z="0.665"/>
+        <Rotation time="0.167" x="-1.489" y="0.406" z="0.728"/>
+        <Rotation time="0.183" x="-1.578" y="0.430" z="0.786"/>
+        <Rotation time="0.200" x="-1.650" y="0.449" z="0.839"/>
+        <Rotation time="0.217" x="-1.703" y="0.463" z="0.885"/>
+        <Rotation time="0.233" x="-1.736" y="0.472" z="0.925"/>
+        <Rotation time="0.250" x="-1.747" y="0.475" z="0.957"/>
+        <Rotation time="0.267" x="-1.737" y="0.470" z="0.981"/>
+        <Rotation time="0.283" x="-1.709" y="0.457" z="0.996"/>
+        <Rotation time="0.300" x="-1.664" y="0.437" z="1.001"/>
+        <Rotation time="0.317" x="-1.603" y="0.409" z="0.993"/>
+        <Rotation time="0.333" x="-1.528" y="0.375" z="0.969"/>
+        <Rotation time="0.350" x="-1.439" y="0.335" z="0.932"/>
+        <Rotation time="0.367" x="-1.339" y="0.291" z="0.882"/>
+        <Rotation time="0.383" x="-1.228" y="0.242" z="0.820"/>
+        <Rotation time="0.400" x="-1.108" y="0.189" z="0.749"/>
+        <Rotation time="0.417" x="-0.980" y="0.134" z="0.669"/>
+        <Rotation time="0.433" x="-0.846" y="0.077" z="0.582"/>
+        <Rotation time="0.450" x="-0.706" y="0.018" z="0.489"/>
+        <Rotation time="0.467" x="-0.562" y="-0.042" z="0.391"/>
+        <Rotation time="0.483" x="-0.416" y="-0.101" z="0.290"/>
+        <Rotation time="0.500" x="-0.268" y="-0.160" z="0.186"/>
+        <Rotation time="0.517" x="-0.120" y="-0.217" z="0.083"/>
+        <Rotation time="0.533" x="0.026" y="-0.273" z="-0.021"/>
+        <Rotation time="0.550" x="0.170" y="-0.325" z="-0.122"/>
+        <Rotation time="0.567" x="0.309" y="-0.374" z="-0.220"/>
+        <Rotation time="0.583" x="0.444" y="-0.419" z="-0.313"/>
+        <Rotation time="0.600" x="0.572" y="-0.458" z="-0.400"/>
+        <Rotation time="0.617" x="0.692" y="-0.492" z="-0.480"/>
+        <Rotation time="0.633" x="0.803" y="-0.520" z="-0.552"/>
+        <Rotation time="0.650" x="0.903" y="-0.541" z="-0.613"/>
+        <Rotation time="0.667" x="0.992" y="-0.554" z="-0.663"/>
+        <Rotation time="0.683" x="1.067" y="-0.558" z="-0.700"/>
+        <Rotation time="0.700" x="1.128" y="-0.556" z="-0.724"/>
+        <Rotation time="0.717" x="1.173" y="-0.550" z="-0.732"/>
+        <Rotation time="0.733" x="1.201" y="-0.539" z="-0.728"/>
+        <Rotation time="0.750" x="1.211" y="-0.525" z="-0.716"/>
+        <Rotation time="0.767" x="1.205" y="-0.506" z="-0.696"/>
+        <Rotation time="0.783" x="1.188" y="-0.484" z="-0.670"/>
+        <Rotation time="0.800" x="1.159" y="-0.459" z="-0.637"/>
+        <Rotation time="0.817" x="1.118" y="-0.431" z="-0.598"/>
+        <Rotation time="0.833" x="1.065" y="-0.399" z="-0.554"/>
+        <Rotation time="0.850" x="1.000" y="-0.364" z="-0.506"/>
+        <Rotation time="0.867" x="0.922" y="-0.327" z="-0.452"/>
+        <Rotation time="0.883" x="0.831" y="-0.287" z="-0.395"/>
+        <Rotation time="0.900" x="0.727" y="-0.244" z="-0.335"/>
+        <Rotation time="0.917" x="0.609" y="-0.199" z="-0.272"/>
+        <Rotation time="0.933" x="0.478" y="-0.152" z="-0.206"/>
+        <Rotation time="0.950" x="0.333" y="-0.103" z="-0.138"/>
+        <Rotation time="0.967" x="0.174" y="-0.052" z="-0.070"/>
+        <Rotation time="0.983" x="0.000" y="0.000"/>
+    </Animation>
+
+    <Animation name="HoneyWobble" speed="1.3">
+        <Translation time="0.000" x="0.000" y="0.000"/>
+        <Translation time="0.983" x="0.000" y="0.000"/>
+
+        <Rotation time="0.000" x="0.000" y="0.000"/>
+        <Rotation time="0.183" x="-0.093" y="-0.069" z="0.117"/>
+        <Rotation time="0.200" x="-0.342" y="-0.255" z="0.431"/>
+        <Rotation time="0.217" x="-0.702" y="-0.524" z="0.885"/>
+        <Rotation time="0.233" x="-1.130" y="-0.842" z="1.423"/>
+        <Rotation time="0.250" x="-1.579" y="-1.178" z="1.989"/>
+        <Rotation time="0.267" x="-2.007" y="-1.496" z="2.528"/>
+        <Rotation time="0.283" x="-2.367" y="-1.765" z="2.982"/>
+        <Rotation time="0.300" x="-2.616" y="-1.951" z="3.296"/>
+        <Rotation time="0.317" x="-2.709" y="-2.020" z="3.413"/>
+        <Rotation time="0.333" x="-2.610" y="-1.932" z="3.324"/>
+        <Rotation time="0.350" x="-2.337" y="-1.689" z="3.079"/>
+        <Rotation time="0.367" x="-1.924" y="-1.322" z="2.709"/>
+        <Rotation time="0.383" x="-1.406" y="-0.862" z="2.246"/>
+        <Rotation time="0.400" x="-0.819" y="-0.339" z="1.720"/>
+        <Rotation time="0.417" x="-0.196" y="0.214" z="1.163"/>
+        <Rotation time="0.433" x="0.426" y="0.767" z="0.606"/>
+        <Rotation time="0.450" x="1.014" y="1.289" z="0.080"/>
+        <Rotation time="0.467" x="1.531" y="1.749" z="-0.384"/>
+        <Rotation time="0.483" x="1.944" y="2.117" z="-0.754"/>
+        <Rotation time="0.500" x="2.218" y="2.360" z="-0.999"/>
+        <Rotation time="0.517" x="2.317" y="2.448" z="-1.087"/>
+        <Rotation time="0.533" x="2.274" y="2.404" z="-1.024"/>
+        <Rotation time="0.550" x="2.155" y="2.282" z="-0.853"/>
+        <Rotation time="0.567" x="1.974" y="2.095" z="-0.596"/>
+        <Rotation time="0.583" x="1.742" y="1.856" z="-0.279"/>
+        <Rotation time="0.600" x="1.473" y="1.579" z="0.074"/>
+        <Rotation time="0.617" x="1.181" y="1.278" z="0.439"/>
+        <Rotation time="0.633" x="0.878" y="0.965" z="0.793"/>
+        <Rotation time="0.650" x="0.577" y="0.653" z="1.110"/>
+        <Rotation time="0.667" x="0.292" y="0.357" z="1.366"/>
+        <Rotation time="0.683" x="0.036" y="0.090" z="1.538"/>
+        <Rotation time="0.700" x="-0.178" y="-0.135" z="1.601"/>
+        <Rotation time="0.717" x="-0.303" y="-0.270" z="1.515"/>
+        <Rotation time="0.733" x="-0.321" y="-0.296" z="1.289"/>
+        <Rotation time="0.750" x="-0.258" y="-0.241" z="0.970"/>
+        <Rotation time="0.767" x="-0.144" y="-0.133" z="0.604"/>
+        <Rotation time="0.783" x="-0.006" y="0.000" z="0.238"/>
+        <Rotation time="0.800" x="0.128" y="0.130" z="-0.082"/>
+        <Rotation time="0.817" x="0.228" y="0.229" z="-0.307"/>
+        <Rotation time="0.833" x="0.268" y="0.268" z="-0.393"/>
+        <Rotation time="0.850" x="0.259" y="0.259" z="-0.380"/>
+        <Rotation time="0.867" x="0.234" y="0.234" z="-0.343"/>
+        <Rotation time="0.883" x="0.199" y="0.198" z="-0.291"/>
+        <Rotation time="0.900" x="0.156" y="0.156" z="-0.229"/>
+        <Rotation time="0.917" x="0.112" y="0.112" z="-0.164"/>
+        <Rotation time="0.933" x="0.070" y="0.069" z="-0.102"/>
+        <Rotation time="0.950" x="0.034" y="0.034" z="-0.050"/>
+        <Rotation time="0.967" x="0.009" y="0.009" z="-0.013"/>
+        <Rotation time="0.983" x="0.000" y="0.000"/>
+
+        <Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+        <Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+        <Scale time="0.183" x="0.999" y="0.999" z="0.999"/>
+        <Scale time="0.200" x="0.996" y="0.996" z="0.996"/>
+        <Scale time="0.217" x="0.993" y="0.993" z="0.993"/>
+        <Scale time="0.233" x="0.991" y="0.991" z="0.991"/>
+        <Scale time="0.250" x="0.990" y="0.990" z="0.990"/>
+        <Scale time="0.267" x="0.993" y="0.993" z="0.993"/>
+        <Scale time="0.283" x="1.002" y="1.001" z="1.002"/>
+        <Scale time="0.300" x="1.014" y="1.013" z="1.014"/>
+        <Scale time="0.317" x="1.029" y="1.027" z="1.029"/>
+        <Scale time="0.333" x="1.045" y="1.043" z="1.045"/>
+        <Scale time="0.350" x="1.060" y="1.058" z="1.061"/>
+        <Scale time="0.367" x="1.073" y="1.072" z="1.073"/>
+        <Scale time="0.383" x="1.083" y="1.082" z="1.082"/>
+        <Scale time="0.400" x="1.088" y="1.088" z="1.086"/>
+        <Scale time="0.417" x="1.089" y="1.091" z="1.086"/>
+        <Scale time="0.433" x="1.088" y="1.092" z="1.086"/>
+        <Scale time="0.450" x="1.087" y="1.093" z="1.085"/>
+        <Scale time="0.467" x="1.085" y="1.091" z="1.082"/>
+        <Scale time="0.483" x="1.082" y="1.089" z="1.079"/>
+        <Scale time="0.500" x="1.077" y="1.084" z="1.075"/>
+        <Scale time="0.517" x="1.071" y="1.078" z="1.069"/>
+        <Scale time="0.533" x="1.062" y="1.067" z="1.060"/>
+        <Scale time="0.550" x="1.049" y="1.052" z="1.048"/>
+        <Scale time="0.567" x="1.035" y="1.034" z="1.033"/>
+        <Scale time="0.583" x="1.020" y="1.016" z="1.019"/>
+        <Scale time="0.600" x="1.007" y="1.000" z="1.007"/>
+        <Scale time="0.617" x="0.998" y="0.989" z="0.998"/>
+        <Scale time="0.633" x="0.995" y="0.985" z="0.995"/>
+        <Scale time="0.650" x="0.996" y="0.986" z="0.996"/>
+        <Scale time="0.667" x="0.999" y="0.990" z="0.999"/>
+        <Scale time="0.683" x="1.004" y="0.995" z="1.004"/>
+        <Scale time="0.700" x="1.009" y="1.002" z="1.009"/>
+        <Scale time="0.717" x="1.015" y="1.009" z="1.015"/>
+        <Scale time="0.733" x="1.022" y="1.017" z="1.022"/>
+        <Scale time="0.750" x="1.029" y="1.025" z="1.029"/>
+        <Scale time="0.767" x="1.035" y="1.033" z="1.035"/>
+        <Scale time="0.783" x="1.041" y="1.039" z="1.041"/>
+        <Scale time="0.800" x="1.045" y="1.045" z="1.045"/>
+        <Scale time="0.817" x="1.048" y="1.048" z="1.048"/>
+        <Scale time="0.833" x="1.049" y="1.049" z="1.049"/>
+        <Scale time="0.850" x="1.048" y="1.048" z="1.048"/>
+        <Scale time="0.867" x="1.043" y="1.043" z="1.043"/>
+        <Scale time="0.883" x="1.037" y="1.037" z="1.037"/>
+        <Scale time="0.900" x="1.029" y="1.029" z="1.029"/>
+        <Scale time="0.917" x="1.021" y="1.021" z="1.021"/>
+        <Scale time="0.933" x="1.013" y="1.013" z="1.013"/>
+        <Scale time="0.950" x="1.006" y="1.006" z="1.006"/>
+        <Scale time="0.967" x="1.002" y="1.002" z="1.002"/>
+        <Scale time="0.983" x="1.000" y="1.000" z="1.000"/>
+
+
+    </Animation>
+
+    <Animation name="CupcakeWobble" speed="1.5">
+        <Translation time="0.000" x="0.000" y="0.000"/>
+        <Translation time="0.817" x="0.000" y="0.000"/>
+
+        <Rotation time="0.000" x="0.000" y="0.000"/>
+        <Rotation time="0.017" x="-0.093" y="-0.069" z="0.117"/>
+        <Rotation time="0.033" x="-0.342" y="-0.255" z="0.431"/>
+        <Rotation time="0.050" x="-0.702" y="-0.524" z="0.885"/>
+        <Rotation time="0.067" x="-1.130" y="-0.842" z="1.423"/>
+        <Rotation time="0.083" x="-1.579" y="-1.178" z="1.989"/>
+        <Rotation time="0.100" x="-2.007" y="-1.496" z="2.528"/>
+        <Rotation time="0.117" x="-2.367" y="-1.765" z="2.982"/>
+        <Rotation time="0.133" x="-2.616" y="-1.951" z="3.296"/>
+        <Rotation time="0.150" x="-2.709" y="-2.020" z="3.413"/>
+        <Rotation time="0.167" x="-2.610" y="-1.932" z="3.324"/>
+        <Rotation time="0.183" x="-2.337" y="-1.689" z="3.079"/>
+        <Rotation time="0.200" x="-1.924" y="-1.322" z="2.709"/>
+        <Rotation time="0.217" x="-1.406" y="-0.862" z="2.246"/>
+        <Rotation time="0.233" x="-0.819" y="-0.339" z="1.720"/>
+        <Rotation time="0.250" x="-0.196" y="0.214" z="1.163"/>
+        <Rotation time="0.267" x="0.426" y="0.767" z="0.606"/>
+        <Rotation time="0.283" x="1.014" y="1.289" z="0.080"/>
+        <Rotation time="0.300" x="1.531" y="1.749" z="-0.384"/>
+        <Rotation time="0.317" x="1.944" y="2.117" z="-0.754"/>
+        <Rotation time="0.333" x="2.218" y="2.360" z="-0.999"/>
+        <Rotation time="0.350" x="2.317" y="2.448" z="-1.087"/>
+        <Rotation time="0.367" x="2.274" y="2.404" z="-1.024"/>
+        <Rotation time="0.383" x="2.155" y="2.282" z="-0.853"/>
+        <Rotation time="0.400" x="1.974" y="2.095" z="-0.596"/>
+        <Rotation time="0.417" x="1.742" y="1.856" z="-0.279"/>
+        <Rotation time="0.433" x="1.473" y="1.579" z="0.074"/>
+        <Rotation time="0.450" x="1.181" y="1.278" z="0.439"/>
+        <Rotation time="0.467" x="0.878" y="0.965" z="0.793"/>
+        <Rotation time="0.483" x="0.577" y="0.653" z="1.110"/>
+        <Rotation time="0.500" x="0.292" y="0.357" z="1.366"/>
+        <Rotation time="0.517" x="0.036" y="0.090" z="1.538"/>
+        <Rotation time="0.533" x="-0.178" y="-0.135" z="1.601"/>
+        <Rotation time="0.550" x="-0.303" y="-0.270" z="1.515"/>
+        <Rotation time="0.567" x="-0.321" y="-0.296" z="1.289"/>
+        <Rotation time="0.583" x="-0.258" y="-0.241" z="0.970"/>
+        <Rotation time="0.600" x="-0.144" y="-0.133" z="0.604"/>
+        <Rotation time="0.617" x="-0.006" y="0.000" z="0.238"/>
+        <Rotation time="0.633" x="0.128" y="0.130" z="-0.082"/>
+        <Rotation time="0.650" x="0.228" y="0.229" z="-0.307"/>
+        <Rotation time="0.667" x="0.268" y="0.268" z="-0.393"/>
+        <Rotation time="0.683" x="0.259" y="0.259" z="-0.380"/>
+        <Rotation time="0.700" x="0.234" y="0.234" z="-0.343"/>
+        <Rotation time="0.717" x="0.199" y="0.198" z="-0.291"/>
+        <Rotation time="0.733" x="0.156" y="0.156" z="-0.229"/>
+        <Rotation time="0.750" x="0.112" y="0.112" z="-0.164"/>
+        <Rotation time="0.767" x="0.070" y="0.069" z="-0.102"/>
+        <Rotation time="0.783" x="0.034" y="0.034" z="-0.050"/>
+        <Rotation time="0.800" x="0.009" y="0.009" z="-0.013"/>
+        <Rotation time="0.817" x="0.000" y="0.000"/>
+
+        <Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+        <Scale time="0.017" x="0.999" y="0.999" z="0.999"/>
+        <Scale time="0.033" x="0.996" y="0.996" z="0.996"/>
+        <Scale time="0.050" x="0.993" y="0.993" z="0.993"/>
+        <Scale time="0.067" x="0.991" y="0.991" z="0.991"/>
+        <Scale time="0.083" x="0.990" y="0.990" z="0.990"/>
+        <Scale time="0.100" x="0.991" y="0.991" z="0.991"/>
+        <Scale time="0.117" x="0.993" y="0.993" z="0.993"/>
+        <Scale time="0.133" x="0.997" y="0.997" z="0.997"/>
+        <Scale time="0.150" x="1.002" y="1.002" z="1.001"/>
+        <Scale time="0.167" x="1.007" y="1.007" z="1.006"/>
+        <Scale time="0.183" x="1.013" y="1.012" z="1.012"/>
+        <Scale time="0.200" x="1.018" y="1.017" z="1.017"/>
+        <Scale time="0.217" x="1.023" y="1.022" z="1.021"/>
+        <Scale time="0.233" x="1.026" y="1.026" z="1.025"/>
+        <Scale time="0.250" x="1.029" y="1.028" z="1.028"/>
+        <Scale time="0.267" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.283" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.300" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.317" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.333" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.350" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.367" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.383" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.400" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.417" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.433" x="1.030" y="1.029" z="1.028"/>
+        <Scale time="0.450" x="1.029" y="1.028" z="1.028"/>
+        <Scale time="0.467" x="1.029" y="1.028" z="1.028"/>
+        <Scale time="0.483" x="1.029" y="1.028" z="1.028"/>
+        <Scale time="0.500" x="1.029" y="1.027" z="1.028"/>
+        <Scale time="0.517" x="1.029" y="1.027" z="1.028"/>
+        <Scale time="0.533" x="1.028" y="1.026" z="1.028"/>
+        <Scale time="0.550" x="1.028" y="1.026" z="1.028"/>
+        <Scale time="0.567" x="1.027" y="1.024" z="1.027"/>
+        <Scale time="0.583" x="1.024" y="1.021" z="1.024"/>
+        <Scale time="0.600" x="1.019" y="1.017" z="1.020"/>
+        <Scale time="0.617" x="1.014" y="1.013" z="1.015"/>
+        <Scale time="0.633" x="1.009" y="1.008" z="1.010"/>
+        <Scale time="0.650" x="1.004" y="1.003" z="1.005"/>
+        <Scale time="0.667" x="1.000" y="1.000" z="1.000"/>
+        <Scale time="0.683" x="0.997" y="0.997" z="0.997"/>
+        <Scale time="0.700" x="0.996" y="0.996" z="0.996"/>
+        <Scale time="0.717" x="0.996" y="0.996" z="0.996"/>
+        <Scale time="0.733" x="0.997" y="0.997" z="0.997"/>
+        <Scale time="0.750" x="0.998" y="0.998" z="0.998"/>
+        <Scale time="0.767" x="0.999" y="0.999" z="0.999"/>
+        <Scale time="0.783" x="0.999" y="0.999" z="0.999"/>
+        <Scale time="0.800" x="1.000" y="1.000" z="1.000"/>
+        <Scale time="0.817" x="1.000" y="1.000" z="1.000"/>
+
+    </Animation>
+
+    <Animation name="ChainBlockerWobble1" speed="1.0">
+		<Translation time="0.000" x="0.000" y="0.000"/>
+		<Translation time="0.017" x="0.095" y="0.219"/>
+		<Translation time="0.033" x="0.331" y="0.625"/>
+		<Translation time="0.050" x="0.638" y="0.844"/>
+		<Translation time="0.067" x="0.945" y="0.705"/>
+		<Translation time="0.083" x="1.181" y="0.340"/>
+		<Translation time="0.100" x="1.276" y="-0.177"/>
+		<Translation time="0.117" x="1.141" y="-0.769"/>
+		<Translation time="0.133" x="0.783" y="-1.362"/>
+		<Translation time="0.150" x="0.279" y="-1.878"/>
+		<Translation time="0.167" x="-0.300" y="-2.244"/>
+		<Translation time="0.183" x="-0.878" y="-2.382"/>
+		<Translation time="0.200" x="-1.383" y="-2.228"/>
+		<Translation time="0.217" x="-1.740" y="-1.821"/>
+		<Translation time="0.233" x="-1.876" y="-1.245"/>
+		<Translation time="0.250" x="-1.742" y="-0.585"/>
+		<Translation time="0.267" x="-1.398" y="0.076"/>
+		<Translation time="0.283" x="-0.928" y="0.652"/>
+		<Translation time="0.300" x="-0.416" y="1.059"/>
+		<Translation time="0.317" x="0.054" y="1.213"/>
+		<Translation time="0.333" x="0.398" y="1.097"/>
+		<Translation time="0.350" x="0.531" y="0.804"/>
+		<Translation time="0.367" x="0.360" y="0.424"/>
+		<Translation time="0.383" x="-0.016" y="0.044"/>
+		<Translation time="0.400" x="-0.392" y="-0.248"/>
+		<Translation time="0.417" x="-0.562" y="-0.365"/>
+		<Translation time="0.433" x="-0.489" y="-0.308"/>
+		<Translation time="0.450" x="-0.314" y="-0.173"/>
+		<Translation time="0.467" x="-0.104" y="-0.011"/>
+		<Translation time="0.483" x="0.071" y="0.124"/>
+		<Translation time="0.500" x="0.145" y="0.181"/>
+		<Translation time="0.517" x="0.130" y="0.162"/>
+		<Translation time="0.533" x="0.094" y="0.117"/>
+		<Translation time="0.550" x="0.051" y="0.064"/>
+		<Translation time="0.567" x="0.015" y="0.019"/>
+		<Translation time="0.583" x="0.000" y="0.000"/>
+		<Translation time="1.000" x="0.000" y="0.000"/>
+
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.017" x="0.000" y="0.000" z="0.461"/>
+		<Rotation time="0.033" x="0.000" y="0.000" z="1.317"/>
+		<Rotation time="0.050" x="0.000" y="0.000" z="1.778"/>
+		<Rotation time="0.067" x="0.000" y="0.000" z="1.645"/>
+		<Rotation time="0.083" x="0.000" y="0.000" z="1.294"/>
+		<Rotation time="0.100" x="0.000" y="0.000" z="0.799"/>
+		<Rotation time="0.117" x="0.000" y="0.000" z="0.230"/>
+		<Rotation time="0.133" x="0.000" y="0.000" z="-0.338"/>
+		<Rotation time="0.150" x="0.000" y="0.000" z="-0.834"/>
+		<Rotation time="0.167" x="0.000" y="0.000" z="-1.184"/>
+		<Rotation time="0.183" x="0.000" y="0.000" z="-1.317"/>
+		<Rotation time="0.200" x="0.000" y="0.000" z="-1.213"/>
+		<Rotation time="0.217" x="0.000" y="0.000" z="-0.940"/>
+		<Rotation time="0.233" x="0.000" y="0.000" z="-0.553"/>
+		<Rotation time="0.250" x="0.000" y="0.000" z="-0.109"/>
+		<Rotation time="0.267" x="0.000" y="0.000" z="0.335"/>
+		<Rotation time="0.283" x="0.000" y="0.000" z="0.722"/>
+		<Rotation time="0.300" x="0.000" y="0.000" z="0.996"/>
+		<Rotation time="0.317" x="0.000" y="0.000" z="1.100"/>
+		<Rotation time="0.333" x="0.000" y="0.000" z="0.961"/>
+		<Rotation time="0.350" x="0.000" y="0.000" z="0.615"/>
+		<Rotation time="0.367" x="0.000" y="0.000" z="0.166"/>
+		<Rotation time="0.383" x="0.000" y="0.000" z="-0.284"/>
+		<Rotation time="0.400" x="0.000" y="0.000" z="-0.630"/>
+		<Rotation time="0.417" x="0.000" y="0.000" z="-0.768"/>
+		<Rotation time="0.433" x="0.000" y="0.000" z="-0.663"/>
+		<Rotation time="0.450" x="0.000" y="0.000" z="-0.411"/>
+		<Rotation time="0.467" x="0.000" y="0.000" z="-0.110"/>
+		<Rotation time="0.483" x="0.000" y="0.000" z="0.141"/>
+		<Rotation time="0.500" x="0.000" y="0.000" z="0.247"/>
+		<Rotation time="0.517" x="0.000" y="0.000" z="0.216"/>
+		<Rotation time="0.533" x="0.000" y="0.000" z="0.138"/>
+		<Rotation time="0.550" x="0.000" y="0.000" z="0.036"/>
+		<Rotation time="0.567" x="0.000" y="0.000" z="-0.065"/>
+		<Rotation time="0.583" x="0.000" y="0.000" z="-0.143"/>
+		<Rotation time="0.600" x="0.000" y="0.000" z="-0.175"/>
+		<Rotation time="0.617" x="0.000" y="0.000" z="-0.151"/>
+		<Rotation time="0.633" x="0.000" y="0.000" z="-0.091"/>
+		<Rotation time="0.650" x="0.000" y="0.000" z="-0.014"/>
+		<Rotation time="0.667" x="0.000" y="0.000" z="0.064"/>
+		<Rotation time="0.683" x="0.000" y="0.000" z="0.124"/>
+		<Rotation time="0.700" x="0.000" y="0.000" z="0.148"/>
+		<Rotation time="0.717" x="0.000" y="0.000" z="0.137"/>
+		<Rotation time="0.733" x="0.000" y="0.000" z="0.110"/>
+		<Rotation time="0.750" x="0.000" y="0.000" z="0.071"/>
+		<Rotation time="0.767" x="0.000" y="0.000" z="0.026"/>
+		<Rotation time="0.783" x="0.000" y="0.000" z="-0.019"/>
+		<Rotation time="0.800" x="0.000" y="0.000" z="-0.058"/>
+		<Rotation time="0.817" x="0.000" y="0.000" z="-0.085"/>
+		<Rotation time="0.833" x="0.000" y="0.000" z="-0.096"/>
+		<Rotation time="0.850" x="0.000" y="0.000" z="-0.093"/>
+		<Rotation time="0.867" x="0.000" y="0.000" z="-0.086"/>
+		<Rotation time="0.883" x="0.000" y="0.000" z="-0.075"/>
+		<Rotation time="0.900" x="0.000" y="0.000" z="-0.062"/>
+		<Rotation time="0.917" x="0.000" y="0.000" z="-0.048"/>
+		<Rotation time="0.933" x="0.000" y="0.000" z="-0.034"/>
+		<Rotation time="0.950" x="0.000" y="0.000" z="-0.021"/>
+		<Rotation time="0.967" x="0.000" y="0.000" z="-0.010"/>
+		<Rotation time="0.983" x="0.000" y="0.000" z="-0.003"/>
+		<Rotation time="1.000" x="0.000" y="0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="0.997" y="0.997" z="0.997"/>
+		<Scale time="0.033" x="0.992" y="0.992" z="0.992"/>
+		<Scale time="0.050" x="0.990" y="0.990" z="0.990"/>
+		<Scale time="0.067" x="0.993" y="0.993" z="0.993"/>
+		<Scale time="0.083" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.100" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.117" x="1.028" y="1.028" z="1.028"/>
+		<Scale time="0.133" x="1.045" y="1.044" z="1.044"/>
+		<Scale time="0.150" x="1.061" y="1.061" z="1.060"/>
+		<Scale time="0.167" x="1.076" y="1.076" z="1.075"/>
+		<Scale time="0.183" x="1.088" y="1.088" z="1.087"/>
+		<Scale time="0.200" x="1.097" y="1.096" z="1.095"/>
+		<Scale time="0.217" x="1.100" y="1.099" z="1.098"/>
+		<Scale time="0.233" x="1.095" y="1.094" z="1.093"/>
+		<Scale time="0.250" x="1.082" y="1.082" z="1.081"/>
+		<Scale time="0.267" x="1.063" y="1.064" z="1.062"/>
+		<Scale time="0.283" x="1.042" y="1.043" z="1.042"/>
+		<Scale time="0.300" x="1.021" y="1.022" z="1.021"/>
+		<Scale time="0.317" x="1.003" y="1.004" z="1.003"/>
+		<Scale time="0.333" x="0.990" y="0.991" z="0.990"/>
+		<Scale time="0.350" x="0.985" y="0.986" z="0.985"/>
+		<Scale time="0.367" x="0.987" y="0.988" z="0.987"/>
+		<Scale time="0.383" x="0.992" y="0.993" z="0.992"/>
+		<Scale time="0.400" x="0.999" y="0.999" z="0.999"/>
+		<Scale time="0.417" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.433" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.450" x="1.018" y="1.018" z="1.018"/>
+		<Scale time="0.467" x="1.019" y="1.019" z="1.019"/>
+		<Scale time="0.483" x="1.018" y="1.018" z="1.018"/>
+		<Scale time="0.500" x="1.014" y="1.014" z="1.014"/>
+		<Scale time="0.517" x="1.009" y="1.009" z="1.009"/>
+		<Scale time="0.533" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.550" x="0.998" y="0.998" z="0.998"/>
+		<Scale time="0.567" x="0.994" y="0.994" z="0.994"/>
+		<Scale time="0.583" x="0.992" y="0.992" z="0.992"/>
+		<Scale time="0.600" x="0.993" y="0.993" z="0.993"/>
+		<Scale time="0.617" x="0.995" y="0.995" z="0.995"/>
+		<Scale time="0.633" x="0.998" y="0.998" z="0.998"/>
+		<Scale time="0.650" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.667" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.683" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.700" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.717" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.733" x="1.005" y="1.005" z="1.005"/>
+		<Scale time="0.750" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.767" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.783" x="1.002" y="1.002" z="1.002"/>
+		<Scale time="0.800" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.817" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.833" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="1.000" x="1.000" y="1.000" z="1.000"/>
+
+
+
+	</Animation>
+
+    <Animation name="ChainBlockerWobble2" speed="1.0">
+		<Translation time="0.000" x="0.000" y="0.000"/>
+		<Translation time="0.017" x="0.000" y="0.000"/>
+		<Translation time="0.083" x="0.036" y="0.088"/>
+		<Translation time="0.100" x="0.133" y="0.297"/>
+		<Translation time="0.117" x="0.276" y="0.547"/>
+		<Translation time="0.133" x="0.449" y="0.756"/>
+		<Translation time="0.150" x="0.638" y="0.844"/>
+		<Translation time="0.167" x="0.827" y="0.705"/>
+		<Translation time="0.183" x="1.001" y="0.340"/>
+		<Translation time="0.200" x="1.144" y="-0.177"/>
+		<Translation time="0.217" x="1.241" y="-0.769"/>
+		<Translation time="0.233" x="1.276" y="-1.362"/>
+		<Translation time="0.250" x="1.188" y="-1.878"/>
+		<Translation time="0.267" x="0.948" y="-2.244"/>
+		<Translation time="0.283" x="0.596" y="-2.382"/>
+		<Translation time="0.300" x="0.167" y="-2.228"/>
+		<Translation time="0.317" x="-0.299" y="-1.821"/>
+		<Translation time="0.333" x="-0.766" y="-1.245"/>
+		<Translation time="0.350" x="-1.195" y="-0.585"/>
+		<Translation time="0.367" x="-1.547" y="0.076"/>
+		<Translation time="0.383" x="-1.787" y="0.652"/>
+		<Translation time="0.400" x="-1.875" y="1.059"/>
+		<Translation time="0.417" x="-1.772" y="1.213"/>
+		<Translation time="0.433" x="-1.499" y="1.049"/>
+		<Translation time="0.450" x="-1.114" y="0.658"/>
+		<Translation time="0.467" x="-0.672" y="0.191"/>
+		<Translation time="0.483" x="-0.230" y="-0.201"/>
+		<Translation time="0.500" x="0.155" y="-0.365"/>
+		<Translation time="0.517" x="0.428" y="-0.325"/>
+		<Translation time="0.533" x="0.531" y="-0.223"/>
+		<Translation time="0.550" x="0.418" y="-0.092"/>
+		<Translation time="0.567" x="0.147" y="0.039"/>
+		<Translation time="0.583" x="-0.177" y="0.140"/>
+		<Translation time="0.600" x="-0.448" y="0.181"/>
+		<Translation time="0.617" x="-0.562" y="0.153"/>
+		<Translation time="0.633" x="-0.523" y="0.090"/>
+		<Translation time="0.650" x="-0.422" y="0.028"/>
+		<Translation time="0.667" x="-0.284" y="0.000"/>
+		<Translation time="0.683" x="-0.133" y="0.000"/>
+		<Translation time="0.700" x="0.005" y="0.000"/>
+		<Translation time="0.717" x="0.106" y="0.000"/>
+		<Translation time="0.733" x="0.145" y="0.000"/>
+		<Translation time="0.750" x="0.130" y="0.000"/>
+		<Translation time="0.767" x="0.094" y="0.000"/>
+		<Translation time="0.783" x="0.051" y="0.000"/>
+		<Translation time="0.800" x="0.015" y="0.000"/>
+		<Translation time="0.817" x="0.000" y="0.000"/>
+		<Translation time="1.000" x="0.000" y="0.000"/>
+
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.083" x="0.000" y="0.000" z="-0.091"/>
+		<Rotation time="0.100" x="0.000" y="0.000" z="-0.309"/>
+		<Rotation time="0.117" x="0.000" y="0.000" z="-0.569"/>
+		<Rotation time="0.133" x="0.000" y="0.000" z="-0.786"/>
+		<Rotation time="0.150" x="0.000" y="0.000" z="-0.878"/>
+		<Rotation time="0.167" x="0.000" y="0.000" z="-0.805"/>
+		<Rotation time="0.183" x="0.000" y="0.000" z="-0.614"/>
+		<Rotation time="0.200" x="0.000" y="0.000" z="-0.344"/>
+		<Rotation time="0.217" x="0.000" y="0.000" z="-0.035"/>
+		<Rotation time="0.233" x="0.000" y="0.000" z="0.275"/>
+		<Rotation time="0.250" x="0.000" y="0.000" z="0.545"/>
+		<Rotation time="0.267" x="0.000" y="0.000" z="0.736"/>
+		<Rotation time="0.283" x="0.000" y="0.000" z="0.809"/>
+		<Rotation time="0.300" x="0.000" y="0.000" z="0.753"/>
+		<Rotation time="0.317" x="0.000" y="0.000" z="0.607"/>
+		<Rotation time="0.333" x="0.000" y="0.000" z="0.401"/>
+		<Rotation time="0.350" x="0.000" y="0.000" z="0.164"/>
+		<Rotation time="0.367" x="0.000" y="0.000" z="-0.072"/>
+		<Rotation time="0.383" x="0.000" y="0.000" z="-0.279"/>
+		<Rotation time="0.400" x="0.000" y="0.000" z="-0.425"/>
+		<Rotation time="0.417" x="0.000" y="0.000" z="-0.480"/>
+		<Rotation time="0.433" x="0.000" y="0.000" z="-0.398"/>
+		<Rotation time="0.450" x="0.000" y="0.000" z="-0.203"/>
+		<Rotation time="0.467" x="0.000" y="0.000" z="0.030"/>
+		<Rotation time="0.483" x="0.000" y="0.000" z="0.225"/>
+		<Rotation time="0.500" x="0.000" y="0.000" z="0.306"/>
+		<Rotation time="0.517" x="0.000" y="0.000" z="0.267"/>
+		<Rotation time="0.533" x="0.000" y="0.000" z="0.168"/>
+		<Rotation time="0.550" x="0.000" y="0.000" z="0.039"/>
+		<Rotation time="0.567" x="0.000" y="0.000" z="-0.089"/>
+		<Rotation time="0.583" x="0.000" y="0.000" z="-0.188"/>
+		<Rotation time="0.600" x="0.000" y="0.000" z="-0.228"/>
+		<Rotation time="0.617" x="0.000" y="0.000" z="-0.201"/>
+		<Rotation time="0.633" x="0.000" y="0.000" z="-0.134"/>
+		<Rotation time="0.650" x="0.000" y="0.000" z="-0.047"/>
+		<Rotation time="0.667" x="0.000" y="0.000" z="0.040"/>
+		<Rotation time="0.683" x="0.000" y="0.000" z="0.107"/>
+		<Rotation time="0.700" x="0.000" y="0.000" z="0.134"/>
+		<Rotation time="0.717" x="0.000" y="0.000" z="0.117"/>
+		<Rotation time="0.733" x="0.000" y="0.000" z="0.075"/>
+		<Rotation time="0.750" x="0.000" y="0.000" z="0.020"/>
+		<Rotation time="0.767" x="0.000" y="0.000" z="-0.035"/>
+		<Rotation time="0.783" x="0.000" y="0.000" z="-0.077"/>
+		<Rotation time="0.800" x="0.000" y="0.000" z="-0.094"/>
+		<Rotation time="0.817" x="0.000" y="0.000" z="-0.085"/>
+		<Rotation time="0.833" x="0.000" y="0.000" z="-0.063"/>
+		<Rotation time="0.850" x="0.000" y="0.000" z="-0.034"/>
+		<Rotation time="0.867" x="0.000" y="0.000" z="-0.005"/>
+		<Rotation time="0.883" x="0.000" y="0.000" z="0.017"/>
+		<Rotation time="0.900" x="0.000" y="0.000" z="0.026"/>
+		<Rotation time="0.917" x="0.000" y="0.000" z="0.024"/>
+		<Rotation time="0.933" x="0.000" y="0.000" z="0.019"/>
+		<Rotation time="0.950" x="0.000" y="0.000" z="0.013"/>
+		<Rotation time="0.967" x="0.000" y="0.000" z="0.007"/>
+		<Rotation time="0.983" x="0.000" y="0.000" z="0.002"/>
+		<Rotation time="1.000" x="0.000" y="0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.083" x="0.999" y="0.999" z="0.999"/>
+		<Scale time="0.100" x="0.998" y="0.998" z="0.998"/>
+		<Scale time="0.117" x="0.996" y="0.996" z="0.996"/>
+		<Scale time="0.133" x="0.995" y="0.995" z="0.995"/>
+		<Scale time="0.150" x="0.994" y="0.994" z="0.994"/>
+		<Scale time="0.167" x="0.996" y="0.996" z="0.996"/>
+		<Scale time="0.183" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.200" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.217" x="1.013" y="1.013" z="1.013"/>
+		<Scale time="0.233" x="1.021" y="1.021" z="1.020"/>
+		<Scale time="0.250" x="1.028" y="1.028" z="1.027"/>
+		<Scale time="0.267" x="1.034" y="1.034" z="1.033"/>
+		<Scale time="0.283" x="1.039" y="1.038" z="1.037"/>
+		<Scale time="0.300" x="1.040" y="1.040" z="1.039"/>
+		<Scale time="0.317" x="1.038" y="1.038" z="1.037"/>
+		<Scale time="0.333" x="1.033" y="1.033" z="1.032"/>
+		<Scale time="0.350" x="1.026" y="1.026" z="1.025"/>
+		<Scale time="0.367" x="1.017" y="1.018" z="1.016"/>
+		<Scale time="0.383" x="1.009" y="1.009" z="1.008"/>
+		<Scale time="0.400" x="1.001" y="1.002" z="1.001"/>
+		<Scale time="0.417" x="0.996" y="0.997" z="0.996"/>
+		<Scale time="0.433" x="0.994" y="0.996" z="0.994"/>
+		<Scale time="0.450" x="0.996" y="0.997" z="0.996"/>
+		<Scale time="0.467" x="1.000" y="1.001" z="1.000"/>
+		<Scale time="0.483" x="1.005" y="1.005" z="1.005"/>
+		<Scale time="0.500" x="1.010" y="1.010" z="1.010"/>
+		<Scale time="0.517" x="1.014" y="1.014" z="1.014"/>
+		<Scale time="0.533" x="1.015" y="1.015" z="1.015"/>
+		<Scale time="0.550" x="1.014" y="1.014" z="1.014"/>
+		<Scale time="0.567" x="1.010" y="1.010" z="1.010"/>
+		<Scale time="0.583" x="1.006" y="1.006" z="1.006"/>
+		<Scale time="0.600" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.617" x="0.997" y="0.997" z="0.997"/>
+		<Scale time="0.633" x="0.996" y="0.996" z="0.996"/>
+		<Scale time="0.650" x="0.997" y="0.997" z="0.997"/>
+		<Scale time="0.667" x="0.998" y="0.998" z="0.998"/>
+		<Scale time="0.683" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.700" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.717" x="1.005" y="1.005" z="1.005"/>
+		<Scale time="0.733" x="1.005" y="1.005" z="1.005"/>
+		<Scale time="0.750" x="1.005" y="1.005" z="1.005"/>
+		<Scale time="0.767" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.783" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.800" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.817" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.833" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="1.000" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+    <Animation name="ChainBlockerWobble3" speed="1.0">
+		<Translation time="0.000" x="0.000" y="0.000"/>
+		<Translation time="0.017" x="0.000" y="0.000"/>
+		<Translation time="0.150" x="0.020" y="0.077"/>
+		<Translation time="0.167" x="0.071" y="0.258"/>
+		<Translation time="0.183" x="0.148" y="0.468"/>
+		<Translation time="0.200" x="0.240" y="0.634"/>
+		<Translation time="0.217" x="0.341" y="0.681"/>
+		<Translation time="0.233" x="0.442" y="0.537"/>
+		<Translation time="0.250" x="0.535" y="0.240"/>
+		<Translation time="0.267" x="0.611" y="-0.147"/>
+		<Translation time="0.283" x="0.663" y="-0.560"/>
+		<Translation time="0.300" x="0.682" y="-0.934"/>
+		<Translation time="0.317" x="0.647" y="-1.206"/>
+		<Translation time="0.333" x="0.551" y="-1.310"/>
+		<Translation time="0.350" x="0.411" y="-1.236"/>
+		<Translation time="0.367" x="0.240" y="-1.036"/>
+		<Translation time="0.383" x="0.054" y="-0.748"/>
+		<Translation time="0.400" x="-0.132" y="-0.409"/>
+		<Translation time="0.417" x="-0.303" y="-0.055"/>
+		<Translation time="0.433" x="-0.443" y="0.277"/>
+		<Translation time="0.450" x="-0.539" y="0.550"/>
+		<Translation time="0.467" x="-0.574" y="0.728"/>
+		<Translation time="0.483" x="-0.532" y="0.774"/>
+		<Translation time="0.500" x="-0.421" y="0.699"/>
+		<Translation time="0.517" x="-0.265" y="0.544"/>
+		<Translation time="0.533" x="-0.086" y="0.342"/>
+		<Translation time="0.550" x="0.093" y="0.126"/>
+		<Translation time="0.567" x="0.250" y="-0.069"/>
+		<Translation time="0.583" x="0.360" y="-0.211"/>
+		<Translation time="0.600" x="0.402" y="-0.266"/>
+		<Translation time="0.617" x="0.344" y="-0.240"/>
+		<Translation time="0.633" x="0.206" y="-0.176"/>
+		<Translation time="0.650" x="0.041" y="-0.090"/>
+		<Translation time="0.667" x="-0.097" y="-0.001"/>
+		<Translation time="0.683" x="-0.155" y="0.074"/>
+		<Translation time="0.700" x="-0.143" y="0.117"/>
+		<Translation time="0.717" x="-0.113" y="0.117"/>
+		<Translation time="0.733" x="-0.072" y="0.097"/>
+		<Translation time="0.750" x="-0.028" y="0.067"/>
+		<Translation time="0.767" x="0.013" y="0.035"/>
+		<Translation time="0.783" x="0.043" y="0.010"/>
+		<Translation time="0.800" x="0.055" y="0.000"/>
+		<Translation time="0.817" x="0.049" y="0.000"/>
+		<Translation time="0.833" x="0.036" y="0.000"/>
+		<Translation time="0.850" x="0.020" y="0.000"/>
+		<Translation time="0.867" x="0.006" y="0.000"/>
+		<Translation time="0.883" x="0.000" y="0.000"/>
+		<Translation time="1.000" x="0.000" y="0.000"/>
+
+		<Rotation time="0.000" x="0.000" y="0.000"/>
+		<Rotation time="0.150" x="0.000" y="0.000" z="0.100"/>
+		<Rotation time="0.167" x="0.000" y="0.000" z="0.338"/>
+		<Rotation time="0.183" x="0.000" y="0.000" z="0.623"/>
+		<Rotation time="0.200" x="0.000" y="0.000" z="0.861"/>
+		<Rotation time="0.217" x="0.000" y="0.000" z="0.961"/>
+		<Rotation time="0.233" x="0.000" y="0.000" z="0.878"/>
+		<Rotation time="0.250" x="0.000" y="0.000" z="0.664"/>
+		<Rotation time="0.267" x="0.000" y="0.000" z="0.372"/>
+		<Rotation time="0.283" x="0.000" y="0.000" z="0.054"/>
+		<Rotation time="0.300" x="0.000" y="0.000" z="-0.238"/>
+		<Rotation time="0.317" x="0.000" y="0.000" z="-0.452"/>
+		<Rotation time="0.333" x="0.000" y="0.000" z="-0.534"/>
+		<Rotation time="0.350" x="0.000" y="0.000" z="-0.461"/>
+		<Rotation time="0.367" x="0.000" y="0.000" z="-0.276"/>
+		<Rotation time="0.383" x="0.000" y="0.000" z="-0.037"/>
+		<Rotation time="0.400" x="0.000" y="0.000" z="0.203"/>
+		<Rotation time="0.417" x="0.000" y="0.000" z="0.387"/>
+		<Rotation time="0.433" x="0.000" y="0.000" z="0.461"/>
+		<Rotation time="0.450" x="0.000" y="0.000" z="0.405"/>
+		<Rotation time="0.467" x="0.000" y="0.000" z="0.266"/>
+		<Rotation time="0.483" x="0.000" y="0.000" z="0.086"/>
+		<Rotation time="0.500" x="0.000" y="0.000" z="-0.094"/>
+		<Rotation time="0.517" x="0.000" y="0.000" z="-0.233"/>
+		<Rotation time="0.533" x="0.000" y="0.000" z="-0.288"/>
+		<Rotation time="0.550" x="0.000" y="0.000" z="-0.253"/>
+		<Rotation time="0.567" x="0.000" y="0.000" z="-0.164"/>
+		<Rotation time="0.583" x="0.000" y="0.000" z="-0.049"/>
+		<Rotation time="0.600" x="0.000" y="0.000" z="0.067"/>
+		<Rotation time="0.617" x="0.000" y="0.000" z="0.156"/>
+		<Rotation time="0.633" x="0.000" y="0.000" z="0.191"/>
+		<Rotation time="0.650" x="0.000" y="0.000" z="0.173"/>
+		<Rotation time="0.667" x="0.000" y="0.000" z="0.126"/>
+		<Rotation time="0.683" x="0.000" y="0.000" z="0.062"/>
+		<Rotation time="0.700" x="0.000" y="0.000" z="-0.009"/>
+		<Rotation time="0.717" x="0.000" y="0.000" z="-0.073"/>
+		<Rotation time="0.733" x="0.000" y="0.000" z="-0.120"/>
+		<Rotation time="0.750" x="0.000" y="0.000" z="-0.138"/>
+		<Rotation time="0.767" x="0.000" y="0.000" z="-0.130"/>
+		<Rotation time="0.783" x="0.000" y="0.000" z="-0.110"/>
+		<Rotation time="0.800" x="0.000" y="0.000" z="-0.081"/>
+		<Rotation time="0.817" x="0.000" y="0.000" z="-0.051"/>
+		<Rotation time="0.833" x="0.000" y="0.000" z="-0.022"/>
+		<Rotation time="0.850" x="0.000" y="0.000" z="-0.002"/>
+		<Rotation time="0.867" x="0.000" y="0.000" z="0.006"/>
+		<Rotation time="0.883" x="0.000" y="0.000" z="0.006"/>
+		<Rotation time="0.900" x="0.000" y="0.000" z="0.005"/>
+		<Rotation time="0.917" x="0.000" y="0.000" z="0.004"/>
+		<Rotation time="0.933" x="0.000" y="0.000" z="0.003"/>
+		<Rotation time="0.950" x="0.000" y="0.000" z="0.002"/>
+		<Rotation time="0.967" x="0.000" y="0.000" z="0.001"/>
+		<Rotation time="0.983" x="0.000" y="0.000"/>
+		<Rotation time="1.000" x="0.000" y="0.000"/>
+
+		<Scale time="0.000" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.017" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.150" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.167" x="0.999" y="0.999" z="0.999"/>
+		<Scale time="0.183" x="0.998" y="0.998" z="0.998"/>
+		<Scale time="0.200" x="0.997" y="0.997" z="0.997"/>
+		<Scale time="0.217" x="0.997" y="0.997" z="0.997"/>
+		<Scale time="0.233" x="0.997" y="0.997" z="0.997"/>
+		<Scale time="0.250" x="0.999" y="0.999" z="0.999"/>
+		<Scale time="0.267" x="1.001" y="1.001" z="1.000"/>
+		<Scale time="0.283" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.300" x="1.006" y="1.006" z="1.005"/>
+		<Scale time="0.317" x="1.008" y="1.008" z="1.007"/>
+		<Scale time="0.333" x="1.011" y="1.010" z="1.009"/>
+		<Scale time="0.350" x="1.012" y="1.012" z="1.011"/>
+		<Scale time="0.367" x="1.013" y="1.012" z="1.011"/>
+		<Scale time="0.383" x="1.012" y="1.012" z="1.011"/>
+		<Scale time="0.400" x="1.010" y="1.010" z="1.009"/>
+		<Scale time="0.417" x="1.008" y="1.008" z="1.007"/>
+		<Scale time="0.433" x="1.005" y="1.005" z="1.004"/>
+		<Scale time="0.450" x="1.002" y="1.003" z="1.001"/>
+		<Scale time="0.467" x="0.999" y="1.000" z="0.999"/>
+		<Scale time="0.483" x="0.997" y="0.999" z="0.997"/>
+		<Scale time="0.500" x="0.997" y="0.998" z="0.997"/>
+		<Scale time="0.517" x="0.998" y="0.999" z="0.998"/>
+		<Scale time="0.533" x="0.999" y="1.000" z="0.999"/>
+		<Scale time="0.550" x="1.001" y="1.002" z="1.001"/>
+		<Scale time="0.567" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.583" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.600" x="1.004" y="1.004" z="1.004"/>
+		<Scale time="0.617" x="1.003" y="1.003" z="1.003"/>
+		<Scale time="0.633" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.650" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.667" x="0.999" y="0.999" z="0.999"/>
+		<Scale time="0.683" x="0.998" y="0.998" z="0.998"/>
+		<Scale time="0.700" x="0.999" y="0.999" z="0.999"/>
+		<Scale time="0.717" x="0.999" y="0.999" z="0.999"/>
+		<Scale time="0.733" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.750" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.767" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.783" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.800" x="1.001" y="1.001" z="1.001"/>
+		<Scale time="0.817" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="0.833" x="1.000" y="1.000" z="1.000"/>
+		<Scale time="1.000" x="1.000" y="1.000" z="1.000"/>
+
+
+	</Animation>
+
+</Animations>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene>
+	<SceneObject name="Holder">
+		<Panel vertexColors="false">
+			<Insets bottom="15" left="15" right="15" top="10" />
+			<Size height="95" width="70" />
+			<RemoveQuads topLeft="true" top="true" topRight="true" right="true" center="true" left="true" bottomLeft="true" bottom="true" bottomRight="true" />
+		</Panel>
+		<SceneObject name="BigBox">
+			<Animation name="SlideInFromLeft" animationData="TreasureHuntSlideInFromLeft" loopCount="0" />
+			<Animation name="SlideInFromRight" animationData="TreasureHuntSlideInFromRight" loopCount="0" />
+			<Animation name="SlideOutToLeft" animationData="TreasureHuntSlideOutToLeft" loopCount="0" />
+			<Animation name="SlideOutToRight" animationData="TreasureHuntSlideOutToRight" loopCount="0" />
+			<Panel filename="shared/liveops/hero_quest/tex/kgf_reward_box2.png" vertexColors="false">
+				<Insets bottom="15" left="15" right="15" top="10" />
+				<Size height="95" width="70" />
+			</Panel>
+			<Translation x="0" z="0" />
+			<SceneObject name="GoldbarsImage">
+				<Scale x="0.956" y="0.956" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/gold_1.png" vertexColors="false" />
+				<Translation x="2.552" y="1.234" z="0" />
+			</SceneObject>
+			<SceneObject name="Amount">
+				<Text alignment="center" allowWordWrapping="false" canBreakWords="false" font="Banana" overflowBehaviour="fit" verticalAlignment="visualCenter" maxWidth="60" maxHeight="40">
+					<Color a="255" b="0" g="55" r="117" />
+					<Size x="24" y="24" />
+					<TextString>30</TextString>
+				</Text>
+				<Translation x="33.833" y="72" z="0" />
+			</SceneObject>
+			<SceneObject editorEntityId="5" name="UnlimitedLives" visibility="never">
+				<Scale x="0.351" y="0.351" z="1" />
+				<Sprite filename="shared/diorama/common/tex/gui_elements/heart.png" vertexColors="false" />
+				<Translation x="6.500" y="1.234" z="0" />
+				<SceneObject editorEntityId="6" name="InfinitySign">
+					<Scale x="1.763" y="1.763" z="1" />
+					<Sprite filename="shared/diorama/common/tex/gui_elements/infinity_sign.png" vertexColors="false" />
+					<Translation x="34.219" y="31.108" z="0" />
+				</SceneObject>
+			</SceneObject>
+		</SceneObject>
+	</SceneObject>
+</Scene>

@@ -1,0 +1,24 @@
+<!DOCTYPE ParticleEffect SYSTEM '../../../dtd/particle_effect.dtd'>
+<ParticleEffect maxParticles="64" space="Local" timeToEmit="60" name="BigInfiniteSparksPFX">
+    <Dampening max="0.900" min="0.900"/>
+    <DirectionalForce x="0" y="200"/>
+    <Emitter emissionRate="0.010" spread="360" angle="0">
+        <SpawnArea width="81.020" depth="0" height="82.650"/>
+    </Emitter>
+    <EndColor b="99" r="99" g="99" a="0"/>
+    <Rotation max="360" min="-100"/>
+    <RotationSpeed max="360" min="360"/>
+    <Size>
+        <Max x="70" y="70"/>
+        <Min x="10" y="10"/>
+    </Size>
+    <SizeChange>
+        <Max x="-45" y="0"/>
+        <Min x="-45" y="0"/>
+    </SizeChange>
+    <StartColor b="255" r="255" g="255" a="255"/>
+    <Texture numFramesY="1" blend="Add" numFramesX="1" filename="shared/bootstrap/particles/tex/nice_spark.png"/>
+    <TextureFrame numTextureAnimationFrames="1" textureAnimationSpeed="50" startFrame="0"/>
+    <TimeToLive max="0.400" min="0.400"/>
+    <Velocity max="406.480" min="406.480"/>
+</ParticleEffect>

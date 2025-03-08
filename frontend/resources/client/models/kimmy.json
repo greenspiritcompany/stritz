@@ -1,0 +1,86 @@
+{
+"skeleton": { "hash": "nw34snGV+WHmUO3QCBN9zANA/o0", "spine": "2.1.27", "width": 288.14, "height": 371.11, "images": "" },
+"bones": [
+	{ "name": "root", "x": -0.74 },
+	{ "name": "body", "parent": "root", "length": 137.63, "x": 3.58, "y": -166.14, "rotation": 90.45 },
+	{ "name": "left_arm", "parent": "body", "length": 32.29, "x": 99.33, "y": 76.26, "rotation": 76.28 },
+	{ "name": "right_arm", "parent": "body", "length": 30.37, "x": 93.71, "y": -68.05, "rotation": -80.68 }
+],
+"slots": [
+	{ "name": "kimmy", "bone": "body", "attachment": "kimmy" },
+	{ "name": "kimmy_arm_left", "bone": "left_arm", "attachment": "kimmy_arm_left" },
+	{ "name": "kimmy_right_arm", "bone": "right_arm", "attachment": "kimmy_right_arm" },
+	{ "name": "pin", "bone": "body", "attachment": "pin" },
+	{ "name": "pin2", "bone": "body", "attachment": "pin" }
+],
+"skins": {
+	"default": {
+		"kimmy": {
+			"kimmy": { "x": 166.16, "y": 2.28, "rotation": -90.45, "width": 288, "height": 371 }
+		},
+		"kimmy_arm_left": {
+			"kimmy_arm_left": { "x": 11.34, "y": 20.73, "rotation": -166.73, "width": 82, "height": 72 }
+		},
+		"kimmy_right_arm": {
+			"kimmy_right_arm": { "x": 13.03, "y": -20.6, "rotation": -9.76, "width": 82, "height": 72 }
+		},
+		"pin": {
+			"pin": { "x": 95.25, "y": 77.33, "rotation": -90.45, "width": 36, "height": 35 }
+		},
+		"pin2": {
+			"pin": { "x": 89.11, "y": -69.11, "rotation": -90.45, "width": 36, "height": 35 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"body": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 2.16,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"angle": -3.37,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "angle": 2.16 }
+				]
+			},
+			"left_arm": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": -12.98,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"angle": 14.14,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "angle": -12.98 }
+				]
+			},
+			"right_arm": {
+				"rotate": [
+					{
+						"time": 0,
+						"angle": 15.73,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{
+						"time": 0.6666,
+						"angle": -4.74,
+						"curve": [ 0.25, 0, 0.75, 1 ]
+					},
+					{ "time": 1.3333, "angle": 15.73 }
+				]
+			}
+		}
+	}
+}
+}
