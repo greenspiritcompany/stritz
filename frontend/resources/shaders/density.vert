@@ -1,13 +1,16 @@
+/* note: currently not working */
+
 #version 1.0;
 
-attribute highp vec4 a_position;
-attribute highp vec2 a_texCoord;
+argument vec4 a_position;
+argument vec4 a_texCoord;
 
-uniform highp mat4 u_modelViewProjectionMatrix;
+uniform mat4 u_modelViewProjectionMatrix;
 
-varying highp vec2 v_texCoord;
+varying vec2 v_texCoord;
 
-void main() {
-	v_texCoord = a_texCoord;
-	gl_Position = u_modelViewProjectionMatrix * a_position;
-}
+mov v0, u_modelViewProjectionMatrix
+mov v0.xy, a_texCoord.xyxx
+
+m44 op.xyzw, a_position.xyzw, u_modelViewProjectionMatrix
+

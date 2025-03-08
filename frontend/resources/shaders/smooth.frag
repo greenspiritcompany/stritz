@@ -1,20 +1,27 @@
 #version 1.0;
 
-varying mediump vec3 v_normal;
-varying lowp vec2 v_texCoord;
+varying vec3 v_normal;
+varying vec2 v_texCoord;
 
-uniform sampler2D u_texture;
-uniform lowp vec4 u_materialAmbient;
-uniform lowp vec4 u_materialDiffuse;
-uniform lowp vec4 u_materialSpecular;
-uniform mediump float u_materialShininess;
-uniform lowp vec4 u_color4;
+sampler2D u_texture;
+uniform vec4 u_materialAmbient;
+uniform vec4 u_materialDiffuse;
+uniform vec4 u_materialSpecular;
+uniform mat4 u_materialShininess;
+uniform vec4 u_color4;
 
-void main() {
-	gl_FragColor = u_color4 * texture2D(u_texture, v_texCoord);	
-	float nDotL1 = clamp(dot(vec3(-0.181818, -0.625455, 0.818182), normalize(v_normal)), 0.0, 1.0);
-	
-	gl_FragColor.rgb *=	vec3(u_materialAmbient) +
-						vec3(u_materialDiffuse) * nDotL1 +
-						vec3(u_materialSpecular) * pow(nDotL1, u_materialShininess);
-}
+tex ft0.xyzw, v1.xyxx, fs0 <2d,wrap,linear>
+sub ft1.z, ft0.wwwx, v2.xxxx
+sub ft1.w, v2.yyyy, v2.xxxx
+div ft1.y, ft1.zzxx, ft1.wwxx
+min ft1.x, ft1.yxxx, fc0.xxxx
+max ft0.x, ft1.xxxx, fc0.yxxx
+mul ft1.z, fc0.zzzx, ft0.xxxx
+sub ft1.y, fc0.wwxx, ft1.zzxx
+mul ft1.x, ft0.xxxx, ft1.yxxx
+mul ft2.w, ft0.xxxx, ft1.xxxx
+mov oc.xyzw, v0.xyzw
+mov ft2.z, ft2.wwwx
+mov oc, fc0
+mul oc.w, v0.wwww, ft2.zzzz
+

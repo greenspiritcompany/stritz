@@ -1,37 +1,47 @@
 #version 1.0;
 
-varying mediump vec2 v_texCoord0;
-varying mediump vec3 v_L2dir;
+varying vec2 v_texCoord0;
+varying vec3 v_L2dir;
          
-//varying mediump mat3 v_normalSpaceTransform;
-varying mediump vec3 v_normalSpaceTransformX;
-varying mediump vec3 v_normalSpaceTransformY;
-varying mediump vec3 v_normalSpaceTransformZ;
+//varying mat3 v_normalSpaceTransform;
+varying vec3 v_normalSpaceTransformX;
+varying vec3 v_normalSpaceTransformY;
+varying vec3 v_normalSpaceTransformZ;
          
-uniform lowp sampler2D u_texture; /* diffuse */
-uniform lowp sampler2D u_texture1; /* normal map */
+sampler2D u_texture; /* diffuse */
+sampler2D u_texture1; /* normal map */
          
-uniform mediump vec4 u_materialAmbient;
-uniform mediump vec4 u_materialDiffuse;
-uniform mediump vec4 u_materialSpecular;
-uniform mediump float u_materialShininess;
-uniform lowp vec4 u_color4;
+uniform vec4 u_materialAmbient;
+uniform vec4 u_materialDiffuse;
+uniform vec4 u_materialSpecular;
+uniform mat4 u_materialShininess;
+uniform vec4 u_color4;
 
-void main() {
-	mediump vec4 normalMap = texture2D(u_texture1, v_texCoord0);
-	mediump mat3 normalSpaceTransform = mat3(v_normalSpaceTransformX, v_normalSpaceTransformY, v_normalSpaceTransformZ);
-	mediump vec3 normal = normalize(normalSpaceTransform * (normalMap.rgb-vec3(0.5,0.5,0.5)));
-	
-	float diffuse = clamp(dot(v_L2dir, normal), 0.0, 1.0); // previously nDotL2
-	float specular = pow(diffuse, u_materialShininess);
 
-	gl_FragColor = texture2D(u_texture, v_texCoord0);
-	
-	gl_FragColor.rgb = gl_FragColor.rgb * (u_materialDiffuse * diffuse + u_materialAmbient).rgb + u_materialSpecular.rgb * specular * normalMap.a;
+mov ft0.xyz, v1.xyzx
+mov ft0.xyz, v2.xyzx
+mov ft0.xyz, v3.xyzx
 
-	// Used for fading through code (value between 0.0 and 1.0 sent in ambient alpha-channel)
-	gl_FragColor.rgb = gl_FragColor.rgb * vec3(u_materialAmbient.a, u_materialAmbient.a, u_materialAmbient.a);
+tex ft0.xyzw, v4.xyxx, fs0 <2d,wrap,linear>
+sub ft3.xyz, ft0.xyzx, fc0.xyzx
+m33 ft4.xyz, ft3.xyzx, ft0
+nrm ft0.xyz, ft4.xyzx
+dp3 ft4.y, v0.xxyy, ft0.xxyy
+min ft4.x, ft4.yxxx, fc1.xxxx
+max ft0.y, ft4.xxxx, fc0.wwxx
+m33 ft3.xyzw, u_materialDiffuse.xyzw, ft0.yxxx
+pow ft4.z, ft0.yyyx, u_materialShininess.xxxx
+tex ft0.xyzw, v4.xyxx, fs1 <2d,wrap,linear>
+add ft5.xyzw, ft3.xyzw, u_materialAmbient.xyzw
+mul ft3.xyz, u_materialSpecular.xyzx, ft4.zxxx
+m33 ft4.xyz, ft5.xyzx, ft0.xyzx
+mul ft5.xyz, ft3.xyzx, ft0.wxxx
+mov oc.xyzw, ft0.xyzw
+add ft3.xyz, ft4.xyzx, ft5.xyzx
+mov oc, fc0
+mov oc.xyz, ft3.xyzx
 
-	// Use <Color>
-	gl_FragColor = gl_FragColor * u_color4;
-}
+mul oc.xyz, ft3.xyzx, u_materialAmbient.wwwx
+
+mul oc.xyzw, oc.xyzw, u_color4.xyzw
+

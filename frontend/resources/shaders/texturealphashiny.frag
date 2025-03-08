@@ -1,26 +1,35 @@
 #version 1.0;
 
-varying lowp vec4 v_color;
-varying mediump vec2 v_texCoord;
-varying mediump vec4 v_pixelpos;
+varying vec4 v_color;
+varying vec2 v_texCoord;
+varying vec4 v_pixelpos;
 
-uniform sampler2D u_texture;
+sampler2D u_texture;
 
-uniform highp float u_time;
+uniform mat4 u_time;
 
-void main() {
-	gl_FragColor = texture2D(u_texture, v_texCoord).aaaa;
-	
-	//float intensity = clamp((sin(v_pixelpos.x*0.9+mod(u_time,8.0)*3.0))*3.0-2.0,0.0,1.0);
-	
-	//float intensity = clamp(0.5+0.5*sin(v_pixelpos.x),0,1) * mix(sin(v_pixelpos.x*0.5));
-	
-	float intensity = 0.5+sin((1.0+v_pixelpos.x)*3.0+mod(u_time,4.0)*3.0);
-	float stepyo = step(0.51,sin(v_pixelpos.x*1.0+mod(u_time,4.0)*1.0));
-	
-	intensity = intensity * stepyo;
-	intensity = clamp(intensity, 0.0, 1.0);
-	
-	gl_FragColor.rgb = gl_FragColor.rgb + vec3(intensity * 0.5 * gl_FragColor.a);
-	gl_FragColor = v_color * gl_FragColor;
-}
+mov ft0.x, u_time.xxxx
+mov ft1.y, u_time.xxxx
+add ft2.y, fc1.wwxx, v1.xxxx
+mov ft2.w, ft0.xxxx
+mov ft1.x, ft1.yxxx
+mul ft2.x, ft2.yxxx, fc1.zxxx
+mul ft2.z, ft2.wwwx, fc1.zzzx
+add ft0.w, v1.xxxx, ft1.xxxx
+add ft1.w, ft2.xxxx, ft2.zzzz
+sin ft0.z, ft0.wwwx
+sin ft1.z, ft1.wwwx
+sge ft2.x, ft0.zxxx, fc1.yxxx
+add ft1.y, fc2.xxxx, ft1.zzxx
+mov ft0.y, ft2.xxxx
+mul ft1.x, ft1.yxxx, ft0.yxxx
+min ft2.w, ft1.xxxx, fc1.wwww
+max ft2.z, ft2.wwwx, fc2.yyyx
+tex ft1.xyzw, v2.xyxx, fs0 <2d,wrap,linear>
+mul ft2.y, ft2.zzxx, fc2.xxxx
+mov oc.xyzw, ft1.wwww
+mul ft2.x, ft2.yxxx, ft1.wxxx
+mov oc, u_time
+add oc.xyz, ft1.wwwx, ft2.xxxx
+mul oc.xyzw, v0.xyzw, oc.xyzw
+

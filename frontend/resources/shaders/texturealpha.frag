@@ -1,11 +1,12 @@
 #version 1.0;
 
-varying lowp vec4 v_color;
-varying lowp vec2 v_texCoord;
+varying vec4 v_color;
+varying vec2 v_texCoord;
 
-uniform mediump vec4 u_color4;
-uniform sampler2D u_texture;
+uniform vec4 u_color4;
+sampler2D u_texture;
 
-void main() {
-	gl_FragColor = u_color4 * v_color * texture2D(u_texture, v_texCoord).a;
-}
+mul ft0.xyzw, u_color4.xyzw, v0.xyzw
+tex ft1.xyzw, v1.xyxx, fs0 <2d,wrap,linear>
+mul oc.xyzw, ft0.xyzw, ft1.wxxx
+

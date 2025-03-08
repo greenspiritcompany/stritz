@@ -1,7 +1,6 @@
 #version 1.0;
 
-uniform lowp vec4 u_color4;
+uniform vec4 u_color4;
 
-void main() {
-	gl_FragColor = u_color4;
-}
+mov oc.xyzw, u_color4.xyzw
+

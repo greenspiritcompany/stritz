@@ -1,40 +1,23 @@
 #version 1.0;
 
-#define NUM_LIGHTS 1
-
 varying vec3 v_normal;
 
-struct Light {
-	vec3	ambient;
-	vec3	diffuse;
-	vec3	specular;
-	vec4	position;
-};
-
-/*uniform float u_time;*/
 uniform vec4 u_materialAmbient;
 uniform vec4 u_materialDiffuse;
 uniform vec4 u_materialSpecular;
 uniform vec4 u_materialEmission;
-uniform float u_materialShininess;
+uniform mat4 u_materialShininess;
 uniform vec4 u_color4;
 
-uniform Light u_lights[NUM_LIGHTS];
-
-void main() {
-	gl_FragColor = u_color4;	
-	vec3 normal = normalize(v_normal);
-	float nDotL1 = clamp(dot(vec3(0, 0, 1), normal), 0.0, 1.0);
-	float diffuse = nDotL1;
-	float specular = pow(nDotL1, u_materialShininess);
-	
-	gl_FragColor.rgb *= /*u_materialEmission +*/
-						/*u_globalAmbient * u_materialAmbient + */
-						 u_materialAmbient.rgb +
-						 u_materialDiffuse.rgb * diffuse +
-						 u_materialSpecular.rgb * specular;
-						
-	/* for glow */
-	/*float glow = pow(1.0 - dot(normal, vec3(0, 0, 1)), 2.0);
-	gl_FragColor.rgb += vec3(0.2, 0.2, 1.0) * glow * (sin(u_time * 30) * 0.5 + 0.5) * 3.0;*/
-}
+nrm ft0.xyz, v0.xyzx
+dp3 ft1.y, fc0.xxyy, ft0.xxyy
+min ft1.x, ft1.yxxx, fc0.zxxx
+max ft0.y, ft1.x, fc0.x
+mul ft1.xyz, u_materialDiffuse.xyzx, ft0.yxxx
+pow ft1.z, ft0.yyyx, u_materialShininess.x
+add ft0.xyz, u_materialAmbient.xyzx, ft1.xyzx
+mul ft1.xyz, u_materialSpecular.xyzx, ft1.zxxx
+mov oc, u_color4
+add ft1.xyz, ft0.xyzx, ft1.xyzx
+mov oc, fc0
+mul oc.xyz, u_color4.xyzx, ft1.xyzx

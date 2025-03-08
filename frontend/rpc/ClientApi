@@ -107,6 +107,19 @@ foreach ($requests as $req) {
             $determinedResult = $getServerTime;
             break;
 
+        case "ApplicationSettingsApi.getSettings":
+            $determinedResult = [
+				array("name" => "canvas.synergy.enabled", "value" => "true"),
+				array("name" => "synergy.start.time", "value" => 24),
+				array("name" => "released.episode", "value" => 72),
+				array("name" => "sidekicks.enabled", "value" => true),
+			];
+            break;
+
+        case "ApplicationSettingsApi.getSettingsWithPrefix": // unused
+            $determinedResult = [];
+            break;
+
         default:
             //$determinedResult = array("error" => "Method not supported: " . $req['method']);
             $determinedResult = array();

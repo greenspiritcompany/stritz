@@ -1,9 +1,8 @@
 #version 1.0;
 
-attribute highp vec4 a_position;
+argument vec4 a_position;
 
-uniform highp mat4 u_modelViewProjectionMatrix;
+uniform mat4 u_modelViewProjectionMatrix;
 
-void main() {
-	gl_Position = u_modelViewProjectionMatrix * a_position;
-}
+m44 op.xyzw, a_position.xyzw, u_modelViewProjectionMatrix
+

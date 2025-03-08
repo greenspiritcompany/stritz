@@ -1,15 +1,21 @@
 #version 1.0;
 
-attribute mediump vec4 a_position;
-attribute lowp vec3 a_normal;
+argument vec4 a_position;
+argument vec4 a_normal;
 
-uniform mediump mat4 u_modelViewProjectionMatrix;
-uniform mediump mat4 u_modelViewMatrix;
-uniform mediump mat4 u_projectionMatrix;
+uniform mat4 u_modelViewProjectionMatrix;
+uniform mat4 u_modelViewMatrix;
+uniform mat4 u_projectionMatrix;
 
-void main() {
-	/*gl_Position = u_modelViewProjectionMatrix * (a_position + vec4(normalize(a_normal), 0.0) * 1.0);*/
-	
-	gl_Position = u_modelViewMatrix * a_position + normalize(u_modelViewMatrix * vec4(a_normal, 0.0)) * 2.0;
-	gl_Position = u_projectionMatrix * gl_Position;
-}
+mov vt0.w, u_modelViewProjectionMatrix.xxxx
+mov vt0.xyz, a_normal.xyzx
+
+
+
+m44 vt1.xyzw, vt0.xyzw, u_modelViewMatrix
+nrm vt0.xyzw, vt1.xyzw
+m44 vt1.xyzw, a_position.xyzw, u_modelViewMatrix
+mul vt2.xyzw, vt0.xyzw, u_modelViewProjectionMatrix.yxxx
+add vt0.xyzw, vt1.xyzw, vt2.xyzw
+m44 op.xyzw, vt0.xyzw, u_projectionMatrix
+

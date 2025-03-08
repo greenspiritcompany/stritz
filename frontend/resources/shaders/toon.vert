@@ -1,22 +1,37 @@
 #version 1.0;
 
-attribute highp vec4 a_position;
-attribute mediump vec3 a_normal;
-attribute mediump vec2 a_texCoord;
-uniform highp mat4 u_modelViewMatrix;
-uniform highp mat4 u_modelViewProjectionMatrix;
+argument vec4 a_position;
+argument vec4 a_normal;
+argument vec4 a_texCoord;
+uniform mat4 u_modelViewMatrix;
+uniform mat4 u_modelViewProjectionMatrix;
 
-varying mediump vec2 v_texCoord;
-varying mediump vec2 v_texCoord1;
+varying vec2 v_texCoord;
+varying vec2 v_texCoord1;
 
-void main() {
-	gl_Position = u_modelViewProjectionMatrix * a_position;
-	v_texCoord = a_texCoord;
-	
-	mediump mat3 normalTransform = mat3(u_modelViewMatrix[0].xyz,
-								u_modelViewMatrix[1].xyz,
-								u_modelViewMatrix[2].xyz);
-								
-	mediump float t = length(normalize(normalTransform * a_normal).xy + vec2(-0.2, 0.4)) * 0.7;
-	v_texCoord1	= vec2(1.0 - t, 0.0);
-}
+
+
+m44 op.xyzw, a_position.xyzw, u_modelViewProjectionMatrix
+mov v0, u_modelViewProjectionMatrix
+mov v0.xy, a_normal.xyxx
+
+
+
+mov vt0.xyz, u_modelViewMatrix.xyzx
+
+mov vt0.xyz, u_modelViewMatrix.xyzx
+
+mov vt0.xyz, u_modelViewMatrix.xyzx
+
+mov vt0.y, vc8.zzxx
+mov vt3.xyzw, vt0
+m33 vt0.xyz, a_texCoord.xyzx, vt3
+nrm vt3.xyz, vt0.xyzx
+add vt0.xy, vt3.xyxx, vc8.xyxx
+dp4 vt3.z, vt0.xxxy, vt0.xxxy
+sqt vt3.y, vt3.zzxx
+m33 vt3.x, vc9.xxxx, vt3.yxxx
+sub vt0.x, vc9.yxxx, vt3.xxxx
+mov v1, u_modelViewProjectionMatrix
+mov v1.xy, vt0.xyxx
+

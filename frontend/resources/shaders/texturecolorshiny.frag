@@ -1,31 +1,33 @@
 #version 1.0;
 
-varying lowp vec4 v_color;
-varying lowp vec2 v_texCoord;
-varying mediump vec4 v_pixelpos;
+varying vec4 v_color;
+varying vec2 v_texCoord;
+varying vec4 v_pixelpos;
 
-uniform sampler2D u_texture;
+sampler2D u_texture;
 
-uniform highp float u_time;
-// x=intensity, y=power, z=spacing length, w=animation length
+uniform mat4 u_time;
 
+uniform vec4 Settings;
 
-/*			Settings.w
-Settings.z	_________
-0 _________I
-
-*/
-
-uniform highp vec4 Settings;
-
-#define M_PI 3.1415926535897932384626433832795
-
-
-void main() {
-	float intensity = Settings.x * sin(clamp(mod(u_time + (v_texCoord.x)*3.0,Settings.z + Settings.w) - Settings.z, 0.0, Settings.w)/Settings.w * M_PI);
-	intensity = pow(max(intensity, 0.0), Settings.y);
-	gl_FragColor = texture2D(u_texture, v_texCoord);
-	
-	gl_FragColor.rgb = vec3(intensity * gl_FragColor.a);
-	gl_FragColor = v_color * gl_FragColor;
-}
+mul ft1.z, v1.x, fc0.x
+mov ft1.y, Settings.zzxx
+add ft0.w, u_time.x, ft1.z
+add ft1.x, ft1.yxxx, Settings.wxxx
+mov ft0.z, ft0.wwwx
+sub ft0.y, ft0.zzxx, Settings.zzxx
+min ft0.x, ft0.yxxx, Settings.wxxx
+max ft1.w, ft0.x, fc0.y
+div ft1.z, ft1.wwwx, Settings.wwwx
+mul ft1.y, ft1.zzxx, fc0.zzxx
+sin ft1.x, ft1.yxxx
+mul ft0.w, Settings.x, ft1.x
+max ft0.z, ft0.wwwx, fc0.yyyx
+pow ft0.y, ft0.zzxx, Settings.yyxx
+tex ft1, v1.xyxx, fs0 <linear mipdisable repeat 2d>
+mul ft0.x, ft0.yxxx, ft1.wxxx
+mov oc, ft1
+mov ft1.xyz, ft0.x
+mov oc, fc0
+mov oc.xyz, ft1.xyzx
+mul oc, v0, oc
