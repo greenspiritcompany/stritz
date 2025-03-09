@@ -62,6 +62,13 @@
 							<Size height="136" width="551" />
 						</Panel>
 					</SceneObject>
+					<SceneObject name="BackgroundShort">
+						<Panel filename="shared/diorama/common/tex/gui_elements/settings_box.png" vertexColors="true">
+							<Insets bottom="76" left="66" right="66" top="60" />
+							<Pivot x="68" y="65" />
+							<Size height="136" width="551" />
+						</Panel>
+					</SceneObject>
 					<SceneObject name="Music">
 						<Translation x="122" />
 						<SceneObject __visibility="0" class="Button" name="MusicButton">
@@ -105,6 +112,30 @@
 							</SceneObject>
 							<SceneObject name="SoundButtonOff">
 								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_sound_inactive.png" vertexColors="true">
+									<Pivot anchor="center" x="0.500" y="2.500" />
+								</Sprite>
+							</SceneObject>
+						</SceneObject>
+					</SceneObject>
+					<SceneObject name="Screen">
+						<Translation x="215" />
+						<SceneObject class="Button" name="Fullscreen">
+							<Translation x="3.306" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="true">
+								<Pivot anchor="center" />
+							</Sprite>
+							<Animation animationData="Idle" layer="1" name="Idle" />
+							<Animation animationData="OnPress" loopCount="0" name="OnPress" />
+							<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
+							<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.400" />
+							<Animation animationData="OnDisappearScale" loopCount="0" name="OnClose" startTime="0" />
+							<SceneObject name="FullscreenButtonOn">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_screen_max.png" vertexColors="true">
+									<Pivot anchor="center" x="0.500" y="2.500" />
+								</Sprite>
+							</SceneObject>
+							<SceneObject name="FullscreenButtonOff">
+								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_screen_min.png" vertexColors="true">
 									<Pivot anchor="center" x="0.500" y="2.500" />
 								</Sprite>
 							</SceneObject>

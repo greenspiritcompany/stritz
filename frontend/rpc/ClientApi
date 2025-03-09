@@ -92,7 +92,7 @@ foreach ($requests as $req) {
             break;
 
         case "ProfileCardApi.isProfileCardEnabled":
-            $determinedResult = true;
+            $determinedResult = false;
             break;
 
         case "ProfileCardApi.getActiveKingAppIds":

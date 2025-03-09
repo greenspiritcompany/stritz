@@ -62,7 +62,7 @@
   <Sound filename="client/diorama/common/sounds/diorama_lollipop.wav" name="diorama_lollipop"/>
   <Sound filename="client/diorama/common/sounds/diorama_tree.wav" name="diorama_tree"/>
   <Sound filename="client/diorama/common/sounds/diorama_sun.wav" name="diorama_sun"/>
-  <Sound filename="client/diorama/common/sounds/diorama_donut.ogg" name="diorama_donut"/>
+  <Sound filename="client/diorama/common/sounds/diorama_donut.mp3" name="diorama_donut"/>
   <Sound filename="client/diorama/common/sounds/diorama_portal.ogg" name="portal_click"/>
   <Sound filename="client/diorama/common/sounds/diorama_pile.wav" name="diorama_pile"/>
   <Sound filename="client/diorama/common/sounds/diorama_squishy.wav" name="diorama_squishy"/>
@@ -168,11 +168,11 @@
   <Sound filename="client/game/common/sounds/stinger_lose_outro.ogg" name="stinger_lose_outro"/>
   <Sound filename="client/game/common/sounds/egp_appear.ogg" name="stinger_egp_appear"/>
   <Sound filename="client/game/common/sounds/egp_close_call.wav" name="stinger_egp_close_call"/>
-  <Sound filename="client/diorama/common/sounds/button_menu_show.wav" name="menu_show"/>
-  <Sound filename="client/diorama/common/sounds/button_menu_hide.wav" name="menu_hide"/>
-  <Sound filename="client/diorama/common/sounds/button_overview_show.wav" name="overview_show"/>
-  <Sound filename="client/diorama/common/sounds/button_overview_hide.wav" name="overview_hide"/>
-  <Sound filename="client/diorama/common/sounds/button_general_release.wav" name="button_release"/>
+  <Sound filename="client/diorama/common/sounds/button_menu_show.mp3" name="menu_show"/>
+  <Sound filename="client/diorama/common/sounds/button_menu_hide.mp3" name="menu_hide"/>
+  <Sound filename="client/diorama/common/sounds/button_overview_show.mp3" name="overview_show"/>
+  <Sound filename="client/diorama/common/sounds/button_overview_hide.mp3" name="overview_hide"/>
+  <Sound filename="client/diorama/common/sounds/button_general_release.mp3" name="button_release"/>
   <Sound filename="client/game/common/sounds/shuffle.ogg" name="shuffle"/>
   <Sound filename="client/game/common/sounds/fish_swim.ogg" name="fish_swim"/>
   <Sound filename="client/game/common/sounds/fish_swim_striped.ogg" name="fish_swim_striped"/>
@@ -294,6 +294,4 @@
   <Sound name="character_ep82" filename="client/diorama/common/sounds/character_ep82.wav"/>
   <Sound name="character_ep83" filename="client/diorama/common/sounds/character_ep83.wav"/>
   <Sound name="character_ep84" filename="client/diorama/common/sounds/character_ep84.wav"/>
-  <Sound name="egp_gumballmachine" filename="client/game/common/sounds/egp_gumballmachine.ogg"/>
-  <Sound name="egp_gumball_open" filename="client/game/common/sounds/egp_gumball_open.ogg"/>
 </Sounds>
