@@ -1,5 +1,3 @@
-/* note: currently not working */
-
 #version 1.0;
 
 argument vec4 a_position;

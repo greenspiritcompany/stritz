@@ -62,13 +62,13 @@
 </Attribute>
 </Shader>
 
-<!--<Shader name="Density" vertexShader="shaders/density.vert" fragmentShader="shaders/density.frag">
+<Shader name="Density" vertexShader="shaders/density.vert" fragmentShader="shaders/density.frag">
 <Attribute name="a_position" input="Positions">
 	<DefaultValue size="3" x="1" y="1" z="1" />
 </Attribute>
 <Attribute name="a_texCoord" input="UVs">
 	<DefaultValue size="2" x="1" y="1" />
 </Attribute>
-</Shader>-->
+</Shader>
 
 </Shaders>

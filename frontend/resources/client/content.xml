@@ -108,16 +108,6 @@
 		<binary filename="client/diorama/common/sounds/diorama_tree.wav" size="14076"/>
 		<binary filename="client/diorama/common/sounds/level_complete.wav" size="32880"/>
 		<binary filename="client/diorama/common/sounds/purchase_gold.wav" size="12634"/>
-		<binary filename="client/features/login_calendar/CCSS_DLC_enter_calendar.wav" size="6243"/>
-		<binary filename="client/features/login_calendar/CCSS_DLC_gift_drop_01.wav" size="8995"/>
-		<binary filename="client/features/login_calendar/CCSS_DLC_gift_drop_02.wav" size="7387"/>
-		<binary filename="client/features/login_calendar/CCSS_DLC_gift_drop_03.wav" size="9414"/>
-		<binary filename="client/features/login_calendar/CCSS_DLC_green_tick_01.wav" size="4660"/>
-		<binary filename="client/features/login_calendar/CCSS_DLC_login_gifts_explosion_01.wav" size="29331"/>
-		<binary filename="client/features/login_calendar/CCSS_DLC_login_gifts_explosion_special.wav" size="34311"/>
-		<binary filename="client/features/login_calendar/CCSS_DLC_stamp_01.wav" size="6258"/>
-		<binary filename="client/features/login_calendar/CCSS_DLC_stamp_pink.wav" size="10382"/>
-		<binary filename="client/features/login_calendar/CCSS_DLC_vertical_bar_fill_02.wav" size="16895"/>
 		
 		<binary filename="client/fonts/americantypewriter.ttf" size="113028"/>
 		
@@ -271,33 +261,6 @@
 		<binary filename="client/game/common/sounds/wrapped_multi_explosion.wav" size="173239"/>
 		
 		<binary filename="client/languages.xml" size="941"/>
-		
-		<binary filename="client/liveops/hero_quest/ccss_gofishing_awardscreen_big.wav" size="21146"/>
-		<binary filename="client/liveops/hero_quest/ccss_gofishing_awardscreen_small.wav" size="15901"/>
-		<binary filename="client/liveops/hero_quest/ccss_gofishing_fishanimation.wav" size="50319"/>
-		<binary filename="client/liveops/hero_quest/ccss_gofishing_popup_in.wav" size="4536"/>
-		<binary filename="client/liveops/hero_quest/ccss_gofishing_popup_out.wav" size="6351"/>
-		<binary filename="client/liveops/hero_quest/ccss_gofishing_scoreboard_loop.wav" size="36658"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_candymachine_1.wav" size="11416"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_candymachine_2.wav" size="10309"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_candymachine_3.wav" size="10519"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_eventend_stinger.wav" size="61298"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_manager_laugh.wav" size="19912"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_manager_mumble_1.wav" size="15649"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_manager_mumble_2.wav" size="11501"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_steam_1.wav" size="16415"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_steam_2.wav" size="19587"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_steam_3.wav" size="24487"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_switcheranimation.wav" size="33110"/>
-		<binary filename="client/liveops/hero_quest/sfx_facman_toplist_ambience.wav" size="59015"/>
-		<binary filename="client/liveops/hero_quest/sfx_starman_event_unlocked.wav" size="31337"/>
-		<binary filename="client/liveops/hero_quest/sfx_starman_highscore_ambience.wav" size="60022"/>
-		<binary filename="client/liveops/hero_quest/sfx_starman_infoscreen.wav" size="17340"/>
-		<binary filename="client/liveops/hero_quest/sfx_starman_starpop.wav" size="49230"/>
-		<binary filename="client/liveops/hero_quest/sfx_starman_win_popup.wav" size="55498"/>
-		<binary filename="client/liveops/treasure_hunt/treasureroad_gift_open_01.wav" size="81308"/>
-		<binary filename="client/liveops/treasure_hunt/treasureroad_gift_open_02.wav" size="84036"/>
-		<binary filename="client/liveops/treasure_hunt/treasureroad_gift_open_03.wav" size="84688"/>
 		
 		<binary filename="client/models/kimmy.json" size="2284"/>
 		<binary filename="client/models/tiffi.json" size="3470"/>
@@ -468,7 +431,6 @@
 		<binary filename="shared/init/diorama_timelines.xml" size="3613"/>
 		<binary filename="shared/init/effects.xml" size="121060"/>
 		<binary filename="shared/init/game_timelines.xml" size="66448"/>
-		<binary filename="shared/init/hero_quest_timelines.xml" size="423"/>
 		<binary filename="shared/init/menu/models/jelly_button/jelly_button.ffm" size="3257"/>
 		<binary filename="shared/init/menu/models/jelly_button/tween.ffa" size="11936"/>
 		<binary filename="shared/init/menu/scenes/menu_pre_level_booster_view.xml" size="17223"/>
@@ -1558,14 +1520,6 @@
 		<binary filename="shared/diorama/common/timelines/fade_in_from_white_scene.xml" size="803"/>
 		<binary filename="shared/diorama/common/timelines/glowing_heart.xml" size="1477"/>
 		<binary filename="shared/diorama/common/timelines/glowing_heart_scene.xml" size="194"/>
-		<binary filename="shared/diorama/common/timelines/hero_quest/facman_toplist_candy_green_sounds.xml" size="372"/>
-		<binary filename="shared/diorama/common/timelines/hero_quest/facman_toplist_candy_purple_sounds.xml" size="379"/>
-		<binary filename="shared/diorama/common/timelines/hero_quest/facman_toplist_candy_red_sounds.xml" size="374"/>
-		<binary filename="shared/diorama/common/timelines/hero_quest/facman_toplist_candy_yellow_sounds.xml" size="379"/>
-		<binary filename="shared/diorama/common/timelines/hero_quest/facman_toplist_face_sounds.xml" size="382"/>
-		<binary filename="shared/diorama/common/timelines/hero_quest/facman_toplist_smoke_small_1_sounds.xml" size="365"/>
-		<binary filename="shared/diorama/common/timelines/hero_quest/facman_toplist_smoke_small_2_sounds.xml" size="299"/>
-		<binary filename="shared/diorama/common/timelines/hero_quest/facman_toplist_smoke_sounds.xml" size="364"/>
 		<binary filename="shared/diorama/common/timelines/pregame_boosters_popup_appear.xml" size="675"/>
 		<binary filename="shared/diorama/common/timelines/pregame_boosters_popup_disappear.xml" size="309"/>
 		<binary filename="shared/diorama/common/timelines/quest_new_exclamation.xml" size="337"/>
@@ -5884,6 +5838,10 @@
 		<binary filename="shared/features/memories/timelines/revealed_memories_piece_timeline.xml" size="2324"/>
 	</group>
 	<group name="treasure_hunt">
+		<binary filename="client/liveops/treasure_hunt/treasureroad_gift_open_01.wav" size="81308"/>
+		<binary filename="client/liveops/treasure_hunt/treasureroad_gift_open_02.wav" size="84036"/>
+		<binary filename="client/liveops/treasure_hunt/treasureroad_gift_open_03.wav" size="84688"/>
+		
 		<binary filename="shared/liveops/treasure_hunt/content.meta.xml" size="150"/>
 		<binary filename="shared/liveops/treasure_hunt/models/modal_gifts.json" size="534189"/>
 		<binary filename="shared/liveops/treasure_hunt/tex/th_elements.xml" size="3321"/>

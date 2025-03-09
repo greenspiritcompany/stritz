@@ -1,69 +1,58 @@
-/* note: currently not working */
-
 #version 1.0;
-
-precision highp float;
 
 varying vec2 v_texCoord;
 
-uniform sampler2D u_texture;
-uniform vec4 u_color4;
-uniform ivec2 u_textureSize;
+sampler2D u_texture;
+uniform vec4 u_textureSize;
 
 
-bool isOddGridSquare(vec2 coord, float squareSize) {
-
-	bool isOddH = abs(mod(coord.x, 2.0 * squareSize)) < squareSize;
-	bool isOddV = abs(mod(coord.y, 2.0 * squareSize)) < squareSize;
-	bool isOdd = (isOddH == isOddV);
-
-	return isOdd;
-}
 
 
-vec3 greyscale(vec3 colour) {
 
-	float grey = (0.3 * colour.r) + (0.59 * colour.g) + (0.11 * colour.b);
-	return vec3(grey);
-}
-
-float minMagFactor(vec2 texCoordInTexels) {
-
-	vec2 A = dFdx(texCoordInTexels);
-	vec2 B = dFdy(texCoordInTexels);
-
-	float C = max(dot(A, A), dot(B, B));
-	float minMagFactor = 0.5 * log2(C);
-
-	return minMagFactor;
-}
+mul ft0.xy, v0.xyxx, u_textureSize.xyxx
+mov ft1.xy, ft0.xyxx
+mov ft2.xy, ft0.xyxx
 
 
-vec3 minMagColour(vec2 texCoordInTexels) {
 
-	float factor = minMagFactor(texCoordInTexels);
-	float textureIsTooMinified = float(factor > log2(8.0 / 6.0));
-	float textureIsTooMagnified = float(factor < log2(8.0 / 12.0));
+dp4 ft3.z, ft1.xxxy, ft1.xxxy
+dp4 ft3.w, ft2.xxxx, ft2.xxxx
+max ft3.y, ft3.zzxx, ft3.wwxx
+log ft3.x, ft3.yxxx
+mov ft1.y, fc1.yyxx
+mul ft2.z, fc1.xxxx, ft3.xxxx
+log ft1.x, ft1.yxxx
+slt ft3.x, ft1.xxxx, ft2.zxxx
+mov ft1.w, fc1.zzzz
+mov ft4.x, ft3.xxxx
+log ft1.z, ft1.wwwx
+mov ft3.y, ft0.xxxx
+mov ft3.z, ft0.yyyx
+slt ft0.x, ft3.yxxx, fc2.xxxx
+slt ft5.x, ft3.zxxx, fc2.xxxx
+sub ft6.y, fc2.zzxx, ft4.xxxx
+slt ft7.x, ft2.zxxx, ft1.zxxx
+tex ft2.xyzw, v0.xyxx, fs0 <2d,wrap,linear>
+mov ft1.x, ft0.xxxx
+mul ft0.xyz, fc3.xyzx, ft6.yxxx
+mul ft5.xyz, fc4.xyzx, ft4.xxxx
+mov ft4.z, ft7.xxxx
+mul ft7.y, fc5.yyxx, ft2.xxxx
+mul ft7.z, fc5.xxxx, ft2.yyyx
+mov ft3.x, ft1.xxxx
+add ft1.xyz, ft0.xyzx, ft5.xyzx
+sub ft6.z, fc2.zzzx, ft4.zzzx
+add ft7.x, ft7.yxxx, ft7.zxxx
+mul ft7.w, fc2.wwww, ft2.zzzz
+mul ft4.w, fc2.yyyy, ft3.xxxx
+mul ft0.xyz, ft1.xyzx, ft6.zxxx
+mul ft1.xyz, fc6.xyzx, ft4.zxxx
+add ft3.w, ft7.xxxx, ft7.wwww
+sub ft6.x, fc2.zxxx, ft4.wxxx
+add ft7.xyz, ft0.xyzx, ft1.xyzx
+mul ft0.xyz, ft3.wwwx, ft6.xxxx
+mul ft3.xyz, ft7.xyzx, ft4.wxxx
+add ft7.xyz, ft0.xyzx, ft3.xyzx
+mov ft7.w, ft2.wwww
+mov oc.xyzw, ft7.xyzw
 
-	vec3 finalColour = mix(vec3(0.0, 1.0, 0.0), vec3(0.0, 0.0, 1.0), textureIsTooMinified);
-	finalColour = mix(finalColour, vec3(1.0, 0.0, 0.0), textureIsTooMagnified);
-
-	return finalColour;
-}
-
-
-void main() {
-
-	vec4 texColour = texture2D(u_texture, v_texCoord);
-	texColour.rgb = greyscale(texColour.rgb);
-
-	vec2 texCoordInTexels = v_texCoord * vec2(u_textureSize.xy);
-
-	float isOdd = float(isOddGridSquare(texCoordInTexels, 16.0));
-
-	vec3 densityColour = minMagColour(texCoordInTexels);
-
-	vec4 colFinal = vec4(mix(texColour.rgb, densityColour, 0.85 * isOdd), texColour.a);
-	
-	gl_FragColor = colFinal;
-}
