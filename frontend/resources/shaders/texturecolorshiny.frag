@@ -24,7 +24,7 @@ sin ft1.x, ft1.yxxx
 mul ft0.w, Settings.x, ft1.x
 max ft0.z, ft0.wwwx, fc0.yyyx
 pow ft0.y, ft0.zzxx, Settings.yyxx
-tex ft1, v1.xyxx, fs0 <linear mipdisable repeat 2d>
+tex ft1, v1.xyxx, fs0 <linear mipnone repeat 2d>
 mul ft0.x, ft0.yxxx, ft1.wxxx
 mov oc, ft1
 mov ft1.xyz, ft0.x

@@ -24,19 +24,46 @@ foreach ($requests as $req) {
 			// equvalent to getCandyProperties in CCS
             $determinedResult = array("values" => [0,0,0,0,0,0,0,0,0,0]);
             break;
-
         case "StritzApi.isPaymentConversionUser":
             $determinedResult = false;
+            break;
+        case "StritzApi.getActiveSales":
+            $determinedResult = [];
+            break;
+
+        case "StarLevelApi.getLevels":
+            $determinedResult = [
+				array("id" => 1, "score" => 999999, "stars" => 3, "locked" => false, "unlockTime" => 0, "completedTime" => 0),
+				array("id" => 2, "score" => 0, "stars" => 0, "locked" => false, "unlockTime" => 0, "completedTime" => 0),
+			];
+            break;
+        case "StarLevelApi.getUserProgressions":
+        case "StarLevelApi.getUserProgressions2":
+        case "StarLevelApi.getMetaGraphUserProgressions":
+            $determinedResult = array("entries" => []);
+            break;
+        case "StarLevelApi.getLevelToplist":
+        case "StarLevelApi.getLevelToplist2":
+        case "StarLevelApi.getMetaGraphLevelToplist":
+            $determinedResult = array("entries" => []);
+            break;
+
+        case "BoosterApi.getBoosters":
+        case "BoosterApi.useBoosters":
+        case "BoosterApi.addBooster":
+        case "BoosterApi.acceptBoosterGift":
+            $determinedResult = [array("type" => "StritzLollipopHammer", "typeId" => 12002, "amount" => 99, "availability" => 2, "unlocked" => true)];
+            break;
+        case "BoosterApi.unlockBooster":
+            $determinedResult = array("type" => "StritzLollipopHammer", "typeId" => 12002, "amount" => 99, "availability" => 2, "unlocked" => true);
             break;
 
         case "ProductApi.getUserCurrency":
             $determinedResult = $getUserCurrency;
             break;
-
         case "ProductApi.getAllProductPackages":
             $determinedResult = $getAllProductPackages;
             break;
-
         case "ProductApi.purchase":
             /*$purchaseParams = $req['params'][0];
             $orderItems = $purchaseParams['orderItems'];
@@ -71,36 +98,81 @@ foreach ($requests as $req) {
             }*/
         break;
 
+        case "VirtualCurrencyApi.getBalance":
+        case "VirtualCurrencyApi.payoutSoftCurrency":
+            $determinedResult = array("softCurrency" => 0, "hardCurrency" => 9999);
+            break;
+
         case "LifeApi.addLives":
-            $determinedResult = array("lives" => 42, "timeToNextRegeneration" => time() + 60 * 60 * 24, "immortal" => false);
-			break;
-
         case "LifeApi.removeLives":
-            $determinedResult = array("lives" => 42, "timeToNextRegeneration" => time() + 60 * 60 * 24, "immortal" => false);
-			break;
-
         case "LifeApi.getLife":
             $determinedResult = array("lives" => 42, "timeToNextRegeneration" => time() + 60 * 60 * 24, "immortal" => false);
 			break;
-
         case "LifeApi.getMaxLives":
             $determinedResult = 69;
 			break;
-
         case "LifeApi.getLifeRegenerationTimeInSeconds":
             $determinedResult = 9999999;
             break;
 
-        case "ProfileCardApi.isProfileCardEnabled":
-            $determinedResult = false;
+        case "UnlimitedLivesApi.incrementDefaultUnlimitedLivesExpireTime":
+        case "UnlimitedLivesApi.incrementUnlimitedLivesExpireTime":
+        case "UnlimitedLivesApi.getUnlimitedLivesExpireTime":
+            $determinedResult = array("coreUserId" => "1", "expireTimestamp" => "0");
             break;
 
+        case "CollaborationApi.getCollaborationContainers":
+            $determinedResult = [];
+            break;
+        case "CollaborationApi.synchronizeCollaborationContainers":
+			break;
+
+        case "ProfileCardApi.isProfileCardEnabled":
+            $determinedResult = true;
+            break;
         case "ProfileCardApi.getActiveKingAppIds":
-            $determinedResult = ["33"];
+            $determinedResult = array("kingAppIds" => ["33"]);
+            break;
+        case "ProfileCardApi.getActiveKingApps":
+            $determinedResult = array("id" => "33", "carouselImage" => null);
+            break;
+
+        case "KingLevelApi.setActionAmount":
+			break;
+        case "KingLevelApi.getUserKingLevel":
+        case "KingLevelApi.getUserKingLevelByUser":
+            $determinedResult = array("kingLevel" => 99, "percentOfCurrentLevel" => 99, "kingLevelActionDtos" => [array("kingAppId" => 33, "kingLevelActionTypeId" => 1, "amount" => 1)]);
+            break;
+
+        case "KingdomAchievementApi.startAchievement":
+        case "KingdomAchievementApi.increaseAchievementDataBalance":
+            $determinedResult = array("achievementId" => 1, "startTimeInSec" => 100);
+            break;
+        case "KingdomAchievementApi.getAchievementsByKingApp":
+        case "KingdomAchievementApi.getAchievementsByKingAppAndAchievementType":
+            $determinedResult = [
+				array("id" => 1, "label" => "test achievement", "fromTimeInSec" => 0, "toTimeInSec" => 100, "completeHours" => 1, "imageUrl" => null, "type" => 0, "difficulty" => 1, "status" => 0, "finalReward" => null, "achievementOver" => null),
+			];
+            break;
+        case "KingdomAchievementApi.getAchievementDataList":
+        case "KingdomAchievementApi.getAchievementDataListByKingApp":
+        case "KingdomAchievementApi.getAchievementDataListByKingAppAndAchievementType":
+            $determinedResult = array("coreUserId" => "1", "achievementDataDtos" => [array("achievementId" => 1, "startTimeInSec" => 100)]);
             break;
 
         case "SocialUserApi.getCurrentUser":
-            $determinedResult = array('userId' => '1', 'langCode' => 'en');
+            $determinedResult = array("userId" => "1", "langCode" => "en");
+            break;
+        case "SocialUserApi.getAppFriends":
+            $determinedResult = [];
+            break;
+
+        case "MessageApi.fetchAndDeleteMessages":
+            $determinedResult = [];
+            break;
+
+        case "SignInDataApi.getCurrentUserAppSignIn":
+            $determinedResult = array('num' => 1);
             break;
 
         case "TimeApi.getServerTime":
@@ -111,18 +183,31 @@ foreach ($requests as $req) {
             $determinedResult = [
 				array("name" => "canvas.synergy.enabled", "value" => "true"),
 				array("name" => "synergy.start.time", "value" => 24),
-				array("name" => "released.episode", "value" => 72),
+				array("name" => "released.episode", "value" => 81),
 				array("name" => "sidekicks.enabled", "value" => true),
 			];
             break;
-
         case "ApplicationSettingsApi.getSettingsWithPrefix": // unused
             $determinedResult = [];
             break;
 
+        case "MissionApi.getAccomplishedMissions":
+            $determinedResult = [];
+            break;
+        case "MissionApi.getAvailableMissions":
+            $determinedResult = [];
+            break;
+
+        case "BlobStoreTranslationsApi.getTranslationsUrls":
+            $determinedResult = array("error" => "no translations!");
+            break;
+
+        case "UserMetricsApi.getUserMetrics":
+            $determinedResult = array("error" => "userMetrics2 not supported");
+            break;
+
         default:
-            //$determinedResult = array("error" => "Method not supported: " . $req['method']);
-            $determinedResult = array();
+            $determinedResult = null;
             break;
     }
 
@@ -131,6 +216,9 @@ foreach ($requests as $req) {
         'id' => $req['id'],
         'result' => $determinedResult
     );
+	
+	if ($determinedResult === null)
+		unset($response['result']);
 
     $allrequests[] = $response;
 }
