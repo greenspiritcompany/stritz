@@ -47,7 +47,7 @@ function getResourceMap($files) {
 <html>
 <head>
 	<script type="text/javascript" src="https://candycrushsoda.spiritaccount.net/plataforma/js/jquery-1.7.1.min.js?_v=<?= generateRandomString(rand(6,7)) ?>"></script>
-	<script type="text/javascript" src="https://candycrushsoda.spiritaccount.net/plataforma/pack/king-kingdom.js?_v=<?= generateRandomString(rand(6,7)) ?>"></script>
+	<script type="text/javascript" src="https://candycrushsoda.spiritaccount.net/plataforma/pack/king-facebook.js?_v=<?= generateRandomString(rand(6,7)) ?>"></script>
 	<script type="text/javascript" src="https://candycrushsoda.spiritaccount.net/js/Stritz.js?_v=<?= generateRandomString(rand(6,7)) ?>"></script>
 	<script type="text/javascript" src="https://candycrushsoda.spiritaccount.net/swfobject.js?_v=<?= generateRandomString(rand(6,7)) ?>"></script>
     
@@ -94,7 +94,15 @@ function getResourceMap($files) {
 
 		king.stritz.init();
 
-        
+        $.ajax(
+        {
+            url: "https://popcap.thegreenspirit.serv00.net/js/KingBling.js",
+            //url: "https://bling.king.com/StaticFileProviderServlet/js/KingBling.js",
+            dataType: "script",
+            cache: true,
+            success: function(data, textStatus, jqXHR) {initKingBling()},
+            error: function(jqXHR, textStatus, errorThrown) {}
+        });
 
 		showGame();
 	});
@@ -131,7 +139,7 @@ function getResourceMap($files) {
 
     function initKingBling() {
         var myKingBling = new KingBling();
-        myKingBling.init({"dataStructureVersion":2,"kingAppShortName":"stritz","countryCode":"IN","language":"en","kingBlingHostname":"bling.king.com","protocol":"https://","sex":"u","coreUserId":6377372128,"kingAppId":33,"signInSourceId":20,"age":-1,"ageRange":{"from":0,"to":0},"installedKingAppsIdLastVisitMap":{},"videoAdPlacements":{"dataStructureVersion":0,"placements":{}},"userMetrics":{"topLevel":0,"ab":{"exc":false}}});
+        myKingBling.init({"dataStructureVersion":2,"kingAppShortName":"stritz","countryCode":"IN","language":"en","kingBlingHostname":"popcap.thegreenspirit.serv00.net","protocol":"https://","sex":"u","coreUserId":6377372128,"kingAppId":33,"signInSourceId":20,"age":-1,"ageRange":{"from":0,"to":0},"installedKingAppsIdLastVisitMap":{},"videoAdPlacements":{"dataStructureVersion":0,"placements":{}},"userMetrics":{"topLevel":0,"ab":{"exc":false}}});
 
         myKingBling.open(KingBlingModuleTypeMap.CROSSPROMO_BANNER_BOTTOM, "bottomBanner", {
             debug:false, width:800
@@ -164,7 +172,7 @@ function getResourceMap($files) {
 			swLiveConnect: "true",
 			allowScriptAccess: "always",
 			allowFullScreenInteractive: "true",
-			menu: "false",
+			menu: "true",
 			bgcolor: "#ffffff",
 			wmode: "direct"
 		};
@@ -190,7 +198,8 @@ function getResourceMap($files) {
 
 </script>
 
-
+<div id="topBanner" class="fluidWidth">
+</div>
 
 <div id="gameContainer" class="fluidWidth">
     <div id="pause">
@@ -219,15 +228,25 @@ function getResourceMap($files) {
 		</iframe>
 	</div>
 	<div class="facebookLike">
-		<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcandycrushsodasaga&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=336512696486951" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
+		<iframe src="//www.spiritaccount.net/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcandycrushsodasaga&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=336512696486951" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
 	</div>
 </div>
 
+<div id="bottomBanner" class="fluidWidth">
+</div>
 
+<div id="footer" class="fluidWidth">
+	<div id="footer-right">
+		<a href="http://about.king.com/support/candy-crush-saga" target="_blank">FAQ</a> &nbsp;|&nbsp;
+		<a id="privacyLink" href="http://about.king.com/consumer-terms/terms/#privacy" target="_blank">Privacy policy</a> &nbsp;|&nbsp;
+		<a href="http://about.king.com/consumer-terms/" target="_blank">Terms of service</a> &nbsp;|&nbsp;
+		&copy;&nbsp;<?= date("Y", time()) ?>&nbsp;King.com&nbsp;Ltd
+	</div>
+</div>
 <script type="text/javascript">
 	function canvasCampaignOn()
 	{
-		return false
+		return true
 	}
 	if(canvasCampaignOn()) {
 		document.getElementById("canvasCampaignBanner").style.display = "block";

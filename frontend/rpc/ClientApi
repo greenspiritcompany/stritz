@@ -5,7 +5,6 @@ $getUserMetrics = array();
 $getUserCurrency = 'USD';
 //$getAllProductPackages = getAllProductPackages();
 $getAllProductPackages = array();
-$getServerTime = time();
 
 $allrequests = array();
 $requests = json_decode(file_get_contents('php://input'), true);
@@ -21,21 +20,21 @@ foreach ($requests as $req) {
             break;
 
         case "StritzApi.getUserData":
-			// equvalent to getCandyProperties in CCS
+			// equivalent to getCandyProperties in CCS
             $determinedResult = array("values" => [0,0,0,0,0,0,0,0,0,0]);
             break;
         case "StritzApi.isPaymentConversionUser":
-            $determinedResult = false;
+            $determinedResult = true;
             break;
         case "StritzApi.getActiveSales":
             $determinedResult = [];
             break;
 
         case "StarLevelApi.getLevels":
-            $determinedResult = [
-				array("id" => 1, "score" => 999999, "stars" => 3, "locked" => false, "unlockTime" => 0, "completedTime" => 0),
-				array("id" => 2, "score" => 0, "stars" => 0, "locked" => false, "unlockTime" => 0, "completedTime" => 0),
-			];
+            $determinedResult = [];
+			for ($i = 1; $i <= 1375; $i++) {
+				$determinedResult[] = ["id" => $i, "score" => 999999, "stars" => 3, "locked" => false, "unlockTime" => 0, "completedTime" => 0];
+			}
             break;
         case "StarLevelApi.getUserProgressions":
         case "StarLevelApi.getUserProgressions2":
@@ -45,17 +44,27 @@ foreach ($requests as $req) {
         case "StarLevelApi.getLevelToplist":
         case "StarLevelApi.getLevelToplist2":
         case "StarLevelApi.getMetaGraphLevelToplist":
-            $determinedResult = array("entries" => []);
+            $determinedResult = array("entries" => [array("userId" => 1, "value" => 6942069), array("userId" => 168025967, "value" => 0)]);
             break;
 
         case "BoosterApi.getBoosters":
         case "BoosterApi.useBoosters":
         case "BoosterApi.addBooster":
         case "BoosterApi.acceptBoosterGift":
-            $determinedResult = [array("type" => "StritzLollipopHammer", "typeId" => 12002, "amount" => 99, "availability" => 2, "unlocked" => true)];
+            $determinedResult = [
+				["type" => "StritzLollipopHammer", "typeId" => 12002, "amount" => 99, "availability" => 2, "unlocked" => true],
+				["type" => "StritzStripedLollipopHammer", "typeId" => 12003, "amount" => 99, "availability" => 2, "unlocked" => true],
+				["type" => "StritzIllegalSwitch", "typeId" => 12005, "amount" => 99, "availability" => 2, "unlocked" => true],
+				
+				["type" => "StritzColorbombPregameBooster", "typeId" => 12020, "amount" => 99, "availability" => 2, "unlocked" => true],
+				["type" => "StritzColoringCandyPregameBooster", "typeId" => 12021, "amount" => 99, "availability" => 2, "unlocked" => true],
+				["type" => "StritzDoubleDelishFishPregameBooster", "typeId" => 12022, "amount" => 99, "availability" => 2, "unlocked" => true],
+				["type" => "StritzStripedCandyPregameBooster", "typeId" => 12026, "amount" => 99, "availability" => 2, "unlocked" => true],
+				["type" => "StritzWrappedCandyPregameBooster", "typeId" => 12027, "amount" => 99, "availability" => 2, "unlocked" => true],
+			];
             break;
         case "BoosterApi.unlockBooster":
-            $determinedResult = array("type" => "StritzLollipopHammer", "typeId" => 12002, "amount" => 99, "availability" => 2, "unlocked" => true);
+            $determinedResult = ["type" => "StritzLollipopHammer", "typeId" => 12002, "amount" => 99, "availability" => 2, "unlocked" => true];
             break;
 
         case "ProductApi.getUserCurrency":
@@ -106,13 +115,13 @@ foreach ($requests as $req) {
         case "LifeApi.addLives":
         case "LifeApi.removeLives":
         case "LifeApi.getLife":
-            $determinedResult = array("lives" => 42, "timeToNextRegeneration" => time() + 60 * 60 * 24, "immortal" => false);
+            $determinedResult = array("lives" => 5, "timeToNextRegeneration" => -1/*time() + 60 * 60 * 24*/, "immortal" => false);
 			break;
         case "LifeApi.getMaxLives":
-            $determinedResult = 69;
+            $determinedResult = 5;
 			break;
         case "LifeApi.getLifeRegenerationTimeInSeconds":
-            $determinedResult = 9999999;
+            $determinedResult = 0;
             break;
 
         case "UnlimitedLivesApi.incrementDefaultUnlimitedLivesExpireTime":
@@ -161,28 +170,57 @@ foreach ($requests as $req) {
             break;
 
         case "SocialUserApi.getCurrentUser":
-            $determinedResult = array("userId" => "1", "langCode" => "en");
+            $determinedResult = array(
+				"userId" => 168025967,
+				"langCode" => "en",
+				"country" => "US",
+				"externalUserId" => "5C826ABF967F3BA772B6F8925735B2EA",
+				"firstName" => "Gold Yoshi",
+				"friendType" => "NONE",
+				"lastSignInTime" => time(),
+				"name" => "Gold Yoshi",
+				"pic" => "https://graph.spiritaccount.net/3/picture",
+				"pic100" => "https://graph.spiritaccount.net/3/picture?width=100&height=100",
+			);
             break;
         case "SocialUserApi.getAppFriends":
-            $determinedResult = [];
+            $determinedResult = [array(
+				"userId" => 1,
+				"langCode" => "en",
+				"country" => "US",
+				"externalUserId" => "",
+				"firstName" => "Gold Yoshi 2",
+				"friendType" => "NONE",
+				"lastSignInTime" => time(),
+				"name" => "Gold Yoshi 2",
+				"pic" => "https://graph.spiritaccount.net/3/picture",
+				"pic100" => "https://graph.spiritaccount.net/3/picture?width=100&height=100",
+			)];
             break;
 
         case "MessageApi.fetchAndDeleteMessages":
-            $determinedResult = [];
+			// todo: find out how the data parameter works
+            $determinedResult = [
+				array("id" => 2, "toUserId" => 168025967, "fromUserId" => 1, "time" => 0, "type" => "requestLife", "data" => ""),
+				array("id" => 1, "toUserId" => 168025967, "fromUserId" => 1, "time" => 0, "type" => "giveLife", "data" => ""),
+				//array("id" => 4, "toUserId" => 168025967, "fromUserId" => 1, "time" => 0, "type" => "requestCollaboration", "data" => ""),
+				//array("id" => 3, "toUserId" => 168025967, "fromUserId" => 1, "time" => 0, "type" => "sendCollaboration", "data" => ""),
+			];
             break;
 
         case "SignInDataApi.getCurrentUserAppSignIn":
-            $determinedResult = array('num' => 1);
+            $determinedResult = array('num' => 168025967);
             break;
 
+        case "TimeApi.getUserTime":
         case "TimeApi.getServerTime":
-            $determinedResult = $getServerTime;
+            $determinedResult = round(microtime(true)*1000);
             break;
 
         case "ApplicationSettingsApi.getSettings":
             $determinedResult = [
-				array("name" => "canvas.synergy.enabled", "value" => "true"),
-				array("name" => "synergy.start.time", "value" => 24),
+				array("name" => "canvas.synergy.enabled", "value" => true),
+				array("name" => "synergy.start.time", "value" => 0),
 				array("name" => "released.episode", "value" => 81),
 				array("name" => "sidekicks.enabled", "value" => true),
 			];

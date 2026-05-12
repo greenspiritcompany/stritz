@@ -276,12 +276,7 @@
 		<binary filename="client/diorama/common/scenes/fb_connect_widget.xml" size="2834"/>
 		<binary filename="client/diorama/common/scenes/fb_connect_widget_layout.xml" size="440"/>
 		<binary filename="client/diorama/common/scenes/game_menu/game_menu.xml" size="8283"/>
-		<!--<binary filename="client/diorama/common/scenes/game_menu/game_menu2.xml" size="7333"/>
-		<binary filename="client/diorama/common/scenes/game_menu/game_menu3.xml" size="7282"/>-->
 		<binary filename="client/diorama/common/scenes/game_menu/game_menu_layout.xml" size="1474"/>
-		<!--<binary filename="client/diorama/common/scenes/game_menu/home_menu.xml" size="8359"/>
-		<binary filename="client/diorama/common/scenes/game_menu/home_menu2.xml" size="7409"/>
-		<binary filename="client/diorama/common/scenes/game_menu/ingame_menu.xml" size="7428"/>-->
 		<binary filename="client/diorama/common/scenes/map_hud.xml" size="4426"/>
 		<binary filename="client/diorama/common/scenes/map_hud_layout.xml" size="851"/>
 		<binary filename="client/diorama/common/scenes/menu_main.xml" size="59532"/>
@@ -480,7 +475,6 @@
 		<binary filename="shaders/texturecolor.frag" size="221"/>
 		<binary filename="shaders/texturecolor.vert" size="452"/>
 		<binary filename="shaders/texturecolorPMA.vert" size="464"/>
-		<binary filename="shaders/texturecolorbend.vert" size="547"/>
 		<binary filename="shaders/texturecolorparticlesystem.frag" size="190"/>
 		<binary filename="shaders/texturecolorparticlesystem.vert" size="337"/>
 		<binary filename="shaders/texturecolorshiny.frag" size="709"/>
@@ -491,9 +485,6 @@
 		<binary filename="shaders/toonemissionlut.frag" size="378"/>
 		<binary filename="shaders/toonlut.frag" size="294"/>
 		<binary filename="shaders/uniformcolor.frag" size="74"/>
-		<binary filename="shaders/unused/huedisco.frag" size="1314"/>
-		<binary filename="shaders/unused/pixelate.frag" size="494"/>
-		<binary filename="shaders/unused/scarab.frag" size="1254"/>
 	</group>
 	<group name="preloader">
 		<binary filename="shared/preloader/bgh_loading_screen.xml" size="2780"/>

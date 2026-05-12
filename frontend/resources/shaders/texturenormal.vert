@@ -1,30 +1,26 @@
 #version 1.0;
 
 argument vec4 a_position;
-argument vec4 a_normal;
+argument vec4 a_color;
 argument vec4 a_texCoord;
 uniform mat4 u_modelViewMatrix;
 uniform mat4 u_modelViewProjectionMatrix;
 
-varying vec3 v_normal;
-varying vec2 v_texCoord;
+varying vec4 v_color;    // v0
+varying vec4 v_texCoord; // v1
+varying vec4 v_params;   // v2
 
+// 1. Calculate Clip Space Position
+m44 op, a_position, u_modelViewProjectionMatrix
 
+// 2. PASS COLOR DATA (This fixes the blue tint)
+mov v0, a_color
 
-m44 op.xyzw, a_position.xyzw, u_modelViewProjectionMatrix
-mov v1, u_modelViewProjectionMatrix
-mov v1.xy, a_normal.xyxx
+// 3. Initialize v1 (UV Coords)
+mov v1.xy, a_texCoord.xy
+mov v1.zw, vc0.yy // Fill with 0.0
 
-
-
-mov vt0.xyz, u_modelViewMatrix.xyzx
-
-mov vt0.xyz, u_modelViewMatrix.xyzx
-
-mov vt0.xyz, u_modelViewMatrix.xyzx
-
-mov vt0.xyzw, vt0
-mul vt0.xyz, vt0, a_texCoord.xyzx
-mov v0, u_modelViewProjectionMatrix
-nrm v0.xyz, vt0.xyzx
-
+// 4. Initialize v2 (Parameters)
+// Assuming vc0.yz contains your smoothing thresholds
+mov v2.xy, vc0.yz 
+mov v2.zw, vc0.yy

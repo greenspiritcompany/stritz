@@ -1,4 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Shaders>
+<DefaultValues>
+	<Attribute name="a_position" input="Positions"><DefaultValue size="3" x="0" y="0" z="0"/></Attribute>
+	<Attribute name="a_color" input="Colors"><DefaultValue size="4" x="1" y="1" z="1" w="1"/></Attribute>
+	<Attribute name="a_texCoord" input="UVs"><DefaultValue size="2" x="0" y="0"/></Attribute>
+	<Attribute name="a_normal" input="Normals"><DefaultValue size="3" x="0" y="0" z="0"/></Attribute>
+	<Uniform name="m0"><DefaultValue size="1" x="0"/></Uniform>
+	<Uniform name="u_modelViewMatrix"><DefaultValue size="1" x="0"/></Uniform>
+	<Uniform name="u_materialAmbient"><DefaultValue size="4" x="1" y="1" z="1" w="1"/></Uniform>
+	<Uniform name="u_color4"><DefaultValue size="4" x="1" y="1" z="1" w="1"/></Uniform>
+	<Uniform name="u_time"><DefaultValue size="1" x="0"/></Uniform>
+</DefaultValues>
+
 <Shader name="TextureColor" vertexShader="shaders/texturecolor.vert" fragmentShader="shaders/texturecolor.frag" />
 
 <Shader name="TextureColorShiny" vertexShader="shaders/texturecolorshiny.vert" fragmentShader="shaders/texturecolorshiny.frag">

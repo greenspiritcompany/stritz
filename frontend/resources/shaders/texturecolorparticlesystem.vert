@@ -8,8 +8,10 @@ uniform mat4 u_modelViewProjectionMatrix;
 varying vec4 v_color;
 varying vec2 v_texCoord;
 
-m44 op.xyzw, a_position.xyzw, u_modelViewProjectionMatrix
-mov v0.xyzw, a_color.xyzw
-mov v1, u_modelViewProjectionMatrix
-mov v1.xy, a_texCoord.xyxx
+m44 op, a_position, u_modelViewProjectionMatrix
 
+// Pass color directly
+mov v0, a_color
+
+// Pass UV correctly (removed matrix overwrite)
+mov v1, a_texCoord

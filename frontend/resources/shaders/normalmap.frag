@@ -8,8 +8,8 @@ varying vec3 v_normalSpaceTransformX;
 varying vec3 v_normalSpaceTransformY;
 varying vec3 v_normalSpaceTransformZ;
          
-sampler2D u_texture;
-sampler2D u_texture1;
+sampler2D u_texture; /* diffuse */
+sampler2D u_texture1; /* normal map */
          
 uniform vec4 u_materialAmbient;
 uniform vec4 u_materialDiffuse;

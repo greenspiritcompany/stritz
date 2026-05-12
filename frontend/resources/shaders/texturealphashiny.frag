@@ -5,31 +5,40 @@ varying vec2 v_texCoord;
 varying vec4 v_pixelpos;
 
 sampler2D u_texture;
-
 uniform mat4 u_time;
 
-mov ft0.x, u_time.xxxx
-mov ft1.y, u_time.xxxx
-add ft2.y, fc1.wwxx, v1.xxxx
-mov ft2.w, ft0.xxxx
-mov ft1.x, ft1.yxxx
-mul ft2.x, ft2.yxxx, fc1.zxxx
-mul ft2.z, ft2.wwwx, fc1.zzzx
-add ft0.w, v1.xxxx, ft1.xxxx
-add ft1.w, ft2.xxxx, ft2.zzzz
-sin ft0.z, ft0.wwwx
-sin ft1.z, ft1.wwwx
-sge ft2.x, ft0.zxxx, fc1.yxxx
-add ft1.y, fc2.xxxx, ft1.zzxx
-mov ft0.y, ft2.xxxx
-mul ft1.x, ft1.yxxx, ft0.yxxx
-min ft2.w, ft1.xxxx, fc1.wwww
-max ft2.z, ft2.wwwx, fc2.yyyx
-tex ft1.xyzw, v2.xyxx, fs0 <2d,wrap,linear>
-mul ft2.y, ft2.zzxx, fc2.xxxx
-mov oc.xyzw, ft1.wwww
-mul ft2.x, ft2.yxxx, ft1.wxxx
-mov oc, u_time
-add oc.xyz, ft1.wwwx, ft2.xxxx
-mul oc.xyzw, v0.xyzw, oc.xyzw
+// Initialize temp registers to avoid Error #3648
+mov ft0, fc0
+mov ft1, fc0
+mov ft2, fc0
+mov ft3, fc0 
 
+// Original Logic
+mov ft0.x, u_time.x
+mov ft1.y, u_time.x
+add ft2.y, fc1.w, v1.x
+mov ft2.w, ft0.x
+mov ft1.x, ft1.y
+mul ft2.x, ft2.y, fc1.z
+mul ft2.z, ft2.w, fc1.z
+add ft0.w, v1.x, ft1.x
+add ft1.w, ft2.x, ft2.z
+sin ft0.z, ft0.w
+sin ft1.z, ft1.w
+sge ft2.x, ft0.z, fc1.y
+add ft1.y, fc2.x, ft1.z
+mov ft0.y, ft2.x
+mul ft1.x, ft1.y, ft0.y
+min ft2.w, ft1.x, fc1.w
+max ft2.z, ft2.w, fc2.y
+tex ft1, v2, fs0 <2d, wrap, linear> 
+
+// FIX FOR ERROR #3701: Use ft3 instead of oc for intermediate math
+mul ft2.y, ft2.z, fc2.x
+mov ft3, ft1.w // Store alpha in ft3
+mul ft2.x, ft2.y, ft1.w
+mov ft3, u_time
+add ft3.xyz, ft1.w, ft2.x // Perform partial write on ft3, not oc
+
+// Final Output (Must be full xyzw)
+mul oc, v0, ft3

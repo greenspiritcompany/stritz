@@ -1,218 +1,162 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <Scene>
 	<SceneObject layerFlags="256" name="InGameMenu">
-		<Translation z="430" />
+		<Translation z="430"/>
 		<SceneObject>
 			<SceneObject name="MenuButtonGroup">
 				<SceneObject class="Button" name="MainButton">
-					<Animation animationData="Idle" layer="1" name="Idle" speed="1" />
-					<Animation animationData="OnPressOptionsMenuButton" loopCount="0" name="OnPress" />
-					<Animation animationData="OnReleaseOptionsMenuButton" loopCount="0" name="OnRelease" />
-					<Animation animationData="OnAppearGrow" loopCount="0" name="OnAppear" startDelay="0.200" />
-					<Animation animationData="OnDisappearScale" loopCount="0" name="OnDisappear" />
+					<Animation animationData="Idle" layer="1" name="Idle" speed="1"/>
+					<Animation animationData="OnPressOptionsMenuButton" loopCount="0" name="OnPress"/>
+					<Animation animationData="OnReleaseOptionsMenuButton" loopCount="0" name="OnRelease"/>
+					<Animation animationData="OnAppearGrow" loopCount="0" name="OnAppear" startDelay="0.2"/>
+					<Animation animationData="OnDisappearScale" loopCount="0" name="OnDisappear"/>
 					<SceneObject name="MainButtonOn">
 						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_green.png" vertexColors="true">
-							<Pivot anchor="center" />
+							<Pivot anchor="center"/>
 						</Sprite>
 						<SceneObject name="MainButtonOnIcon">
 							<Sprite filename="shared/diorama/common/tex/gui_elements/icon_settings_active.png" vertexColors="true">
-								<Pivot anchor="center" x="1" y="2" />
+								<Pivot anchor="center" x="1" y="2"/>
 							</Sprite>
 						</SceneObject>
 					</SceneObject>
 					<SceneObject name="MainButtonOff">
 						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="true">
-							<Pivot anchor="center" />
+							<Pivot anchor="center"/>
 						</Sprite>
 						<SceneObject name="MainButtonOffIcon">
 							<Sprite filename="shared/diorama/common/tex/gui_elements/icon_settings_inactive.png" vertexColors="true">
-								<Pivot anchor="center" x="1" y="2" />
+								<Pivot anchor="center" x="1" y="2"/>
 							</Sprite>
 						</SceneObject>
 					</SceneObject>
-					<LayoutConfiguration name="Landscape">
-						<Size>
-							<OriginalSize height="140" width="430" />
-							<Width percentage="40" />
-						</Size>
-					</LayoutConfiguration>
-					<LayoutConfiguration name="Portrait">
-						<Size>
-							<Height percentage="20" />
-							<OriginalSize height="140" width="430" />
-							<Width percentage="75" />
-						</Size>
-					</LayoutConfiguration>
-					<LayoutConfiguration name="PortraitFourThree">
-						<Size>
-							<Height percentage="15" />
-							<OriginalSize height="140" width="430" />
-							<Width percentage="75" />
-						</Size>
-					</LayoutConfiguration>
 				</SceneObject>
 				<SceneObject name="Background">
-					<Translation z="-1" />
-					<Animation animationData="GameMenuOpen" loopCount="0" name="OnOpen" />
-					<Animation animationData="GameMenuClose" loopCount="0" name="OnClose" startTime="0.075" />
+					<Translation z="-1"/>
+					<Animation animationData="GameMenuOpen" loopCount="0" name="OnOpen"/>
+					<Animation animationData="GameMenuClose" loopCount="0" name="OnClose" startTime="0.075"/>
 					<SceneObject name="BackgroundLong">
 						<Panel filename="shared/diorama/common/tex/gui_elements/settings_box.png" vertexColors="true">
-							<Insets bottom="76" left="66" right="66" top="60" />
-							<Pivot x="68" y="65" />
-							<Size height="136" width="551" />
+							<Insets bottom="76" left="66" right="66" top="60"/>
+							<Pivot x="68" y="65"/>
+							<Size height="136" width="551"/>
 						</Panel>
 					</SceneObject>
 					<SceneObject name="BackgroundShort">
 						<Panel filename="shared/diorama/common/tex/gui_elements/settings_box.png" vertexColors="true">
-							<Insets bottom="76" left="66" right="66" top="60" />
-							<Pivot x="68" y="65" />
-							<Size height="136" width="551" />
+							<Insets bottom="76" left="66" right="66" top="60"/>
+							<Pivot x="68" y="65"/>
+							<Size height="136" width="458"/>
 						</Panel>
 					</SceneObject>
 					<SceneObject name="Music">
-						<Translation x="122" />
-						<SceneObject __visibility="0" class="Button" name="MusicButton">
-							<Translation x="-2.113" y="0.460" />
+						<Translation x="122"/>
+						<SceneObject __editorVisibility="true" __visibility="0" class="Button" name="MusicButton">
+							<Translation x="-2.11295" y="0.45993"/>
 							<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="true">
-								<Pivot anchor="center" />
+								<Pivot anchor="center"/>
 							</Sprite>
-							<Animation animationData="Idle" layer="1" name="Idle" />
-							<Animation animationData="OnPress" loopCount="0" name="OnPress" />
-							<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
-							<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.350" />
-							<Animation animationData="OnDisappearScale" loopCount="0" name="OnClose" startTime="0" />
+							<Animation animationData="Idle" layer="1" name="Idle"/>
+							<Animation animationData="OnPress" loopCount="0" name="OnPress"/>
+							<Animation animationData="OnRelease" loopCount="0" name="OnRelease"/>
+							<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.35"/>
+							<Animation animationData="OnDisappearScale" loopCount="0" name="OnClose" startTime="0"/>
 							<SceneObject name="MusicButtonOn">
 								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_music_active.png" vertexColors="true">
-									<Pivot anchor="center" x="0.500" y="2.500" />
+									<Pivot anchor="center" x="0.5" y="2.5"/>
 								</Sprite>
 							</SceneObject>
 							<SceneObject name="MusicButtonOff">
 								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_music_inactive.png" vertexColors="true">
-									<Pivot anchor="center" x="0.500" y="2.500" />
+									<Pivot anchor="center" x="0.5" y="2.5"/>
 								</Sprite>
 							</SceneObject>
 						</SceneObject>
 					</SceneObject>
 					<SceneObject name="Sound">
-						<Translation x="215" />
+						<Translation x="215"/>
 						<SceneObject class="Button" name="SoundButton">
-							<Translation x="3.306" />
+							<Translation x="3.30603"/>
 							<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="true">
-								<Pivot anchor="center" />
+								<Pivot anchor="center"/>
 							</Sprite>
-							<Animation animationData="Idle" layer="1" name="Idle" />
-							<Animation animationData="OnPress" loopCount="0" name="OnPress" />
-							<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
-							<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.400" />
-							<Animation animationData="OnDisappearScale" loopCount="0" name="OnClose" startTime="0" />
+							<Animation animationData="Idle" layer="1" name="Idle"/>
+							<Animation animationData="OnPress" loopCount="0" name="OnPress"/>
+							<Animation animationData="OnRelease" loopCount="0" name="OnRelease"/>
+							<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.4"/>
+							<Animation animationData="OnDisappearScale" loopCount="0" name="OnClose" startTime="0"/>
 							<SceneObject name="SoundButtonOn">
 								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_sound_active.png" vertexColors="true">
-									<Pivot anchor="center" x="0.500" y="2.500" />
+									<Pivot anchor="center" x="0.5" y="2.5"/>
 								</Sprite>
 							</SceneObject>
 							<SceneObject name="SoundButtonOff">
 								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_sound_inactive.png" vertexColors="true">
-									<Pivot anchor="center" x="0.500" y="2.500" />
+									<Pivot anchor="center" x="0.5" y="2.5"/>
 								</Sprite>
 							</SceneObject>
 						</SceneObject>
 					</SceneObject>
 					<SceneObject name="Screen">
-						<Translation x="215" />
+						<Translation x="316.181" />
 						<SceneObject class="Button" name="Fullscreen">
-							<Translation x="3.306" />
+							<Translation x="3.30603" />
 							<Sprite filename="shared/diorama/common/tex/gui_elements/btn_blue.png" vertexColors="true">
 								<Pivot anchor="center" />
 							</Sprite>
 							<Animation animationData="Idle" layer="1" name="Idle" />
 							<Animation animationData="OnPress" loopCount="0" name="OnPress" />
 							<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
-							<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.400" />
+							<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.4" />
 							<Animation animationData="OnDisappearScale" loopCount="0" name="OnClose" startTime="0" />
 							<SceneObject name="FullscreenButtonOn">
-								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_screen_max.png" vertexColors="true">
-									<Pivot anchor="center" x="0.500" y="2.500" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_screen_min.png" vertexColors="true">
+									<Pivot anchor="center" x="0.5" y="2.5" />
 								</Sprite>
 							</SceneObject>
 							<SceneObject name="FullscreenButtonOff">
-								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_screen_min.png" vertexColors="true">
-									<Pivot anchor="center" x="0.500" y="2.500" />
+								<Sprite filename="shared/diorama/common/tex/gui_elements/icon_screen_max.png" vertexColors="true">
+									<Pivot anchor="center" x="0.5" y="2.5" />
 								</Sprite>
 							</SceneObject>
 						</SceneObject>
 					</SceneObject>
-					<SceneObject class="Button" name="Kingdom">
-						<Translation x="316.181" />
-						<Animation animationData="Idle" layer="1" name="Idle" />
-						<Animation animationData="OnPress" loopCount="0" name="OnPress" />
-						<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
-						<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.300" />
-						<Animation animationData="OnDisappearScale" loopCount="0" name="OnClose" startTime="0" />
-						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_orange.png" vertexColors="true">
-							<Pivot anchor="center" />
-						</Sprite>
+					<!--<SceneObject class="Button" name="Kingdom">
+						<Translation x="316.181"/>
+						<Panel filename="shared/diorama/common/tex/gui_elements/btn_orange.png">
+							<Insets bottom="59" left="54" right="54" top="48"/>
+							<Pivot anchor="center"/>
+						</Panel>
+						<Animation animationData="Idle" layer="1" name="Idle"/>
+						<Animation animationData="OnPress" loopCount="0" name="OnPress"/>
+						<Animation animationData="OnRelease" loopCount="0" name="OnRelease"/>
+						<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.3"/>
+						<Animation animationData="OnDisappearScale" loopCount="0" name="OnClose" startTime="0"/>
 						<SceneObject class="Button" name="KingdomButton">
-							<Translation x="-0.472" y="-5.667" />
+							<Translation x="-0.47229" y="-5.66748"/>
 							<Sprite filename="shared/diorama/common/tex/gui_elements/kingdom_logo.png" vertexColors="true">
-								<Pivot anchor="center" x="-0.500" y="3" />
+								<Pivot anchor="center" x="-0.5" y="3"/>
+								<Scale x="0.4" y="0.4"/>
 							</Sprite>
 						</SceneObject>
-					</SceneObject>
+					</SceneObject>-->
 					<SceneObject name="Exit">
-						<Translation x="415" />
+						<Translation x="415"/>
 						<Sprite filename="shared/diorama/common/tex/gui_elements/btn_pink.png" vertexColors="true">
-							<Pivot anchor="center" />
+							<Pivot anchor="center"/>
 						</Sprite>
-						<Animation animationData="Idle" layer="1" name="Idle" />
-						<Animation animationData="OnPress" loopCount="0" name="OnPress" />
-						<Animation animationData="OnRelease" loopCount="0" name="OnRelease" />
-						<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.250" />
-						<Animation animationData="OnDisappearScale" loopCount="0" name="OnClose" startTime="0" />
+						<Animation animationData="Idle" layer="1" name="Idle"/>
+						<Animation animationData="OnPress" loopCount="0" name="OnPress"/>
+						<Animation animationData="OnRelease" loopCount="0" name="OnRelease"/>
+						<Animation animationData="OnAppearGrow" loopCount="0" name="OnOpen" startTime="0.25"/>
+						<Animation animationData="OnDisappearScale" loopCount="0" name="OnClose" startTime="0"/>
 						<SceneObject class="Button" name="ExitButton">
-							<Sprite filename="shared/diorama/common/tex/gui_elements/icon_home.png" vertexColors="true">
-								<Pivot anchor="center" x="0" y="5.500" />
+							<Sprite filename="shared/diorama/common/tex/gui_elements/icon_quit.png" vertexColors="true">
+								<Pivot anchor="center" x="0" y="5.5"/>
 							</Sprite>
 						</SceneObject>
 					</SceneObject>
-					<LayoutConfiguration name="Landscape">
-						<Size>
-							<OriginalSize height="140" width="430" />
-							<Width percentage="40" />
-						</Size>
-					</LayoutConfiguration>
-					<LayoutConfiguration name="Portrait">
-						<Size>
-							<Height percentage="20" />
-							<OriginalSize height="140" width="430" />
-							<Width percentage="75" />
-						</Size>
-					</LayoutConfiguration>
-					<LayoutConfiguration name="PortraitFourThree">
-						<Size>
-							<Height percentage="15" />
-							<OriginalSize height="140" width="430" />
-							<Width percentage="75" />
-						</Size>
-					</LayoutConfiguration>
 				</SceneObject>
-				<LayoutConfiguration name="Landscape">
-					<Translation>
-						<X percentage="7" />
-						<Y percentage="89" />
-					</Translation>
-				</LayoutConfiguration>
-				<LayoutConfiguration name="Portrait">
-					<Translation>
-						<X percentage="12" />
-						<Y percentage="92" />
-					</Translation>
-				</LayoutConfiguration>
-				<LayoutConfiguration name="PortraitFourThree">
-					<Translation>
-						<X percentage="10" />
-						<Y percentage="93.500" />
-					</Translation>
-				</LayoutConfiguration>
 			</SceneObject>
 		</SceneObject>
 	</SceneObject>

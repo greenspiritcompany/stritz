@@ -8,18 +8,14 @@ uniform mat4 u_modelViewProjectionMatrix;
 uniform vec4 u_color4;
 uniform vec4 u_materialAmbient;
 
-varying vec4 v_color;
-varying vec2 v_texCoord;
+varying vec4 v_color; // Maps to v0
+varying vec2 v_texCoord; // Maps to v1
 
-m44 op.xyzw, a_position.xyzw, u_modelViewProjectionMatrix
+m44 op, a_position, u_modelViewProjectionMatrix
 
-mov vt0.w, vc4.xxxx
-mov vt0.x, u_materialAmbient.wxxx
-mov vt0.y, u_materialAmbient.wwxx
-mov vt0.z, u_materialAmbient.wwwx
+// Fix: Simplify color blending, avoiding piecemeal register writes
+mul vt1, a_color, u_color4
+mul v0, vt1, u_materialAmbient
 
-mul vt1.xyzw, a_color.xyzw, u_color4.xyzw
-mul v0.xyzw, vt1.xyzw, vt0.xyzw
-mov v1, u_modelViewProjectionMatrix
-mov v1.xy, a_texCoord.xyxx
-
+// Correctly pass UV coordinates
+mov v1, a_texCoord
