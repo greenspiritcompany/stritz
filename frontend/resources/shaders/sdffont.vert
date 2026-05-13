@@ -28,10 +28,6 @@ mov v1.xy, a_texCoord.xyxx
 
 mov vt1.xyz, u_modelViewMatrix.xyzx
 
-mov vt1.xyz, u_modelViewMatrix.xyzx
-
-mov vt1.xyz, u_modelViewMatrix.xyzx
-
 mul vt1.xyz, vt0, a_textScale.xyzx
 neg vt0.x, vt1.xxxx
 mov vt2.w, vt0.xxxx

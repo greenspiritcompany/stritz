@@ -18,13 +18,20 @@
 <Uniform name="Settings">
 	<DefaultValue x="0.500" y="1" z="1" size="4" w="0" />
 </Uniform>
+<Uniform name="u_shinyConst">
+	<DefaultValue x="3.0" y="3.14159" z="0.0" w="0.0" size="4" />
+</Uniform>
 </Shader>
 
 <Shader name="TextureColorPMA" vertexShader="shaders/texturecolorPMA.vert" fragmentShader="shaders/texturecolor.frag" />
 
 <Shader name="TextureAlpha" vertexShader="shaders/texturecolor.vert" fragmentShader="shaders/texturealpha.frag" />
 
-<Shader name="TextureAlphaShiny" vertexShader="shaders/texturecolorshiny.vert" fragmentShader="shaders/texturealphashiny.frag" />
+<Shader name="TextureAlphaShiny" vertexShader="shaders/texturecolorshiny.vert" fragmentShader="shaders/texturealphashiny.frag">
+<Uniform name="u_shinyConst">
+	<DefaultValue x="3.0" y="4.0" z="0.5" w="0.51" size="4" />
+</Uniform>
+</Shader>
 
 <Shader name="TextureAlphaPMA" vertexShader="shaders/texturecolorPMA.vert" fragmentShader="shaders/texturealpha.frag" />
 
@@ -48,9 +55,15 @@
 
 <Shader name="SmoothColor" vertexShader="shaders/colornormal.vert" fragmentShader="shaders/smoothcolor.frag" />
 
-<Shader name="NormalMap" vertexShader="shaders/normalmap.vert" fragmentShader="shaders/normalmap.frag" />
+<Shader name="NormalMap" vertexShader="shaders/normalmap.vert" fragmentShader="shaders/normalmap.frag">
+<Uniform name="u_upVector"><DefaultValue x="1" y="0" z="0" w="0" size="4"/></Uniform>
+<Uniform name="u_lightParams"><DefaultValue x="0.1" y="1.0" z="-0.3" w="-0.4" size="4"/></Uniform>
+</Shader>
 
-<Shader name="NormalMapInvertY" vertexShader="shaders/normalmap_invy.vert" fragmentShader="shaders/normalmap.frag" />
+<Shader name="NormalMapInvertY" vertexShader="shaders/normalmap_invy.vert" fragmentShader="shaders/normalmap.frag">
+<Uniform name="u_upVector"><DefaultValue x="1" y="0" z="0" w="0" size="4"/></Uniform>
+<Uniform name="u_lightParams"><DefaultValue x="0.1" y="1.0" z="-0.3" w="0.4" size="4"/></Uniform>
+</Shader>
 
 <Shader name="Smooth" vertexShader="shaders/texturenormal.vert" fragmentShader="shaders/smooth.frag" />
 

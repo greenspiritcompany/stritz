@@ -11,16 +11,20 @@ varying vec4 v_color;
 varying vec2 v_texCoord;
 varying vec4 v_pixelpos;
 
+// Clip-space position
 m44 vt0.xyzw, a_position.xyzw, u_modelViewProjectionMatrix
 mov op.xyzw, vt0.xyzw
 
-mov vt1.w, vc4.xxxx
-mov vt1.x, u_materialAmbient.wxxx
-mov vt1.y, u_materialAmbient.wwxx
-mov vt1.z, u_materialAmbient.wwwx
+// v_color: rgb = a_color.rgb * u_materialAmbient.a, alpha = a_color.a
+// The old code did `mov vt1.w, vc4.xxxx` to get the literal 1.0 for the
+// alpha multiplier, but vc4 is never set by the engine -> v0.w was always 0
+// -> output was always fully transparent. Fix: just copy a_color.w directly.
+mul v0.xyz, a_color.xyz, u_materialAmbient.wwww
+mov v0.w, a_color.w
 
-mul v0.xyzw, a_color.xyzw, vt1.xyzw
+// v_texCoord (we only use .xy in the frag shader)
 mov v2, u_modelViewProjectionMatrix
 mov v2.xy, a_texCoord.xyxx
-mov v1.xyzw, vt0.xyzw
 
+// v_pixelpos
+mov v1.xyzw, vt0.xyzw

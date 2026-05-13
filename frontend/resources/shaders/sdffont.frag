@@ -13,7 +13,8 @@ mov ft3, fc0
 tex ft0, v1, fs0 <2d, wrap, linear>
 sub ft1.z, ft0.w, v2.x
 sub ft1.w, v2.y, v2.x
-div ft1.y, ft1.z, ft1.w
+rcp ft2.x, ft1.w
+mul ft1.y, ft1.z, ft2.x
 
 // Cleaned up uninitialized swizzle reads
 min ft1.x, ft1.y, fc0.x

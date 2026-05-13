@@ -7,38 +7,42 @@ varying vec4 v_pixelpos;
 sampler2D u_texture;
 uniform mat4 u_time;
 
-// Initialize temp registers to avoid Error #3648
+// Initialize temps
 mov ft0, fc0
 mov ft1, fc0
 mov ft2, fc0
-mov ft3, fc0 
+mov ft3, fc0
 
-// Original Logic
-mov ft0.x, u_time.x
-mov ft1.y, u_time.x
-add ft2.y, fc1.w, v1.x
-mov ft2.w, ft0.x
-mov ft1.x, ft1.y
-mul ft2.x, ft2.y, fc1.z
-mul ft2.z, ft2.w, fc1.z
-add ft0.w, v1.x, ft1.x
-add ft1.w, ft2.x, ft2.z
-sin ft0.z, ft0.w
-sin ft1.z, ft1.w
-sge ft2.x, ft0.z, fc1.y
-add ft1.y, fc2.x, ft1.z
-mov ft0.y, ft2.x
-mul ft1.x, ft1.y, ft0.y
-min ft2.w, ft1.x, fc1.w
-max ft2.z, ft2.w, fc2.y
-tex ft1, v2, fs0 <2d, wrap, linear> 
+// Build small constants from fc0.x = 1.0 (one constant per instruction)
+mov ft3.x, fc0.x                       // 1.0
+add ft3.y, ft3.x, fc0.x                // 2.0
+rcp ft3.z, ft3.y                       // 0.5
+add ft3.w, ft3.y, fc0.x                // 3.0
 
-// FIX FOR ERROR #3701: Use ft3 instead of oc for intermediate math
-mul ft2.y, ft2.z, fc2.x
-mov ft3, ft1.w // Store alpha in ft3
-mul ft2.x, ft2.y, ft1.w
-mov ft3, u_time
-add ft3.xyz, ft1.w, ft2.x // Perform partial write on ft3, not oc
+// Sample texture (we mainly want .a, like the GLSL .aaaa swizzle)
+tex ft1, v2, fs0 <2d, wrap, linear>
 
-// Final Output (Must be full xyzw)
-mul oc, v0, ft3
+// Wave 1:  clamp(0.5 + sin((pixelpos.x + 1) * 3 + time * 3), 0, 1)
+add ft0.x, v1.x, fc0.x                 // pixelpos.x + 1
+mul ft0.x, ft0.x, ft3.w                // * 3
+mul ft0.y, ft3.w, u_time.x             // time * 3
+add ft0.z, ft0.x, ft0.y                // combined phase
+sin ft0.w, ft0.z
+add ft0.w, ft0.w, ft3.z                // + 0.5
+max ft0.w, ft0.w, fc0.y                // clamp >= 0
+min ft0.w, ft0.w, fc0.x                // clamp <= 1
+
+// Wave 2 gate: step(0, sin(pixelpos.x + time))
+add ft0.x, v1.x, u_time.x
+sin ft0.y, ft0.x
+sge ft0.z, ft0.y, fc0.y                // 1 if sin >= 0 else 0
+
+// Combined intensity in [0, 1]
+mul ft0.w, ft0.w, ft0.z
+
+// rgb = tex.a + intensity * 0.5 * tex.a   ; alpha = tex.a
+mul ft0.x, ft0.w, ft3.z                // intensity * 0.5
+mul ft0.x, ft0.x, ft1.w                // * texture.alpha
+add ft2.xyz, ft1.w, ft0.x              // tex.a + shine
+mov ft2.w,   ft1.w
+mul oc, v0, ft2

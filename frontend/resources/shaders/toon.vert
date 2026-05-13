@@ -19,10 +19,6 @@ mov v0.xy, a_normal.xyxx
 
 mov vt0.xyz, u_modelViewMatrix.xyzx
 
-mov vt0.xyz, u_modelViewMatrix.xyzx
-
-mov vt0.xyz, u_modelViewMatrix.xyzx
-
 mov vt0.y, vc8.zzxx
 mov vt3.xyzw, vt0
 m33 vt0.xyz, a_texCoord.xyzx, vt3

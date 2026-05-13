@@ -10,13 +10,11 @@ uniform vec4 u_textureSize;
 
 
 mul ft0.xy, v0.xyxx, u_textureSize.xyxx
-mov ft1.xy, ft0.xyxx
-mov ft2.xy, ft0.xyxx
 
 
 
-dp4 ft3.z, ft1.xxxy, ft1.xxxy
-dp4 ft3.w, ft2.xxxx, ft2.xxxx
+dp4 ft3.z, ft0.xxxy, ft0.xxxy
+dp4 ft3.w, ft0.xxxx, ft0.xxxx
 max ft3.y, ft3.zzxx, ft3.wwxx
 log ft3.x, ft3.yxxx
 mov ft1.y, fc1.yyxx

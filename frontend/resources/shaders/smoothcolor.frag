@@ -8,7 +8,7 @@ uniform vec4 u_materialAmbient;
 uniform vec4 u_materialDiffuse;
 uniform vec4 u_materialSpecular;
 uniform vec4 u_materialEmission;
-uniform mat4 u_materialShininess;
+uniform vec4 u_materialShininess;
 uniform vec4 u_color4;
 
 // 1. Initialize temporary registers

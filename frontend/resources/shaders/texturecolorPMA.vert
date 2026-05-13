@@ -15,7 +15,7 @@ m44 op, a_position, u_modelViewProjectionMatrix
 mul vt1, a_color, u_materialAmbient
 
 // Pre-multiply alpha (PMA)
-mul v0, vt1, a_color.wwww
+mul v0, vt1, vt1.wwww
 
 // Correctly pass UV coordinates (removed the matrix corruption)
 mov v1, a_texCoord

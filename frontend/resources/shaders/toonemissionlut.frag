@@ -13,7 +13,6 @@ tex ft1.xyzw, v0.xyxx, fs1 <2d,wrap,linear>
 mul ft2.xyz, ft0.xyzx, u_color4.xyzx
 sub ft0.x, fc1.xxxx, ft1.wxxx
 mul ft3.xyz, ft2.xyzx, ft1.wxxx
-mov oc.xyzw, ft1.xyzw
 add ft2.xyz, ft0.xxxx, ft3.xyzx
 mov oc, u_color4
 mul oc.xyz, ft1.xyzx, ft2.xyzx
